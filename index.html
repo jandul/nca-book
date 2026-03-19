@@ -1916,9 +1916,144 @@ Sharpness has a value between 0 and 1. A sharpness value of 0.5 means that there
 </div>
 <div id="summary-model-fit-metrics" class="section level3 hasAnchor" number="4.5.8">
 <h3><span class="header-section-number">4.5.8</span> Summary model fit metrics<a href="#summary-model-fit-metrics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The eight metrics of NCA’s model fit with example guidelines are summarized in Table <a href="#tab:modelfittab"><strong>??</strong></a>. The model fit metrics are part of the broader concept of <em>credibility</em>. NCA’s credibility for identifying necessary conditions is discussed in Chapter <a href="#sensitivityspecificity">6</a>.</p>
+<p>The eight metrics of NCA’s model fit with example guidelines are summarized in Table <a href="#tab:modelfittab">4.1</a>. The model fit metrics are part of the broader concept of <em>credibility</em>. NCA’s credibility for identifying necessary conditions is discussed in Chapter <a href="#sensitivityspecificity">6</a>.</p>
 <br />
 
+<table class="table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:modelfittab">Table 4.1: </span>Model fit measures for NCA
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Metric
+</th>
+<th style="text-align:left;">
+Description
+</th>
+<th style="text-align:left;">
+Symbol
+</th>
+<th style="text-align:left;">
+Guideline
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Complexity
+</td>
+<td style="text-align:left;width: 3cm; ">
+Half of ceiling degrees of freedom.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(cp\)</span>
+</td>
+<td style="text-align:left;width: 4cm; ">
+Balance.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Fit
+</td>
+<td style="text-align:left;width: 3cm; ">
+Alignment with boundary pattern (% effect size compared to CE-FDH effect size).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(ft\)</span>
+</td>
+<td style="text-align:left;width: 4cm; ">
+High (e.g., <span class="math inline">\(ft\)</span> ≥ 80%).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Ceiling accuracy
+</td>
+<td style="text-align:left;width: 3cm; ">
+Percentage of points in the feasible area.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(ca\)</span>
+</td>
+<td style="text-align:left;width: 4cm; ">
+High (e.g., <span class="math inline">\(ca\)</span> ≥ 95%).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Noise
+</td>
+<td style="text-align:left;width: 3cm; ">
+Percentage of points in the ceiling zone near the ceiling (medP-zone).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(ns\)</span>
+</td>
+<td style="text-align:left;width: 4cm; ">
+Low (e.g., <span class="math inline">\(ns\)</span> ≤ 5%; 0.9 iso-purity).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Exceptions
+</td>
+<td style="text-align:left;width: 3cm; ">
+Number of points in the ceiling zone far from the ceiling (lowP-zone).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(ex\)</span>
+</td>
+<td style="text-align:left;width: 4cm; ">
+Very low (e.g., <span class="math inline">\(ex\)</span> ~0).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Support
+</td>
+<td style="text-align:left;width: 3cm; ">
+Percentage of points in the feasible area on or near the ceiling (medS-zone).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(su\)</span>
+</td>
+<td style="text-align:left;width: 4cm; ">
+High (e.g., <span class="math inline">\(su\)</span> ≥ 5%; 0.8 iso-solidity).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Spread
+</td>
+<td style="text-align:left;width: 3cm; ">
+Evenness of <span class="math inline">\(x\)</span>-positions of points on or near the ceiling (medS-zone).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(sp\)</span>
+</td>
+<td style="text-align:left;width: 4cm; ">
+High (e.g., <span class="math inline">\(sp\)</span> ≥ 0.5).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Sharpness
+</td>
+<td style="text-align:left;width: 3cm; ">
+Relative density of points in medium-purity (medP) and medium-solidity (medS) zones.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(sh\)</span>
+</td>
+<td style="text-align:left;width: 4cm; ">
+High (e.g., <span class="math inline">\(sh\)</span> &gt; 0.8).
+</td>
+</tr>
+</tbody>
+</table>
 <p><br />
 </p>
 <!-- The ceiling line is assumed to be a *sharp* border between ceiling zone (white) and feasible area (gray). When imperfect necessity exists (see Sections \@ref(inefficiency), \@ref(ceilingaccuracy), \@ref(veracity), and \@ref(solidity)), there may be some points in the ceiling zone due to some noise or as exceptions according to the typicality perspective of necessity described in Section \@ref(typicalitynecessity).  -->
