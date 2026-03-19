@@ -1,0 +1,9 @@
+﻿Metric,Description,Symbol,Guideline
+Complexity,Half of ceiling degrees of freedom.,$cp$,Balance.
+Fit,Alignment with boundary pattern (% effect size compared to CE-FDH effect size).,$ft$,"High (e.g., $ft$ ≥ 80%)."
+Ceiling accuracy,Percentage of points in the feasible area.,$ca$,"High (e.g., $ca$ ≥ 95%)."
+Noise,Percentage of points in the ceiling zone near the ceiling (medP-zone). ,$ns$,"Low (e.g., $ns$ ≤ 5%; 0.9 iso-purity)."
+Exceptions,Number of points in the ceiling zone far from the ceiling (lowP-zone). ,$ex$,"Very low (e.g., $ex$ ~0)."
+Support,Percentage of points in the feasible area on or near the ceiling (medS-zone).,$su$,"High (e.g., $su$ ≥ 5%; 0.8 iso-solidity). "
+Spread,Evenness of $x$-positions of points on or near the ceiling (medS-zone).,$sp$,"High (e.g., $sp$ ≥ 0.5)."
+Sharpness,Relative density of points in medium-purity (medP) and medium-solidity (medS) zones.,$sh$,"High (e.g., $sh$ > 0.8)."
