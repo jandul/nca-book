@@ -11,7 +11,7 @@ This book provides a comprehensive and advanced introduction to NCA, covering it
 
 ---
 
-## 📌 Key Features
+## Key Features
 
 - Introduces Necessary Condition Analysis (NCA) as a new data analysis method  
 - Explains the logic of “necessary but not sufficient” causality  
@@ -21,7 +21,7 @@ This book provides a comprehensive and advanced introduction to NCA, covering it
 
 ---
 
-## 🎯 Why This Book?
+## Why This Book?
 
 NCA is not a replacement for existing methods, but a complementary approach that adds a missing causal lens: necessity.
 
@@ -38,7 +38,7 @@ This allows researchers and practitioners to:
 
 ---
 
-## 👤 Who This Book Is For
+## Who This Book Is For
 
 - PhD students and academic researchers  
 - Data analysts and methodologists  
@@ -50,7 +50,7 @@ No prior knowledge of NCA is required, but familiarity with basic research metho
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
 ### Part I: Principles of NCA
 
@@ -114,14 +114,14 @@ Necessary Condition Analysis, NCA, data analysis, causal analysis, research meth
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, feedback, and suggestions are welcome.  
 Feel free to open an issue or submit a pull request.
 
 ---
 
-## 📄 License
+## License
 
 © 2026 Jan Dul. All rights reserved.
 
