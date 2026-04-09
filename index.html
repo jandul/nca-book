@@ -171,7 +171,22 @@ div.csl-indent {
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path=""><a href="#statistics"><i class="fa fa-check"></i><b>5</b> Statistics</a></li>
-<li class="chapter" data-level="6" data-path=""><a href="#sensitivityspecificity"><i class="fa fa-check"></i><b>6</b> Credibility</a></li>
+<li class="chapter" data-level="6" data-path=""><a href="#sensitivityspecificity"><i class="fa fa-check"></i><b>6</b> Credibility</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path=""><a href="#summarysensitivityspecificity"><i class="fa fa-check"></i><b>6.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="6.2" data-path=""><a href="#corecriteria"><i class="fa fa-check"></i><b>6.2</b> Core criteria for necessity</a></li>
+<li class="chapter" data-level="6.3" data-path=""><a href="#statisticalcredibility"><i class="fa fa-check"></i><b>6.3</b> Statistical credibility</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path=""><a href="#sensitivity"><i class="fa fa-check"></i><b>6.3.1</b> True Positive Rate (TPR, sensitivity)</a></li>
+<li class="chapter" data-level="6.3.2" data-path=""><a href="#specificity"><i class="fa fa-check"></i><b>6.3.2</b> True Negative Rate (TNR, specificity)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path=""><a href="#empiricalcredibility"><i class="fa fa-check"></i><b>6.4</b> Empirical credibility</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path=""><a href="#robustness"><i class="fa fa-check"></i><b>6.4.1</b> Robustness</a></li>
+<li class="chapter" data-level="6.4.2" data-path=""><a href="#modelfit1"><i class="fa fa-check"></i><b>6.4.2</b> Model fit</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path=""><a href="#credibilitysummary"><i class="fa fa-check"></i><b>6.5</b> Recommendations for evaluating credibility</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path=""><a href="#part-ii.-application"><i class="fa fa-check"></i>Part II. Application</a></li>
 <li class="chapter" data-level="7" data-path=""><a href="#hypothesisformulation"><i class="fa fa-check"></i><b>7</b> Hypothesis</a>
 <ul>
@@ -237,7 +252,11 @@ div.csl-indent {
 <li class="chapter" data-level="B" data-path=""><a href="#appendixb"><i class="fa fa-check"></i><b>B</b> Software</a></li>
 <li class="chapter" data-level="C" data-path=""><a href="#appendixa"><i class="fa fa-check"></i><b>C</b> Publications</a></li>
 <li class="chapter" data-level="D" data-path=""><a href="#appendixd"><i class="fa fa-check"></i><b>D</b> Affine transformations</a></li>
-<li class="chapter" data-level="E" data-path=""><a href="#appendixtprtnr"><i class="fa fa-check"></i><b>E</b> Simulations for TPR and TNR</a></li>
+<li class="chapter" data-level="E" data-path=""><a href="#appendixtprtnr"><i class="fa fa-check"></i><b>E</b> Simulations for TPR and TNR</a>
+<ul>
+<li class="chapter" data-level="E.1" data-path=""><a href="#true-positive-rate-tpr"><i class="fa fa-check"></i><b>E.1</b> True Positive Rate (TPR)</a></li>
+<li class="chapter" data-level="E.2" data-path=""><a href="#true-negative-rate-tnr"><i class="fa fa-check"></i><b>E.2</b> True Negative Rate (TNR)</a></li>
+</ul></li>
 <li class="chapter" data-level="F" data-path=""><a href="#appendixaa"><i class="fa fa-check"></i><b>F</b> Necessity and the traditional experiment</a></li>
 <li class="chapter" data-level="G" data-path=""><a href="#appendixc"><i class="fa fa-check"></i><b>G</b> Correlation by necessity</a></li>
 <li class="chapter" data-level="H" data-path=""><a href="#appendixe"><i class="fa fa-check"></i><b>H</b> Demonstration NCA with PLS-SEM</a></li>
@@ -285,7 +304,7 @@ div.csl-indent {
 <!-- </div> -->
 <div style="text-align: left; margin-top: 0; margin-bottom: 3em;">
 <p>© Jan Dul<br>
-Version 1.0.0. First pubished March 10, 2026. Last update: April 03, 2026<br></p>
+Version 1.0.0. First pubished March 10, 2026. Last update: April 09, 2026<br></p>
 <p>Refer to the book as: Dul, J. (2026). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Chapman &amp; Hall/CRC Press.</p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
@@ -2971,19 +2990,1287 @@ Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <s
 </div>
 <div id="sensitivityspecificity" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Credibility<a href="#sensitivityspecificity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div style="text-align: left; font-style: italic; margin: 2em 0;">
-<p>This chapter will be made available soon.</p>
+<div id="summarysensitivityspecificity" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Summary of this chapter<a href="#summarysensitivityspecificity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This chapter evaluates the credibility of NCA to identify necessity from data. In the context of NCA, credibility refers to the trustworthiness of conclusions about necessity from data<a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a>. The chapter starts by discussing the core criteria to draw conclusions about necessity: there must be a theoretically justified necessity hypothesis, the effect size must be practically relevant (high <span class="math inline">\(d\)</span>-value), and the observed empty space must be unlikely to be compatible with no relationship (low <span class="math inline">\(p\)</span>-value) (Section <a href="#corecriteria">6.2</a>). A positive conclusion that necessity is supported requires that all three of these criteria are met. A negative conclusion that necessity does not exist is drawn if any of the three is not satisfied. Next, the chapter evaluates the statistical credibility of NCA using Monte Carlo simulations to analyze how well NCA detects necessity when it is present in the population (True Positive Rate-TPR, sensitivity) and how well NCA avoids detecting necessity when it is absent in the population (True Negative Rate-TNR, specificity) (Section <a href="#statisticalcredibility">6.3</a>). Subsequently, the empirical credibility of a specific NCA study is evaluated focusing on robustness checks (the extent to which the findings are not dependent on the analyst’s choices) and model fit metrics (the extent to which the necessity model matches the data) (Section <a href="#empiricalcredibility">6.4</a>). Finally, recommendations are given on how to evaluate the credibility of a specific study (Section <a href="#credibilitysummary">6.5</a>).</p>
 </div>
-<p><!-- 6.1 Summary of this chapter {#summarysensitivityspecificity} -->
-<!-- 6.2 Core criteria for necessity {#corecriteria} -->
-<!-- 6.3 Statistical credibility {#statisticalcredibility} -->
-<!--   6.3.1 True Positive Rate (TPR; sensitivity) {#sensitivity} -->
-<!--   6.3.2 True Negative Rate (TNR, specificity) {#specificity} -->
-<!-- 6.4 Empirical credibility {#empiricalcredibility} -->
-<!--   6.4.1 Robustness {#robustness} -->
-<!--   6.4.2 Model fit {#modelfit1} -->
-<!-- 6.5 Recommendations for evaluating credibility {#credibilitysummary} --></p>
+<div id="corecriteria" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Core criteria for necessity<a href="#corecriteria" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<!-- The goal of NCA is to identify necessity in a dataset. In a quantitative NCA study, a sample is drawn from a population and the goal is to draw a conclusion about necessity in the population by analyzing the sample. Two credibility criteria apply: how well can NCA identify necessity if it exists in the population (True Positive Rate—TPR or sensitivity), and how well will NCA not identify necessity if it does not exist in the population (True Negative Rate—TNR or specificity)? NCA draws a positive conclusion of having identified a necessary condition in the population if three requirements are jointly satisfied: there is theoretical support for necessity, there is a reasonably large effect size (e.g., $d \geq 0.10$), and there is a reasonably small $p$-value (e.g., $p < 0.05$). NCA draws a negative conclusion of having identified a necessary condition in the population if one or more of these three requirements are not met. The requirement for theoretical support directs the analysis to the corner in the  plot where necessity is expected, the requirement for a minimum necessity effect size (relative size of the empty corner of interest) ensures practical significance of necessity, and the requirement for a maximum $p$-value ensures statistical significance of the finding that the empty space in the corner of interest is unlikely the result of randomness. xxxx -->
+<p>NCA draws a positive conclusion about necessity if three requirements are jointly satisfied: there is theoretical support for necessity (a formal necessity hypothesis), there is a reasonably large effect size (e.g., <span class="math inline">\(d \geq 0.10\)</span>), and there is a reasonably small <span class="math inline">\(p\)</span>-value (e.g., <span class="math inline">\(p &lt; 0.05\)</span>). NCA draws a negative conclusion about necessity if one or more of these requirements are not met.</p>
+<p>To meet the requirement of <em>theoretical support</em>, the analyst formulates and theoretically justifies that <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are causally related by necessity as outlined in Chapter <a href="#hypothesisformulation">7</a>. One implication is that the analyst expects emptiness of a specific corner in the <span class="math inline">\(XY\)</span>-plot. For example, if it is expected that a high level of <span class="math inline">\(X\)</span> is necessary for a high level of <span class="math inline">\(Y\)</span>, no high values of <span class="math inline">\(Y\)</span> are expected when <span class="math inline">\(X\)</span> is low. Therefore, the upper-left corner of the <span class="math inline">\(XY\)</span>-plot is expected to be empty. If no theoretical support for necessity is provided, NCA draws a negative conclusion about necessity, even if effect size and <span class="math inline">\(p\)</span>-value satisfy the criteria.</p>
+<!-- NCA tests the emptiness of this corner. In theory/hypothesis testing studies the theoretical support is formulated before NCA is applied, and in theory/hypothesis building or exploratory studies the support is formulated after NCA is applied. If in either study the requirement for theoretical support (explaining why a specific corner is expected to be empty) is not met, NCA draws a negative conclusion about having identified a necessary condition in the population, independent of the effect size and the $p$-value. In other words, NCA is not intended for data analysis without theorizing before or after the data analysis: a significant empty space is not enough to conclude about necessity.  -->
+<p>To meet the requirement of a <em>minimum effect size</em>, NCA estimates the size of the empty space in the expected empty corner of the sample’s <span class="math inline">\(XY\)</span>-plot (<span class="math inline">\(d\)</span>-value) and judges whether this size is relevant by comparing it with the selected threshold <span class="math inline">\(d\)</span>-value (e.g., <span class="math inline">\(d \geq 0.10\)</span>). If this requirement for a relevant <span class="math inline">\(d\)</span>-value is not met, NCA draws a negative conclusion about necessity even if there is theoretical support and the <span class="math inline">\(p\)</span>-value is below the threshold <span class="math inline">\(p\)</span>-value.</p>
+<p>To meet the requirement of a <em>maximum <span class="math inline">\(p\)</span>-value</em>, NCA’s statistical test is conducted to estimate the <span class="math inline">\(p\)</span>-value of the estimated necessity effect size, and a comparison is made with the selected threshold <span class="math inline">\(p\)</span>-value (e.g., <span class="math inline">\(\alpha = 0.05\)</span>). One unique feature of this test is that it uses the size of the expected empty space as the test statistic, thus testing the randomness of this specific emptiness when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are unrelated, rather than being a <em>general</em> randomness test (Section <a href="#permutationtest"><strong>??</strong></a>). If the requirement for a small <span class="math inline">\(p\)</span>-value (e.g., <span class="math inline">\(p &lt; 0.05\)</span>) is not met, NCA draws a negative conclusion about necessity.<a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a></p>
+<p>Only if all requirements are met, NCA draws a positive conclusion about necessity in the population (within the common limitations of a study design, and acknowledging the need for replications). If one of them is not met, NCA draws a negative conclusion about necessity in the population. This set of requirements for drawing a conclusion about necessity in the population shows that NCA is more than just a statistical model and that evaluating necessity with just the <span class="math inline">\(p\)</span>-values is not enough. NCA’s statistical test and <span class="math inline">\(p\)</span>-value are only one part of the process of making a conclusion about necessity. This fits the commonly accepted view that conclusions about empirically observed effects should not be solely based on the <span class="math inline">\(p\)</span>-value, but also on effect size and theoretical argumentation <span class="citation">(see for instance, <a href="#ref-cohen1994earth">Cohen, 1994</a>; <a href="#ref-cumming2013understanding">Cumming, 2013</a>; <a href="#ref-greenland1986identifiability">Greenland &amp; Robins, 1986</a>; <a href="#ref-rothman2005causation">Rothman &amp; Greenland, 2005</a>; <a href="#ref-wasserstein2016asa">Wasserstein &amp; Lazar, 2016</a>)</span>. Although isolated statistical null hypothesis tests are usually evaluated with concepts like type I error, type II error and power, these concepts are not enough for evaluating the credibility of the NCA approach as a whole, where other non-statistical criteria are also relevant (theoretical support, effect size).</p>
+</div>
+<div id="statisticalcredibility" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Statistical credibility<a href="#statisticalcredibility" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To evaluate the credibility of a binary classification like NCA’s positive or negative conclusion about necessity in the population, the True Positive Rate (TPR or sensitivity) and True Negative Rate (TNR or specificity) can be used. Applied to NCA, TPR is the ability of the approach to correctly identify that necessity exists in a population, and TNR is the ability of the approach to correctly identify that necessity is absent in a population. ‘Rate’ refers to the proportion of randomly drawn samples from that population that were correctly evaluated regarding the presence or absence of necessity.</p>
+<p>For testing the credibility of NCA with these evaluation criteria, a Monte Carlo simulation is performed. The simulation evaluates TPR and TNR based on the analysis of samples from two populations: one with the necessary condition (for evaluating TPR), and one without it (for evaluating TNR), and using the three criteria to identify necessity or not. The simulation assumes that the requirement of ‘theoretical support’ is satisfied. This implies that it is clear which corner of the sample <span class="math inline">\(XY\)</span>-plot is the expected empty corner and must be analyzed. Here the theoretical expectation is that a high value of <span class="math inline">\(X\)</span> is necessary for a high value of <span class="math inline">\(Y\)</span>, resulting in the upper-left corner as the expected empty corner (corner 1; Section <a href="#expectedemptycorner">3.6</a>). As a reminder, the numbering of the corners is shown in Figure <a href="#fig:cornernumbers">6.1</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:cornernumbers"></span>
+<img src="unitbox_with_corners.png" alt="Numbering of corners in an $XY$-plot." width="90%" />
+<p class="caption">
+Figure 6.1: Numbering of corners in an <span class="math inline">\(XY\)</span>-plot.
+</p>
+</div>
+<p><br></p>
+<p>For testing the TPR, the simulation must ensure that necessity is present in the upper-left corner of the population <span class="math inline">\(XY\)</span>-plot, so that this corner is empty. Since for testing TPR all samples are drawn from a population where necessity is always present (rather than being present with a certain probability), the False Negative Rate (FNR) equals 1 - TPR. Similarly, for testing TNR, the simulation must ensure that necessity is absent in the upper-left corner in the population <span class="math inline">\(XY\)</span>-plot, thus that this corner is not empty. Since for testing TNR all samples are drawn from a population where necessity is not present, the False Positive Rate (FPR) equals 1 - TNR. Together with the True Positive Rate (TPR), these two measures reflect the model’s ability to correctly classify both presence and absence of necessity.</p>
+<p>For both tests (TPR and TNR) four scenarios are simulated. In scenario A, <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are only related by necessity in the expected empty corner (for testing TPR), or are not related by necessity in the expected empty corner (for testing TNR). In this scenario no other relationships exist between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. In the other scenarios (scenarios B, C, and D) it is assumed that other relationships exist as well. Although an infinite number of types of relationships (bivariate distributions) could exist, here the focus is on other necessity relationships than the one in the upper-left corner. The other relationships produce emptiness in other corners than the corner of interest. However, none of the other relationships are hypothesized and are not tested. The only goal of additional empty corners in the simulation is to challenge NCA’s credibility regarding necessity related to the hypothesized empty corner, when other relationships are also present. The four simulation scenarios about necessity and other relationships in the population are therefore:</p>
+<p>A. Necessity (TPR) or non-necessity (TNR) in corner 1. No other relationships.</p>
+<p>B. Necessity (TPR) or non-necessity (TNR) in corner 1. Other relationship in corner 2.</p>
+<p>C. Necessity (TPR) or non-necessity (TNR) in corner 1. Other relationship in corner 3.</p>
+<p>D. Necessity (TPR) or non-necessity (TNR) in corner 1. Other relationship in corner 4.</p>
+<p>In all scenarios <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are related (TPR) or unrelated (TNR) by necessity in the upper-left corner. In scenario A there is no other relationship. In the other scenarios <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are (also) otherwise related because one of the other corners than the expected empty corner of interest is empty<a href="#fn53" class="footnote-ref" id="fnref53"><sup>53</sup></a>.</p>
+<p>The technical details of the Monte Carlo simulation are as follows. Since NCA requires bounded variables, the bounding box (<a href="#formalboundingbox">4.3.1</a>) in the population where cases could exist is defined by the unit box in which <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>-values can range from 0 to 1 (scope = 1). The true feasible area of the population (within the bounding box) is the entire unit box when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are unrelated and is a part of the unit box when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> have the necessity relationship. The empty corner is assumed to be a triangle consisting of the area between a linear ceiling line (corners 1 and 2) or a linear floor line (corners 3 and 4) and the borders of the unit box. The slopes of the ceiling and floor lines are 1 for corners 1 and 4 and -1 for corners 2 and 3. The sizes of the empty corner range from 0 to a maximum of 0.50. The combination of slope and empty area determines the intercepts of the lines as follows:</p>
+<p>corner 1: <span class="math inline">\(a_1 = 1 - \sqrt{2e_1 b_1}\)</span>.</p>
+<p>corner 2: <span class="math inline">\(a_2 = 1 + |b_2| - \sqrt{2e_2 |b_2|}\)</span>.</p>
+<p>corner 3: <span class="math inline">\(a_3 = \sqrt{2e_3 |b_3|}\)</span>.</p>
+<p>corner 4: <span class="math inline">\(a_4 = 0 - (b_4 - \sqrt{2e_4 b_4})\)</span>.</p>
+<p>where <span class="math inline">\(a\)</span> is the intercept and <span class="math inline">\(b\)</span> is the slope of the line, and <span class="math inline">\(e\)</span> is the size of the empty space. The subscripts indicate the corresponding corner. For the expected empty corner, the size of the empty space equals the necessity effect size (<span class="math inline">\(d\)</span>) since the scope equals 1. When two opposite corners are empty, the two lines are parallel and when two adjacent corners are empty, the two lines intersect. In the latter situation it is possible that for larger necessity effect sizes and empty space sizes the two lines intersect within the bounding box (Figure <a href="#fig:intersection">6.2</a>). This reduces the intended necessity effect size, empty space size and scope. In the simulation this situation is avoided to keep the results comparable. Consequently, higher sizes of adjacent empty corners are not evaluated.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:intersection"></span>
+<img src="intersection_plot.png" alt="Intersection of two adjacent empty corners. Left: The lines intersect outside the bounding box. Necessity effect size of corner 1 is 0.1. Size of empty corner 2 is 0.1. Scope = 1. Right: The lines intersect inside the bounding box. Intended necessity effect size is 0.1. Reduced necessity effect size is &lt; 0.1. Intended size of empty corner 2 is 0.2. Reduced size of empty corner 2 is &lt; 0.2. Reduced scope &lt; 1." width="90%" />
+<p class="caption">
+Figure 6.2: Intersection of two adjacent empty corners. Left: The lines intersect outside the bounding box. Necessity effect size of corner 1 is 0.1. Size of empty corner 2 is 0.1. Scope = 1. Right: The lines intersect inside the bounding box. Intended necessity effect size is 0.1. Reduced necessity effect size is &lt; 0.1. Intended size of empty corner 2 is 0.2. Reduced size of empty corner 2 is &lt; 0.2. Reduced scope &lt; 1.
+</p>
+</div>
+<p>It is assumed that within the non-empty area of the bounding box the cases have a uniform distribution (Section <a href="#statisticalmodeling"><strong>??</strong></a>). The <code>nca_random</code> function of the NCA software in <code>R</code> is used to create such a distribution in the presence of a ceiling line. From this defined population, 1000 random samples are drawn. Subsequently, for each sample the size of the expected empty corner (necessity effect size) is estimated with the CE-FDH ceiling line (with empirical scope). The <span class="math inline">\(p\)</span>-value for each sample is estimated using 1000 random samples from the permutation distribution. The threshold <span class="math inline">\(p\)</span>-value is set at 0.05. This means that necessity is considered not supported (negative conclusion) if the <span class="math inline">\(p\)</span>-value is 0.05 or larger. If the <span class="math inline">\(p\)</span>-value is below 0.05, necessity is considered supported (positive conclusion) only if the other two criteria (theoretical support and effect size) are also met. The theoretical support is assumed to be met. For the effect size the threshold <span class="math inline">\(d\)</span>-value is 0.10. If applicable and possible, the tested sizes of the other empty corner are 0.05, 0.10, 0.20, 0.30, and 0.50.</p>
+<div id="sensitivity" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> True Positive Rate (TPR, sensitivity)<a href="#sensitivity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Figure <a href="#fig:tpr01">6.3</a> shows the results of the evaluation of TPR for a true necessity effect size of <span class="math inline">\(d\)</span> = 0.1 in corner 1, the expected empty corner (called <em>necessity corner</em> in the figure), and with different sizes of other empty corner 2 (Figure <a href="#fig:tpr01">6.3</a>-top-right), other empty corner 3 (Figure <a href="#fig:tpr01">6.3</a>-bottom-left) and other empty corner 4 (Figure <a href="#fig:tpr01">6.3</a>-bottom-right).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr01"></span>
+<img src="tpr01.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.1. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<p class="caption">
+Figure 6.3: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.1. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
+</p>
+</div>
+<p>In all three graphs,<a href="#fn54" class="footnote-ref" id="fnref54"><sup>54</sup></a> the necessity effect size (the size of the expected empty corner 1) is 0.10, and the size of another empty corner ranges from 0 to 0.50, where possible. A TPR value of 0.80 is added as a benchmark, meaning that for 80 percent of the samples a correct decision is made, namely concluding that necessity is present in the population. This selected value is inspired by the commonly used target of 0.80 for statistical power. NCA draws a <em>positive</em> conclusion about necessity if <span class="math inline">\(p &lt; 0.05\)</span> <em>and</em> <span class="math inline">\(d\geq 0.1\)</span> (assuming theoretical support).</p>
+<p>Scenario A applies when the other corners are <em>not</em> empty. The corresponding TPR curve is the same in each TPR graph (empty corner size = 0). This curve is the upper curve in the Top-Right and Bottom-Left graphs, and the lower curve in the Bottom-Right graph. In scenario A, TPR increases with sample size and the benchmark value of 0.80 (80% correct decisions when necessity is present in the population) is reached for a sample size of about 60 (note that horizontal axis is piecewise-linear: only linear between two adjacent ticks but not across ticks).</p>
+<p>Table <a href="#tab:tabTPRA-HTML">6.1</a> shows for scenario A the fraction of samples where <span class="math inline">\(p &lt; 0.05\)</span> (<span class="math inline">\(p\)</span>-based TPR) and the fraction of samples where <span class="math inline">\(d \geq 0.1\)</span> (<span class="math inline">\(d\)</span>-based TPR). Considering both criteria, TPR is the <em>minimum</em> of <span class="math inline">\(p\)</span>-based TPR and <span class="math inline">\(d\)</span>-based TPR. It turns out that for scenario A, the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is critical for the TPR conclusion. Consequently, TPR corresponds to the power of NCA’s statistical test in this simulation scenario.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTPRA-HTML">Table 6.1: </span>Scenario A. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. No other corner is empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TPR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.077
+</td>
+<td style="text-align:right;">
+0.801
+</td>
+<td style="text-align:right;">
+0.077
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.130
+</td>
+<td style="text-align:right;">
+0.890
+</td>
+<td style="text-align:right;">
+0.130
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.271
+</td>
+<td style="text-align:right;">
+0.971
+</td>
+<td style="text-align:right;">
+0.271
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.743
+</td>
+<td style="text-align:right;">
+0.995
+</td>
+<td style="text-align:right;">
+0.743
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.991
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+<td style="text-align:right;">
+0.991
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<!-- For all sample sizes the $p$-based TPR is less than or equal to the $d$-based TPR in Scenario A, and therefore the $p$-value determines the overall TPR. -->
+<!-- Table 1. Comparison of the TPR based on the $p$-value (pTPR) and $d$-value (dTPR) for scenario A for different sample sizes (n) with necessity effect size = 0.1 in corner 1, and other corner size = 0  see Figure \@ref(fig:tpr01)) .  -->
+<!-- n  pTPR    dTPR -->
+<!-- 5  0.077   0.801 -->
+<!-- 10 0.130   0.890 -->
+<!-- 20 0.271   0.971 -->
+<!-- 50 0.743   0.995 -->
+<!-- 100    0.991   0.999 -->
+<!-- 200    1.000   1.000 -->
+<!-- 500    1.000   1.000 -->
+<!-- 1000   1.000   1.000 -->
+<p>Scenario B applies when corner 2 (upper-right corner) is also empty (empty corner size = 0.05 or 0.10, see Figure <a href="#fig:tpr01">6.3</a>-top-right). It turns out that the TPR curve shifts to the right with increasing emptiness of corner 2, meaning that for a given sample size the TPR credibility decreases when the emptiness of corner 2 increases. Consequently, higher sample sizes are required to be able to identify necessity in corner 1 if this exists in the population.
+<!-- Table \@ref(tab:tabtpr01A). Comparison of the TPR based on the $p$-value (pTPR) and $d$-value (dTPR) for scenario B for different sample sizes (n) with necessity effect size = 0.1 in corner 1, and other corner size = 0.1 (see Figure \@ref(fig:tpr01)) .  -->
+When the emptiness of corner 2 increases, relatively fewer cases are available to statistically test the emptiness of corner 1. NCA’s statistical test uses a permutation procedure (Section <a href="#permutationtest"><strong>??</strong></a>) that creates new cases by allocating <span class="math inline">\(Y\)</span>-values of observed cases randomly to <span class="math inline">\(X\)</span>-values of other observed cases, and random samples are drawn from the obtained permutation distribution (= null distribution). High <span class="math inline">\(Y\)</span>-values of cases allocated to low <span class="math inline">\(X\)</span>-values of other cases can challenge the emptiness of corner 1. If relatively fewer high <span class="math inline">\(Y\)</span>-values are available, the sample size must be larger to have enough high <span class="math inline">\(Y\)</span>-values for the test. For achieving a TPR of 0.80, the required sample size is about 75 if the size of the empty corner 2 is 0.05 and about 140 if this size is 0.10.</p>
+<p>Table <a href="#tab:tabTPRB-HTML">6.2</a> shows that also in scenario B the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) and not the <span class="math inline">\(d\)</span>-value criterion (<span class="math inline">\(d \geq 0.10\)</span>) is critical for the TPR conclusion (with one exception for n = 500 where the <span class="math inline">\(d\)</span>-based TPR is smaller than the <span class="math inline">\(p\)</span>-based TPR).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTPRB-HTML">Table 6.2: </span>Scenario B. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 2 is also empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TPR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.030
+</td>
+<td style="text-align:right;">
+0.715
+</td>
+<td style="text-align:right;">
+0.030
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.036
+</td>
+<td style="text-align:right;">
+0.815
+</td>
+<td style="text-align:right;">
+0.036
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.047
+</td>
+<td style="text-align:right;">
+0.895
+</td>
+<td style="text-align:right;">
+0.047
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.228
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+<td style="text-align:right;">
+0.228
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.680
+</td>
+<td style="text-align:right;">
+0.980
+</td>
+<td style="text-align:right;">
+0.680
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.985
+</td>
+<td style="text-align:right;">
+0.993
+</td>
+<td style="text-align:right;">
+0.985
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Scenario C (Figure <a href="#fig:tpr01">6.3</a>-bottom-left) applies when corner 3 (lower-left corner) is also empty (empty corner size = 0.05 or 0.10). The graph is very similar to the one of scenario B, with some minor differences at lower values of sample size. Also in this scenario higher sample sizes are required to be able to identify necessity in corner 1 when corner 3 is more empty. For achieving a TPR of 0.80, the required sample size is also about 75 if the size of the empty corner 3 is 0.05 and about 140 if this size is 0.1.</p>
+<p>Table <a href="#tab:tabTPRC-HTML">6.3</a> shows that also in scenario C the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is dominant.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTPRC-HTML">Table 6.3: </span>Scenario C. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 3 is also empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TPR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.030
+</td>
+<td style="text-align:right;">
+0.725
+</td>
+<td style="text-align:right;">
+0.030
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.048
+</td>
+<td style="text-align:right;">
+0.815
+</td>
+<td style="text-align:right;">
+0.048
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.073
+</td>
+<td style="text-align:right;">
+0.889
+</td>
+<td style="text-align:right;">
+0.073
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.224
+</td>
+<td style="text-align:right;">
+0.946
+</td>
+<td style="text-align:right;">
+0.224
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.709
+</td>
+<td style="text-align:right;">
+0.978
+</td>
+<td style="text-align:right;">
+0.709
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>However, in scenario D the results are very different (Figure <a href="#fig:tpr01">6.3</a>-bottom-right). In this scenario, corner 4 (lower-right corner) is also empty (empty corner size ranges from 0.05 to 0.50). Now the TPR curve shifts to the <em>left</em> with increasing emptiness of corner 4, meaning that for a given sample size the TPR credibility of the NCA approach <em>increases</em>. This means that <em>smaller</em> sample sizes can be used to identify necessity in corner 1. When corner 4 is empty (and corners 2 and 3 are not empty) relatively more cases are available to test the emptiness of corner 1 such that the sample size can be smaller for the permutation test. For achieving a TPR of 0.80 the required sample size can be less than 50 when the corner size is 0.05 and even less than 10 when the corner 4 size is 0.5. However, the possibility of using relatively small sample sizes for identifying necessity has a price in terms of TNR (see below).</p>
+<p>Table <a href="#tab:tabTPRD-HTML">6.4</a> shows that also in scenario D the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is dominant.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTPRD-HTML">Table 6.4: </span>Scenario D. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 4 is also empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TPR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.109
+</td>
+<td style="text-align:right;">
+0.843
+</td>
+<td style="text-align:right;">
+0.109
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.224
+</td>
+<td style="text-align:right;">
+0.936
+</td>
+<td style="text-align:right;">
+0.224
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.488
+</td>
+<td style="text-align:right;">
+0.979
+</td>
+<td style="text-align:right;">
+0.488
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.921
+</td>
+<td style="text-align:right;">
+0.995
+</td>
+<td style="text-align:right;">
+0.921
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Additional TPR simulations with a different necessity effect size (0.20), and different ceiling slopes (0.6, 1.67) in the expected empty corner can be found in Appendix <a href="#appendixtprtnr">E</a>. These simulations show similar TPR patterns.</p>
+</div>
+<div id="specificity" class="section level3 hasAnchor" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> True Negative Rate (TNR, specificity)<a href="#specificity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+Figure <a href="#fig:tnruniform">6.4</a> shows the results of the evaluation of TNR.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnruniform"></span>
+<img src="tnruniform.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying non-necessity in the population. True necessity effect size in corner 1 = 0 for different sizes of other empty corners.  Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<p class="caption">
+Figure 6.4: True Negative Rate (TNR, specificity) of the NCA approach for identifying non-necessity in the population. True necessity effect size in corner 1 = 0 for different sizes of other empty corners. Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
+</p>
+</div>
+<!-- Figure 7. True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0 for different other empty corner sizes.  Panel a: other empty corner = 2; Panel b: other empty corner = 3; Panel c: other empty corner = 4.  -->
+<p>In all three graphs (Top-Right, Bottom-Left, Bottom-Right) the expected empty corner is not empty (necessity effect size = 0), while the other corners are empty with sizes ranging from 0 to 0.50. A TNR value of 0.95 is added as a benchmark, meaning that the rate of correct decisions confirming the absence of necessity in the population is 0.95. This selected value is inspired by the commonly selected threshold <span class="math inline">\(p\)</span>-value of 0.05 for the false positive rate of a statistical test. NCA draws a <em>negative</em> conclusion about necessity if <span class="math inline">\(p \ge 0.05\)</span> <em>or</em> <span class="math inline">\(d &lt; 0.10\)</span>.</p>
+<p>In the TNR evaluation, scenario A applies when not only the expected corner is not empty (necessity effect size = 0) but also the other corners are not empty (empty corner size = 0), such that no relationship exists in the population. The corresponding TNR curves in Figure <a href="#fig:tnruniform">6.4</a> are the same, which are the lowest curves for the Top-Right and Bottom-Left graphs and the highest curve for the Bottom-Right graph. The curve shows that for all sample sizes the TNR is at least 0.95. Up to a sample size of 50, TNR is constant at 0.95 and when the sample size increases the TNR curve moves upward toward 1. The reason is that as long as the <span class="math inline">\(p\)</span>-value is critical, 1 - TNR = FNR corresponds to the <span class="math inline">\(p\)</span>-value of NCA’s statistical test: 5% of the samples drawn from a population where <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are unrelated (corresponding to scenario A in the TNR test) are false positives, and 95% are true negatives.</p>
+<p>Table <a href="#tab:tabTNRA-HTML">6.5</a> shows the fraction of samples where <span class="math inline">\(p \ge 0.05\)</span> (<span class="math inline">\(p\)</span>-based TNR), and Table <a href="#tab:tabTNRB-HTML">6.6</a> the fraction of samples where <span class="math inline">\(d &lt; 0.10\)</span> (<span class="math inline">\(d\)</span>-based TNR).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTNRA-HTML">Table 6.5: </span>Scenario A. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). No other corner is empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TNR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.962
+</td>
+<td style="text-align:right;">
+0.413
+</td>
+<td style="text-align:right;">
+0.962
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.945
+</td>
+<td style="text-align:right;">
+0.430
+</td>
+<td style="text-align:right;">
+0.945
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+<td style="text-align:right;">
+0.598
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+<td style="text-align:right;">
+0.877
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.953
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.942
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+0.952
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+0.950
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTNRB-HTML">Table 6.6: </span>Scenario B. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 2 is empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TNR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.980
+</td>
+<td style="text-align:right;">
+0.515
+</td>
+<td style="text-align:right;">
+0.980
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.986
+</td>
+<td style="text-align:right;">
+0.577
+</td>
+<td style="text-align:right;">
+0.986
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.991
+</td>
+<td style="text-align:right;">
+0.705
+</td>
+<td style="text-align:right;">
+0.991
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+<td style="text-align:right;">
+0.944
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:right;">
+0.998
+</td>
+<td style="text-align:right;">
+0.998
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Since for each sample NCA draws a <em>negative</em> conclusion about necessity if <span class="math inline">\(p \geq 0.05\)</span> <em>or</em> <span class="math inline">\(d \leq 0.10\)</span>, TNR is the <em>maximum</em> of <span class="math inline">\(p\)</span>-based TNR and <span class="math inline">\(d\)</span>-based TNR.</p>
+<p>Table <a href="#tab:tabTNRA-HTML">6.5</a> for scenario A indicates that up to sample size 50 the <span class="math inline">\(p\)</span>-value TNR dominates and when the sample size increases, the TNR is based on the <span class="math inline">\(d\)</span>-value. In other words, nearly all samples are correctly evaluated when necessity is absent in the population and other corners are not empty.</p>
+<p>Scenario B for TNR (Figure <a href="#fig:tnruniform">6.4</a>-top-right) applies when necessity is absent while corner 2 (upper-right corner) is empty (empty corner effect size = 0.05 – 0.50). It turns out that the TNR curves are above the 0.95 benchmark for all sample sizes. Nearly all samples are correctly evaluated when necessity is absent in the population and corner 2 is empty.</p>
+<p>Table <a href="#tab:tabTNRB-HTML">6.6</a> top-right shows that for smaller sample sizes the <span class="math inline">\(p\)</span>-value TNR is dominant, whereas for larger sample sizes the <span class="math inline">\(d\)</span>-value TNR dominates, although the differences are small.</p>
+<p>The situation for scenario C for TNR (Figure <a href="#fig:tnruniform">6.4</a>-bottom-left) when necessity is absent while corner 3 is empty (empty corner effect size = 0.05 - 0.50) is very similar to scenario B. In this scenario, nearly all samples are correctly evaluated when necessity is absent in the population and corner 3 is empty, and the <span class="math inline">\(p\)</span>-value is the primary limiting factor for TNR (Table <a href="#tab:tabTNRC-HTML">6.7</a>).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTNRC-HTML">Table 6.7: </span>Scenario C. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 3 is empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TNR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.983
+</td>
+<td style="text-align:right;">
+0.479
+</td>
+<td style="text-align:right;">
+0.983
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.981
+</td>
+<td style="text-align:right;">
+0.539
+</td>
+<td style="text-align:right;">
+0.981
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.989
+</td>
+<td style="text-align:right;">
+0.718
+</td>
+<td style="text-align:right;">
+0.989
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.992
+</td>
+<td style="text-align:right;">
+0.935
+</td>
+<td style="text-align:right;">
+0.992
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.993
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.998
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>In scenario D for TNR (Figure <a href="#fig:tnruniform">6.4</a>-bottom-right), necessity is absent while corner 4 is empty (empty corner effect size ranges from 0.05 to 0.50). The results are now very different. The TNR curves start below the 0.95 benchmark and with increasing sample size move first downward and then upward and end up above the 0.95 benchmark while moving toward 1. This means that only for a sample size of more than about 50, nearly all samples are correctly evaluated. The pattern of the TNR curve can be explained by the fact that first the <span class="math inline">\(p\)</span>-value is the limiting factor, and subsequently the <span class="math inline">\(d\)</span>-value (Table <a href="#tab:tabTNRD-HTML">6.8</a>).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTNRD-HTML">Table 6.8: </span>Scenario D. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 4 is empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TNR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.946
+</td>
+<td style="text-align:right;">
+0.371
+</td>
+<td style="text-align:right;">
+0.946
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.910
+</td>
+<td style="text-align:right;">
+0.408
+</td>
+<td style="text-align:right;">
+0.910
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.913
+</td>
+<td style="text-align:right;">
+0.596
+</td>
+<td style="text-align:right;">
+0.913
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.917
+</td>
+<td style="text-align:right;">
+0.890
+</td>
+<td style="text-align:right;">
+0.917
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.905
+</td>
+<td style="text-align:right;">
+0.992
+</td>
+<td style="text-align:right;">
+0.992
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.910
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+0.896
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+0.918
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Similar patterns of the TNR curves can be observed when the distribution in the feasible space is based on a normal rather than uniform distribution of the cases (Appendix <a href="#appendixtprtnr">E</a>).</p>
+<p>If the <span class="math inline">\(d\)</span>-value were not included as decision criterion for necessity, TNR would have been considerably lower for scenario D. This is shown in Figure <a href="#fig:tnruniformponly">6.5</a> where the TNR decision is only based on the <span class="math inline">\(p\)</span>-value. Figure <a href="#fig:tnruniformponly">6.5</a>-bottom-right shows that TNR decreases with increasing sample size and increasing size of empty corner 4.<a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnruniformponly"></span>
+<img src="tnruniform_ponly.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the $p$-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes. Top-Right: empty corner = 2. Bottom-Left: empty corner = 3. Bottom-Right: empty corner = 4." width="90%" />
+<p class="caption">
+Figure 6.5: True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the <span class="math inline">\(p\)</span>-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes. Top-Right: empty corner = 2. Bottom-Left: empty corner = 3. Bottom-Right: empty corner = 4.
+</p>
+</div>
+<!-- Figure 8. True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the $p$-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes.  Panel a: other empty corner = 2; Panel b: other empty corner = 3; Panel c: other empty corner = 4.  -->
+<!-- Figure 9. True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with the $p$ and $d$-value criterion, with normal distribution of cases in the feasible space. True necessity effect size in corner 1 = 0 for different other empty corner sizes.  Panel a: other empty corner = 2; Panel b: other empty corner = 3; Panel c: other empty corner = 4.  -->
+<p>Because NCA bases its judgement about necessity not only on the <span class="math inline">\(p\)</span>-value but also on the <span class="math inline">\(d\)</span>-value (and on the availability of theoretical support), the methodology has credibility regarding both TPR and TNR, and the analyst is reasonably protected against making both false positive and false negative conclusions.</p>
+</div>
+</div>
+<div id="empiricalcredibility" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Empirical credibility<a href="#empiricalcredibility" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The previous results show that it is possible to identify necessary conditions when they exist, and to correctly determine when they do not exist. Nevertheless, even when the criteria for necessity (theoretical support, large <span class="math inline">\(d\)</span>-value, low <span class="math inline">\(p\)</span>-value) are satisfied, the TPR and TNR results also show that there is still a possibility that necessary conditions are not identified when they exist, or that they are identified when they do not exist. This can also happen when limitations exist regarding the quality of model specification (Section <a href="#formalexpression">4.3</a>), study design, sampling, and measurement (Chapter <a href="#datacollection">8</a>), or data analysis (Chapter <a href="#dataanalysis">9</a>). To further evaluate the credibility of an NCA finding, several empirical credibility approaches may be considered.</p>
+<div id="robustness" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Robustness<a href="#robustness" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When conducting an empirical study, the analyst must make various theoretical and methodological choices to obtain results. Often, other plausible choices could also have been made. In a robustness check, the sensitivity of the results to other plausible choices is evaluated. The check focuses on the sensitivity of the main estimates and the analyst’s main conclusion.</p>
+<p>In NCA, the effect size and the <span class="math inline">\(p\)</span>-value are two main estimates for concluding whether a necessity relationship is credible. These estimates can be sensitive to several choices. Some choices are outside the realm of NCA, for example choices related to the data that are used as input to NCA (see Chapter <a href="#datacollection">8</a> about study design, sampling, measurement) or the threshold level of statistical significance. Other choices are NCA-specific, such as the choice of the ceiling line (Section <a href="#mathceiling">4.3.2</a>) and the bounding box (Section <a href="#formalexpression">4.3</a>), the threshold level of the necessity effect size (Section <a href="#effectsize">4.4.1</a>), and the handling of NCA-relevant outliers (Section <a href="#outliers"><strong>??</strong></a>). The credibility of support for necessity increases when the results are robust. Section (<a href="#robustnesschecks"><strong>??</strong></a>) provides further details of NCA’s robustness checks.</p>
+</div>
+<div id="modelfit1" class="section level3 hasAnchor" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Model fit<a href="#modelfit1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Section <a href="#modelfit">4.5</a> introduced eight model fit metrics: complexity, fit, ceiling accuracy, noise, exceptions, support, spread, and sharpness. The credibility of the evidence for necessity increases when the model better fits the data.</p>
+</div>
+</div>
+<div id="credibilitysummary" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Recommendations for evaluating credibility<a href="#credibilitysummary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The three core criteria for establishing necessity (theoretical support, practical relevance in terms of large effect size, and statistical relevance in terms of small <span class="math inline">\(p\)</span>-value), the robustness check requirement, and the eight model-fit metrics are summarized in Table <a href="#tab:credibilitytab"><strong>??</strong></a>. The table provides examples of numerical guidelines, but these should not be interpreted as strict decision rules. Ultimately, credibility is a matter of informed judgment and optimization by the analyst and other stakeholders after considering all credibility aspects. In an empirical study, it is rare for all credibility aspects to be fully satisfied.
+<!-- A *robustness check* (see Section \@ref(robustness)) can help evaluate the sensitivity of the conclusions for choices made by the analyst (e.g., regarding ceiling line, scope, threshold levels for effect size and $p$-value, including/exclusion of outliers). Several aspects of *model fit*, as discussed in Section \@ref(modelfit) could be considered as well. --></p>
+<!-- ## Conclusion -->
+<!-- A correct interpretation, application and simulation of the NCA approach for identifying necessity implies:  -->
+<!-- 1. using three criteria for testing necessity: theoretical support, effect size $d$, $p$-value (and not just the $p$-value);  -->
+<!-- 2. using NCA’s statistical as a test of the randomness of the necessity empty space, not a general randomness test;  -->
+<!-- 3. doing simulations with bounded variables, not with unbounded (for instance  normal distributed) variables. -->
+<!-- The Monte Carlo simulations conducted this way show that the True Positive Rate (TPR) and the True Negative Rate (TNR) are high, and consequently that the False Negative Rate (FNR)  and the False Positive Rate (FPR) are low.  Particularly for larger sample sizes, the TPR results show that NCA has high sensitivity (hit rate, probability of detection), and the TNR results show that NCA has high specificity (selectivity, correct rejection rate). The corresponding FNR shows that NCA has low miss rates, false dismissal,and the corresponding FPR shows that NCA has low false alarm, fall-out. This means that in the investigated scenarios NCA performs well regarding the desired qualities for identifying necessity, and gives confidence in applying the approach, which will be discussed in the next part of this book.  -->
+<p><br/></p>
+<p>In the following Part II of the book, the principles of NCA as discussed in Part I are applied to empirical studies.</p>
+<!-- ### Informedness: Definition and Explanation -->
+<!-- **Informedness** is a metric used in classification models to evaluate the **discriminative power** of a model. It measures how well the model distinguishes between the **positive** and **negative** classes. -->
+<!-- #### 1. Mathematical Formula for Informedness -->
+<!-- Informedness is based on the **true positive rate (TPR)** and **true negative rate (TNR)**: -->
+<!-- \[ -->
+<!-- \text{Informedness} = \text{TPR} + \text{TNR} - 1 -->
+<!-- \] -->
+<!-- where: -->
+<!-- - **True Positive Rate (TPR) / Sensitivity / Recall**: -->
+<!--   \[ -->
+<!--   \text{TPR} = \frac{\text{TP}}{\text{TP} + \text{FN}} -->
+<!--   \] -->
+<!-- - **True Negative Rate (TNR) / Specificity**: -->
+<!--   \[ -->
+<!--   \text{TNR} = \frac{\text{TN}}{\text{TN} + \text{FP}} -->
+<!--   \] -->
+<!-- Thus, **Informedness** can also be rewritten as: -->
+<!-- \[ -->
+<!-- \text{Informedness} = \left(\frac{\text{TP}}{\text{TP} + \text{FN}}\right) + \left(\frac{\text{TN}}{\text{TN} + \text{FP}}\right) - 1 -->
+<!-- \] -->
+<!-- #### 2. Interpretation -->
+<!-- - **Range:**   -->
+<!--   \[ -->
+<!--   -1 \leq \text{Informedness} \leq 1 -->
+<!--   \] -->
+<!-- - **Perfect Model:** \( \text{Informedness} = 1 \) (perfect classification, no errors). -->
+<!-- - **Random Guessing:** \( \text{Informedness} = 0 \) (model has no discrimination ability). -->
+<!-- - **Worst Model:** \( \text{Informedness} = -1 \) (model is always wrong). -->
+<!-- #### 3. Relationship to Other Metrics -->
+<!-- - **Informedness is also known as "Youden’s J statistic"** in medical testing. -->
+<!-- - Unlike **Accuracy**, Informedness considers both **false positives and false negatives**, making it useful for **imbalanced datasets**. -->
+<!-- - It is closely related to **Balanced Accuracy**, defined as: -->
+<!--   \[ -->
+<!--   \text{Balanced Accuracy} = \frac{1}{2} (\text{TPR} + \text{TNR}) -->
+<!--   \] -->
+<!--   which simplifies to: -->
+<!--   \[ -->
+<!--   \text{Balanced Accuracy} = \frac{\text{Informedness} + 1}{2} -->
+<!--   \] -->
+<!-- #### 4. Why Use Informedness? -->
+<!-- - **Handles class imbalance better than accuracy** (since it considers both sensitivity and specificity). -->
+<!-- - **Good for medical tests and fraud detection** where both false positives and false negatives matter. -->
+<!-- - **Useful when evaluating a binary classifier** across different decision thresholds. -->
+<!-- #### 5. Example Calculation -->
+<!-- | Class | Predicted Positive | Predicted Negative | Total | -->
+<!-- |-------|------------------|------------------|------| -->
+<!-- | **Actual Positive (P)** | TP = 80 | FN = 20 | 100 | -->
+<!-- | **Actual Negative (N)** | FP = 30 | TN = 70 | 100 | -->
+<!-- ##### **Step 1: Compute TPR and TNR** -->
+<!-- \[ -->
+<!-- \text{TPR} = \frac{80}{80 + 20} = 0.8 -->
+<!-- \] -->
+<!-- \[ -->
+<!-- \text{TNR} = \frac{70}{70 + 30} = 0.7 -->
+<!-- \] -->
+<!-- ##### **Step 2: Compute Informedness** -->
+<!-- \[ -->
+<!-- \text{Informedness} = 0.8 + 0.7 - 1 = 0.5 -->
+<!-- \] -->
+<!-- #### **Final Summary** -->
+<!-- - **Informedness measures how well a classifier differentiates between classes.** -->
+<!-- - **It considers both true positives and true negatives**, making it more reliable than accuracy in imbalanced datasets. -->
+<!-- - **Higher values indicate better discrimination**, while **zero** means the classifier is no better than random guessing. -->
 
+</div>
 </div>
 <div id="part-ii.-application" class="section level1 unnumbered hasAnchor">
 <h1>Part II. Application<a href="#part-ii.-application" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -3022,12 +4309,12 @@ Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <s
 <div id="hypothesistesting" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> Hypothesis formulation and testing<a href="#hypothesistesting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>After the theoretical or practical goal is set, and it is decided to apply NCA, often the question of interest is: “Is <span class="math inline">\(X\)</span> necessary for <span class="math inline">\(Y\)</span>”? or “Which factors are necessary for <span class="math inline">\(Y\)</span>?</p>
-<p>NCA advocates starting the study by providing a preliminary answer to the question before collecting empirical data. Such an answer can be based on existing sources of knowledge. NCA is an approach in which the hypothesis is first formulated and subsequently tested with empirical data. In this deductive approach, the hypothesis can have three states: ‘preliminary’, ‘formal’ and ‘tested’. A <em>preliminary necessity hypothesis</em> is a ‘best guess’ answer to the above questions based on existing sources of knowledge and, for example, abductive reasoning. A <em>formal necessity hypothesis</em> is a deepened preliminary hypothesis that is embedded in theory and that was challenged by thought experiments regarding testability, triviality, plausibility, and completeness. A <em>tested necessity hypothesis</em> is a formal hypothesis that was subjected to tests using empirical data, where the outcome of the test is that the hypothesis is rejected or not-rejected (supported) by the observed evidence. In this book, a hypothesis is considered supported or plausible when it is not rejected after being challenged empirically. Rejection may arise from the absence of a plausible causal explanation, a very small necessity effect size, or a large <span class="math inline">\(p\)</span>-value. However, support for, or plausibility of, a necessary condition does not automatically establish its truth. Greater confidence requires, for example, support from replication studies. Even then, alternative causal explanations for the observed empty corner are possible (Section <a href="#underdetermination">2.7</a>). Ultimately, any conclusion about a hypothesis involves human judgment, as discussed in Sections <a href="#underdetermination">2.7</a> and <a href="#credibilitysummary"><strong>??</strong></a>. Such a judgment may persist only briefly or endure for a long time until rejection.</p>
+<p>NCA advocates starting the study by providing a preliminary answer to the question before collecting empirical data. Such an answer can be based on existing sources of knowledge. NCA is an approach in which the hypothesis is first formulated and subsequently tested with empirical data. In this deductive approach, the hypothesis can have three states: ‘preliminary’, ‘formal’ and ‘tested’. A <em>preliminary necessity hypothesis</em> is a ‘best guess’ answer to the above questions based on existing sources of knowledge and, for example, abductive reasoning. A <em>formal necessity hypothesis</em> is a deepened preliminary hypothesis that is embedded in theory and that was challenged by thought experiments regarding testability, triviality, plausibility, and completeness. A <em>tested necessity hypothesis</em> is a formal hypothesis that was subjected to tests using empirical data, where the outcome of the test is that the hypothesis is rejected or not-rejected (supported) by the observed evidence. In this book, a hypothesis is considered supported or plausible when it is not rejected after being challenged empirically. Rejection may arise from the absence of a plausible causal explanation, a very small necessity effect size, or a large <span class="math inline">\(p\)</span>-value. However, support for, or plausibility of, a necessary condition does not automatically establish its truth. Greater confidence requires, for example, support from replication studies. Even then, alternative causal explanations for the observed empty corner are possible (Section <a href="#underdetermination">2.7</a>). Ultimately, any conclusion about a hypothesis involves human judgment, as discussed in Sections <a href="#underdetermination">2.7</a> and <a href="#credibilitysummary">6.5</a>. Such a judgment may persist only briefly or endure for a long time until rejection.</p>
 <p>As discussed below, a formal hypothesis specifies the expected necessity relationship, provides a causal explanation, and specifies the domain where it is expected to hold, among others. This is also helpful in different subsequent stages of an empirical study:</p>
 <ol style="list-style-type: decimal">
 <li><p>Study design: It helps to focus the study based on existing knowledge (Section <a href="#researchdesign">8.2</a>).</p></li>
 <li><p>Sampling or case selection: It specifies from which theoretical domain cases must be sampled or selected (Section <a href="#samplingandselection">8.3</a>).</p></li>
-<li><p>Results: It satisfies NCA’s requirement for theoretical support for a decision about (non-)rejection of the hypothesis (Sections <a href="#corecriteria"><strong>??</strong></a> and <a href="#necessityinkind"><strong>??</strong></a>).</p></li>
+<li><p>Results: It satisfies NCA’s requirement for theoretical support for a decision about (non-)rejection of the hypothesis (Sections <a href="#corecriteria">6.2</a> and <a href="#necessityinkind"><strong>??</strong></a>).</p></li>
 <li><p>Discussion: It helps to interpret why the hypothesis is rejected or not, and what the theoretical and practical consequences are (Chapters <a href="#reporting">10</a> and <a href="#practice">12</a>).</p></li>
 </ol>
 <p>In principle, NCA can also be used in a hypothesis-building (inductive) approach.
@@ -3058,9 +4345,9 @@ the exact levels of <span class="math inline">\(X\)</span> and <span class="math
 <p>In contrast, the current body of knowledge about necessity is still limited. Theoretical frameworks and empirical studies specifically addressing necessity are not yet widespread, and the traditional literature on probabilistic sufficiency offers little direct guidance. That literature hints at important factors that potentially could be necessary conditions, but usually provides no evidence. It may also contain indirect hints or isolated statements about necessity logic and causality. Although this can serve as inspiration or secondary support for developing necessity hypotheses, more is needed for to develop well-grounded necessity hypotheses.</p>
 <p>Because a cumulative body of theory and evidence on necessity causality is often lacking, developing necessity hypotheses requires an approach that relies more heavily on the analyst’s creativity, critical reasoning, and substantive expertise. By integrating solid knowledge of necessity logic and necessity causal reasoning with substantive domain knowledge, and by engaging in discussions with peers, analysts can formulate convincing and meaningful necessity hypotheses. It is often surprising how quickly a relevant preliminary necessity hypothesis can emerge once this reasoning process is clear.</p>
 <p>Whereas developing an average-effect hypothesis generally involves dedicating most effort to the literature review, developing a necessity hypothesis centers on conceptual reasoning and logical argumentation. The goal is to construct a coherent narrative that justifies why a given condition must be present for the outcome to occur, and why the outcome will not occur if the condition is absent, and no compensation is possible.</p>
-<p>Generally, such a narrative starts with identifying an important factor (known or presumed) that contributes to a desired outcome but is not the only factor that helps to produce the outcome. Conventional literature often establishes that such a factor is important on average.<a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a> The next step is crucial for necessity reasoning: it formulates the expectation that the presence of a high level of the outcome will disappear if the condition is absent or is reduced, corresponding to necessity logic: if not <span class="math inline">\(X\)</span>, then not <span class="math inline">\(Y\)</span>. The narrative then explains why this disappearance occurs, for example, through what mechanisms the absence of <span class="math inline">\(X\)</span> undermines <span class="math inline">\(Y\)</span>. This is followed by an argument that other factors cannot compensate for this absence: no substitute can replace the missing necessary condition; the outcome will not be possible without it. Finally, the narrative specifies the domain of applicability. This is the boundary within which the necessity claim holds. It clarifies whether it applies universally (e.g., oxygen is necessary for human life) or only within a specific group or context (e.g., being pregnant is necessary for having a child).</p>
+<p>Generally, such a narrative starts with identifying an important factor (known or presumed) that contributes to a desired outcome but is not the only factor that helps to produce the outcome. Conventional literature often establishes that such a factor is important on average.<a href="#fn56" class="footnote-ref" id="fnref56"><sup>56</sup></a> The next step is crucial for necessity reasoning: it formulates the expectation that the presence of a high level of the outcome will disappear if the condition is absent or is reduced, corresponding to necessity logic: if not <span class="math inline">\(X\)</span>, then not <span class="math inline">\(Y\)</span>. The narrative then explains why this disappearance occurs, for example, through what mechanisms the absence of <span class="math inline">\(X\)</span> undermines <span class="math inline">\(Y\)</span>. This is followed by an argument that other factors cannot compensate for this absence: no substitute can replace the missing necessary condition; the outcome will not be possible without it. Finally, the narrative specifies the domain of applicability. This is the boundary within which the necessity claim holds. It clarifies whether it applies universally (e.g., oxygen is necessary for human life) or only within a specific group or context (e.g., being pregnant is necessary for having a child).</p>
 <p>For example, it may be assumed that class attendance is necessary for school performance. A minimal narrative could be formulated as follows:
-<em>Class attendance is widely recognized as an important determinant of school performance. Meta-analyses show that students who attend classes more regularly tend to achieve higher grades on average. Attendance is not the only factor: intelligence, motivation, prior preparation, and study habits also matter. However, class attendance is crucial, as it provides the behavioral foundation through which learning processes operate effectively. If class attendance is withdrawn, school performance deteriorates—a pattern consistent with necessity logic. This disappearance occurs for several reasons. Students who skip classes miss essential explanations, examples, and discussions on which exams and assignments depend. Absence removes opportunities for immediate correction and reinforcement, allowing misconceptions to persist. Reduced attendance may also weaken motivation and belonging, leading to further reductions in performance. Other factors cannot replace the absence of class attendance. Digital resources or peer notes can alleviate short-term gaps but do not replicate the real-time cognitive and social engagement that in-class participation provides. This necessity relationship applies primarily to students in traditional, face-to-face courses where class sessions deliver core content and interactive learning is integral to success. It may not apply universally, for example, in fully online, asynchronous courses where students can compensate for absence through other structured forms of engagement. Within the conventional classroom teaching format, however, attendance remains a necessary condition for school performance.</em><a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a></p>
+<em>Class attendance is widely recognized as an important determinant of school performance. Meta-analyses show that students who attend classes more regularly tend to achieve higher grades on average. Attendance is not the only factor: intelligence, motivation, prior preparation, and study habits also matter. However, class attendance is crucial, as it provides the behavioral foundation through which learning processes operate effectively. If class attendance is withdrawn, school performance deteriorates—a pattern consistent with necessity logic. This disappearance occurs for several reasons. Students who skip classes miss essential explanations, examples, and discussions on which exams and assignments depend. Absence removes opportunities for immediate correction and reinforcement, allowing misconceptions to persist. Reduced attendance may also weaken motivation and belonging, leading to further reductions in performance. Other factors cannot replace the absence of class attendance. Digital resources or peer notes can alleviate short-term gaps but do not replicate the real-time cognitive and social engagement that in-class participation provides. This necessity relationship applies primarily to students in traditional, face-to-face courses where class sessions deliver core content and interactive learning is integral to success. It may not apply universally, for example, in fully online, asynchronous courses where students can compensate for absence through other structured forms of engagement. Within the conventional classroom teaching format, however, attendance remains a necessary condition for school performance.</em><a href="#fn57" class="footnote-ref" id="fnref57"><sup>57</sup></a></p>
 <p>This narrative defines not only the hypothesis (Class attendance is necessary for high school performance), but gives also a causal explanation (student miss essential learning elements, lack of interactions and motivation, no compensation possible by digital resources) and defines the theoretical domain (conventional classroom teaching).</p>
 <p>While creativity is central for formulating the narrative, existing information sources can help generate, sharpen and justifying hypotheses about necessary conditions. This chapter provides a detailed plan and practical tools for this process. While it may appear complex at first, it soon becomes almost automatic once one becomes familiar with the reasoning steps involved.</p>
 </div>
@@ -3266,7 +4553,7 @@ avoid high levels of absenteeism. <span class="citation">(<a href="#ref-hausknec
 <div id="developingformaltheory" class="section level2 hasAnchor" number="7.5">
 <h2><span class="header-section-number">7.5</span> Developing a formal necessity hypothesis<a href="#developingformaltheory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>A formal necessity hypothesis has five characteristics:</p>
-<p><em>Theory-grounded</em>: the hypothesis is embedded in a necessity theory. According to Chapter <a href="#theory">3</a>, a theory is defined when four elements are defined: focal unit, concepts (condition and outcome), (direction of) the hypothesis<a href="#fn53" class="footnote-ref" id="fnref53"><sup>53</sup></a>, and theoretical domain.</p>
+<p><em>Theory-grounded</em>: the hypothesis is embedded in a necessity theory. According to Chapter <a href="#theory">3</a>, a theory is defined when four elements are defined: focal unit, concepts (condition and outcome), (direction of) the hypothesis<a href="#fn58" class="footnote-ref" id="fnref58"><sup>58</sup></a>, and theoretical domain.</p>
 <p><em>Testable</em>. A hypothesis is empirically testable if the concepts <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> can be operationalized into measurable variables.</p>
 <p><em>Non-trivial</em>. A hypothesis is non-trivial when both the absence of the condition and presence of the outcome are possible, otherwise it is trivial.</p>
 <p><em>Plausible</em>. A hypothesis is plausible when virtually no cases are reasonably expected in the empty corner.</p>
@@ -3408,7 +4695,7 @@ Figure 7.2: Hypothesis development tool for Step 1 of the development process of
 <ul>
 <li>Precise definition of <em>focal unit</em>. The focal unit is the entity of the theory to which the theory applies (e.g., person, team, country, project, etc.).</li>
 </ul>
-<p>Sometimes, defining the focal unit is simple. For example, the Theory of Planned Behavior <span class="citation">(TPB, <a href="#ref-ajzen1991theory">Ajzen, 1991</a>)</span> is a theory about individual behavior. The focal unit is evident: ‘individual’ or ‘person’. Other times, the focal unit may not be immediately clear, for example, when theorizing the relationship between parent height and child height <span class="citation">(<a href="#ref-galton1886regression">Galton, 1886</a>)</span>.<a href="#fn54" class="footnote-ref" id="fnref54"><sup>54</sup></a> The focal unit is neither parent nor child but ‘parent-child pair’. The focal unit is expressed as a singular noun, not a plural noun. Specification is important because cases to be sampled or selected for testing the hypothesis must be specific units/examples of the focal unit (e.g., a person, a parent-child pair). Additionally, the concepts of the theory are characteristics of the focal unit.</p>
+<p>Sometimes, defining the focal unit is simple. For example, the Theory of Planned Behavior <span class="citation">(TPB, <a href="#ref-ajzen1991theory">Ajzen, 1991</a>)</span> is a theory about individual behavior. The focal unit is evident: ‘individual’ or ‘person’. Other times, the focal unit may not be immediately clear, for example, when theorizing the relationship between parent height and child height <span class="citation">(<a href="#ref-galton1886regression">Galton, 1886</a>)</span>.<a href="#fn59" class="footnote-ref" id="fnref59"><sup>59</sup></a> The focal unit is neither parent nor child but ‘parent-child pair’. The focal unit is expressed as a singular noun, not a plural noun. Specification is important because cases to be sampled or selected for testing the hypothesis must be specific units/examples of the focal unit (e.g., a person, a parent-child pair). Additionally, the concepts of the theory are characteristics of the focal unit.</p>
 <ul>
 <li>Precise definition of the <em>concepts</em>. The concepts are the varying characteristics that are relevant for the theory. For a necessity theory, the concepts are condition <span class="math inline">\(X\)</span> and outcome <span class="math inline">\(Y\)</span>. The outcome often represents something either desirable or undesirable. Desirable outcomes include, health, well-being, performance, innovation, success, etc. Undesirable outcomes may be sickness, risk, disease, failure, etc. The condition is the concept that must be present to have the outcome.</li>
 </ul>
@@ -3578,9 +4865,9 @@ These counterexamples need further evaluation before a decision can be made abou
 <p>When counterexamples outnumber supportive cases, it is clear that the hypothesis needs to be rejected. However, when there is a limited number of counterexamples compared to supportive cases an additional evaluation is needed. Therefore, when counterexamples exist, the following question is answered first:</p>
 <p><strong>➔ Q7: Are counterexamples uncommon</strong>
 If counterexamples are not uncommon, the theory should be rejected. If counterexamples are uncommon, they need further evaluation before the analyst makes a decision to reject or keep the hypothesis, possibly after refinement of the theory or adoption of the typicality perspective (see below).</p>
-<p>The further analysis consists of considering the possibility of incorporating or excluding counterexamples in the theory by redefining the condition <span class="math inline">\(X\)</span>, the outcome <span class="math inline">\(Y\)</span>, or the theoretical domain. <em>Broadening the condition</em> <span class="math inline">\(X\)</span> or <em>narrowing the outcome</em> <span class="math inline">\(Y\)</span> can make counterexamples become supportive cases within the redefined theory. <em>Narrowing the theoretical domain</em> excludes the counterexamples from the redefined theory.<a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a></p>
+<p>The further analysis consists of considering the possibility of incorporating or excluding counterexamples in the theory by redefining the condition <span class="math inline">\(X\)</span>, the outcome <span class="math inline">\(Y\)</span>, or the theoretical domain. <em>Broadening the condition</em> <span class="math inline">\(X\)</span> or <em>narrowing the outcome</em> <span class="math inline">\(Y\)</span> can make counterexamples become supportive cases within the redefined theory. <em>Narrowing the theoretical domain</em> excludes the counterexamples from the redefined theory.<a href="#fn60" class="footnote-ref" id="fnref60"><sup>60</sup></a></p>
 <p>Therefore, the analyst has three options to handle counterexamples: (1) broadening the condition, (2) narrowing the outcome, and (3) narrowing the theoretical domain. It is the analyst’s choice which option to adopt. Option 1 broadens the ways in which the condition can allow the outcome. Often, the broader condition is a higher-order concept that integrates the original concept and the counterexample concept. By broadening the condition, counterexamples that previously displayed an absence of the condition now display a presence of the condition, and become supportive cases under the refined theory. However, this risks making the condition too broad and weakening its explanatory power: almost any facilitating mechanism could then be considered part of the condition. Option 2 narrows the outcome to a more specific form, reducing the scope of what is being explained. With the redefined outcome concept, the exception becomes a supportive case that does not violate the hypothesis. However, this risks excluding cases that are theoretically relevant. Option 3 restricts the theoretical domain by focusing only on a subset of cases where necessity holds. With a new definition of the theoretical domain, the exception should not have been selected for testing the hypothesis because the claim of the hypothesis is only valid in a defined theoretical domain. While this approach preserves the original concepts and hypothesis, it reduces the generalizability of the theory. Nevertheless, it seems reasonable to adopt option 3 since a theoretical domain is seldom homogeneous and universal. In option 3, the original hypothesis is maintained, but the theoretical domain is narrowed. This strategy preserves the preliminary hypothesis, with more clearly specifying the scope of its application, while no known counterexamples exist.</p>
-<p>If any of the options for handling counterexamples is selected, it is assumed that the redefined theory holds for all imaginable cases selected from the theoretical domain.<a href="#fn56" class="footnote-ref" id="fnref56"><sup>56</sup></a></p>
+<p>If any of the options for handling counterexamples is selected, it is assumed that the redefined theory holds for all imaginable cases selected from the theoretical domain.<a href="#fn61" class="footnote-ref" id="fnref61"><sup>61</sup></a></p>
 <p>If counterexamples exist the following question needs to be answered:</p>
 <p><strong>➔ Q8. Can counterexamples be handled by redefining concepts/domain?</strong>
 If the answer is yes, the theory is adjusted, so that there are no more counterexamples.
@@ -3739,7 +5026,7 @@ formal hypothesis is now fully specified and is ready for empirical testing:</p>
 <h4><span class="header-section-number">7.5.3.1</span> Example Step 3<a href="#examplecausalexplanation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The hypothesis development tool for Step 3 (Figure <a href="#fig:theorydecisiontreeSTEP3fig">7.6</a>) can be applied to the example about the necessity of an Internet connection for attending an online meeting. The accepted hypothesis after the thought experiments is ‘Internet connection is necessary for Public online meeting attendance’.</p>
 <p><strong>➔ Q10. Is it explained why Internet connection enables Online meeting attendance?</strong>
-First, it is evaluated if an Internet connection can be considered as an enabler for Public online meeting attendance. This enabling role can be explained as follows: the presence of a communication pathway makes it possible for a participant to connect to a platform and to communicate remotely. The platform provides the necessary technical infrastructure for video, audio, and chat functionalities that allow a public online meeting to occur.<a href="#fn57" class="footnote-ref" id="fnref57"><sup>57</sup></a> <span class="math inline">\(\rightarrow\)</span> yes.</p>
+First, it is evaluated if an Internet connection can be considered as an enabler for Public online meeting attendance. This enabling role can be explained as follows: the presence of a communication pathway makes it possible for a participant to connect to a platform and to communicate remotely. The platform provides the necessary technical infrastructure for video, audio, and chat functionalities that allow a public online meeting to occur.<a href="#fn62" class="footnote-ref" id="fnref62"><sup>62</sup></a> <span class="math inline">\(\rightarrow\)</span> yes.</p>
 <p><strong>➔ Q11 Is it explained why Internet connection constrains Public online meeting attendance?</strong>
 Next, it is considered if an Internet connection is a constraint for a public online meeting. The constraining role of an Internet connection can be explained as follows. Without a communication pathway it is also not possible to connect to a digital platform, such that participants are unable to connect remotely. The essential infrastructure for real-time communication is missing. As a result, the conditions required for a public online meeting are not met, and the person cannot attend the meeting. The absence of the communication pathway thus blocks the occurrence of the outcome <span class="math inline">\(\rightarrow\)</span> yes.</p>
 <p><strong>➔ Q12. Is it explained why there is no substitute for the absence of <span class="math inline">\(X\)</span>?</strong>
@@ -4409,11 +5696,11 @@ While NCA does not impose new requirements on data collection and treats empiric
 Figure 8.1: <span class="math inline">\(XY\)</span>-plot of Economic prosperity and Life expectancy with two ceiling lines (Pooled World Bank data from 1960 to 2023 for all countries/years).
 </p>
 </div>
-<p>In the first illustration, the data are pooled to test the hypothesis. Figure <a href="#fig:pooled">8.1</a> shows the <span class="math inline">\(XY\)</span>-plot. Each data point is a country-year combination. The plot shows a clear empty space in the upper-left corner as expected. This suggests that a <em>necessity</em> relationship exists between Economic prosperity and Life expectancy<a href="#fn58" class="footnote-ref" id="fnref58"><sup>58</sup></a>. This indicates that a certain level of life expectancy is not possible without a certain level of economic prosperity. For example, for a country’s life expectancy of 75 years, an economic prosperity of about 3 (<span class="math inline">\(10^3\)</span> = 1,000 equivalent US dollars) is necessary. Such a level of economic prosperity is not sufficient as many cases with an Economic prosperity level of 3 have a lower level of Life expectancy<a href="#fn59" class="footnote-ref" id="fnref59"><sup>59</sup></a>.</p>
+<p>In the first illustration, the data are pooled to test the hypothesis. Figure <a href="#fig:pooled">8.1</a> shows the <span class="math inline">\(XY\)</span>-plot. Each data point is a country-year combination. The plot shows a clear empty space in the upper-left corner as expected. This suggests that a <em>necessity</em> relationship exists between Economic prosperity and Life expectancy<a href="#fn63" class="footnote-ref" id="fnref63"><sup>63</sup></a>. This indicates that a certain level of life expectancy is not possible without a certain level of economic prosperity. For example, for a country’s life expectancy of 75 years, an economic prosperity of about 3 (<span class="math inline">\(10^3\)</span> = 1,000 equivalent US dollars) is necessary. Such a level of economic prosperity is not sufficient as many cases with an Economic prosperity level of 3 have a lower level of Life expectancy<a href="#fn64" class="footnote-ref" id="fnref64"><sup>64</sup></a>.</p>
 </div>
 <div id="timetrends" class="section level4 hasAnchor" number="8.2.2.2">
 <h4><span class="header-section-number">8.2.2.2</span> Time trends<a href="#timetrends" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>In the second illustration, the data for the different time points are used to test expected time trends regarding the necessity of high Economic prosperity for high Life expectancy<a href="#fn60" class="footnote-ref" id="fnref60"><sup>60</sup></a>. Table <a href="#tab:years">8.1</a> shows the NCA parameters for each separate year.<a href="#fn61" class="footnote-ref" id="fnref61"><sup>61</sup></a></p>
+<p>In the second illustration, the data for the different time points are used to test expected time trends regarding the necessity of high Economic prosperity for high Life expectancy<a href="#fn65" class="footnote-ref" id="fnref65"><sup>65</sup></a>. Table <a href="#tab:years">8.1</a> shows the NCA parameters for each separate year.<a href="#fn66" class="footnote-ref" id="fnref66"><sup>66</sup></a></p>
 <table class="table table" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:years">Table 8.1: </span>NCA parameters per year.
@@ -5625,7 +6912,7 @@ Figure 8.5: <span class="math inline">\(XY\)</span>-plot of Economic prosperity 
 Figure 8.6: <span class="math inline">\(XY\)</span>-table of the necessity experiment before (Left) and after (Right) manipulation. <span class="math inline">\(X\)</span> = Condition (0 = no; 1 = yes). <span class="math inline">\(Y\)</span> = Outcome (0 = no; 1 = yes). = control group. × = treatment group.
 </p>
 </div>
-<p>For dichotomous variables the experiment to evaluate a high-high necessity hypothesis the steps are conducted as follows:<a href="#fn62" class="footnote-ref" id="fnref62"><sup>62</sup></a></p>
+<p>For dichotomous variables the experiment to evaluate a high-high necessity hypothesis the steps are conducted as follows:<a href="#fn67" class="footnote-ref" id="fnref67"><sup>67</sup></a></p>
 <ol style="list-style-type: decimal">
 <li><p>Obtain a <em>representative sample</em> from the population.</p></li>
 <li><p>Observe that <em>expected corner</em> is empty (corner 1).
@@ -5652,7 +6939,7 @@ Figure 8.6: <span class="math inline">\(XY\)</span>-table of the necessity exper
 </ol>
 <p>If all treatment cases have moved from corner 2 to corner 3, but not to corner 1, and if not all control cases have moved from corner 2 to corner 4 (because another necessary condition disappeared during the manipulation) there is evidence that <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span>.
 If treatment cases have moved from corner 2 to corner 1, this indicates that <span class="math inline">\(Y\)</span> can occur without <span class="math inline">\(X\)</span> and that <span class="math inline">\(X\)</span> is not necessary for <span class="math inline">\(Y\)</span>.
-If control cases have moved from corner 2 to corner 4, this suggests that there is a time effect. This is not a problem for concluding that <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span> as long as not all control cases have moved to corner 4.<a href="#fn63" class="footnote-ref" id="fnref63"><sup>63</sup></a></p>
+If control cases have moved from corner 2 to corner 4, this suggests that there is a time effect. This is not a problem for concluding that <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span> as long as not all control cases have moved to corner 4.<a href="#fn68" class="footnote-ref" id="fnref68"><sup>68</sup></a></p>
 </div>
 <div id="necessity-experiment-dichotomous-x-and-continuous-y" class="section level4 hasAnchor" number="8.2.4.2">
 <h4><span class="header-section-number">8.2.4.2</span> Necessity experiment: dichotomous <span class="math inline">\(X\)</span> and continuous <span class="math inline">\(Y\)</span><a href="#necessity-experiment-dichotomous-x-and-continuous-y" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -5716,9 +7003,9 @@ Figure 8.12: <span class="math inline">\(XY\)</span>-plot of a necessity experim
 </div>
 <div id="smallncaseselection" class="section level3 hasAnchor" number="8.3.2">
 <h3><span class="header-section-number">8.3.2</span> Small-n case selection<a href="#smallncaseselection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>It is possible to test a necessity hypothesis with a small number of cases, even with one case <span class="citation">(e.g., <a href="#ref-dul2008case">Dul &amp; Hak, 2008</a>)</span>. In qualitative studies, usually a small number of cases is selected with a certain purpose in mind.<a href="#fn64" class="footnote-ref" id="fnref64"><sup>64</sup></a> For testing a necessity hypothesis, the purpose of sampling is to have cases where the outcome is present (<span class="math inline">\(Y = 1\)</span>) or the condition is absent (<span class="math inline">\(X = 0\)</span>). After selecting such cases, it is observed if the condition is present (<span class="math inline">\(X = 1\)</span>) or the outcome is absent (<span class="math inline">\(Y = 0\)</span>), respectively. If the condition is absent in cases where the outcome is present, or the outcome is present in cases where the condition is absent, the necessary condition hypothesis is rejected for these cases. This type of purposive sampling in small-n studies is possible with a deterministic view on necessity (no exceptions) and when the conditions and the outcome have dichotomous scores (e.g., absent/present, low/high). Since according to the hypothesis necessity applies to each single case in the theoretical domain, a single case can be selected for the test. If necessity is rejected in that single case, the deterministic version of the necessity hypothesis is rejected. However, support for necessity based on only one or a few cases is often not convincing for a conclusion about the entire theoretical domain. Other cases that falsify the necessary condition hypothesis may not have been selected. Following replication logic, the confidence in a hypothesis increases when more cases do not falsify the hypothesis.</p>
+<p>It is possible to test a necessity hypothesis with a small number of cases, even with one case <span class="citation">(e.g., <a href="#ref-dul2008case">Dul &amp; Hak, 2008</a>)</span>. In qualitative studies, usually a small number of cases is selected with a certain purpose in mind.<a href="#fn69" class="footnote-ref" id="fnref69"><sup>69</sup></a> For testing a necessity hypothesis, the purpose of sampling is to have cases where the outcome is present (<span class="math inline">\(Y = 1\)</span>) or the condition is absent (<span class="math inline">\(X = 0\)</span>). After selecting such cases, it is observed if the condition is present (<span class="math inline">\(X = 1\)</span>) or the outcome is absent (<span class="math inline">\(Y = 0\)</span>), respectively. If the condition is absent in cases where the outcome is present, or the outcome is present in cases where the condition is absent, the necessary condition hypothesis is rejected for these cases. This type of purposive sampling in small-n studies is possible with a deterministic view on necessity (no exceptions) and when the conditions and the outcome have dichotomous scores (e.g., absent/present, low/high). Since according to the hypothesis necessity applies to each single case in the theoretical domain, a single case can be selected for the test. If necessity is rejected in that single case, the deterministic version of the necessity hypothesis is rejected. However, support for necessity based on only one or a few cases is often not convincing for a conclusion about the entire theoretical domain. Other cases that falsify the necessary condition hypothesis may not have been selected. Following replication logic, the confidence in a hypothesis increases when more cases do not falsify the hypothesis.</p>
 <p>Purposive selection of cases for testing a necessity hypothesis was used implicitly in a study by <span class="citation">Fujita &amp; Kusano (<a href="#ref-fujita2020denial">2020</a>)</span> of highly controversial visits by Japanese Prime Ministers (PM’s) to the Yasukuni Shrine. Three necessary conditions were expected: a conservative ruling party, a government enjoying high popularity, and Japan’s perception of a Chinese threat. They tested these hypotheses by selecting all five cases where the outcome was present (<span class="math inline">\(Y = 1\)</span>, PM’s who visited the shrine) from all 22 cabinets between 1986 and 2014. They found that the three conditions were present in all cases (<span class="math inline">\(X = 1\)</span>) suggesting support for necessity, at least no rejection. Additionally, they selected the 17 cases where at least one potential necessary condition was absent (<span class="math inline">\(X = 0\)</span>) and found that in these cases no visit occurred (<span class="math inline">\(Y = 0\)</span>), giving further support for necessity.</p>
-<p>In another small-n qualitative study, <span class="citation">Harding et al. (<a href="#ref-harding2002studying">2002</a>)</span> studied rampage school shootings in the USA. They first identified five potential necessary conditions: gun availability, cultural script (a model why the shooting solves a problem), perceived marginal social position, personal trauma, and failure of a social support system.<a href="#fn65" class="footnote-ref" id="fnref65"><sup>65</sup></a> Subsequently, they tested the necessary conditions with two cases of school shooting (<span class="math inline">\(Y = 1\)</span>) and found support for necessity (non-rejection) because the five conditions were present in these cases (<span class="math inline">\(X = 1\)</span>).</p>
+<p>In another small-n qualitative study, <span class="citation">Harding et al. (<a href="#ref-harding2002studying">2002</a>)</span> studied rampage school shootings in the USA. They first identified five potential necessary conditions: gun availability, cultural script (a model why the shooting solves a problem), perceived marginal social position, personal trauma, and failure of a social support system.<a href="#fn70" class="footnote-ref" id="fnref70"><sup>70</sup></a> Subsequently, they tested the necessary conditions with two cases of school shooting (<span class="math inline">\(Y = 1\)</span>) and found support for necessity (non-rejection) because the five conditions were present in these cases (<span class="math inline">\(X = 1\)</span>).</p>
 <p>Note that this approach of selecting a small number of cases for testing a necessity hypothesis is used in Chapter <a href="#hypothesisformulation">7</a> as part of thought experiments to evaluate a preliminary necessity hypothesis based on existing knowledge (Section <a href="#thoughtexperiments">7.5.2</a>).</p>
 </div>
 <div id="replication" class="section level3 hasAnchor" number="8.3.3">
@@ -7463,12 +8750,44 @@ d&#39; = \frac{ac \cdot \text{Area}({C})}{ac \cdot \text{Area}({S})} = d
 </div>
 <div id="appendixtprtnr" class="section level1 hasAnchor" number="17">
 <h1><span class="header-section-number">Appendix E</span> Simulations for TPR and TNR<a href="#appendixtprtnr" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div style="text-align: left; font-style: italic; margin: 2em 0;">
-<p>This chapter will be made available soon.</p>
+<p>This appendix provides additional simulation results for the True Positive Rate (TPR; sensitivity) and the True Negative Rate (TNR; specificity), as discussed in Section <a href="#statisticalcredibility">6.3</a>.</p>
+<div id="true-positive-rate-tpr" class="section level2 hasAnchor" number="17.1">
+<h2><span class="header-section-number">E.1</span> True Positive Rate (TPR)<a href="#true-positive-rate-tpr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>With the same simulation settings as in Figure <a href="#fig:tpr01">6.3</a>, Figure <a href="#fig:tpr02">E.1</a> shows the simulation results for an effect size <span class="math inline">\(d = 0.20\)</span> instead of <span class="math inline">\(d = 0.10\)</span>. All TPR curves shift to the left. Consequently, with a larger true effect size, the required sample size is smaller to achieve the same TPR.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr02"></span>
+<img src="tpr02.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.20. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<p class="caption">
+Figure E.1: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.20. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
+</p>
 </div>
-<p><!-- 19.1 True Positive Rate (TPR) {#true-positive-rate-tpr} -->
-<!-- 19.2 True Negative Rate (TNR) {#true-negative-rate-tnr} --></p>
+<p>With the same simulation settings as in Figure <a href="#fig:tpr01">6.3</a>, Figures <a href="#fig:tpr06">E.2</a> and <a href="#fig:tpr16">E.3</a> show the simulation results for ceiling slopes of 0.60 and 1.67, respectively, instead of 1. This comparison allows evaluation of the (non)-evenness of the TPR curves for scenarios B and C as a function of the slope of the ceiling line. Only the slope of the ceiling line in the necessity corner of interest is changed. Because the slopes of the lines in the other empty corners remain the same (-1), this slope change introduces asymmetry. Due to the intersection of the lines within the bounding box (Figure <a href="#fig:intersection">6.2</a>), only an effect size of 0.12 could be evaluated. The results indicate that the slope change has little or no effect on the TPR curves.</p>
+<p><!-- \textcolor{red}{CHECK EFFECT SIZE 0.12. Was eerst 0.05 in tekst. 0.12 lijkt goed te zijn. zie email 14 feb} --></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr06"></span>
+<img src="tpr06.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 0.60. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<p class="caption">
+Figure E.2: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 0.60. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr16"></span>
+<img src="tpr16.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 1.67. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<p class="caption">
+Figure E.3: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 1.67. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
+</p>
+</div>
+<p>The results show that the evenness of the curves for scenarios B and C remains. This may not be the case if the sizes of empty corners 2 and 3 differ, or if the <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> distributions in the feasible area differ.</p>
+</div>
+<div id="true-negative-rate-tnr" class="section level2 hasAnchor" number="17.2">
+<h2><span class="header-section-number">E.2</span> True Negative Rate (TNR)<a href="#true-negative-rate-tnr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>With the same simulation settings as in Figure <a href="#fig:tnruniform">6.4</a>, Figure <a href="#fig:tnrnormal">E.4</a> shows TNR (<span class="math inline">\(p\)</span>- and <span class="math inline">\(d\)</span>-based) when the distribution in the feasible space is based on a normal distribution instead of a uniform distribution.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnrnormal"></span>
+<img src="tnrnormal.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with the $p$ and $d$-value criterion, with normal distribution of cases in the feasible space. True necessity effect size in corner 1 = 0 for different sizes of other empty corners. Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<p class="caption">
+Figure E.4: True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with the <span class="math inline">\(p\)</span> and <span class="math inline">\(d\)</span>-value criterion, with normal distribution of cases in the feasible space. True necessity effect size in corner 1 = 0 for different sizes of other empty corners. Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
+</p>
+</div>
+<p>The high TNR for empty corners 2 and 3 remains, whereas the curves for corner 4 shift to the right. This means that with a normal-based distribution under the ceiling, a larger sample size is required compared to a uniform distribution to obtain the same TNR.</p>
 
+</div>
 </div>
 <div id="appendixaa" class="section level1 hasAnchor" number="18">
 <h1><span class="header-section-number">Appendix F</span> Necessity and the traditional experiment<a href="#appendixaa" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -7569,11 +8888,17 @@ Cassia, F., &amp; Magno, F. (2024). The value of self-determination theory in ma
 <div id="ref-chen2026entrepreneurial" class="csl-entry">
 Chen, P.-K. A. (2026). <span class="nocase">Entrepreneurial resilience learning in higher education: The role of metaverse-constructed ecosystems</span>. <em>The International Journal of Management Education</em>, <em>24</em>, 101300. <a href="https://doi.org/10.1016/j.ijme.2025.101300">https://doi.org/10.1016/j.ijme.2025.101300</a>
 </div>
+<div id="ref-cohen1994earth" class="csl-entry">
+Cohen, J. (1994). The earth is round (p&lt;. 05). <em>American Psychologist</em>, <em>49</em>(12), 997. <a href="https://doi.org/10.1037/0003-066X.49.12.997">https://doi.org/10.1037/0003-066X.49.12.997</a>
+</div>
 <div id="ref-conde2025uncovering" class="csl-entry">
 Conde, R. (2025). <span class="nocase">Uncovering sales agents’ recruitment, hiring and training practices as necessary conditions to sales agents’ exceeding quota and turnover intentions</span>. <em>Journal of Business &amp; Industrial Marketing</em>, <em>41</em>, 160–175. <a href="https://doi.org/10.1108/jbim-06-2024-0416">https://doi.org/10.1108/jbim-06-2024-0416</a>
 </div>
 <div id="ref-crede2021should" class="csl-entry">
 Credé, M., &amp; Tynan, M. C. (2021). Should language acquisition researchers study <span>“grit”</span>? A cautionary note and some suggestions. <em>Journal for the Psychology of Language Learning</em>, <em>3</em>(2), 37–44. <a href="https://doi.org/10.52598/jpll/3/2/3">https://doi.org/10.52598/jpll/3/2/3</a>
+</div>
+<div id="ref-cumming2013understanding" class="csl-entry">
+Cumming, G. (2013). <em>Understanding the new statistics: Effect sizes, confidence intervals, and meta-analysis</em>. Routledge. <a href="https://www.taylorfrancis.com/books/mono/10.4324/9780203807002/understanding-new-statistics-geoff-cumming">https://www.taylorfrancis.com/books/mono/10.4324/9780203807002/understanding-new-statistics-geoff-cumming</a>
 </div>
 <div id="ref-dabic202140" class="csl-entry">
 Dabić, M., Marzi, G., Vlačić, B., Daim, T. U., &amp; Vanhaverbeke, W. (2021). 40 years of excellence: An overview of technovation and a roadmap for future research. <em>Technovation</em>, <em>106</em>, 102303. <a href="https://doi.org/10.1016/j.technovation.2021.102303">https://doi.org/10.1016/j.technovation.2021.102303</a>
@@ -7688,6 +9013,9 @@ Golini, R., Deflorin, P., &amp; Scherrer, M. (2016). Exploiting the potential of
 </div>
 <div id="ref-gregoproposing" class="csl-entry">
 Greco, A. M., Guilera, G., Maldonado-Murciano, L., Gómez-Benito, J., &amp; Barrios, M. (2022). Proposing necessary but not sufficient conditions analysis as a complement of traditional effect size measures with an illustrative example. <em>International Journal of Environmental Research and Public Health</em>, <em>19</em>(15), 9402. <a href="https://doi.org/10.3390/ijerph19159402">https://doi.org/10.3390/ijerph19159402</a>
+</div>
+<div id="ref-greenland1986identifiability" class="csl-entry">
+Greenland, S., &amp; Robins, J. M. (1986). Identifiability, exchangeability, and epidemiological confounding. <em>International Journal of Epidemiology</em>, <em>15</em>(3), 413–419. <a href="https://doi.org/10.1093/ije/15.3.413">https://doi.org/10.1093/ije/15.3.413</a>
 </div>
 <div id="ref-gu2022configurations" class="csl-entry">
 Gu, J., Wu, C., Wu, X., He, R., Tao, J., Ye, W., Wu, P., Hao, M., &amp; Qiu, W. (2022). Configurations for positive public behaviors in response to the COVID-19 pandemic: A fuzzy set qualitative comparative analysis. <em>BMC Public Health</em>, <em>22</em>, 1692. <a href="https://doi.org/10.1186/s12889-022-14097-6">https://doi.org/10.1186/s12889-022-14097-6</a>
@@ -7845,6 +9173,9 @@ Rothenberg, T. J. (1971). Identification in parametric models. <em>Econometrica<
 <div id="ref-rothman1976causes" class="csl-entry">
 Rothman, K. J. (1976). Causes. <em>American Journal of Epidemiology</em>, <em>104</em>(6), 587–592. <a href="https://doi.org/10.1093/oxfordjournals.aje.a112335">https://doi.org/10.1093/oxfordjournals.aje.a112335</a>
 </div>
+<div id="ref-rothman2005causation" class="csl-entry">
+Rothman, K. J., &amp; Greenland, S. (2005). Causation and causal inference in epidemiology. <em>American Journal of Public Health</em>, <em>95</em>(S1), S144–S150. <a href="https://doi.org/10.2105/AJPH.2004.059204">https://doi.org/10.2105/AJPH.2004.059204</a>
+</div>
 <div id="ref-rozenkowska2023theory" class="csl-entry">
 Rozenkowska, K. (2023). Theory of planned behavior in consumer behavior research: A systematic literature review. <em>International Journal of Consumer Studies</em>, <em>47</em>(6), 2670–2700. <a href="https://doi.org/10.1111/ijcs.12970">https://doi.org/10.1111/ijcs.12970</a>
 </div>
@@ -7905,6 +9236,9 @@ Wagner, G. (2020). Typicality and minutis rectis laws: From physics to sociology
 <div id="ref-walberg1984improving" class="csl-entry">
 Walberg, H. J. (1984). Improving the productivity of america’s schools. <em>Educational Leadership</em>, <em>41</em>(8), 19–27. <a href="https://eric.ed.gov/?id=EJ299536">https://eric.ed.gov/?id=EJ299536</a>
 </div>
+<div id="ref-wasserstein2016asa" class="csl-entry">
+Wasserstein, R. L., &amp; Lazar, N. A. (2016). The ASA statement on p-values: Context, process, and purpose. <em>The American Statistician</em>, <em>70</em>(2), 129–133. <a href="https://doi.org/10.1080/00031305.2016.1154108">https://doi.org/10.1080/00031305.2016.1154108</a>
+</div>
 <div id="ref-wernerfelt1984resource" class="csl-entry">
 Wernerfelt, B. (1984). A resource-based view of the firm. <em>Strategic Management Journal</em>, <em>5</em>(2), 171–180. <a href="https://doi.org/10.1002/smj.4250050207">https://doi.org/10.1002/smj.4250050207</a>
 </div>
@@ -7946,7 +9280,7 @@ Znaniecki, F. (1934). <em>The <span>M</span>ethod of <span>S</span>ociology</em>
 <li id="fn16"><p>Formally, PN is defined as: <span class="math inline">\(PN = P(Y_{X=0} = 0 \mid X = 1, Y = 1)\)</span>.<a href="#fnref16" class="footnote-back">↩︎</a></p></li>
 <li id="fn17"><p>Until recently, I was not aware of the existence of the typicality perspective on causality. What I previously called a ‘probabilistic view’ on necessity causality <span class="citation">(<a href="#ref-dul2020book">Dul, 2020</a>)</span> refers to what I now <span class="citation">(<a href="#ref-dul2024different">Dul, 2024a</a>)</span> call the ‘typicality perspective’ of necessity causality (based on cardinality). The current description ‘probabilistic perspective’ of causality refers to the use of probabilities to describe causality, but this is not part of NCA.<a href="#fnref17" class="footnote-back">↩︎</a></p></li>
 <li id="fn18"><p>Also in fuzzy set QCA (fsQCA) the necessary condition in the sufficiency solution is binary, see Section <a href="#ncaqca"><strong>??</strong></a>.<a href="#fnref18" class="footnote-back">↩︎</a></p></li>
-<li id="fn19"><p>Section <a href="#modelfit1"><strong>??</strong></a> discusses model fit in the context of NCA.<a href="#fnref19" class="footnote-back">↩︎</a></p></li>
+<li id="fn19"><p>Section <a href="#modelfit1">6.4.2</a> discusses model fit in the context of NCA.<a href="#fnref19" class="footnote-back">↩︎</a></p></li>
 <li id="fn20"><p>An important element of parsimony is that theories should be simple: “<em>… frustra fit per plura, quod potest fieri per pauciora</em>.” (it is pointless to do with more what can be done with fewer) <span class="citation">(<a href="#ref-ockham1323summa">Ockham, 1323</a>)</span>.<a href="#fnref20" class="footnote-back">↩︎</a></p></li>
 <li id="fn21"><p> “<em>Causas rerum naturalium non plures admitti debere, quam quae &amp; vera sint &amp; earum phaenomenis explicandis sufficiunt</em>.” (The causes of natural things should not be multiplied beyond what is true and sufficient to explain their appearances) <span class="citation">(<a href="#ref-newton1687principia">Newton, 1687</a>)</span>.<a href="#fnref21" class="footnote-back">↩︎</a></p></li>
 <li id="fn22"><p> “<em>It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without having to surrender the adequate representation of a single datum of experience</em>.” <span class="citation">(<a href="#ref-einstein1934method">Einstein, 1934</a>)</span>.<a href="#fnref22" class="footnote-back">↩︎</a></p></li>
@@ -7978,21 +9312,26 @@ Znaniecki, F. (1934). <em>The <span>M</span>ethod of <span>S</span>ociology</em>
 <li id="fn48"><p>The specification of the bounding box is tacitly assumed for simplification.<a href="#fnref48" class="footnote-back">↩︎</a></p></li>
 <li id="fn49"><p>Data are from the Maungawhau volcano in Auckland, New Zealand and were obtained from the package .<a href="#fnref49" class="footnote-back">↩︎</a></p></li>
 <li id="fn50"><p>When subsamples are drawn it is possible that the ceiling for the subgroup is lower than the ceiling of the total group, but the ceiling can never be higher. This subgroup ceiling may represent a different necessity theory with a different theoretical domain, see Section <a href="#confounding"><strong>??</strong></a> and Chapter <a href="#hypothesisformulation">7</a>.<a href="#fnref50" class="footnote-back">↩︎</a></p></li>
-<li id="fn51"><p>Factors that are not important on average may still be necessary (Table <a href="#tab:multimethodregressionncaresults"><strong>??</strong></a>).<a href="#fnref51" class="footnote-back">↩︎</a></p></li>
-<li id="fn52"><p>Elements of such a reasoning can be found in <span class="citation">Tynan et al. (<a href="#ref-tynan2020education">2020</a>)</span>. In this study the necessity-in-kind analysis showed that class attendance is necessary for high grades (<span class="math inline">\(d\)</span> = 0.28, <span class="math inline">\(p\)</span> &lt; 0.001), and the subsequent necessity-in-degree analysis found that students needed to attend at least 50% of classes to achieve a grade of 90% or higher.<a href="#fnref52" class="footnote-back">↩︎</a></p></li>
-<li id="fn53"><p>In the context of formulating a formal hypothesis for testing, the term ‘hypothesis’ instead of ‘proposition’ (Chapter <a href="#theory">3</a>) is used to describe the relationship between the theory’s concepts.<a href="#fnref53" class="footnote-back">↩︎</a></p></li>
-<li id="fn54"><p>This example is discussed in Section <a href="#ncawithregressionbasedmethods"><strong>??</strong></a>.<a href="#fnref54" class="footnote-back">↩︎</a></p></li>
-<li id="fn55"><p>Narrowing the condition <span class="math inline">\(X\)</span> weakens the theory because it applies to fewer cases from reality. Broadening the outcome <span class="math inline">\(Y\)</span> and broadening the theoretical domain adds new counterexamples.<a href="#fnref55" class="footnote-back">↩︎</a></p></li>
-<li id="fn56"><p>It is, of course, possible that during empirical testing, counterexamples emerge that were not anticipated during the thought experiment. In the NCA method, counterexamples are empirically defined as uncommon cases in the expected empty space, far from the ceiling, see Section <a href="#purity">4.5.4</a>. Such findings result in an empirical rejection of deterministic necessity. After reporting this result, the analyst may then reflect on whether the original deterministic interpretation of necessity was overly strict. However, adopting the typicality perspective after the results are known, and suggesting that this causal perspective was adopted before the results were known, should be avoided <span class="citation">(HARKING, see <a href="#ref-hollenbeck2017harking">Hollenbeck &amp; Wright, 2017</a>)</span>.<a href="#fnref56" class="footnote-back">↩︎</a></p></li>
-<li id="fn57"><p>However, the mere presence of the Internet connection does not guarantee that the meeting will be attended. Other conditions must also be met, such as the participant’s willingness to join, availability, and the scheduling of the meeting itself. Thus, the Internet connection enables the possibility of the outcome (a public online meeting), but it does not ensure its occurrence. Ensuring the outcome would mean that corner 4 is also empty. However, the hypothesis is only about necessity, and does not make a statement whether or not the condition is also sufficient. For the hypothesized necessity, corner 4 is not relevant.<a href="#fnref57" class="footnote-back">↩︎</a></p></li>
-<li id="fn58"><p>The NCA analysis is done with the C-LP ceiling line (Section <a href="#mathematicalestimation">4.4</a>), which is a linear ceiling line that has no observations above it. The effect sizes for the pooled data with the two ceiling techniques are 0.10 (p &lt; 0.001) and 0.14 (p &lt; 0.001), respectively.<a href="#fnref58" class="footnote-back">↩︎</a></p></li>
-<li id="fn59"><p>There is also a well-known positive <em>average</em> relationship (imaginary line through the middle of the data), but this average trend is not considered here. Furthermore, the lower-right corner is empty as well. This suggests that a low level of Economic prosperity is necessary for a low level of Life expectancy. However, this low-low necessity relationship was not claimed in the hypothesis that is tested here. The necessity of low <span class="math inline">\(X\)</span> for low <span class="math inline">\(Y\)</span> can be evaluated with the <code>corner = 4</code> argument in the <code>nca_analysis</code> function of the <code>NCA</code> software (Appendix <a href="#appendixb">B</a>)<a href="#fnref59" class="footnote-back">↩︎</a></p></li>
-<li id="fn60"><p>The time trend expectation can be included in the causal explanation of the hypothesis, see Section <a href="#causalexplanation">7.5.3</a>.<a href="#fnref60" class="footnote-back">↩︎</a></p></li>
-<li id="fn61"><p>Only the C-LP ceiling technique is used. For making the NCA results comparable per year, the theoretical scope for each year is the scope of the pooled data (based on the absolute minima and maxima of empirically observed Economic prosperity and Life expectancy in the data).<a href="#fnref61" class="footnote-back">↩︎</a></p></li>
-<li id="fn62"><p>Convention in this book for corner numbers: 1 = upper-left; 2 = upper-right; 3 = lower-left; 4 - lower-right.<a href="#fnref62" class="footnote-back">↩︎</a></p></li>
-<li id="fn63"><p>Note that an odds ratio (OR) is often used to estimate the average effect when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are dichotomous. The odds ratio summarizes how much more likely (in terms of odds) the outcome is to be absent in the treatment group (where <span class="math inline">\(X\)</span> is removed) compared to the control group (where <span class="math inline">\(X\)</span> is retained). The mathematical formula for the odds ratio in <span class="math inline">\(OR = \frac{c3 / c1}{c4 / c2} = \frac{c3 \cdot c2}{c1 \cdot c4}\)</span> where <span class="math inline">\(c1\)</span>, <span class="math inline">\(c2\)</span>, <span class="math inline">\(c3\)</span>, and <span class="math inline">\(c4\)</span> refer to the number of cases in corner 1, corner 2, corner 3, and corner 4, respectively. After the treatment, <span class="math inline">\(c2\)</span> is the number of cases in the control group with outcome success, <span class="math inline">\(c4\)</span> is the number of cases in the control group with outcome failure (spontaneous decay), <span class="math inline">\(c1\)</span> is the number of cases in the treatment group with outcome success (success remains after removing <span class="math inline">\(X\)</span>), and <span class="math inline">\(c3\)</span> is the number of cases in the treatment group with outcome failure. With an observed data pattern of an empty space in corner 1, the odds ratio is infinite, regardless of the distribution of the cases in the control group: <span class="math inline">\((50/0)/(10/40) = \infty\)</span>. This situation is called “perfect separation” and is considered a problem for average effect statistical analysis. A common advice is to remove the <span class="math inline">\(X\)</span> from further analysis. However, <span class="math inline">\(X\)</span> is a very important predictor of the outcome: the perfect predictor ensures absence of the outcome when <span class="math inline">\(X\)</span> is absent: a necessary condition.<a href="#fnref63" class="footnote-back">↩︎</a></p></li>
-<li id="fn64"><p>For example <em>typical cases</em> that represent a wider population of cases, <em>deviant cases</em> that are unusual, or <em>maximum variation cases</em> to ensure maximum variation of a certain characteristic.<a href="#fnref64" class="footnote-back">↩︎</a></p></li>
-<li id="fn65"><p>They identified these five potential necessary conditions not by using existing knowledge (Section <a href="#hypothesistesting">7.2</a>) but by first conducting an inductive case study. The authors selected two cases where the outcome was present (school shooting) and observed common factors. The two cases were different from the cases used for testing the hypothesis. Identifying “important” factors in this way has a long tradition in explorative and theory-building case study designs. For example, <span class="citation">Znaniecki (<a href="#ref-znaniecki1934method">1934</a>)</span> introduced ‘analytic induction’ for finding causal relationships. This method identifies common characteristics in cases where the outcome is present, thus identifies potential necessary conditions <span class="citation">(<a href="#ref-katz2001analytic">Katz, 2001</a>; <a href="#ref-robinson1951logical">W. S. Robinson, 1951</a>)</span>.<a href="#fnref65" class="footnote-back">↩︎</a></p></li>
+<li id="fn51"><p>Credibility in NCA is conceptually unrelated to the same term as used in Bayesian statistics, where it denotes probabilistic confidence in parameter estimates.<a href="#fnref51" class="footnote-back">↩︎</a></p></li>
+<li id="fn52"><p>This requirement does not apply in a small-n study with purposeful rather than random selection of cases.<a href="#fnref52" class="footnote-back">↩︎</a></p></li>
+<li id="fn53"><p>The results remain the same if the simulations are done with a different expected empty corner and corresponding other corners.<a href="#fnref53" class="footnote-back">↩︎</a></p></li>
+<li id="fn54"><p>The Top-Left graph is a reminder of the definition of the corner numbers.<a href="#fnref54" class="footnote-back">↩︎</a></p></li>
+<li id="fn55"><p>All simulations show again that when scenario A applies in Figures <a href="#fig:tnruniform">6.4</a> and <a href="#fig:tnrnormal">E.4</a> with the curves for other corner size = 0 and in Table <a href="#tab:tabtnrB"><strong>??</strong></a>-top-left, and when the <span class="math inline">\(p\)</span>-value is dominant, NCA’s statistical test is valid <span class="citation">(<a href="#ref-dul2020orm">Dul, Van der Laan, et al., 2020</a>)</span>.<a href="#fnref55" class="footnote-back">↩︎</a></p></li>
+<li id="fn56"><p>Factors that are not important on average may still be necessary (Table <a href="#tab:multimethodregressionncaresults"><strong>??</strong></a>).<a href="#fnref56" class="footnote-back">↩︎</a></p></li>
+<li id="fn57"><p>Elements of such a reasoning can be found in <span class="citation">Tynan et al. (<a href="#ref-tynan2020education">2020</a>)</span>. In this study the necessity-in-kind analysis showed that class attendance is necessary for high grades (<span class="math inline">\(d\)</span> = 0.28, <span class="math inline">\(p\)</span> &lt; 0.001), and the subsequent necessity-in-degree analysis found that students needed to attend at least 50% of classes to achieve a grade of 90% or higher.<a href="#fnref57" class="footnote-back">↩︎</a></p></li>
+<li id="fn58"><p>In the context of formulating a formal hypothesis for testing, the term ‘hypothesis’ instead of ‘proposition’ (Chapter <a href="#theory">3</a>) is used to describe the relationship between the theory’s concepts.<a href="#fnref58" class="footnote-back">↩︎</a></p></li>
+<li id="fn59"><p>This example is discussed in Section <a href="#ncawithregressionbasedmethods"><strong>??</strong></a>.<a href="#fnref59" class="footnote-back">↩︎</a></p></li>
+<li id="fn60"><p>Narrowing the condition <span class="math inline">\(X\)</span> weakens the theory because it applies to fewer cases from reality. Broadening the outcome <span class="math inline">\(Y\)</span> and broadening the theoretical domain adds new counterexamples.<a href="#fnref60" class="footnote-back">↩︎</a></p></li>
+<li id="fn61"><p>It is, of course, possible that during empirical testing, counterexamples emerge that were not anticipated during the thought experiment. In the NCA method, counterexamples are empirically defined as uncommon cases in the expected empty space, far from the ceiling, see Section <a href="#purity">4.5.4</a>. Such findings result in an empirical rejection of deterministic necessity. After reporting this result, the analyst may then reflect on whether the original deterministic interpretation of necessity was overly strict. However, adopting the typicality perspective after the results are known, and suggesting that this causal perspective was adopted before the results were known, should be avoided <span class="citation">(HARKING, see <a href="#ref-hollenbeck2017harking">Hollenbeck &amp; Wright, 2017</a>)</span>.<a href="#fnref61" class="footnote-back">↩︎</a></p></li>
+<li id="fn62"><p>However, the mere presence of the Internet connection does not guarantee that the meeting will be attended. Other conditions must also be met, such as the participant’s willingness to join, availability, and the scheduling of the meeting itself. Thus, the Internet connection enables the possibility of the outcome (a public online meeting), but it does not ensure its occurrence. Ensuring the outcome would mean that corner 4 is also empty. However, the hypothesis is only about necessity, and does not make a statement whether or not the condition is also sufficient. For the hypothesized necessity, corner 4 is not relevant.<a href="#fnref62" class="footnote-back">↩︎</a></p></li>
+<li id="fn63"><p>The NCA analysis is done with the C-LP ceiling line (Section <a href="#mathematicalestimation">4.4</a>), which is a linear ceiling line that has no observations above it. The effect sizes for the pooled data with the two ceiling techniques are 0.10 (p &lt; 0.001) and 0.14 (p &lt; 0.001), respectively.<a href="#fnref63" class="footnote-back">↩︎</a></p></li>
+<li id="fn64"><p>There is also a well-known positive <em>average</em> relationship (imaginary line through the middle of the data), but this average trend is not considered here. Furthermore, the lower-right corner is empty as well. This suggests that a low level of Economic prosperity is necessary for a low level of Life expectancy. However, this low-low necessity relationship was not claimed in the hypothesis that is tested here. The necessity of low <span class="math inline">\(X\)</span> for low <span class="math inline">\(Y\)</span> can be evaluated with the <code>corner = 4</code> argument in the <code>nca_analysis</code> function of the <code>NCA</code> software (Appendix <a href="#appendixb">B</a>)<a href="#fnref64" class="footnote-back">↩︎</a></p></li>
+<li id="fn65"><p>The time trend expectation can be included in the causal explanation of the hypothesis, see Section <a href="#causalexplanation">7.5.3</a>.<a href="#fnref65" class="footnote-back">↩︎</a></p></li>
+<li id="fn66"><p>Only the C-LP ceiling technique is used. For making the NCA results comparable per year, the theoretical scope for each year is the scope of the pooled data (based on the absolute minima and maxima of empirically observed Economic prosperity and Life expectancy in the data).<a href="#fnref66" class="footnote-back">↩︎</a></p></li>
+<li id="fn67"><p>Convention in this book for corner numbers: 1 = upper-left; 2 = upper-right; 3 = lower-left; 4 - lower-right.<a href="#fnref67" class="footnote-back">↩︎</a></p></li>
+<li id="fn68"><p>Note that an odds ratio (OR) is often used to estimate the average effect when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are dichotomous. The odds ratio summarizes how much more likely (in terms of odds) the outcome is to be absent in the treatment group (where <span class="math inline">\(X\)</span> is removed) compared to the control group (where <span class="math inline">\(X\)</span> is retained). The mathematical formula for the odds ratio in <span class="math inline">\(OR = \frac{c3 / c1}{c4 / c2} = \frac{c3 \cdot c2}{c1 \cdot c4}\)</span> where <span class="math inline">\(c1\)</span>, <span class="math inline">\(c2\)</span>, <span class="math inline">\(c3\)</span>, and <span class="math inline">\(c4\)</span> refer to the number of cases in corner 1, corner 2, corner 3, and corner 4, respectively. After the treatment, <span class="math inline">\(c2\)</span> is the number of cases in the control group with outcome success, <span class="math inline">\(c4\)</span> is the number of cases in the control group with outcome failure (spontaneous decay), <span class="math inline">\(c1\)</span> is the number of cases in the treatment group with outcome success (success remains after removing <span class="math inline">\(X\)</span>), and <span class="math inline">\(c3\)</span> is the number of cases in the treatment group with outcome failure. With an observed data pattern of an empty space in corner 1, the odds ratio is infinite, regardless of the distribution of the cases in the control group: <span class="math inline">\((50/0)/(10/40) = \infty\)</span>. This situation is called “perfect separation” and is considered a problem for average effect statistical analysis. A common advice is to remove the <span class="math inline">\(X\)</span> from further analysis. However, <span class="math inline">\(X\)</span> is a very important predictor of the outcome: the perfect predictor ensures absence of the outcome when <span class="math inline">\(X\)</span> is absent: a necessary condition.<a href="#fnref68" class="footnote-back">↩︎</a></p></li>
+<li id="fn69"><p>For example <em>typical cases</em> that represent a wider population of cases, <em>deviant cases</em> that are unusual, or <em>maximum variation cases</em> to ensure maximum variation of a certain characteristic.<a href="#fnref69" class="footnote-back">↩︎</a></p></li>
+<li id="fn70"><p>They identified these five potential necessary conditions not by using existing knowledge (Section <a href="#hypothesistesting">7.2</a>) but by first conducting an inductive case study. The authors selected two cases where the outcome was present (school shooting) and observed common factors. The two cases were different from the cases used for testing the hypothesis. Identifying “important” factors in this way has a long tradition in explorative and theory-building case study designs. For example, <span class="citation">Znaniecki (<a href="#ref-znaniecki1934method">1934</a>)</span> introduced ‘analytic induction’ for finding causal relationships. This method identifies common characteristics in cases where the outcome is present, thus identifies potential necessary conditions <span class="citation">(<a href="#ref-katz2001analytic">Katz, 2001</a>; <a href="#ref-robinson1951logical">W. S. Robinson, 1951</a>)</span>.<a href="#fnref70" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
