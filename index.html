@@ -304,7 +304,7 @@ div.csl-indent {
 <!-- </div> -->
 <div style="text-align: left; margin-top: 0; margin-bottom: 3em;">
 <p>© Jan Dul<br>
-Version 1.0.0. First pubished March 10, 2026. Last update: April 09, 2026<br></p>
+Version 1.0.0. First pubished March 10, 2026. Last update: April 11, 2026<br></p>
 <p>Refer to the book as: Dul, J. (2026). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Chapman &amp; Hall/CRC Press.</p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
@@ -4196,7 +4196,7 @@ Figure 6.5: True Negative Rate (TNR, specificity) of the NCA approach for identi
 </div>
 <div id="credibilitysummary" class="section level2 hasAnchor" number="6.5">
 <h2><span class="header-section-number">6.5</span> Recommendations for evaluating credibility<a href="#credibilitysummary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The three core criteria for establishing necessity (theoretical support, practical relevance in terms of large effect size, and statistical relevance in terms of small <span class="math inline">\(p\)</span>-value), the robustness check requirement, and the eight model-fit metrics are summarized in Table <a href="#tab:credibilitytab"><strong>??</strong></a>. The table provides examples of numerical guidelines, but these should not be interpreted as strict decision rules. Ultimately, credibility is a matter of informed judgment and optimization by the analyst and other stakeholders after considering all credibility aspects. In an empirical study, it is rare for all credibility aspects to be fully satisfied.
+<p>The three core criteria for establishing necessity (theoretical support, practical relevance in terms of large effect size, and statistical relevance in terms of small <span class="math inline">\(p\)</span>-value), the robustness check requirement, and the eight model-fit metrics are summarized in Table <a href="#tab:credibilitytab">6.9</a>. The table provides examples of numerical guidelines, but these should not be interpreted as strict decision rules. Ultimately, credibility is a matter of informed judgment and optimization by the analyst and other stakeholders after considering all credibility aspects. In an empirical study, it is rare for all credibility aspects to be fully satisfied.
 <!-- A *robustness check* (see Section \@ref(robustness)) can help evaluate the sensitivity of the conclusions for choices made by the analyst (e.g., regarding ceiling line, scope, threshold levels for effect size and $p$-value, including/exclusion of outliers). Several aspects of *model fit*, as discussed in Section \@ref(modelfit) could be considered as well. --></p>
 <!-- ## Conclusion -->
 <!-- A correct interpretation, application and simulation of the NCA approach for identifying necessity implies:  -->
@@ -4204,6 +4204,236 @@ Figure 6.5: True Negative Rate (TNR, specificity) of the NCA approach for identi
 <!-- 2. using NCA’s statistical as a test of the randomness of the necessity empty space, not a general randomness test;  -->
 <!-- 3. doing simulations with bounded variables, not with unbounded (for instance  normal distributed) variables. -->
 <!-- The Monte Carlo simulations conducted this way show that the True Positive Rate (TPR) and the True Negative Rate (TNR) are high, and consequently that the False Negative Rate (FNR)  and the False Positive Rate (FPR) are low.  Particularly for larger sample sizes, the TPR results show that NCA has high sensitivity (hit rate, probability of detection), and the TNR results show that NCA has high specificity (selectivity, correct rejection rate). The corresponding FNR shows that NCA has low miss rates, false dismissal,and the corresponding FPR shows that NCA has low false alarm, fall-out. This means that in the investigated scenarios NCA performs well regarding the desired qualities for identifying necessity, and gives confidence in applying the approach, which will be discussed in the next part of this book.  -->
+<table class="table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:credibilitytab">Table 6.9: </span>Credibility aspects of NCA
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Credibility aspect
+</th>
+<th style="text-align:left;">
+Goal
+</th>
+<th style="text-align:left;">
+Description
+</th>
+<th style="text-align:left;">
+Symbol
+</th>
+<th style="text-align:left;">
+Guideline
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Theoretical support
+</td>
+<td style="text-align:left;width: 2cm; ">
+Identifies expected empty corner. Allows interpretation of findings.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Necessity hypothesis.
+</td>
+<td style="text-align:left;width: 2cm; ">
+H1
+</td>
+<td style="text-align:left;width: 3cm; ">
+Specify formal necessity hypothesis.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Practical relevance
+</td>
+<td style="text-align:left;width: 2cm; ">
+Ensures relevance of findings.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Effect size.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(d\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+High (e.g., <span class="math inline">\(d\)</span> <span class="math inline">\(\geq\)</span> 0.10).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Statistical significance
+</td>
+<td style="text-align:left;width: 2cm; ">
+Tests whether the observed effect could arise by chance (permutation test).
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+<span class="math inline">\(p\)</span>-value.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(p\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+Low (e.g., <span class="math inline">\(p\)</span> &lt; 0.05).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Robustness
+</td>
+<td style="text-align:left;width: 2cm; ">
+Checks sensitivity of findings.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Repeated analysis.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(\Delta\)</span><span class="math inline">\(d\)</span>, <span class="math inline">\(\Delta\)</span><span class="math inline">\(p\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+Report.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Model fit - complexity
+</td>
+<td style="text-align:left;width: 2cm; ">
+Quantifies model complexity used to balance parsimony against accuracy.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Half of ceiling degrees of freedom.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(cp\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+Balance.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Model fit - fit
+</td>
+<td style="text-align:left;width: 2cm; ">
+Quantifies how far the chosen ceiling line deviates from the standard ceiling line (CE-FDH).
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Alignment with boundary pattern (% effect size compared to CE-FDH effect size).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(ft\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+High (e.g., <span class="math inline">\(ft\)</span> <span class="math inline">\(\geq\)</span> 80%).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Model fit - ceiling accuracy
+</td>
+<td style="text-align:left;width: 2cm; ">
+Quantifies the degree to which the expected empty corner is indeed empty.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Percentage of points in the feasible area.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(ca\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+High (e.g., <span class="math inline">\(ca\)</span> <span class="math inline">\(\geq\)</span> 95%).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Model fit - noise
+</td>
+<td style="text-align:left;width: 2cm; ">
+Quantifies uncertainty around the ceiling line due to minor deviations.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Percentage of points in the ceiling zone near the ceiling (medP-zone).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(ns\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+Low (e.g., <span class="math inline">\(ns\)</span> <span class="math inline">\(\leq\)</span> 5%; 0.9 iso-purity).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Model fit - exceptions
+</td>
+<td style="text-align:left;width: 2cm; ">
+Quantifies violations in the ceiling zone far from the ceiling line, indicating how strict (or tolerant) the necessity claim is.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Number of points in the ceiling zone far from the ceiling (lowP-zone).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(ex\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+Very low (e.g., <span class="math inline">\(ex\)</span> $$0).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Model fit - support
+</td>
+<td style="text-align:left;width: 2cm; ">
+Quantifies how strongly the data in the feasible area support the ceiling line.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Percentage of points in the feasible area on or near the ceiling (medS-zone).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(su\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+High (e.g., <span class="math inline">\(su\)</span> <span class="math inline">\(\geq\)</span> 5%; 0.8 iso-solidity).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Model fit - spread
+</td>
+<td style="text-align:left;width: 2cm; ">
+Quantifies the extent to which observations in the feasible area near the ceiling are dispersed, rather than clustered along the ceiling line.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Evenness of <span class="math inline">\(x\)</span>-positions of points on or near the ceiling (medS-zone).
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(sp\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+High (e.g., <span class="math inline">\(sp\)</span> <span class="math inline">\(\geq\)</span> 0.5).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; ">
+Model fit - sharpness
+</td>
+<td style="text-align:left;width: 2cm; ">
+Quantifies how abrupt the transition in the data is across the boundary between ceiling zone and feasible area.
+</td>
+<td style="text-align:left;width: 2.5cm; ">
+Relative density of points in medium-purity (medP) and medium-solidity (medS) zones.
+</td>
+<td style="text-align:left;width: 2cm; ">
+<span class="math inline">\(sh\)</span>
+</td>
+<td style="text-align:left;width: 3cm; ">
+High (e.g., <span class="math inline">\(sh\)</span> &gt; 0.8).
+</td>
+</tr>
+</tbody>
+</table>
 <p><br/></p>
 <p>In the following Part II of the book, the principles of NCA as discussed in Part I are applied to empirical studies.</p>
 <!-- ### Informedness: Definition and Explanation -->
