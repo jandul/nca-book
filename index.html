@@ -377,7 +377,17 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path=""><a href="#symmetry-transformation"><i class="fa fa-check"></i>Symmetry transformation</a></li>
 <li class="chapter" data-level="" data-path=""><a href="#correlation"><i class="fa fa-check"></i>Correlation</a></li>
 </ul></li>
-<li class="chapter" data-level="F" data-path=""><a href="#appendixe"><i class="fa fa-check"></i><b>F</b> Demonstration NCA with PLS-SEM</a></li>
+<li class="chapter" data-level="F" data-path=""><a href="#appendixe"><i class="fa fa-check"></i><b>F</b> Demonstration NCA with PLS-SEM</a>
+<ul>
+<li class="chapter" data-level="F.1" data-path=""><a href="#step-1-theorize-necessity-and-probabilistic-relationships"><i class="fa fa-check"></i><b>F.1</b> Step 1: Theorize necessity and probabilistic relationships</a></li>
+<li class="chapter" data-level="F.2" data-path=""><a href="#step-2-collect-data"><i class="fa fa-check"></i><b>F.2</b> Step 2: Collect data</a></li>
+<li class="chapter" data-level="F.3" data-path=""><a href="#step-3-conduct-sem-1"><i class="fa fa-check"></i><b>F.3</b> Step 3: Conduct SEM</a></li>
+<li class="chapter" data-level="F.4" data-path=""><a href="#step-4-extract-latent-variable-scores-1"><i class="fa fa-check"></i><b>F.4</b> Step 4: Extract latent variable scores</a></li>
+<li class="chapter" data-level="F.5" data-path=""><a href="#examplestep4conductnca"><i class="fa fa-check"></i><b>F.5</b> Step 5: Conduct NCA</a></li>
+<li class="chapter" data-level="F.6" data-path=""><a href="#step-6-produce-nert-1"><i class="fa fa-check"></i><b>F.6</b> Step 6: Produce NERT</a></li>
+<li class="chapter" data-level="F.7" data-path=""><a href="#step-7-produce-bipma"><i class="fa fa-check"></i><b>F.7</b> Step 7: Produce BIPMA</a></li>
+<li class="chapter" data-level="F.8" data-path=""><a href="#interpretresults1"><i class="fa fa-check"></i><b>F.8</b> Step 8: Interpret results</a></li>
+</ul></li>
 <li class="chapter" data-level="G" data-path=""><a href="#appendixh"><i class="fa fa-check"></i><b>G</b> Bottleneck distance table</a></li>
 <li class="chapter" data-level="" data-path=""><a href="#bibliography"><i class="fa fa-check"></i>Bibliography</a></li>
 <li class="divider"></li>
@@ -422,7 +432,7 @@ div.csl-indent {
 <!-- </div> -->
 <div style="text-align: left; margin-top: 0; margin-bottom: 3em;">
 <p>© Jan Dul<br>
-Version 1.0.0. First pubished March 10, 2026. Last update: April 22, 2026<br></p>
+Version 1.0.0. First pubished March 10, 2026. Last update: April 23, 2026<br></p>
 <p>Refer to the book as: Dul, J. (2026). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Chapman &amp; Hall/CRC Press.</p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
@@ -10590,6 +10600,8 @@ Figure 9.14: Target outcome robustness check. The effect of changing the target 
 <div style="text-align: left; font-style: italic; margin: 2em 0;">
 <p>This chapter will be made available soon.</p>
 </div>
+<p>Authors and reviewers can use the <em>SCoRe checklist</em> for <strong>S</strong>trengthening (theoretical rigor), <strong>Co</strong>nducting (data and analysis quality), and <strong>Re</strong>porting (transparency) an empirical study where NCA is applied.</p>
+<p>The interactive version of the checklist is here: <a href="https://jandul.github.io/NCA/score-checklist/" class="uri">https://jandul.github.io/NCA/score-checklist/</a>.</p>
 <p><!-- 10.1 Summary of this chapter {#summary-of-this-chapter} -->
 <!-- 10.2 Types of NCA publications {#typesofncapublications} -->
 <!--   10.2.1 Empirical publication {#empiricalpublication} -->
@@ -11457,7 +11469,7 @@ A SEM-model consists of two parts. The <em>measurement model</em> defines how sp
 <p>NCA has been applied both in combination with CB-SEM (see Table <a href="#tab:pubstablesem"><strong>??</strong></a> in Appendix <a href="#appendixncasem"><strong>??</strong></a>) and in combination with PLS-SEM (see Table <a href="#tab:pubstableplssem"><strong>??</strong></a> in Appendix <a href="#appendixncaplssem"><strong>??</strong></a>). Using PLS-SEM with NCA is popular, possibly for the following reasons:</p>
 <ol style="list-style-type: decimal">
 <li><p>It is often easier to extract latent variables scores from the estimated PLS models than from estimated CB-SEM models.</p></li>
-<li><p>Leading PLS-SEM proponents introduced NCA as a methodological enrichment of PLS-SEM, and provided specific recommendations <span class="citation">(<a href="#ref-richter2020predictors">Richter et al., 2020</a>, <a href="#ref-richter2023apply">2023</a>; <a href="#ref-richter2022use">Richter et al., 2022</a>)</span> and extensions <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span> for combining the methods.</p></li>
+<li><p>Leading PLS-SEM proponents introduced NCA as a methodological enrichment of PLS-SEM, and provided specific recommendations <span class="citation">(<a href="#ref-richter2020predictors">Richter et al., 2020</a>; <a href="#ref-richter2022use">Richter et al., 2022</a>; <a href="#ref-richter2023apply">Richter, Hauff, Ringle, et al., 2023</a>)</span> and extensions <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span> for combining the methods.</p></li>
 <li><p>A basic version of the NCA software became part of a popular software package originally developed for conducting PLS-SEM (SmartPLS, Section <a href="#otherncasoftwarepackages"><strong>??</strong></a> in the Appendix).</p></li>
 </ol>
 <!-- A SEM model consists of two parts. The measurement model defines how latent variables are represented by measured indicators. A latent variable is an unobserved construct that is derived from observed indicators. The structural model specifies how the latent variables are related to each other.  -->
@@ -11836,7 +11848,7 @@ Often, not all <span class="math inline">\(XY\)</span>-plots of tested necessity
 In many NCA-SEM studies not all three criteria for concluding about necessity (theoretical support, large effect size, small <span class="math inline">\(p\)</span>-value) are taken into consideration. Often the requirement of theoretical support is lacking (see items 7 and 9 above). Usually, only theoretical support for the probabilistic sufficiency relationships of the structural model is provided, but this is not informative about the necessity relationship. Without theoretical support for a necessity relationship, it is invalid to conclude that a necessity relationship was identified, even if the effect size was large enough, and the <span class="math inline">\(p\)</span>-value small enough.</p></li>
 <li><p>Checklist item 36: <em>Conduct robustness checks and summarize the results: is the main conclusion about necessity (support or rejection of the hypothesis) sensitive to choices by the analyst regarding ceiling line, scope, effect size threshold, <span class="math inline">\(p\)</span>-value threshold, removing/keeping outliers, different choices for the target outcome? Conclude if the results are robust or fragile.</em><br />
 <em>See this book: Section <a href="#robustnesschecks">9.12</a>.</em><br />
-In many studies a robustness check is done for the SEM part of the study, but not for the NCA part. Robustness checks for NCA are different from those for SEM, and equally important. For example, outliers for SEM may not be outliers for NCA, and vice versa. NCA’s outlier analysis can be done with the NCA software in R (Section <a href="#interpretresults1"><strong>??</strong></a> in the Appendix <a href="#appendixe">F</a> for an example).</p></li>
+In many studies a robustness check is done for the SEM part of the study, but not for the NCA part. Robustness checks for NCA are different from those for SEM, and equally important. For example, outliers for SEM may not be outliers for NCA, and vice versa. NCA’s outlier analysis can be done with the NCA software in R (Section <a href="#interpretresults1">F.8</a> in the Appendix <a href="#appendixe">F</a> for an example).</p></li>
 <li><p>Checklist item 38: <em>When NCA is used in a causal-pluralism study by combining it with another method (e.g., regression-based methods or QCA), report how the results of NCA and the other method complement each other using NERT, NEST and BIPMA when applicable.</em><br />
 <em>See this book: Chapter <a href="#multimethodstudies">11</a>.</em><br />
 In many studies, SEM results and NCA results are presented separately without discussing the insights obtained from combining the two methods. The discussion could focus on the consequences of the combined results for theory and practice. The use of NERT (Section <a href="#ncawithregressionbasedmethods">11.3</a>) and BIPMA (Section <a href="#producebipma">11.4.1.7</a>) could be helpful to integrate the results.</p></li>
@@ -12067,10 +12079,10 @@ model_calibrated&lt;- nca_analysis(LF,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.37   0.000
-## URB 0.01   0.360
-## LIT 0.82   0.003
-## IND 0.02   0.372
-## STB 0.46   0.003
+## URB 0.01   0.361
+## LIT 0.82   0.002
+## IND 0.02   0.368
+## STB 0.46   0.005
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code># NCA-raw data
 set.seed(123) # for reproducible results
@@ -12090,9 +12102,9 @@ model_raw &lt;- nca_analysis(LR,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.27   0.000
-## URB 0.09   0.334
-## LIT 0.74   0.001
-## IND 0.11   0.091
+## URB 0.09   0.339
+## LIT 0.74   0.000
+## IND 0.11   0.094
 ## STB 0.53   0.010
 ## ---------------------------------------------------------------------------</code></pre>
 <!-- ``` {r Lipset-hide , echo = TRUE, eval = TRUE, warning=FALSE, message= FALSE, result = FALSE} -->
@@ -12384,10 +12396,10 @@ NCA’s necessity-in-kind analysis is conducted as follows:</p>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.003
+## L 0.29   0.002
 ## R 0.31   0.001
-## P 0.17   0.011
-## V 0.05   0.530
+## P 0.17   0.010
+## V 0.05   0.531
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>library(NCA)
 set.seed(123) # for reproducible results
@@ -12404,10 +12416,10 @@ print(model)</code></pre>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.003
+## L 0.29   0.002
 ## R 0.31   0.001
-## P 0.17   0.011
-## V 0.05   0.530
+## P 0.17   0.010
+## V 0.05   0.531
 ## ---------------------------------------------------------------------------</code></pre>
 <p><br />
 <!-- ```{r, table2ncaqca, echo=FALSE, eval = FALSE out.width='100%', fig.align = "center", fig.cap="NCA necessity analysis. $d$ = effect size; $p$ = $p$-value."} -->
@@ -14427,18 +14439,3078 @@ E(XY) &amp;= \frac{1}{4F_{a,b}} \left( 1 + \tfrac{2}{3} (1 - 2x_0 - F_{a,b}) - \
 </div>
 <div id="appendixe" class="section level1 hasAnchor" number="18">
 <h1><span class="header-section-number">Appendix F</span> Demonstration NCA with PLS-SEM<a href="#appendixe" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div style="text-align: left; font-style: italic; margin: 2em 0;">
-<p>This chapter will be made available soon.</p>
-</div>
-<p><!-- 22.1 Step 1: Theorize necessity and probabilistic relationships {#step-1-theorize-necessity-and-probabilistic-relationships} -->
-<!-- 22.2 Step 2: Collect data {#step-2-collect-data} -->
-<!-- 22.3 Step 3: Conduct SEM {#step-3-conduct-sem} -->
-<!-- 22.4 Step 4: Extract latent variable scores {#step-4-extract-latent-variable-scores} -->
-<!-- 22.5 Step 5: Conduct NCA {#examplestep4conductnca} -->
-<!-- 22.6 Step 6: Produce NERT {#step-6-produce-nert} -->
-<!-- 22.7 Step 7: Produce BIPMA {#step-7-produce-bipma} -->
-<!-- 22.8 Step 8: Interpret results {#interpretresults1} --></p>
+<!-- \textcolor{red}{set nboot 5000 ipv 14} -->
+<!-- \textcolor{red}{set test.rep 10000 ipv 13} -->
+<p>This section demonstrates the steps for combining NCA with SEM (Section <a href="#ncasem">11.4</a>) using an example. This example has been used in four published studies where NCA is combined with PLS-SEM <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-richter2020predictors">Richter et al., 2020</a>; <a href="#ref-richter2023apply">Richter, Hauff, Ringle, et al., 2023</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span>. The goal of the demonstration is threefold:</p>
+<ul>
+<li><p>Show how the combined analysis can be done following the flowchart presented in this book.</p></li>
+<li><p>Show how the proposed BIPMA plot for prioritizing evidence-based action in practice can be produced and how it differs from IPMA and cIPMA.</p></li>
+<li><p>Show how robustness checks for NCA can be conducted in the context of SEM.</p></li>
+<li><p>Show how to conduct a combined NCA-SEM analysis with <code>R</code>.</p></li>
+</ul>
+<p>This demonstration is a replication of the four above studies by using a different software package than the SmartPLS package. The NCA package for <code>R</code> includes all NCA functions and is free. The SmartPLS software may be more user-friendly for users who are not familiar with <code>R</code>, but it is not free and does not include all NCA functions.
+<!-- A quick start guideline for using NCA with ```R``` can be found [here]( https://www.erim.eur.nl/fileadmin/user_upload/_generated_/download/Quick_Start_Guide_NCA_4.0.0_February_2024.pdf). --></p>
+<p>The selected example evaluates an extended version of the Technology Acceptance Model (TAM) <span class="citation">(<a href="#ref-richter2020predictors">Richter et al., 2020</a>)</span>. Figure <a href="#fig:tamfig">F.1</a> shows the model consisting of six variables (rectangles) and 9 relationships (arrows).</p>
 
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tamfig"></span>
+<img src="FigTAM.png" alt="The extended Technology Acceptance Model (TAM) according to Richter et al. (2020)." width="100%" />
+<p class="caption">
+Figure F.1: The extended Technology Acceptance Model (TAM) according to <span class="citation">Richter et al. (<a href="#ref-richter2020predictors">2020</a>)</span>.
+</p>
+</div>
+<p>For the demonstration, the flowchart of Figure <a href="#fig:semflowchart">11.4</a> is followed. The <code>R</code> packages <code>SEMinR</code> for conducting PLS-SEM, <code>NCA</code> for conducting NCA, and the general purpose <code>R</code> packages <code>ggplot2</code> and <code>ggrepel</code> for graphics need to be installed. Additional <code>R</code> code for conducting the analysis can be found in Section <a href="#additionalcode"><strong>??</strong></a>.</p>
+<div id="step-1-theorize-necessity-and-probabilistic-relationships" class="section level2 hasAnchor" number="18.1">
+<h2><span class="header-section-number">F.1</span> Step 1: Theorize necessity and probabilistic relationships<a href="#step-1-theorize-necessity-and-probabilistic-relationships" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>It is assumed that the relationships shown in Figure <a href="#fig:tamfig">F.1</a> are theoretically justified from both the perspective of probabilistic sufficiency as well as from the perspective of necessity <span class="citation">(<a href="#ref-richter2020predictors">Richter et al., 2020</a>)</span>. For enhancing the necessity theorizing see Section <a href="#causalexplanation">7.5.3</a>.</p>
+</div>
+<div id="step-2-collect-data" class="section level2 hasAnchor" number="18.2">
+<h2><span class="header-section-number">F.2</span> Step 2: Collect data<a href="#step-2-collect-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The dataset is provided by <span class="citation">(<a href="#ref-schubring2023extended">Schubring &amp; Richter, 2023</a>)</span> on <a href="https://data.mendeley.com/datasets/pd5dp3phx2/4">Mendeley Data</a>, and explained in <span class="citation">Richter, Hauff, Kolev, et al. (<a href="#ref-richter2023dataset">2023</a>)</span>. The dataset needs to be downloaded in the working directory.
+The helper function <code>get_indicator_data_TAM</code> imports the dataset, selects relevant columns, and changes the column names for use in <code>SEMinR</code>. The helper function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.</p>
+<!-- ``` {r getindicatordatatamfunction, echo = TRUE, eval = TRUE} -->
+<!-- get_indicator_data_TAM <- function(){ -->
+<!-- df0 <- read.csv("Extended TAM.csv") -->
+<!-- df1 <- df0[, 1:(ncol(df0) - 4)] -->
+<!-- colnames(df1) <- c("PU1","PU2","PU3", -->
+<!--                    "CO1","CO2","CO3", -->
+<!--                    "EOU1", "EOU2","EOU3", -->
+<!--                    "EMV1", "EMV2","EMV3", -->
+<!--                    "AD1",  "AD2","AD3", -->
+<!--                    "USE") -->
+<!-- return(df1) -->
+<!-- } -->
+<!-- ``` -->
+<pre class="text"><code># Get indicator data
+source(&quot;get_indicator_data_TAM.R&quot;)
+df &lt;- get_indicator_data_TAM()
+head(df, 3)</code></pre>
+<pre><code>##   PU1 PU2 PU3 CO1 CO2 CO3 EOU1 EOU2 EOU3 EMV1 EMV2 EMV3 AD1 AD2 AD3 USE
+## 1   4   3   3   3   3   3    5    5    4    4    3    3   2   2   2   2
+## 2   3   1   4   3   3   4    4    4    2    4    4    3   5   4   4   3
+## 3   4   4   4   3   3   4    4    4    4    4    4    4   4   4   4   3</code></pre>
+<!-- ```{r indicator_data, echo=FALSE, out.width='99%', fig.align = "left", fig.cap= NULL, cache=TRUE} -->
+<!-- knitr::include_graphics('indicator_data.png') -->
+<!-- ``` -->
+<p>The original data consists of 174 rows (cases = individuals using e-readers) and 20 columns. The first 16 columns represent the raw indicators of the 6 variables of the TAM model. The last four columns are not considered in this demonstration and are removed from the dataset. After running the helper function, the resulting dataset <code>df</code> is used as input for the PLS-SEM model. The raw indicator scores are measured with 5-point Likert scales, except for the score for Technology use, which is measured with a 7-point Likert scale. The variable names are PU = Perceived usefulness, CO = Compatibility, EOU = Perceived ease of use, EMV = Emotional value, AD = Adoption intention, and USE = Technology use.</p>
+</div>
+<div id="step-3-conduct-sem-1" class="section level2 hasAnchor" number="18.3">
+<h2><span class="header-section-number">F.3</span> Step 3: Conduct SEM<a href="#step-3-conduct-sem-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Following the four original studies, the PLS-SEM approach is selected to estimate the SEM model using the <code>SEMinR</code> package. This package standardizes the raw scores and produces latent construct scores (mean = 0, sd = 1), path coefficients and other output. The helper function <code>estimate_sem_model_TAM</code> conducts the PLS-SEM model estimation. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- The ```R``` code of the helper function be found in Section \@ref(estimatesemmodel). -->
+<!-- \ --></p>
+<!-- ``` {r estimatesemmodeltamfunction, echo = TRUE, eval = TRUE} -->
+<!-- estimate_sem_model_TAM <- function(data){ -->
+<!-- library(seminr) -->
+<!-- TAM_mm <- constructs( -->
+<!--   composite("Perceived usefulness", multi_items("PU", 1:3)), -->
+<!--   composite("Compatibility", multi_items("CO", 1:3)), -->
+<!--   composite("Perceived ease of use", multi_items("EOU", 1:3)), -->
+<!--   composite("Emotional value", multi_items("EMV", 1:3)), -->
+<!--   composite("Adoption intention", multi_items("AD", 1:3)), -->
+<!--   composite("Technology use", single_item("USE")) -->
+<!-- ) -->
+<!-- TAM_sm <- relationships( -->
+<!--   paths(from = "Perceived usefulness",  -->
+<!--         to = c("Adoption intention", "Technology use")), -->
+<!--   paths(from = "Compatibility", -->
+<!--         to = c("Adoption intention", "Technology use")), -->
+<!--   paths(from = "Perceived ease of use", -->
+<!--         to = c("Adoption intention", "Technology use")), -->
+<!--   paths(from = "Emotional value", -->
+<!--         to = c("Adoption intention", "Technology use")), -->
+<!--   paths(from = "Adoption intention", -->
+<!--         to = c("Technology use")) -->
+<!-- ) -->
+<!-- TAM_pls <- estimate_pls(data = data, -->
+<!--                         measurement_model = TAM_mm, -->
+<!--                         structural_model = TAM_sm) -->
+<!-- return (TAM_pls) -->
+<!-- } -->
+<!-- ``` -->
+<p>The summary of the results shows the standardized path coefficients and some metrics about model fit:</p>
+<pre class="text"><code># Estimate SEM model
+# install.packages(&quot;seminr&quot;) # install the package if needed
+source(&quot;estimate_sem_model_TAM.R&quot;)
+TAM_pls &lt;- estimate_sem_model_TAM(df)
+summary(TAM_pls)</code></pre>
+<pre><code>## 
+## Results from  package seminr (2.4.2)
+## 
+## Path Coefficients:
+##                       Adoption intention Technology use
+## R^2                                0.539          0.420
+## AdjR^2                             0.528          0.403
+## Perceived usefulness               0.227          0.050
+## Compatibility                      0.045          0.107
+## Perceived ease of use              0.088          0.010
+## Emotional value                    0.515          0.137
+## Adoption intention                     .          0.437
+## 
+## Reliability:
+##                       alpha  rhoA  rhoC   AVE
+## Perceived usefulness  0.723 0.753 0.842 0.642
+## Compatibility         0.858 0.859 0.914 0.779
+## Perceived ease of use 0.783 0.783 0.873 0.697
+## Emotional value       0.914 0.917 0.946 0.853
+## Adoption intention    0.938 0.939 0.960 0.889
+## Technology use        1.000 1.000 1.000 1.000
+## 
+## Alpha, rhoA, and rhoC should exceed 0.7 while AVE should exceed 0.5</code></pre>
+<!-- ```{r generating-the-seminr-model, echo=FALSE, out.width='99%', fig.align = "left", fig.cap= NULL, cache=TRUE} -->
+<!-- knitr::include_graphics('Generating the seminr model.png') -->
+<!-- ``` -->
+<p>The results correspond to those reported in the four original publications using the SmartPLS software.</p>
+<p>In addition, the 95% confidence interval of the path coefficients can be obtained using bootstrapping. A path is significant if its 95% bootstrap confidence interval does not include zero. The helper function <code>get_significance_sem.R</code> can be used to find significant direct effects, indirect effects, and total effects as follows. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- The ```R``` code of the helper function be found in Section \@ref(significancesem). -->
+<!--  \ --></p>
+<!-- ``` {r getsignificancesemfunction, echo = TRUE, eval = TRUE} -->
+<!-- get_significance_sem <- function(sem, nboot = 5000) { -->
+<!--   boot_model <- bootstrap_model(sem, nboot = nboot) # alpha is fixed at 0.05  -->
+<!--   df_direct <- as.data.frame(summary(boot_model)[[2]]) -->
+<!--   df_total  <- as.data.frame(summary(boot_model)[[6]]) -->
+<!--   colnames(df_direct)[5:6] <- c("CI_low", "CI_high") -->
+<!--   colnames(df_total)[5:6]  <- c("CI_low", "CI_high") -->
+<!--   df_direct <- cbind(Path = rownames(df_direct), df_direct) -->
+<!--   df_total  <- cbind(Path = rownames(df_total), df_total) -->
+<!--   rownames(df_direct) <- NULL; rownames(df_total)  <- NULL -->
+<!--   path_order <- df_direct$Path -->
+<!--   merged_df <- merge(df_total, df_direct, by = "Path", suffixes = c("_total", "_direct")) -->
+<!--   colnames(merged_df) <- make.names(colnames(merged_df)) -->
+<!--   merged_df$Indirect_Estimate <- merged_df$Original.Est._total - merged_df$Original.Est._direct -->
+<!--   merged_df$Sig_Direct   <- (merged_df$CI_low_direct > 0 | -->
+<!--                                merged_df$CI_high_direct < 0) -->
+<!--   merged_df$Sig_Total    <- (merged_df$CI_low_total > 0 |  -->
+<!--                                merged_df$CI_high_total < 0) -->
+<!--   merged_df$Sig_Indirect <- merged_df$Sig_Total & !merged_df$Sig_Direct -->
+<!--   summary_df <- merged_df[, c( -->
+<!--     "Path", -->
+<!--     "Original.Est._direct", "Indirect_Estimate", "Original.Est._total", -->
+<!--     "Sig_Direct", "Sig_Indirect", "Sig_Total" -->
+<!--   )] -->
+<!--   summary_df <- within(summary_df, { -->
+<!--     Original.Est._direct  <- round(Original.Est._direct, 3) -->
+<!--     Indirect_Estimate     <- round(Indirect_Estimate, 3) -->
+<!--     Original.Est._total   <- round(Original.Est._total, 3) -->
+<!--   }) -->
+<!--   summary_df$Path <- factor(summary_df$Path, levels = path_order) -->
+<!--   summary_df <- summary_df[order(summary_df$Path), ] -->
+<!--   colnames(summary_df)[2:4] <- c("Direct", "Indirect", "Total") -->
+<!--   get_rhs <- function(path_string) { -->
+<!--     strsplit(as.character(path_string), "->")[[1]][2] |> trimws() -->
+<!--   } -->
+<!--   summary_df$Predicted <- sapply(as.character(summary_df$Path), get_rhs) -->
+<!--   return(summary_df) -->
+<!-- } -->
+<!-- ```  -->
+<pre class="text"><code># Estimate significance SEM effects
+source(&quot;get_significance_sem.R&quot;)
+
+# Limit computation time
+nboot &lt;- 5000 # set lower for less computation time; 
+              # for final analysis select 5000
+set.seed(123) # for reproducible results
+TAM_sig &lt;- get_significance_sem (sem = TAM_pls, 
+                                 nboot = nboot) 
+print(TAM_sig)</code></pre>
+<pre><code>##                                            Path Direct Indirect Total
+## 8  Perceived usefulness  -&gt;  Adoption intention  0.227    0.000 0.227
+## 9      Perceived usefulness  -&gt;  Technology use  0.050    0.099 0.149
+## 2         Compatibility  -&gt;  Adoption intention  0.045    0.000 0.045
+## 3             Compatibility  -&gt;  Technology use  0.107    0.020 0.127
+## 6 Perceived ease of use  -&gt;  Adoption intention  0.088    0.000 0.088
+## 7     Perceived ease of use  -&gt;  Technology use  0.010    0.038 0.049
+## 4       Emotional value  -&gt;  Adoption intention  0.515    0.000 0.515
+## 5           Emotional value  -&gt;  Technology use  0.137    0.225 0.362
+## 1        Adoption intention  -&gt;  Technology use  0.437    0.000 0.437
+##   Sig_Direct Sig_Indirect Sig_Total pval_direct pval_total          Predicted
+## 8       TRUE        FALSE      TRUE       0.030      0.030 Adoption intention
+## 9      FALSE        FALSE     FALSE       0.602      0.180     Technology use
+## 2      FALSE        FALSE     FALSE       0.690      0.690 Adoption intention
+## 3      FALSE        FALSE     FALSE       0.383      0.294     Technology use
+## 6      FALSE        FALSE     FALSE       0.268      0.268 Adoption intention
+## 7      FALSE        FALSE     FALSE       0.886      0.501     Technology use
+## 4       TRUE        FALSE      TRUE       0.000      0.000 Adoption intention
+## 5      FALSE         TRUE      TRUE       0.121      0.000     Technology use
+## 1       TRUE        FALSE      TRUE       0.000      0.000     Technology use</code></pre>
+<!-- ```{r significance_SEM, echo=FALSE, out.width='99%', fig.align = "left", fig.cap= NULL, cache=TRUE} -->
+<!-- knitr::include_graphics('significance_SEM.png') -->
+<!-- ``` -->
+<p>For the <em>direct</em> paths, three out of nine path coefficients are significant:</p>
+<ul>
+<li><p>Perceived usefulness <span class="math inline">\(\rightarrow\)</span> Adoption intention (direct effect: 0.227),</p></li>
+<li><p>Emotional value <span class="math inline">\(\rightarrow\)</span> Adoption intention (direct effect: 0.515)</p></li>
+<li><p>and Adoption intention <span class="math inline">\(\rightarrow\)</span> Technology use (direct effect: 0.437)</p></li>
+</ul>
+<p>For the <em>indirect</em> paths, two out of four paths are significant:</p>
+<ul>
+<li><p>Perceived usefulness <span class="math inline">\(\rightarrow\)</span> Adoption intention <span class="math inline">\(\rightarrow\)</span> Technology use (indirect effect: 0.099)</p></li>
+<li><p>Emotional value <span class="math inline">\(\rightarrow\)</span> Adoption intention <span class="math inline">\(\rightarrow\)</span> Technology use (indirect effect: 0.225)</p></li>
+</ul>
+<p>From the four combined direct and indirect paths (<em>total effect</em>) only one is significant: Emotional value <span class="math inline">\(\rightarrow\)</span> Adoption intentions <span class="math inline">\(\rightarrow\)</span> Technology (total effect = 0.362).</p>
+<p>These results suggest that for increasing Technology use on average, only Emotional value and Adoption intention are effective. Perceived usefulness, Compatibility and Perceived ease of use are not candidates for intervention based on the SEM results as they do not have a significant total effect on Technology use.</p>
+</div>
+<div id="step-4-extract-latent-variable-scores-1" class="section level2 hasAnchor" number="18.4">
+<h2><span class="header-section-number">F.4</span> Step 4: Extract latent variable scores<a href="#step-4-extract-latent-variable-scores-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>By default, PLS-SEM model estimation produces standardized latent variable scores, and this is the only option in <code>SEMinR</code> version 2.4.2 that was used for the analysis. However, unstandardized scores are preferred as input for NCA, and normalized unstandardized scores are needed for IPMA, cIPMA and BIPMA. The helper function <code>unstandardize</code> calculates the unstandardized latent variable scores from the standardized latent variable scores using procedures described in <span class="citation">(<a href="#ref-ringle2016gain">Ringle &amp; Sarstedt, 2016</a>)</span>, such that the scale of the latent variable scores match the scale of the original indicator scores. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- (Section \@ref(unstandardize)). -->
+<!--  \ -->
+<!-- ``` {r unstandardizefunction, echo = TRUE, eval = TRUE} -->
+<!-- unstandardize <- function(sem) { -->
+<!--   original_indicators_df <- as.data.frame(sem$rawdata) -->
+<!--   standardized_weights_matrix <- sem$outer_weights -->
+<!--   standardized_weights_df <- as.data.frame(as.table(standardized_weights_matrix)) -->
+<!--   colnames(standardized_weights_df) <- c("Indicator",  -->
+<!--                                          "Latent variable", -->
+<!--                                          "Standardized weight") -->
+<!--   standardized_weights_df <- subset(standardized_weights_df, -->
+<!--                                     `Standardized weight` != 0) -->
+<!--   standardized_weights_df$SD <-  -->
+<!--     sem$sdData[as.character(standardized_weights_df$Indicator)] -->
+<!--   standardized_weights_df$`Unstandardized weight` <-  -->
+<!--   standardized_weights_df$`Standardized weight` /  -->
+<!--     standardized_weights_df$SD   -->
+<!--   sum_weights <- tapply( -->
+<!--     standardized_weights_df$`Unstandardized weight`,  -->
+<!--     standardized_weights_df$`Latent variable`,  -->
+<!--     sum -->
+<!--   ) -->
+<!--   standardized_weights_df$`Sum unstandardized weight` <-  -->
+<!--     sum_weights[match(standardized_weights_df$`Latent variable`, -->
+<!--                       names(sum_weights))] -->
+<!--   standardized_weights_df$`Normalized unstandardized weight` <-  -->
+<!--     standardized_weights_df$`Unstandardized weight` / -->
+<!--     standardized_weights_df$`Sum unstandardized weight` -->
+<!--   unstandardized_latent_variable_df <-  -->
+<!--     data.frame(matrix(nrow = nrow(original_indicators_df), ncol = 0)) -->
+<!--   for (latent_variable in unique(standardized_weights_df$`Latent variable`)) { -->
+<!--     latent_data <- subset(standardized_weights_df, -->
+<!--                           `Latent variable` == latent_variable) -->
+<!--     indicators <- as.character(latent_data$Indicator) -->
+<!--     weights <- latent_data$`Normalized unstandardized weight` -->
+<!--     indicator_scores <- original_indicators_df[, indicators, drop = FALSE] -->
+<!--     latent_score <- rowSums(sweep(indicator_scores, 2, weights, `*`)) -->
+<!--     unstandardized_latent_variable_df[[latent_variable]] <- latent_score -->
+<!--   } -->
+<!--   return(unstandardized_latent_variable_df) -->
+<!-- } --></p>
+<!-- ```  -->
+<pre class="text"><code># Unstandardize data
+source(&quot;unstandardize.R&quot;)
+dataset &lt;- unstandardize(TAM_pls)
+head(dataset, 3)</code></pre>
+<pre><code>##   Perceived usefulness Compatibility Perceived ease of use Emotional value
+## 1             3.276582      3.000000              4.676176        3.322971
+## 2             2.668901      3.336436              3.352351        3.663039
+## 3             4.000000      3.336436              4.000000        4.000000
+##   Adoption intention Technology use
+## 1           2.000000              2
+## 2           4.329378              3
+## 3           4.000000              3</code></pre>
+<pre class="text"><code>data.frame (Mean = colMeans(dataset),
+            Min = apply(dataset, 2, min),
+            Max = apply(dataset, 2, max)
+            )</code></pre>
+<pre><code>##                           Mean      Min Max
+## Perceived usefulness  3.569914 1.000000   5
+## Compatibility         3.462276 1.000000   5
+## Perceived ease of use 4.025616 1.674851   5
+## Emotional value       3.806854 1.000000   5
+## Adoption intention    3.881627 1.000000   5
+## Technology use        3.982759 1.000000   7</code></pre>
+<p>The resulting dataset with unstandardized latent variable scores is called <code>dataset</code>. The variables are now interpretable according to the Likert scales that were used to measure its raw indicators. The results show that minimum and maximum latent variable <em>scores</em> correspond to the minimum and maximum values of the Likert <em>scale values</em>. There is one exception: the minimum observed latent variable score for Perceived ease of use is 1.67 whereas the minimum value of the scale is 1. Apparently, none of the 174 cases (individuals) scored a value 1 on all three indicators of this latent variable.</p>
+<p>The unstandardized latent variable scores can be min-max normalized to obtain normalized unstandardized latent variable scores. Min-max normalization is essential if the predictor variables do not have the same scale values (e.g., one predictor variable is measured with a 1-5-Likert scale while another predictor variable is measured with a 1-7-Likert scale). If the same scale is used for all predictor variables, it is preferred not to normalize the scales and to keep the unstandardized latent variables scores, such that the results are interpretable according to the Likert scale values.</p>
+<p>Data can be normalized using the helper function <code>nca_util_normalize</code> of the <code>NCA</code> package in <code>R</code>. The input arguments for this function are the data and the range (theoretical minimum and maximum) of the scale (the observed minimum or maximum values might be different). The range of the scale (e.g., 0-1 or 0-100). For example, (c)IPMA commonly uses a 0-100 normalization of the unstandardized latent variable scores:
+<!--  \ -->
+<!-- ``` {r normalize, echo = TRUE, eval = TRUE} -->
+<!-- library(NCA) -->
+<!-- data <- dataset -->
+<!-- range = c(0, 100) #percentages -->
+<!-- dataset1 <- nca_util_normalize (data, range) -->
+<!-- head(dataset1, 3) -->
+<!-- ``` -->
+<!--  \ --></p>
+<pre class="text"><code># Min-max normalize data
+data &lt;- dataset
+scale = c(0, 100) #new percentages scale
+library(NCA) # use normalize utility of NCA 
+min_max &lt;- c(rep(c(1,5), 5), c(1,7)) # min and max values of original scale
+dataset1 &lt;-  nca_util_normalize(data = data, scale = scale, min_max = min_max)
+head(dataset1, 3)</code></pre>
+<pre><code>##   Perceived usefulness Compatibility Perceived ease of use Emotional value
+## 1             56.91456      50.00000              91.90439        58.07427
+## 2             41.72252      58.41091              58.80878        66.57599
+## 3             75.00000      58.41091              75.00000        75.00000
+##   Adoption intention Technology use
+## 1           25.00000       16.66667
+## 2           83.23446       33.33333
+## 3           75.00000       33.33333</code></pre>
+<p>The resulting dataset with 0-100 normalized unstandardized latent variable scores is called <code>dataset1</code>. The variable scores can be interpreted as percentages of the range of the scale. For example, the midpoint 3 of a non-normalized unstandardized 1-5-Likert scale becomes 50 after 0-100 normalization. Note that for the illustrative example normalization is not essential for conducting IPMA, cIPMA or BIPMA because the five predictor variables have the same scale values (1-5-Likert scales).</p>
+<p>Since the results of NCA are insensitive to linear transformations (Appendix <a href="#appendixd">B</a>), the results are the same for standardized, unstandardized, normalized or non-normalized scores. Unstandardized (normalized or non-normalized) latent variable scores are the preferred input for NCA because of interpretability. The reason is that, in contrast to SEM where a relationship is described in terms of a change of <span class="math inline">\(X\)</span> producing a change of <span class="math inline">\(Y\)</span> (e.g., more <span class="math inline">\(X\)</span> produces more <span class="math inline">\(Y\)</span>), NCA describes a relationship in terms of the necessity of a <em>level</em> of <span class="math inline">\(X\)</span> for a <em>level</em> of <span class="math inline">\(Y\)</span> (level <span class="math inline">\(x\)</span> of <span class="math inline">\(X\)</span> is necessary for level <span class="math inline">\(y\)</span> of <span class="math inline">\(Y\)</span>). By using interpretable levels linked to the original (unstandardized) scales, NCA results become more insightful.</p>
+</div>
+<div id="examplestep4conductnca" class="section level2 hasAnchor" number="18.5">
+<h2><span class="header-section-number">F.5</span> Step 5: Conduct NCA<a href="#examplestep4conductnca" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To estimate the necessity of the 9 relationships in the TAM model, 9 necessity analyses are done to obtain necessity effect sizes and <span class="math inline">\(p\)</span>-values. These analyses are grouped into two multiple NCA’s: one for the outcome Adoption intention (with four conditions: Perceived usefulness, Compatibility, Perceived ease of use, Emotional value), and one for the outcome Technology use (with five conditions: Perceived usefulness, Compatibility, Perceived ease of use, Emotional value, Adoption intention). The remainder of this demonstration focuses on the outcome Technology use, thus only five necessity relationships are analyzed.</p>
+<p>In the original four studies that use the example, the analysts make following choices for the NCA analysis:</p>
+<ul>
+<li><p>Ceiling line = CE-FDH.</p></li>
+<li><p>Effect size threshold level = 0.10.</p></li>
+<li><p><span class="math inline">\(p\)</span>-value threshold level = 0.05.</p></li>
+<li><p>Scope: empirical scope.</p></li>
+<li><p>Outlier removal: none.</p></li>
+<li><p>Target outcome = 85% <span class="citation">(only in <a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span>.</p></li>
+</ul>
+<p>For this demonstration, the same choices for the primary NCA analysis are made (and different choices for the robustness checks).</p>
+<p>The original studies use standardized scores <span class="citation">(<a href="#ref-richter2020predictors">Richter et al., 2020</a>)</span>, non-normalized unstandardized scores <span class="citation">(<a href="#ref-richter2023apply">Richter, Hauff, Ringle, et al., 2023</a>)</span>, or 0-100 normalized unstandardized scores <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span> as input for NCA. For this demonstration, the preferred scores from an NCA perspective are used as input data: unstandardized latent variable scores without normalization (because all indicator scales of the conditions use the same Likert scales). NCA can be conducted as follows with the <code>NCA</code> software in <code>R</code>.</p>
+<pre class="text"><code>library(NCA)
+# Limit computation time
+test.rep &lt;- 10000 # set lower for less computation time; 
+                  # for final analysis select 10000
+# Conduct NCA - Technology use
+set.seed(123) # for reproducible results
+model1.technology &lt;- nca_analysis(dataset, 1:5, 6, 
+                                  ceilings = &quot;ce_fdh&quot;, 
+                                  test.rep = test.rep) 
+print(model1.technology)</code></pre>
+<pre><code>## 
+## ---------------------------------------------------------------------------</code></pre>
+<pre><code>## Effect size(s):</code></pre>
+<pre><code>##                       ce_fdh p    
+## Perceived usefulness  0.24   0.001
+## Compatibility         0.21   0.000
+## Perceived ease of use 0.24   0.015
+## Emotional value       0.33   0.000
+## Adoption intention    0.29   0.000
+## ---------------------------------------------------------------------------</code></pre>
+<pre class="text"><code># Conduct NCA - Adoption intention
+set.seed(123) # for reproducible results
+model1.adoption &lt;- nca_analysis(dataset, 1:4, 5,
+                                ceilings = &quot;ce_fdh&quot;,
+                                test.rep = test.rep) 
+print(model1.adoption)</code></pre>
+<pre><code>## 
+## ---------------------------------------------------------------------------</code></pre>
+<pre><code>##                       ce_fdh p    
+## Perceived usefulness  0.12   0.003
+## Compatibility         0.08   0.010
+## Perceived ease of use 0.15   0.007
+## Emotional value       0.21   0.000
+## ---------------------------------------------------------------------------</code></pre>
+<p>The results show NCA’s effect size and <span class="math inline">\(p\)</span>-value of the five conditions for Technology use. The results correspond to those reported in the four original studies using the SmartPLS software. It can be concluded that the five conditions are necessary conditions for Technology use because the three criteria for identifying necessity-in-kind are met:</p>
+<ol style="list-style-type: decimal">
+<li><p>A necessity hypothesis is formulated and theoretically justified (for the purpose of this demonstration this requirement is assumed to be met).</p></li>
+<li><p>The effect size is relatively large (<span class="math inline">\(d \geq\)</span> 0.10).</p></li>
+<li><p>The <span class="math inline">\(p\)</span>-value is relatively small (<span class="math inline">\(p\)</span> &lt; 0.05).</p></li>
+</ol>
+<p>This means that the analysis can continue with an analysis of necessity-in-degree with a bottleneck table that includes all five necessary conditions. This analysis gives information about the minimum level of a condition that is necessary for the target level of the outcome. It also informs if in individual cases a selected target outcome level is achievable, given the observed levels of the conditions. If a case has a value of any condition below the minimum required level for that condition, this case is a ‘bottleneck case’ for that condition. If the case has a condition value above the minimum required level, the case is not a bottleneck case for the condition, but could be a bottleneck case for another conditions. Only when all condition values exceed their respective threshold levels, the case is not a bottleneck case, making the target outcome level achievable.</p>
+<p>The use of non-normalized unstandardized latent variable scores and of ‘actual values’ in the bottleneck table ensures a direct link between the values in the bottleneck table and the values of the Likert scales that were used to measure the indicator scores. This means that in NCA’s <code>nca_analysis</code> function, the values of conditions in the bottleneck table must be must specified as ‘actual’ using the argument <code>bottleneck.x = 'actual'</code>. Since the outcome variable Technology use has 7 distinct levels, the steps in the bottleneck table preferably correspond to these levels of the outcome. This can be done with the argument <code>steps</code>.</p>
+<!-- ```{=latex} -->
+<!-- \begingroup -->
+<!-- \colorlet{red}{black} -->
+<!-- ``` -->
+<pre class="text"><code># Bottleneck table Technology use: actual-actual
+library(NCA)
+bottleneck.y = &quot;actual&quot;
+bottleneck.x = &quot;actual&quot;
+steps = c(1,2,3,4,5,6,7)
+model2.technology &lt;- nca_analysis(dataset,# unstandardized (non-normalized)
+                                  1:5, # five conditions
+                                  6, # outcome
+                                  ceilings = &quot;ce_fdh&quot;,
+                                  bottleneck.x = bottleneck.x,
+                                  bottleneck.y = bottleneck.y,
+                                  steps = steps)
+nca_output (model2.technology, summaries = FALSE, plots = FALSE,
+            bottlenecks = TRUE)</code></pre>
+<pre><code>## 
+## ---------------------------------------------------------------------------</code></pre>
+<pre><code>## ---------------------------------------------------------------------------
+## Y      1     2     3     4     5    
+## 1     NN    NN    NN    NN    NN   
+## 2     NN    NN    2.015 NN    NN   
+## 3     NN    NN    2.015 NN    NN   
+## 4     1.628 2.021 2.339 2.986 2.353
+## 5     1.628 2.348 2.339 2.986 2.353
+## 6     2.925 2.348 2.355 2.986 2.353
+## 7     3.648 2.348 3.676 2.986 4.000</code></pre>
+<!-- \endgroup  -->
+<!-- The predictor numbers are: -->
+<!-- 1 = Perceived usefulness -->
+<!-- 2 = Compatibility  -->
+<!-- 3 = Perceived ease of use  -->
+<!-- 4 = Emotional value  -->
+<!-- 5 = Adoption intention -->
+<p>The outcome variable Technology use is the perceived frequency of utilizing an e-book. The 7 anchor points are 1 = never, 2 = seldom; 3 = several times a month; 4 = once a week; 5 = several times a week; 6 = daily; 7 = several times daily. The condition variables are measured on a 5 point disagree-agree Likert scale where the anchor points range from 1 = strongly disagree to 5 = agree fully. In the original studies (and here) it is assumed that these Likert scales are interval scales, meaning the distances between anchor points are treated as being equal. This assumption facilitates quantitative analysis of the data, although it is often, like here, a strong assumption.</p>
+<p>The bottleneck table can be evaluated row-wise. It shows that for a given target outcome level of Technology use (first column), the conditions must meet a certain minimum level (next columns). For example, for a level of 3 of Technology use (‘several times a month’), it is only necessary to have level 2.015 of Perceived ease of use; the other predictors cannot be a bottleneck (NN = Not Necessary). However, for a target level of 4 of Technology use (‘once a week’), it is necessary to have level 1.628 of Perceived usefulness, level 2.021 of Compatibility, level 2.339 of Perceived ease of use, level 2.986 of Emotional value, and level 2.353 of Adoption intention.</p>
+<p>The bottleneck tables that are used by <span class="citation">Hauff et al. (<a href="#ref-hauff2024importance">2024</a>)</span> and <span class="citation">Sarstedt et al. (<a href="#ref-sarstedt2024combined">2024</a>)</span> have a large number of steps as they used 0-100 normalized unstandardized scores of the latent variable with bottleneck steps of 5% for the outcome (0% = original level 1, 100% = original level 7). For the purpose of cIPMA, ‘actual’ values for the outcome are selected (because the input data are already percentage of range) for the outcome and ‘percentile’ values for the conditions. Their analysis is replicated as follows:</p>
+<pre class="text"><code># Bottleneck table Technology use: actual - percentile
+library(NCA)
+bottleneck.y = &quot;actual&quot;
+bottleneck.x = &quot;percentile&quot;
+steps=seq(0, 100, 5)
+model3.technology &lt;- nca_analysis(dataset1, 1:5, 6, 
+                                  ceilings = &quot;ce_fdh&quot;, 
+                                  bottleneck.x = bottleneck.x,
+                                  bottleneck.y = bottleneck.y, 
+                                  steps = steps)
+nca_output (model3.technology, summaries = FALSE, plots = FALSE,
+            bottlenecks = TRUE)</code></pre>
+<pre><code>## 
+## ---------------------------------------------------------------------------</code></pre>
+<pre><code>## ---------------------------------------------------------------------------
+## Y        1         2        3         4        5        
+## 0       NN (0)    NN (0)   NN (0)    NN (0)   NN (0)   
+## 5       NN (0)    NN (0)   0.6 (1)   NN (0)   NN (0)   
+## 10      NN (0)    NN (0)   0.6 (1)   NN (0)   NN (0)   
+## 15      NN (0)    NN (0)   0.6 (1)   NN (0)   NN (0)   
+## 20      NN (0)    NN (0)   0.6 (1)   NN (0)   NN (0)   
+## 25      NN (0)    NN (0)   0.6 (1)   NN (0)   NN (0)   
+## 30      NN (0)    NN (0)   0.6 (1)   NN (0)   NN (0)   
+## 35      1.7 (3)   5.7 (10) 1.1 (2)   5.7 (10) 4.6 (8)  
+## 40      1.7 (3)   5.7 (10) 1.1 (2)   5.7 (10) 4.6 (8)  
+## 45      1.7 (3)   5.7 (10) 1.1 (2)   5.7 (10) 4.6 (8)  
+## 50      1.7 (3)   5.7 (10) 1.1 (2)   5.7 (10) 4.6 (8)  
+## 55      1.7 (3)   8.6 (15) 1.1 (2)   5.7 (10) 4.6 (8)  
+## 60      1.7 (3)   8.6 (15) 1.1 (2)   5.7 (10) 4.6 (8)  
+## 65      1.7 (3)   8.6 (15) 1.1 (2)   5.7 (10) 4.6 (8)  
+## 70      17.2 (30) 8.6 (15) 2.9 (5)   5.7 (10) 4.6 (8)  
+## 75      17.2 (30) 8.6 (15) 2.9 (5)   5.7 (10) 4.6 (8)  
+## 80      17.2 (30) 8.6 (15) 2.9 (5)   5.7 (10) 4.6 (8)  
+## 85      47.1 (82) 8.6 (15) 28.7 (50) 5.7 (10) 39.1 (68)
+## 90      47.1 (82) 8.6 (15) 28.7 (50) 5.7 (10) 39.1 (68)
+## 95      47.1 (82) 8.6 (15) 28.7 (50) 5.7 (10) 39.1 (68)
+## 100     47.1 (82) 8.6 (15) 28.7 (50) 5.7 (10) 39.1 (68)</code></pre>
+<p>In this version of the bottleneck table, the outcome is expressed as ‘actual values’, which are the values used as input to NCA (here the 0-100% normalized values). The conditions are expressed as percentiles. The percentile value corresponds to the <em>percentage</em> of cases that are unable to achieve the level of the outcome (value in the first column of the row). The number between brackets refers to the <em>number</em> of cases that were unable to meet the required level of the condition for the given target level of the outcome. For example, for the target outcome level of Technology use of 85%, 47.1% of cases (82 cases) were unable to achieve the required level of Perceived usefulness. This means that these cases will not have a level of 85% Technology use. A case that is not able to achieve a target outcome because the required level of the necessary condition is not met is a <em>bottleneck case</em>.</p>
+<p>The level of 85% outcome on a 0-100 normalized scale corresponds to level 6.1 on the original 1-7-Likert scale. A value of 6 on the Likert scale (daily use of the e-reader) corresponds to 83.33% on the 0-100 normalized scale. It shows that although 0-100 normalization is common in the context of IPMA, the link with the original scales may be obscured.</p>
+<p>The percentage of bottleneck cases for a given condition and target outcome can be extracted from the bottleneck table if percentiles were used as values for the conditions by using the helper function <code>get_bottleneck_cases</code>. This <code>R</code> function can be downloaded from the <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>
+<!-- (Section \@ref(getbottleneckcases)). -->
+<!--   \ --></p>
+<!-- ``` {r ncaforsem3, echo = TRUE, eval = TRUE} -->
+<!-- get_bottleneck_cases <- function(data, conditions, outcome,  -->
+<!--                                  corner = 1, target_outcome, ceiling) { -->
+<!--   outcome_min <- min(data[[outcome]], na.rm = TRUE) -->
+<!--   outcome_max <- max(data[[outcome]], na.rm = TRUE) -->
+<!--   if (length(corner) == 1 && corner == 1) {corner <- rep(1, length(conditions))} -->
+<!--   if (target_outcome < outcome_min || target_outcome > outcome_max) { -->
+<!--     stop( -->
+<!--       sprintf( -->
+<!--         "Error: target_outcome (%f) is out of range  -->
+<!--         for the outcome variable '%s'. Minimum: %f, Maximum: %f", -->
+<!--         target_outcome, outcome, outcome_min, outcome_max -->
+<!--       ) -->
+<!--     ) -->
+<!--   } -->
+<!--   bottleneck_matrix <- matrix(0, nrow = nrow(data), ncol = length(conditions)) -->
+<!--   colnames(bottleneck_matrix) <- conditions -->
+<!--   threshold <- setNames(numeric(length(conditions)), conditions) -->
+<!--   eps <- .Machine$double.eps^0.5  -->
+<!--   for (condition in conditions) { -->
+<!--     # Find index of the condition -->
+<!--     condition_index <- which(conditions == condition)[1]  -->
+<!--     corner_val <- corner[condition_index] -->
+<!--     if (is.na(corner_val)) { -->
+<!--       warning(sprintf("Warning: corner value for condition '%s' is NA.  -->
+<!--                       Defaulting to 1.", condition)) -->
+<!--       corner_val <- 1L -->
+<!--     } else if (!(corner_val %in% 1:4)) { -->
+<!--       warning(sprintf("Warning: corner value for condition '%s' (%d) -->
+<!--                       is out of valid range (1-4).  -->
+<!--                       Defaulting to 1.", condition, corner_val)) -->
+<!--       corner_val <- 1L -->
+<!--     } -->
+<!--     model1 <- nca_analysis( -->
+<!--       data, -->
+<!--       condition, -->
+<!--       outcome, -->
+<!--       corner = corner_val, -->
+<!--       ceilings = ceiling, -->
+<!--       bottleneck.y = "actual", -->
+<!--       bottleneck.x = "actual", -->
+<!--       steps = c(target_outcome, NA) -->
+<!--     ) -->
+<!--       threshold[condition] <-  -->
+<!--         attr(model1[["bottlenecks"]][[ceiling]][[condition]],"mpx.actual")[1, 1] -->
+<!--       if (corner_val %in% c(1, 3)) { -->
+<!--         bottleneck_matrix[, condition] <- as.numeric( -->
+<!--           data[[condition]] < (threshold[condition] - eps) -->
+<!--         ) -->
+<!--       } else { -->
+<!--         bottleneck_matrix[, condition] <- as.numeric( -->
+<!--           data[[condition]] > (threshold[condition] - eps) -->
+<!--         ) -->
+<!--       } -->
+<!--       if (sum(bottleneck_matrix[, condition]) == nrow(data)) { -->
+<!--         bottleneck_matrix[, condition] <- 0 -->
+<!--       } -->
+<!--       if (threshold[condition] == -Inf) { -->
+<!--         threshold[condition] <- 0 -->
+<!--       } -->
+<!--   } -->
+<!--   bottlenecks_per_condition <- colSums(bottleneck_matrix) -->
+<!--   bottleneck_cases_num <- as.data.frame (bottlenecks_per_condition) # number -->
+<!--   colnames(bottleneck_cases_num)[1] <- paste0("Bottlenecks (Y = ",  -->
+<!--                                               target_outcome, ")") -->
+<!--   bottleneck_cases_per <- as.data.frame (100 * (bottleneck_cases_num / -->
+<!--                                                   nrow(data))) # percentage -->
+<!--   return(list( -->
+<!--     bottleneck_cases_per = bottleneck_cases_per, -->
+<!--     bottleneck_cases_num = bottleneck_cases_num -->
+<!--   )) -->
+<!-- } -->
+<!-- ``` -->
+<pre class="text"><code># Bottleneck cases - Technology use 
+source(&quot;get_bottleneck_cases.R&quot;)
+data &lt;-  dataset1
+predicted &lt;- &quot;Technology use&quot;
+predictors &lt;-  c(&quot;Perceived usefulness&quot;, 
+                 &quot;Compatibility&quot;,
+                 &quot;Perceived ease of use&quot;,
+                 &quot;Emotional value&quot;,
+                 &quot;Adoption intention&quot;)
+corner = 1 # default; expected empty space for all conditions
+target_outcome &lt;- 85
+ceiling &lt;- &quot;ce_fdh&quot;
+bottlenecks_technology &lt;- get_bottleneck_cases(data = data, 
+                                               conditions = predictors, 
+                                               outcome = predicted, 
+                                               corner = corner, 
+                                               target_outcome = target_outcome,
+                                               ceiling = ceiling)
+bottlenecks_technology</code></pre>
+<pre><code>## $bottleneck_cases_per
+##                       Bottlenecks (Y = 85)
+## Perceived usefulness             47.126437
+## Compatibility                     8.620690
+## Perceived ease of use            28.735632
+## Emotional value                   5.747126
+## Adoption intention               39.080460
+## 
+## $bottleneck_cases_num
+##                       Bottlenecks (Y = 85)
+## Perceived usefulness                    82
+## Compatibility                           15
+## Perceived ease of use                   50
+## Emotional value                         10
+## Adoption intention                      68
+## 
+## $threshold
+##  Perceived usefulness         Compatibility Perceived ease of use 
+##              66.21236              33.69644              66.90439 
+##       Emotional value    Adoption intention 
+##              49.65026              75.00000</code></pre>
+<p>These numbers correspond the number in row Y = 85 of the bottleneck table where the values of the conditions are expressed in percentiles. The percentage of bottleneck cases is used as input to the cIPMA.</p>
+</div>
+<div id="step-6-produce-nert-1" class="section level2 hasAnchor" number="18.6">
+<h2><span class="header-section-number">F.6</span> Step 6: Produce NERT<a href="#step-6-produce-nert-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The NCA Extended Regression Tables (NERTs) for SEM are shown in Tables <a href="#tab:nertsem1-tab">F.1</a> and <a href="#tab:nertsem2-tab">F.2</a> for the outcome Adoption intention and Technology use, respectively. The regression results are expressed as direct and total path coefficients with their <span class="math inline">\(p\)</span>-values.<br />
+</p>
+<pre class="text"><code>#NERT - Adoption intention
+library(kableExtra)
+library(knitr)
+
+# variable names
+vars &lt;- c(&quot;Perceived usefulness&quot;,
+          &quot;Compatibility&quot;,
+          &quot;Perceived ease of use&quot;,
+          &quot;Emotional value&quot;)
+n_vars &lt;- length(vars)
+
+# regression coefficients, p-values, model fit (character vectors)
+reg   &lt;- c(&quot;0.227&quot;, &quot;0.045&quot;, &quot;0.088&quot;, &quot;0.515&quot;)
+reg_p &lt;- c(&quot;0.026&quot;, &quot;0.686&quot;, &quot;0.253&quot;, &quot;&lt; 0.001&quot;)
+r2    &lt;- 0.539
+r2_adj &lt;- 0.528   # NULL if not available
+
+# necessity effect sizes and p-values
+nec   &lt;- c(&quot;0.12&quot;, &quot;0.08&quot;, &quot;0.15&quot;,&quot;0.21&quot;)
+nec_p &lt;- c(&quot;0.002&quot;, &quot;0.010&quot;, &quot;0.007&quot;, &quot;&lt;0.001&quot;)
+
+# Caption and footnote
+caption = &quot;Summary of the SEM and NCA results for outcome Adoption intention.&quot;
+note_text &lt;- &quot;n = 174. NCA ceiling line: CE-FDH.&quot;
+
+# build rows conditionally
+row_labels &lt;- c(vars, sprintf(&quot;R&lt;sup&gt;2&lt;/sup&gt; = %.2f&quot;, r2))
+if (!is.null(r2_adj) &amp;&amp; !is.na(r2_adj)) {
+  row_labels &lt;- c(row_labels, sprintf(&quot;R&lt;sup&gt;2&lt;/sup&gt;(adj.) = %.2f&quot;, r2_adj))
+}
+
+# build NERT
+nert &lt;- data.frame(
+  Row = row_labels,
+  `Regression coefficient` = c(reg,  rep(&quot;&quot;, length(row_labels) - length(reg))),
+  reg_p_value              = c(reg_p, rep(&quot;&quot;, length(row_labels) - length(reg_p))),
+  `Necessity effect size`  = c(nec,  rep(&quot;&quot;, length(row_labels) - length(nec))),
+  nec_p_value              = c(nec_p, rep(&quot;&quot;, length(row_labels) - length(nec_p))),
+  check.names = FALSE
+)
+
+kbl(
+  nert,
+  format  = &quot;html&quot;,
+  escape  = FALSE,
+  booktabs = TRUE,
+  linesep = &quot;&quot;,
+  longtable = FALSE,
+  caption = caption,
+  col.names = c(
+    &quot;&quot;,
+    &quot;Regression coefficient&quot;,
+    &quot;&lt;em&gt;p&lt;/em&gt;-value&quot;,
+    &quot;Necessity&lt;br&gt;effect size&quot;,
+    &quot;&lt;em&gt;p&lt;/em&gt;-value&quot;
+  ),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;)
+) %&gt;%
+  kable_styling(full_width = FALSE, 
+                latex_options = c(&quot;HOLD_position&quot;, &quot;scale_down&quot;)) %&gt;%
+  column_spec(1, width = &quot;12em&quot;, extra_css = &quot;white-space: nowrap;&quot;) %&gt;%
+  column_spec(2, width = &quot;8em&quot;) %&gt;%
+  column_spec(3, width = &quot;8em&quot;) %&gt;%
+  column_spec(4, width = &quot;8em&quot;, border_left = TRUE) %&gt;% 
+  column_spec(5, width = &quot;8em&quot;) %&gt;%
+  pack_rows(&quot;Variables/Conditions&quot;, 1,n_vars) %&gt;%
+  pack_rows(&quot;Model fit (regression)&quot;, n_vars + 1, nrow(nert), 
+            hline_before = TRUE) %&gt;%
+  footnote(
+    general = note_text
+  )</code></pre>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<caption>
+<span id="tab:nertsem1-tab">Table F.1: </span>Summary of the SEM and NCA results for outcome Adoption intention.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+Regression coefficient
+</th>
+<th style="text-align:center;">
+<em>p</em>-value
+</th>
+<th style="text-align:center;">
+Necessity<br>effect size
+</th>
+<th style="text-align:center;">
+<em>p</em>-value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="4">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Variables/Conditions</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Perceived usefulness
+</td>
+<td style="text-align:center;width: 8em; ">
+0.227
+</td>
+<td style="text-align:center;width: 8em; ">
+0.026
+</td>
+<td style="text-align:center;width: 8em; border-left:1px solid;">
+0.12
+</td>
+<td style="text-align:center;width: 8em; ">
+0.002
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Compatibility
+</td>
+<td style="text-align:center;width: 8em; ">
+0.045
+</td>
+<td style="text-align:center;width: 8em; ">
+0.686
+</td>
+<td style="text-align:center;width: 8em; border-left:1px solid;">
+0.08
+</td>
+<td style="text-align:center;width: 8em; ">
+0.010
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Perceived ease of use
+</td>
+<td style="text-align:center;width: 8em; ">
+0.088
+</td>
+<td style="text-align:center;width: 8em; ">
+0.253
+</td>
+<td style="text-align:center;width: 8em; border-left:1px solid;">
+0.15
+</td>
+<td style="text-align:center;width: 8em; ">
+0.007
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Emotional value
+</td>
+<td style="text-align:center;width: 8em; ">
+0.515
+</td>
+<td style="text-align:center;width: 8em; ">
+&lt; 0.001
+</td>
+<td style="text-align:center;width: 8em; border-left:1px solid;">
+0.21
+</td>
+<td style="text-align:center;width: 8em; ">
+&lt;0.001
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Model fit (regression)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+R<sup>2</sup> = 0.54
+</td>
+<td style="text-align:center;width: 8em; ">
+</td>
+<td style="text-align:center;width: 8em; ">
+</td>
+<td style="text-align:center;width: 8em; border-left:1px solid;">
+</td>
+<td style="text-align:center;width: 8em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+R<sup>2</sup>(adj.) = 0.53
+</td>
+<td style="text-align:center;width: 8em; ">
+</td>
+<td style="text-align:center;width: 8em; ">
+</td>
+<td style="text-align:center;width: 8em; border-left:1px solid;">
+</td>
+<td style="text-align:center;width: 8em; ">
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> n = 174. NCA ceiling line: CE-FDH.
+</td>
+</tr>
+</tfoot>
+</table>
+<p>Table <a href="#tab:nertsem1-tab">F.1</a> for Adoption intention indicates that Perceived usefulness and Emotional value both have a probabilistic sufficiency effect on Adoption attention (path coefficients are significant) and are also necessary conditions for Adoption intention (effect sizes are large enough and significant). Compatibility has no average effect nor a necessity effect on Adoption intention (although its necessity effect size is statistically significant, it is too small <span class="math inline">\(p\)</span>-&lt; 0.10). Perceived ease of use has also no average effect on Adoption intention, but it has a necessity effect.<br />
+</p>
+<pre class="text"><code>#NERT - Technology use
+library(kableExtra)
+library(knitr)
+# variable names
+vars &lt;- c(&quot;Perceived usefulness&quot;,
+          &quot;Compatibility&quot;,
+          &quot;Perceived ease of use&quot;,
+          &quot;Emotional value&quot;,
+          &quot;Adoption intention&quot;)
+n_vars &lt;- length(vars)
+# regression coefficients, p-values, model fit (character vectors)
+direct_coef &lt;- c(&quot;0.050&quot;, &quot;0.107&quot;, &quot;0.010&quot;, &quot;0.137&quot;, &quot;0.437&quot;)
+direct_p    &lt;- c(&quot;0.608&quot;, &quot;0.393&quot;, &quot;0.911&quot;, &quot;0.139&quot;, &quot;&lt; 0.001&quot;)
+total_coef  &lt;- c(&quot;0.149&quot;, &quot;0.127&quot;, &quot;0.049&quot;, &quot;0.362&quot;, &quot;0.437&quot;)
+total_p     &lt;- c(&quot;0.166&quot;, &quot;0.304&quot;, &quot;0.520&quot;, &quot;&lt; 0.001&quot;, &quot;&lt; 0.001&quot;)
+nec_es &lt;- c(&quot;0.24&quot;, &quot;0.21&quot;, &quot;0.24&quot;, &quot;0.33&quot;, &quot;0.29&quot;)
+nec_p  &lt;- c(&quot;0.001&quot;, &quot;&lt; 0.001&quot;, &quot;0.015&quot;, &quot;&lt; 0.001&quot;, &quot;&lt; 0.001&quot;)
+r2     &lt;- 0.539
+r2_adj &lt;- 0.528
+# Caption and footnote
+caption &lt;- &quot;Summary of the SEM and NCA results for outcome Technology use.&quot;
+note_text &lt;- &quot;n = 174. NCA ceiling line: CE-FDH.&quot;
+# build rows conditionally
+if (knitr::is_latex_output()) {
+  r2_label  &lt;- sprintf(&quot;$R^2$ = %.2f&quot;, r2)
+  r2a_label &lt;- sprintf(&quot;$R^2$(adj.) = %.2f&quot;, r2_adj)
+  col_p        &lt;- &quot;\\emph{p}-value&quot;
+  col_nec      &lt;- linebreak(&quot;Necessity\neffect size&quot;, align = &quot;c&quot;)
+} else {
+  r2_label  &lt;- sprintf(&quot;R&lt;sup&gt;2&lt;/sup&gt; = %.2f&quot;, r2)
+  r2a_label &lt;- sprintf(&quot;R&lt;sup&gt;2&lt;/sup&gt;(adj.) = %.2f&quot;, r2_adj)
+  col_p        &lt;- &quot;&lt;em&gt;p&lt;/em&gt;-value&quot;
+  col_nec      &lt;- &quot;Necessity&lt;br&gt;effect size&quot;
+}
+row_labels &lt;- c(vars, r2_label)
+if (!is.null(r2_adj) &amp;&amp; !is.na(r2_adj)) {
+  row_labels &lt;- c(row_labels, r2a_label)
+}
+pad_to &lt;- function(x, n) c(x, rep(&quot;&quot;, max(0, n - length(x))))
+n_rows &lt;- length(row_labels)
+# build NERT
+nert &lt;- data.frame(
+  Row         = row_labels,
+  direct_coef = pad_to(direct_coef, n_rows),
+  direct_p    = pad_to(direct_p, n_rows),
+  total_coef  = pad_to(total_coef, n_rows),
+  total_p     = pad_to(total_p, n_rows),
+  nec_es      = pad_to(nec_es, n_rows),
+  nec_p       = pad_to(nec_p, n_rows),
+  check.names = FALSE
+)
+kbl(
+  nert,
+  format    = if (knitr::is_latex_output()) &quot;latex&quot; else &quot;html&quot;,
+  escape    = FALSE,
+  booktabs  = TRUE,
+  linesep   = &quot;&quot;,
+  longtable = FALSE,
+  caption   = caption,
+  col.names = c(&quot; &quot;,
+                &quot;Direct path coefficient&quot;,
+                col_p,
+                &quot;Total path coefficient&quot;,
+                col_p,
+                col_nec,
+                col_p),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;)
+) %&gt;%
+  kable_styling(
+    full_width    = FALSE,
+    latex_options = if (knitr::is_latex_output()) c(&quot;HOLD_position&quot;, &quot;scale_down&quot;) else NULL
+  ) %&gt;%
+
+  column_spec(1, width = &quot;12em&quot;, extra_css = &quot;white-space: nowrap;&quot;) %&gt;%
+  column_spec(2, width = &quot;5em&quot;) %&gt;%
+  column_spec(3, width = &quot;4em&quot;, extra_css = &quot;white-space: nowrap;&quot;) %&gt;%
+  column_spec(4, width = &quot;5em&quot;) %&gt;%
+  column_spec(5, width = &quot;4em&quot;, extra_css = &quot;white-space: nowrap;&quot;) %&gt;%
+  column_spec(6, width = &quot;4em&quot;, border_left = TRUE) %&gt;%
+  column_spec(7, width = &quot;4em&quot;, extra_css = &quot;white-space: nowrap;&quot;) %&gt;%
+ 
+  pack_rows(&quot;Variables/Conditions&quot;, 1, n_vars) %&gt;%
+  pack_rows(&quot;Model fit (SEM)&quot;, n_vars + 1, nrow(nert), hline_before = TRUE) %&gt;%
+  footnote(general = note_text, escape = FALSE)</code></pre>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<caption>
+<span id="tab:nertsem2-tab">Table F.2: </span>Summary of the SEM and NCA results for outcome Technology use.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+Direct path coefficient
+</th>
+<th style="text-align:center;">
+<em>p</em>-value
+</th>
+<th style="text-align:center;">
+Total path coefficient
+</th>
+<th style="text-align:center;">
+<em>p</em>-value
+</th>
+<th style="text-align:center;">
+Necessity<br>effect size
+</th>
+<th style="text-align:center;">
+<em>p</em>-value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="5">
+<td colspan="7" style="border-bottom: 1px solid;">
+<strong>Variables/Conditions</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Perceived usefulness
+</td>
+<td style="text-align:center;width: 5em; ">
+0.050
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.608
+</td>
+<td style="text-align:center;width: 5em; ">
+0.149
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.166
+</td>
+<td style="text-align:center;width: 4em; border-left:1px solid;">
+0.24
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Compatibility
+</td>
+<td style="text-align:center;width: 5em; ">
+0.107
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.393
+</td>
+<td style="text-align:center;width: 5em; ">
+0.127
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.304
+</td>
+<td style="text-align:center;width: 4em; border-left:1px solid;">
+0.21
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+&lt; 0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Perceived ease of use
+</td>
+<td style="text-align:center;width: 5em; ">
+0.010
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.911
+</td>
+<td style="text-align:center;width: 5em; ">
+0.049
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.520
+</td>
+<td style="text-align:center;width: 4em; border-left:1px solid;">
+0.24
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.015
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Emotional value
+</td>
+<td style="text-align:center;width: 5em; ">
+0.137
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+0.139
+</td>
+<td style="text-align:center;width: 5em; ">
+0.362
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+&lt; 0.001
+</td>
+<td style="text-align:center;width: 4em; border-left:1px solid;">
+0.33
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+&lt; 0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+Adoption intention
+</td>
+<td style="text-align:center;width: 5em; ">
+0.437
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+&lt; 0.001
+</td>
+<td style="text-align:center;width: 5em; ">
+0.437
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+&lt; 0.001
+</td>
+<td style="text-align:center;width: 4em; border-left:1px solid;">
+0.29
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+&lt; 0.001
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="7" style="border-bottom: 1px solid;">
+<strong>Model fit (SEM)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+R<sup>2</sup> = 0.54
+</td>
+<td style="text-align:center;width: 5em; ">
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+</td>
+<td style="text-align:center;width: 5em; ">
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+</td>
+<td style="text-align:center;width: 4em; border-left:1px solid;">
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; white-space: nowrap;padding-left: 2em;" indentlevel="1">
+R<sup>2</sup>(adj.) = 0.53
+</td>
+<td style="text-align:center;width: 5em; ">
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+</td>
+<td style="text-align:center;width: 5em; ">
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+</td>
+<td style="text-align:center;width: 4em; border-left:1px solid;">
+</td>
+<td style="text-align:center;width: 4em; white-space: nowrap;">
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> n = 174. NCA ceiling line: CE-FDH.
+</td>
+</tr>
+</tfoot>
+</table>
+<p>Table <a href="#tab:nertsem2-tab">F.2</a> for Technology use shows that none of the predictors except Adoption intention has a direct average effect on Technology use. The results of the total average effects show that only Emotional value and adoption intention have a probabilistic sufficiency effect on Technology use. However, all predictors are necessary conditions for Technology use.</p>
+</div>
+<div id="step-7-produce-bipma" class="section level2 hasAnchor" number="18.7">
+<h2><span class="header-section-number">F.7</span> Step 7: Produce BIPMA<a href="#step-7-produce-bipma" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Before producing BIPMA (Section <a href="#producebipma">11.4.1.7</a>), this demonstration first produces IPMA and cIPMA for comparison. To produce classic IPMA, Importance and Performance scores are extracted from the SEM results. The Importance score of each predictor variable corresponds to the total effect (path coefficient) on the predicted variable (Step 3). The Performance score of each predictor variable is the mean of the 0-100 normalized unstandardized variable score (Step 4). The helper function <code>get_ipma_df</code> can be used for extracting these values from the SEM results. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- (Section \@ref(getipmadf)). -->
+<!--   \ --></p>
+<!-- ``` {r getipmadf, echo = TRUE, eval = TRUE} -->
+<!-- get_ipma_df <- function(data, sem, predictors, predicted) { -->
+<!--   Importance_df <- as.data.frame(summary(sem)$total_effects) -->
+<!--   Importance <- Importance_df[predictors, predicted] -->
+<!--   Performance_df <- as.data.frame(sapply(data, mean)) -->
+<!--   Performance <- Performance_df[predictors, 1] -->
+<!--   renamed_predictors <- ifelse(Importance < 0, -->
+<!--                                paste0(predictors, "-inv"), -->
+<!--                                predictors) -->
+<!--   Importance <- abs(Importance) -->
+<!--   ipma_df <- data.frame( -->
+<!--     predictor = renamed_predictors, -->
+<!--     Importance = Importance, -->
+<!--     Performance = Performance -->
+<!--   ) -->
+<!--   return(ipma_df) -->
+<!-- } -->
+<!-- ``` -->
+<pre class="text"><code># IPMA  - dataset
+source(&quot;get_ipma_df.R&quot;)
+data &lt;- dataset1 # 0-100 normalized unstandardized
+sem &lt;- TAM_pls
+predicted &lt;- &quot;Technology use&quot;
+predictors &lt;-  c(&quot;Perceived usefulness&quot;, 
+                 &quot;Compatibility&quot;,
+                 &quot;Perceived ease of use&quot;,
+                 &quot;Emotional value&quot;,
+                 &quot;Adoption intention&quot;)
+IPMA_df_technology &lt;- get_ipma_df(data = data, 
+                                  sem = sem, 
+                                  predictors = predictors, 
+                                  predicted = predicted)
+IPMA_df_technology</code></pre>
+<pre><code>##               predictor Importance Performance
+## 1  Perceived usefulness 0.14921041    64.24785
+## 2         Compatibility 0.12699788    61.55690
+## 3 Perceived ease of use 0.04863022    75.64040
+## 4       Emotional value 0.36169649    70.17135
+## 5    Adoption intention 0.43705233    72.04067</code></pre>
+<p>The IPMA is produced by mapping the predictor variables on a 2×2 plot with the horizontal axis representing Importance and the vertical axis Performance. This can be done with the helper function <code>get_ipma_plot</code>. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- (Section \@ref(getipmaplot)). -->
+<!--   \ --></p>
+<!-- ``` {r, echo = TRUE, eval = FALSE} -->
+<!-- library(ggplot2) -->
+<!-- library(ggrepel) -->
+<!-- get_ipma_plot <- function(ipma_df,  -->
+<!--                           x_range = NULL, -->
+<!--                           y_range = NULL) { -->
+<!--   if (is.null(x_range)) { -->
+<!--     x_range <- range(ipma_df$Importance, na.rm = TRUE) -->
+<!--   }   -->
+<!--   if (is.null(y_range)) { -->
+<!--     y_range <- range(ipma_df$Performance, na.rm = TRUE) -->
+<!--   }   -->
+<!--   mean_importance <- mean(ipma_df$Importance, na.rm = TRUE) -->
+<!--   mean_performance <- mean(ipma_df$Performance, na.rm = TRUE) -->
+<!--   p <- ggplot(ipma_df, aes(x = Importance, y = Performance)) + -->
+<!--     geom_vline(xintercept = mean_importance, linetype = "dashed", linewidth = 0.4) + -->
+<!--     geom_hline(yintercept = mean_performance, linetype = "dashed", linewidth = 0.4) + -->
+<!--     geom_point(color = "black", size = 5) +   -->
+<!--     geom_text_repel( -->
+<!--       aes(label = predictor), -->
+<!--       size = 3.5, -->
+<!--       box.padding = 2  -->
+<!--     ) + -->
+<!--     coord_cartesian(xlim = x_range, ylim = y_range) +   -->
+<!--     scale_x_continuous(limits = x_range) +   -->
+<!--     scale_y_continuous(limits = y_range) +   -->
+<!--     labs( -->
+<!--       title = "classic IPMA", -->
+<!--       x = "Importance", -->
+<!--       y = "Performance" -->
+<!--     ) + -->
+<!--     theme_minimal()   -->
+<!--   print(p) -->
+<!--   timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S") -->
+<!--   filename <- paste0("ipma_", timestamp, ".pdf") -->
+<!--   ggsave(filename, p, width = 5, height = 5, dpi = 600, device = cairo_pdf) -->
+<!-- } -->
+<!-- ``` -->
+<pre class="text"><code># IPMA  - plot
+# install.packages(&quot;ggplot2&quot;) # install the package if needed
+# install.packages(&quot;ggrepel&quot;) # install the package if needed
+source(&quot;get_ipma_plot.R&quot;)
+ipma_df &lt;- IPMA_df_technology 
+x_range &lt;- c(0,0.6) # range of the Importance axis
+y_range &lt;- c(0,100) # range of the Performance axis
+IPMA_plot_technology &lt;- get_ipma_plot(ipma_df = ipma_df,
+                                      x_range = x_range,
+                                      y_range = y_range) </code></pre>
+<!-- ``` {r, echo=FALSE, cache=FALSE, include=FALSE, eval = FALSE, out.width='90%'} -->
+<!-- pdf("ipma85.pdf") -->
+<!-- IPMA_plot_technology -->
+<!-- dev.off() -->
+<!-- ``` -->
+<p>The results for Technology use are shown in Figure <a href="#fig:ipma">F.2</a>. Although the SEM results show that Compatibility and Perceived ease of use have no significant effect on Technology use, the conventional IPMA plot includes the points for all predictors because this choice was made in the publications that previously used this example. The dashed lines represent mean values of the Importance and Performance scores of the predictors.</p>
+<p>According to IPMA, priority of action should be given to a predictor with high Importance and low Performance scores. From the two predictors with the highest Importance (Emotional value and Adoption intention), Emotional value has a slightly lower Performance score and could be selected to prioritize action. This action (assuming other predictors constant) should result in an increase of its current Performance score (mean score of the latent variable), which is somewhat below 75%, to a higher score.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ipma"></span>
+<img src="ipma2.png" alt="Classic Importance Performance Map Analysis (IPMA) for the outcome Technology use." width="75%" />
+<p class="caption">
+Figure F.2: Classic Importance Performance Map Analysis (IPMA) for the outcome Technology use.
+</p>
+</div>
+<p>cIPMA adds the bottleneck dimension to IPMA. In selecting the priority predictor, cIPMA not only considers the Importance and Performance scores of the predictor, but also the percentage of bottleneck cases of the predictor: the percentage of cases that are unable to achieve a particular target outcome level. As shown above, the percentage of bottleneck cases per predictor can be obtained with the helper function <code>get_bottleneck_cases</code>. To produce cIPMA, the IPMA dataset with Importance and Performance scores is extended with the percentage of bottleneck cases. The function <code>get_cipma_df</code> is used for this. Note that the output includes the column ‘Necessity’ that indicates whether the predictor is necessary given the selected threshold values for the effect size <span class="math inline">\(d\)</span> and the <span class="math inline">\(p\)</span>-value. These predictors should not show up in the bottleneck table and therefore should not be part of cIPMA’s bottleneck dimension. Therefore, in the <code>get_cipma_df</code> helper function a standard point size as in IPMA is given to such predictors. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!--   \ --></p>
+<!-- ``` {r getcipmadffunction, echo = TRUE, eval = TRUE} -->
+<!-- get_cipma_df <- function(ipma_df, bottlenecks, necessity) {  -->
+<!--   cases_num <- bottlenecks$bottleneck_cases_num -->
+<!--   cases_per <- bottlenecks$bottleneck_cases_per -->
+<!--   cipma_df <- cbind( -->
+<!--     ipma_df, -->
+<!--     cases_per, -->
+<!--     cases_num -->
+<!--   ) -->
+<!--   rownames(cipma_df) <- rownames(ipma_df) -->
+<!--   colnames(cipma_df)[4:5] <- c("Bottleneck_cases_per", "Bottleneck_cases_num") -->
+<!--   cipma_df$Necessity <- necessity -->
+<!--   cipma_df$Predictor_with_cases <- ifelse( -->
+<!--     cipma_df$Necessity == "yes", -->
+<!--     paste0( -->
+<!--       cipma_df$predictor,  -->
+<!--       " (",  -->
+<!--       round(cipma_df$Bottleneck_cases_per, 0), "%, n=", -->
+<!--       cipma_df$Bottleneck_cases_num, -->
+<!--       ")" -->
+<!--     ), -->
+<!--     paste0(cipma_df$predictor, " (NN)") -->
+<!--   ) -->
+<!--   return(cipma_df) -->
+<!-- } -->
+<!-- ``` -->
+<pre class="text"><code># cIPMA  - dataset
+source(&quot;get_cipma_df.R&quot;)
+d_threshold &lt;- 0.1 
+p_threshold &lt;- 0.05
+model &lt;- model1.technology
+
+# Extract parameters
+effect_size &lt;- sapply(predictors, nca_extract, model = model, ceiling = &quot;ce_fdh&quot;,
+                      param   = &quot;Effect size&quot;)
+p_value &lt;- sapply(predictors, nca_extract, model = model, ceiling = &quot;ce_fdh&quot;,
+                  param   = &quot;p-value&quot;)
+
+necessity &lt;- ifelse(effect_size &gt;= d_threshold &amp; p_value &lt;= p_threshold,
+                    &quot;yes&quot;, &quot;no&quot;)
+ipma_df &lt;- IPMA_df_technology
+bottlenecks &lt;- bottlenecks_technology
+CIPMA_df_technology &lt;- get_cipma_df(ipma_df = ipma_df, 
+                                    bottlenecks = bottlenecks, 
+                                    necessity = necessity)
+CIPMA_df_technology</code></pre>
+<pre><code>##               predictor Importance Performance Bottleneck_cases_per
+## 1  Perceived usefulness 0.14921041    64.24785            47.126437
+## 2         Compatibility 0.12699788    61.55690             8.620690
+## 3 Perceived ease of use 0.04863022    75.64040            28.735632
+## 4       Emotional value 0.36169649    70.17135             5.747126
+## 5    Adoption intention 0.43705233    72.04067            39.080460
+##   Bottleneck_cases_num Necessity              Predictor_with_cases
+## 1                   82       yes  Perceived usefulness (47%, n=82)
+## 2                   15       yes          Compatibility (9%, n=15)
+## 3                   50       yes Perceived ease of use (29%, n=50)
+## 4                   10       yes        Emotional value (6%, n=10)
+## 5                   68       yes    Adoption intention (39%, n=68)</code></pre>
+<p>The plot can hthen be produced with the helper function <code>get_cipma_plot</code>. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- (Section \@ref(getcipmaplot)). --></p>
+<!-- ``` {r getsipmaplotfunction, echo = TRUE, eval = FALSE} -->
+<!-- get_cipma_plot <- function(cipma_df, x_range = NULL, y_range = NULL, size_limits, size_range) { -->
+<!--   library(ggplot2) -->
+<!--   library(ggrepel) -->
+<!--   if (is.null(x_range)) { -->
+<!--     x_range <- range(cipma_df$Importance, na.rm = TRUE) -->
+<!--   } -->
+<!--   if (is.null(y_range)) { -->
+<!--     y_range <- range(cipma_df$Performance, na.rm = TRUE) -->
+<!--   } -->
+<!--   colname <- colnames(cipma_df)[4] -->
+<!--   target.Y <- target_outcome -->
+<!--   cipma_df$fill_color <- ifelse( -->
+<!--     grepl("\\(NN\\)", cipma_df$Predictor_with_cases), -->
+<!--     "black", -->
+<!--     NA -->
+<!--   ) -->
+<!--   cipma_df$dot_size <- ifelse( -->
+<!--     grepl("\\(NN\\)", cipma_df$Predictor_with_cases), -->
+<!--     1, -->
+<!--     cipma_df[[colname]] -->
+<!--   ) -->
+<!--   mean_importance <- mean(cipma_df$Importance, na.rm = TRUE) -->
+<!--   mean_performance <- mean(cipma_df$Performance, na.rm = TRUE) -->
+<!--   pc <- ggplot(cipma_df, aes(x = Importance, y = Performance)) + -->
+<!--     geom_vline(xintercept = mean_importance, linetype = "dashed", linewidth = 0.4) + -->
+<!--     geom_hline(yintercept = mean_performance, linetype = "dashed", linewidth = 0.4) + -->
+<!--     geom_point( -->
+<!--       aes(size = dot_size), -->
+<!--       shape = 21, -->
+<!--       fill = cipma_df$fill_color, -->
+<!--       color = "black", -->
+<!--       stroke = 0.7 -->
+<!--     ) + -->
+<!--     geom_text_repel( -->
+<!--       aes(label = Predictor_with_cases), -->
+<!--       size = 3.5, -->
+<!--       box.padding = 2 -->
+<!--     ) + -->
+<!--     coord_cartesian(xlim = x_range, ylim = y_range) + -->
+<!--     scale_x_continuous(limits = x_range) + -->
+<!--     scale_y_continuous(limits = y_range) + -->
+<!--     scale_size_continuous(limits = size_limits, range = size_range) + -->
+<!--     labs( -->
+<!--       title = paste("cIPMA for target outcome Y =", target.Y, " ", name_plot), -->
+<!--       x = "Importance", -->
+<!--       y = "Performance" -->
+<!--     ) + -->
+<!--     theme_minimal() + -->
+<!--     guides(size = "none", fill = "none")   -->
+<!--   print(pc) -->
+<!-- } -->
+<!-- ``` -->
+<pre class="text"><code># cIPMA  - plot
+source(&quot;get_cipma_plot.R&quot;)
+cipma_df &lt;- CIPMA_df_technology 
+x_range &lt;- c(0,0.6)
+y_range &lt;- c(0,100)
+size_limits = c(0,100)
+size_range &lt;- c(0.5,50) # the size of the bulbs
+name_plot &lt;- &quot;Original&quot; 
+cIPMA_plot_technology &lt;- get_cipma_plot(cipma_df = cipma_df,
+                                        x_range = x_range,
+                                        y_range = y_range,
+                                        size_limits = size_limits,
+                                        size_range = size_range)</code></pre>
+<!-- ``` {r cipma85, echo=FALSE, cache=TRUE, include=FALSE, eval = FALSE, out.width='90%'} -->
+<!-- pdf("cipma85.pdf") -->
+<!-- cIPMA_plot_technology -->
+<!-- dev.off() -->
+<!-- ``` -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:cipma"></span>
+<img src="cipma2.png" alt="Combined Importance Performance Map Analysis (cIPMA) for the outcome Technology use. The size of the dots is an indication of the number of cases that cannot achieve the target outcome of 85% of maximum outcome." width="75%" />
+<p class="caption">
+Figure F.3: Combined Importance Performance Map Analysis (cIPMA) for the outcome Technology use. The size of the dots is an indication of the number of cases that cannot achieve the target outcome of 85% of maximum outcome.
+</p>
+</div>
+<p>The results are shown in Figure <a href="#fig:cipma">F.3</a>, which corresponds to the plots in <span class="citation">Hauff et al. (<a href="#ref-hauff2024importance">2024</a>)</span> and <span class="citation">Sarstedt et al. (<a href="#ref-sarstedt2024combined">2024</a>)</span>. The IPMA plot is extended with points sizes that depend on the number or percentage of bottleneck cases. Since all predictors are necessary, each point’s size is relevant. The percentage and number of bottleneck cases are included here between brackets. The NCA results show large differences in percentage and number of bottleneck cases between the five conditions. The order from high to low percentages is: Perceived usefulness, Adoption intention, Perceived ease of use, Compatibility and Emotional value. Perceived usefulness has 47% bottleneck cases, whereas Emotional value has only 6%. This means that from the perspective of NCA, Perceived usefulness is a more relevant than emotional value for a single predictor action. Successful interventions on a single condition (with the goal of bringing all bottleneck cases to at least the threshold level such that the target outcome is possible) will reduce more bottleneck cases when the intervention focuses on Perceived usefulness, rather than on emotional value. Note that such an intervention to eliminate bottlenecks does not guarantee that the target outcome level (85%) will be achieved: a necessary condition for an outcome is not a sufficient condition for it. Additionally, cases may be bottlenecks in multiple conditions. Note also the relevance of a necessary condition in terms of <em>effect size</em> may differ from the relevance of a necessary condition in terms of <em>number of bottleneck cases</em>. The first refers to the magnitude of the constraining role of the condition for the outcome in general, whereas the second refers to the size of the group of cases that cannot achieve a certain target level of the outcome. For emotional value the effect size is largest (0.33), but the percentage of bottleneck cases is lowest (6%).</p>
+<p>The BIPMA extends the cIPMA by considering only single bottleneck cases per predictor as explained in Section <a href="#producebipma">11.4.1.7</a>. The number of single bottleneck cases can be extracted with the helper function <code>get_single_bottleneck_cases</code>. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- (Section \@ref(getsinglebottleneckcases)). -->
+<!--   \ --></p>
+<!-- ``` {r getsinglebottleneckcasesfunction, echo = TRUE, eval = TRUE} -->
+<!-- get_single_bottleneck_cases <- function(data,  -->
+<!--                                         conditions,  -->
+<!--                                         outcome,  -->
+<!--                                         corner = 1,  -->
+<!--                                         target_outcome,  -->
+<!--                                         ceiling) { -->
+<!--   outcome_min <- min(data[[outcome]], na.rm = TRUE) -->
+<!--   outcome_max <- max(data[[outcome]], na.rm = TRUE) -->
+<!--   if (length(corner) == 1 && corner == 1) {corner <- rep(1, length(conditions))} -->
+<!--   if (target_outcome < outcome_min || target_outcome > outcome_max) { -->
+<!--     stop( -->
+<!--       sprintf( -->
+<!--         "Error: target_outcome (%f) is out of range -->
+<!--         for the outcome variable '%s'. Minimum: %f, Maximum: %f", -->
+<!--         target_outcome, outcome, outcome_min, outcome_max -->
+<!--       ) -->
+<!--     ) -->
+<!--   } -->
+<!--   bottleneck_matrix <- matrix(0, nrow = nrow(data), ncol = length(conditions)) -->
+<!--   colnames(bottleneck_matrix) <- conditions -->
+<!--   threshold <- setNames(numeric(length(conditions)), conditions) -->
+<!--   eps <- .Machine$double.eps^0.5   -->
+<!--   for (condition in conditions) { -->
+<!--     condition_index <- which(conditions == condition)[1]   -->
+<!--     corner_val <- corner[condition_index] -->
+<!--     if (is.na(corner_val)) { -->
+<!--       warning(sprintf("Warning: corner value for condition '%s' is NA. -->
+<!--                       Defaulting to 1.", condition)) -->
+<!--       corner_val <- 1L -->
+<!--     } else if (!(corner_val %in% 1:4)) { -->
+<!--       warning(sprintf("Warning: corner value for condition '%s' (%d)  -->
+<!--                       is out of valid range (1-4). Defaulting to 1.", -->
+<!--                       condition, corner_val)) -->
+<!--       corner_val <- 1L -->
+<!--     } -->
+<!--     model1 <- nca_analysis( -->
+<!--       data,  -->
+<!--       condition,  -->
+<!--       outcome,  -->
+<!--       corner = corner_val, -->
+<!--       ceilings = ceiling,  -->
+<!--       bottleneck.y = "actual",  -->
+<!--       bottleneck.x = "actual",  -->
+<!--       steps = c(target_outcome, NA) -->
+<!--     ) -->
+<!--     threshold[condition] <-  -->
+<!--       attr(model1[["bottlenecks"]][[ceiling]][[condition]],"mpx.actual")[1, 1] -->
+<!--     if (corner_val %in% c(1, 3)) { -->
+<!--       bottleneck_matrix[, condition] <- as.numeric( -->
+<!--         data[[condition]] < (threshold[condition] - eps) -->
+<!--       ) -->
+<!--     } else { -->
+<!--       bottleneck_matrix[, condition] <- as.numeric( -->
+<!--         data[[condition]] > (threshold[condition] - eps) -->
+<!--       ) -->
+<!--     } -->
+<!--     if (sum(bottleneck_matrix[, condition]) == nrow(data)) { -->
+<!--       bottleneck_matrix[, condition] <- 0 -->
+<!--     } -->
+<!--     if (threshold[condition] == -Inf) { -->
+<!--       threshold[condition] <- 0 -->
+<!--     } -->
+<!--   } -->
+<!--   total_bottlenecks_per_row <- rowSums(bottleneck_matrix) -->
+<!--   single_bottlenecks_per_condition <-  -->
+<!--     colSums(bottleneck_matrix & (total_bottlenecks_per_row == 1)) -->
+<!--   single_bottleneck_cases_num <-  -->
+<!--     as.data.frame (single_bottlenecks_per_condition) # number -->
+<!--   colnames(single_bottleneck_cases_num)[1] <-  -->
+<!--     paste0("Bottlenecks (Y = ", target_outcome, ")") -->
+<!--   single_bottleneck_cases_per <-  -->
+<!--     as.data.frame (100 * (single_bottleneck_cases_num / nrow(data))) # percentage -->
+<!--   return(list( -->
+<!--     single_bottleneck_cases_per = single_bottleneck_cases_per, -->
+<!--     single_bottleneck_cases_num = single_bottleneck_cases_num -->
+<!--   )) -->
+<!-- } -->
+<!-- ``` -->
+<pre class="text"><code># Single bottleneck cases - Target outcome 85
+source(&quot;get_single_bottleneck_cases.R&quot;)
+data &lt;- dataset1
+ceilings = &quot;ce_fdh&quot;
+target_outcome &lt;- 85
+predicted &lt;- &quot;Technology use&quot;
+predictors &lt;-  c(&quot;Perceived usefulness&quot;, 
+                 &quot;Compatibility&quot;,
+                 &quot;Perceived ease of use&quot;,
+                 &quot;Emotional value&quot;,
+                 &quot;Adoption intention&quot;)
+corner = 1 # default expected empty space for all conditions
+single_bottlenecks_technology &lt;- get_single_bottleneck_cases(
+                                data, 
+                                conditions = predictors,
+                                outcome = predicted,
+                                corner = corner,
+                                target_outcome=target_outcome, 
+                                ceiling = ceilings)
+single_bottlenecks_technology</code></pre>
+<pre><code>## $single_bottleneck_cases_per
+##                       Bottlenecks (Y = 85)
+## Perceived usefulness            14.9425287
+## Compatibility                    0.5747126
+## Perceived ease of use            4.0229885
+## Emotional value                  0.0000000
+## Adoption intention               8.0459770
+## 
+## $single_bottleneck_cases_num
+##                       Bottlenecks (Y = 85)
+## Perceived usefulness                    26
+## Compatibility                            1
+## Perceived ease of use                    7
+## Emotional value                          0
+## Adoption intention                      14
+## 
+## $threshold
+##  Perceived usefulness         Compatibility Perceived ease of use 
+##              66.21236              33.69644              66.90439 
+##       Emotional value    Adoption intention 
+##              49.65026              75.00000 
+## 
+## $single_bottleneck_case_names
+## $single_bottleneck_case_names$`Perceived usefulness`
+##  [1] &quot;15&quot;  &quot;26&quot;  &quot;32&quot;  &quot;44&quot;  &quot;49&quot;  &quot;51&quot;  &quot;62&quot;  &quot;68&quot;  &quot;71&quot;  &quot;73&quot;  &quot;78&quot;  &quot;91&quot; 
+## [13] &quot;92&quot;  &quot;94&quot;  &quot;101&quot; &quot;102&quot; &quot;113&quot; &quot;115&quot; &quot;118&quot; &quot;126&quot; &quot;138&quot; &quot;152&quot; &quot;162&quot; &quot;163&quot;
+## [25] &quot;164&quot; &quot;166&quot;
+## 
+## $single_bottleneck_case_names$Compatibility
+## [1] &quot;109&quot;
+## 
+## $single_bottleneck_case_names$`Perceived ease of use`
+## [1] &quot;7&quot;   &quot;24&quot;  &quot;40&quot;  &quot;45&quot;  &quot;65&quot;  &quot;79&quot;  &quot;105&quot;
+## 
+## $single_bottleneck_case_names$`Emotional value`
+## character(0)
+## 
+## $single_bottleneck_case_names$`Adoption intention`
+##  [1] &quot;11&quot;  &quot;23&quot;  &quot;25&quot;  &quot;27&quot;  &quot;38&quot;  &quot;39&quot;  &quot;74&quot;  &quot;85&quot;  &quot;89&quot;  &quot;106&quot; &quot;110&quot; &quot;136&quot;
+## [13] &quot;140&quot; &quot;157&quot;
+## 
+## 
+## $any_bottleneck_case_names
+##   [1] &quot;1&quot;   &quot;2&quot;   &quot;6&quot;   &quot;7&quot;   &quot;8&quot;   &quot;9&quot;   &quot;11&quot;  &quot;14&quot;  &quot;15&quot;  &quot;19&quot;  &quot;20&quot;  &quot;22&quot; 
+##  [13] &quot;23&quot;  &quot;24&quot;  &quot;25&quot;  &quot;26&quot;  &quot;27&quot;  &quot;28&quot;  &quot;29&quot;  &quot;31&quot;  &quot;32&quot;  &quot;36&quot;  &quot;38&quot;  &quot;39&quot; 
+##  [25] &quot;40&quot;  &quot;42&quot;  &quot;43&quot;  &quot;44&quot;  &quot;45&quot;  &quot;47&quot;  &quot;48&quot;  &quot;49&quot;  &quot;50&quot;  &quot;51&quot;  &quot;52&quot;  &quot;54&quot; 
+##  [37] &quot;56&quot;  &quot;58&quot;  &quot;61&quot;  &quot;62&quot;  &quot;64&quot;  &quot;65&quot;  &quot;68&quot;  &quot;70&quot;  &quot;71&quot;  &quot;73&quot;  &quot;74&quot;  &quot;78&quot; 
+##  [49] &quot;79&quot;  &quot;83&quot;  &quot;85&quot;  &quot;86&quot;  &quot;88&quot;  &quot;89&quot;  &quot;90&quot;  &quot;91&quot;  &quot;92&quot;  &quot;94&quot;  &quot;95&quot;  &quot;96&quot; 
+##  [61] &quot;97&quot;  &quot;101&quot; &quot;102&quot; &quot;103&quot; &quot;105&quot; &quot;106&quot; &quot;108&quot; &quot;109&quot; &quot;110&quot; &quot;111&quot; &quot;113&quot; &quot;114&quot;
+##  [73] &quot;115&quot; &quot;116&quot; &quot;117&quot; &quot;118&quot; &quot;119&quot; &quot;120&quot; &quot;121&quot; &quot;122&quot; &quot;123&quot; &quot;124&quot; &quot;125&quot; &quot;126&quot;
+##  [85] &quot;132&quot; &quot;134&quot; &quot;135&quot; &quot;136&quot; &quot;138&quot; &quot;140&quot; &quot;141&quot; &quot;142&quot; &quot;143&quot; &quot;146&quot; &quot;148&quot; &quot;150&quot;
+##  [97] &quot;151&quot; &quot;152&quot; &quot;153&quot; &quot;157&quot; &quot;158&quot; &quot;160&quot; &quot;162&quot; &quot;163&quot; &quot;164&quot; &quot;166&quot; &quot;168&quot; &quot;169&quot;
+## [109] &quot;171&quot; &quot;172&quot; &quot;173&quot; &quot;174&quot;</code></pre>
+<p>Next, the significant predictor variables for the predicted variable must be identified:</p>
+<pre class="text"><code># Significant total effects (SEM)
+sem_sig &lt;- TAM_sig
+for_select_predicted &lt;- sem_sig[sem_sig$Predicted == predicted, ]
+sufficiency &lt;- ifelse(for_select_predicted$Sig_Total, &quot;yes&quot;, &quot;no&quot;)
+names(sufficiency) &lt;- predictors</code></pre>
+<p>The BIPMA dataset with Bottlenecks (single bottlenecks), Importance and Performance scores can be obtained with the helper function <code>get_bipma_df</code>. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- (Section \@ref(getbipmadf)). -->
+<!--   \ -->
+<!-- ``` {r, echo = TRUE, eval = TRUE} -->
+<!-- get_bipma_df <- function(ipma_df, single_bottlenecks, necessity, sufficiency) {  -->
+<!--   single_cases_num <- single_bottlenecks$single_bottleneck_cases_num -->
+<!--   single_cases_per <- single_bottlenecks$single_bottleneck_cases_per -->
+<!--     bipma_df <- cbind( -->
+<!--     ipma_df, -->
+<!--     single_cases_per, -->
+<!--     single_cases_num -->
+<!--   ) -->
+<!--   rownames(bipma_df) <- rownames(ipma_df) -->
+<!--   colnames(bipma_df)[4:5] <- c("Single_bottleneck_cases_per", "Single_bottleneck_cases_num") -->
+<!--   bipma_df$Necessity <- necessity -->
+<!--   bipma_df$Corner <- corner -->
+<!--   bipma_df$Target_outcome <- target_outcome -->
+<!--   bipma_df$Sufficiency <- sufficiency -->
+<!--   bipma_df$Predictor_with_single_cases <- ifelse( -->
+<!--     bipma_df$Necessity == "yes", -->
+<!--     paste0( -->
+<!--       bipma_df$predictor, -->
+<!--       " (", -->
+<!--       round(bipma_df$Single_bottleneck_cases_per, 0), "%, n=", -->
+<!--       bipma_df$Single_bottleneck_cases_num, -->
+<!--       ifelse( -->
+<!--         bipma_df$Corner %in% c(2, 3, 4), -->
+<!--         paste0(", corner=", bipma_df$Corner), -->
+<!--         "" -->
+<!--       ), -->
+<!--       ")" -->
+<!--     ), -->
+<!--     paste0(bipma_df$predictor, " (NN)") -->
+<!--   ) -->
+<!--   return(bipma_df) -->
+<!-- } --></p>
+<!-- ``` -->
+<pre class="text"><code># BIPMA  - dataset
+source(&quot;get_bipma_df.R&quot;)
+ipma_df &lt;- IPMA_df_technology
+single_bottlenecks &lt;- single_bottlenecks_technology
+BIPMA_df_technology &lt;- get_bipma_df(ipma_df = ipma_df,
+                                    single_bottlenecks=single_bottlenecks, 
+                                    necessity = necessity, 
+                                    sufficiency = sufficiency)
+BIPMA_df_technology</code></pre>
+<pre><code>##               predictor Importance Performance Single_bottleneck_cases_per
+## 1  Perceived usefulness 0.14921041    64.24785                  14.9425287
+## 2         Compatibility 0.12699788    61.55690                   0.5747126
+## 3 Perceived ease of use 0.04863022    75.64040                   4.0229885
+## 4       Emotional value 0.36169649    70.17135                   0.0000000
+## 5    Adoption intention 0.43705233    72.04067                   8.0459770
+##   Single_bottleneck_cases_num Necessity Corner Target_outcome Sufficiency
+## 1                          26       yes      1             85          no
+## 2                           1       yes      1             85          no
+## 3                           7       yes      1             85          no
+## 4                           0       yes      1             85         yes
+## 5                          14       yes      1             85         yes
+##        Predictor_with_single_cases
+## 1 Perceived usefulness (15%, n=26)
+## 2          Compatibility (1%, n=1)
+## 3  Perceived ease of use (4%, n=7)
+## 4        Emotional value (0%, n=0)
+## 5    Adoption intention (8%, n=14)</code></pre>
+<p>The BIPMA can be created with the helper function <code>get_bipma_plot</code>. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<!-- (Section \@ref(getbipmaplot)). -->
+<!--   \ --></p>
+<!-- ``` {r, echo = TRUE, eval = FALSE} -->
+<!-- get_bipma_plot <- function(bipma_df, x_range = NULL, y_range = NULL, size_limits, size_range) { -->
+<!--   library(ggplot2) -->
+<!--   library(ggrepel) -->
+<!--   bipma_df <- bipma_df[order(bipma_df$Single_bottleneck_cases_num, decreasing = TRUE), ] -->
+<!--   if (is.null(x_range)) { -->
+<!--     x_range <- range(bipma_df$Importance, na.rm = TRUE) -->
+<!--   } -->
+<!--   if (is.null(y_range)) { -->
+<!--     y_range <- range(bipma_df$Performance, na.rm = TRUE) -->
+<!--   } -->
+<!--   colname <- colnames(bipma_df)[4] -->
+<!--   target.Y <- target_outcome -->
+<!--   bipma_df$fill_color <- ifelse( -->
+<!--     grepl("\\(NN\\)", bipma_df$Predictor_with_single_cases), -->
+<!--     "black", -->
+<!--     NA_character_ -->
+<!--   ) -->
+<!--   bipma_df$fill_color[is.na(bipma_df$fill_color) & bipma_df$Sufficiency == "no"] <- "grey90" -->
+<!--   bipma_df$fill_color[is.na(bipma_df$fill_color)] <- "white" -->
+<!--   bipma_df$dot_size <- ifelse( -->
+<!--     grepl("\\(NN\\)", bipma_df$Predictor_with_single_cases), -->
+<!--     1, -->
+<!--     bipma_df[[colname]] -->
+<!--   ) -->
+<!--   x_no <- -0.10  # x-position for "no sufficiency" predictors -->
+<!--   bipma_df$Importance_adj <- ifelse( -->
+<!--     bipma_df$Sufficiency == "no", -->
+<!--     x_no, -->
+<!--     bipma_df$Importance -->
+<!--   ) -->
+<!--   x_range_adj <- c(x_no - 0.02 , max(bipma_df$Importance, na.rm = TRUE) + 0.1) -->
+<!--   x_breaks <- pretty(bipma_df$Importance) -->
+<!--   dropped_idx <- (bipma_df$Necessity == "no" & bipma_df$Sufficiency == "no") -->
+<!--   dropped_names <- bipma_df$predictor[dropped_idx] -->
+<!--   bipma_df <- bipma_df[!dropped_idx, ] -->
+<!--   mean_importance <- mean(bipma_df$Importance, na.rm = TRUE) -->
+<!--   mean_performance <- mean(bipma_df$Performance, na.rm = TRUE) -->
+<!--   pc1 <- ggplot(bipma_df, aes(x = Importance_adj, y = Performance)) + -->
+<!--     geom_vline(xintercept = mean_importance, linetype = "dashed", linewidth = 0.4) + -->
+<!--     geom_hline(yintercept = mean_performance, linetype = "dashed", linewidth = 0.4) + -->
+<!--     geom_vline(xintercept = -0.02, linetype = "dashed", linewidth = 0.7) + -->
+<!--     geom_point( -->
+<!--       aes(size = dot_size, fill = fill_color), -->
+<!--       shape = 21, -->
+<!--       color = "black", -->
+<!--       stroke = 0.7 -->
+<!--     ) + -->
+<!--     scale_fill_identity() + -->
+<!--     geom_text_repel( -->
+<!--       aes(label = Predictor_with_single_cases), -->
+<!--       size = 3.5, -->
+<!--       box.padding = 2 -->
+<!--     ) + -->
+<!--     coord_cartesian(xlim = x_range_adj, ylim = y_range) + -->
+<!--     scale_x_continuous( -->
+<!--       breaks = x_breaks, -->
+<!--       limits = x_range_adj -->
+<!--     ) + -->
+<!--     scale_y_continuous(limits = y_range) + -->
+<!--     scale_size_continuous(limits = size_limits, range = size_range) + -->
+<!--     labs( -->
+<!--       title = paste("BIPMA for target outcome Y =", target.Y, name_plot), -->
+<!--       x = "Importance", -->
+<!--       y = "Performance" -->
+<!--     ) + -->
+<!--     theme_minimal() + -->
+<!--     theme( -->
+<!--       axis.text.x = element_text(), -->
+<!--       axis.ticks.x = element_line(), -->
+<!--       panel.grid.minor = element_blank() -->
+<!--     ) + -->
+<!--     guides(size = "none") -->
+<!--   if (length(dropped_names) > 0) { -->
+<!--     pc1 <- pc1 + -->
+<!--       annotate( -->
+<!--         "label", -->
+<!--         x = x_range_adj[1] + 0.01,     # a little inside the panel -->
+<!--         y = y_range[1] + 0.01, -->
+<!--         hjust = 0, -->
+<!--         vjust = 0, -->
+<!--         label = paste( -->
+<!--           c("Non-significant necessity and average effects:", dropped_names), -->
+<!--           collapse = "\n" -->
+<!--         ), -->
+<!--         size = 3 -->
+<!--       ) -->
+<!--   } -->
+<!--   print(pc1) -->
+<!--   timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S") -->
+<!--   filename <- paste0("bipma_", timestamp, ".pdf") -->
+<!--   ggsave(filename, pc1, width = 5, height = 5, dpi = 600, device = cairo_pdf) -->
+<!-- } -->
+<!-- ``` -->
+<pre class="text"><code># Bipma - plot
+source(&quot;get_bipma_plot.R&quot;)
+bipma_df &lt;- BIPMA_df_technology 
+x_range &lt;- c(0,0.6)
+y_range &lt;- c(0,100)
+size_limits = c(0,100)
+size_range &lt;- c(0.5,50) # the size of the bulbs
+BIPMA_plot_technology &lt;- get_bipma_plot(bipma_df = bipma_df,
+                                        x_range = x_range, 
+                                        y_range = y_range, 
+                                        size_limits = size_limits, 
+                                        size_range = size_range)</code></pre>
+<!--  \ -->
+<!-- ``` {r bipma85, echo=FALSE, cache=TRUE, include=FALSE, eval = FALSE, out.width='90%'} -->
+<!-- pdf("bipma85.pdf") -->
+<!-- BIPMA_plot_technology -->
+<!-- dev.off() -->
+<!-- ``` -->
+<!--  \ -->
+(ref:caption1234) Bottleneck Importance Performance Map Analysis (BIPMA) for the outcome Technology use. The size of the dots is an indication of the number of <em>single</em> bottleneck cases that cannot achieve the target outcome of 85% of maximum outcome. White dots: Significant average effect and significant necessity effects. Gray dots: Non-significant average effect and significant necessity effects. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bipma"></span>
+<img src="bipma3.png" alt="(ref:caption1234)" width="75%" />
+<p class="caption">
+Figure F.4: (ref:caption1234)
+</p>
+</div>
+<p>The results are shown in Figure <a href="#fig:bipma">F.4</a>. For each condition the percentage and number of <em>single</em> bottleneck cases is given between brackets. The results again show large differences in the percentage and number of single bottleneck cases between the five conditions. In this case, the <em>order</em> from high to low percentages is the same as for cIPMA as shown in Figure <a href="#fig:cipma">F.3</a>. However, the <em>number and percentage</em> of bottleneck cases are in BIPMA considerably lower than in CIPMA. Perceived usefulness has most single bottleneck cases (15%, n=26), whereas Emotional value has none. This means that, in contrast to the conclusion from cIPMA, emotional value is not a relevant predictor for an action based on NCA if only one condition can be changed. Successful group interventions on a single predictor (with the goal to bring all bottleneck cases above the threshold level) could focus on Perceived usefulness, which has almost twice an many single bottlenecks as Adoption intention. Perceived usefulness, Compatibility and Perceived ease of use have non-significant average effects on Technology use according to SEM. Predictors that are necessary from the perspective of NCA, but are non-significant predictors from the perspective of SEM, are placed on the Importance axis at Importance = 0 and the corresponding points are shown in gray. Predictors that are significant from the perspective of SEM but non-significant from the perspective of NCA are shown as small black points, but none of the conditions in this analysis were non-significant from the perspective of NCA. Note, that it is possible that a condition without bottleneck cases is also displayed this way (Emotional value), but such a condition is irrelevant for an NCA-based intervention. Predictors that are non-significant from the perspective of both SEM and NCA are separately mentioned in the BIPMA plot in a text box (Figure <a href="#fig:bipmageneral">11.5</a>) to indicate that actions on such predictors are not effective. However, in the TAM example non-significant predictors from the necessity perspective were not identified.</p>
+<p>For selecting a proper group intervention strategy based on the BIPMA results, see Section <a href="#producebipma">11.4.1.7</a>. For a selecting a case-specific interventions strategy based only on the NCA results, see Chapter <a href="#practice">12</a>.</p>
+</div>
+<div id="interpretresults1" class="section level2 hasAnchor" number="18.8">
+<h2><span class="header-section-number">F.8</span> Step 8: Interpret results<a href="#interpretresults1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The results of the SEM study suggest that for increasing the Technology use on average, only Emotional value and Adoption intention are effective. At the same time, the NCA study shows that a high level of Technology use is only achievable when all predictors meet a certain minimum level. To evaluate the robustness of these NCA results several checks can be done (Section <a href="#robustnesschecks">9.12</a>). Robustness checks for SEM are not discussed here. For this demonstration eight checks are selected (Table <a href="#tab:examplerobustnesschecks">F.3</a>). In each check, one choice is changed and the new results are compared with the original results, and it is evaluated if the conclusion regarding necessity is changed.</p>
+<p>The type of changes in several analyst’s choices regarding necessity is shown in Table <a href="#tab:examplerobustnesschecks">F.3</a>.
+<!-- The robustness checks are produced with the  -->
+<!-- Tintegrated function ```ncasem_example``` that includes also all previous helper functions (Section \@ref(ncasemexample)). --></p>
+<!-- for HTML -->
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:100%; overflow-x: scroll; width:100%; ">
+<table style="width:30%; font-size: 8px; width: auto !important; margin-left: auto; margin-right: auto; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;" class="table lightable-paper">
+<caption style="font-size: initial !important;">
+<span id="tab:examplerobustnesschecks">Table F.3: </span>Selected robustness checks. The orange elements are changed compared to the original analysis
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Robustness check
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Original
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Ceiling change
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+-threshold change
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+-threshold change
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Scope change
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Single outlier removal
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Multiple outlier removal
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Target lower
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Target higher
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Ceiling line
+</td>
+<td style="text-align:right;">
+CE-FDH
+</td>
+<td style="text-align:right;">
+<span style="     color: black !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(242, 139, 75, 255) !important;">CR-FDH</span>
+</td>
+<td style="text-align:right;">
+CE-FDH
+</td>
+<td style="text-align:right;">
+CE-FDH
+</td>
+<td style="text-align:right;">
+CE-FDH
+</td>
+<td style="text-align:right;">
+CE-FDH
+</td>
+<td style="text-align:right;">
+CE-FDH
+</td>
+<td style="text-align:right;">
+CE-FDH
+</td>
+<td style="text-align:right;">
+CE-FDH
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Threshold effect size
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+<span style="     color: black !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(242, 139, 75, 255) !important;">0.20</span>
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Threshold p-value
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+<span style="     color: black !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(242, 139, 75, 255) !important;">0.01</span>
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scope
+</td>
+<td style="text-align:right;">
+empirical
+</td>
+<td style="text-align:right;">
+empirical
+</td>
+<td style="text-align:right;">
+empirical
+</td>
+<td style="text-align:right;">
+empirical
+</td>
+<td style="text-align:right;">
+<span style="     color: black !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(242, 139, 75, 255) !important;">theoretical</span>
+</td>
+<td style="text-align:right;">
+empirical
+</td>
+<td style="text-align:right;">
+empirical
+</td>
+<td style="text-align:right;">
+empirical
+</td>
+<td style="text-align:right;">
+empirical
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Outliers
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+<span style="     color: black !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(242, 139, 75, 255) !important;">yes, single</span>
+</td>
+<td style="text-align:right;">
+<span style="     color: black !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(242, 139, 75, 255) !important;">yes, multiple</span>
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+no
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Target outcome
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+<span style="     color: black !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(242, 139, 75, 255) !important;">80</span>
+</td>
+<td style="text-align:right;">
+<span style="     color: black !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(242, 139, 75, 255) !important;">90</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- For PDF -->
+<p><br />
+</p>
+<p>The results of these robustness checks for each individual predictor variable are shown in <a href="#tab:robustcheckssem">F.4</a>.</p>
+<!-- FOR HTML -->
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:450px; overflow-x: scroll; width:100%; ">
+<table style="width:30%; font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;" class="table lightable-paper">
+<caption style="font-size: initial !important;">
+<span id="tab:robustcheckssem">Table F.4: </span>‘NCA robustness table’ with the results of the robustness checks
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
+Robustness check
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
+Effect size
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
+-value
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
+Necessity
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
+Single bottlenecks(%)
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
+Single bottlenecks(n)
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
+Priority
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+Perceived usefulness
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Original
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+14.9
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ceiling change
+</td>
+<td style="text-align:left;">
+0.19
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+5.2
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+2/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+d value change
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+14.9
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+p value change
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+14.9
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scope change
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+14.9
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Single outlier removal
+</td>
+<td style="text-align:left;">
+0.30
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+6.5
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Multiple outlier removal
+</td>
+<td style="text-align:left;">
+0.29
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+6.6
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Target lower
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+10.3
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border-bottom: 2px solid black;">
+Target higher
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+0.24
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+0.001
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+yes
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+14.9
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+26
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+Compatibility
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Original
+</td>
+<td style="text-align:left;">
+0.21
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+4/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ceiling change
+</td>
+<td style="text-align:left;">
+0.15
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+2.3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+d value change
+</td>
+<td style="text-align:left;">
+0.21
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+4/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+p value change
+</td>
+<td style="text-align:left;">
+0.21
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+4/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scope change
+</td>
+<td style="text-align:left;">
+0.21
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+4/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Single outlier removal
+</td>
+<td style="text-align:left;">
+0.28
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+1.2
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Multiple outlier removal
+</td>
+<td style="text-align:left;">
+0.29
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+1.2
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Target lower
+</td>
+<td style="text-align:left;">
+0.21
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+1.1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border-bottom: 2px solid black;">
+Target higher
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+0.21
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+0.000
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+yes
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+0.6
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+1
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+4/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+Perceived ease of use
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Original
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.015
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ceiling change
+</td>
+<td style="text-align:left;">
+0.20
+</td>
+<td style="text-align:right;">
+0.013
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+1.7
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+4/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+d value change
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.015
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+p value change
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.015
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scope change
+</td>
+<td style="text-align:left;">
+0.36
+</td>
+<td style="text-align:right;">
+0.015
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Single outlier removal
+</td>
+<td style="text-align:left;">
+0.18
+</td>
+<td style="text-align:right;">
+0.047
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Multiple outlier removal
+</td>
+<td style="text-align:left;">
+0.13
+</td>
+<td style="text-align:right;">
+0.051
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Target lower
+</td>
+<td style="text-align:left;">
+0.24
+</td>
+<td style="text-align:right;">
+0.015
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border-bottom: 2px solid black;">
+Target higher
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+0.24
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+0.015
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+yes
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+4
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+7
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+Emotional value
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Original
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ceiling change
+</td>
+<td style="text-align:left;">
+0.17
+</td>
+<td style="text-align:right;">
+0.020
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+d value change
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+p value change
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scope change
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Single outlier removal
+</td>
+<td style="text-align:left;">
+0.44
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+2.4
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+4/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Multiple outlier removal
+</td>
+<td style="text-align:left;">
+0.44
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+2.4
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+4/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Target lower
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+1.1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+3/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border-bottom: 2px solid black;">
+Target higher
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+0.33
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+0.000
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+yes
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+0
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+0
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+5/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+Adoption intention
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:right;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+<td style="text-align:left;font-weight: bold;background-color: rgba(240, 240, 240, 255) !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Original
+</td>
+<td style="text-align:left;">
+0.29
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+2/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ceiling change
+</td>
+<td style="text-align:left;">
+0.20
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+5.7
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+1/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+d value change
+</td>
+<td style="text-align:left;">
+0.29
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+2/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+p value change
+</td>
+<td style="text-align:left;">
+0.29
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+2/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scope change
+</td>
+<td style="text-align:left;">
+0.29
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+2/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Single outlier removal
+</td>
+<td style="text-align:left;">
+0.38
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+5.3
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+2/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Multiple outlier removal
+</td>
+<td style="text-align:left;">
+0.42
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+5.4
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+2/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Target lower
+</td>
+<td style="text-align:left;">
+0.29
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+1.7
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2/5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border-bottom: 2px solid black;">
+Target higher
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+0.29
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+0.000
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+yes
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+8
+</td>
+<td style="text-align:right;border-bottom: 2px solid black;">
+14
+</td>
+<td style="text-align:left;border-bottom: 2px solid black;">
+2/5
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br />
+</p>
+<p>Without discussing details, the general results of the NCA robustness tables are as follows. The results for the necessity of Perceived usefulness are robust with respect to the conclusion about necessity-in-kind. For necessity-in-degree only a change of ceiling line from CE-FDH to CR-FDH resulted in a different priority level (from first to second). Most single bottleneck cases exist for this predictor. Generally, the original results for this predictor can be considered as robust. The same conclusion applies to Compatibility. The original conclusion about necessity-in-kind is stable and for all checks the priority level for action remains low. However, the results of Perceived ease of use are more variable. For example, the statistical significance of the original finding and therefore the conclusion of necessity is somewhat fragile. Also the number of bottleneck cases changes from 7 to 1 and is sensitive to small changes of the selected target level. The results for Emotional value and Adoption intention are relatively robust.</p>
+<p>Note that the NCA robustness table is a tool for better understanding and communicating the credibility of the original results. The findings from the checks largely depend on the selected parameters for the checks. No hard rules exist to decide about the robustness or fragility of the results, as this is a judgement by the analyst and others.</p>
+
+</div>
 </div>
 <div id="appendixh" class="section level1 hasAnchor" number="19">
 <h1><span class="header-section-number">Appendix G</span> Bottleneck distance table<a href="#appendixh" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -14868,6 +17940,9 @@ Ragin, C. C. (2009). Qualitative comparative analysis using fuzzy-sets (<span cl
 <div id="ref-richter2022necessary" class="csl-entry">
 Richter, N. F., &amp; Hauff, S. (2022). Necessary conditions in international business research–advancing the field with a new perspective on causality and data analysis. <em>Journal of World Business</em>, <em>57</em>(5), 101310. <a href="https://doi.org/10.1016/j.jwb.2022.101310">https://doi.org/10.1016/j.jwb.2022.101310</a>
 </div>
+<div id="ref-richter2023dataset" class="csl-entry">
+Richter, N. F., Hauff, S., Kolev, A. E., &amp; Schubring, S. (2023). Dataset on an extended technology acceptance model: A combined application of <span>PLS-SEM</span> and <span>NCA</span>. <em>Data in Brief</em>, <em>48</em>, 109190. <a href="https://doi.org/10.1016/j.dib.2023.109190">https://doi.org/10.1016/j.dib.2023.109190</a>
+</div>
 <div id="ref-richter2022use" class="csl-entry">
 Richter, N. F., Hauff, S., Ringle, C. M., &amp; Gudergan, S. P. (2022). The use of partial least squares structural equation modeling and complementary methods in international management research. <em>Management International Review</em>, <em>62</em>(4), 449–470. <a href="https://doi.org/10.1007/s11575-022-00475-0">https://doi.org/10.1007/s11575-022-00475-0</a>
 </div>
@@ -14918,6 +17993,9 @@ Sarstedt, M., Richter, N. F., Hauff, S., &amp; Ringle, C. M. (2024). Combined im
 </div>
 <div id="ref-schneider2012set" class="csl-entry">
 Schneider, C. Q., &amp; Wagemann, C. (2012). <em>Set-theoretic methods for the social sciences: A guide to qualitative comparative analysis</em>. Cambridge University Press. <a href="https://www.cambridge.org/nl/academic/subjects/social-science-research-methods/qualitative-methods/set-theoretic-methods-social-sciences-guide-qualitative-comparative-analysis?format=PB">https://www.cambridge.org/nl/academic/subjects/social-science-research-methods/qualitative-methods/set-theoretic-methods-social-sciences-guide-qualitative-comparative-analysis?format=PB</a>
+</div>
+<div id="ref-schubring2023extended" class="csl-entry">
+Schubring, S., &amp; Richter, N. (2023). <em>Extended TAM</em> (Version V4). Mendeley Data. <a href="https://doi.org/10.17632/pd5dp3phx2.4">https://doi.org/10.17632/pd5dp3phx2.4</a>
 </div>
 <div id="ref-sharma2024framework" class="csl-entry">
 Sharma, P. N., Sarstedt, M., Ringle, C. M., Cheah, J.-H., Herfurth, A., &amp; Hair, J. F. (2024). A framework for enhancing the replicability of behavioral MIS research using prediction oriented techniques. <em>International Journal of Information Management</em>, <em>78</em>, 102805. <a href="https://doi.org/10.1016/j.ijinfomgt.2024.102805">https://doi.org/10.1016/j.ijinfomgt.2024.102805</a>
