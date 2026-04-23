@@ -2,7 +2,7 @@
 
 Necessary Condition Analysis (NCA) is a data analysis method used to identify critical “must-have” factors in datasets. Unlike traditional statistical approaches that focus on average effects, NCA detects conditions that are necessary for an outcome to occur. If a necessary condition is not met, the outcome cannot happen.
 
-This book provides a comprehensive and advanced introduction to NCA, covering its theoretical foundations, mathematical principles, statistical tools, and practical applications across social sciences, business, healthcare, public policy, and other fields.
+This book provides a comprehensive and advanced introduction to NCA, covering its theoretical foundations, mathematical principles, statistical tools, and practical applications across social sciences, business, healthcare, public policy, and other fields. 
 
 ---
 
