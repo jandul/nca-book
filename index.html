@@ -432,7 +432,7 @@ div.csl-indent {
 <!-- </div> -->
 <div style="text-align: left; margin-top: 0; margin-bottom: 3em;">
 <p>© Jan Dul<br>
-Version 1.0.0. First pubished March 10, 2026. Last update: April 23, 2026<br></p>
+Version 1.0.0. First pubished March 10, 2026. Last update: April 24, 2026<br></p>
 <p>Refer to the book as: Dul, J. (2026). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Chapman &amp; Hall/CRC Press.</p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
@@ -12079,9 +12079,9 @@ model_calibrated&lt;- nca_analysis(LF,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.37   0.000
-## URB 0.01   0.361
+## URB 0.01   0.360
 ## LIT 0.82   0.002
-## IND 0.02   0.368
+## IND 0.02   0.363
 ## STB 0.46   0.005
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code># NCA-raw data
@@ -12102,9 +12102,9 @@ model_raw &lt;- nca_analysis(LR,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.27   0.000
-## URB 0.09   0.339
-## LIT 0.74   0.000
-## IND 0.11   0.094
+## URB 0.09   0.334
+## LIT 0.74   0.001
+## IND 0.11   0.092
 ## STB 0.53   0.010
 ## ---------------------------------------------------------------------------</code></pre>
 <!-- ``` {r Lipset-hide , echo = TRUE, eval = TRUE, warning=FALSE, message= FALSE, result = FALSE} -->
@@ -12396,10 +12396,10 @@ NCA’s necessity-in-kind analysis is conducted as follows:</p>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.002
+## L 0.29   0.003
 ## R 0.31   0.001
 ## P 0.17   0.010
-## V 0.05   0.531
+## V 0.05   0.529
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>library(NCA)
 set.seed(123) # for reproducible results
@@ -12416,10 +12416,10 @@ print(model)</code></pre>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.002
+## L 0.29   0.003
 ## R 0.31   0.001
 ## P 0.17   0.010
-## V 0.05   0.531
+## V 0.05   0.529
 ## ---------------------------------------------------------------------------</code></pre>
 <p><br />
 <!-- ```{r, table2ncaqca, echo=FALSE, eval = FALSE out.width='100%', fig.align = "center", fig.cap="NCA necessity analysis. $d$ = effect size; $p$ = $p$-value."} -->
@@ -15071,9 +15071,9 @@ kbl(
   pack_rows(&quot;Variables/Conditions&quot;, 1,n_vars) %&gt;%
   pack_rows(&quot;Model fit (regression)&quot;, n_vars + 1, nrow(nert), 
             hline_before = TRUE) %&gt;%
-  footnote(
-    general = note_text
-  )</code></pre>
+  footnote(general = note_text)%&gt;%
+  scroll_box(width = &quot;100%&quot;)</code></pre>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>
 <span id="tab:nertsem1-tab">Table F.1: </span>Summary of the SEM and NCA results for outcome Adoption intention.
@@ -15215,6 +15215,7 @@ R<sup>2</sup>(adj.) = 0.53
 </tr>
 </tfoot>
 </table>
+</div>
 <p>Table <a href="#tab:nertsem1-tab">F.1</a> for Adoption intention indicates that Perceived usefulness and Emotional value both have a probabilistic sufficiency effect on Adoption attention (path coefficients are significant) and are also necessary conditions for Adoption intention (effect sizes are large enough and significant). Compatibility has no average effect nor a necessity effect on Adoption intention (although its necessity effect size is statistically significant, it is too small <span class="math inline">\(p\)</span>-&lt; 0.10). Perceived ease of use has also no average effect on Adoption intention, but it has a necessity effect.<br />
 </p>
 <pre class="text"><code>#NERT - Technology use
@@ -15300,7 +15301,9 @@ kbl(
  
   pack_rows(&quot;Variables/Conditions&quot;, 1, n_vars) %&gt;%
   pack_rows(&quot;Model fit (SEM)&quot;, n_vars + 1, nrow(nert), hline_before = TRUE) %&gt;%
-  footnote(general = note_text, escape = FALSE)</code></pre>
+  footnote(general = note_text, escape = FALSE)%&gt;%
+  scroll_box(width = &quot;100%&quot;)</code></pre>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <caption>
 <span id="tab:nertsem2-tab">Table F.2: </span>Summary of the SEM and NCA results for outcome Technology use.
@@ -15503,6 +15506,7 @@ R<sup>2</sup>(adj.) = 0.53
 </tr>
 </tfoot>
 </table>
+</div>
 <p>Table <a href="#tab:nertsem2-tab">F.2</a> for Technology use shows that none of the predictors except Adoption intention has a direct average effect on Technology use. The results of the total average effects show that only Emotional value and adoption intention have a probabilistic sufficiency effect on Technology use. However, all predictors are necessary conditions for Technology use.</p>
 </div>
 <div id="step-7-produce-bipma" class="section level2 hasAnchor" number="18.7">
@@ -16128,10 +16132,10 @@ Original
 Ceiling change
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
--threshold change
+<em>d</em>-threshold change
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
--threshold change
+<em>p</em>-threshold change
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
 Scope change
@@ -16217,7 +16221,7 @@ Threshold effect size
 </tr>
 <tr>
 <td style="text-align:left;">
-Threshold p-value
+Threshold <em>p</em>-value
 </td>
 <td style="text-align:right;">
 0.05
@@ -16349,7 +16353,7 @@ Target outcome
 <!-- For PDF -->
 <p><br />
 </p>
-<p>The results of these robustness checks for each individual predictor variable are shown in <a href="#tab:robustcheckssem">F.4</a>.</p>
+<p>The results of these robustness checks for each individual predictor variable are shown in Table <a href="#tab:robustcheckssem">F.4</a>.</p>
 <!-- FOR HTML -->
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:450px; overflow-x: scroll; width:100%; ">
 <table style="width:30%; font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;" class="table lightable-paper">
@@ -16365,7 +16369,7 @@ Robustness check
 Effect size
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
--value
+<em>p</em>-value
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;font-weight: bold;border-bottom: 2px solid black;">
 Necessity
@@ -16447,7 +16451,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-d value change
+<em>d</em>-value change
 </td>
 <td style="text-align:left;">
 0.24
@@ -16470,7 +16474,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-p value change
+<em>p</em>-value change
 </td>
 <td style="text-align:left;">
 0.24
@@ -16671,7 +16675,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-d value change
+<em>d</em>-value change
 </td>
 <td style="text-align:left;">
 0.21
@@ -16694,7 +16698,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-p value change
+<em>p</em>-value change
 </td>
 <td style="text-align:left;">
 0.21
@@ -16895,7 +16899,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-d value change
+<em>d</em>-value change
 </td>
 <td style="text-align:left;">
 0.24
@@ -16918,7 +16922,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-p value change
+<em>p</em>-value change
 </td>
 <td style="text-align:left;">
 0.24
@@ -17119,7 +17123,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-d value change
+<em>d</em>-value change
 </td>
 <td style="text-align:left;">
 0.33
@@ -17142,7 +17146,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-p value change
+<em>p</em>-value change
 </td>
 <td style="text-align:left;">
 0.33
@@ -17343,7 +17347,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-d value change
+<em>d</em>-value change
 </td>
 <td style="text-align:left;">
 0.29
@@ -17366,7 +17370,7 @@ yes
 </tr>
 <tr>
 <td style="text-align:left;">
-p value change
+<em>p</em>-value change
 </td>
 <td style="text-align:left;">
 0.29
@@ -17522,7 +17526,7 @@ yes
 <div id="bibliography" class="section level1 unnumbered hasAnchor">
 <h1>Bibliography<a href="#bibliography" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div style="text-align: left; font-style: italic; margin: 2em 0;">
-<p>This chapter will be made available soon.</p>
+<p>The complete bibliography will be made available soon.</p>
 </div>
 
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
