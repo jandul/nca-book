@@ -439,6 +439,18 @@ div.csl-indent {
 <h2 class="subtitle"><em>Principles and Application</em></h2>
 <p class="author"><em>Jan Dul</em></p>
 </div>
+<!-- For scrollable formulae anf tables -->
+<style type="text/css">
+.MathJax_Display, .math.display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+}
+</style>
 <!-- <div style="text-align: center; margin-top: 4em; margin-bottom: 2em;"> -->
 <!--   <img src="impossible1_COLORcover.png" alt="Book cover" style="max-width: 300px; height: auto;"> -->
 <!-- </div> -->
@@ -453,7 +465,7 @@ div.csl-indent {
 <!-- </div> -->
 <div style="text-align: left; margin-top: 0; margin-bottom: 3em;">
 <p>© Jan Dul<br>
-Version 1.0.0. First pubished March 10, 2026. Last update: April 27, 2026<br></p>
+Version 1.0.0. First pubished March 10, 2026. Last update: April 29, 2026<br></p>
 <p>Refer to the book as: Dul, J. (2026). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Chapman &amp; Hall/CRC Press.</p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
@@ -12296,6 +12308,7 @@ Suggested article: <span class="citation">Köhler &amp; Cortina (<a href="#ref-k
 <!-- ``` -->
 <!--  \ -->
 <!-- In these studies the methods use the same condition and outcome scores, and the data are analyzed independently using their own causal perspectives and quality standards. Only during the interpretation of the results, the findings are combined to obtain a richer understanding the phenomenon of interest.  -->
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table table" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:theorymethodfit">Table 11.1: </span>Theory-method fit.
@@ -12360,11 +12373,13 @@ Fit
 </tr>
 </tbody>
 </table>
+</div>
 <p>Terms commonly used for studies with different methods are <em>multimethod studies</em>, <em>multiple method studies</em> or <em>mixed method studies</em>; these terms often refer to studies that use both qualitative and quantitative methods. In this book, however, a multimethod study refers to a hypothesis-testing study that uses different methods with the same or a different causal perspective, and with the same or different data.</p>
 <p>Table <a href="#tab:multimethodtypes">11.2</a> distinguishes three types of multimethod studies. A <em>method-triangulation</em> multimethod study uses a single underlying causal perspective, but different methods that fit this perspective. The data can be the same or different. A <em>causal-pluralism</em> multimethod study analyses the same data with different causal perspectives and uses different methods that fit these perspectives. If in a multimethod study, both the causal perspectives and the data are different, the study effectively consists of <em>separate studies</em> analyzing the same phenomenon, while each study has its own data, method and causal perspective.</p>
 <!-- describes an average effect between $X$ and $Y$ all methods should fit such causal perspecte  tBecause these studies use multiple data sources and/or multiple analytical approaches to address the same theoretical question, theory–method fit must be ensured. In particular, the underlying theory should be applied within a consistent causal perspective. Such multimethod studies, which combine different analytical or data-collection methods while maintaining a single theoretical and causal framework, can be classified as *method-triangulation* studies. The methods differ but the theory and its causal perspective remain the same.  -->
 <!-- However, combining methods consistent with different causal perspective may be  possible in a *causal-pluralism study*. In such study, different theories based on different causal perspectives are developed or tested. Rather than using a single causal perspective, the study uses  -->
 <!-- For example, when NCA is used in combination with regression-based methods, two different theories are evaluated with two different types of hypotheses: NCA tests the necessity hypothesis, and regression analysis tests the probabilistic sufficiency hypothesis. Similarly, when NCA is used in combination with QCA, NCA evaluates the necessity theory and QCA the configurational sufficiency theory. This implies that in a causal-pluralism study, one methodological approach is *not* a robustness check of the other methodological approach. -->
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:multimethodtypes">Table 11.2: </span>Classification of multimethod studies
@@ -12415,6 +12430,7 @@ Yes
 </tr>
 </tbody>
 </table>
+</div>
 <p>A multimethod study with NCA as one of the methodologies can be conducted as follows:</p>
 <ol style="list-style-type: decimal">
 <li><p>Develop the hypotheses</p>
@@ -12577,6 +12593,7 @@ Figure 11.2: <span class="math inline">\(XY\)</span>-plots of the relationship b
 <p>In the development of regression analysis, over the years many regression-based statistical concepts relevant for estimating average effects, have been developed and taught to generations of students. These concepts include mediation, moderation, confounding, omitted variable bias, control variables and endogeneity and spuriousness. However, often these concepts do not apply (directly), or require re-interpretation in the context of NCA.</p>
 <p>All differences stem from a fundamental distinction: regression models estimate expected values (average effects), whereas NCA characterizes constraints by estimating an upper boundary (ceiling) in the <span class="math inline">\(XY\)</span>-plane and the associated empty space above it. The theoretical ceiling according to Equation <a href="#eq:lin-ceiling-peers">(4.15)</a> is a <em>sharp border</em> between the area where observations are possible (feasible area) and the area where cases are not possible (ceiling zone) within a <em>bounding box</em> (bounded variables). Regression is primarily concerned with how observations are distributed (the full space), while NCA is concerned with combinations of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> above a ceiling that do not occur (the empty space).<a href="#fn102" class="footnote-ref" id="fnref102"><sup>102</sup></a> Under the assumptions of proper model specification, sound theory, and adequate data, a regression line may be given a causal interpretation in terms of probabilistic sufficiency, and a ceiling line may be given a causal interpretation in terms of necessity.</p>
 <p>Table <a href="#tab:statisticsterms">11.3</a> shows several regression-based statistical concepts that are defined for average-effect estimation; in NCA they often have no direct analogue or must be reinterpreted in terms of boundary patterns and constraints. The first column lists concepts that are meaningful in regression analysis. The second column refers to correspondence in NCA.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:statisticsterms">Table 11.3: </span>Common regression-based statistical concepts and NCA corresponding concepts.
@@ -12649,7 +12666,8 @@ Necessity spuriousness; Formal necessity hypothesis
 </td>
 </tr>
 </tbody>
-</table></li>
+</table>
+</div></li>
 </ul></li>
 </ul>
 <p><!-- not an effect in the regression sense. The overall necessity ceiling is a ceiling in the $XY$-plane, see Section \@ref(multipleconditions). Whereas regression is interested in the space where data are present (if $X$, then probably $Y$), NCA is interested in the space where data are absent (if not $X$, then not $Y$). The regression equation uses an equality equation for estimating the average effect in the population (see Equation \@ref(eq:ols1)), whereas the NCA uses an inequality equation for estimating the maximum possible effect in the population (see Equation \@ref(eq:math-general)) and derive its empty space above it. --></p>
@@ -12969,7 +12987,7 @@ Necessity spuriousness; Formal necessity hypothesis
 <p>Adding regression analysis to an existing NCA study may be cumbersome from the perspective of data availability. For testing the necessity hypothesis that <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span>, data only on <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are enough. Such data are often not enough for also conducting a regression analysis for testing the hypothesis that <span class="math inline">\(X\)</span> likely has an effect on <span class="math inline">\(Y\)</span>. Due to the risk of confounding, regression usually requires additional variables to be measured and included in the regression equation.</p>
 <p>Figure <a href="#fig:regressionflowchart-multimethod-fig">11.3</a> shows a flowchart for conducting a necessity analysis with NCA in combination with a regression-based analysis in a causal-pluralism multimethod study. The study starts with theorizing the necessity and probabilistic sufficiency hypotheses independently. Note that the theoretical justification of a necessity hypothesis differs from the theoretical justification of a probabilistic sufficiency relationship (Chapter <a href="#hypothesisformulation">7</a>).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:regressionflowchart-multimethod-fig"></span>
-<img src="Flowchart_regression_causalpluralism.png" alt="Flowchart for conducting a method-pluralism multimethod study with NCA and a regression-based method. NERT = NCA-Extended Regression Table." width="60%" />
+<img src="Flowchart_regression_causalpluralism.png" alt="Flowchart for conducting a method-pluralism multimethod study with NCA and a regression-based method. NERT = NCA-Extended Regression Table." width="80%" />
 <p class="caption">
 Figure 11.3: Flowchart for conducting a method-pluralism multimethod study with NCA and a regression-based method. NERT = NCA-Extended Regression Table.
 </p>
@@ -13121,6 +13139,7 @@ Necessity<br>effect size
 </table>
 </div>
 <p>A causal-pluralism multimethod study with NCA and a regression-based method can provide complementary information with the following possible results (Table <a href="#tab:multimethodregressionncaresults">11.5</a>).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:multimethodregressionncaresults">Table 11.5: </span>Possible outcomes of a causal-pluralism multimethod study with NCA and a regression-based method.
@@ -13184,6 +13203,7 @@ No
 </tr>
 </tbody>
 </table>
+</div>
 <ul>
 <li><p>Option 1: <span class="math inline">\(X\)</span> has an average effect on <span class="math inline">\(Y\)</span> and is also necessary for <span class="math inline">\(Y\)</span>. <span class="math inline">\(X\)</span> is not only important but also required for having the outcome (See <span class="math inline">\(X_1\)</span> in Table <a href="#tab:nert-tab">11.4</a>).</p></li>
 <li><p>Option 2: <span class="math inline">\(X\)</span> has an average effect on <span class="math inline">\(Y\)</span> but is not necessary for <span class="math inline">\(Y\)</span>. <span class="math inline">\(X\)</span> is important but not essential. Its absence can be compensated by other factors (See <span class="math inline">\(X_2\)</span> in Table <a href="#tab:nert-tab">11.4</a>).</p></li>
@@ -13261,6 +13281,7 @@ A SEM-model consists of two parts. The <em>measurement model</em> defines how sp
 Since SEM terminology about ‘indicators’, ‘weights’, ‘latent variables’ and ‘rescaling’ varies across the SEM literature, the terminology described in Table <a href="#tab:semterminology">11.6</a> is used in this book.</p>
 <br />
 
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table table" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:semterminology">Table 11.6: </span>SEM terminology
@@ -13442,6 +13463,7 @@ Normalized unstandardized latent variable score. Unstandardized latent variable 
 </tr>
 </tbody>
 </table>
+</div>
 <p><br />
 </p>
 <!-- <div style="border: 2px solid #17a2b8; background-color: #e8f7fc; padding: 10px; border-radius: 5px;"> -->
@@ -13474,7 +13496,7 @@ Normalized unstandardized latent variable score. Unstandardized latent variable 
 <!-- </div>\ -->
 <p>Figure <a href="#fig:semflowchart">11.4</a> shows a flowchart for conducting NCA in combination with SEM.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:semflowchart"></span>
-<img src="Flowchart_sem_causalpluralism.png" alt="Flowchart for conducting NCA in combination with structural equation modeling (SEM). NERT = NCA-Extended Regression Table tool. BIPMA = Bottleneck Importance Performance Map Analysis tool." width="40%" />
+<img src="Flowchart_sem_causalpluralism.png" alt="Flowchart for conducting NCA in combination with structural equation modeling (SEM). NERT = NCA-Extended Regression Table tool. BIPMA = Bottleneck Importance Performance Map Analysis tool." width="60%" />
 <p class="caption">
 Figure 11.4: Flowchart for conducting NCA in combination with structural equation modeling (SEM). NERT = NCA-Extended Regression Table tool. BIPMA = Bottleneck Importance Performance Map Analysis tool.
 </p>
@@ -13789,7 +13811,7 @@ If apple is necessary for an apple cake, then the combination [apple OR blue sky
 <h3><span class="header-section-number">11.6.1</span> Steps for conducting NCA with QCA’s necessity analysis<a href="#necessityanalysisncaqca" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Figure <a href="#fig:qcaflowchart-methodtriangulation">11.8</a> shows a flowchart for conducting a necessity analysis with NCA and QCA in a method-triangulation multimethod study.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:qcaflowchart-methodtriangulation"></span>
-<img src="Flowchart_QCA_methodtriangulation.png" alt="Flowchart for conducting a method-triangulation multimethod study with NCA and QCA's necessity analysis." width="40%" />
+<img src="Flowchart_QCA_methodtriangulation.png" alt="Flowchart for conducting a method-triangulation multimethod study with NCA and QCA's necessity analysis." width="60%" />
 <p class="caption">
 Figure 11.8: Flowchart for conducting a method-triangulation multimethod study with NCA and QCA’s necessity analysis.
 </p>
@@ -13857,10 +13879,10 @@ model_calibrated&lt;- nca_analysis(LF,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.37   0.000
-## URB 0.01   0.359
+## URB 0.01   0.362
 ## LIT 0.82   0.002
-## IND 0.02   0.363
-## STB 0.46   0.005
+## IND 0.02   0.361
+## STB 0.46   0.004
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code># NCA-raw data
 set.seed(123) # for reproducible results
@@ -13880,10 +13902,10 @@ model_raw &lt;- nca_analysis(LR,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.27   0.000
-## URB 0.09   0.347
+## URB 0.09   0.346
 ## LIT 0.74   0.001
-## IND 0.11   0.088
-## STB 0.53   0.008
+## IND 0.11   0.099
+## STB 0.53   0.010
 ## ---------------------------------------------------------------------------</code></pre>
 <!-- ``` {r Lipset-hide , echo = TRUE, eval = TRUE, warning=FALSE, message= FALSE, result = FALSE} -->
 <!-- library(QCA) -->
@@ -14176,10 +14198,10 @@ NCA’s necessity-in-kind analysis is conducted as follows:</p>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.003
-## R 0.31   0.001
-## P 0.17   0.008
-## V 0.05   0.543
+## L 0.29   0.002
+## R 0.31   0.000
+## P 0.17   0.009
+## V 0.05   0.534
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>library(NCA)
 set.seed(123) # for reproducible results
@@ -14196,10 +14218,10 @@ print(model)</code></pre>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.003
-## R 0.31   0.001
-## P 0.17   0.008
-## V 0.05   0.543
+## L 0.29   0.002
+## R 0.31   0.000
+## P 0.17   0.009
+## V 0.05   0.534
 ## ---------------------------------------------------------------------------</code></pre>
 <p><br />
 <!-- ```{r, table2ncaqca, echo=FALSE, eval = FALSE out.width='100%', fig.align = "center", fig.cap="NCA necessity analysis. $d$ = effect size; $p$ = $p$-value."} -->
@@ -14251,6 +14273,7 @@ nca_output(model_bottl, summaries = FALSE, plots= FALSE,
 <p>Although in QCA’s binary logic these small necessary membership scores of L, R, P (all &lt; 0.5) would be framed as ‘absence’ of the condition, in NCA these membership scores are considered small, yet must be present for having the outcome. Thus, according to NCA the low level of membership scores must be present, otherwise the sufficient configurations identified by QCA will not produce the outcome.</p>
 <p>The presence of a condition and the outcome means that the membership score is &gt; 0.5. The absence of a condition means that the membership score is &lt; 0.5. A common way to summarize the results is the QCA solution table. The Fiss-style solution table <span class="citation">(<a href="#ref-fiss2011building">Fiss, 2011</a>)</span> is shown in Table <a href="#tab:FISS">11.8</a>.
 <!-- Figure \@ref(fig:table3ncaqca). --></p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; border-bottom: 0;">
 <caption>
 <span id="tab:FISS">Table 11.8: </span>QCA Solution Table (without NCA information).
@@ -14468,6 +14491,7 @@ Solution coverage: 0.685
 </tr>
 </tfoot>
 </table>
+</div>
 <!-- ```{r, table3ncaqca, echo=FALSE, out.width='100%', fig.align = "center", fig.cap="QCA solution table with sufficient configurations."} -->
 <!-- knitr::include_graphics('Table3ncaqca.png') -->
 <!-- ``` -->
@@ -14475,6 +14499,7 @@ Solution coverage: 0.685
 </p>
 <p>The NCA necessity results can be combined with the QCA sufficiency results using the <em>NEST tool</em>. The NEST tool is the NCA-Extended Solution Table. It combines QCA results with NCA’s necessity-in-degree results by adding a column and new symbols to the conventional QCA solution table (Table <a href="#tab:NEST">11.9</a>).
 <!-- \@ref(fig:table4ncaqca).  --></p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; border-bottom: 0;">
 <caption>
 <span id="tab:NEST">Table 11.9: </span>NEST tool for combining NCA results with fsQCA results in a causal-pluralism multimethod study. NEST = NCA-Extended Solution Table. The extension consists of adding a necessity column to the fsQCA solution table: the necessary membership score for making the outcome possible (necessity-in-degree).
@@ -14729,6 +14754,7 @@ Solution coverage: 0.685
 </tr>
 </tfoot>
 </table>
+</div>
 <!-- (ref:caption7) NEST tool for combining QCA sufficiency results with NCA necessity results in a causal-pluralism multimethod study. NEST = NCA-Extended Solution Table. The extension consists of adding the triangle symbol \begingroup\fontspec{Segoe UI Symbol}◢\endgroup\space when the necessary condition in degree is missing in the sufficiency solution, and adding the column 'Necessity requirement' with the required level of the necessary condition. -->
 <!-- ```{r table4ncaqca, echo=FALSE, out.width='100%', fig.align = "center", fig.cap="(ref:caption7)"} -->
 <!-- knitr::include_graphics('Table4ncaqca2.png') -->
@@ -16609,7 +16635,7 @@ print(model1.technology)</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.24   0.001
 ## Compatibility         0.21   0.000
-## Perceived ease of use 0.24   0.018
+## Perceived ease of use 0.24   0.014
 ## Emotional value       0.33   0.000
 ## Adoption intention    0.29   0.000
 ## ---------------------------------------------------------------------------</code></pre>
@@ -16623,7 +16649,7 @@ print(model1.adoption)</code></pre>
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.12   0.003
-## Compatibility         0.08   0.010
+## Compatibility         0.08   0.009
 ## Perceived ease of use 0.15   0.007
 ## Emotional value       0.21   0.000
 ## ---------------------------------------------------------------------------</code></pre>
