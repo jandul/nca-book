@@ -453,7 +453,7 @@ div.csl-indent {
 <!-- </div> -->
 <div style="text-align: left; margin-top: 0; margin-bottom: 3em;">
 <p>© Jan Dul<br>
-Version 1.0.0. First pubished March 10, 2026. Last update: April 29, 2026<br></p>
+Version 1.0.0. First pubished March 10, 2026. Last update: May 06, 2026<br></p>
 <p>Refer to the book as: Dul, J. (2026). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Chapman &amp; Hall/CRC Press.</p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
@@ -1495,11 +1495,13 @@ y_2 &amp; \text{if } x\ge x_2
 <p>The generalized inverse is:</p>
 <p><span class="math display" id="eq:lin-inverse">\[\begin{equation}
 \tag{4.16}
-f_{\mathrm{LIN}}^{-}(y)=\inf\{x\mid f_{\mathrm{LIN}}(x)\ge y\}=
-\begin{cases}
+\begin{aligned}
+f_{\mathrm{LIN}}^{-}(y)=\inf\{x\mid f_{\mathrm{LIN}}(x)\ge y\}\\
+&amp;= \begin{cases}
 x_1 &amp; \text{if } y\le y_1,\\[2mm]
-x_1+\dfrac{x_2-x_1}{y_2-y_1}(y-y_1)=\dfrac{y-a}{b} &amp; \text{if } y_1&lt;y\le y_2
+x_1+\dfrac{x_2-x_1}{y_2-y_1}(y-y_1)=\dfrac{y-a}{b} &amp; \text{if } y_1&lt;y\le y_2\\
 \end{cases}
+\end{aligned}
 \end{equation}\]</span></p>
 <p>and <span class="math inline">\(f_{\mathrm{LIN}}^{-}(y)\)</span> is undefined (infeasible) if <span class="math inline">\(y&gt;y_2\)</span>.</p>
 <p>The ceiling line consists of the line segments from <span class="math inline">\((x_1,y_{\min})\)</span> to <span class="math inline">\((x_1,y_1)\)</span>, then to <span class="math inline">\((x_2,y_2)\)</span>, and finally to <span class="math inline">\((x_{\max},y_2)\)</span>. Possibly, the first and/or last segment has length equal to zero.</p>
@@ -1705,12 +1707,7 @@ F_{\mathrm{CE-FDH}}
 \begin{aligned}
 d_{\mathrm{CE-FDH}}
 &amp;= 1-\frac{F_{\mathrm{CE-FDH}}}{S}\\
-&amp;= 1-\frac{
-\sum_{i=1}^{P-1}(x_{i+1}-x_i)(y_i-y_{\min})
-+(x_{\max}-x_P)(y_P-y_{\min})
-}{
-(x_{\max}-x_{\min})(y_{\max}-y_{\min})
-}
+&amp;= 1-\frac{\sum_{i=1}^{P-1}(x_{i+1}-x_i)(y_i-y_{\min})+(x_{\max}-x_P)(y_P-y_{\min})}{(x_{\max}-x_{\min})(y_{\max}-y_{\min})}
 \end{aligned}
 \end{equation}\]</span></p>
 <!-- Using \@ref(eq:afeas) with $c(x)=f(x)$ and $x_s=x_1$, the feasible area is -->
@@ -1741,19 +1738,16 @@ d_{\mathrm{CE-FDH}}
 \tag{4.25}
 F_{\mathrm{CE-VRS}}
 =\sum_{i=1}^{P-1}(x_{i+1}-x_i)\left(\frac{y_i+y_{i+1}}{2}-y_{\min}\right)
-+(x_{\max}-x_P)(y_P-y_{\min}).
-\end{equation}\]</span></p>
-<p>Therefore, the effect size is:
-<span class="math display" id="eq:afeaslinear" id="eq:effectsizevrs">\[\begin{equation}
-\tag{4.26}
-d_{\mathrm{CE-VRS}}
-=1-\frac{F_{\mathrm{CE-VRS}}}{S}
-=1-\frac{
-\sum_{i=1}^{P-1}(x_{i+1}-x_i)\left(\frac{y_i+y_{i+1}}{2}-y_{\min}\right)
 +(x_{\max}-x_P)(y_P-y_{\min})
-}{
-(x_{\max}-x_{\min})(y_{\max}-y_{\min})
-}.
+\end{equation}\]</span></p>
+<p>Therefore, the effect size is:</p>
+<p><span class="math display" id="eq:effectsizevrs">\[\begin{equation}
+\tag{4.26}
+\begin{aligned}
+d_{\mathrm{CE-VRS}}
+&amp;= 1-\frac{F_{\mathrm{CE-VRS}}}{S}\\
+&amp;= 1-\frac{\sum_{i=1}^{P-1}(x_{i+1}-x_i)\left(\frac{y_i+y_{i+1}}{2}-y_{\min}\right)+(x_{\max}-x_P)(y_P-y_{\min})}{(x_{\max}-x_{\min})(y_{\max}-y_{\min})}
+\end{aligned}
 \end{equation}\]</span></p>
 <!-- Using \@ref(eq:afeas) with $c(x)=g(x)$ and $x_s=x_1$, the feasible area is -->
 <!-- \begin{equation} -->
@@ -1778,37 +1772,56 @@ d_{\mathrm{CE-VRS}}
 <div id="effectlinear" class="section level4 hasAnchor" number="4.4.1.3">
 <h4><span class="header-section-number">4.4.1.3</span> Class of linear ceiling lines<a href="#effectlinear" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>For the class of linear ceiling line, let the ceiling line intersect the bounding box at two points <span class="math inline">\((x_1,y_1)\)</span> and <span class="math inline">\((x_2,y_2)\)</span> with <span class="math inline">\(x_{\min}\le x_1 &lt; x_2 \le x_{\max}\)</span>. The feasible area under the ceiling within the bounding box is:</p>
-<p>\tag{4.27}
-<span class="math display" id="eq:effectsizelinear" id="eq:checklinear" id="eq:ceilingzonelinear">\[\begin{equation}
+<p><span class="math display" id="eq:afeaslinear">\[\begin{equation}
+\tag{4.27}
+\begin{aligned}
 F_{\mathrm{LIN}}
-=(x_2-x_1)\left(\frac{y_1+y_2}{2}-y_{\min}\right)
-+(x_{\max}-x_2)(y_{\max}-y_{\min})
+&amp;= (x_2-x_1)\left(\frac{y_1+y_2}{2}-y_{\min}\right)\\
+&amp;\quad +(x_{\max}-x_2)(y_{\max}-y_{\min})
+\end{aligned}
 \end{equation}\]</span></p>
+<p>Therefore, the effect size is:
+<span class="math display" id="eq:effectsizelinear" id="eq:checklinear" id="eq:ceilingzonelinear" id="eq:afeaslinear" id="eq:effectsizelinear">\[\begin{equation}
+\tag{4.28}
+\begin{aligned}
+d_{\mathrm{LIN}}
+&amp;= 1-\frac{F_{\mathrm{LIN}}}{S}\\
+&amp;= 1-\frac{(x_2-x_1)\left(\tfrac{y_1+y_2}{2}-y_{\min}\right)+(x_{\max}-x_2)(y_{\max}-y_{\min})}{(x_{\max}-x_{\min})(y_{\max}-y_{\min})}
+\end{aligned}
+\end{equation}\]</span></p>
+<!-- ####  Class of linear ceiling lines {#effectlinear} -->
+<!-- For the class of linear ceiling line, let the ceiling line intersect the bounding box at two points $(x_1,y_1)$ and $(x_2,y_2)$ with $x_{\min}\le x_1 < x_2 \le x_{\max}$. The feasible area under the ceiling within the bounding box is: -->
+<!-- \tag{4.27} -->
+<!-- \begin{equation} -->
+<!-- F_{\mathrm{LIN}} -->
+<!-- =(x_2-x_1)\left(\frac{y_1+y_2}{2}-y_{\min}\right) -->
+<!-- +(x_{\max}-x_2)(y_{\max}-y_{\min}) -->
+<!-- \end{equation} -->
 <!-- The ceiling zone area is: -->
-<!-- \tag{4.28} -->
+<!-- \tag{4.29} -->
 <!-- \begin{equation} -->
 <!-- C_{\mathrm{LIN}} -->
 <!-- =(x_1-x_{\min})(y_{\max}-y_{\min}) -->
 <!-- +(x_2-x_1)\left(y_{\max}-\frac{y_1+y_2}{2}\right) -->
 <!-- \end{equation} -->
 <!-- It holds that the feasible area plus the ceiling zone area equals the scope area $S=(x_{\max}-x_{\min})(y_{\max}-y_{\min})$: -->
-<!-- \tag{4.29} -->
+<!-- \tag{4.30} -->
 <!-- \begin{equation} -->
 <!-- F_{\mathrm{LIN}} + C^{\mathrm{LIN}} -->
 <!-- =(x_{\max}-x_{\min})(y_{\max}-y_{\min}) -->
 <!-- \end{equation} -->
-<p>Therefore, the effect size is:</p>
-<p>\tag{4.30}
-<span class="math display">\[\begin{equation}
-d_{\mathrm{LIN}}
-=1-\frac{F_{\mathrm{LIN}}}{S}
-=1-\frac{
-(x_2-x_1)\left(\frac{y_1+y_2}{2}-y_{\min}\right)
-+(x_{\max}-x_2)(y_{\max}-y_{\min})
-}{
-(x_{\max}-x_{\min})(y_{\max}-y_{\min})
-}
-\end{equation}\]</span></p>
+<!-- Therefore, the effect size is: -->
+<!-- \tag{4.28} -->
+<!-- \begin{equation} -->
+<!-- d_{\mathrm{LIN}} -->
+<!-- =1-\frac{F_{\mathrm{LIN}}}{S} -->
+<!-- =1-\frac{ -->
+<!-- (x_2-x_1)\left(\frac{y_1+y_2}{2}-y_{\min}\right) -->
+<!-- +(x_{\max}-x_2)(y_{\max}-y_{\min}) -->
+<!-- }{ -->
+<!-- (x_{\max}-x_{\min})(y_{\max}-y_{\min}) -->
+<!-- } -->
+<!-- \end{equation} -->
 <!-- ##############3 -->
 <!-- For the class of straight ceiling lines, the two peers correspond to the intersection points of the line with the bounding box such that $x_1=x_{\min}$ and $y_2=y_{\max}$). Let the ceiling be the line segment from $(x_{\min},y_1)$ to $(x_2,y_{\max})$, and equals $y_{\max}$ for $x\in[x_2,x_{\max}]$. -->
 <!-- The feasible area decomposes into a trapezoid on $[x_{\min},x_2]$ plus a full-height rectangle on $[x_2,x_{\max}]$: -->
@@ -1946,7 +1959,7 @@ Figure 4.4: Necessity inefficiency refers to the part of the feasible area where
 </div>
 <div id="modelfit" class="section level2 hasAnchor" number="4.5">
 <h2><span class="header-section-number">4.5</span> Model fit<a href="#modelfit" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>NCA’s <em>mathematical</em> model specification differs from a <em>statistical</em> model specification. The latter includes a random term called the error term or disturbance (<span class="math inline">\(\varepsilon\)</span>) representing the variation in the data. NCA does not specify the distribution of data under the ceiling and therefore the model does not include the random term. Thus, NCA’s model consists of a bounding box with a ceiling line and is deterministic (possibly with noise and exceptions, see Section below, not probabilistic.</p>
+<p>NCA’s <em>mathematical</em> model specification differs from a <em>statistical</em> model specification. The latter includes a random term called the error term or disturbance (<span class="math inline">\(\varepsilon\)</span>) representing the variation in the data. NCA does not specify the distribution of data under the ceiling and therefore the model does not include the random term. Thus, NCA’s model consists of a bounding box with a ceiling line and is deterministic (possibly with noise and exceptions, see Section below, not probabilistic).</p>
 <p>Since NCA cannot rely on statistical (distribution-based) approaches for evaluating model fit, NCA-specific metrics of model fit are developed to quantify how well an NCA model captures the underlying necessity pattern in the data, and how closely the model’s predicted values match observed values. In this section eight metrics of model fit are presented: complexity, fit, ceiling accuracy, exceptions, noise, support, spread, and sharpness.</p>
 <div id="complexity" class="section level3 hasAnchor" number="4.5.1">
 <h3><span class="header-section-number">4.5.1</span> Complexity<a href="#complexity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -2005,9 +2018,9 @@ fit =
 <h3><span class="header-section-number">4.5.3</span> Ceiling accuracy<a href="#ceilingaccuracy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Model fit metric <em>ceiling accuracy</em> (<span class="math inline">\(ca\)</span>) refers to the emptiness of the ceiling zone. It quantifies the degree to which the expected empty corner is indeed empty. A selected ceiling line defines the ceiling zone. With a strict interpretation of necessity, the ceiling zone should not have points, and all points should be in the feasible area. Figure <a href="#fig:overundershootfig">4.5</a>-left shows an example of two points being in the ceiling zone. The presence of points in the ceiling zone may have several explanations. First, the point can be an observation (case) from an empirical study with measurement error or sampling error (Section <a href="#outliers">9.8</a>). Second, the selected ceiling line may be too low, resulting in points above it.<a href="#fn40" class="footnote-ref" id="fnref40"><sup>40</sup></a> Third, from the typicality perspective of necessity (Section <a href="#typicalitynecessity">2.4.3</a>), the point might represent a rare permissible exception, transforming the expression ‘<span class="math inline">\(X\)</span> is <em>always</em> necessary for <span class="math inline">\(Y\)</span>’ into ‘<span class="math inline">\(X\)</span> is <em>typically</em> necessary for <span class="math inline">\(Y\)</span>’.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:overundershootfig"></span>
-<img src="Figure%20overshoot%20R.png" alt="Overshoot and undershoot in estimation of the ceiling line. Left: points in the ceiling zone. Right: no points in the ceiling zone and no points just below the ceiling line." width="45%" /><img src="Figure%20undershoot%20R.png" alt="Overshoot and undershoot in estimation of the ceiling line. Left: points in the ceiling zone. Right: no points in the ceiling zone and no points just below the ceiling line." width="45%" />
+<img src="Figure%20overshoot%20R.png" alt="Estimation of the ceiling line. Left: points in the ceiling zone. Right: no points in the ceiling zone." width="45%" /><img src="Figure%20undershoot%20R.png" alt="Estimation of the ceiling line. Left: points in the ceiling zone. Right: no points in the ceiling zone." width="45%" />
 <p class="caption">
-Figure 4.5: Overshoot and undershoot in estimation of the ceiling line. Left: points in the ceiling zone. Right: no points in the ceiling zone and no points just below the ceiling line.
+Figure 4.5: Estimation of the ceiling line. Left: points in the ceiling zone. Right: no points in the ceiling zone.
 </p>
 </div>
 <p>For good model fit nearly all points are in the feasible area. Ceiling accuracy is the percentage of points in the feasible area (on or below the ceiling line):</p>
@@ -2476,10 +2489,9 @@ Sharpness has a value between 0 and 1. A sharpness value of 0.5 means that there
 <p>The eight metrics of NCA’s model fit with example guidelines are summarized in Table <a href="#tab:modelfittab">4.2</a>. The model fit metrics are part of the broader concept of <em>credibility</em>. NCA’s credibility for identifying necessary conditions is discussed in Chapter <a href="#sensitivityspecificity">6</a>.</p>
 <br />
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
-<table class="table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
-<span id="tab:modelfittab">Table 4.2: </span>Model fit measures for NCA
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:modelfittab">Table 4.2: </span>Model fit metrics for NCA
 </caption>
 <thead>
 <tr>
@@ -2499,120 +2511,119 @@ Guideline
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Complexity
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Half of ceiling degrees of freedom.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(cp\)</span>
 </td>
-<td style="text-align:left;width: 4cm; ">
+<td style="text-align:left;">
 Balance.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Fit
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Alignment with boundary pattern (% effect size compared to CE-FDH effect size).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(ft\)</span>
 </td>
-<td style="text-align:left;width: 4cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(ft\)</span> ≥ 80%).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Ceiling accuracy
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Percentage of points in the feasible area.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(ca\)</span>
 </td>
-<td style="text-align:left;width: 4cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(ca\)</span> ≥ 95%).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Noise
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Percentage of points in the ceiling zone near the ceiling (medP-zone).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(ns\)</span>
 </td>
-<td style="text-align:left;width: 4cm; ">
+<td style="text-align:left;">
 Low (e.g., <span class="math inline">\(ns\)</span> ≤ 5%; 0.9 iso-purity).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Exceptions
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Number of points in the ceiling zone far from the ceiling (lowP-zone).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(ex\)</span>
 </td>
-<td style="text-align:left;width: 4cm; ">
+<td style="text-align:left;">
 Very low (e.g., <span class="math inline">\(ex\)</span> ~0).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Support
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Percentage of points in the feasible area on or near the ceiling (medS-zone).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(su\)</span>
 </td>
-<td style="text-align:left;width: 4cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(su\)</span> ≥ 5%; 0.8 iso-solidity).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Spread
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Evenness of <span class="math inline">\(x\)</span>-positions of points on or near the ceiling (medS-zone).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(sp\)</span>
 </td>
-<td style="text-align:left;width: 4cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(sp\)</span> ≥ 0.5).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Sharpness
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Relative density of points in medium-purity (medP) and medium-solidity (medS) zones.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(sh\)</span>
 </td>
-<td style="text-align:left;width: 4cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(sh\)</span> &gt; 0.8).
 </td>
 </tr>
 </tbody>
 </table>
-</div>
 <p><br />
 </p>
 <!-- The ceiling line is assumed to be a *sharp* border between ceiling zone (white) and feasible area (gray). When imperfect necessity exists (see Sections \@ref(inefficiency), \@ref(ceilingaccuracy), \@ref(veracity), and \@ref(solidity)), there may be some points in the ceiling zone due to some noise or as exceptions according to the typicality perspective of necessity described in Section \@ref(typicalitynecessity).  -->
@@ -2711,9 +2722,9 @@ f_j(x_j) = sup_{\mathbf{x}_{-j}} f(x_j, \mathbf{x}_{-j}),
 <div id="illustration" class="section level3 hasAnchor" number="4.6.2">
 <h3><span class="header-section-number">4.6.2</span> Illustration<a href="#illustration" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Section <a href="#parsimonious">3.3</a> discusses a necessity theory with multiple necessary conditions (Figure <a href="#fig:fig2model">3.2</a>). For example, Figure <a href="#fig:fig2model">3.2</a> -left shows a theory that includes three properties of the phenomena (three conditions). In mathematical terms, each condition is a dimension of the multi-dimensional space that models the phenomena. Thus, a model with two conditions <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>, and one outcome <span class="math inline">\(Y\)</span> results in a three-dimensional space. The <span class="math inline">\(XY\)</span>-plot becomes a three-dimensional <span class="math inline">\(X_1X_2Y\)</span>-space.</p>
-<p>NCA’s overall (projected) necessity property is illustrated in Figure <a href="#fig:multivariatenonlinearfig">4.9</a>, which shows a volcano mountain where <span class="math inline">\(X_1\)</span> is the horizontal location in one direction, <span class="math inline">\(X_2\)</span> the horizontal location in another direction, and <span class="math inline">\(Y\)</span> the vertical elevation.<a href="#fn49" class="footnote-ref" id="fnref49"><sup>49</sup></a></p>
+NCA’s overall (projected) necessity property is illustrated in Figure <a href="#fig:multivariatenonlinearfig">4.9</a>, which shows a volcano mountain where <span class="math inline">\(X_1\)</span> is the horizontal location in one direction, <span class="math inline">\(X_2\)</span> the horizontal location in another direction, and <span class="math inline">\(Y\)</span> the vertical elevation.<a href="#fn49" class="footnote-ref" id="fnref49"><sup>49</sup></a>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:multivariatenonlinearfig"></span>
-<img src="combined_plot_nonlinear.png" alt="A nonlinear three-dimensional ceiling (surface) and its projections on the $X_1Y$ and $X_2Y$-planes (non-linear ceiling lines)." width="99%" />
+<img src="combined_plot_nonlineard.png" alt="A nonlinear three-dimensional ceiling (surface) and its projections on the $X_1Y$ and $X_2Y$-planes (non-linear ceiling lines)." width="80%" />
 <p class="caption">
 Figure 4.9: A nonlinear three-dimensional ceiling (surface) and its projections on the <span class="math inline">\(X_1Y\)</span> and <span class="math inline">\(X_2Y\)</span>-planes (non-linear ceiling lines).
 </p>
@@ -2721,11 +2732,11 @@ Figure 4.9: A nonlinear three-dimensional ceiling (surface) and its projections 
 <p><br></p>
 <!-- The global maximum value of $Y$ is the height of the mountain, which depends on the two horizontal locations ($X_1$, $X_2$).   -->
 <p>For example, a point within the mountain can be identified by specific values of <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span> and <span class="math inline">\(Y\)</span>. The height of the mountain is a <em>ceiling surface</em>, which is the set of points representing different mountain heights depending on specific values of <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>. The ceiling surface is a very complex function. NCA is not interested in modeling or estimating the multidimensional ceiling (maximum value of the outcome for given combinations of values of the conditions). In contrast, NCA takes the projection of a multidimensional ceiling onto each <span class="math inline">\(X_jY\)</span>-plane, resulting in separate ceiling lines for each condition. This projected overall ceiling line in an <span class="math inline">\(X_jY\)</span>-plane represents the global necessity of the single condition <span class="math inline">\(X_j\)</span> for outcome <span class="math inline">\(Y\)</span> and is interpreted independently of other conditions and the rest of the causal structure. It is assumed that this global necessity (overall ceiling line) manifests in the real world and can be observed in the empirical (natural) distribution.</p>
-<p>The projections of the three-dimensional ceiling surface of the volcano mountain on the <span class="math inline">\(XY\)</span>-planes result in non-linear ceiling lines (Figure <a href="#fig:multivariatenonlinearfig">4.9</a>). When the three-dimensional ceiling surface is linear (e.g., <span class="math inline">\(Y = X_1 + X_2\)</span>), the projections result in linear ceiling lines, as shown in Figure <a href="#fig:multivariatelinearfig">4.10</a>.</p>
+<p>The projections of the three-dimensional ceiling surface of the volcano mountain on the <span class="math inline">\(XY\)</span>-planes result in non-linear ceiling lines (Figure <a href="#fig:multivariatenonlinearfig">4.9</a>). When the three-dimensional ceiling surface is linear (e.g., <span class="math inline">\(Y = (X_1 + X_2)/2\)</span>), the projections result in linear ceiling lines, as shown in Figure <a href="#fig:multivariatelinearfig">4.10</a>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:multivariatelinearfig"></span>
-<img src="combined_plot_linear.png" alt="A linear multivariate three-dimensional ceiling ($Y = X_1 + X_2$) and its projections on the $X_1Y$- and $X_2Y$-planes (linear ceiling lines)." width="99%" />
+<img src="combined_plot_linearCOLOR.png" alt="A linear multivariate three-dimensional ceiling $Y = (X_1 + X_2)/2$ and its projections on the $X_1Y$- and $X_2Y$-planes (linear ceiling lines)." width="90%" />
 <p class="caption">
-Figure 4.10: A linear multivariate three-dimensional ceiling (<span class="math inline">\(Y = X_1 + X_2\)</span>) and its projections on the <span class="math inline">\(X_1Y\)</span>- and <span class="math inline">\(X_2Y\)</span>-planes (linear ceiling lines).
+Figure 4.10: A linear multivariate three-dimensional ceiling <span class="math inline">\(Y = (X_1 + X_2)/2\)</span> and its projections on the <span class="math inline">\(X_1Y\)</span>- and <span class="math inline">\(X_2Y\)</span>-planes (linear ceiling lines).
 </p>
 </div>
 <p>In a multidimensional space, NCA considers one projection at a time and therefore one condition at a time. With several conditions, NCA conducts successive analyses by considering the ceilings in the separate <span class="math inline">\(X_jY\)</span>-planes. For example, with two conditions (<span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>), two separate analyses are performed: one in the <span class="math inline">\(X_1Y\)</span>-plane and one in the <span class="math inline">\(X_2Y\)</span>-plane. In geometric terms, NCA places a ceiling surface over the data and takes its orthogonal projections onto the <span class="math inline">\(X_1Y\)</span>- and <span class="math inline">\(X_2Y\)</span>-planes. Each condition thus has its own ceiling line, <span class="math inline">\(f_1(X_1)\)</span> and <span class="math inline">\(f_2(X_2)\)</span>. Consequently, for a given value <span class="math inline">\(Y = y_c\)</span> two conditions must be satisfied: <span class="math inline">\(X_1 \geq x_{1c}\)</span> AND <span class="math inline">\(X_2 \geq x_{2c}\)</span>. Therefore, the maximum possible <span class="math inline">\(Y = y_c\)</span> for given values <span class="math inline">\(X_1 = x_{1c}\)</span>, and <span class="math inline">\(X_2= x_{2c}\)</span> is</p>
@@ -3137,7 +3148,7 @@ d_{chain} = \frac{(1 - 0.6)^2}{2 \cdot 2.0} = \frac{0.16}{4} = 0.04
 \end{equation}\]</span></p>
 <p>The three <span class="math inline">\(XY\)</span>-plots are shown in Figure <a href="#fig:chaineffect1">4.11</a>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:chaineffect1"></span>
-<img src="chaineffect1A.png" alt="Example of a necessity chain. The effect sizes of the links are: $X_1 \rightarrow X_2$ = 0.09, $X_2 \rightarrow Y$ = 0.32, $X_1 \rightarrow Y$ = 0.04." width="30%" /><img src="chaineffect1B.png" alt="Example of a necessity chain. The effect sizes of the links are: $X_1 \rightarrow X_2$ = 0.09, $X_2 \rightarrow Y$ = 0.32, $X_1 \rightarrow Y$ = 0.04." width="30%" /><img src="chaineffect1C.png" alt="Example of a necessity chain. The effect sizes of the links are: $X_1 \rightarrow X_2$ = 0.09, $X_2 \rightarrow Y$ = 0.32, $X_1 \rightarrow Y$ = 0.04." width="30%" />
+<img src="chaineffect1NEW.png" alt="Example of a necessity chain. The effect sizes of the links are: $X_1 \rightarrow X_2$ = 0.09, $X_2 \rightarrow Y$ = 0.32, $X_1 \rightarrow Y$ = 0.04." width="90%" />
 <p class="caption">
 Figure 4.11: Example of a necessity chain. The effect sizes of the links are: <span class="math inline">\(X_1 \rightarrow X_2\)</span> = 0.09, <span class="math inline">\(X_2 \rightarrow Y\)</span> = 0.32, <span class="math inline">\(X_1 \rightarrow Y\)</span> = 0.04.
 </p>
@@ -3163,7 +3174,7 @@ d_{chain} = 0
 \end{equation}\]</span></p>
 <p>The three <span class="math inline">\(XY\)</span>-plots are shown in Figure <a href="#fig:chaineffect2">4.12</a>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:chaineffect2"></span>
-<img src="chaineffect2A.png" alt="Example of a necessity chain. The effect sizes of the links are: $X_1 \rightarrow X_2$ = 0.26, $X_2 \rightarrow Y$ = 0.06, $X_1 \rightarrow Y$ = 0." width="30%" /><img src="chaineffect2B.png" alt="Example of a necessity chain. The effect sizes of the links are: $X_1 \rightarrow X_2$ = 0.26, $X_2 \rightarrow Y$ = 0.06, $X_1 \rightarrow Y$ = 0." width="30%" /><img src="chaineffect2C.png" alt="Example of a necessity chain. The effect sizes of the links are: $X_1 \rightarrow X_2$ = 0.26, $X_2 \rightarrow Y$ = 0.06, $X_1 \rightarrow Y$ = 0." width="30%" />
+<img src="chaineffect2NEW.png" alt="Example of a necessity chain. The effect sizes of the links are: $X_1 \rightarrow X_2$ = 0.26, $X_2 \rightarrow Y$ = 0.06, $X_1 \rightarrow Y$ = 0." width="99%" />
 <p class="caption">
 Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <span class="math inline">\(X_1 \rightarrow X_2\)</span> = 0.26, <span class="math inline">\(X_2 \rightarrow Y\)</span> = 0.06, <span class="math inline">\(X_1 \rightarrow Y\)</span> = 0.
 </p>
@@ -4008,7 +4019,7 @@ Figure 5.1: Random sample (n = 100) from a population with a true linear ceiling
 </div>
 <div id="simulationeffect" class="section level3 hasAnchor" number="5.5.2">
 <h3><span class="header-section-number">5.5.2</span> Simulation results for NCA’s effect size<a href="#simulationeffect" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>For NCA, currently no analytic approach to determine bias, efficiency, and consistency exists. However, NCA can rely on simulations to evaluate the quality of its estimates. In this section, Monte Carlo simulation is used for estimating the true effect size in a population using four types of ceiling line estimation techniques. These ceiling lines are the stepwise ceiling line CE-FDH, and three linear ceiling lines CR-FDH, C-LP and QR. The QR-ceiling line is not recommended (Section <a href="#mathematicalestimation">4.4</a>), but is added for comparison. The theoretical scope (unit box) is selected to make the results comparable.</p>
+<p>For NCA, currently no analytic approach to determine bias, efficiency, and consistency exists. However, NCA can rely on simulations to evaluate the quality of its estimates. In this section, Monte Carlo simulation is used for estimating the true effect size in a population using four types of ceiling line estimation techniques. These ceiling lines are the stepwise linear ceiling line CE-FDH, and three linear ceiling lines CR-FDH, C-LP and QR. The QR-ceiling line is not recommended (Section <a href="#mathematicalestimation">4.4</a>), but is added for comparison. The theoretical scope (unit box) is selected to make the results comparable.</p>
 <p>In Monte Carlo simulation, the full DGP needs to be specified. It is assumed that a high-high direction of necessity exists in the population (high <span class="math inline">\(X\)</span> is necessary for high <span class="math inline">\(Y\)</span>), with a true linear ceiling line <span class="math inline">\(Y = 0.4 + X\)</span>. The bounding box is assumed to be the unit box. The corresponding true effect size is 0.18. Next to the specification of the true ceiling line and bounding box, a Monte Carlo simulation also requires a specification of the true distribution of the data under the ceiling line. Three distributions are considered: uniform distribution, symmetric truncated normal distribution with equal means of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> (0.5), and left-skewed truncated normal distribution with high mean for <span class="math inline">\(X\)</span> (0.75) and low mean for <span class="math inline">\(Y\)</span> (0.25). The standard deviation of all truncated normal distributions is 0.2.</p>
 <p>The simulation draws samples from these predefined population characteristics. The seven sample sizes that are selected vary between 20 and 5000. One hundred samples are drawn per sample size. This is repeated for each form of the ceiling line.<a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a> Figure <a href="#fig:sim0">5.2</a> shows a typical sample selected from each distribution, also showing the four ceiling lines that were tested.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:sim0"></span>
@@ -4665,7 +4676,7 @@ Figure 6.1: Numbering of corners in an <span class="math inline">\(XY\)</span>-p
 <p>corner 4: <span class="math inline">\(a_4 = 0 - (b_4 - \sqrt{2e_4 b_4})\)</span>.</p>
 <p>where <span class="math inline">\(a\)</span> is the intercept and <span class="math inline">\(b\)</span> is the slope of the line, and <span class="math inline">\(e\)</span> is the size of the empty space. The subscripts indicate the corresponding corner. For the expected empty corner, the size of the empty space equals the necessity effect size (<span class="math inline">\(d\)</span>) since the scope equals 1. When two opposite corners are empty, the two lines are parallel and when two adjacent corners are empty, the two lines intersect. In the latter situation it is possible that for larger necessity effect sizes and empty space sizes the two lines intersect within the bounding box (Figure <a href="#fig:intersection">6.2</a>). This reduces the intended necessity effect size, empty space size and scope. In the simulation this situation is avoided to keep the results comparable. Consequently, higher sizes of adjacent empty corners are not evaluated.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:intersection"></span>
-<img src="intersection_plot.png" alt="Intersection of two adjacent empty corners. Left: The lines intersect outside the bounding box. Necessity effect size of corner 1 is 0.1. Size of empty corner 2 is 0.1. Scope = 1. Right: The lines intersect inside the bounding box. Intended necessity effect size is 0.1. Reduced necessity effect size is &lt; 0.1. Intended size of empty corner 2 is 0.2. Reduced size of empty corner 2 is &lt; 0.2. Reduced scope &lt; 1." width="90%" />
+<img src="intersection.png" alt="Intersection of two adjacent empty corners. Left: The lines intersect outside the bounding box. Necessity effect size of corner 1 is 0.1. Size of empty corner 2 is 0.1. Scope = 1. Right: The lines intersect inside the bounding box. Intended necessity effect size is 0.1. Reduced necessity effect size is &lt; 0.1. Intended size of empty corner 2 is 0.2. Reduced size of empty corner 2 is &lt; 0.2. Reduced scope &lt; 1." width="99%" />
 <p class="caption">
 Figure 6.2: Intersection of two adjacent empty corners. Left: The lines intersect outside the bounding box. Necessity effect size of corner 1 is 0.1. Size of empty corner 2 is 0.1. Scope = 1. Right: The lines intersect inside the bounding box. Intended necessity effect size is 0.1. Reduced necessity effect size is &lt; 0.1. Intended size of empty corner 2 is 0.2. Reduced size of empty corner 2 is &lt; 0.2. Reduced scope &lt; 1.
 </p>
@@ -4673,7 +4684,7 @@ Figure 6.2: Intersection of two adjacent empty corners. Left: The lines intersec
 <p>It is assumed that within the non-empty area of the bounding box the cases have a uniform distribution (Section <a href="#statisticalmodeling">5.4</a>). The <code>nca_random</code> function of the NCA software in <code>R</code> is used to create such a distribution in the presence of a ceiling line. From this defined population, 1000 random samples are drawn. Subsequently, for each sample the size of the expected empty corner (necessity effect size) is estimated with the CE-FDH ceiling line (with empirical scope). The <span class="math inline">\(p\)</span>-value for each sample is estimated using 1000 random samples from the permutation distribution. The threshold <span class="math inline">\(p\)</span>-value is set at 0.05. This means that necessity is considered not supported (negative conclusion) if the <span class="math inline">\(p\)</span>-value is 0.05 or larger. If the <span class="math inline">\(p\)</span>-value is below 0.05, necessity is considered supported (positive conclusion) only if the other two criteria (theoretical support and effect size) are also met. The theoretical support is assumed to be met. For the effect size the threshold <span class="math inline">\(d\)</span>-value is 0.10. If applicable and possible, the tested sizes of the other empty corner are 0.05, 0.10, 0.20, 0.30, and 0.50.</p>
 <div id="sensitivity" class="section level3 hasAnchor" number="6.3.1">
 <h3><span class="header-section-number">6.3.1</span> True Positive Rate (TPR, sensitivity)<a href="#sensitivity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Figure <a href="#fig:tpr01">6.3</a> shows the results of the evaluation of TPR for a true necessity effect size of <span class="math inline">\(d\)</span> = 0.1 in corner 1, the expected empty corner (called <em>necessity corner</em> in the figure), and with different sizes of other empty corner 2 (Figure <a href="#fig:tpr01">6.3</a>-top-right), other empty corner 3 (Figure <a href="#fig:tpr01">6.3</a>-bottom-left) and other empty corner 4 (Figure <a href="#fig:tpr01">6.3</a>-bottom-right).</p>
+<p>Figure <a href="#fig:tpr01">6.3</a> shows the results of the evaluation of TPR for a true necessity effect size of <span class="math inline">\(d\)</span> = 0.10 in corner 1, the expected empty corner (called <em>necessity corner</em> in the figure), and with different sizes of other empty corner 2 (Figure <a href="#fig:tpr01">6.3</a>-top-right), other empty corner 3 (Figure <a href="#fig:tpr01">6.3</a>-bottom-left) and other empty corner 4 (Figure <a href="#fig:tpr01">6.3</a>-bottom-right).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr01"></span>
 <img src="tpr01.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.1. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
 <p class="caption">
@@ -5531,7 +5542,7 @@ TNR
 <p>Since for each sample NCA draws a <em>negative</em> conclusion about necessity if <span class="math inline">\(p \geq 0.05\)</span> <em>or</em> <span class="math inline">\(d \leq 0.10\)</span>, TNR is the <em>maximum</em> of <span class="math inline">\(p\)</span>-based TNR and <span class="math inline">\(d\)</span>-based TNR.</p>
 <p>Table <a href="#tab:tabTNRA-HTML">6.5</a> for scenario A indicates that up to sample size 50 the <span class="math inline">\(p\)</span>-value TNR dominates and when the sample size increases, the TNR is based on the <span class="math inline">\(d\)</span>-value. In other words, nearly all samples are correctly evaluated when necessity is absent in the population and other corners are not empty.</p>
 <p>Scenario B for TNR (Figure <a href="#fig:tnruniform">6.4</a>-top-right) applies when necessity is absent while corner 2 (upper-right corner) is empty (empty corner effect size = 0.05 – 0.50). It turns out that the TNR curves are above the 0.95 benchmark for all sample sizes. Nearly all samples are correctly evaluated when necessity is absent in the population and corner 2 is empty.</p>
-<p>Table <a href="#tab:tabTNRB-HTML">6.6</a> top-right shows that for smaller sample sizes the <span class="math inline">\(p\)</span>-value TNR is dominant, whereas for larger sample sizes the <span class="math inline">\(d\)</span>-value TNR dominates, although the differences are small.</p>
+<p>Table <a href="#tab:tabTNRB-HTML">6.6</a>-top-right shows that for smaller sample sizes the <span class="math inline">\(p\)</span>-value TNR is dominant, whereas for larger sample sizes the <span class="math inline">\(d\)</span>-value TNR dominates, although the differences are small.</p>
 <p>The situation for scenario C for TNR (Figure <a href="#fig:tnruniform">6.4</a>-bottom-left) when necessity is absent while corner 3 is empty (empty corner effect size = 0.05 - 0.50) is very similar to scenario B. In this scenario, nearly all samples are correctly evaluated when necessity is absent in the population and corner 3 is empty, and the <span class="math inline">\(p\)</span>-value is the primary limiting factor for TNR (Table <a href="#tab:tabTNRC-HTML">6.7</a>).</p>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
@@ -5840,8 +5851,8 @@ Figure 6.5: True Negative Rate (TNR, specificity) of the NCA approach for identi
 <!-- 2. using NCA’s statistical as a test of the randomness of the necessity empty space, not a general randomness test;  -->
 <!-- 3. doing simulations with bounded variables, not with unbounded (for instance  normal distributed) variables. -->
 <!-- The Monte Carlo simulations conducted this way show that the True Positive Rate (TPR) and the True Negative Rate (TNR) are high, and consequently that the False Negative Rate (FNR)  and the False Positive Rate (FPR) are low.  Particularly for larger sample sizes, the TPR results show that NCA has high sensitivity (hit rate, probability of detection), and the TNR results show that NCA has high specificity (selectivity, correct rejection rate). The corresponding FNR shows that NCA has low miss rates, false dismissal,and the corresponding FPR shows that NCA has low false alarm, fall-out. This means that in the investigated scenarios NCA performs well regarding the desired qualities for identifying necessity, and gives confidence in applying the approach, which will be discussed in the next part of this book.  -->
-<table class="table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
 <span id="tab:credibilitytab">Table 6.9: </span>Credibility aspects of NCA
 </caption>
 <thead>
@@ -5865,206 +5876,206 @@ Guideline
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Theoretical support
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Identifies expected empty corner. Allows interpretation of findings.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Necessity hypothesis.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 H1
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Specify formal necessity hypothesis.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Practical relevance
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Ensures relevance of findings.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Effect size.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(d\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(d\)</span> <span class="math inline">\(\geq\)</span> 0.10).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Statistical significance
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Tests whether the observed effect could arise by chance (permutation test).
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(p\)</span>-value.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(p\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Low (e.g., <span class="math inline">\(p\)</span> &lt; 0.05).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Robustness
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Checks sensitivity of findings.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Repeated analysis.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(\Delta\)</span><span class="math inline">\(d\)</span>, <span class="math inline">\(\Delta\)</span><span class="math inline">\(p\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Report.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Model fit - complexity
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Quantifies model complexity used to balance parsimony against accuracy.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Half of ceiling degrees of freedom.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(cp\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Balance.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Model fit - fit
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Quantifies how far the chosen ceiling line deviates from the standard ceiling line (CE-FDH).
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Alignment with boundary pattern (% effect size compared to CE-FDH effect size).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(ft\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(ft\)</span> <span class="math inline">\(\geq\)</span> 80%).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Model fit - ceiling accuracy
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Quantifies the degree to which the expected empty corner is indeed empty.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Percentage of points in the feasible area.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(ca\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(ca\)</span> <span class="math inline">\(\geq\)</span> 95%).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Model fit - noise
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Quantifies uncertainty around the ceiling line due to minor deviations.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Percentage of points in the ceiling zone near the ceiling (medP-zone).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(ns\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Low (e.g., <span class="math inline">\(ns\)</span> <span class="math inline">\(\leq\)</span> 5%; 0.9 iso-purity).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Model fit - exceptions
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Quantifies violations in the ceiling zone far from the ceiling line, indicating how strict (or tolerant) the necessity claim is.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Number of points in the ceiling zone far from the ceiling (lowP-zone).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(ex\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 Very low (e.g., <span class="math inline">\(ex\)</span> $$0).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Model fit - support
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Quantifies how strongly the data in the feasible area support the ceiling line.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Percentage of points in the feasible area on or near the ceiling (medS-zone).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(su\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(su\)</span> <span class="math inline">\(\geq\)</span> 5%; 0.8 iso-solidity).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Model fit - spread
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Quantifies the extent to which observations in the feasible area near the ceiling are dispersed, rather than clustered along the ceiling line.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Evenness of <span class="math inline">\(x\)</span>-positions of points on or near the ceiling (medS-zone).
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(sp\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(sp\)</span> <span class="math inline">\(\geq\)</span> 0.5).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Model fit - sharpness
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 Quantifies how abrupt the transition in the data is across the boundary between ceiling zone and feasible area.
 </td>
-<td style="text-align:left;width: 2.5cm; ">
+<td style="text-align:left;">
 Relative density of points in medium-purity (medP) and medium-solidity (medS) zones.
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;">
 <span class="math inline">\(sh\)</span>
 </td>
-<td style="text-align:left;width: 3cm; ">
+<td style="text-align:left;">
 High (e.g., <span class="math inline">\(sh\)</span> &gt; 0.8).
 </td>
 </tr>
@@ -6357,8 +6368,9 @@ use the word necessity loosely as a synonym for important, many refer explicitly
 <div id="causalmodels" class="section level4 hasAnchor" number="7.4.1.3">
 <h4><span class="header-section-number">7.4.1.3</span> Causal models<a href="#causalmodels" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The academic literature contains numerous causal models based on probabilistic sufficiency relationships between variables. Such models are generally evaluated through regression-based methods. All or some of the relationships in the models could be revisited with a necessity perspective on the relationship. Revisiting the relationship with a new causal perspective is <em>not</em> a replication or robustness test of the existing model. It yields a new necessity model or theory that provides new insights.</p>
-An example of a probabilistic sufficiency model is shown in Figure <a href="#fig:examplecausalmodelfig">7.1</a> about nine factors that contribute to academic achievement. While these factors have only been modeled as having an average effects on the outcome and were tested with regression-based studies, some studies literature refer to these factor as critical <span class="citation">(e.g., <a href="#ref-ma2001confirmatory">Ma &amp; Wang, 2001</a>)</span>, in the meaning of ‘highly influential’. This model could be revisited from the perspective of necessity causality thereby re-interpreting the word critical as necessary.
-<br>
+<p>An example of a probabilistic sufficiency model is shown in Figure <a href="#fig:examplecausalmodelfig">7.1</a> about nine factors that contribute to academic achievement. While these factors have only been modeled as having an average effects on the outcome and were tested with regression-based studies, some studies literature refer to these factor as critical <span class="citation">(e.g., <a href="#ref-ma2001confirmatory">Ma &amp; Wang, 2001</a>)</span>, in the meaning of ‘highly influential’. This model could be revisited from the perspective of necessity causality thereby re-interpreting the word critical as necessary.
+<br><br />
+</p>
 <!-- (ref:caption21) Example of a causal model (originally for describing probabilistic sufficiency) for academic achievement with 9 factors that contribute to academic achievement. After: @walberg1984improving. -->
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:examplecausalmodelfig"></span>
 <img src="walberg_model3.png" alt="Example of a causal model (originally for describing probabilistic sufficiency) for academic achievement with 9 factors that contribute to academic achievement. After: @walberg1984improving." width="99%" />
@@ -6621,7 +6633,7 @@ Figure 7.3: Conceptual model and <span class="math inline">\(XY\)</span>-table w
 <p>The second step of the development process of a formal necessity hypothesis consists of conducting thought experiments with the preliminary theory including its hypothesis, which is now elaborated into theory and is testable. Figure <a href="#fig:theorydecisiontreeSTEP2fig">7.4</a> shows Step 2 of the development process.</p>
 <p><br></p>
 <div class="figure" style="text-align: left"><span style="display:block;" id="fig:theorydecisiontreeSTEP2fig"></span>
-<img src="theory_decision_treeSTEP2.png" alt="Step 2 of the development process of a formal necessity theory: using thought experiments to challenge the preliminary theory." width="120%" />
+<img src="theory_decision_treeSTEP2a.png" alt="Step 2 of the development process of a formal necessity theory: using thought experiments to challenge the preliminary theory." width="99%" />
 <p class="caption">
 Figure 7.4: Step 2 of the development process of a formal necessity theory: using thought experiments to challenge the preliminary theory.
 </p>
@@ -6806,6 +6818,8 @@ The three options to handling counterexamples are:</p>
 </p>
 <!-- ^[The approach proposed here also resembles @pearl2009causality's do-operator approach to evaluate structural models using Directed Acyclic Graphs (DAG's). The do-operator represents a hypothetical intervention in which the causal system is “frozen,” one variable is set to a fixed value, and the resulting changes are evaluated as they propagate through the rest of the system according to the proposed causal structure.]  -->
 <!-- see Appenndix \@ref(appendixe)).    -->
+<p><br />
+</p>
 <div class="figure"><span style="display:block;" id="fig:mechanismfig"></span>
 <img src="mechanism2.png" alt="Questions for explanation why $X$ is necessary for $Y$. $\neg X$ and $\neg Y$  mean absence of $X$ and $Y$." width="100%" />
 <p class="caption">
@@ -9459,7 +9473,7 @@ USA
 <!-- \textcolor{red}{change 13 into 10000} -->
 <div id="summary-of-this-chapter-1" class="section level2 hasAnchor" number="9.1">
 <h2><span class="header-section-number">9.1</span> Summary of this chapter<a href="#summary-of-this-chapter-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In the previous chapters, the formal hypothesis was developed (Chapter <a href="#hypothesisformulation">7</a>) and the dataset with scores of condition(s) <span class="math inline">\(X\)</span> and outcome <span class="math inline">\(Y\)</span> became available (Chapter <a href="#datacollection">8</a>). This chapter focuses on testing the hypothesis quantitatively by analyzing the data using the <code>NCA</code> software in <code>R</code>. First, the example that is used to illustrate the analysis is presented (Section <a href="#illustrativeexample">9.2</a>). After the hypotheses are formulated, the steps for testing them with the data are: (1) Model specification (Section <a href="#modelspecification">9.3</a>); (2) Selection of model evaluation criteria (Section <a href="#selectionevaluationcriteria">9.4</a>); (3) Visual inspection of the <span class="math inline">\(XY\)</span>-plot (Section <a href="#visualinspection">9.5</a>); (4) Ceiling line estimation (Section <a href="#ceilinglineestimation">9.6</a>); (5) Effect size and <span class="math inline">\(p\)</span>-value estimation (Section <a href="#effectsizeestimation">9.7</a>); (6) Outlier analysis (Section <a href="#outliers">9.8</a>); (7) Model fit metrics calculation (Section <a href="#modelfit2">9.9</a>); (8) Necessity-in-kind decision (Section <a href="#necessityinkind">9.10</a>); (9) Bottleneck analysis for necessity-in-degree (Section <a href="#bottleneck">9.11</a>); (10) Robustness checks to evaluate the sensitivity of the findings for choices made in steps (1) and (2) (Section <a href="#robustnesschecks">9.12</a>).</p>
+<p>In the previous chapters, the formal hypothesis was developed (Chapter <a href="#hypothesisformulation">7</a>) and the dataset with scores of condition(s) <span class="math inline">\(X\)</span> and outcome <span class="math inline">\(Y\)</span> became available (Chapter <a href="#datacollection">8</a>). This chapter focuses on testing the hypothesis quantitatively by analyzing the data using the <code>NCA</code> software in <code>R</code>. First, the example that is used to illustrate the analysis is presented (Section <a href="#illustrativeexample">9.2</a>). After the hypotheses are formulated, the steps for testing them with the data are: (1) Model specification (Section <a href="#modelspecification">9.3</a>); (2) Selection of model evaluation criteria (Section <a href="#selectionevaluationcriteria">9.4</a>); (3) Visual inspection of the <span class="math inline">\(XY\)</span>-plot (Section <a href="#visualinspection">9.5</a>); (4) Ceiling line estimation (Section <a href="#ceilinglineestimation">9.6</a>); (5) Effect size and <span class="math inline">\(p\)</span>-value estimation (Section <a href="#effectsizeestimation">9.7</a>); (6) Outlier analysis (Section <a href="#outliers">9.8</a>); (7) Model fit metrics calculation (Section <a href="#modelfit2">9.9</a>); (8) Necessity-in-kind decision (Section <a href="#necessityinkind">9.10</a>); (9) Bottleneck analysis for necessity-in-degree (Section <a href="#bottleneck">9.11</a>); (10) Robustness checks to evaluate the sensitivity of the findings for choices made in steps (1), (2), and (6) (Section <a href="#robustnesschecks">9.12</a>).</p>
 </div>
 <div id="illustrativeexample" class="section level2 hasAnchor" number="9.2">
 <h2><span class="header-section-number">9.2</span> Illustrative example<a href="#illustrativeexample" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -10992,7 +11006,7 @@ Figure 9.14: Target outcome robustness check. The effect of changing the target 
 <p>An empirical NCA study applies NCA’s methodology (e.g., necessity logic) and NCA’s method (e.g., for data analysis) to data that represent reality. The goal is to obtain a better understanding of a specific phenomenon of interest. In an academic setting, the intention is to contribute to the theoretical understanding of the phenomenon. In a practical setting, the intention is to contribute to solving a practical problem related to the phenomenon. A high-quality empirical NCA publication often has two main parts. The first part uses a <em>necessity causal perspective</em> for reframing current understanding of the phenomenon by distinguishing between essential (necessary) and contributing (substitutable) factors. The formulation of one or more formal necessity hypotheses is a central part of it. This implies that a formal hypothesis is formulated before the data analysis is conducted. While it is possible to conduct NCA in an inductive/exploratory manner (i.e., without a predefined hypothesis), this book focuses on the deductive approach for reasons mentioned in Chapter <a href="#hypothesisformulation">7</a>. The second part is the <em>empirical testing</em> of the hypotheses by providing evidence that supports or refutes the expected necessity relationship.</p>
 <p>In an academic setting, the empirical publication is intended to provide a <em>contribution</em> to the academic knowledge and literature. The report of the study could contribute to a ‘conversation’ about a certain topic in the academic literature <span class="citation">(e.g., <a href="#ref-campbell2022rejected">Campbell &amp; Aguilera, 2022</a>; <a href="#ref-lange2017editors">Lange &amp; Pfarrer, 2017</a>)</span>.<a href="#fn97" class="footnote-ref" id="fnref97"><sup>97</sup></a> The conversation starts with a <em>common ground</em>. This refers to an ongoing conversation about the problem/topic in the primary literature (i.e., what do we know?), and to which NCA contributes new insights. After that, an interesting <em>complication</em> is highlighted. This could, for example, be a missing element or an inconsistency in the academic conversation (i.e., what we don’t know?). Afterwards, it is explained why this complication is a <em>concern</em> (i.e., so what?), and it is reported how the <em>course of action</em> (i.e., NCA) addresses this complication. Finally, the <em>contribution</em> is described by showing how and why the new insights are now part of the ongoing conversation. For an empirical publication, the narrative to report the insights could focus on developing and testing a necessity hypothesis from scratch, or developing and testing an existing suggestion for a necessity relationship. Tables <a href="#tab:contr1">10.1</a> and <a href="#tab:contr3">10.2</a> provide examples of how such contributions could be formulated, respectively.</p>
 <br/>
-<table class="table table" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:contr1">Table 10.1: </span>Example of the formulation of the contribution of an empirical NCA publication that develops and tests a new necessity hypothesis.
 </caption>
@@ -11010,7 +11024,7 @@ Topic
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 Several contributing factors to the outcome of interest are identified in the primary literature that describes a complex multicausal phenomenon.
 </td>
 </tr>
@@ -11020,7 +11034,7 @@ Several contributing factors to the outcome of interest are identified in the pr
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 We do not know which factors are essential.
 </td>
 </tr>
@@ -11030,7 +11044,7 @@ We do not know which factors are essential.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 If the essential factor is not known, we do not know if it is present or not. If it is not present the outcome will not occur no matter the other factors. Acting on other factors than the bottleneck factor is a waste of resources.
 </td>
 </tr>
@@ -11040,7 +11054,7 @@ If the essential factor is not known, we do not know if it is present or not. If
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 We analyze the phenomenon from the causal perspective of necessity by developing a formal necessity hypothesis using the NCA methodology and testing it with the NCA method.
 </td>
 </tr>
@@ -11050,7 +11064,7 @@ We analyze the phenomenon from the causal perspective of necessity by developing
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 The phenomenon is now described in more detail by distinguishing between factors that contribute to the outcome and can be substituted (as commonly done), and essential factors that must be in place.
 </td>
 </tr>
@@ -11069,7 +11083,7 @@ The phenomenon is now described in more detail by distinguishing between factors
 <!-- pack_rows("Contribution", 5, 5) -->
 <!-- ``` -->
 <!-- <br/> -->
-<table class="table table" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:contr3">Table 10.2: </span>Example of the formulation of the contribution of an empirical NCA publication that further develops and tests an existing necessity hypothesis.
 </caption>
@@ -11087,7 +11101,7 @@ Topic
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 A necessity relationship is suggested in the primary literature to describe a phenomenon.
 </td>
 </tr>
@@ -11097,7 +11111,7 @@ A necessity relationship is suggested in the primary literature to describe a ph
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 But necessity logic was not used when empirically testing that relationship, so we do not know if it is a true necessity relationship.
 </td>
 </tr>
@@ -11107,7 +11121,7 @@ But necessity logic was not used when empirically testing that relationship, so 
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 Whether or not the relationship is a necessity relationship makes a difference for theoretical understanding and practical action. If necessary, the factor is essential in theory and practice; if not, the factor ‘only’ contributes and can be substituted.
 </td>
 </tr>
@@ -11117,7 +11131,7 @@ Whether or not the relationship is a necessity relationship makes a difference f
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 We develop the proposed necessity relationship towards a formal necessity hypothesis using the NCA methodology and test it with the NCA method to ensure theory-method fit.
 </td>
 </tr>
@@ -11127,7 +11141,7 @@ We develop the proposed necessity relationship towards a formal necessity hypoth
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 30em; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 There is now empirical evidence to support or reject the claim of a necessity relationship.
 </td>
 </tr>
@@ -11150,7 +11164,7 @@ There is now empirical evidence to support or reject the claim of a necessity re
 <h3><span class="header-section-number">10.2.2</span> Theoretical publication<a href="#theoreticalpublication" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In some cases, the theoretical implications of using necessity theory according to the NCA methodology to describe a phenomenon may be complicated enough to warrant a separate publication. In a <em>theoretical</em> NCA publication, the focus can be on formulating necessity theory or defining concepts. The main contribution is the use of necessity logic. In such a publication, attention may be paid to NCA’s specific characteristics of this logic, such as conditional logic with a causal assumption, necessity-in-degree, or the typicality necessity perspective. Unlike in an empirical publication, a theoretical publication does not include an analysis of empirical data.</p>
 <p>Few examples exist of theoretical publications with NCA (Table <a href="#tab:pubstabletheoretical">10.3</a>).</p>
-<table class="table table" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:pubstabletheoretical">Table 10.3: </span>Examples of theoretical journal articles with NCA.
 </caption>
@@ -11172,30 +11186,30 @@ Main contribution
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2020
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Swab, Sherlock, Markin and Dibrell
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Family Business Review
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Clarify and advance understanding of the Socio-emotional Wealth (SEW) construct in family business research.
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2022
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Andrevski and Miller
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Academy of Management Review
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Show that forbearance is conceptually different from counteraction, word response, and involuntary nonresponse and is a deliberate, strategic choice.
 </td>
 </tr>
@@ -11207,7 +11221,7 @@ Show that forbearance is conceptually different from counteraction, word respons
 <p>The goal of a <em>methodological introduction publication</em> about NCA is to introduce NCA in a specific field by explaining its methodology and method.</p>
 <!-- Since 2016, several publications about the development of NCA have appeared (see Table \@ref(tab:methodspubstable)).  -->
 <p>Since the introduction of NCA in 2016, publications have introduced the approach, or part of it, in specific fields, often illustrated with examples from that field. Examples of these publications are shown in Table <a href="#tab:pubstablemethodsintro">10.4</a>.</p>
-<table class="table table" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:pubstablemethodsintro">Table 10.4: </span>Examples of publications with methodological introductions of NCA.
 </caption>
@@ -11229,184 +11243,184 @@ Main contribution
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2019
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Tóth, Dul and Li
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Annals of Tourism Research
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in tourism
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2020
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Tynan, Credé and Harms
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Learning and Individual Differences
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in education
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2020
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Dul, Karwowski and Kaufman
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 book chapter (Edward Elgar)
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in creativity
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2021
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Dul, Hauff and Tóth
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 book chapter (Edward Elgar)
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in marketing
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2021
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Hauff, Guerci, Dul and van Rhee
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Human Resource Management Journal
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in HRM
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2022
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Richter and Hauff
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Journal of World Business
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in international business
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2022
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Greco, Guilera, Maldonado-Murciano, Gómez-Benito and Barrios
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 International Journal of Environmental Research and Public Health
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in public health
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2023
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Linder, Moulick and Lechner
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Entrepreneurship Theory and Practice
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in entrepreneurship
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2023
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Bokrantz and Dul
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Journal of Supply Chain Management
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in supply chain management
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2023
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Lee, Dul and Tóth
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 book chapter (Emerald)
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in tourism and hospitality
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2023
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Lee and Lu
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Journal of Hospitality &amp; Tourism Research
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introducing necessity theorizing in hospitality and tourism research
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2026
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Conde
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Journal of Marketing Analytics
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction of NCA in sales
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 2em; ">
+<td style="text-align:right;">
 2026
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Marchetti, Koster, Dul
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Clinical Psychology Review
 </td>
-<td style="text-align:left;width: 10em; ">
+<td style="text-align:left;">
 Introduction NCA in clinical psychology
 </td>
 </tr>
@@ -11488,8 +11502,8 @@ Introduction NCA in clinical psychology
 <div id="introductiongeneral" class="section level3 hasAnchor" number="10.3.1">
 <h3><span class="header-section-number">10.3.1</span> Introduction/General<a href="#introductiongeneral" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Table <a href="#tab:reviewchecklistquestionsintroduction">10.5</a> is the checklist for the Introduction/General part of applying and presenting NCA. The introduction should clearly define why NCA is used, describe it correctly, distinguish it from other causal methods, and highlight its role in the study.</p>
-<table class="table table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
 <span id="tab:reviewchecklistquestionsintroduction">Table 10.5: </span>SCoRe checklist – Questions for Introduction/General.
 </caption>
 <thead>
@@ -11510,86 +11524,86 @@ Check
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 1
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are the goals and contributions of applying NCA explicitly stated?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 2
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 When referring to necessity, are only words that correctly describe a necessity relationship used?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 3
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is it explained that NCA is an approach that combines a specific causal logic (methodology) and the related data analysis technique (method)?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 4
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is a proper comparison made between NCA’s causal perspective and conventional causal perspectives (e.g., probabilistic sufficiency, configurational sufficiency)?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 5
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 In multimethod studies, is NCA described and used as an approach with a specific perspective on causality and data analysis, and not merely as a robustness check or an add-on to other methods (and vice versa).
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 6
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Nice-to-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 If the necessity analysis is a prominent part of the publication, do the title and abstract reflect this necessity perspective/NCA?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
@@ -11619,8 +11633,8 @@ See this book: Table <a href="#tab:wordsnecessity">7.1</a>.</p></li>
 <div id="theoryhypotheses" class="section level3 hasAnchor" number="10.3.2">
 <h3><span class="header-section-number">10.3.2</span> Theory/Hypotheses<a href="#theoryhypotheses" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Table <a href="#tab:reviewchecklistquestionstheory">10.6</a> is the Theory/Hypothesis part of the checklist. This part is essential as it uses the NCA methodology to develop a formal hypothesis. A causal explanation of the necessity relationship is a central part of it. If it is missing, there is no theoretical justification for the hypothesis and the hypothesis should be rejected, regardless of whether the other criteria (effect size, <span class="math inline">\(p\)</span>-value) are satisfied (Chapter <a href="#hypothesisformulation">7</a>).</p>
-<table class="table table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
 <span id="tab:reviewchecklistquestionstheory">Table 10.6: </span>SCoRe checklist – Questions for Theory/Hypotheses.
 </caption>
 <thead>
@@ -11641,100 +11655,100 @@ Check
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 7
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is the hypothesized necessity relationship explicitly formulated as: X is necessary for Y, or similar?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 8
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are the four elements of a necessity theory precisely defined: concepts X and Y, direction of the hypothesis, focal unit, theoretical domain?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 9
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is a causal explanation provided WHY X is necessary for Y using necessity causal logic to justify the necessity hypothesis by addressing three questions? Why does X enable Y? Why does the absence of X lead to the absence of Y? Why is the absence of X not compensable?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 10
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are temporal aspects considered including specification of the temporal order of X and Y if this is not obvious?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 11
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is the existing literature about the relationship between X and Y re-considered from a necessity causal perspective?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 12
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Nice-to-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 If applicable, is an nc-symbol added near the arrow in a diagram that represents a necessity relationship?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 13
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Nice-to-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is it specified if rare exceptions are allowed (typicality perspective)?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
@@ -11769,8 +11783,8 @@ Suggested article: <span class="citation">Dul (<a href="#ref-dul2024different">2
 <div id="methods-data" class="section level3 hasAnchor" number="10.3.3">
 <h3><span class="header-section-number">10.3.3</span> Methods – data<a href="#methods-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Table <a href="#tab:reviewchecklistquestionsmethodsdata">10.7</a> is the Methods – data part of the checklist. Data is input to NCA, and good input is needed for good output. NCA accepts any type for scores of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> that are valid (representing the condition and outcome formulated in the hypothesis) reliable and meaningful. The latter refers to the possibility that values are interpretable for theory and practice.</p>
-<table class="table table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
 <span id="tab:reviewchecklistquestionsmethodsdata">Table 10.7: </span>SCoRe checklist – Questions for Methods – data.
 </caption>
 <thead>
@@ -11791,86 +11805,86 @@ Check
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 14
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is the study design (observational study, longitudinal study, case study, experimental study) adequate?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 15
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 For large-n quantitative studies: are adequate sampling approaches used and is a pre-study power analysis reported?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 16
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 For small-n qualitative studies: are adequate NCA-specific approaches used for purposive case selection?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 17
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are adequate measurement approaches used for getting scores of X and Y, and are these measures practically interpretable?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 18
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 For simulation studies: are simulated data sampled from bounded distributions of X and Y?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 19
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are only data transformations that align with NCA employed?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
@@ -11898,8 +11912,8 @@ Appendix <a href="#appendixd">D</a>.</p></li>
 <div id="methods-data-analysis" class="section level3 hasAnchor" number="10.3.4">
 <h3><span class="header-section-number">10.3.4</span> Methods – data analysis<a href="#methods-data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The main part of the NCA method is the data analysis which differs from common data analysis approaches. Table <a href="#tab:reviewchecklistquestionsmethodsdataanalysis">10.8</a> is the Methods – data analysis part of the checklist. In multimethod studies where the NCA method is combined with other methods, the analyses are independent. The results are considered in combination only during interpretation and discussion. Therefore, the checklist applies to all types of empirical applications of the NCA method.</p>
-<table class="table table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
 <span id="tab:reviewchecklistquestionsmethodsdataanalysis">Table 10.8: </span>SCoRe checklist – Questions for Methods – data analysis.
 </caption>
 <thead>
@@ -11920,128 +11934,128 @@ Check
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 20
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is the selected ceiling line specified and justified?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 21
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is the bounding box (empirical or theoretical scope) deliberately selected and specified?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 22
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are the hypothesis evaluation criteria (thresholds for effect size, p-value, and possibly target outcome) deliberately specified and justified?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 23
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are the results of a visual inspection of the XY-plot reported?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 24
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is it explained how potential outliers are analyzed and handled, and are removed cases reported?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 25
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are all model fit parameters evaluated?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 26
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are all NCA-related parameters, terms and concepts properly used and described?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 27
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Nice-to-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is the utilized software, including its version number specified?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 28
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Nice-to-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is a short general description of NCA’s data analysis approach provided to serve readers who are less familiar with NCA?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
@@ -12078,8 +12092,8 @@ Suggested articles with examples of short descriptions: <span class="citation">D
 <div id="results" class="section level3 hasAnchor" number="10.3.5">
 <h3><span class="header-section-number">10.3.5</span> Results<a href="#results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Table <a href="#tab:reviewchecklistquestionsresults">10.9</a> is the Results part of the checklist where the results of the data analysis are presented, and the (non-)support of the hypothesis is evaluated.</p>
-<table class="table table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
 <span id="tab:reviewchecklistquestionsresults">Table 10.9: </span>SCoRe checklist – Questions for Results.
 </caption>
 <thead>
@@ -12100,114 +12114,114 @@ Check
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 29
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are XY-tables or XY-plots of all tested/explored relationships shown?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 30
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is only the ceiling line that is used to draw conclusions about the necessity relationship shown in the XY-plot?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 31
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 For large-n quantitative study: are the effect size and its p-value properly reported?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 32
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is the conclusion about necessity-in-kind based on three criteria: theoretical justification, effect size, and p-value?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 33
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is the bottleneck table reported and necessity-in-degree evaluated?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 34
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Nice-to-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 If applicable: is the meaning of NN and NA in the bottleneck table explained?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 35
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are the type of values used in the bottleneck analysis justified?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 36
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are the results of the robustness checks summarized?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
@@ -12265,8 +12279,8 @@ See this book: Section <a href="#robustnesschecks">9.12</a>.</p></li>
 <div id="discussion" class="section level3 hasAnchor" number="10.3.6">
 <h3><span class="header-section-number">10.3.6</span> Discussion<a href="#discussion" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Table <a href="#tab:reviewchecklistquestionsdiscussion">10.10</a> is the Discussion part of the checklist where the results are interpreted and their consequences for theory and practice and for desired future studies are discussed.</p>
-<table class="table table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
 <span id="tab:reviewchecklistquestionsdiscussion">Table 10.10: </span>SCoRe checklist – Questions for Discussion.
 </caption>
 <thead>
@@ -12287,86 +12301,86 @@ Check
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 37
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Is it explained why all tested necessary conditions were (not) rejected?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 38
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 For a multimethod study: is it explained how the results of NCA and of other methods complement each other?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 39
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Must-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Referring to the goals of the study (see introduction): is it discussed if the intended contribution is realized and what the key insights are?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 40
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are the results of the bottleneck analysis explained in terms of necessity-in-degree?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 41
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are limitations of applying NCA mentioned?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1cm; ">
+<td style="text-align:left;width: 2cm; ">
 42
 </td>
-<td style="text-align:left;width: 2cm; ">
+<td style="text-align:left;width: 4cm; ">
 Should-have
 </td>
-<td style="text-align:left;width: 6cm; ">
+<td style="text-align:left;width: 12cm; ">
 Are potential future studies with NCA discussed?
 </td>
-<td style="text-align:center;width: 1.5cm; ">
+<td style="text-align:center;width: 3cm; ">
 ☐
 </td>
 </tr>
@@ -13031,7 +13045,7 @@ Necessity spuriousness; Formal necessity hypothesis
 <p>In regression, a <em>confounder</em> is a third variable <span class="math inline">\(Z\)</span> that influences both <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. This dual influence can create or distort the apparent relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>: <span class="math inline">\(Z \rightarrow X\)</span> and <span class="math inline">\(Z \rightarrow Y\)</span>. When a causal model that includes the confounder is more credible than a causal model without the confounder, the <span class="math inline">\(XY\)</span>-relationship is considered a spurious association. Unmeasured confounders can bias the regression coefficients.<a href="#fn103" class="footnote-ref" id="fnref103"><sup>103</sup></a></p>
 <p>In NCA, the logic of necessity is fundamentally different, and confounding in the regression sense is not a threat in NCA. Confounding redistributes probability within the feasible area (the area below the overall ceiling line) and cannot make the ceiling zone (the area above the overall ceiling line) populated. This means that a causal necessity interpretation of the empty space does not change with or without a confounding variable. Here, the empty space remains empty under the assumption of a good covered sample that is representative of the population: all combinations of variable values that exist in the population can, in principle, appear in the sample. If this assumption is violated, cases might appear in the empty area when new samples are drawn, because the original sample missed certain combinations. Likewise, if the underlying population changes due to structural changes, cases may emerge in what was previously an empty area. These issues reflect sampling or system changes. In other words, confounding can change densities within the feasible region but cannot create overall ceiling violations if the necessity relationship is true.<a href="#fn104" class="footnote-ref" id="fnref104"><sup>104</sup></a></p>
 <!-- Therefore, the empty space above the ceiling stays empty, and the ceiling itself is invariant to confounding, provided the confounder support present in the population is represented in the sample. This means that NCA does not rely on covariance or average effects but on logical constraints between conditions. The $XY$ necessity relation simply states that without enough $X$, $Y$ cannot reach high levels. Although the average $XY$-effect is affected by confounding (because the distribution of cases under the ceiling depends on the third variable $Z$), In NCA the ceiling itself remains unaffected. The ceiling represents a logical boundary in the data, not a statistical dependency. Again, the $XY$-ceiling line already reflects information from all possible third variables, including potential confounders. The sample implicitly reflects the joint influence of all existing variables (measured or unmeasured) that affect what is possible in the $XY$-space. If both $X$ and $Z$ are necessary for $Y$, the data may show that the absence of $Z$ limits the possible level of $X$ or $Y$. However, this is not confounding but an example of multiple necessity (see above under 'Moderation').  -->
-<p>In regression, <em>omitted variable bias</em> can occurs when a relevant variable <span class="math inline">\(Z\)</span> that affects both <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is left out of the regression model. When this happens, the estimated effect of <span class="math inline">\(X\)</span> on <span class="math inline">\(Y\)</span> becomes biased because part of the variation attributed to <span class="math inline">\(X\)</span> is actually due to <span class="math inline">\(Z\)</span>: <span class="math inline">\(Z\)</span> causes the estimated average effect. Omitted variable bias is therefore a statistical problem that arises from the covariance structure of the data.</p>
+<p>In regression, <em>omitted variable bias</em> can occur when a relevant variable <span class="math inline">\(Z\)</span> that affects both <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is left out of the regression model. When this happens, the estimated effect of <span class="math inline">\(X\)</span> on <span class="math inline">\(Y\)</span> becomes biased because part of the variation attributed to <span class="math inline">\(X\)</span> is actually due to <span class="math inline">\(Z\)</span>: <span class="math inline">\(Z\)</span> causes the estimated average effect. Omitted variable bias is therefore a statistical problem that arises from the covariance structure of the data.</p>
 <p>In NCA, however, the idea of ‘leaving out a variable’ does not apply. The <span class="math inline">\(XY\)</span>-ceiling line already reflects information from other variables. Including or excluding other variables does not affect the overall <span class="math inline">\(XY\)</span>-ceiling line. In NCA, a necessity model by definition is a model of a pair of variables (<span class="math inline">\(XY\)</span>), and the necessity of this pair is not biased by analyzing or not analyzing other pairs of variables (e.g., <span class="math inline">\(ZY\)</span>) for necessity, also not if this ‘omitted’ third variable would be a mediator, moderator or confounder in the regression analysis (see mediation, moderation, and confounding as discussed above).</p>
 <p>In regression, a <em>control variable</em> is a third variable <span class="math inline">\(Z\)</span> that is included in the model to remove the influence of alternative explanations for the <span class="math inline">\(XY\)</span>-relationship. This helps to avoid omitted variable bias and to isolate the net average effect of <span class="math inline">\(X\)</span> on <span class="math inline">\(Y\)</span> to find the unique contribution of <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span>.</p>
 <p>In NCA, however, the <span class="math inline">\(XY\)</span> necessity effect is the overall effect, which is the necessity effect of interest, and it is independent of other variables. The logic of “controlling for” another variable therefore does not apply. There is nothing to control for (see omitted variable bias as discussed above).</p>
@@ -13333,7 +13347,7 @@ Necessity spuriousness; Formal necessity hypothesis
 <h3><span class="header-section-number">11.3.4</span> Combining NCA and regression-based methods<a href="#combining-nca-and-regression-based-methods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Given their many shared characteristics but distinct causal perspectives, NCA and regression can be combined in a causal-pluralist multimethod study. In such a study the same data are analyzed with both perspectives, although different assumptions are made about the data. For example, whereas NCA assumes bounded data, regression-based methods do not impose bounds such that fitted values may fall outside NCA’s bounding box. While regression-based inference often relies on distributional assumptions (e.g., Central Limit Theorem), NCA does not make an assumption about the distribution of the data. When analyzing data with different causal perspectives, the analyst must be aware of the different assumptions that are inherent to the corresponding methods. Rather than integrating the methods, the methods can be applied separately with their own perspectives and assumptions. Only during the interpretation of the results, additional causal lessons can be learned.</p>
 <p>Adding NCA to an existing regression study can be relatively easy from the perspective of availability of data. If the data for the regression study is already available, no additional data are needed for conducting NCA. The scores of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> from the regression analysis can be used as input for NCA. However, from the perspective of theorizing for the validity of the results, conducting NCA usually requires considerable additional effort. NCA requires a formal necessity hypothesis (see Section <a href="#developingformaltheory">7.5</a>), which is often not available and must be developed before conducting the analysis. While a probabilistic sufficiency hypothesis may already be available, this does not qualify as a necessity hypothesis. Just changing the phrasing of the hypothesis from “likely”, “probably”, “on average”, or similar, into necessity-based phrasing is certainly not enough.</p>
-<p>Adding regression analysis to an existing NCA study may be cumbersome from the perspective of data availability. For testing the necessity hypothesis that <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span>, data only on <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are enough. Such data are often not enough for also conducting a regression analysis for testing the hypothesis that <span class="math inline">\(X\)</span> likely has an effect on <span class="math inline">\(Y\)</span>. Due to the risk of confounding, regression usually requires additional variables to be measured and included in the regression equation.</p>
+<p>Adding regression analysis to an existing NCA study may be cumbersome from the perspective of data availability. For testing the necessity hypothesis that <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span>, data only on <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are enough. Such data are often not enough for also conducting a regression analysis for testing the hypothesis that <span class="math inline">\(X\)</span> likely has an effect on <span class="math inline">\(Y\)</span>. Due to the risk of omitted variable bias, regression usually requires additional variables to be measured and included in the regression equation.</p>
 <p>Figure <a href="#fig:regressionflowchart-multimethod-fig">11.3</a> shows a flowchart for conducting a necessity analysis with NCA in combination with a regression-based analysis in a causal-pluralism multimethod study. The study starts with theorizing the necessity and probabilistic sufficiency hypotheses independently. Note that the theoretical justification of a necessity hypothesis differs from the theoretical justification of a probabilistic sufficiency relationship (Chapter <a href="#hypothesisformulation">7</a>).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:regressionflowchart-multimethod-fig"></span>
 <img src="Flowchart_regression_causalpluralism.png" alt="Flowchart for conducting a method-pluralism multimethod study with NCA and a regression-based method. NERT = NCA-Extended Regression Table." width="80%" />
@@ -13911,15 +13925,15 @@ This means that for cIPMA a <em>target outcome</em> must be selected and that an
 <!-- For an effective action based on NCA   -->
 <!-- in terms of selection of the predictor variable that has the most important influence on the predicted variable. -->
 <!-- s an adapted version o -->
-<p>Figure <a href="#fig:bipmageneral">11.5</a> shows an example of a Bottleneck Importance Performance Map Analysis (BIPMA)</p>
+<p>Figure <a href="#fig:bipmageneral">11.5</a> shows an example of a Bottleneck Importance Performance Map Analysis (BIPMA).</p>
 <!-- (ref:caption123) Example of a Bottleneck Importance Performance Map Analysis (BIPMA) for evidence-based practical advice (prioritizing predictors) based on NCA and SEM results. The size of the dot is an indication of the number of *single* bottleneck cases that cannot achieve the target outcome (here 85% of the maximum of the outcome). White points: predictor has a significant necessity effect according to NCA and a significant total average effect according to SEM. Black points: predictor has a non-significant necessity effect and a significant total average effect. Gray points: predictor has a significant necessity effect and a non-significant total average effect. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively. -->
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bipmageneral"></span>
-<img src="examplebipma2.png" alt="Example of a Bottleneck Importance Performance Map Analysis (BIPMA) for evidence-based practical advice (prioritizing predictors) based on NCA and SEM results. The size of the dot is an indication of the number of *single* bottleneck cases that cannot achieve the target outcome (here 85% of the maximum of the outcome). White points: predictor has a significant necessity effect according to NCA and a significant total average effect according to SEM. Black points: predictor has a non-significant necessity effect and a significant total average effect. Gray points: predictor has a significant necessity effect and a non-significant total average effect. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively." width="75%" />
+<img src="examplebipma3tool.png" alt="Example of a Bottleneck Importance Performance Map Analysis (BIPMA) for evidence-based practical advice (prioritizing predictors) based on NCA and SEM results. The size of the dot is an indication of the number of *single* bottleneck cases that cannot achieve the target outcome (here 90% of the maximum of the outcome). White points: predictor has a significant necessity effect according to NCA and a significant total average effect according to SEM. Black points: predictor has a non-significant necessity effect and a significant total average effect. Gray points: predictor has a significant necessity effect and a non-significant total average effect. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively." width="75%" />
 <p class="caption">
-Figure 11.5: Example of a Bottleneck Importance Performance Map Analysis (BIPMA) for evidence-based practical advice (prioritizing predictors) based on NCA and SEM results. The size of the dot is an indication of the number of <em>single</em> bottleneck cases that cannot achieve the target outcome (here 85% of the maximum of the outcome). White points: predictor has a significant necessity effect according to NCA and a significant total average effect according to SEM. Black points: predictor has a non-significant necessity effect and a significant total average effect. Gray points: predictor has a significant necessity effect and a non-significant total average effect. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively.
+Figure 11.5: Example of a Bottleneck Importance Performance Map Analysis (BIPMA) for evidence-based practical advice (prioritizing predictors) based on NCA and SEM results. The size of the dot is an indication of the number of <em>single</em> bottleneck cases that cannot achieve the target outcome (here 90% of the maximum of the outcome). White points: predictor has a significant necessity effect according to NCA and a significant total average effect according to SEM. Black points: predictor has a non-significant necessity effect and a significant total average effect. Gray points: predictor has a significant necessity effect and a non-significant total average effect. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively.
 </p>
 </div>
-<p>BIPMA differs from cIPMA regarding the bottleneck cases to be considered during prioritization. BIPMA only considers <em>single</em> bottleneck cases. Single bottleneck cases are a bottleneck in only one predictor. These cases are relevant for taking action based on combined results of NCA and SEM. While cIPMA defines he bottleneck dimension for a predictor as the percentage or number of <em>single and multiple</em> bottleneck cases. BIPMA defines it as the percentage or number of <em>single</em> bottleneck cases, only to avoid ineffective actions.</p>
+<p>BIPMA differs from cIPMA regarding the bottleneck cases to be considered during prioritization. BIPMA only considers <em>single</em> bottleneck cases. Single bottleneck cases are a bottleneck in only one predictor. These cases are relevant for taking action based on combined results of NCA and SEM. While cIPMA defines the bottleneck dimension for a predictor as the percentage or number of <em>single and multiple</em> bottleneck cases. BIPMA defines it as the percentage or number of <em>single</em> bottleneck cases, only to avoid ineffective actions.</p>
 <p>Three additional adaptations compared to cIPMA are implemented in BIPMA. To avoid the risk of false positive conclusions, as a general rule BIPMA only includes predictors to be considered for prioritization when the hypothesis is supported. Although this is a judgment of the analyst, usually an analyst rejects the hypothesis when the <span class="math inline">\(p\)</span>-value is large (e.g., <span class="math inline">\(p\ge\)</span> 0.05), suggesting that the observed effect may be compatible with “no effect”.<a href="#fn108" class="footnote-ref" id="fnref108"><sup>108</sup></a> However, cIPMA is asymmetric regarding this statistical significance criterion as it adopts it only for NCA results. cIPMA (and IPMA) allow analysts to consider non-significant SEM results for practical action.<a href="#fn109" class="footnote-ref" id="fnref109"><sup>109</sup></a> BIPMA harmonizes this principle by not only excluding non-significant NCA results for evidence-based practical action, but also non-significant SEM results. <a href="#fn110" class="footnote-ref" id="fnref110"><sup>110</sup></a> Since BIPMA is a tool for practical action and not a tool for reporting results of the two analyses, the BIPMA should always be accompanied with the NERT tool (or similar) to report all observed effect sizes and their significance levels.
 <!-- (unless ) ving an effect on the outcome are rejected     but also the non-significance of the total effects of SEM results (which is not done in cIPMA). This avoids false positive conclusions and ineffective SEM-based intervention efforts. In contrast, a non-significant necessary condition is not included in IPMA and cIPMA for reasons to avoid false positive conclusions and ineffective interventions. See below further explanation why BIPMA deviates from this advise]. Such condition has the standard point size illustrating that the predictor should not get priority from the perspective of necessity. --></p>
 <p>The second additional adaptation is that BIPMA deals with different relationship directions between predictor variable and predicted variable. The common situation in SEM is that the predictor variable has a positive (average) effect on the predicted variable. BIPMA also handles predictor variables with hypothesized and observed negative total average effect on the predicted variable. For example, <span class="citation">Mwesiumo (<a href="#ref-mwesiumo2025identifying">in press</a>)</span> added a negative total effect for one of the predictor variables on the negative side of cIPMA’s Importance-axis. Since this is inconsistent with the advice <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>)</span> that priority should be to points in the bottom-right corner of cIPMA, BIPMA explicitly uses the <em>absolute</em> total effect as Importance score, such that importance scores of positive total effects and negative total effects are comparable and priority should be given to points in the bottom-right corner independent of the sign of the total effect. The BIPMA plot identifies an Importance score that is based on a negative total effect by adding ‘-inv’ to the name of the predictor, indicating that this predictor has an inverse effect on the predicted variable. This is shown in Figure <a href="#fig:bipmageneral">11.5</a> for predictor D. While an <em>increase</em> of the predictor variable with a positive total effect will increase the predicted variable, a <em>decrease</em> of the predictor variable with a negative total effect will increase the predicted variable.</p>
@@ -14228,9 +14242,9 @@ model_calibrated&lt;- nca_analysis(LF,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.37   0.000
-## URB 0.01   0.361
+## URB 0.01   0.364
 ## LIT 0.82   0.003
-## IND 0.02   0.369
+## IND 0.02   0.363
 ## STB 0.46   0.004
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code># NCA-raw data
@@ -14251,10 +14265,10 @@ model_raw &lt;- nca_analysis(LR,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.27   0.000
-## URB 0.09   0.345
-## LIT 0.74   0.001
-## IND 0.11   0.097
-## STB 0.53   0.009
+## URB 0.09   0.333
+## LIT 0.74   0.002
+## IND 0.11   0.096
+## STB 0.53   0.010
 ## ---------------------------------------------------------------------------</code></pre>
 <!-- ``` {r Lipset-hide , echo = TRUE, eval = TRUE, warning=FALSE, message= FALSE, result = FALSE} -->
 <!-- library(QCA) -->
@@ -14481,17 +14495,23 @@ ttEmm &lt;- truthTable(d.Emm, condition =  conditions,
                      outcome = outcome,
                      incl.cut = 0.90,
                      show.cases = TRUE)
-minimize(ttEmm) # conservative/complex solution</code></pre>
+
+# conservative/complex solution
+minimize(ttEmm) </code></pre>
 <pre><code>## 
 ## M1: S*~C*L*R*P + S*C*R*P*V + S*~C*~L*R*~P*~V + ~S*C*L*~R*P*~V -&gt; JSR</code></pre>
 <pre class="text"><code>#M1: S*~C*L*R*P + S*C*R*P*V + S*~C*~L*R*~P*~V + ~S*C*L*~R*P*~V -&gt; JSR
-minimize(ttEmm, include =  &quot;?&quot;) # parsimonious solution</code></pre>
+
+# parsimonious solution
+minimize(ttEmm, include =  &quot;?&quot;) </code></pre>
 <pre><code>## 
 ## M1: S*R + (L*P) -&gt; JSR 
 ## M2: S*R + (P*~V) -&gt; JSR</code></pre>
 <pre class="text"><code>#M1: S*R + (L*P) -&gt; JSR
 #M2: S*R + (P*~V) -&gt; JSR
-minimize(ttEmm, include = &quot;?&quot;, dir.exp = c(1,1,1,1,1,0), details=T)# intermediate solution</code></pre>
+
+# intermediate solution
+minimize(ttEmm, include = &quot;?&quot;, dir.exp = c(1,1,1,1,1,0), details=T)</code></pre>
 <pre><code>## 
 ## From C1P1, C1P2: 
 ## 
@@ -14506,7 +14526,9 @@ minimize(ttEmm, include = &quot;?&quot;, dir.exp = c(1,1,1,1,1,0), details=T)# i
 ## --------------------------------------------------- 
 ##          M1  0.965  0.941  0.685</code></pre>
 <pre class="text"><code>#M1:    S*R*~V + S*C*R*P + S*L*R*P + C*L*P*~V -&gt; JSR
-#published solution: M1:    S*R*~V + S*C*R*P + S*L*R*P + C*L*P*~V -&gt; JSR</code></pre>
+
+#published solution: 
+#M1:    S*R*~V + S*C*R*P + S*L*R*P + C*L*P*~V -&gt; JSR</code></pre>
 <p><br />
 The necessity analysis of fsQCA shows that none of the six conditions were necessary for job security regulation (necessity consistency of each condition is &lt; 0.9). The following four sufficient configurations for the outcome JSR were identified:</p>
 <p>S1. S*R*<span class="math inline">\(\neg\)</span>V (presence of S AND presence of R AND absence of V)</p>
@@ -14549,8 +14571,8 @@ NCA’s necessity-in-kind analysis is conducted as follows:</p>
 ## C 0.00   1.000
 ## L 0.29   0.002
 ## R 0.31   0.001
-## P 0.17   0.009
-## V 0.05   0.532
+## P 0.17   0.010
+## V 0.05   0.533
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>library(NCA)
 set.seed(123) # for reproducible results
@@ -14569,8 +14591,8 @@ print(model)</code></pre>
 ## C 0.00   1.000
 ## L 0.29   0.002
 ## R 0.31   0.001
-## P 0.17   0.009
-## V 0.05   0.532
+## P 0.17   0.010
+## V 0.05   0.533
 ## ---------------------------------------------------------------------------</code></pre>
 <p><br />
 <!-- ```{r, table2ncaqca, echo=FALSE, eval = FALSE out.width='100%', fig.align = "center", fig.cap="NCA necessity analysis. $d$ = effect size; $p$ = $p$-value."} -->
@@ -14588,7 +14610,7 @@ model_bottl &lt;- nca_analysis(d.Emm,
                       ceilings = &quot;ce_fdh&quot;, 
                       bottleneck.x =  &#39;actual&#39;, 
                       bottleneck.y =  &#39;actual&#39;, 
-                      steps = seq(from = 0, to = 1, by = 0.1) #should include 0.5
+                      steps = seq(from = 0, to = 1, by = 0.1) #include 0.5
                       )
 
 # necessity-in-degree (reduced bottleneck table)
@@ -14686,7 +14708,7 @@ L
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
-●
+⚫
 </td>
 <td style="text-align:center;">
 ⚫
@@ -14718,7 +14740,7 @@ P
 ●
 </td>
 <td style="text-align:center;">
-●
+⚫
 </td>
 <td style="text-align:center;">
 ⚫
@@ -14729,14 +14751,14 @@ P
 V
 </td>
 <td style="text-align:center;">
-⊗
+<small><small>⊗</small></small>
 </td>
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
-⊗
+<small><small>⊗</small></small>
 </td>
 </tr>
 <tr>
@@ -14835,7 +14857,7 @@ Solution coverage: 0.685
 </tr>
 <tr>
 <td style="padding: 0; " colspan="100%">
-<sup></sup> ⊗/<small>⊗</small> = Absence of core/contributory condition
+<sup></sup> ⊗/<small><small>⊗</small></small> = Absence of core/contributory condition
 </td>
 </tr>
 </tfoot>
@@ -14870,7 +14892,7 @@ S3
 S4
 </th>
 <th style="text-align:center;">
-N
+NiD
 </th>
 </tr>
 </thead>
@@ -14921,7 +14943,7 @@ L
 ◢
 </td>
 <td style="text-align:center;">
-●
+⚫
 </td>
 <td style="text-align:center;">
 ⚫
@@ -14961,7 +14983,7 @@ P
 ●
 </td>
 <td style="text-align:center;">
-●
+⚫
 </td>
 <td style="text-align:center;">
 ⚫
@@ -14975,14 +14997,14 @@ P
 V
 </td>
 <td style="text-align:center;">
-⊗
+<small><small>⊗</small></small>
 </td>
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
-⊗
+<small><small>⊗</small></small>
 </td>
 <td style="text-align:center;">
 </td>
@@ -15093,12 +15115,12 @@ Solution coverage: 0.685
 </tr>
 <tr>
 <td style="padding: 0; " colspan="100%">
-<sup></sup> ⊗/<small>⊗</small> = Absence of core/contributory condition
+<sup></sup> ⊗/<small><small>⊗</small></small>= Absence of core/contributory condition
 </td>
 </tr>
 <tr>
 <td style="padding: 0; " colspan="100%">
-<sup></sup> ◢/◿ = ‘Don’t care’ according to QCA; high/low level required according to NCA
+<sup></sup> ◢/◿ = ‘Don’t care’ according to QCA; necessary according to NCA
 </td>
 </tr>
 </tfoot>
@@ -15109,7 +15131,7 @@ Solution coverage: 0.685
 <!-- knitr::include_graphics('Table4ncaqca2.png') -->
 <!-- ``` -->
 <!-- Figure \@ref(fig:table4ncaqca)  -->
-<p>The extra column N shows the required membership score of a condition such that the condition allows 0.5 membership score of the outcome. If this level of the condition is not achieved, the outcome will not occur. This required membership score of a necessary condition applies to each configuration. The <em>minimum</em> required level of the condition is shown as (<span class="math inline">\(\ge\)</span>) when the hypothesized necessity relationship is high-high (presence/high level if <span class="math inline">\(X\)</span> is necessary for presence/high level of <span class="math inline">\(Y\)</span>). In this situation NCA analyzes corner 1 of the <span class="math inline">\(XY\)</span>-plot, which is the upper-left corner that is expected to be empty. Similarly, the maximum allowable level (<span class="math inline">\(\le\)</span>) is shown when the hypothesized necessity relationship is low-high and corner 2 (upper-right) is the expected empty corner.<a href="#fn116" class="footnote-ref" id="fnref116"><sup>116</sup></a></p>
+<p>The extra column NiD shows the required membership score of a condition such that the condition allows 0.5 membership score of the outcome. If this level of the condition is not achieved, the outcome will not occur. This required membership score of a necessary condition applies to each configuration. The <em>minimum</em> required level of the condition is shown as (<span class="math inline">\(\ge\)</span>) when the hypothesized necessity relationship is high-high (presence/high level if <span class="math inline">\(X\)</span> is necessary for presence/high level of <span class="math inline">\(Y\)</span>). In this situation NCA analyzes corner 1 of the <span class="math inline">\(XY\)</span>-plot, which is the upper-left corner that is expected to be empty. Similarly, the maximum allowable level (<span class="math inline">\(\le\)</span>) is shown when the hypothesized necessity relationship is low-high and corner 2 (upper-right) is the expected empty corner.<a href="#fn116" class="footnote-ref" id="fnref116"><sup>116</sup></a></p>
 <p>In the conventional QCA solution table, blank cells in a configuration indicate that the condition has the <em>‘don’t care’</em> status. It is considered a non-essential part of the configuration to produce the outcome. However, it may be that according to NCA’s necessity-in-degree result such a condition may be necessary with a certain level of membership score. When the condition is necessary according to NCA and ‘don’t care’ according to QCA, the blank cell in the conventional QCA solution table is filled with a triangle symbol ◢ or ◿. This ensures that the minimum or maximum required necessity membership score (according to NCA) is fulfilled. Only when this level is achieved, the solution can produce the outcome.<a href="#fn117" class="footnote-ref" id="fnref117"><sup>117</sup></a></p>
 <p>The NCA results that the presence of L <span class="math inline">\(\ge\)</span> 0.29 is necessary for JSR &gt; 0.5 is already achieved in the QCA sufficient configurations S3 and S4, but not in configurations S1 and S2. According to QCA, in these latter configurations L is a ‘don’t care’ condition. However, the necessity requirement of L <span class="math inline">\(\ge\)</span> 0.29 still applies. Therefore, the symbol (◢) is added to the configuration indicating that a ‘don’t care’ condition is necessary as well. Similarly, R <span class="math inline">\(\ge\)</span> 0.20 is added to configuration 4, and P <span class="math inline">\(\ge\)</span> 0.20 is added to configuration 1. Without adding these requirements to the configurations, they cannot produce the outcome. Only configuration 3 includes all three necessary conditions according to NCA, without a need for adding them. If the NCA results would be ignored, configurations 1, 2, and 4 may not produce the outcome. Additionally, the NCA results can show what levels of the condition would be necessary for a higher level of the outcome than a membership score &gt; 0.5. This can be observed in Figure <a href="#fig:qcanca3">11.10</a>. For example, for a membership score of JSR of 0.9, it is necessary to have membership scores of L &gt; 0.45, R = 1, P &gt; 0.2.</p>
 <p>In summary, the following suggestion can be made for an NCA-QCA causal-pluralism multimethod study:</p>
@@ -15463,8 +15485,8 @@ In many NCA-QCA multimethod studies, QCA results and NCA results are presented s
 <p><strong>Analyst</strong>. A <em>scholar</em> or <em>practitioner</em> who uses NCA or other methodological approaches.</p>
 <p><strong>Approximate permutation test</strong>. See <em>Permutation test</em>.</p>
 <p><strong>Binary logic</strong>. Two-valued logic where statements can only be true or false. Also see <em>Conditional logic</em>, <em>Causal logic</em>, <em>Necessity logic</em>, <em>Sufficiency logic</em>.</p>
-<p><strong>BIPMA</strong> Bottleneck Importance Performance Map Analysis. An <em>NCA</em> tool for a giving practical advice based on <em>SEM</em> results NCA results based in <em>single bottleneck cases</em>. Also see <em>NERT</em>, <em>IPMA</em>, <em>cIPMA</em>.</p>
-<p><strong>Bivariate analysis</strong>. A statistical analysis with two variables. Also see <em>Multiple bivariate analyses</em>, <em><span class="math inline">\(XY\)</span>-plot</em>, <em><span class="math inline">\(XY\)</span>-table</em>.</p>
+<p><strong>BIPMA</strong>. Bottleneck Importance Performance Map Analysis. An <em>NCA</em> tool for a giving practical advice based on <em>SEM</em> results and NCA results that uses <em>single bottleneck cases</em> as the bottleneck dimension. Also see <em>NERT</em>, <em>IPMA</em>, <em>cIPMA</em>.</p>
+<p><strong>Bivariate analysis</strong>. An analysis of two variables. Also see <em>Multiple bivariate analyses</em>, <em><span class="math inline">\(XY\)</span>-plot</em>, <em><span class="math inline">\(XY\)</span>-table</em>, <em>Multivariate analysis</em>.</p>
 <p><strong>Boolean logic</strong>. See <em>Binary logic</em>.</p>
 <p><strong>Bottleneck case</strong>. A <em>case</em> without the necessary level(s) of the <em>condition(s)</em>, such that it is unable to achieve the <em>target outcome</em>. Also see <em>Non-bottleneck case</em>, <em>Ignored case</em>, <em>Irrelevant case</em>, <em>Single bottleneck case</em>, <em>Multiple bottleneck case</em>.</p>
 <p><strong>Bottleneck distance</strong>. The gap between a <em>case</em>’s <em>condition</em> value (<span class="math inline">\(x\)</span>) and <em>target condition</em> value (<span class="math inline">\(x_c\)</span>).</p>
@@ -15630,9 +15652,10 @@ Also see <em>Observational study</em>, <em>Case study</em>, <em>Experimental stu
 <p><strong>Moderator</strong>. A term used in regression-based analyses indicating the theoretical role of a <em>concept</em> as qualifier of the relationship between two other concepts. Also see <em>Mediator</em>, <em>Confounder</em>, <em>Subgroup ceiling line</em>.</p>
 <p><strong>Monte Carlo simulation</strong>. A computational method that uses repeated random sampling to approximate the behavior of a system or the value of a quantity. Also see <em>Power</em>.</p>
 <p><strong>Multimethod study</strong>. A hypothesis-testing <em>study</em> that uses different methods for testing one or more <em>hypotheses</em> with the same or a different <em>causal perspective</em> and with the same or different <em>data</em>. Also see <em>Method-triangulation study</em>, <em>Causal-pluralism study</em>, <em>Separate studies</em>, <em>Theory-method fit</em>.</p>
-<p><strong>Multiple bivariate analyses</strong>. A series of <em>bivariate analyses</em>. Also see <em><span class="math inline">\(XY\)</span>-plot</em>, <em><span class="math inline">\(XY\)</span>-table</em>.</p>
+<p><strong>Multiple bivariate analyses</strong>. A series of <em>bivariate analyses</em>. Also see <em><span class="math inline">\(XY\)</span>-plot</em>, <em><span class="math inline">\(XY\)</span>-table</em>, <em>Multivariate analysis</em>.</p>
 <p><strong>Multiple bottleneck case</strong>. A <em>case</em> that is a <em>bottleneck case</em> for multiple <em>conditions</em>.</p>
 <p><strong>Multiple NCA</strong>. The application of <em>NCA</em> with the same <em>outcome</em> and different <em>conditions</em>, where each condition-outcome pair is analyzed with NCA.</p>
+<p><strong>Multivariate analysis</strong>. An analysis that involves multiple variables simultaneously. Also see <em>bivariate analysis</em>, <em>Multiple bivariate analyses</em>.</p>
 <p><strong>Natural distribution</strong>. The distribution describing how a system behaves under its unaltered, observable conditions, without forced manipulation.</p>
 <p><strong>nc</strong>. An abbreviation of ‘necessary condition’ or ‘necessity cause’ placed near the arrow in a <em>conceptual model</em> and preceded and followed by ‘+’ or ‘-’ to indicate the <em>direction</em> of the necessary condition. Also see <em>high-high necessity</em>, <em>low-high necessity</em>, <em>high-low necessity</em>, <em>low-low necessity</em>.</p>
 <p><strong>NCA</strong>. Necessary Condition Analysis. A methodological approach developed by Jan Dul that uses a necessity causal logic (methodology) for identifying necessary conditions from data (method). Also see <em>NESS</em>, <em>QCA</em>, <em>SSC</em>.</p>
@@ -16984,7 +17007,7 @@ print(model1.technology)</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.24   0.001
 ## Compatibility         0.21   0.000
-## Perceived ease of use 0.24   0.015
+## Perceived ease of use 0.24   0.016
 ## Emotional value       0.33   0.000
 ## Adoption intention    0.29   0.000
 ## ---------------------------------------------------------------------------</code></pre>
@@ -17884,7 +17907,7 @@ CIPMA_df_technology</code></pre>
 ## 3                   50       yes Perceived ease of use (29%, n=50)
 ## 4                   10       yes        Emotional value (6%, n=10)
 ## 5                   68       yes    Adoption intention (39%, n=68)</code></pre>
-<p>The plot can hthen be produced with the helper function <code>get_cipma_plot</code>. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<p>The plot can then be produced with the helper function <code>get_cipma_plot</code>. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
 <!-- (Section \@ref(getcipmaplot)). --></p>
 <!-- ``` {r getsipmaplotfunction, echo = TRUE, eval = FALSE} -->
 <!-- get_cipma_plot <- function(cipma_df, x_range = NULL, y_range = NULL, size_limits, size_range) { -->
@@ -17958,7 +17981,7 @@ cIPMA_plot_technology &lt;- get_cipma_plot(cipma_df = cipma_df,
 <!-- dev.off() -->
 <!-- ``` -->
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:cipma"></span>
-<img src="cipma2.png" alt="Combined Importance Performance Map Analysis (cIPMA) for the outcome Technology use. The size of the dots is an indication of the number of cases that cannot achieve the target outcome of 85% of maximum outcome." width="75%" />
+<img src="cipma3.png" alt="Combined Importance Performance Map Analysis (cIPMA) for the outcome Technology use. The size of the dots is an indication of the number of cases that cannot achieve the target outcome of 85% of maximum outcome." width="75%" />
 <p class="caption">
 Figure H.3: Combined Importance Performance Map Analysis (cIPMA) for the outcome Technology use. The size of the dots is an indication of the number of cases that cannot achieve the target outcome of 85% of maximum outcome.
 </p>
@@ -18305,11 +18328,13 @@ BIPMA_plot_technology &lt;- get_bipma_plot(bipma_df = bipma_df,
 <!-- dev.off() -->
 <!-- ``` -->
 <!--  \ -->
-(ref:caption1234) Bottleneck Importance Performance Map Analysis (BIPMA) for the outcome Technology use. The size of the dots is an indication of the number of <em>single</em> bottleneck cases that cannot achieve the target outcome of 85% of maximum outcome. White dots: Significant average effect and significant necessity effects. Gray dots: Non-significant average effect and significant necessity effects. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively.
+<!-- (ref:caption1234) Bottleneck Importance Performance Map Analysis (BIPMA) for the outcome Technology use. The size of the dots is an indication of the number of *single* bottleneck cases that cannot achieve the target outcome of 85% of maximum outcome. White dots: Significant average effect and significant necessity effects. Gray dots:  Non-significant average effect and significant necessity effects. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively. -->
+<p><br />
+</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:bipma"></span>
-<img src="bipma3.png" alt="(ref:caption1234)" width="75%" />
+<img src="bipma4.png" alt="Bottleneck Importance Performance Map Analysis (BIPMA) for the outcome Technology use. The size of the dots is an indication of the number of *single* bottleneck cases that cannot achieve the target outcome of 85% of maximum outcome. White dots: Significant average effect and significant necessity effects. Gray dots:  Non-significant average effect and significant necessity effects. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively." width="75%" />
 <p class="caption">
-Figure H.4: (ref:caption1234)
+Figure H.4: Bottleneck Importance Performance Map Analysis (BIPMA) for the outcome Technology use. The size of the dots is an indication of the number of <em>single</em> bottleneck cases that cannot achieve the target outcome of 85% of maximum outcome. White dots: Significant average effect and significant necessity effects. Gray dots: Non-significant average effect and significant necessity effects. The horizontal and vertical thin dashed lines corresponds to mean Performance and the mean Importance of the predictors with a significant total average effect, respectively.
 </p>
 </div>
 <p>The results are shown in Figure <a href="#fig:bipma">H.4</a>. For each condition the percentage and number of <em>single</em> bottleneck cases is given between brackets. The results again show large differences in the percentage and number of single bottleneck cases between the five conditions. In this case, the <em>order</em> from high to low percentages is the same as for cIPMA as shown in Figure <a href="#fig:cipma">H.3</a>. However, the <em>number and percentage</em> of bottleneck cases are in BIPMA considerably lower than in CIPMA. Perceived usefulness has most single bottleneck cases (15%, n=26), whereas Emotional value has none. This means that, in contrast to the conclusion from cIPMA, emotional value is not a relevant predictor for an action based on NCA if only one condition can be changed. Successful group interventions on a single predictor (with the goal to bring all bottleneck cases above the threshold level) could focus on Perceived usefulness, which has almost twice an many single bottlenecks as Adoption intention. Perceived usefulness, Compatibility and Perceived ease of use have non-significant average effects on Technology use according to SEM. Predictors that are necessary from the perspective of NCA, but are non-significant predictors from the perspective of SEM, are placed on the Importance axis at Importance = 0 and the corresponding points are shown in gray. Predictors that are significant from the perspective of SEM but non-significant from the perspective of NCA are shown as small black points, but none of the conditions in this analysis were non-significant from the perspective of NCA. Note, that it is possible that a condition without bottleneck cases is also displayed this way (Emotional value), but such a condition is irrelevant for an NCA-based intervention. Predictors that are non-significant from the perspective of both SEM and NCA are separately mentioned in the BIPMA plot in a text box (Figure <a href="#fig:bipmageneral">11.5</a>) to indicate that actions on such predictors are not effective. However, in the TAM example non-significant predictors from the necessity perspective were not identified.</p>
@@ -19864,7 +19889,7 @@ Dul, J. (2024b). How to sample in <span>Necessary Condition Analysis (NCA)</span
 Dul, J. (2025). Identifying the perfect predictor of absence of disease: A shift toward necessary condition analysis in evidence-based medicine? In <em>Journal of the American Academy of Child and Adolescent Psychiatry</em> (pp. S0890–8567). <a href="https://doi.org/10.1016/j.jaac.2024.11.020">https://doi.org/10.1016/j.jaac.2024.11.020</a>
 </div>
 <div id="ref-dul2025book" class="csl-entry">
-Dul, J. (2026). <em><span class="nocase">Principles and Application of Necessary Condition Analysis</span>: Vol. expected</em>. CRC press/Chapman Hall. <a href="https://www.routledge.com">www.routledge.com</a>
+Dul, J. (2026). <em><span class="nocase">Necessary Condition Analysis (NCA): Principles and Application</span></em>. CRC press/Chapman Hall. <a href="https://www.routledge.com">www.routledge.com</a>
 </div>
 <div id="ref-dul2008case" class="csl-entry">
 Dul, J., &amp; Hak, T. (2008). <em>Case <span>S</span>tudy <span>M</span>ethodology in <span>B</span>usiness <span>R</span>esearch</em>. Routledge. <a href="https://www.routledge.com/Case-Study-Methodology-in-Business-Research/Dul-Hak/p/book/9780750681964">https://www.routledge.com/Case-Study-Methodology-in-Business-Research/Dul-Hak/p/book/9780750681964</a>
@@ -19900,7 +19925,7 @@ Eccarius, T., &amp; Chen, C.-F. (2024). Examining trust as a critical factor for
 Einstein, A. (1934). On the method of theoretical physics. <em>Philosophy of Science</em>, <em>1</em>(2), 163–169. <a href="https://doi.org/10.1086/286282">https://doi.org/10.1086/286282</a>
 </div>
 <div id="ref-emmenegger2011job" class="csl-entry">
-Emmenegger, P. (2011). Job security regulations in western democracies: A fuzzy set analysis. <em>European Journal of Political Research</em>, <em>50</em>(3), 336–364. <a href="https://doi.org/10.1111/j.1475-6765.2010.01933.x">https://doi.org/10.1111/j.1475-6765.2010.01933.x</a>
+Emmenegger, P. (2011). Job security regulations in <span>Western</span> democracies: A fuzzy set analysis. <em>European Journal of Political Research</em>, <em>50</em>(3), 336–364. <a href="https://doi.org/10.1111/j.1475-6765.2010.01933.x">https://doi.org/10.1111/j.1475-6765.2010.01933.x</a>
 </div>
 <div id="ref-erdmann2025influence" class="csl-entry">
 Erdmann, A., &amp; Toro-Dupouy, L. (2025). The influence of the institutional environment on AI adoption in universities: Identifying value drivers and necessary conditions. <em>European Journal of Innovation Management</em>, <em>28</em>, 4365–4398. <a href="https://doi.org/10.1108/ejim-04-2024-0407">https://doi.org/10.1108/ejim-04-2024-0407</a>
@@ -20345,7 +20370,7 @@ Znaniecki, F. (1934). <em>The <span>M</span>ethod of <span>S</span>ociology</em>
 <li id="fn43"><p>For example, not more than 5% of points may be tolerable Noise for a medium-purity zone corresponding to 0.9 iso-purity (in this zone the points have a purity of 0.9 <span class="math inline">\(\leq\)</span> purity &lt; 1).<a href="#fnref43" class="footnote-back">↩︎</a></p></li>
 <li id="fn44"><p>Exceptions should be rare (e.g., ~ 0 in the ceiling zone corresponding to purity &lt; 0.9) to justify a typicality causal perspective. No strict rules exist for what number should be considered as “rare”. What matters is that, unlike noise, an exception-case represents a different causal process not captured by necessity, which may be studied separately.<a href="#fnref44" class="footnote-back">↩︎</a></p></li>
 <li id="fn45"><p>Various other distance measures such as horizontal, vertical, or perpendicular distance to the ceiling line could be used as a proximity measure, but each has limitations. When using horizontal or vertical distance of point <span class="math inline">\(P\)</span> to the ceiling, the variation in the other direction is ignored, which is problematic when the ceiling line is non-linear. Perpendicular distance could solve this but this distance measure loses its orthogonality under affine transformations (e.g., normalization) of the scope. To address these issues, a proximity measure based on the area between the point’s horizontal and vertical distances and the ceiling line is used. Assuming that the ceiling line is non-decreasing, this area-based measure has several desirable properties: continuity meaning that it varies smoothly with the point’s location, monotonicity meaning that the value increases as the point moves farther from the ceiling line, and invariance meaning that it remains invariant under affine transformations of the scope.<a href="#fnref45" class="footnote-back">↩︎</a></p></li>
-<li id="fn46"><p>For example, at least 5% of points could be considered acceptable support with a medium-solidity zone corresponding to 0.8 iso-solidity (in this zone the points have a solidity of 0.8 <span class="math inline">\(\leq\)</span> solidity <span class="math inline">\(\leq\)</span> 1.).The proposed suggestion for iso-solidity is less strict than that for iso-purity. The reason is that purity &lt; 1 violates strict necessity. However, solidity &lt; 1 does not violate necessity. Solidity &lt; 1 implies that the single necessary condition is only less informative for sufficiency. If solidity = 1 all points are on or above the ceiling, which makes the necessary conditions also sufficient. However, assessing the necessity of a single condition is not a goal of NCA, which focuses on single factors being necessary. Low solidity may affect sharpness, see Section <a href="#sharpness">4.5.6</a>.<a href="#fnref46" class="footnote-back">↩︎</a></p></li>
+<li id="fn46"><p>For example, at least 5% of points could be considered acceptable support with a medium-solidity zone corresponding to 0.8 iso-solidity (in this zone the points have a solidity of 0.8 <span class="math inline">\(\leq\)</span> solidity <span class="math inline">\(\leq\)</span> 1.).The proposed suggestion for iso-solidity is less strict than that for iso-purity. The reason is that purity &lt; 1 violates strict necessity. However, solidity &lt; 1 does not violate necessity. Solidity &lt; 1 implies that the single necessary condition is only less informative for sufficiency. If solidity = 1 all points are on or above the ceiling, which makes the necessary conditions also sufficient. However, assessing the sufficiency of a single condition is not a goal of NCA, which focuses on single factors being necessary. Low solidity may affect sharpness, see Section <a href="#sharpness">4.5.6</a>.<a href="#fnref46" class="footnote-back">↩︎</a></p></li>
 <li id="fn47"><p>For good model fit the sharpness should be for example at least 0.8 such that from all points in the ribbon 80% is on the ‘correct’ side.<a href="#fnref47" class="footnote-back">↩︎</a></p></li>
 <li id="fn48"><p>The specification of the bounding box is tacitly assumed for simplification.<a href="#fnref48" class="footnote-back">↩︎</a></p></li>
 <li id="fn49"><p>Data are from the Maungawhau volcano in Auckland, New Zealand and were obtained from the package .<a href="#fnref49" class="footnote-back">↩︎</a></p></li>
@@ -20417,7 +20442,7 @@ Znaniecki, F. (1934). <em>The <span>M</span>ethod of <span>S</span>ociology</em>
 <li id="fn115"><p>According to the definitions proposed in Section <a href="#methodtriangulationversuscausalpluralism">11.2</a> a QCA standard study that combines QCA’s necessity analysis with QCA’s sufficiency analysis is a causal-pluralism multimethod study. However, most QCA studies focus on the sufficiency analysis, and often largely ignore the necessity analysis, possibly because necessity is often not identified by QCA.<a href="#fnref115" class="footnote-back">↩︎</a></p></li>
 <li id="fn116"><p>For high-low and low-low relationship, NCA analyzes corners 3 and 4, respectively, and the NEST tool shows the corresponding inequality-signs: (<span class="math inline">\(\ge\)</span>) and (<span class="math inline">\(\le\)</span>).<a href="#fnref116" class="footnote-back">↩︎</a></p></li>
 <li id="fn117"><p>The symbol ◢ for necessity-in-degree differs from the square symbol <span class="math inline">\(\blacksquare\)</span>
-proposed by <span class="citation">Greckhamer (<a href="#ref-greckhamer2016ceo">2016</a>)</span>, and the diamond symbol <span class="math inline">\(\blacklozenge\)</span> used by <span class="citation">Holtrop et al. (<a href="#ref-holtrop2024increasing">2024</a>)</span>. Both symbols indicate the presence of a necessary condition <em>in kind</em> according to QCA’s necessity analysis. The NEST table uses black dot symbols to indicate presence of the condition as originally and commonly used <span class="citation">(e.g., <a href="#ref-fiss2011building">Fiss, 2011</a>; <a href="#ref-rubinson2019presenting">Rubinson, 2019</a>)</span>. To indicate absence of a condition, often a circle, a circled minus, or a crossed circle are in the QCA solution table. In the NEST table crossed circles ⊗/<small>⊗</small> are selected as such symbols are originally proposed by <span class="citation">Fiss (<a href="#ref-fiss2011building">2011</a>)</span> and often used <span class="citation">(e.g., <a href="#ref-mello2021qualitative">Mello, 2021</a>)</span>. Note that the symbols may slightly differ in publications depending on selected fonts. <span class="citation">Rubinson (<a href="#ref-rubinson2025fiss">2025</a>)</span> provides dedicated, interactive software for producing publication-quality “Fiss configuration charts”, including NEST tables that incorporate the ◢ symbol. A template for producing the NEST in <code>R</code> is available via the book-page <a href="https://jandul.github.io/NCA/" class="uri">https://jandul.github.io/NCA/</a>.<a href="#fnref117" class="footnote-back">↩︎</a></p></li>
+proposed by <span class="citation">Greckhamer (<a href="#ref-greckhamer2016ceo">2016</a>)</span>, and the diamond symbol <span class="math inline">\(\blacklozenge\)</span> used by <span class="citation">Holtrop et al. (<a href="#ref-holtrop2024increasing">2024</a>)</span>. Both symbols indicate the presence of a necessary condition <em>in kind</em> according to QCA’s necessity analysis. The NEST table uses black dot symbols to indicate presence of the condition as originally and commonly used <span class="citation">(e.g., <a href="#ref-fiss2011building">Fiss, 2011</a>; <a href="#ref-rubinson2019presenting">Rubinson, 2019</a>)</span>. To indicate absence of a condition, often a circle, a circled minus, or a crossed circle are in the QCA solution table. In the NEST table crossed circles ⊗/<small><small>⊗</small></small> are selected as such symbols are originally proposed by <span class="citation">Fiss (<a href="#ref-fiss2011building">2011</a>)</span> and often used <span class="citation">(e.g., <a href="#ref-mello2021qualitative">Mello, 2021</a>)</span>. Note that the symbols may slightly differ in publications depending on selected fonts. <span class="citation">Rubinson (<a href="#ref-rubinson2025fiss">2025</a>)</span> provides dedicated, interactive software for producing publication-quality “Fiss configuration charts”, including NEST tables that incorporate the ◢ symbol. A template for producing the NEST in <code>R</code> is available via the book-page <a href="https://jandul.github.io/NCA/" class="uri">https://jandul.github.io/NCA/</a>.<a href="#fnref117" class="footnote-back">↩︎</a></p></li>
 <li id="fn118"><p>The derivation was done by Roelof Kuik.<a href="#fnref118" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
