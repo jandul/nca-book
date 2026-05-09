@@ -453,7 +453,7 @@ div.csl-indent {
 <!-- </div> -->
 <div style="text-align: left; margin-top: 0; margin-bottom: 3em;">
 <p>© Jan Dul<br>
-Version 1.0.0. First pubished March 10, 2026. Last update: May 06, 2026<br></p>
+Version 1.0.0. First published March 10, 2026. Last update: May 09, 2026<br></p>
 <p>Refer to the book as: Dul, J. (2026). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Chapman &amp; Hall/CRC Press.</p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
@@ -481,7 +481,7 @@ Leiden, March 2026</p>
 
 </div>
 <div id="introduction" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">1</span> Introduction<a href="#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>NCA is a methodological approach that uses a <em>necessity</em> causal perspective for identifying necessary conditions from data. Necessity causal logic in NCA implies that if a certain level of the condition is not present, a certain level of the outcome will not occur: If not <span class="math inline">\(X\)</span>, then not <span class="math inline">\(Y\)</span>. No other factor can compensate for the absence of the necessary condition (or a required level of it). The necessary condition <em>allows</em> the outcome to exist, but does not produce it.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> A necessary condition operates independently of the rest of the causal structure and serves as a ‘critical success factor’ or ‘must-have’. When absent, it creates a ‘bottleneck’ or ‘constraint’ that prevents the target outcome, which cannot be compensated by other factors. For example, a student must have a high school diploma for admission to a university. Without such a diploma, the student will not be admitted. Other factors like a student’s high motivation cannot compensate for the lack of a diploma.</p>
 <p>Necessity causal logic and NCA differ from <em>sufficiency</em> causal logic and related methods. In sufficiency causal logic the condition <em>produces</em> the outcome: if <span class="math inline">\(X\)</span>, then <span class="math inline">\(Y\)</span>. A single factor may be sufficient for the outcome, for example when students graduate, they receive a diploma. Often, not a single factor but a combination of factors (a ‘configuration’) may be sufficient for the outcome: if [combination of <span class="math inline">\(X\)</span>’s], then <span class="math inline">\(Y\)</span>. A university diploma alone is not sufficient for admission to a PhD program; however, combining it with strong motivation, good grades, and a recommendation letter will secure it. Such a configurational sufficiency logic is used in methodologies and frameworks like Rothman’s Sufficient-Component Cause model in medicine <span class="citation">(SCC, <a href="#ref-rothman1976causes">Rothman, 1976</a>)</span>, Wright’s Necessary Element of a Sufficient Set in law <span class="citation">(NESS, <a href="#ref-wright1985causation">Wright, 1985</a>)</span>, and Ragin’s Qualitative Comparative Analysis in the social sciences <span class="citation">(QCA, <a href="#ref-ragin1987comparative">Ragin, 1987</a>)</span>.</p>
 <p>Necessity causal logic also differs from <em>probabilistic</em> causal sufficiency logic where the single factor is a ‘contributing cause’ that helps to produce the outcome and contributes to the outcome ‘on average’: ‘if <span class="math inline">\(X\)</span>, then probably <span class="math inline">\(Y\)</span>’. Highly motivated people are more likely to be admitted to a PhD program than those with lower motivation, although there are highly motivated people who are not admitted and less motivated people who are admitted. Such a probabilistic causal sufficiency logic is applied in statistical methodologies for causal inference, such as in Pearl’s Directed Acyclic Graphs (DAGs) and do-operator approach <span class="citation">(<a href="#ref-pearl2009causality">Pearl, 2009</a>)</span> and Angrist et al.’s Instrumental Variable approach <span class="citation">(IV, <a href="#ref-angrist1996identification">Angrist et al., 1996</a>)</span>.</p>
@@ -563,7 +563,7 @@ In the fourth stage (Chapter <a href="#reporting">10</a>), the results of NCA ar
 <p>The first chapter (Chapter <a href="#causality">2</a>) discusses NCA’s causality perspective and how it is different from conventional perspectives. The next chapter (Chapter <a href="#theory">3</a>) discusses what a necessity theory is. The subsequent two chapters present the mathematical (Chapter <a href="#mathematics">4</a>) and statistical (Chapter <a href="#statistics">5</a>) backgrounds of NCA. The final chapter (Chapter <a href="#sensitivityspecificity">6</a>) evaluates NCA’s credibility for identifying necessary conditions from data.</p>
 </div>
 <div id="causality" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Causality<a href="#causality" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">2</span> Causality<a href="#causality" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summarycausality" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Summary of this chapter<a href="#summarycausality" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>NCA uses a causal perspective that is (partly) different from common views on causality. This chapter presents NCA’s causal perspective by comparing it to other causal perspectives. The chapter begins by discussing what a cause is (Section <a href="#whatisacause">2.2</a>), followed by a discussion of the commonly used sufficiency causality (Section <a href="#sufficiencycausality">2.3</a>). Next, necessity causality is discussed (Section <a href="#necessitycausality">2.4</a>). For both types of causality, three perspectives are distinguished: deterministic, probabilistic, and typicality (deterministic with exceptions). NCA uses the deterministic (or typicality) necessity causal perspective. In the next section (Section <a href="#causalversusconditionallogic">2.5</a>), NCA’s use of conditional logic (assuming a causal direction) is compared with the conventional view on conditional logic (in which no causal direction is assumed). Subsequently, another unique feature of NCA is discussed: the concept of necessary condition in degree (NiD), which extends the conventional binary approach (absence or presence of <span class="math inline">\(X\)</span> is necessary for absence or presence of <span class="math inline">\(Y\)</span>) to a continuous approach: level <span class="math inline">\(x\)</span> of <span class="math inline">\(X\)</span> is necessary for level <span class="math inline">\(y\)</span> of <span class="math inline">\(Y\)</span> (Section <a href="#binarytocontinuous">2.6</a>). Finally, Section <a href="#underdetermination">2.7</a> discusses that, due to causal underdetermination, no causal perspective is superior to another.</p>
@@ -952,7 +952,7 @@ Figure 2.5: The same image can be seen in different ways. Likewise, the same dat
 </div>
 </div>
 <div id="theory" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Theory<a href="#theory" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">3</span> Theory<a href="#theory" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summarytheory" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Summary of this chapter<a href="#summarytheory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This chapter discusses causal theory in general and necessity theory in particular. A causal theory helps us understand phenomena, predict effects, and explain empirical findings. The chapter begins (Section <a href="#definitionnecessitytheory">3.2</a>) by discussing the four fundamental elements of a theory: (1) focal unit (e.g., person, organization, country), (2) concepts (varying characteristics of the focal unit), (3) propositions (causal relationships between the concepts), and (4) theoretical domain (generalization to where the theory holds). This is followed by a discussion of parsimonious necessity theories (Section <a href="#parsimonious">3.3</a>) and types of necessity theories (Section <a href="#theorytypes">3.4</a>), for example a pure necessity theory where all relationships between the concepts are described in terms of necessity, and an embedded necessity theory, where part of the theory has one or more necessity relationships. Next, the direction of a necessity proposition is discussed (Section <a href="#direction">3.5</a>), which depends on whether <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are present/have high value or are absent/have low value. The most common direction is that the presence or high value of <span class="math inline">\(X\)</span> is necessary for the presence or high value of <span class="math inline">\(Y\)</span> (high-high direction), which is the default when the direction is not specified. Other possible directions are high-low, low-high, and low-low. The following section (Section <a href="#expectedemptycorner">3.6</a>) discusses the expected data pattern when necessity holds. A consequence of a high-high necessary condition is that the upper-left corner in an <span class="math inline">\(XY\)</span>-plot is expected to be empty. The next section (Section <a href="#morecorners">3.7</a>) discusses the possibility of having double necessity when multiple corners are expected to be empty. The chapter finishes with a discussion of the theoretical meaning of ‘necessary but not sufficient’ (Section <a href="#necessarybutnotsufficient">3.8</a>).</p>
@@ -1332,7 +1332,7 @@ NCA focuses on the identification of necessity (rather than on the identificatio
 </div>
 </div>
 <div id="mathematics" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Mathematics<a href="#mathematics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">4</span> Mathematics<a href="#mathematics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summarymathematics" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Summary of this chapter<a href="#summarymathematics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This chapter describes the mathematics of a necessity relationship between a pair of variables: <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span>. The chapter focuses on necessity-in-degree (NiD) that describes the general situation of two continuous variables with an empty space in the upper-left corner of the <span class="math inline">\(XY\)</span>-plot. Using a conventional Euclidean coordinate system where the <span class="math inline">\(X\)</span>-axis runs horizontally with increasing values from left to right, and the <span class="math inline">\(Y\)</span>-axis runs vertically with increasing values from bottom to top, this indicates that a high level of <span class="math inline">\(X\)</span> is necessary for a high level of <span class="math inline">\(Y\)</span>. The mathematical approach described here can be extended to situations with dichotomous or discrete variables, or to analyzing other corners, though this is not addressed in this chapter. The chapter first presents the branches of mathematics applied in NCA (Section <a href="#branchesofmathematics">4.2</a>). In the subsequent section NCA’s mathematical model specification is presented (Section <a href="#formalexpression">4.3</a>). It includes the specification of the bounding box, the ceiling line, and the model’s degrees of freedom. This is followed by a discussion on how to estimate a necessity model by estimating parameters related to the necessity effect size and model fit. Next, the situation of multiple necessary conditions is discussed, explaining why NCA considers multiple <span class="math inline">\(X_jY\)</span>-planes (multiple projections), rather than one multidimensional space, and explaining how a chain of necessity can be analyzed (Section <a href="#multipleconditions">4.6</a>).</p>
@@ -2747,7 +2747,7 @@ y_c = min \{f_1(x_{1c}), f_2(x_{2c})\}
 <p>where <span class="math inline">\(y_c\)</span> is a particular outcome value, <span class="math inline">\(x_{jc}\)</span> is the necessary value of the <span class="math inline">\(j\)</span>-th condition, and <span class="math inline">\(f_j\)</span> is the ceiling line of condition <span class="math inline">\(X_j\)</span>.</p>
 <p>With more than two conditions, there is a multidimensional ceiling with projections <span class="math inline">\(f_j(X_j)\)</span>.</p>
 <p>The mathematical description of a necessity AND-combination of multiple necessary conditions is as follows: for achieving an outcome level <span class="math inline">\(Y = y_c\)</span>, all conditions must satisfy <span class="math inline">\(X_j \geq x_{jc}\)</span>. The maximum possible value of the outcome <span class="math inline">\(Y = y_c\)</span> for given values <span class="math inline">\(X_j = x_{jc}\)</span> is</p>
-<p><span class="math display" id="eq:ch1" id="eq:math3">\[\begin{equation}
+<p><span class="math display" id="eq:math3">\[\begin{equation}
 \tag{4.47}
 y_c = min_{j=1,\ldots,J} \{ f_j(x_{jc}) \}
 \end{equation}\]</span></p>
@@ -2894,20 +2894,20 @@ y_c = min_{j=1,\ldots,J} \{ f_j(x_{jc}) \}
 <div id="analysis-of-chain-necessity" class="section level4 hasAnchor" number="4.6.4.1">
 <h4><span class="header-section-number">4.6.4.1</span> Analysis of chain necessity<a href="#analysis-of-chain-necessity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>A general necessity chain consists of a sequence of necessary conditions: the first condition <span class="math inline">\(X_1\)</span>, intermediate conditions <span class="math inline">\(X_2, X_3, \ldots, X_J\)</span>, and the outcome <span class="math inline">\(Y\)</span>:</p>
-<p>\tag{4.48}
-<span class="math display" id="eq:ch2">\[\begin{equation}
+<p><span class="math display" id="eq:ch1">\[\begin{equation}
+\tag{4.48}
 X_1 \rightarrow X_2 \rightarrow X_3 \rightarrow \cdots \rightarrow X_J \rightarrow Y
 \end{equation}\]</span></p>
 <p>Here, <span class="math inline">\(J\)</span> is the number of necessary conditions (and thus the chain has <span class="math inline">\(J\)</span> links ending in <span class="math inline">\(Y\)</span>). For example, an additional intermediate necessary condition between study hours and quiz score could be active class participation (engagement, asking questions).</p>
 <p>For each link, a ceiling function bounds the subsequent variable:</p>
-<p>\tag{4.49}
-<span class="math display" id="eq:ch3">\[\begin{equation}
+<p><span class="math display" id="eq:ch2">\[\begin{equation}
+\tag{4.49}
 X_{j+1} \le f_j(X_j), \quad j = 1,\ldots,J-1, \qquad
 Y \le f_J(X_J).
 \end{equation}\]</span></p>
 <p>The chain ceiling <span class="math inline">\(f_{\mathrm{chain}}(X_1)\)</span> expresses the implied necessity of <span class="math inline">\(X_1\)</span> for <span class="math inline">\(Y\)</span> through the chain. It is defined as the composition of the link-specific ceiling functions:</p>
-<p>\tag{4.50}
-<span class="math display" id="eq:effectsizechainceilinglinear1">\[\begin{equation}
+<p><span class="math display" id="eq:ch3">\[\begin{equation}
+\tag{4.50}
 Y \le f_J\!\big(f_{J-1}(\cdots f_1(X_1)\cdots)\big)
 = f_{\mathrm{chain}}(X_1).
 \end{equation}\]</span></p>
@@ -2915,31 +2915,31 @@ Y \le f_J\!\big(f_{J-1}(\cdots f_1(X_1)\cdots)\big)
 <p>The phrase “a chain is as strong as its weakest link” also applies to a necessity chain. If any link fails to represent a necessity relationship, the chain collapses, and <span class="math inline">\(X_1\)</span> is not necessary for <span class="math inline">\(Y\)</span> through the chain. This situation can occur, for example, when a link is sufficient but not necessary, or when a link is described only by an average effect or correlation without necessity.</p>
 <p>Throughout, all variables are assumed to be min–max normalized, and all ceilings are defined within the same bounding box.</p>
 <p>In the linear case with the unit square bounding box (<span class="math inline">\([0,1] \times [0,1]\)</span>), each link is described by a truncated linear ceiling:</p>
-<p>\tag{4.51}
-<span class="math display" id="eq:effectsizechainceilinglinear2">\[\begin{equation}
+<p><span class="math display" id="eq:effectsizechainceilinglinear1">\[\begin{equation}
+\tag{4.51}
 f_j(X_j) = \min(a_j + b_j X_j,\,1), \qquad j=1,\ldots,J.
 \end{equation}\]</span></p>
 <p>Here, <span class="math inline">\(a_j\)</span> is the intercept and <span class="math inline">\(b_j\)</span> is the slope. Assume that each link represents the standard case of necessity (a ceiling line on or above the diagonal in the unit square), i.e., <span class="math inline">\(0&lt;a_j&lt;1\)</span> and <span class="math inline">\(1&lt;a_j+b_j\)</span>.</p>
 <p>The resulting chained ceiling is again linear:</p>
-<p>\tag{4.52}
-<span class="math display" id="eq:effectsizeachain">\[\begin{equation}
+<p><span class="math display" id="eq:effectsizechainceilinglinear2">\[\begin{equation}
+\tag{4.52}
 Y \le f_{\mathrm{chain}}(X_1) = a_{\mathrm{chain}} + b_{\mathrm{chain}}\,X_1.
 \end{equation}\]</span></p>
 <p>The chain intercept and slope are:</p>
-<p>\tag{4.53}
-<span class="math display" id="eq:effectsizebchain">\[\begin{equation}
+<p><span class="math display" id="eq:effectsizeachain">\[\begin{equation}
+\tag{4.53}
 a_{\mathrm{chain}} =
 \sum_{j=1}^{J}
 \left( a_j \prod_{k=j+1}^{J} b_k \right),
 \end{equation}\]</span></p>
-<p>\tag{4.54}
-<span class="math display" id="eq:effectsizechain">\[\begin{equation}
+<p><span class="math display" id="eq:effectsizebchain">\[\begin{equation}
+\tag{4.54}
 b_{\mathrm{chain}} = \prod_{j=1}^{J} b_j,
 \end{equation}\]</span></p>
 <p>with the convention that an empty product equals <span class="math inline">\(1\)</span>.</p>
 <p>For ceilings on or above the diagonal, <span class="math inline">\(a_{\mathrm{chain}} \ge 1-b_{\mathrm{chain}}\)</span>, which implies <span class="math inline">\(d_{\mathrm{chain}} \le \tfrac{1}{2}b_{\mathrm{chain}}\)</span>. In the unit square bounding box <span class="math inline">\([0,1]\times[0,1]\)</span>, the effect size of the (linear) chain ceiling <span class="math inline">\(Y \le a_{\mathrm{chain}} + b_{\mathrm{chain}}X_1\)</span> is:</p>
-<p>\tag{4.55}
-<span class="math display">\[\begin{equation}
+<p><span class="math display" id="eq:effectsizechain">\[\begin{equation}
+\tag{4.55}
 d_{\mathrm{chain}} =
 \begin{cases}
 \dfrac{(1-a_{\mathrm{chain}})^2}{2\,b_{\mathrm{chain}}}, &amp; \text{if } a_{\mathrm{chain}} &lt; 1,\\[6pt]
@@ -3484,7 +3484,7 @@ Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <s
 </div>
 </div>
 <div id="statistics" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Statistics<a href="#statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">5</span> Statistics<a href="#statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summarystatistics" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Summary of this chapter<a href="#summarystatistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This chapter discusses several statistical topics relevant to NCA. Although NCA is primarily a (quasi-)deterministic mathematical (geometric) method rather than a statistical method based on probabilities, several statistical approaches and tools are still relevant for NCA. First, the chapter discusses the use of sampling logic in quantitative (large-n) NCA studies (Section <a href="#samplinglogic">5.2</a>). Second, four specific statistical tools and approaches for NCA are presented. These are a set of permutation tests for testing null hypotheses (Section <a href="#permutationtest">5.3</a>), statistical modeling with NCA in particular for Monte Carlo simulation studies (Section <a href="#statisticalmodeling">5.4</a>), and the use of these simulations for evaluating the statistical quality of ceiling lines (Section <a href="#ceilingquality">5.5</a>) and for conducting power analyses (Section <a href="#statisticspower">5.6</a>). Finally, the chapter discusses how three common problems in inferential statistics apply to NCA: reverse causality (Section <a href="#reversecausality">5.7</a>), measurement error (Section <a href="#measurementerror">5.8</a>) and spuriousness (Section <a href="#spurious">5.9</a>).</p>
@@ -4636,7 +4636,7 @@ Cases with measurement error that can have a large influence on the effect size,
 </div>
 </div>
 <div id="sensitivityspecificity" class="section level1 hasAnchor" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Credibility<a href="#sensitivityspecificity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">6</span> Credibility<a href="#sensitivityspecificity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summarysensitivityspecificity" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Summary of this chapter<a href="#summarysensitivityspecificity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This chapter evaluates the credibility of NCA to identify necessity from data. In the context of NCA, credibility refers to the trustworthiness of conclusions about necessity from data<a href="#fn61" class="footnote-ref" id="fnref61"><sup>61</sup></a>. The chapter starts by discussing the core criteria to draw conclusions about necessity: there must be a theoretically justified necessity hypothesis, the effect size must be practically relevant (high <span class="math inline">\(d\)</span>-value), and the observed empty space must be unlikely to be compatible with no relationship (low <span class="math inline">\(p\)</span>-value) (Section <a href="#corecriteria">6.2</a>). A positive conclusion that necessity is supported requires that all three of these criteria are met. A negative conclusion that necessity does not exist is drawn if any of the three is not satisfied. Next, the chapter evaluates the statistical credibility of NCA using Monte Carlo simulations to analyze how well NCA detects necessity when it is present in the population (True Positive Rate-TPR, sensitivity) and how well NCA avoids detecting necessity when it is absent in the population (True Negative Rate-TNR, specificity) (Section <a href="#statisticalcredibility">6.3</a>). Subsequently, the empirical credibility of a specific NCA study is evaluated focusing on robustness checks (the extent to which the findings are not dependent on the analyst’s choices) and model fit metrics (the extent to which the necessity model matches the data) (Section <a href="#empiricalcredibility">6.4</a>). Finally, recommendations are given on how to evaluate the credibility of a specific study (Section <a href="#credibilitysummary">6.5</a>).</p>
@@ -4686,7 +4686,7 @@ Figure 6.2: Intersection of two adjacent empty corners. Left: The lines intersec
 <h3><span class="header-section-number">6.3.1</span> True Positive Rate (TPR, sensitivity)<a href="#sensitivity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Figure <a href="#fig:tpr01">6.3</a> shows the results of the evaluation of TPR for a true necessity effect size of <span class="math inline">\(d\)</span> = 0.10 in corner 1, the expected empty corner (called <em>necessity corner</em> in the figure), and with different sizes of other empty corner 2 (Figure <a href="#fig:tpr01">6.3</a>-top-right), other empty corner 3 (Figure <a href="#fig:tpr01">6.3</a>-bottom-left) and other empty corner 4 (Figure <a href="#fig:tpr01">6.3</a>-bottom-right).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr01"></span>
-<img src="tpr01.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.1. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<img src="tpr01COLOR.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.1. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
 <p class="caption">
 Figure 6.3: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.1. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
 </p>
@@ -5259,7 +5259,7 @@ TPR
 <h3><span class="header-section-number">6.3.2</span> True Negative Rate (TNR, specificity)<a href="#specificity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 Figure <a href="#fig:tnruniform">6.4</a> shows the results of the evaluation of TNR.
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnruniform"></span>
-<img src="tnruniform.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying non-necessity in the population. True necessity effect size in corner 1 = 0 for different sizes of other empty corners.  Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<img src="tnruniformCOLOR.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying non-necessity in the population. True necessity effect size in corner 1 = 0 for different sizes of other empty corners.  Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
 <p class="caption">
 Figure 6.4: True Negative Rate (TNR, specificity) of the NCA approach for identifying non-necessity in the population. True necessity effect size in corner 1 = 0 for different sizes of other empty corners. Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
 </p>
@@ -5818,7 +5818,7 @@ TNR
 <p>Similar patterns of the TNR curves can be observed when the distribution in the feasible space is based on a normal rather than uniform distribution of the cases (Appendix <a href="#appendixtprtnr">E</a>).</p>
 <p>If the <span class="math inline">\(d\)</span>-value were not included as decision criterion for necessity, TNR would have been considerably lower for scenario D. This is shown in Figure <a href="#fig:tnruniformponly">6.5</a> where the TNR decision is only based on the <span class="math inline">\(p\)</span>-value. Figure <a href="#fig:tnruniformponly">6.5</a>-bottom-right shows that TNR decreases with increasing sample size and increasing size of empty corner 4.<a href="#fn65" class="footnote-ref" id="fnref65"><sup>65</sup></a></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnruniformponly"></span>
-<img src="tnruniform_ponly.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the $p$-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes. Top-Right: empty corner = 2. Bottom-Left: empty corner = 3. Bottom-Right: empty corner = 4." width="90%" />
+<img src="tnruniform_ponlyCOLOR.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the $p$-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes. Top-Right: empty corner = 2. Bottom-Left: empty corner = 3. Bottom-Right: empty corner = 4." width="90%" />
 <p class="caption">
 Figure 6.5: True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the <span class="math inline">\(p\)</span>-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes. Top-Right: empty corner = 2. Bottom-Left: empty corner = 3. Bottom-Right: empty corner = 4.
 </p>
@@ -6162,7 +6162,7 @@ High (e.g., <span class="math inline">\(sh\)</span> &gt; 0.8).
 <p>The first chapter (Chapter <a href="#hypothesisformulation">7</a>) discusses the steps that are needed for developing a formal necessity hypothesis. The next chapter (Chapter <a href="#datacollection">8</a>) discusses data collection in terms of the selection of study design (observational study, longitudinal study, case study, experimental study), sampling and selection of cases, measurement (getting scores for <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>), and the dataset. This is followed by Chapter <a href="#dataanalysis">9</a>, which discusses NCA’s data analysis. Chapter <a href="#reporting">10</a> provides guidance on reporting an NCA study. Chapter <a href="#multimethodstudies">11</a> illustrates the use of NCA in multimethod studies (NCA with regression and NCA with QCA) and Chapter <a href="#practice">12</a> describes the application of NCA in practice. This part ends with a summary and personal reflections.</p>
 </div>
 <div id="hypothesisformulation" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Hypothesis<a href="#hypothesisformulation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">7</span> Hypothesis<a href="#hypothesisformulation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <!-- ::: {.textbox} -->
 <!-- RUNNING EXAMPLE NCA2 zie summary online boek? -->
 <!-- ::: -->
@@ -7430,7 +7430,7 @@ An online meeting cannot begin without a working Internet connection already in 
 </div>
 </div>
 <div id="datacollection" class="section level1 hasAnchor" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Data<a href="#datacollection" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">8</span> Data<a href="#datacollection" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summary-of-this-chapter" class="section level2 hasAnchor" number="8.1">
 <h2><span class="header-section-number">8.1</span> Summary of this chapter<a href="#summary-of-this-chapter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This chapter describes the steps between the hypothesis and data analysis that are needed to obtain empirical data for testing a formal necessity hypothesis. The hypothesis discussed in the previous chapter (Chapter <a href="#hypothesisformulation">7</a>) guides which data should be collected. The hypothesis has precise definitions of (1) the focal unit, (2) the concepts <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, (3) the direction of necessity and a causal explanation, and (4) the theoretical domain where the hypothesis is supposed to hold. Empirical data refer to observed <span class="math inline">\(x\)</span>- and <span class="math inline">\(y\)</span>-scores (values or levels) of variables that represent the concepts <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. These scores are measured on cases selected from the theoretical domain. To collect high-quality empirical data for testing the necessity hypothesis, three key decisions must be made: (1) selection of study design, which is the type of study (observational study, longitudinal study, case study, or experimental study discussed in Section <a href="#researchdesign">8.2</a>), (2) sampling or selection of cases from the theoretical domain: random sampling and purposive case selection (Section <a href="#samplingandselection">8.3</a>), and (3) conducting the measurement to obtain valid and reliable <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> scores (e.g., qualitative or quantitative data; archival or new data) for each case (Section <a href="#measurement">8.4</a>). Section <a href="#dataset">8.5</a> discusses the format of a useful dataset.<br />
@@ -9469,7 +9469,7 @@ USA
 </div>
 </div>
 <div id="dataanalysis" class="section level1 hasAnchor" number="9">
-<h1><span class="header-section-number">Chapter 9</span> Data analysis<a href="#dataanalysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">9</span> Data analysis<a href="#dataanalysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <!-- \textcolor{red}{change 13 into 10000} -->
 <div id="summary-of-this-chapter-1" class="section level2 hasAnchor" number="9.1">
 <h2><span class="header-section-number">9.1</span> Summary of this chapter<a href="#summary-of-this-chapter-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -10992,7 +10992,7 @@ Figure 9.14: Target outcome robustness check. The effect of changing the target 
 </div>
 </div>
 <div id="reporting" class="section level1 hasAnchor" number="10">
-<h1><span class="header-section-number">Chapter 10</span> Reporting<a href="#reporting" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">10</span> Reporting<a href="#reporting" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summary-of-this-chapter-2" class="section level2 hasAnchor" number="10.1">
 <h2><span class="header-section-number">10.1</span> Summary of this chapter<a href="#summary-of-this-chapter-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Previous chapters explained how to develop a formal necessity hypothesis (Chapter 7), and how to subsequently test it using empirical data (Chapter 8) and NCA’s data analysis approach (Chapter 9). This chapter describes how to report an NCA study. The goal is to report insights from the study, how these were obtained, and how they contribute to theoretical understanding and practical application. The chapter focuses on a written report for an academic audience (e.g., a journal article), but it can also be the basis for other reporting formats (e.g., presentations) and other audiences (e.g., practitioners, the general public). First, Section <a href="#typesofncapublications">10.2</a> distinguishes between several types of NCA publications (empirical, theoretical, methodological introductions, and practical) and provides examples of publications and recommendations. Second, Section <a href="#review">10.3</a> follows the common format of an academic publication (introduction - theory/hypotheses - methods - results - discussion) to present recommendations for conducting and reporting a high-quality NCA study. This section includes the SCoRe checklist for authors, editors, reviewers, and others to evaluate the quality of an NCA study and its reporting.</p>
@@ -12626,7 +12626,7 @@ Suggested article: <span class="citation">Köhler &amp; Cortina (<a href="#ref-k
 </div>
 </div>
 <div id="multimethodstudies" class="section level1 hasAnchor" number="11">
-<h1><span class="header-section-number">Chapter 11</span> Multimethod studies<a href="#multimethodstudies" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">11</span> Multimethod studies<a href="#multimethodstudies" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summary-of-this-chapter-3" class="section level2 hasAnchor" number="11.1">
 <h2><span class="header-section-number">11.1</span> Summary of this chapter<a href="#summary-of-this-chapter-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The previous chapters focus on NCA as a standalone methodology and method. This chapter explores how NCA can be applied in combination with other methods. First, a distinction is made between method-triangulation studies that use multiple methods with the same causal perspective, and causal-pluralism studies using multiple methods with distinct causal perspectives (Section <a href="#methodtriangulationversuscausalpluralism">11.2</a>). Next, causal-pluralism multimethod studies that combine NCA with regression-based methods are discussed, showing that NCA can provide insights beyond average effects. With the NCA-Extended Regression Table (NERT) tool, the results can be compared (Section <a href="#ncawithregressionbasedmethods">11.3</a>). This is followed by discussing how NCA can be combined with a specific regression-based method, structural equation modeling (SEM). To compare the results, the Bottleneck Importance Performance Map Analysis (BIPMA) tool is provided (Section <a href="#ncasem">11.4</a>). Both tools acknowledge the different causal perspectives, while facilitating the combined interpretation of results. Subsequently, multimethod studies that combine NCA with Qualitative Comparative Analysis (QCA) are discussed (Section <a href="#ncaqca">11.5</a>). This section shows how NCA insights on necessity-in-degree can provide additional insights for QCA’s necessity and sufficiency analyses (Section <a href="#combiningncaandqcainamultimethodstudy">11.6</a>). For the combined interpretation of NCA’s necessity results and QCA’s sufficiency results, the NCA-Extended Solution Table (NEST) tool is provided.</p>
@@ -14242,9 +14242,9 @@ model_calibrated&lt;- nca_analysis(LF,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.37   0.000
-## URB 0.01   0.364
+## URB 0.01   0.365
 ## LIT 0.82   0.003
-## IND 0.02   0.363
+## IND 0.02   0.359
 ## STB 0.46   0.004
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code># NCA-raw data
@@ -14265,10 +14265,10 @@ model_raw &lt;- nca_analysis(LR,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.27   0.000
-## URB 0.09   0.333
-## LIT 0.74   0.002
-## IND 0.11   0.096
-## STB 0.53   0.010
+## URB 0.09   0.338
+## LIT 0.74   0.001
+## IND 0.11   0.095
+## STB 0.53   0.009
 ## ---------------------------------------------------------------------------</code></pre>
 <!-- ``` {r Lipset-hide , echo = TRUE, eval = TRUE, warning=FALSE, message= FALSE, result = FALSE} -->
 <!-- library(QCA) -->
@@ -14569,10 +14569,10 @@ NCA’s necessity-in-kind analysis is conducted as follows:</p>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.002
+## L 0.29   0.003
 ## R 0.31   0.001
-## P 0.17   0.010
-## V 0.05   0.533
+## P 0.17   0.008
+## V 0.05   0.530
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>library(NCA)
 set.seed(123) # for reproducible results
@@ -14589,10 +14589,10 @@ print(model)</code></pre>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.002
+## L 0.29   0.003
 ## R 0.31   0.001
-## P 0.17   0.010
-## V 0.05   0.533
+## P 0.17   0.008
+## V 0.05   0.530
 ## ---------------------------------------------------------------------------</code></pre>
 <p><br />
 <!-- ```{r, table2ncaqca, echo=FALSE, eval = FALSE out.width='100%', fig.align = "center", fig.cap="NCA necessity analysis. $d$ = effect size; $p$ = $p$-value."} -->
@@ -15185,7 +15185,7 @@ In many NCA-QCA multimethod studies, QCA results and NCA results are presented s
 </div>
 </div>
 <div id="practice" class="section level1 hasAnchor" number="12">
-<h1><span class="header-section-number">Chapter 12</span> NCA in practice<a href="#practice" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">12</span> NCA in practice<a href="#practice" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div style="text-align: left; font-style: italic; margin: 2em 0;">
 <p>This chapter will be made available soon.</p>
 </div>
@@ -15298,7 +15298,7 @@ In many NCA-QCA multimethod studies, QCA results and NCA results are presented s
 
 
 <div id="glossary" class="section level1 hasAnchor" number="13">
-<h1><span class="header-section-number">Appendix A</span> Nomenclature and glossary<a href="#glossary" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">A</span> Nomenclature and glossary<a href="#glossary" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="nomenclature" class="section level2 hasAnchor" number="13.1">
 <h2><span class="header-section-number">A.1</span> Nomenclature<a href="#nomenclature" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
@@ -15839,7 +15839,7 @@ Also see <em>Convenience sample</em>, <em>Random sample</em>, <em>Purposive case
 </div>
 </div>
 <div id="appendixb" class="section level1 hasAnchor" number="14">
-<h1><span class="header-section-number">Appendix B</span> Software<a href="#appendixb" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">B</span> Software<a href="#appendixb" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div style="text-align: left; font-style: italic; margin: 2em 0;">
 <p>This chapter will be made available soon.</p>
 </div>
@@ -15875,7 +15875,7 @@ Also see <em>Convenience sample</em>, <em>Random sample</em>, <em>Purposive case
 
 </div>
 <div id="appendixa" class="section level1 hasAnchor" number="15">
-<h1><span class="header-section-number">Appendix C</span> Publications<a href="#appendixa" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">C</span> Publications<a href="#appendixa" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div style="text-align: left; font-style: italic; margin: 2em 0;">
 <p>This chapter will be made available soon.</p>
 </div>
@@ -15889,7 +15889,7 @@ Also see <em>Convenience sample</em>, <em>Random sample</em>, <em>Purposive case
 
 </div>
 <div id="appendixd" class="section level1 hasAnchor" number="16">
-<h1><span class="header-section-number">Appendix D</span> Affine transformations<a href="#appendixd" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">D</span> Affine transformations<a href="#appendixd" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This appendix shows that affine transformations preserve the NCA effect size <span class="math inline">\(d\)</span>.</p>
 <p>The following definitions are used:</p>
 <ul>
@@ -16239,27 +16239,31 @@ d&#39; = \frac{ac \cdot \text{Area}({C})}{ac \cdot \text{Area}({S})} = d
 
 </div>
 <div id="appendixtprtnr" class="section level1 hasAnchor" number="17">
-<h1><span class="header-section-number">Appendix E</span> Simulations for TPR and TNR<a href="#appendixtprtnr" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">E</span> Simulations for TPR and TNR<a href="#appendixtprtnr" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This appendix provides additional simulation results for the True Positive Rate (TPR; sensitivity) and the True Negative Rate (TNR; specificity), as discussed in Section <a href="#statisticalcredibility">6.3</a>.</p>
 <div id="true-positive-rate-tpr" class="section level2 hasAnchor" number="17.1">
 <h2><span class="header-section-number">E.1</span> True Positive Rate (TPR)<a href="#true-positive-rate-tpr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>With the same simulation settings as in Figure <a href="#fig:tpr01">6.3</a>, Figure <a href="#fig:tpr02">E.1</a> shows the simulation results for an effect size <span class="math inline">\(d = 0.20\)</span> instead of <span class="math inline">\(d = 0.10\)</span>. All TPR curves shift to the left. Consequently, with a larger true effect size, the required sample size is smaller to achieve the same TPR.</p>
+<p>With the same simulation settings as in Figure <a href="#fig:tpr01">6.3</a>, Figure <a href="#fig:tpr02">E.1</a> shows the simulation results for an effect size <span class="math inline">\(d = 0.20\)</span> instead of <span class="math inline">\(d = 0.10\)</span>. All TPR curves shift to the left. Consequently, with a larger true effect size, the required sample size is smaller to achieve the same TPR.<br />
+</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr02"></span>
-<img src="tpr02.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.20. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<img src="TPRCOLORNEW02.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.20. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="99%" />
 <p class="caption">
 Figure E.1: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.20. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
 </p>
 </div>
 <p>With the same simulation settings as in Figure <a href="#fig:tpr01">6.3</a>, Figures <a href="#fig:tpr06">E.2</a> and <a href="#fig:tpr16">E.3</a> show the simulation results for ceiling slopes of 0.60 and 1.67, respectively, instead of 1. This comparison allows evaluation of the (non)-evenness of the TPR curves for scenarios B and C as a function of the slope of the ceiling line. Only the slope of the ceiling line in the necessity corner of interest is changed. Because the slopes of the lines in the other empty corners remain the same (-1), this slope change introduces asymmetry. Due to the intersection of the lines within the bounding box (Figure <a href="#fig:intersection">6.2</a>), only an effect size of 0.12 could be evaluated. The results indicate that the slope change has little or no effect on the TPR curves.</p>
-<p><!-- \textcolor{red}{CHECK EFFECT SIZE 0.12. Was eerst 0.05 in tekst. 0.12 lijkt goed te zijn. zie email 14 feb} --></p>
+<p><!-- \textcolor{red}{CHECK EFFECT SIZE 0.12. Was eerst 0.05 in tekst. 0.12 lijkt goed te zijn. zie email 14 feb} --><br />
+</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr06"></span>
-<img src="tpr06.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 0.60. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<img src="TPRCOLORNEW06.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 0.60. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="99%" />
 <p class="caption">
 Figure E.2: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 0.60. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
 </p>
 </div>
+<p><br />
+</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr16"></span>
-<img src="tpr16.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 1.67. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<img src="TPRCOLORNEW16.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 1.67. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="99%" />
 <p class="caption">
 Figure E.3: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.12. Slope of necessity ceiling line (corner 1) = 1.67. Slopes of ceiling/floor lines of other empty corners are 1 (4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
 </p>
@@ -16268,9 +16272,10 @@ Figure E.3: True Positive Rate (TPR, sensitivity) of the NCA approach for identi
 </div>
 <div id="true-negative-rate-tnr" class="section level2 hasAnchor" number="17.2">
 <h2><span class="header-section-number">E.2</span> True Negative Rate (TNR)<a href="#true-negative-rate-tnr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>With the same simulation settings as in Figure <a href="#fig:tnruniform">6.4</a>, Figure <a href="#fig:tnrnormal">E.4</a> shows TNR (<span class="math inline">\(p\)</span>- and <span class="math inline">\(d\)</span>-based) when the distribution in the feasible space is based on a normal distribution instead of a uniform distribution.</p>
+<p>With the same simulation settings as in Figure <a href="#fig:tnruniform">6.4</a>, Figure <a href="#fig:tnrnormal">E.4</a> shows TNR (<span class="math inline">\(p\)</span>- and <span class="math inline">\(d\)</span>-based) when the distribution in the feasible space is based on a normal distribution instead of a uniform distribution.<br />
+</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnrnormal"></span>
-<img src="tnrnormal.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with the $p$ and $d$-value criterion, with normal distribution of cases in the feasible space. True necessity effect size in corner 1 = 0 for different sizes of other empty corners. Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<img src="TNRpdCOLORNEWNORMAL.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with the $p$ and $d$-value criterion, with normal distribution of cases in the feasible space. True necessity effect size in corner 1 = 0 for different sizes of other empty corners. Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="99%" />
 <p class="caption">
 Figure E.4: True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with the <span class="math inline">\(p\)</span> and <span class="math inline">\(d\)</span>-value criterion, with normal distribution of cases in the feasible space. True necessity effect size in corner 1 = 0 for different sizes of other empty corners. Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
 </p>
@@ -16280,7 +16285,7 @@ Figure E.4: True Negative Rate (TNR, specificity) of the NCA approach for identi
 </div>
 </div>
 <div id="appendixaa" class="section level1 hasAnchor" number="18">
-<h1><span class="header-section-number">Appendix F</span> Necessity and the traditional experiment<a href="#appendixaa" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">F</span> Necessity and the traditional experiment<a href="#appendixaa" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div style="text-align: left; font-style: italic; margin: 2em 0;">
 <p>This chapter will be made available soon.</p>
 </div>
@@ -16289,7 +16294,7 @@ Figure E.4: True Negative Rate (TNR, specificity) of the NCA approach for identi
 
 </div>
 <div id="appendixc" class="section level1 hasAnchor" number="19">
-<h1><span class="header-section-number">Appendix G</span> Correlation by necessity<a href="#appendixc" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">G</span> Correlation by necessity<a href="#appendixc" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <!-- A correlation is a common way to express a relationship between two continuous variables. It provides a simple, standardised and intuitve measure of how two variables move together. The direction and strengths are expressed in one number: the correlation coefficient ($r$) which is unit free and ranges between -1 and + 1. Part of its popularity is that it is computationally simple and widely taught as a first step in exploring data relationships. The regression coefficient $\beta_1$ of the regression equation $Y = \beta_0 + \beta_1 X + \varepsilon$ is closely related to the correlation coefficient: $\beta_1 = r \cdot \frac{s_Y}{s_X}$, where $s$ is the standard deviation. -->
 <!-- Just like the regression coefficient, also an observed correlation coefficient is often interpreted as a signal of a probabilistic sufficiency relationship, e.g., when testing a probabilistic sufficiency hypothesis.     -->
 <!-- This section shows, however, that also a necessity relationship can result in a correlation coefficient. This means that, without know the true relationship in a population, an observed correlation coefficient could be interpretated as both types of relationships. -->
@@ -16668,7 +16673,7 @@ E(XY) &amp;= \frac{1}{4F_{a,b}} \left( 1 + \tfrac{2}{3} (1 - 2x_0 - F_{a,b}) - \
 </div>
 </div>
 <div id="appendixe" class="section level1 hasAnchor" number="20">
-<h1><span class="header-section-number">Appendix H</span> Demonstration NCA with PLS-SEM<a href="#appendixe" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">H</span> Demonstration NCA with PLS-SEM<a href="#appendixe" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <!-- \textcolor{red}{set nboot 5000 ipv 14} -->
 <!-- \textcolor{red}{set test.rep 10000 ipv 13} -->
 <p>This section demonstrates the steps for combining NCA with SEM (Section <a href="#ncasem">11.4</a>) using an example. This example has been used in four published studies where NCA is combined with PLS-SEM <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-richter2020predictors">Richter et al., 2020</a>; <a href="#ref-richter2023apply">Richter, Hauff, Ringle, et al., 2023</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span>. The goal of the demonstration is threefold:</p>
@@ -17007,7 +17012,7 @@ print(model1.technology)</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.24   0.001
 ## Compatibility         0.21   0.000
-## Perceived ease of use 0.24   0.016
+## Perceived ease of use 0.24   0.014
 ## Emotional value       0.33   0.000
 ## Adoption intention    0.29   0.000
 ## ---------------------------------------------------------------------------</code></pre>
@@ -19749,7 +19754,7 @@ yes
 </div>
 </div>
 <div id="appendixh" class="section level1 hasAnchor" number="21">
-<h1><span class="header-section-number">Appendix I</span> Bottleneck distance table<a href="#appendixh" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">I</span> Bottleneck distance table<a href="#appendixh" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div style="text-align: left; font-style: italic; margin: 2em 0;">
 <p>This chapter will be made available soon.</p>
 </div>
