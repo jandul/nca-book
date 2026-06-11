@@ -370,7 +370,35 @@ div.csl-indent {
 <li class="chapter" data-level="11.6.5" data-path=""><a href="#recommendationplsqca"><i class="fa fa-check"></i><b>11.6.5</b> Recommendations for combining NCA and QCA</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path=""><a href="#practice"><i class="fa fa-check"></i><b>12</b> NCA in practice</a></li>
+<li class="chapter" data-level="12" data-path=""><a href="#practice"><i class="fa fa-check"></i><b>12</b> NCA in practice</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path=""><a href="#summary-of-this-chapter-4"><i class="fa fa-check"></i><b>12.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="12.2" data-path=""><a href="#practicalvalue"><i class="fa fa-check"></i><b>12.2</b> The practical value of necessity logic</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path=""><a href="#must"><i class="fa fa-check"></i><b>12.2.1</b> Must-have factors for desired outcomes</a></li>
+<li class="chapter" data-level="12.2.2" data-path=""><a href="#stop"><i class="fa fa-check"></i><b>12.2.2</b> Stop factors for undesired outcomes</a></li>
+<li class="chapter" data-level="12.2.3" data-path=""><a href="#shifting-attention-from-average-to-individual-interventions"><i class="fa fa-check"></i><b>12.2.3</b> Shifting attention from average to individual interventions</a></li>
+<li class="chapter" data-level="12.2.4" data-path=""><a href="#applicationareas"><i class="fa fa-check"></i><b>12.2.4</b> Examples of application areas</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path=""><a href="#ncacontributions"><i class="fa fa-check"></i><b>12.3</b> NCA’s contribution to change and innovation</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path=""><a href="#interventionstrategy"><i class="fa fa-check"></i><b>12.3.1</b> Part 1: Intervention strategy</a></li>
+<li class="chapter" data-level="12.3.2" data-path=""><a href="#interventiondesign"><i class="fa fa-check"></i><b>12.3.2</b> Part 2: Intervention design</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path=""><a href="#desiredintervention"><i class="fa fa-check"></i><b>12.4</b> Interventions for making desired outcomes possible</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path=""><a href="#intervention-effort"><i class="fa fa-check"></i><b>12.4.1</b> Intervention effort</a></li>
+<li class="chapter" data-level="12.4.2" data-path=""><a href="#intervention-effectiveness-waste-and-efficiency"><i class="fa fa-check"></i><b>12.4.2</b> Intervention effectiveness, waste and efficiency</a></li>
+<li class="chapter" data-level="12.4.3" data-path=""><a href="#ideal-intervention"><i class="fa fa-check"></i><b>12.4.3</b> Ideal intervention</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path=""><a href="#undesiredintervention"><i class="fa fa-check"></i><b>12.5</b> Interventions for preventing undesired outcomes</a></li>
+<li class="chapter" data-level="12.6" data-path=""><a href="#multipleintervention"><i class="fa fa-check"></i><b>12.6</b> Interventions with multiple necessary conditions</a></li>
+<li class="chapter" data-level="12.7" data-path=""><a href="#illustrativeexample1"><i class="fa fa-check"></i><b>12.7</b> Illustrative example</a>
+<ul>
+<li class="chapter" data-level="12.7.1" data-path=""><a href="#example-part-1-intervention-strategy"><i class="fa fa-check"></i><b>12.7.1</b> Example Part 1: Intervention strategy</a></li>
+<li class="chapter" data-level="12.7.2" data-path=""><a href="#exampleinterventiondesign"><i class="fa fa-check"></i><b>12.7.2</b> Example Part 2: Intervention design</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path=""><a href="#summary-and-personal-reflection"><i class="fa fa-check"></i>Summary and personal reflection</a>
 <ul>
 <li class="chapter" data-level="" data-path=""><a href="#summary-of-the-book"><i class="fa fa-check"></i>Summary of the book</a></li>
@@ -453,7 +481,7 @@ div.csl-indent {
 <!-- </div> -->
 <div style="text-align: left; margin-top: 0; margin-bottom: 3em;">
 <p>© Jan Dul<br>
-Version 1.0.0. First published March 10, 2026. Last update: May 22, 2026<br></p>
+Version 1.0.0. First published March 10, 2026. Last update: June 11, 2026<br></p>
 <p>Refer to the book as: Dul, J. (2026). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Chapman &amp; Hall/CRC Press.</p>
 </div>
 <div id="preface" class="section level1 unnumbered hasAnchor">
@@ -14090,7 +14118,7 @@ X_1*X_2 + X_2*X_3*X_4 → Y
 \end{equation}\]</span></p>
 <p>where the symbol ‘<span class="math inline">\(+\)</span>’ means the logical ‘OR’.</p>
 <p>It is also possible that the absence of a condition is part of a configuration. This is shown in the following example:</p>
-<p><span class="math display" id="eq:qca3">\[\begin{equation}
+<p><span class="math display" id="eq:effectiveness" id="eq:qca3">\[\begin{equation}
 \tag{11.4}
 X_1*X_2 + X_2*{\neg}X_3*X_4 → Y
 \end{equation}\]</span></p>
@@ -14242,9 +14270,9 @@ model_calibrated&lt;- nca_analysis(LF,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.37   0.000
-## URB 0.01   0.360
-## LIT 0.82   0.002
-## IND 0.02   0.353
+## URB 0.01   0.369
+## LIT 0.82   0.003
+## IND 0.02   0.367
 ## STB 0.46   0.004
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code># NCA-raw data
@@ -14265,10 +14293,10 @@ model_raw &lt;- nca_analysis(LR,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.27   0.000
-## URB 0.09   0.340
-## LIT 0.74   0.001
-## IND 0.11   0.096
-## STB 0.53   0.011
+## URB 0.09   0.333
+## LIT 0.74   0.002
+## IND 0.11   0.093
+## STB 0.53   0.009
 ## ---------------------------------------------------------------------------</code></pre>
 <!-- ``` {r Lipset-hide , echo = TRUE, eval = TRUE, warning=FALSE, message= FALSE, result = FALSE} -->
 <!-- library(QCA) -->
@@ -14569,10 +14597,10 @@ NCA’s necessity-in-kind analysis is conducted as follows:</p>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.003
-## R 0.31   0.001
-## P 0.17   0.007
-## V 0.05   0.528
+## L 0.29   0.002
+## R 0.31   0.000
+## P 0.17   0.009
+## V 0.05   0.530
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>library(NCA)
 set.seed(123) # for reproducible results
@@ -14589,10 +14617,10 @@ print(model)</code></pre>
 <pre><code>##   ce_fdh p    
 ## S 0.14   0.132
 ## C 0.00   1.000
-## L 0.29   0.003
-## R 0.31   0.001
-## P 0.17   0.007
-## V 0.05   0.528
+## L 0.29   0.002
+## R 0.31   0.000
+## P 0.17   0.009
+## V 0.05   0.530
 ## ---------------------------------------------------------------------------</code></pre>
 <p><br />
 <!-- ```{r, table2ncaqca, echo=FALSE, eval = FALSE out.width='100%', fig.align = "center", fig.cap="NCA necessity analysis. $d$ = effect size; $p$ = $p$-value."} -->
@@ -15186,35 +15214,998 @@ In many NCA-QCA multimethod studies, QCA results and NCA results are presented s
 </div>
 <div id="practice" class="section level1 hasAnchor" number="12">
 <h1><span class="header-section-number">12</span> NCA in practice<a href="#practice" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div style="text-align: left; font-style: italic; margin: 2em 0;">
-<p>This chapter will be made available soon.</p>
+<div id="summary-of-this-chapter-4" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> Summary of this chapter<a href="#summary-of-this-chapter-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This chapter may be of interest to practitioners and scholars who are engaged in the practical application of NCA. First, in Section <a href="#practicalvalue">12.2</a>, the value of NCA for practice is explained by distinguishing between must-have factors for desired outcomes (e.g., performance), and stop factors for undesired outcomes (e.g., risks, disorders) on which practitioners can act through intervention. It discusses the added value and challenges of shifting attention from the common average effect thinking to necessity thinking. This section also mentions application areas by referring to academic work that suggests such an application. The next section (Section <a href="#ncacontributions">12.3</a>) discusses NCA’s contribution to change and innovation in more detail. In an NCA-based intervention, levels of actionable factors are changed to make a specific practical outcome possible. This starts with the formulation of an intervention strategy, in which goals, barriers/drivers, and target groups are specified, culminating in necessity hypotheses. After that, the intervention is designed, based on collected data that are analyzed using NCA. The next two sections (Section<a href="#desiredintervention">12.4</a> and <a href="#undesiredintervention">12.5</a>) discuss how interventions can make a desired outcome possible, and can prevent undesired outcomes, respectively. Concepts like intervention effectiveness, efficiency and waste are introduced. Section <a href="#multipleintervention">12.6</a> discusses interventions with multiple necessary conditions. In the final section (Section <a href="#illustrativeexample1">12.7</a>), the application of an NCA-based intervention is illustrated with an example.</p>
 </div>
-<p><!-- 12.1 Summary of this chapter {#summary-of-this-chapter} -->
-<!-- 12.2 The practical value of necessity logic {#practicalvalue} -->
-<!--   12.2.1 Must-have factors for desired outcomes {#must} -->
-<!--   12.2.2 Stop factors for undesirable outcomes {#stop} -->
-<!--   12.2.3 Shifting attention from average to individual interventions {#shifting-attention-from-average-to-individual-interventions} -->
-<!--   12.2.4 Examples of application areas {#applicationareas} -->
-<!-- 12.3 NCA's contribution to change and innovation {#ncacontributions} -->
-<!--   12.3.1 Part 1: Intervention strategy {#interventionstrategy} -->
-<!--     12.3.1.1 Establishing the team {#establishing-the-team} -->
-<!--     12.3.1.2 Establishing the goal and target group {#establishing-the-goal-and-target-group} -->
-<!--     12.3.1.3 Establishing drivers/barriers {#establishing-drivers-barriers} -->
-<!--     12.3.1.4 Formulating necessity hypotheses {#formulating-necessity-hypotheses} -->
-<!--   12.3.2 Part 2: Intervention design {#part-2-intervention-design} -->
-<!--     12.3.2.1 Data collection {#data-collection} -->
-<!--     12.3.2.2 Data analysis {#data-analysis} -->
-<!--     12.3.2.3 Displaying crucial results {#displaying-crucial-results} -->
-<!-- 12.4 Interventions for making desired outcomes possible {#interventions-for-making-desired-outcomes-possible} -->
-<!--   12.4.1 Intervention effort {#intervention-effort} -->
-<!--   12.4.2 Intervention effectiveness, waste and efficiency {#intervention-effectiveness-waste-and-efficiency} -->
-<!--   12.4.3 Ideal intervention {#ideal-intervention} -->
-<!-- 12.5 Interventions for preventing undesired outcomes {#interventions-for-preventing-undesired-outcomes} -->
-<!-- 12.6 Interventions with multiple necessary conditions {#interventions-with-multiple-necessary-conditions} -->
-<!-- 12.7 Illustrative example {#illustrativeexample1} -->
-<!--   12.7.1 Example Part 1: Intervention strategy {#example-part-1-intervention-strategy} -->
-<!--   12.7.2 Example Part 2: Intervention design {#exampleinterventiondesign} --></p>
+<div id="practicalvalue" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> The practical value of necessity logic<a href="#practicalvalue" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Practice refers to the real-world context in which practitioners operate and implement interventions.
+For example:</p>
+<ul>
+<li><p>Teachers, school leaders, and others create effective learning environments in education.</p></li>
+<li><p>Employees, managers, and entrepreneurs create, produce, and deliver products and services in business and civil services.</p></li>
+<li><p>Physicians, nurses, and related professionals diagnose and treat health problems in health care.</p></li>
+<li><p>Ecologists, policymakers, and consumers prevent environmental degradation through collaborative actions in environmental management.</p></li>
+</ul>
+<p>In any domain, interventions can benefit from knowledge about necessary conditions. By acting on these conditions, interventions can either make a <em>desired outcome possible</em> (e.g., student learning, business success) or make an <em>undesired outcome impossible</em> (e.g., disease, environmental harm). Ignoring necessary conditions can make interventions ineffective or inefficient.</p>
+<p>Applying necessity logic often tells a previously undiscovered story for many practitioners. NCA offers a straightforward and practical way to analyze complex problems that may initially seem “too simple to be true.” It identifies <em>must-have</em> factors that are non-compensable requirements for a desired outcome, and <em>stop</em> factors that can block an undesired outcome. Achieving a desired outcome requires all must-have factors to be present, while the absence of a single factor guarantees failure. Preventing an undesired outcome is possible by removing just a single stop factor.</p>
+<!-- NCA offers a simple actionable approach to complex problems and challenges  that,  at first glance may look like "too simple to be true". NCA identifies the *must-have* factors that are non-compensable requirements for a desired outcome, and the *stop* factors that can prevent an undesired outcome. To make a desired outcome possible, all must-have factors must be present. To prevent an undesired outcome, removing any single stop factor is sufficient. -->
+<!-- Figure \@ref(fig:impossiblefig) shows the necessary condition $X$ that could be a must-have factor if the outcome $Y$ is desirable, or a stop factor if the outcome is undesirable. -->
+<p>Figure <a href="#fig:impossiblefig">12.1</a>-left shows what happens if necessity applies.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:impossiblefig"></span>
+<img src="impossible1.png" alt="$XY$-plot with the ceiling line dividing the area where cases are impossible from the area where cases are possible (Left). The target condition is the threshold level of $X$ that is necessary for the target outcome: a desired or undesired level of $Y$. Cases that stay in the bottleneck area cannot reach the target outcome (Right)." width="49%" /><img src="constraint1.png" alt="$XY$-plot with the ceiling line dividing the area where cases are impossible from the area where cases are possible (Left). The target condition is the threshold level of $X$ that is necessary for the target outcome: a desired or undesired level of $Y$. Cases that stay in the bottleneck area cannot reach the target outcome (Right)." width="49%" />
+<p class="caption">
+Figure 12.1: <span class="math inline">\(XY\)</span>-plot with the ceiling line dividing the area where cases are impossible from the area where cases are possible (Left). The target condition is the threshold level of <span class="math inline">\(X\)</span> that is necessary for the target outcome: a desired or undesired level of <span class="math inline">\(Y\)</span>. Cases that stay in the bottleneck area cannot reach the target outcome (Right).
+</p>
+</div>
+<div id="must" class="section level3 hasAnchor" number="12.2.1">
+<h3><span class="header-section-number">12.2.1</span> Must-have factors for desired outcomes<a href="#must" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Necessary conditions for a desired outcome (e.g., performance) are must-have factors: without them, the desired level of the outcome cannot be reached. In the <span class="math inline">\(XY\)</span>-plot in Figure <a href="#fig:impossiblefig">12.1</a>-left, the ceiling marks a boundary that cases cannot cross. A certain desired target level of the outcome (Figure <a href="#fig:impossiblefig">12.1</a>-right) is only possible if the condition value is above the target condition level. The target condition level acts as a binding constraint for the target outcome. It does not determine the outcome by itself, but it sets a minimum requirement that must be satisfied before the target becomes attainable. For a case to have any chance of attaining the target outcome, it must fall within the feasible area on the right side of the target condition.</p>
+<p>Cases with condition values below the target condition are <em>bottleneck cases</em>. They lie in the <em>bottleneck area</em>, which is the region with <span class="math inline">\(X\)</span>-values below the threshold needed for the target outcome. No matter how strongly other contributing conditions are improved, these cases cannot reach the desired outcome level as long as their condition level remains too low.</p>
+<p>An intervention can therefore create opportunity by removing this constraint. Increasing the condition level to at least the threshold moves a case out of the bottleneck area and into the non-bottleneck area to the right of it. Therefore, <span class="math inline">\(X\)</span> functions as a must-have factor for <span class="math inline">\(Y\)</span>: it is the entry ticket to the set of cases for which the target is achievable. From this perspective, the goal of an intervention is to raise <span class="math inline">\(X\)</span> for bottleneck cases so that they meet or exceed the threshold and can, in principle, attain the desired outcome.</p>
+</div>
+<div id="stop" class="section level3 hasAnchor" number="12.2.2">
+<h3><span class="header-section-number">12.2.2</span> Stop factors for undesired outcomes<a href="#stop" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Necessary conditions also matter when the target outcome is undesirable (e.g., risk, disease). In that setting, the same threshold logic flips interpretation: rather than asking what is required to enable a good outcome, the question is what is required for a bad outcome to be possible. A condition that is necessary for an undesired outcome becomes a stop factor: keeping it below its threshold blocks the undesired outcome from occurring.</p>
+<p>In the <span class="math inline">\(XY\)</span>-plot, cases in the bottleneck area (with <span class="math inline">\(X\)</span> below the threshold condition level) cannot reach the undesired target level. In that sense, they are protected: the necessary condition is missing or not high enough, so the harmful outcome is not attainable. By contrast, cases with <span class="math inline">\(X\)</span> at or above the threshold lie in the feasible region for the undesired outcome; they are the cases “at risk,” because the necessary condition is present and the bad outcome is, at least in principle, possible.</p>
+<p>Intervening in this context therefore has a different aim. Instead of lifting cases over a threshold, the goal is to move at-risk cases below it. Reducing <span class="math inline">\(X\)</span> to a value under the threshold removes the necessary condition for the undesired outcome, closing off the possibility of reaching that harmful target. Thus, when the outcome is undesirable, effective prevention focuses on maintaining the condition level below its critical threshold: if the stop factor is kept low enough, the undesired outcome is blocked by necessity. In other words, a single condition can block an undesired outcome if the value of that condition is below the threshold.</p>
+</div>
+<div id="shifting-attention-from-average-to-individual-interventions" class="section level3 hasAnchor" number="12.2.3">
+<h3><span class="header-section-number">12.2.3</span> Shifting attention from average to individual interventions<a href="#shifting-attention-from-average-to-individual-interventions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>NCA’s necessity logic is inherently threshold-based. It shifts attention away from interventions based on average effects for a group of cases (Figure <a href="#fig:necessityaveragefig">12.2</a>) to interventions based on constraints for individual cases.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:necessityaveragefig"></span>
+<img src="necessityaverage1.png" alt="Shifting intervention perspective from average effect logic to necessity logic." width="49%" />
+<p class="caption">
+Figure 12.2: Shifting intervention perspective from average effect logic to necessity logic.
+</p>
+</div>
+<p>Regression-based approaches estimate how much a factor contributes on average to an outcome (nearly always assuming compensatory effects among predictors). Under an average-effect intervention logic, to achieve a desired outcome, the goal generally is to increase contributing factors <em>as much as possible</em>, and for an undesired outcome, the goal generally is to decrease them. In contrast, necessity logic identifies which factors are indispensable: those that must be present for a desired or undesired outcome to be possible at all. Necessity-based intervention logic focuses on ensuring that a condition reaches at least the target condition <span class="math inline">\(X\)</span> (for a desired outcome) or remains below it (for an undesired outcome), which applies to every single case. NCA’s necessity logic provides a such a framework for designing interventions that are effective, efficient, and targeted. It can focus on the relevant cases where the intervention will work: cases that must exit or enter the bottleneck area. This approach complements, and in some situations challenges, the dominant average-effect paradigm that underpins most evidence-based practices <span class="citation">(e.g., <a href="#ref-dul2024identifying">Dul, 2025</a>)</span>. In this way, NCA does not replace but rather enriches causal reasoning in evidence-based practice: it highlights what must (not) exist rather than what merely increases (decreases) an outcome on average.</p>
+<p>However, just as it can be difficult to shift the perception from the first woman that is noticed in the picture in Figure <a href="#fig:youngold">2.5</a> to the second woman hidden in it, shifting from an average-effect mindset to a necessity-logic mindset is equally challenging (and maybe even more!). Research in the psychology of causality <span class="citation">(e.g., <a href="#ref-mandel1998integration">Mandel &amp; Lehman, 1998</a>)</span> shows that people naturally overestimate sufficiency (“this condition produces the outcome”) and underestimate necessity (“this condition must be present, otherwise the effect cannot occur”). Sufficiency-based causal reasoning is also dominant in learning and working environments. Statistical education is dominated by probabilistic sufficiency models, and many scientific methods are designed to detect average effects. As a result, large parts of society operate on the assumption that optimizing averages for the whole group or for subgroups is the only way to understand and improve systems.</p>
+<p>The dominance of average-effect logic is visible, for example, in governmental policies that allocate support based on mean income of (sub) groups, in medical protocols built around average treatment effects from clinical trials, and in organizational performance programs aimed at improving average satisfaction scores. Because actions based on overall averages often fail to address the needs of individual cases, systems frequently try to compensate by creating increasingly fine-grained subgroups and then acting on the average within each subgroup. This approach adds complexity without solving the underlying problem: decisions remain driven by averages, not by the specific conditions that determine what is possible for each individual case.</p>
+<p>Recognizing necessity logic requires a deliberate shift from asking “What may help?” to asking “What is indispensable?” This change in perspective is subtle but difficult when the standard is average-effect thinking. With a necessity perspective, it becomes possible to act on the specific cases that require attention, rather than designing interventions for broad groups based on averages.</p>
+<!-- If $X$ is necessary for $Y$ there is an area above the ceiling line where cases cannot exist. Below the ceiling line cases are possible. However although cases are possible in the entire area below the ceiling, Figure \@ref(fig:impossiblefig) Right shows that a case in the *bottleneck area* (with $X$-values below threshold $X$-value) will not achieve a certain target outcome level of $Y$. The target level is only possible for cases that have a necessary condition level at or above the threshold level. Cases with condition levels below the threshold level may exist (are possible), but will not achieve the target outcome. They are in the bottleneck area of the possible area because their condition level is a constraint (bottleneck) for the target outcome level.  -->
+<!-- If the target outcome is *desirable* (e.g., performance), the condition $X$ is a *must-have* factor for $Y$. All cases that want to have the possibility to achieve the target outcome must be in the possible area on the right side of the threshold level. Cases in the bottleneck area will not be able to achieve the desired target outcome. Cases in the bottleneck area will only be able to reach the target outcome if the level of the condition is *increased* (e.g., through an intervention) to at least the threshold level. -->
+<!-- If the target outcome is *undesirable* (e.g., disease), the condition $X$ is a *stop factor* for $Y$. All cases that are in the bottleneck area will *not* have the undesired target outcome. These cases are protected against the undesired outcome. However, cases that are on the right side of the threshold condition can get the undesired target level, and are thus at risk. Only when the level of the condition is *decreased* (e.g., through an intervention) to below the threshold level, these cases will be fully protected against the risk of the undesired taget outcome. -->
+<!-- NCA's necessity logic is inherently threshold-based. It shifts the focus away from average effects to critical limits (Figure \@ref(fig:necessityaveragefig)) by clarifying how much of a condition is necessary for success, and how little is safe for prevention, thereby providing practitioners with clear boundaries for effective action. -->
+<!-- With an average efffect-based intervention logic, an intervention aimed at achieving a certain outcome focuses on increasing or decreasing $X$ *as much as possible*. In contrast, with a necessity-based intervention logic, the advice is *to have at least the threshold level of $X$* that corresponds to that specific desired outcome, for having the possibility (not the guarantee) achieving a *specific* desired outcome. For *guaranteed*  avoiding a specific level of undesired outcome the advice is *to have a value
+<!-- The richness of NCA's necessity in degree logic^[When $X$ is necessary for $Y$, high $X$ makes high $Y$ possible, but does not guarantee it. Low $X$ guarantees low $Y$, but is not necessary because there may be other necessary conditions that could also stop the outcome.] explains why necessity logic provides a powerful framework for designing effective, efficient, and targeted interventions in practice. It complements and, in some cases, challenges the dominant average-effect paradigm that underlies most evidence-based interventions [e.g., @dul2024identifying]. Whereas regression-based approaches estimate how much a factor contributes *on average* to an outcome (assuming compensatory effects among predictors), necessity logic identifies which factors are *indispensable* for an outcome to be possible at all: factors that must be present to enable a desired outcome or a single factor can be removed to prevent an undesired one. In this way, NCA does not replace but rather adds a new causal perspective to evidence-based practice: one that focuses on what must be in place or what must be removed, rather than on what typically increases or decreases an outcome on average. -->
+</div>
+<div id="applicationareas" class="section level3 hasAnchor" number="12.2.4">
+<h3><span class="header-section-number">12.2.4</span> Examples of application areas<a href="#applicationareas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Scholars have applied NCA in areas that are relevant for practice. Their studies show that necessity exists and provide relevant information beyond what is currently known. The overview of Table <a href="#tab:general">12.1</a> shows that NCA can be applied in virtually any area of practice where success must be realized, or risks must be prevented. Most studies have found important necessary conditions on which the practitioner could act. It illustrates that in any specific practical setting necessary conditions can be identified for action.</p>
+<!-- \textcolor{red}{Table: selection needed.} -->
+<table class="table" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:general">Table 12.1: </span>Examples of NCA studies that test a necessity hypothesis <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span> in several practice fields.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+</th>
+<th style="text-align:left;">
+X = condition
+</th>
+<th style="text-align:left;">
+Y = outcome
+</th>
+<th style="text-align:left;">
+Focal unit
+</th>
+<th style="text-align:left;">
+Reference
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Economics</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+1
+</td>
+<td style="text-align:left;width: 5cm; ">
+National adoption of support policies and low-intensity agricultural practices
+</td>
+<td style="text-align:left;width: 5cm; ">
+National environmental sustainability performance in the agricultural sector
+</td>
+<td style="text-align:left;width: 2cm; ">
+Agricultural firm
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Lankoski &amp; Lankoski (<a href="#ref-lankoski2023environmental">2023</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+2
+</td>
+<td style="text-align:left;width: 5cm; ">
+Human capital, institutional business facilities, and market opportunities
+</td>
+<td style="text-align:left;width: 5cm; ">
+Open innovation
+</td>
+<td style="text-align:left;width: 2cm; ">
+Country
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Galindo-Martin et al. (<a href="#ref-galindomartin2025open">2025</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Education</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+3
+</td>
+<td style="text-align:left;width: 5cm; ">
+Individual characteristics and study-related behaviours (e.g., conscientiousness, attendance, study time)
+</td>
+<td style="text-align:left;width: 5cm; ">
+Academic success (grades/GPA)
+</td>
+<td style="text-align:left;width: 2cm; ">
+Student
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Tynan et al. (<a href="#ref-tynan2020education">2020</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+4
+</td>
+<td style="text-align:left;width: 5cm; ">
+SAT mathematic scores
+</td>
+<td style="text-align:left;width: 5cm; ">
+GPA in mathematics major
+</td>
+<td style="text-align:left;width: 2cm; ">
+Student
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">J. Li et al. (<a href="#ref-li2023ecosystems">2024</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Entrepreneurship</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+5
+</td>
+<td style="text-align:left;width: 5cm; ">
+Entrepreneurial role stress
+</td>
+<td style="text-align:left;width: 5cm; ">
+Burnout
+</td>
+<td style="text-align:left;width: 2cm; ">
+Self-employed individual
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Manchiraju et al. (<a href="#ref-manchiraju2023entrepreneurial">2023</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+6
+</td>
+<td style="text-align:left;width: 5cm; ">
+Entrepreneurial ecosystem domains (e.g., political environment, financing)
+</td>
+<td style="text-align:left;width: 5cm; ">
+Deep-tech entrepreneurship
+</td>
+<td style="text-align:left;width: 2cm; ">
+Country
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Dionisio et al. (<a href="#ref-dionisio2023identifying">2023</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Environmental Sciences</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+7
+</td>
+<td style="text-align:left;width: 5cm; ">
+Access to and experience of urban nature
+</td>
+<td style="text-align:left;width: 5cm; ">
+Well-being
+</td>
+<td style="text-align:left;width: 2cm; ">
+Urban resident
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Allard-Poesi &amp; Massu (<a href="#ref-allard2023research">2023</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+8
+</td>
+<td style="text-align:left;width: 5cm; ">
+Planning, goal setting, and R&amp;D capabilities
+</td>
+<td style="text-align:left;width: 5cm; ">
+Eco-innovation
+</td>
+<td style="text-align:left;width: 2cm; ">
+Agricultural firm
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Chaparro-Banegas et al. (<a href="#ref-chaparrobanegas2024transforming">2024</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Human Resource Management</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+9
+</td>
+<td style="text-align:left;width: 5cm; ">
+High performance work practices
+</td>
+<td style="text-align:left;width: 5cm; ">
+Job satisfaction &amp; managerial effectiveness
+</td>
+<td style="text-align:left;width: 2cm; ">
+Organization
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Garg et al. (<a href="#ref-garg2019exploring">2019</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+10
+</td>
+<td style="text-align:left;width: 5cm; ">
+Technostress related to workplace social media use
+</td>
+<td style="text-align:left;width: 5cm; ">
+Work performance
+</td>
+<td style="text-align:left;width: 2cm; ">
+Organization
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Wang &amp; Zhao (<a href="#ref-wang2025a">2025</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>International Business/Management</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+11
+</td>
+<td style="text-align:left;width: 5cm; ">
+Organizational context (e.g., top management support, technical competencies.)
+</td>
+<td style="text-align:left;width: 5cm; ">
+Stage of adoption of artificial intelligence
+</td>
+<td style="text-align:left;width: 2cm; ">
+Organization
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Solaimani &amp; Swaak (<a href="#ref-solaimani2023critical">2023</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+12
+</td>
+<td style="text-align:left;width: 5cm; ">
+Environmental, social, and governance performance scores
+</td>
+<td style="text-align:left;width: 5cm; ">
+R&amp;D expenditure (innovation)
+</td>
+<td style="text-align:left;width: 2cm; ">
+Multinational life sciences firm
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Subramanian et al. (<a href="#ref-subramanian2024exploring">2024</a>)</span>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Marketing</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+13
+</td>
+<td style="text-align:left;width: 5cm; ">
+Personality traits
+</td>
+<td style="text-align:left;width: 5cm; ">
+Impulsive buying behavior
+</td>
+<td style="text-align:left;width: 2cm; ">
+Consumer
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Shahjehan et al. (<a href="#ref-shahjehan2019organizational">2019</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Medicine and Health</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+14
+</td>
+<td style="text-align:left;width: 5cm; ">
+Metacognition
+</td>
+<td style="text-align:left;width: 5cm; ">
+Motivation
+</td>
+<td style="text-align:left;width: 2cm; ">
+Individual with schizophrenia spectrum disorder
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Luther et al. (<a href="#ref-luther2017metacognition">2017</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+15
+</td>
+<td style="text-align:left;width: 5cm; ">
+Baseline depressive symptoms, self-criticism, rumination and stressful events
+</td>
+<td style="text-align:left;width: 5cm; ">
+Major depressive episodes across two years
+</td>
+<td style="text-align:left;width: 2cm; ">
+Adolescent
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Colpizzi et al. (<a href="#ref-colpizzi2025unveiling">2025</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Operations and Supply Chain management</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+16
+</td>
+<td style="text-align:left;width: 5cm; ">
+Critical success factors for lean (e.g., leadership, employee involvement, continuous improvement)
+</td>
+<td style="text-align:left;width: 5cm; ">
+Implementation of lean practices in manufacturing SMEs
+</td>
+<td style="text-align:left;width: 2cm; ">
+Manufacturing firm
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Knol et al. (<a href="#ref-knol2018implementing">2018</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+17
+</td>
+<td style="text-align:left;width: 5cm; ">
+Formal contracts and interpersonal trust in buyer–supplier relationships
+</td>
+<td style="text-align:left;width: 5cm; ">
+Innovation in buyer–supplier relationships
+</td>
+<td style="text-align:left;width: 2cm; ">
+Buyer-supplier relationship
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Van der Valk et al. (<a href="#ref-van2016contracts">2016</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Psychology/Organizational Behavior</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+18
+</td>
+<td style="text-align:left;width: 5cm; ">
+Satisfaction of basic psychological needs for autonomy, competence and relatedness
+</td>
+<td style="text-align:left;width: 5cm; ">
+Work engagement
+</td>
+<td style="text-align:left;width: 2cm; ">
+Employee
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Ding &amp; Kuvaas (<a href="#ref-ding2023using">2023</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+19
+</td>
+<td style="text-align:left;width: 5cm; ">
+Levels of fear of missing out and social networking addiction
+</td>
+<td style="text-align:left;width: 5cm; ">
+Psychological well‑being of young adults
+</td>
+<td style="text-align:left;width: 2cm; ">
+Young adult
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Sirisety et al. (<a href="#ref-sirisety2025necessary">2025</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Public Administration</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+20
+</td>
+<td style="text-align:left;width: 5cm; ">
+Delay of first response, political decentralization, elderly populations, and urbanization
+</td>
+<td style="text-align:left;width: 5cm; ">
+Early COVID-19 Mortality
+</td>
+<td style="text-align:left;width: 2cm; ">
+Country
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Yan et al. (<a href="#ref-yanmatters">2023</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+21
+</td>
+<td style="text-align:left;width: 5cm; ">
+Institutional trust and individualism
+</td>
+<td style="text-align:left;width: 5cm; ">
+COVID-19 first-response stringency
+</td>
+<td style="text-align:left;width: 2cm; ">
+Country
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Y. Li et al. (<a href="#ref-li2025motivates">in press</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Strategy</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+22
+</td>
+<td style="text-align:left;width: 5cm; ">
+Managers’  strategic myopia
+</td>
+<td style="text-align:left;width: 5cm; ">
+Firm performance
+</td>
+<td style="text-align:left;width: 2cm; ">
+Manager
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Czakon et al. (<a href="#ref-czakon2023re">2023</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+23
+</td>
+<td style="text-align:left;width: 5cm; ">
+Market PL-driven orientation
+</td>
+<td style="text-align:left;width: 5cm; ">
+Market-driving orientation
+</td>
+<td style="text-align:left;width: 2cm; ">
+Company
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Vu &amp; Tolstoy (<a href="#ref-vu2025examining">2025</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Technology</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+24
+</td>
+<td style="text-align:left;width: 5cm; ">
+Cable features (void fraction and critical current)
+</td>
+<td style="text-align:left;width: 5cm; ">
+Change in current sharing temperature
+</td>
+<td style="text-align:left;width: 2cm; ">
+Twisted Cable-in-Conduct Conductor
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Kwon (<a href="#ref-kwon2022critical">2022</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+25
+</td>
+<td style="text-align:left;width: 5cm; ">
+Evolutionary conservation
+</td>
+<td style="text-align:left;width: 5cm; ">
+Dynamic cooperativity
+</td>
+<td style="text-align:left;width: 2cm; ">
+Amino acid (protein system)
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Chong &amp; Ham (<a href="#ref-chong2023evolutionary">2023</a>)</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Tourism and Hospitality</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+26
+</td>
+<td style="text-align:left;width: 5cm; ">
+Positive affect and carefreeness
+</td>
+<td style="text-align:left;width: 5cm; ">
+Eudaimonic experience
+</td>
+<td style="text-align:left;width: 2cm; ">
+Tourist
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Lee &amp; Jeong (<a href="#ref-lee2020beyond">2020</a>)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+27
+</td>
+<td style="text-align:left;width: 5cm; ">
+Organizational capabilities (e.g., transparency, flexibility)
+</td>
+<td style="text-align:left;width: 5cm; ">
+Resilience
+</td>
+<td style="text-align:left;width: 2cm; ">
+Hotel
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Ofori (<a href="#ref-ofori2024necessary">2024</a>)</span>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>Transportation</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;padding-left: 2em;width: 0.5cm; " indentlevel="1">
+28
+</td>
+<td style="text-align:left;width: 5cm; ">
+Favorable meteorological conditions (temperature, precipitation, humidity, wind)
+</td>
+<td style="text-align:left;width: 5cm; ">
+Bike rental demand in Washington, DC
+</td>
+<td style="text-align:left;width: 2cm; ">
+Hours across a two-year period
+</td>
+<td style="text-align:left;width: 3cm; ">
+<span class="citation">Kumar (<a href="#ref-kumar2021meteorological">2021</a>)</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="ncacontributions" class="section level2 hasAnchor" number="12.3">
+<h2><span class="header-section-number">12.3</span> NCA’s contribution to change and innovation<a href="#ncacontributions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using NCA in practice means that an action must be taken on identified necessary conditions. NCA does not have its own change or innovation approach, but can add to existing ones. It provides a new perspective by focusing on necessity logic and by selecting and prioritizing (non-)bottlenecks cases to be acted on. In this way NCA can add new value to any existing change process be it a classical Plan-Do-Check-Act for continuous improvement, more recent methods for agile product development and management like Scrum, or any other approach that is used in a specific practice.</p>
+<p>Each phase of the change process from planning, execution and evaluation can benefit from NCA.
+<!-- to it. In all steps of the change process from planning, execution and evaluation  -->
+<!-- NCA adds value by focusing on necessity logic, and by selecting and prioritizing actions based on oberverd bottlenecks (see below). -->
+<!-- ## The development of an NCA-based intervention -->
+<!-- NCA offers the conceptual and analytical approach for interventions in practice.  -->
+<!-- NCA The necessity in degree logic that is provided by NCA's methodology  -->
+NCA can help to decide about the strategic direction of the intervention (focus on must-have and stop factors, and not on nice-to-have factors and average effects). NCA’s analytic tools can help to operationalize these strategies into concrete effective and efficient interventions by identifying which conditions and cases must be acted on. Specifically, NCA clarifies what potential must-have factors must be in place, and what potential stop factors must be removed or reduced, for interventions to succeed.
+<!-- , and to which extent, to make a target desired outcome possible or prevent an undesired target outcome. -->
+<!-- Practitioners can benefit from NCA because  -->
+<!-- In the development of an NCA-based intervention, this distinction between intervention strategy driven the NCA methodology, and operational interventions design, driven by the NCA method is apparent in the two proposed phases of the intervention design using evidence from NCA.  --></p>
+<p>The development of an NCA-based intervention consists of two main parts. The first part is the intervention <em>strategy</em>, which establishes the team of stakeholders involved in the intervention, sets the goal and target group for the intervention, suggests the drivers and barriers to achieve that goal, and formulates the necessary condition hypotheses for prioritized drivers and barriers to be analyzed further. In this phase, NCA’s strengths as a broader methodological/theoretical approach based on necessity logic are leveraged.</p>
+<p>The second part is the intervention <em>design</em> based on a study of a group of cases that represent the target group. For this group, existing or new data are collected for the outcome <span class="math inline">\(Y\)</span> and the selected the barriers and drivers (<span class="math inline">\(X\)</span>’s) expressed in the hypotheses. These data are analyzed using the standard procedures described in Chapter <a href="#dataanalysis">9</a>. Based on the results, an effective and efficient intervention can be designed that focuses on bottleneck conditions and bottleneck cases.</p>
+<p>The following sections <a href="#interventionstrategy">12.3.1</a> and <a href="#interventiondesign">12.3.2</a> outline the details of these two parts.</p>
+<div id="interventionstrategy" class="section level3 hasAnchor" number="12.3.1">
+<h3><span class="header-section-number">12.3.1</span> Part 1: Intervention strategy<a href="#interventionstrategy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="establishing-the-team" class="section level4 hasAnchor" number="12.3.1.1">
+<h4><span class="header-section-number">12.3.1.1</span> Establishing the team<a href="#establishing-the-team" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>After a decision has been made to include NCA in the change process, the NCA-based intervention approach can be integrated as follows. It is assumed that a broad team consisting of stakeholders that affect or are affected by the intervention, is established to allow a successful change project. Having a broad team is not only a common advice for successful change, it is also particularly important for an NCA-based intervention as different stakeholders may have different views on the goals, target outcome and target group of the intervention. Having a diversity of stakeholders helps to avoid that important drivers and barriers (potential necessary conditions) are overlooked (see below). In a business environment, for example, a diverse team could consist of representatives from strategy, marketing, operations, customer services and business analytics, etc., who all could have a different stake in the intervention project and have different views about important necessary conditions.</p>
+<p>It can be helpful to assign one team member to focus specifically the necessity perspective, ideally as a rotating role so everyone develops this skill. During change processes and team discussions, it is easy to lose sight of necessity logic or to slip back into probabilistic sufficiency thinking. A designated team member helps keep the group attentive to necessity-oriented reasoning and supports the collective learning process.</p>
+</div>
+<div id="establishing-the-goal-and-target-group" class="section level4 hasAnchor" number="12.3.1.2">
+<h4><span class="header-section-number">12.3.1.2</span> Establishing the goal and target group<a href="#establishing-the-goal-and-target-group" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The <em>intervention goal</em> must be clearly defined and preferably shared among all those involved in the design and implementation of the intervention. The goal specifies the intended result of the intervention, and specifies the desired or undesired outcome. Whenever possible, a specific <em>target outcome</em> is to be expressed quantitatively. This could be a specific level of the outcome that should be achieved (desired outcome) or prevented (undesired outcome). It is also possible to express this level in terms of the percentage of cases that should be able to achieve the outcome or be prevented from having the outcome. Such a quantification of the goal helps to guide the second part of intervention development: the intervention design. The <em>target group</em> is the broader collection of cases for which the intervention goal is set. It may be that for reasons of effectiveness and efficiency, only part of the cases from the target group (the <em>intervention group</em>) will actually receive the intervention (see below).</p>
+<!-- - stakeholders (zie stakeholder theories) -->
+<!-- - potential necessary conditions -->
+<!-- - mobilize knowledge for necessity hypothesis, different angles. change stakeholded -->
+<!-- - participation change -->
+<!-- - agreement/ challenging -->
+</div>
+<div id="establishing-driversbarriers" class="section level4 hasAnchor" number="12.3.1.3">
+<h4><span class="header-section-number">12.3.1.3</span> Establishing drivers/barriers<a href="#establishing-driversbarriers" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Based on the team’s knowledge, a list of potential drivers and barriers to achieve the goal is developed through a creative process, for example brainstorming. The goal is to have a long list of potential drivers and barriers for the outcome. If there are multiple outcomes, each outcome has its own list of drivers and barriers. Drivers and barriers are identified based on the team members’ expert knowledge and experience, and possibly academic knowledge (see Section <a href="#sources">7.4</a>). The reason for this important step is that, in contrast to interventions based on for example big-data or AI-based approaches, an NCA-based intervention is selective and transparent regarding the conditions and cases to be acted on. It only focuses on crucial conditions and relevant cases in order to be effective, efficient, and avoid waste of resources.</p>
+</div>
+<div id="formulating-necessity-hypotheses" class="section level4 hasAnchor" number="12.3.1.4">
+<h4><span class="header-section-number">12.3.1.4</span> Formulating necessity hypotheses<a href="#formulating-necessity-hypotheses" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The goal of this phase is to reduce the number of drivers and barriers to the essential ones: the potential necessary conditions. Often the number of drivers and barriers that are developed in the previous phase is large. However, many drivers and barriers are “just” important from the perspective of probability and average effects, but not from the perspective of necessity. Through a careful evaluation of the drivers/barriers, it is possible to identify the potential necessary conditions. This evaluation requires a team discussion, and results in a selection of drivers and barriers, that the team considers necessary conditions for achieving the goal. If the set of necessary conditions is still large, prioritization may be needed, in particular when an NCA-based intervention is new to the team.</p>
+<p>The intervention development continues with the selected necessary conditions. For each necessary condition a preliminary necessity hypothesis is formulated and further developed toward a formal necessity hypothesis, as outlined in Chapter <a href="#hypothesisformulation">7</a>. For example, this phase specifies variables <span class="math inline">\(X\)</span> (measurable drivers/barrier) and <span class="math inline">\(Y\)</span> (measurable goal), or the selection of group of cases where the hypothesis is expected to apply (entire target group, selection of target group, or beyond the target group). This information is important for data collection (in Part 2 of the intervention) and the design of an effective intervention. The team should critically evaluate whether the potential necessary condition is <em>causal</em>: if the single condition is removed, will the target outcome not be possible? An intervention only works if the condition is causal (see Chapter <a href="#causality">2</a>). Since causality cannot be observed, the hypothesis should make causality plausible. If not, the necessary condition, is not a candidate for an intervention based on necessity causal logic.<a href="#fn117" class="footnote-ref" id="fnref117"><sup>117</sup></a></p>
+<p>The result of the strategic phase is one or more causal necessary condition hypotheses formulated as <span class="math inline">\(X\)</span> is necessary for <span class="math inline">\(Y\)</span> where <span class="math inline">\(X\)</span> is the set of expected <em>necessary</em> drivers or barriers, and <span class="math inline">\(Y\)</span> is the desired or undesired target outcome (possibly with quantification of the level of the target outcome).</p>
+</div>
+</div>
+<div id="interventiondesign" class="section level3 hasAnchor" number="12.3.2">
+<h3><span class="header-section-number">12.3.2</span> Part 2: Intervention design<a href="#interventiondesign" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An evidence-based intervention is based on an established relationship supported by empirical data. For an NCA-based intervention this means that the team’s formulated formal necessary conditions hypotheses is tested with archival or new data obtained about <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> from the target group, or from a group that is representative for the target group. The aim of this analysis is to find the condition thresholds that are assumed to apply to the entire target group. This is the basis for the intervention in the target group.</p>
+<p>Specifically, each hypothesis that is selected in the previous phase is tested to evaluate if the hypothesis is supported and the condition is indeed necessary. If necessity holds, an <span class="math inline">\(XY\)</span>-plot similar to Figure <a href="#fig:impossiblefig">12.1</a>-right is generated to observe where the ceiling exists and which cases are inside or outside of the bottleneck area. Once the target conditions for the target outcome are estimated, the intervention focuses on removing cases from the bottleneck area (if the outcome is desirable) by increasing the value of the necessary conditions, or moving cases into the bottleneck area (if the outcome is undesirable) by decreasing the value of the necessary condition. Different intervention designs are possible depending on whether it focuses on all or a selection of cases, and on all or a selection of necessary conditions.</p>
+<p>It may be concluded that only a specific group of cases from the target group should receive the intervention to benefit from it (<em>intervention group</em>). An effective and efficient intervention focuses only on cases in the target group that have condition levels below the threshold (if the target outcome is desired) or have condition levels above the threshold (if the target outcome is undesired).</p>
+<div id="data-collection" class="section level4 hasAnchor" number="12.3.2.1">
+<h4><span class="header-section-number">12.3.2.1</span> Data collection<a href="#data-collection" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A sample of the target group or another group of cases that is representative for the target group is selected for testing the hypothesis. For each case in the sample, scores for <span class="math inline">\(X_j\)</span> (<span class="math inline">\(j\)</span> is the specific index of a necessary barrier/driver) and <span class="math inline">\(Y\)</span> must be available. For proper results, the data must be reliable (same score for repeated measurements under the same circumstances) and valid (scores must correspond to the meaning of the variables in the hypothesis) (see Chapter <a href="#datacollection">8</a>).</p>
+</div>
+<div id="data-analysis" class="section level4 hasAnchor" number="12.3.2.2">
+<h4><span class="header-section-number">12.3.2.2</span> Data analysis<a href="#data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>After data collection the data are analyzed according to NCA’s standards (Chapter <a href="#dataanalysis">9</a>). Each hypothesis is rejected or supported (= not rejected). If supported, the condition is considered for the NCA-based intervention. If rejected, the condition is “just” a contributing factor but not essential.</p>
+</div>
+<div id="displaying-crucial-results" class="section level4 hasAnchor" number="12.3.2.3">
+<h4><span class="header-section-number">12.3.2.3</span> Displaying crucial results<a href="#displaying-crucial-results" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>For each supported hypothesis, the cases are shown in an <span class="math inline">\(XY\)</span>-plot. In the example of Figure <a href="#fig:intervention1fig">12.3</a>-left, five cases (A-E) are shown.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:intervention1fig"></span>
+<img src="intervention1a.png" alt="$XY$-plot with ceiling line, target outcome $y_c$, target condition $x_c$ and five cases. Left: dashed lines are the bottleneck distances; Right: A generic intervention on all cases." width="49%" /><img src="intervention2a.png" alt="$XY$-plot with ceiling line, target outcome $y_c$, target condition $x_c$ and five cases. Left: dashed lines are the bottleneck distances; Right: A generic intervention on all cases." width="49%" />
+<p class="caption">
+Figure 12.3: <span class="math inline">\(XY\)</span>-plot with ceiling line, target outcome <span class="math inline">\(y_c\)</span>, target condition <span class="math inline">\(x_c\)</span> and five cases. Left: dashed lines are the bottleneck distances; Right: A generic intervention on all cases.
+</p>
+</div>
+<p>In this plot, the condition <span class="math inline">\(X\)</span> is displayed on the horizontal axis, the outcome <span class="math inline">\(Y\)</span> on the vertical axis, and the five cases with specific <span class="math inline">\(X\)</span>- and <span class="math inline">\(Y\)</span>-values are displayed as dots. The plot also shows the estimated ceiling line, separating the white ceiling zone (empty space) where cases are impossible from the gray feasible area below the ceiling line where cases are possible. In the plot, the target level <span class="math inline">\(Y\)</span> = <span class="math inline">\(y_c\)</span> and the corresponding target condition level <span class="math inline">\(x_c\)</span> are displayed as well. These points indicate that level <span class="math inline">\(x_c\)</span> of <span class="math inline">\(X\)</span> is necessary for target outcome <span class="math inline">\(y_c\)</span> of <span class="math inline">\(Y\)</span>. The threshold value <span class="math inline">\(x_c\)</span> defines the bottleneck area. Cases in this area are the bottleneck cases that cannot reach the target outcome <span class="math inline">\(y_c\)</span> unless their condition <span class="math inline">\(X\)</span> is increased to <span class="math inline">\(x \geq x_c\)</span>.</p>
+<p>In Figure <a href="#fig:intervention1fig">12.3</a>-left, cases A, B, and C are bottleneck cases (<span class="math inline">\(x \leq x_c\)</span>) and cases D and E are <em>non-bottleneck cases</em>. For the latter, <span class="math inline">\(y = y_c\)</span> is achievable from the perspective of this <span class="math inline">\(X\)</span>. The <em>bottleneck distance</em> is the horizontal distance from a case to the target value <span class="math inline">\(x_c\)</span>, indicated by a dashed line. If the outcome is desirable, cases A, B and C cannot achieve the desired outcome <span class="math inline">\(y_c\)</span>. These cases must overcome the bottleneck distance to make <span class="math inline">\(y_c\)</span> possible. For case A more <em>intervention effort</em> is needed to overcome the bottleneck distance (larger bottleneck distance) than for cases B and C.</p>
+</div>
+</div>
+</div>
+<div id="desiredintervention" class="section level2 hasAnchor" number="12.4">
+<h2><span class="header-section-number">12.4</span> Interventions for making desired outcomes possible<a href="#desiredintervention" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When the outcome is desirable, cases inside the bottleneck area (bottleneck cases) should be removed from it by increasing the condition value. For example, when it was found that students’ study time <span class="math inline">\(X\)</span> is necessary for exam grade <span class="math inline">\(Y\)</span>, and a certain target pass grade <span class="math inline">\(y_c\)</span> can only be achieved with at least <span class="math inline">\(x_c\)</span> study time, the intervention consists of motivating students with study time <span class="math inline">\(x &lt; x_c\)</span> to increase their study time to at least <span class="math inline">\(x \geq x_c\)</span>.</p>
+<p>Figure <a href="#fig:intervention1fig">12.3</a>-right shows an example of in intervention to make a <em>desired</em> target outcome possible. The intervention consists of a generic condition <em>increase</em> of 0.15 (15% of the range of 1.00) and is applied to all five cases.</p>
+<div id="intervention-effort" class="section level3 hasAnchor" number="12.4.1">
+<h3><span class="header-section-number">12.4.1</span> Intervention effort<a href="#intervention-effort" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An <em>intervention effort</em> is an externally applied change of the value of the necessary condition. The effort is applied to a case from the target group. A case to which the intervention is applied is called an <em>intervention case</em>. For practical or strategic reasons, it may be that not all cases from the target group are intervention cases. The <em>total intervention effort</em> is the sum of efforts applied to the intervention cases. The example of Figure <a href="#fig:intervention1fig">12.3</a>-right shows that the generic intervention is applied to all five cases, such that all these cases are intervention cases. The total intervention effort is 5 × 0.15 = 0.75.</p>
+<p>An <em>effective case</em> is an intervention case that was in the bottleneck area before the intervention and left that area due to the intervention effort. An <em>ineffective case</em> is an intervention case that was in the bottleneck area before the intervention, but did not leave the area despite the intervention effort (the effort was too small). An <em>irrelevant case</em> is an intervention case that was not in the bottleneck area before and also not after the intervention. An <em>ignored case</em> is a bottleneck case to which an intervention is not applied.</p>
+<p>So, an effective case is a <em>bottleneck case</em> that becomes a <em>non-bottleneck</em> case after intervention. An ineffective or ignored case stays a bottleneck area, and an irrelevant case stays in the non-bottleneck area.</p>
+<p>Figure <a href="#fig:intervention1fig">12.3</a>-right shows that bottleneck cases B and C are effective cases as they left the bottleneck area. Case A is an ineffective case and cases D and E are irrelevant cases.</p>
+</div>
+<div id="intervention-effectiveness-waste-and-efficiency" class="section level3 hasAnchor" number="12.4.2">
+<h3><span class="header-section-number">12.4.2</span> Intervention effectiveness, waste and efficiency<a href="#intervention-effectiveness-waste-and-efficiency" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The goal of an NCA-based intervention is to move the bottleneck cases out of the bottleneck area by raising their condition value to at least the target condition level. <em>Intervention effectiveness</em> is the share of treated bottleneck cases (that received the intervention) that leave the bottleneck area after the intervention (effective cases). These are cases that, after intervention, have a condition value at or above the target condition level and are therefore no longer constrained by that condition in achieving the target outcome. Cases that were already outside the bottleneck before the intervention are irrelevant cases with respect to this goal.</p>
+<p>\tag{12.1}
+<span class="math display">\[\begin{equation}
+\text{Intervention effectiveness}=\frac{\text{Number of effective cases}}{\text{Number of treated bottleneck cases}}\times 100\%
+\end{equation}\]</span></p>
+<p>In Figure <a href="#fig:intervention1fig">12.3</a>, all five cases received the intervention. Two of the three bottleneck cases leave the bottleneck area; moving case A out of the bottleneck area is not successful. The effectiveness is therefore (2/3) × 100% = 66.7%. After the intervention, four cases are non-bottleneck cases and are able, in principle, to achieve the desired outcome.</p>
+<p><em>Intervention waste</em> is the amount of intervention effort that does not contribute to moving cases out of the bottleneck area. It has three components: (1) <em>undershoot</em>, effort on bottleneck cases that remain bottlenecks; (2) overshoot, effort on effective cases beyond the minimum required effort to reach the target condition; and (3) irrelevant effort on cases that were not bottlenecks before the intervention. In Figure <a href="#fig:intervention1fig">12.3</a>-right, case A is ineffective because its bottleneck distance (<span class="math inline">\(x_c - x\)</span>) exceeds the intervention effort, producing 0.15 waste due to undershoot. Case B is an effective case but shows 0.05 waste due to overshoot. Cases D and E are irrelevant cases, producing 0.30 waste. Total waste is therefore 0.50. Case C is the only effective case without waste.</p>
+<p><em>Intervention efficiency</em> is the share of total intervention effort that is effective (i.e. not wasted) in removing cases from the bottleneck area. It is the complement of waste and is expressed in percentages:</p>
+<p><span class="math display" id="eq:efficiency">\[\begin{equation}
+\text{Intervention efficiency}=\frac{\text{Total intervention effort}-\text{Total waste}}{\text{Total intervention effort}}\times 100\%
+\tag{12.2}
+\end{equation}\]</span></p>
+<p>In Figure <a href="#fig:intervention1fig">12.3</a>-right, total intervention effort is 0.75 and total waste is 0.50, so intervention efficiency is (0.75 - 0.50) / 0.75 × 100% = 33.3%</p>
+<p>Evidence-based action following NCA focuses on reducing bottleneck distances by increasing cases’ condition values to the target condition level or above (<span class="math inline">\(x \geq x_c\)</span>), thereby removing the bottleneck and enabling attainment of the target outcome <span class="math inline">\(y_c\)</span>.</p>
+<!-- According to Figure \@ref(fig:intervention2fig) Left, the the goal to remove Cases B and C from the bottleneck area was successful (effective cases). The intervention for these cases was not large. However, removing Case A from the bottleneck area was not successful (ineffective case) entire intervention effort of 1.5 is a waste. For case B the waste consist of an overshoot of 0.5. The total waste is 2.0, which is   The intervention for these cases was not large. However, removing Case A from the bottleneck area was not successful (ineffective case)  -->
+<!-- for the intervention. must be overcome to re -->
+<!-- of adding or removing  -->
+<!-- #### Formulating the intervention strategy -->
+<!-- An intervention to increase or decrease a condition value is called an *intervention effort*  In a generic intervention to all cases get the same intervention effect: the same increase or decrease of the condition value. For example, in Figure \@ref(fig:intervention2fig) Left  the intervention effect it +0.15 and in Figure \@ref(fig:intervention2fig)-right  the intervention effect it -0.15.  -->
+<!-- Once the potential necessary conditions are identified, it should the intervention strategy should be established. This involves the choice of the which conditions are targeted (all or a selection) and which cases are targeted (all or a selection). -->
+<!-- For an desired outcome, the intervention strategy is to ensure that the outcome is possible. This means that intervention should focus on *lifting* all cases that are *below* the necessary threshold level for achieving the *desired* target outcome.  -->
+<!-- For an undesired outcome, the intervention strategy is to ensure that at the outcome is impossible. This means that intervention should focus on *lowering* all cases that are *above* the necessary threshold level for achieving the *undesired* target outcome.  -->
+</div>
+<div id="ideal-intervention" class="section level3 hasAnchor" number="12.4.3">
+<h3><span class="header-section-number">12.4.3</span> Ideal intervention<a href="#ideal-intervention" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>It is clear that with an effectiveness of 66.7% and an efficiency of 33.3% the intervention is not ideal. The reason is twofold:</p>
+<ul>
+<li><p>The intervention is applied to all cases, rather than to the cases in the bottleneck area only.</p></li>
+<li><p>The intervention effort is the same for all cases.</p></li>
+</ul>
+<p>An ideal NCA-based intervention strives for 100% effectiveness and 100% efficiency (and 0% waste) so that the intervention goals can be achieved with minimum effort.
+<!-- An intervention is 100% effective if it increase/decreases just enough to reach the condition's threshold value for all cases.  -->
+<!-- An intervention is 100% efficient if it does not increase/decreases the condition beyond what is minimally needed for 100% effectiveness. -->
+This can be achieved with a selective intervention that only focuses on cases in the bottleneck area and provides case-specific intervention efforts corresponding to the distance of the case to the condition threshold required for the target outcome.</p>
+<p>For the example of Figure <a href="#fig:intervention1fig">12.3</a>-right, this can be achieved by an intervention design with the following efforts:</p>
+<p>Case A: 0.40</p>
+<p>Case B: 0.10</p>
+<p>Case C: 0.15</p>
+<p>Case D: 0</p>
+<p>Case E: 0</p>
+<p>An ideal intervention targets bottleneck cases that is just enough to be 100% effective and 100% efficient. Some overshoot might be desirable as “safety margin”. Although effectiveness would remain 100%, efficiency would slightly decrease as the price for more resilience.</p>
+<p>The practical advice for an NCA-based intervention is:</p>
+<ol style="list-style-type: decimal">
+<li><p>Apply the intervention only to cases in the bottleneck area: the cases that are constrained by the specific condition: Act only where something is blocking improvement, and do not intervene where no real bottleneck exists.</p></li>
+<li><p>Match the intervention effort to the case’s need. Each case in the bottleneck area has a bottleneck distance indicating how far it is from its target. Rather than a one-size-fits-all approach, the tailored approach overcomes the case’s bottleneck distance: how far it is from its target. The intervention effort reflects that distance: the larger the distance the stronger the effort.</p></li>
+<li><p>For quick results start with the easiest cases first: those that are closest to the target condition.</p></li>
+</ol>
+<p>The potential of an NCA-based intervention compared to a average effect-based intervention can be illustrated as follows. Suppose an organization with 500 employees sets new performance goals (target <span class="math inline">\(Y\)</span>). To achieve that goal employees must have a higher skill level (target <span class="math inline">\(X\)</span>). An average effect analysis finds that higher skills increases performance on average, and an NCA analysis finds that skill is necessary for performance. Based on the average effect results the whole group of employees receives an intervention consisting of a skill training. The training results in each person’s skill increase of 0.15 units. This situation corresponds to Figure <a href="#fig:intervention1fig">12.3</a>-right where each point stands for a group of 100 employees with the starting same skill level. Suppose further that the training costs 1,000$ per unit skill increase (intervention effort). Consequently, a person’s 0.15 skill increase costs 0.15 × 1,000 = 150$. The total intervention effort is therefore 500 × 0.15 = 75, such that the total intervention costs is 75 x 1000 = 75 × 1000$ (or 500 persons × 150$ = 75,000$).</p>
+<p>After the intervention, 400 employees have the required skills to make the target outcome possible (employees of groups B, C, D, E). For group A the intervention effort was not strong enough to become non-bottleneck cases. Groups D and E were already non-bottleneck cases before the intervention. Thus, 200 from the 300 employees that were in the bottleneck area and received the intervention left that bottleneck area. Therefore, the <em>effectiveness</em> of the intervention is 200/300 × 100% = 66.7%.</p>
+<p>Part of the total intervention effort of 75 is wasted. All effort for group A is wasted due to undershoot (100 × 0.15 = 15 waste). A part of the effort for group B is wasted due to overshoot (100 × 0.05 = 5 waste), and the entire effort for groups D and E is irrelevant and is thus wasted (200 x 0.15 = 30 waste). The <em>efficiency</em> of the intervention is therefore (75 – 50) / 75 × 100% = 33.3%).</p>
+<p>Suppose now that the intervention is based on the NCA study. The NCA-based intervention focuses only on bottleneck cases and takes bottleneck distances into account. Suppose further that a person’s skill improvement is maximized to 0.15 (or maximum training cost per person of 150$). Therefore, the NCA-based intervention does not select group A for intervention because this group is too far from minimum required skill level for achieving the target outcome, given the maximum budget per person. This intervention also does not select groups D and E as these groups have already enough skills.</p>
+<p>The NCA-based intervention gives an intervention effort of 0.10 to group B and 0.15 to group C. This means that the total intervention effort is (100 × 0.10) + (100 × 0.15) = 25. The total intervention costs = 25 × 1000 = 25,000$. While after intervention the same number of employees (400) have the required skills for making the new target outcome possible, the intervention costs are considerably lower. The intervention effectiveness and efficiency are both 100% because all 200 cases in the bottleneck area that received the intervention were effective (100% effectiveness) and the intervention does not produce waste (100% efficiency).
+The results are summarized in <a href="#tab:trainingexample">12.2</a>.<br />
+</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:trainingexample">Table 12.2: </span>Example comparing average effect intervention with NCA-based intervention
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Average effect intervention
+</th>
+<th style="text-align:left;">
+NCA-based intervention
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 12em; ">
+Intervention costs
+</td>
+<td style="text-align:left;width: 12em; ">
+75,000$
+</td>
+<td style="text-align:left;width: 12em; ">
+25,000$
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; ">
+Intervention effectiveness
+</td>
+<td style="text-align:left;width: 12em; ">
+66.7%
+</td>
+<td style="text-align:left;width: 12em; ">
+100%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; ">
+Intervention efficiency
+</td>
+<td style="text-align:left;width: 12em; ">
+33.3%
+</td>
+<td style="text-align:left;width: 12em; ">
+100%
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="undesiredintervention" class="section level2 hasAnchor" number="12.5">
+<h2><span class="header-section-number">12.5</span> Interventions for preventing undesired outcomes<a href="#undesiredintervention" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In the previous section it is assumed that the outcome is desirable. If the outcome is undesirable, the target outcome is the maximum allowable level of undesired outcome. When the outcome is undesirable, cases outside the bottleneck area (non-bottleneck cases) should enter the bottleneck area by decreasing the condition value. For example, it was found that adolescent rumination (overthinking) is necessary for depression <span class="citation">(<a href="#ref-marchetti2024which">Marchetti et al., 2025</a>)</span>. Adolescents are not at risk for a clinically relevant depression level <span class="math inline">\(y_{c}\)</span> when the rumination level is below <span class="math inline">\(x_{c}\)</span>. Here, the intervention consists of decreasing adolescents’ rumination to below <span class="math inline">\(x_c\)</span> so that their level of depression <span class="math inline">\(y_c\)</span> does not occur.</p>
+<p>Figure <a href="#fig:intervention2figundesired">12.4</a>-right shows an example of a generic intervention to reduce the condition value by 0.15.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:intervention2figundesired"></span>
+<img src="intervention1a.png" alt="$XY$-plot with ceiling line with undesired target outcome $y_c$, threshold condition $x_c$ and five cases. Left: dashed lines are the bottleneck distances; Right: A generic intervention on all cases." width="49%" /><img src="intervention2b.png" alt="$XY$-plot with ceiling line with undesired target outcome $y_c$, threshold condition $x_c$ and five cases. Left: dashed lines are the bottleneck distances; Right: A generic intervention on all cases." width="49%" />
+<p class="caption">
+Figure 12.4: <span class="math inline">\(XY\)</span>-plot with ceiling line with undesired target outcome <span class="math inline">\(y_c\)</span>, threshold condition <span class="math inline">\(x_c\)</span> and five cases. Left: dashed lines are the bottleneck distances; Right: A generic intervention on all cases.
+</p>
+</div>
+<p>Cases A, B, and C are in the bottleneck area. This means that they are protected against level <span class="math inline">\(y_c\)</span> of the undesired outcome and their intervention efforts are a waste. However, cases D and E are at risk. To protect these cases against the undesired level <span class="math inline">\(y_c\)</span>, an intervention effort is needed to reduce their <span class="math inline">\(x\)</span>-levels towards a safe level of <span class="math inline">\(x &lt; x_c\)</span>. To achieve this goal, more effort is needed for case E compared to case D. However, the generic effort on case D produces some waste, whereas the intervention effort for case E is not enough to bring this case to the bottleneck area.</p>
+<p>An ideal NCA-based intervention (100% effective and 100% efficient) for preventing the undesired target outcome is possible when providing the following intervention efforts:</p>
+<p>Case A: 0</p>
+<p>Case B: 0</p>
+<p>Case C: 0</p>
+<p>Case D: -0.10</p>
+<p>Case E: -0.30</p>
+<p>Evidence-based action, based on the results of NCA, implies designing an intervention that moves cases into or out of the bottleneck area. The goal is to increase or decrease the condition value of cases in order to avoid or ensure that cases are in the bottleneck area, depending on whether the outcome is desirable or undesirable.</p>
+</div>
+<div id="multipleintervention" class="section level2 hasAnchor" number="12.6">
+<h2><span class="header-section-number">12.6</span> Interventions with multiple necessary conditions<a href="#multipleintervention" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The situation of multiple necessary conditions may be more complex. Each condition has its own bottleneck area and it may be that a case is present in more than one bottleneck area. For a desired outcome (having the possibility to achieve the target outcome), a case must leave <em>all</em> bottleneck areas. If the intervention is focused on a specific condition, but the case is also constrained by another condition that is not intervened on, it will not be effective. For a desired outcome, information must be available for all multiple necessary conditions and all conditions must be considered when designing an intervention.</p>
+<p>For an ideal intervention (100% effective and 100% efficient) with multiple necessary conditions, two approaches can be used (Table <a href="#tab:practicaladvisedesired">12.3</a>): The <em>case-focused</em> intervention strategy focuses on all conditions in one case at the same time and then moves to the next case (parallel on conditions, sequential on cases). It addresses bottleneck conditions together. The intervention can start with the easiest cases. These are the cases with the lowest (weighted) <em>total</em> bottleneck distance for all conditions.<a href="#fn118" class="footnote-ref" id="fnref118"><sup>118</sup></a>.</p>
+<p>The <em>condition-focused</em> intervention strategy focuses on one condition at a time, across all cases (parallel on cases, sequential on conditions). The intervention begins with the condition that has the greatest impact. This is the condition with the largest number of <em>single</em> bottleneck cases. Then the intervention moves to the next condition in order of how many single-bottleneck cases it affects, etc. The BIPMA approach discussed in Section <a href="#stepsncasem">11.4.1</a> is an example of a condition-focused intervention.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:practicaladvisedesired">Table 12.3: </span>Intervention strategies for desired outcomes and multiple conditions
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Work on …
+</th>
+<th style="text-align:left;">
+Prioritize …
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 10em; ">
+Case-focused
+</td>
+<td style="text-align:left;width: 10em; ">
+All conditions in one case, one case after another
+</td>
+<td style="text-align:left;width: 10em; ">
+Cases from low to high bottleneck distance
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 10em; ">
+Condition-focused
+</td>
+<td style="text-align:left;width: 10em; ">
+One condition after another across all cases
+</td>
+<td style="text-align:left;width: 10em; ">
+Conditions from high to low number of single bottleneck cases
+</td>
+</tr>
+</tbody>
+</table>
+<p>For an undesired outcome (having no possibility to achieve the target outcome), a case must be in <em>any</em> bottleneck areas. If the intervention focuses on a specific condition, a case that enters the bottleneck area is effective, regardless of whether the case is outside the bottleneck area of another condition.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:practicaladviseundesired">Table 12.4: </span>Intervention strategies for undesired outcomes and multiple conditions
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Work on …
+</th>
+<th style="text-align:left;">
+Prioritize …
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 10em; ">
+Case-focused
+</td>
+<td style="text-align:left;width: 10em; ">
+Selected condition in one case, one case after another
+</td>
+<td style="text-align:left;width: 10em; ">
+Cases from low to high bottleneck distance
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 10em; ">
+Condition-focused
+</td>
+<td style="text-align:left;width: 10em; ">
+One condition across all cases
+</td>
+<td style="text-align:left;width: 10em; ">
+Preferred condition with lowest number of bottleneck cases
+</td>
+</tr>
+</tbody>
+</table>
+<p>In practice it may not be possible to act on all bottleneck cases, to apply case-specific intervention efforts, or to act on all bottleneck conditions. This will negatively affect the effectiveness and efficiency of the intervention.</p>
+<p>When developing interventions based on bottlenecks, the following general advice can be given to practice:</p>
+<ul>
+<li><p>Be selective: only act in bottleneck areas.</p></li>
+<li><p>Be proportional: match effort to bottleneck distance.</p></li>
+<li><p>Be strategic: choose the right sequencing of the intervention.</p></li>
+</ul>
+</div>
+<div id="illustrativeexample1" class="section level2 hasAnchor" number="12.7">
+<h2><span class="header-section-number">12.7</span> Illustrative example<a href="#illustrativeexample1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The illustrative example describes a stylized and partly constructed situation (with existing data).<a href="#fn119" class="footnote-ref" id="fnref119"><sup>119</sup></a> A company wants to improve the frequency of use of a recently launched technological product for daily use. Data from 174 customers show that the product is not used as frequently as expected (Figure <a href="#fig:histogramTAMfig">12.5</a>).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:histogramTAMfig"></span>
+<img src="histogramTAM.png" alt="Example: Frequency of product use by 174 customers" width="60%" />
+<p class="caption">
+Figure 12.5: Example: Frequency of product use by 174 customers
+</p>
+</div>
+<p>The company wants to improve this product use with an NCA-based intervention approach. The target outcome is daily use of the product.</p>
+<div id="example-part-1-intervention-strategy" class="section level3 hasAnchor" number="12.7.1">
+<h3><span class="header-section-number">12.7.1</span> Example Part 1: Intervention strategy<a href="#example-part-1-intervention-strategy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In part 1, the intervention strategy is defined. The company establishes a team with representatives from marketing, new product development, operations and customer services. The team follows the change strategy that is common in the organization. One of the team members takes the role of the necessity-perspective-advocate and ensures that this perspective is applied and safeguarded during the process. This role is rotated among team members for learning purposes. The team establishes the goal of daily product use. Via brainstorming sessions the team identifies causal factors related to limited product use, in particular factors that the company can influence. The team identifies the following drivers and barriers that relate to the company’s communication with the customer:</p>
+<ul>
+<li>The use of benefit-focused messaging that emphasizes the daily value of using the product, both functionally and in terms of experience.</li>
+<li>Tips on how to use the product.</li>
+<li>The availability of quick and effective customer support, strengthening trust and satisfaction.</li>
+</ul>
+<p>Furthermore, the team identifies drivers and barriers related to the product design:</p>
+<ul>
+<li>An acceptable level of physical and cognitive effort to operate the product.</li>
+<li>The compatibility of the product with users’ daily routines/devices.</li>
+<li>The extent to which displays are understandable and readable by a diversity of users.</li>
+</ul>
+<p>By selecting and combining these drivers and barriers the team identifies four potential critical success factors for daily product use that can be influenced by marketing or re-design of the product. For each of them the hypotheses are formulated:</p>
+<ol style="list-style-type: decimal">
+<li><p>A high level of customer perceived usefulness (<span class="math inline">\(X_1\)</span>) of the product is necessary for daily use of the product (<span class="math inline">\(Y\)</span>);</p></li>
+<li><p>A high compatibility (<span class="math inline">\(X_2\)</span>) of the product is necessary for daily use of the product (<span class="math inline">\(Y\)</span>).</p></li>
+<li><p>A high level of customer perceived ease of use (<span class="math inline">\(X_3\)</span>) of the product is necessary for daily use of the product (<span class="math inline">\(Y\)</span>);</p></li>
+<li><p>A high emotional value (<span class="math inline">\(X_4\)</span>) of the product is necessary for daily use of the product (<span class="math inline">\(Y\)</span>);</p></li>
+</ol>
+</div>
+<div id="exampleinterventiondesign" class="section level3 hasAnchor" number="12.7.2">
+<h3><span class="header-section-number">12.7.2</span> Example Part 2: Intervention design<a href="#exampleinterventiondesign" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In part 2, the intervention is designed. First, data are collected for the four expected necessary conditions (<span class="math inline">\(X\)</span>) and the frequency of product use (<span class="math inline">\(Y\)</span>). The data are analyzed with NCA. The results indicate that the four conditions are necessary (see Appendix <a href="#examplestep4conductnca">H.5</a>). This means that the selected four conditions are relevant to be acted upon during the intervention. The <span class="math inline">\(XY\)</span>-plots are displayed in Figure <a href="#fig:constraintareaTAMfig">12.6</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:constraintareaTAMfig"></span>
+<img src="Perceived%20usefulness.png" alt="Example: bottleneck areas (gray) for the four necessary conditions." width="49%" /><img src="Perceived%20ease%20of%20use.png" alt="Example: bottleneck areas (gray) for the four necessary conditions." width="49%" /><img src="Compatibility.png" alt="Example: bottleneck areas (gray) for the four necessary conditions." width="49%" /><img src="Emotional%20value.png" alt="Example: bottleneck areas (gray) for the four necessary conditions." width="49%" />
+<p class="caption">
+Figure 12.6: Example: bottleneck areas (gray) for the four necessary conditions.
+</p>
+</div>
+<p>Each plot has 174 dots (customers). The stepwise linear ceiling line separates the empty impossible area from the possible area with cases. The horizontal dotted line in each plot at product use level 6 corresponds to daily product use. This is the desired target outcome <span class="math inline">\(y_c\)</span>. The vertical dotted line is the corresponding threshold value of the condition (<span class="math inline">\(x_c\)</span>). The black dots in each plot are cases in the bottleneck area: the area to the left of the threshold condition and below the ceiling line. Black dots are customers that have not achieved the level of the condition that is necessary for the desired target outcome. These customers will not use the product daily because Perceived usefulness is too low (30 = 17% of the customers), Compatibility is too low (10 = 11%), Perceived ease of use is too low (5 = 3%), and/or Emotional value is too low (19 = 6%).</p>
+<p>The number and percentage of cases between brackets are obtained from the bottleneck distances table of Table <a href="#tab:constrainttable"><strong>??</strong></a> in Appendix <a href="#appendixh">I</a>. This table shows all 38 bottleneck cases (22%), their distances to the threshold conditions, the number of conditions where they are constrained, and their total bottleneck distance to be overcome by the intervention. This means that 22% of the customers have too low values of one or more conditions. The other 78% are able to achieve the target outcome from the perspective of their values of the four necessary conditions. They may or may not have achieved the target outcome as this depends on other factors that are not measured (the necessary condition is not sufficient). The company’s intervention should focus only on the 22% cases that are in the bottleneck area. Acting on other cases that already meet the threshold condition is ineffective in an NCA-based intervention. These cases already have the possibility to achieve the outcome. If the company acts only on bottleneck cases, the intervention effort should correspond to the bottleneck distance to avoid ineffectiveness and inefficiency. For 100% effectiveness and 100% efficiency, all cases’ bottlenecks must be handled that way.</p>
+<p>The example illustrates how NCA can identify multiple necessary conditions for a practical goal (daily product use) and determine their threshold levels; how bottleneck areas and bottleneck cases (22% of customers) can be made visible for each necessary condition; how an intervention can be focused only on those customers in the bottleneck area, rather than on the entire target group; how this selective, threshold-based focus supports more effective and efficient interventions than approaches guided by average effects alone.</p>
 
+</div>
+</div>
 </div>
 <div id="summary-and-personal-reflection" class="section level1 unnumbered hasAnchor">
 <h1>Summary and personal reflection<a href="#summary-and-personal-reflection" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -16331,7 +17322,7 @@ Figure G.1: Correlation by probabilistic sufficiency (Left) and by necessity (Ri
 <p><span class="math display">\[\begin{aligned}
 \rho_{XY} &amp; = \frac{{{E}}(XY) - {{E}}(X) {{E}}(Y)}{\sqrt{{{E}}(X^2) - {{E}}(X)^2} \sqrt{{{E}}(Y^2) - {{E}}(Y)^2}} \\\end{aligned}\]</span></p>
 <p>where <span class="math inline">\(\rho_{XY}\)</span> is the Pearson correlation coefficient, and <span class="math inline">\(E\)</span> is the expected value.</p>
-<p>For a linear ceiling line <span class="math inline">\(f(x) = a + bx\)</span> and a uniform distribution under the ceiling and within the bounding box (unit box), the correlation coefficient can be derived analytically, as shown below.<a href="#fn117" class="footnote-ref" id="fnref117"><sup>117</sup></a></p>
+<p>For a linear ceiling line <span class="math inline">\(f(x) = a + bx\)</span> and a uniform distribution under the ceiling and within the bounding box (unit box), the correlation coefficient can be derived analytically, as shown below.<a href="#fn120" class="footnote-ref" id="fnref120"><sup>120</sup></a></p>
 <div id="situation" class="section level2 unnumbered hasAnchor">
 <h2>Situation<a href="#situation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Consider a linear case with a tight bounding box (unit box): <span class="math inline">\(0 &lt; a &lt;1 &lt; a+b\)</span> (Figure <a href="#fig:boundinglinefig">G.2</a>).</p>
@@ -17012,7 +18003,7 @@ print(model1.technology)</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.24   0.001
 ## Compatibility         0.21   0.000
-## Perceived ease of use 0.24   0.014
+## Perceived ease of use 0.24   0.015
 ## Emotional value       0.33   0.000
 ## Adoption intention    0.29   0.001
 ## ---------------------------------------------------------------------------</code></pre>
@@ -17026,7 +18017,7 @@ print(model1.adoption)</code></pre>
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.12   0.003
-## Compatibility         0.08   0.010
+## Compatibility         0.08   0.013
 ## Perceived ease of use 0.15   0.006
 ## Emotional value       0.21   0.000
 ## ---------------------------------------------------------------------------</code></pre>
@@ -19776,6 +20767,9 @@ Aguinis, H., Ramani, R. S., &amp; Cascio, W. F. (2020). Methodological practices
 <div id="ref-ajzen1991theory" class="csl-entry">
 Ajzen, I. (1991). The theory of planned behavior. <em>Organizational Behavior and Human Decision Processes</em>, <em>50</em>, 179–211. <a href="https://doi.org/10.1016/0749-5978(91)90020-T">https://doi.org/10.1016/0749-5978(91)90020-T</a>
 </div>
+<div id="ref-allard2023research" class="csl-entry">
+Allard-Poesi, F., &amp; Massu, J. (2023). Research note: Is urban nature necessary for well-being? For whom? A necessary condition analysis. <em>Landscape and Urban Planning</em>, <em>234</em>, 104728. <a href="https://doi.org/10.1016/j.landurbplan.2023.104728">https://doi.org/10.1016/j.landurbplan.2023.104728</a>
+</div>
 <div id="ref-andrevski2022forbearance" class="csl-entry">
 Andrevski, G., &amp; Miller, D. (2022). Forbearance: Strategic nonresponse to competitive attacks. <em>Academy of Management Review</em>, <em>47</em>(1), 59–74. <a href="https://doi.org/10.5465/amr.2018.0248">https://doi.org/10.5465/amr.2018.0248</a>
 </div>
@@ -19827,8 +20821,14 @@ Cartwright, N. (1989). <em>Nature’s capacities and their measurement</em>. Cla
 <div id="ref-cassia2024value" class="csl-entry">
 Cassia, F., &amp; Magno, F. (2024). The value of self-determination theory in marketing studies: Insights from the application of <span>PLS-SEM</span> and <span>NCA</span> to anti-food waste apps. <em>Journal of Business Research</em>, <em>172</em>, 114454. <a href="https://doi.org/10.1016/j.jbusres.2023.114454">https://doi.org/10.1016/j.jbusres.2023.114454</a>
 </div>
+<div id="ref-chaparrobanegas2024transforming" class="csl-entry">
+Chaparro-Banegas, N., Sánchez-Garcia, M., Calafat-Marzal, C., &amp; Roig-Tierno, N. (2024). Transforming the agri‐food sector through eco‐innovation: A path to sustainability and technological progress. <em>Business Strategy and the Environment</em>, <em>33</em>(8), 9075–9097. <a href="https://doi.org/10.1002/bse.3968">https://doi.org/10.1002/bse.3968</a>
+</div>
 <div id="ref-chen2026entrepreneurial" class="csl-entry">
 Chen, P.-K. A. (2026). <span class="nocase">Entrepreneurial resilience learning in higher education: The role of metaverse-constructed ecosystems</span>. <em>The International Journal of Management Education</em>, <em>24</em>, 101300. <a href="https://doi.org/10.1016/j.ijme.2025.101300">https://doi.org/10.1016/j.ijme.2025.101300</a>
+</div>
+<div id="ref-chong2023evolutionary" class="csl-entry">
+Chong, S., &amp; Ham, S. (2023). Evolutionary conservation of amino acids contributing to the protein folding transition state. <em>Journal of Computational Chemistry</em>, <em>44</em>(9), 1002–1009. <a href="https://doi.org/10.1002/jcc.27060">https://doi.org/10.1002/jcc.27060</a>
 </div>
 <div id="ref-christogiannis2022self" class="csl-entry">
 Christogiannis, C., Nikolakopoulos, S., Pandis, N., &amp; Mavridis, D. (2022). The self-fulfilling prophecy of post-hoc power calculations. <em>American Journal of Orthodontics and Dentofacial Orthopedics</em>, <em>161</em>(2), 315–317. <a href="https://doi.org/10.1016/j.ajodo.2021.10.008">https://doi.org/10.1016/j.ajodo.2021.10.008</a>
@@ -19839,6 +20839,9 @@ Cinelli, C., Forney, A., &amp; Pearl, J. (2024). A crash course in good and bad 
 <div id="ref-cohen1994earth" class="csl-entry">
 Cohen, J. (1994). The earth is round (p&lt;. 05). <em>American Psychologist</em>, <em>49</em>(12), 997. <a href="https://doi.org/10.1037/0003-066X.49.12.997">https://doi.org/10.1037/0003-066X.49.12.997</a>
 </div>
+<div id="ref-colpizzi2025unveiling" class="csl-entry">
+Colpizzi, I., Pössel, P., &amp; Marchetti, I. (2025). Unveiling the necessary conditions for depressive symptoms in adolescent girls and boys: A <span>Necessary Condition Analysis</span> study. <em>Journal of Youth and Adolescence</em>, <em>54</em>, 2494–2507. <a href="https://doi.org/10.1007/s10964-025-02220-w">https://doi.org/10.1007/s10964-025-02220-w</a>
+</div>
 <div id="ref-conde2025uncovering" class="csl-entry">
 Conde, R. (2025). <span class="nocase">Uncovering sales agents’ recruitment, hiring and training practices as necessary conditions to sales agents’ exceeding quota and turnover intentions</span>. <em>Journal of Business &amp; Industrial Marketing</em>, <em>41</em>, 160–175. <a href="https://doi.org/10.1108/jbim-06-2024-0416">https://doi.org/10.1108/jbim-06-2024-0416</a>
 </div>
@@ -19847,6 +20850,9 @@ Credé, M., &amp; Tynan, M. C. (2021). Should language acquisition researchers s
 </div>
 <div id="ref-cumming2013understanding" class="csl-entry">
 Cumming, G. (2013). <em>Understanding the new statistics: Effect sizes, confidence intervals, and meta-analysis</em>. Routledge. <a href="https://www.taylorfrancis.com/books/mono/10.4324/9780203807002/understanding-new-statistics-geoff-cumming">https://www.taylorfrancis.com/books/mono/10.4324/9780203807002/understanding-new-statistics-geoff-cumming</a>
+</div>
+<div id="ref-czakon2023re" class="csl-entry">
+Czakon, W., Klimas, P., &amp; Kawa, A. (2023). Re-thinking strategic myopia: A necessary condition analysis of heuristic and firm’s performance. <em>Industrial Marketing Management</em>, <em>115</em>, 99–109. <a href="https://doi.org/10.1016/j.indmarman.2023.09.015">https://doi.org/10.1016/j.indmarman.2023.09.015</a>
 </div>
 <div id="ref-dabic202140" class="csl-entry">
 Dabić, M., Marzi, G., Vlačić, B., Daim, T. U., &amp; Vanhaverbeke, W. (2021). 40 years of excellence: An overview of technovation and a roadmap for future research. <em>Technovation</em>, <em>106</em>, 102303. <a href="https://doi.org/10.1016/j.technovation.2021.102303">https://doi.org/10.1016/j.technovation.2021.102303</a>
@@ -19868,6 +20874,9 @@ Ding, H., &amp; Kuvaas, B. (2023). Using necessary condition analysis in manager
 </div>
 <div id="ref-ding2025exploring" class="csl-entry">
 Ding, H., &amp; Kuvaas, B. (2025). Exploring the necessary roles of basic psychological needs at work: A necessary condition analysis. <em>Journal of Occupational and Organizational Psychology</em>, <em>98</em>(1), e70012. <a href="https://doi.org/10.1111/joop.70012">https://doi.org/10.1111/joop.70012</a>
+</div>
+<div id="ref-dionisio2023identifying" class="csl-entry">
+Dionisio, E. A., Inacio Junior, E., Morini, C., &amp; Carvalho, R. de Q. (2023). Identifying necessary conditions to deep-tech entrepreneurship. <em>RAUSP Management Journal</em>, <em>58</em>, 162–185. <a href="https://doi.org/10.1108/RAUSP-09-2022-0203">https://doi.org/10.1108/RAUSP-09-2022-0203</a>
 </div>
 <div id="ref-dul2016jbr" class="csl-entry">
 Dul, J. (2016a). Identifying single necessary conditions with <span>NCA</span> and fs<span>QCA</span>. <em>Journal of Business Research</em>, <em>69</em>(4), 1516–1523. <a href="https://doi.org/10.1016/j.jbusres.2015.10.134">https://doi.org/10.1016/j.jbusres.2015.10.134</a>
@@ -19950,6 +20959,9 @@ Frommeyer, B., Wagner, E., Hossiep, C. R., &amp; Schewe, G. (2022). The utility 
 <div id="ref-fujita2020denial" class="csl-entry">
 Fujita, T., &amp; Kusano, H. (2020). Denial or history? Yasukuni visits as signaling. <em>Journal of East Asian Studies</em>, <em>20</em>(2), 291–316. <a href="https://doi.org/10.1017/jea.2020.2">https://doi.org/10.1017/jea.2020.2</a>
 </div>
+<div id="ref-galindomartin2025open" class="csl-entry">
+Galindo-Martin, M.-A., Mendez-Picazo, M.-T., &amp; Perez-Pujol, R.-. S. (2025). <span class="nocase">Open innovation and sustainable development: A micro and macroeconomic analysis using a mixed method research with PLS-SEM-NCA and Delphi</span>. <em>International Journal of Information Management</em>, <em>82</em>, 102874. <a href="https://doi.org/10.1016/j.ijinfomgt.2025.102874">https://doi.org/10.1016/j.ijinfomgt.2025.102874</a>
+</div>
 <div id="ref-galton1886regression" class="csl-entry">
 Galton, F. (1886). Regression towards mediocrity in hereditary stature. <em>The Journal of the Anthropological Institute of Great Britain and Ireland</em>, <em>15</em>, 246–263. <a href="https://www.jstor.org/stable/2841583">https://www.jstor.org/stable/2841583</a>
 </div>
@@ -19958,6 +20970,9 @@ Gans, J., &amp; Stern, S. (2003). <em>Assessing australia’s innovative capacit
 </div>
 <div id="ref-gantert2022moral" class="csl-entry">
 Gantert, T. M., Fredrich, V., Bouncken, R. B., &amp; Kraus, S. (2022). The moral foundations of makerspaces as unconventional sources of innovation: A study of narratives and performance. <em>Journal of Business Research</em>, <em>139</em>, 1564–1574. <a href="https://doi.org/10.1016/j.jbusres.2021.10.076">https://doi.org/10.1016/j.jbusres.2021.10.076</a>
+</div>
+<div id="ref-garg2019exploring" class="csl-entry">
+Garg, N., Punia, B. K., &amp; Jain, A. (2019). Exploring high performance work practices as necessary condition of HR outcomes. <em>Paradigm: A Management Research Journal</em>, <em>23</em>(2), 130–147. <a href="https://doi.org/10.1177/0971890719859456">https://doi.org/10.1177/0971890719859456</a>
 </div>
 <div id="ref-gauss1809theoria" class="csl-entry">
 Gauss, C. (1809). <em>Theoria motus. English translation (1963): Theory of the motion of the heavenly bodies about the sun in the conic sections</em>. Dover, New York.
@@ -20061,6 +21076,9 @@ Klimas, P., Czakon, W., &amp; Fredrich, V. (2022). Strategy frames in coopetitio
 <div id="ref-klimas2023attributes" class="csl-entry">
 Klimas, P., Sachpazidu, K., &amp; Stańczyk, S. (2023). The attributes of coopetitive relationships: What do we know and not know about them? <em>European Management Journal</em>. <a href="https://doi.org/10.1016/j.emj.2023.02.005">https://doi.org/10.1016/j.emj.2023.02.005</a>
 </div>
+<div id="ref-knol2018implementing" class="csl-entry">
+Knol, W. H., Slomp, J., Schouteten, R. L., &amp; Lauche, K. (2018). Implementing lean practices in manufacturing SMEs: Testing <span>“critical success factors”</span> using necessary condition analysis. <em>International Journal of Production Research</em>, <em>56</em>(11), 3955–3973. <a href="https://doi.org/10.1080/00207543.2017.1419583">https://doi.org/10.1080/00207543.2017.1419583</a>
+</div>
 <div id="ref-kohler2023constructive" class="csl-entry">
 Köhler, T., &amp; Cortina, J. M. (2023). Constructive replication, reproducibility, and generalizability: Getting theory testing for JOMSR right. <em>Journal of Management Scientific Reports</em>, <em>1</em>(2), 75–93. <a href="https://doi.org/10.1177/27550311231176016">https://doi.org/10.1177/27550311231176016</a>
 </div>
@@ -20070,11 +21088,20 @@ Kopplin, C. S. (2023). Chatbots in the workplace: A technology acceptance study 
 <div id="ref-kuikveracity2025" class="csl-entry">
 Kuik, R., &amp; Dul, Jan. (2026). <em>Introducing the <span>NCA</span> ribbon: An narrow band around the necessity ceiling</em>. Rotterdam School of Management, Erasmus University.
 </div>
+<div id="ref-kumar2021meteorological" class="csl-entry">
+Kumar, D. (2021). <span class="nocase">Meteorological barriers to bike rental demands: A case of Washington DC using <span>NCA</span> approach</span>. <em>Case Studies on Transport Policy</em>, <em>9</em>(2), 830–841. <a href="https://doi.org/10.1016/j.cstp.2021.04.002">https://doi.org/10.1016/j.cstp.2021.04.002</a>
+</div>
+<div id="ref-kwon2022critical" class="csl-entry">
+Kwon, S. P. (2022). Critical bending wavelengths associated with current sharing temperature degradation in multistage twisted <span>Nb3Sn</span> cable <span>CICC</span>. <em>Cryogenics</em>, <em>121</em>, 103375. <a href="https://doi.org/10.1016/j.cryogenics.2021.103375">https://doi.org/10.1016/j.cryogenics.2021.103375</a>
+</div>
 <div id="ref-lange2017editors" class="csl-entry">
 Lange, D., &amp; Pfarrer, M. D. (2017). Editors’ comments: Sense and structure—the core building blocks of an <span>AMR</span> article. <em>Academy of Management Review</em>, <em>42</em>(3), 407–416. <a href="https://journals.aom.org/doi/10.5465/amr.2016.0225">https://journals.aom.org/doi/10.5465/amr.2016.0225</a>
 </div>
 <div id="ref-lankoski2023environmental" class="csl-entry">
 Lankoski, J., &amp; Lankoski, L. (2023). Environmental sustainability in agriculture: Identification of bottlenecks. <em>Ecological Economics</em>, <em>204</em>, 107656. <a href="https://doi.org/10.1016/j.ecolecon.2022.107656">https://doi.org/10.1016/j.ecolecon.2022.107656</a>
+</div>
+<div id="ref-lee2020beyond" class="csl-entry">
+Lee, W., &amp; Jeong, C. (2020). Beyond the correlation between tourist eudaimonic and hedonic experiences: Necessary condition analysis. <em>Current Issues in Tourism</em>, <em>23</em>(17), 2182–2194. <a href="https://doi.org/10.1080/13683500.2019.1611747">https://doi.org/10.1080/13683500.2019.1611747</a>
 </div>
 <div id="ref-lee2021distinctive" class="csl-entry">
 Lee, W., &amp; Jeong, C. (2021). Distinctive roles of tourist eudaimonic and hedonic experiences on satisfaction and place attachment: Combined use of <span>SEM</span> and <span class="nocase">necessary condition analysis</span>. <em>Journal of Hospitality and Tourism Management</em>, <em>47</em>, 58–71. <a href="https://doi.org/10.1016/j.jhtm.2021.02.012">https://doi.org/10.1016/j.jhtm.2021.02.012</a>
@@ -20087,6 +21114,12 @@ Lehmann, E. L., Romano, J. P., &amp; Casella, G. (2005). <em>Testing statistical
 </div>
 <div id="ref-lenth2001some" class="csl-entry">
 Lenth, R. V. (2001). Some practical guidelines for effective sample size determination. <em>The American Statistician</em>, <em>55</em>(3), 187–193. <a href="https://doi.org/10.1198/000313001317098149">https://doi.org/10.1198/000313001317098149</a>
+</div>
+<div id="ref-li2023ecosystems" class="csl-entry">
+Li, J., Du, Y., Sun, N., &amp; Xie, Z. (2024). Ecosystems of doing business and living standards: A configurational analysis based on <span>C</span>hinese cities. <em>Chinese Management Studies</em>, <em>18</em>(5), 1302–1323. <a href="https://doi.org/10.1108/CMS-04-2022-0139">https://doi.org/10.1108/CMS-04-2022-0139</a>
+</div>
+<div id="ref-li2025motivates" class="csl-entry">
+Li, Y., Ma, M., Hao, Z., Xu, F., &amp; Liu, J. (in press). <span class="nocase">What motivates the impulsive travel intentions of Generation Z? A study based on grounded theory and fsQCA</span>. <em>Current Issues in Tourism</em>. <a href="https://doi.org/10.1080/13683500.2025.2469744">https://doi.org/10.1080/13683500.2025.2469744</a>
 </div>
 <div id="ref-liehr2022must" class="csl-entry">
 Liehr, J., &amp; Hauff, S. (2022). Must have or nice to have? Necessary leadership competencies to enable employees’ innovative behaviour. <em>International Journal of Innovation Management</em>, <em>26</em>(10), 2250070. <a href="https://doi.org/10.1142/S1363919622500700">https://doi.org/10.1142/S1363919622500700</a>
@@ -20106,6 +21139,9 @@ Lu, X., &amp; White, H. (2014). Robustness checks and robustness tests in applie
 <div id="ref-luo2022pathway" class="csl-entry">
 Luo, L., Wang, Y., Liu, Y., Zhang, X., &amp; Fang, X. (2022). <span class="nocase">Where is the pathway to sustainable urban development? Coupling coordination evaluation and configuration analysis between low-carbon development and eco-environment: A case study of the Yellow River Basin, <span>C</span>hina</span>. <em>Ecological Indicators</em>, <em>144</em>, 109473. <a href="https://doi.org/10.1016/j.ecolind.2022.109473">https://doi.org/10.1016/j.ecolind.2022.109473</a>
 </div>
+<div id="ref-luther2017metacognition" class="csl-entry">
+Luther, L., Bonfils, K. A., Firmin, R. L., Buck, K. D., Choi, J., Dimaggio, G., Popolo, R., Minor, K. S., &amp; Lysaker, P. H. (2017). Metacognition is necessary for the emergence of motivation in people with schizophrenia spectrum disorders: A necessary condition analysis. <em>The Journal of Nervous and Mental Disease</em>, <em>205</em>(12), 960. <a href="https://doi.org/10.1097/NMD.0000000000000753">https://doi.org/10.1097/NMD.0000000000000753</a>
+</div>
 <div id="ref-ma2001confirmatory" class="csl-entry">
 Ma, X., &amp; Wang, J. (2001). A confirmatory examination of walberg’s model of educational productivity in student career aspiration. <em>Educational Psychology</em>, <em>21</em>(4), 443–453. <a href="https://doi.org/10.1080/01443410120090821">https://doi.org/10.1080/01443410120090821</a>
 </div>
@@ -20117,6 +21153,15 @@ Mackie, J. L. (1965). Causes and conditions. <em>American Philosophical Quarterl
 </div>
 <div id="ref-mahoney2007elaboration" class="csl-entry">
 Mahoney, J. (2007). The elaboration model and necessary causes. In G. Goertz &amp; J. S. Levy (Eds.), <em>Explaining war and peace: Case studies and necessary condition counterfactuals</em> (pp. 281–306). Routledge. <a href="https://doi.org/10.4324/9780203089101-18">https://doi.org/10.4324/9780203089101-18</a>
+</div>
+<div id="ref-manchiraju2023entrepreneurial" class="csl-entry">
+Manchiraju, S., Akbari, M., &amp; Seydavi, M. (2023). Is entrepreneurial role stress a necessary condition for burnout? A necessary condition analysis. <em>Current Psychology</em>, <em>43</em>(5), 4766–4778. <a href="https://doi.org/10.1007/s12144-023-04704-z">https://doi.org/10.1007/s12144-023-04704-z</a>
+</div>
+<div id="ref-mandel1998integration" class="csl-entry">
+Mandel, D. R., &amp; Lehman, D. R. (1998). Integration of contingency information in judgments of cause, covariation, and probability. <em>Journal of Experimental Psychology: General</em>, <em>127</em>(3), 269. <a href="https://doi.org/10.1037/0096-3445.127.3.269">https://doi.org/10.1037/0096-3445.127.3.269</a>
+</div>
+<div id="ref-marchetti2024which" class="csl-entry">
+Marchetti, I., Koster, E. H. W., &amp; Hankin, B. L. (2025). Which psychosocial risks are necessary for developing depression during adolescence? A novel approach applying necessary condition analysis. <em>Journal of the American Academy of Child &amp; Adolescent Psychiatry</em>, <em>64</em>, 1201–1209. <a href="https://doi.org/10.1016/j.jaac.2024.11.001">https://doi.org/10.1016/j.jaac.2024.11.001</a>
 </div>
 <div id="ref-marchetti2025necessity" class="csl-entry">
 Marchetti, I., Koster, E. H., &amp; Dul, J. (2026). Necessity causality in mental health research: Applying necessary condition analysis in clinical psychology and psychiatry. <em>Clinical Psychology Review</em>, <em>123</em>, 102689. <a href="https://doi.org/10.1016/j.cpr.2025.102689">https://doi.org/10.1016/j.cpr.2025.102689</a>
@@ -20150,6 +21195,9 @@ Novales, A., Mocker, M., Van Heck, E., &amp; Dul, J. (2025). Realizing desired e
 </div>
 <div id="ref-ockham1323summa" class="csl-entry">
 Ockham, W. of. (1323). <em>Summa logicae</em>.
+</div>
+<div id="ref-ofori2024necessary" class="csl-entry">
+Ofori, D. (2024). <span class="nocase">Necessary condition analysis of organisational capabilities for a resilient service operation in the hotel industry in Ghana</span>. <em>Heliyon</em>, <em>10</em>(4), e26473. <a href="https://doi.org/10.1016/j.heliyon.2024.e26473">https://doi.org/10.1016/j.heliyon.2024.e26473</a>
 </div>
 <div id="ref-ogundipe2022interfirm" class="csl-entry">
 Ogundipe, S. J., Peters, L. D., &amp; Tóth, Z. (2022). Interfirm problem representation: Developing shared understanding within inter-organizational networks. <em>Industrial Marketing Management</em>, <em>100</em>, 76–87. <a href="https://doi.org/10.1016/j.indmarman.2021.11.004">https://doi.org/10.1016/j.indmarman.2021.11.004</a>
@@ -20244,6 +21292,9 @@ Schneider, C. Q., &amp; Wagemann, C. (2012). <em>Set-theoretic methods for the s
 <div id="ref-schubring2023extended" class="csl-entry">
 Schubring, S., &amp; Richter, N. (2023). <em>Extended TAM</em> (Version V4). Mendeley Data. <a href="https://doi.org/10.17632/pd5dp3phx2.4">https://doi.org/10.17632/pd5dp3phx2.4</a>
 </div>
+<div id="ref-shahjehan2019organizational" class="csl-entry">
+Shahjehan, A., Afsar, B., &amp; Shah, S. I. (2019). Is organizational commitment-job satisfaction relationship necessary for organizational commitment-citizenship behavior relationships? A meta-analytical <span>Necessary Condition Analysis</span>. <em>Economic Research-Ekonomska Istra<span>ž</span>ivanja</em>, <em>32</em>(1), 2657–2679. <a href="https://hrcak.srce.hr/229569">https://hrcak.srce.hr/229569</a>
+</div>
 <div id="ref-sharma2024framework" class="csl-entry">
 Sharma, P. N., Sarstedt, M., Ringle, C. M., Cheah, J.-H., Herfurth, A., &amp; Hair, J. F. (2024). A framework for enhancing the replicability of behavioral MIS research using prediction oriented techniques. <em>International Journal of Information Management</em>, <em>78</em>, 102805. <a href="https://doi.org/10.1016/j.ijinfomgt.2024.102805">https://doi.org/10.1016/j.ijinfomgt.2024.102805</a>
 </div>
@@ -20253,6 +21304,12 @@ Siemsen, E., Roth, A. V., &amp; Balasubramanian, S. (2008). How motivation, oppo
 <div id="ref-simon1957models" class="csl-entry">
 Simon, H. A. (1957). <em>Models of man: Social and rational</em>. Wiley.
 </div>
+<div id="ref-sirisety2025necessary" class="csl-entry">
+Sirisety, M., Nekkanti, M. R., Datti, R. S., Bikkina, N., Patrakov, E. V., &amp; Baturina, L. (2025). Necessary condition analysis on the relationship between fear of missing out, social networking addiction, and psychological well-being. <em>European Journal of Mental Health</em>, <em>20</em>, 1–16. <a href="https://doi.org/10.5708/ejmh.20.2025.0042">https://doi.org/10.5708/ejmh.20.2025.0042</a>
+</div>
+<div id="ref-solaimani2023critical" class="csl-entry">
+Solaimani, S., &amp; Swaak, L. (2023). Critical success factors in a multi-stage adoption of artificial intelligence: A necessary condition analysis. <em>Journal of Engineering and Technology Management</em>, <em>69</em>, 101760. <a href="https://doi.org/10.1016/j.jengtecman.2023.101760">https://doi.org/10.1016/j.jengtecman.2023.101760</a>
+</div>
 <div id="ref-stanford2023underdetermination" class="csl-entry">
 Stanford, K. (2023). Underdetermination of scientific theory. In E. N. Zalta &amp; U. Nodelman (Eds.), <em>The stanford encyclopedia of philosophy (fall 2023 edition)</em>. Metaphysics Research Lab, Stanford University. <a href="https://plato.stanford.edu/archives/fall2023/entries/scientific-underdetermination/">https://plato.stanford.edu/archives/fall2023/entries/scientific-underdetermination/</a>
 </div>
@@ -20261,6 +21318,9 @@ Stek, K., &amp; Schiele, H. (2021). How to train supply managers–necessary and
 </div>
 <div id="ref-su2023identifying" class="csl-entry">
 Su, D. N., Nguyen-Phuoc, D. Q., Tran, P. T. K., Van Nguyen, T., Luu, T. T., &amp; Pham, H.-G. (2023). Identifying must-have factors and should-have factors affecting the adoption of electric motorcycles – a combined use of <span>PLS-SEM</span> and <span>NCA</span> approach. <em>Travel Behaviour and Society</em>, <em>33</em>, 100633. <a href="https://doi.org/10.1016/j.tbs.2023.100633">https://doi.org/10.1016/j.tbs.2023.100633</a>
+</div>
+<div id="ref-subramanian2024exploring" class="csl-entry">
+Subramanian, B., Jain, N. K., &amp; Bhattacharyya, S. S. (2024). Exploring the direct impact of environmental, social and governance (ESG) factors on organisational innovation output and institutional isomorphism: A study in the context of multinational life sciences organisations. <em>Benchmarking: An International Journal</em>, <em>33</em>, 129–166. <a href="https://doi.org/10.1108/BIJ-05-2024-0391">https://doi.org/10.1108/BIJ-05-2024-0391</a>
 </div>
 <div id="ref-teece2007explicating" class="csl-entry">
 Teece, D. J. (2007). Explicating dynamic capabilities: The nature and microfoundations of (sustainable) enterprise performance. <em>Strategic Management Journal</em>, <em>28</em>(13), 1319–1350. <a href="https://doi.org/10.1002/smj.640">https://doi.org/10.1002/smj.640</a>
@@ -20283,6 +21343,9 @@ Tuuli, M. M., &amp; Rhee, H. van. (2021). How ability, motivation, and opportuni
 <div id="ref-tynan2020education" class="csl-entry">
 Tynan, M. C., Credé, M., &amp; Harms, P. D. (2020). Are individual characteristics and behaviors necessary-but-not-sufficient conditions for academic success?: A demonstration of <span class="nocase">Dul’s</span> (2016) necessary condition analysis. <em>Learning and Individual Differences</em>, <em>77</em>, 101815. <a href="https://doi.org/10.1016/j.lindif.2019.101815">https://doi.org/10.1016/j.lindif.2019.101815</a>
 </div>
+<div id="ref-van2016contracts" class="csl-entry">
+Van der Valk, W., Sumo, R., Dul, J., &amp; Schroeder, R. G. (2016). When are contracts and trust necessary for innovation in buyer-supplier relationships? A necessary condition analysis. <em>Journal of Purchasing and Supply Management</em>, <em>22</em>(4), 266–277. <a href="https://doi.org/10.1016/j.pursup.2016.06.005">https://doi.org/10.1016/j.pursup.2016.06.005</a>
+</div>
 <div id="ref-van2017limiting" class="csl-entry">
 Van Rhee, H., &amp; Dul, J. (2017). The limiting-factor theory: AMO-factors individually necessary and jointly sufficient for behavior. <em>Academy of Management Proceedings</em>, <em>2017</em>, 16432. <a href="https://doi.org/10.5465/AMBPP.2017.16432">https://doi.org/10.5465/AMBPP.2017.16432</a>
 </div>
@@ -20292,11 +21355,17 @@ Varzi, A. (2019). Mereology. In E. N. Zalta (Ed.), <em>The stanford encyclopedia
 <div id="ref-vis2018analyzing" class="csl-entry">
 Vis, B., &amp; Dul, J. (2018). Analyzing relationships of necessity not just in kind but also in degree: Complementing fs<span>QCA</span> with <span>NCA</span>. <em>Sociological Methods &amp; Research</em>, <em>47</em>(4), 872–899. <a href="https://doi.org/10.1177/0049124115626179">https://doi.org/10.1177/0049124115626179</a>
 </div>
+<div id="ref-vu2025examining" class="csl-entry">
+Vu, U., &amp; Tolstoy, D. (2025). <span class="nocase">Examining the complementary roles of market-driven and market-driving orientations in the geographical diversification strategies of e-commerce SMEs</span>. <em>Journal of Business Research</em>, <em>194</em>, 115375. <a href="https://doi.org/10.1016/j.jbusres.2025.115375">https://doi.org/10.1016/j.jbusres.2025.115375</a>
+</div>
 <div id="ref-wagner2020typicality" class="csl-entry">
 Wagner, G. (2020). Typicality and minutis rectis laws: From physics to sociology. <em>Journal for General Philosophy of Science</em>, <em>51</em>, 447–458. <a href="https://doi.org/10.1007/s10838-020-09505-7">https://doi.org/10.1007/s10838-020-09505-7</a>
 </div>
 <div id="ref-walberg1984improving" class="csl-entry">
 Walberg, H. J. (1984). Improving the productivity of america’s schools. <em>Educational Leadership</em>, <em>41</em>(8), 19–27. <a href="https://eric.ed.gov/?id=EJ299536">https://eric.ed.gov/?id=EJ299536</a>
+</div>
+<div id="ref-wang2025a" class="csl-entry">
+Wang, Z., &amp; Zhao, H. (2025). A configuration analysis of the driving path of corporate physical investments: Necessary condition analysis and qualitative comparative analysis based on fuzzy sets. <em>Managerial and Decision Economics</em>, <em>46</em>(1), 681–697. <a href="https://doi.org/10.1002/mde.4397">https://doi.org/10.1002/mde.4397</a>
 </div>
 <div id="ref-wasserstein2016asa" class="csl-entry">
 Wasserstein, R. L., &amp; Lazar, N. A. (2016). The ASA statement on p-values: Context, process, and purpose. <em>The American Statistician</em>, <em>70</em>(2), 129–133. <a href="https://doi.org/10.1080/00031305.2016.1154108">https://doi.org/10.1080/00031305.2016.1154108</a>
@@ -20447,7 +21516,10 @@ Znaniecki, F. (1934). <em>The <span>M</span>ethod of <span>S</span>ociology</em>
 <li id="fn115"><p>For high-low and low-low relationship, NCA analyzes corners 3 and 4, respectively, and the NEST tool shows the corresponding inequality-signs: (<span class="math inline">\(\ge\)</span>) and (<span class="math inline">\(\le\)</span>).<a href="#fnref115" class="footnote-back">↩︎</a></p></li>
 <li id="fn116"><p>The symbol ◢ for necessity-in-degree differs from the square symbol <span class="math inline">\(\blacksquare\)</span>
 proposed by <span class="citation">Greckhamer (<a href="#ref-greckhamer2016ceo">2016</a>)</span>, and the diamond symbol <span class="math inline">\(\blacklozenge\)</span> used by <span class="citation">Holtrop et al. (<a href="#ref-holtrop2024increasing">2024</a>)</span>. Both symbols indicate the presence of a necessary condition <em>in kind</em> according to QCA’s necessity analysis. The NEST table uses black dot symbols to indicate presence of the condition as originally and commonly used <span class="citation">(e.g., <a href="#ref-fiss2011building">Fiss, 2011</a>; <a href="#ref-rubinson2019presenting">Rubinson, 2019</a>)</span>. To indicate absence of a condition, often a circle, a circled minus, or a crossed circle are in the QCA solution table. In the NEST table crossed circles ⊗/<small><small>⊗</small></small> are selected as such symbols are originally proposed by <span class="citation">Fiss (<a href="#ref-fiss2011building">2011</a>)</span> and often used <span class="citation">(e.g., <a href="#ref-mello2021qualitative">Mello, 2021</a>)</span>. Note that the symbols may slightly differ in publications depending on selected fonts. <span class="citation">Rubinson (<a href="#ref-rubinson2025fiss">2025</a>)</span> provides dedicated, interactive software for producing publication-quality “Fiss configuration charts”, including NEST tables that incorporate the ◢ symbol. A template for producing the NEST in <code>R</code> is available via the book-page <a href="https://jandul.github.io/NCA/" class="uri">https://jandul.github.io/NCA/</a>.<a href="#fnref116" class="footnote-back">↩︎</a></p></li>
-<li id="fn117"><p>The derivation was done by Roelof Kuik.<a href="#fnref117" class="footnote-back">↩︎</a></p></li>
+<li id="fn117"><p>The requirement of causality also applies to average effect interventions.<a href="#fnref117" class="footnote-back">↩︎</a></p></li>
+<li id="fn118"><p>Assuming min-max normalized condition scales such that bottleneck distances and effort are comparable between conditions<a href="#fnref118" class="footnote-back">↩︎</a></p></li>
+<li id="fn119"><p>The data are the same data as those used in Appendix <a href="#appendixe">H</a>.<a href="#fnref119" class="footnote-back">↩︎</a></p></li>
+<li id="fn120"><p>The derivation was done by Roelof Kuik.<a href="#fnref120" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
