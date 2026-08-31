@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Necessary Condition Analysis (NCA)</title>
-  <meta name="description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <title>D Affine transformations | Necessary Condition Analysis (NCA)</title>
+  <meta name="description" content="D Affine transformations | Necessary Condition Analysis (NCA): Principles and Application" />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Necessary Condition Analysis (NCA)" />
+  <meta property="og:title" content="D Affine transformations | Necessary Condition Analysis (NCA)" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <meta property="og:description" content="D Affine transformations | Necessary Condition Analysis (NCA): Principles and Application" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Necessary Condition Analysis (NCA)" />
+  <meta name="twitter:title" content="D Affine transformations | Necessary Condition Analysis (NCA)" />
   
-  <meta name="twitter:description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <meta name="twitter:description" content="D Affine transformations | Necessary Condition Analysis (NCA): Principles and Application" />
   
 
 <meta name="author" content="Jan Dul" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="acknowledgments.html"/>
+<link rel="prev" href="appendixa.html"/>
+<link rel="next" href="appendixtprtnr.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -489,52 +489,363 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Necessary Condition Analysis (NCA)</h1>
-<h2 class="subtitle"><em>Principles and Application</em></h2>
-<p class="author"><em>Jan Dul</em></p>
-</div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>“Is coffee a necessary condition for you?” Someone asked me this question after hearing that I had taken time away in Italy to focus on writing my book, and that I like Italy’s coffee culture. “No, it is not; it only helps.” Focus, time, perseverance, and several other things are true necessary conditions. Without any of them, the book would not exist.</p>
-<p>And here it is! In the book I present the principles of Necessary Condition Analysis (NCA) and their application in empirical studies in research and practice. NCA is an approach that uses necessity causal logic to identify necessary conditions from data. The core idea is that a necessary condition must be present to make the outcome possible, and that its absence guarantees the absence of the outcome. Compensation is not possible.</p>
-<p>My intention with this book is to help researchers, data analysts, practitioners, and others develop a deeper understanding of the NCA approach and apply it effectively and with high-quality standards. The book brings together the fundamentals of NCA and integrates the most recent methodological advancements and tools. It synthesizes ideas from my earlier publications that describe NCA at introductory levels <span class="citation">(e.g., <a href="#ref-dul2016orm">Dul, 2016b</a>, <a href="#ref-dul2020book">2020</a>)</span> as well as more advanced treatments <span class="citation">(<a href="#ref-dul2020orm">Dul, Van der Laan, et al., 2020</a>; <a href="#ref-dul2021online">Dul, 2021</a>, <a href="#ref-dul2024different">2024a</a>)</span>, while also introducing more background, new topics, and recent developments. From 2021 to 2026, a regularly updated online predecessor of this book was available <span class="citation">(<a href="#ref-dul2021online">Dul, 2021</a>)</span>, which is now archived and integrated into the present book.</p>
-<p>The first chapter of this book provides a general introduction to the possibilities and current use of NCA. Next, Part I contains five chapters on the <em>principles</em> of NCA, covering NCA’s causality, theory, mathematics, statistics, and its credibility for identifying necessity from data. Part II has six chapters about the <em>application</em> of these principles in empirical studies discussing NCA’s hypothesis formulation, data collection, data analysis, reporting, and how to apply NCA in multimethod research and in practice. I finish the book with a summary and a personal reflection.</p>
-<p>The book’s content expresses my current understanding and interpretation of NCA. NCA develops over time, just like other methodological approaches do. As NCA is applied more widely, new questions, topics, insights, and ideas will emerge. An online version of the book with updates and additional materials is available via the book-page: <a href="https://jandul.github.io/NCA/" class="uri">https://jandul.github.io/NCA/</a>. For the physical version of the book see <span class="citation">Dul (<a href="#ref-dul2025book">2026</a>)</span>.</p>
-<p>I hope this book serves those who wish to gain a comprehensive understanding of the principles of NCA and their application, both in academic research and practical contexts.</p>
-<p>Enjoy discovering and applying NCA!<br />
- 
- <br />
-Leiden, March 2026</p>
-</div>
-<h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
-<div id="ref-dul2016orm" class="csl-entry">
-Dul, J. (2016b). <span>Necessary Condition Analysis</span> (<span>NCA</span>): Logic and methodology of <span>“necessary but not sufficient”</span> causality. <em>Organizational Research Methods</em>, <em>19</em>(1), 10–52. <a href="https://doi.org/10.1177/1094428115584005">https://doi.org/10.1177/1094428115584005</a>
-</div>
-<div id="ref-dul2020book" class="csl-entry">
-Dul, J. (2020). <em><span>Conducting Necessary Condition Analysis</span>.</em> Sage. <a href="https://uk.sagepub.com/en-gb/eur/conducting-necessary-condition-analysis-for-business-and-management-students/book262898">https://uk.sagepub.com/en-gb/eur/conducting-necessary-condition-analysis-for-business-and-management-students/book262898</a>
-</div>
-<div id="ref-dul2021online" class="csl-entry">
-Dul, J. (2021). <em><span class="nocase">Advances in Necessary Condition Analysis.</span></em> online book. <a href="https://bookdown.org/ncabook/advanced_nca2/">https://bookdown.org/ncabook/advanced_nca2/</a>
-</div>
-<div id="ref-dul2024different" class="csl-entry">
-Dul, J. (2024a). A different causal perspective with <span>Necessary Condition Analysis</span>. <em>Journal of Business Research</em>, <em>177</em>, 114618. <a href="https://doi.org/10.1016/j.jbusres.2024.114618">https://doi.org/10.1016/j.jbusres.2024.114618</a>
-</div>
-<div id="ref-dul2025book" class="csl-entry">
-Dul, J. (2026). <em><span class="nocase">Necessary Condition Analysis (NCA): Principles and Application</span></em>. CRC press/Chapman Hall. <a href="https://www.routledge.com">www.routledge.com</a>
-</div>
-<div id="ref-dul2020orm" class="csl-entry">
-Dul, J., Van der Laan, E., &amp; Kuik, R. (2020). A statistical significance test for <span>Necessary Condition Analysis</span>. <em>Organizational Research Methods</em>, <em>23</em>(2), 385–395. <a href="https://doi.org/10.1177/1094428118795272">https://doi.org/10.1177/1094428118795272</a>
-</div>
+<div id="appendixd" class="section level1 hasAnchor" number="16">
+<h1><span class="header-section-number">D</span> Affine transformations<a href="appendixd.html#appendixd" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This appendix shows that affine transformations preserve the NCA effect size <span class="math inline">\(d\)</span>.</p>
+<p>The following definitions are used:</p>
+<ul>
+<li><p>Let <span class="math inline">\(\Omega \subseteq \mathbb{R}^2\)</span> be the data in the <span class="math inline">\(XY\)</span>-plane.</p></li>
+<li><p>Let <span class="math inline">\(S\)</span> be the <em>scope</em> defined by:</p>
+<p><span class="math display">\[
+S = [X_{\min}, X_{\max}] \times [Y_{\min}, Y_{\max}]
+\]</span></p></li>
+<li><p>Let <span class="math inline">\(C \subseteq S\)</span> be the <em>ceiling zone</em> or <em>empty area</em> (above the ceiling line).</p></li>
+</ul>
+<p>The <em>effect size</em> in NCA is defined as:</p>
+<p><span class="math display">\[
+d = \frac{\text{Area}(C)}{\text{Area}(S)}
+\]</span></p>
+<p>Let <span class="math inline">\(f: \mathbb{R}^2 \to \mathbb{R}^2\)</span> be a general <em>differentiable and invertible</em> transformation:</p>
+<p><span class="math display">\[
+f(x, y) = (u, v) = (f_1(x), f_2(y))
+\]</span></p>
+<p>The <em>Jacobian determinant</em> <span class="math inline">\(J_f(x, y)\)</span> indicates how an infinitesimal area around point <span class="math inline">\((x, y)\)</span> is transformed:</p>
+<p><span class="math display">\[
+J_f(x, y) =
+\begin{vmatrix}
+\frac{df_1}{dx} &amp; 0 \\
+0 &amp; \frac{df_2}{dy}
+\end{vmatrix}
+= f_1&#39;(x) \cdot f_2&#39;(y)
+\]</span></p>
+<p>The area of a transformed region <span class="math inline">\(R\)</span> becomes:</p>
+<p><span class="math display">\[
+\text{Area}(f(R)) = \iint_R |J_f(x, y)| \, dx\,dy
+\]</span></p>
+<p>So the <em>transformed effect size</em> becomes:</p>
+<p><span class="math display">\[
+d&#39; = \frac{\iint_{{C}} |J_f(x, y)| \, dx\,dy}{\iint_{{S}} |J_f(x, y)| \, dx\,dy}
+\]</span></p>
+<p>For the affine case:</p>
+<p>If <span class="math inline">\(f_1(x) = ax + b\)</span> and <span class="math inline">\(f_2(y) = cy + e\)</span>, then:</p>
+<p><span class="math display">\[
+f_1&#39;(x) = a, \quad f_2&#39;(y) = c \quad \Rightarrow \quad J_f(x, y) = ac = \text{constant}
+\]</span></p>
+<p>So:
+<span class="math display">\[
+d&#39; = \frac{ac \cdot \text{Area}({C})}{ac \cdot \text{Area}({S})} = d
+\]</span></p>
+<p>Thus, affine transformations preserves the effect size.</p>
+<!-- For the non-affine case: -->
+<!-- If either \( f_1 \) or \( f_2 \) is *nonlinear*, then \( f_1'(x) \) or \( f_2'(y) \) is *not constant*, and: -->
+<!-- \[ -->
+<!-- J_f(x, y) = f_1'(x) \cdot f_2'(y) \quad \text{is not constant} -->
+<!-- \] -->
+<!-- This means: -->
+<!-- - Area elements are *scaled differently* across \( {C} \) and \( {S} \), -->
+<!-- - Hence, the ratio \( d' \neq d \), -->
+<!-- - The NCA effect size is *distorted*. -->
+<!-- The transformed effect size is: -->
+<!-- \[ -->
+<!-- d' = \frac{\iint_{{C}} f_1'(x) f_2'(y) \, dx\,dy}{\iint_{{S}} f_1'(x) f_2'(y) \, dx\,dy} -->
+<!-- \] -->
+<!-- This equals \( d \) *if and only if* \( f_1'(x) \) and \( f_2'(y) \) are *constant*, i.e., if \( f_1 \) and \( f_2 \) are *affine*. -->
+<!-- Therefore, only affine transformations preserve the NCA effect size. Nonlinear transformations distort it. -->
+<!-- # Causal DAGs and Necessity reasoning   {#appendixe} -->
+<!-- This appendix connects NCA's causal reasoning, where a necessary condition is understood as an enabler, a constraint, and a non-substitutable factor (see Chapter \@ref(hypothesisformulation)), with causal DAGs (Directed Acyclic Graphs) and its structural equations. -->
+<!-- Three causal patterns are compared: -->
+<!-- 1. A model with a true necessary condition. -->
+<!-- 2. A model with a second factor that is also truly necessary. -->
+<!-- 3. A model where the second factor only appears necessary, but is a proxy. -->
+<!-- --- -->
+<!-- ## Model 1. Necessity of $X_1$ -->
+<!-- In Model 1, $Y$ is the outcome, $X_1$ is a necessary condition for $Y$, and $R$ are all other factors that are required to produce $Y$. -->
+<!-- ```{r dag1, echo=FALSE, message=FALSE, out.width = "50%", fig.align='center', fig.cap= "$X_1$ is necessary condition for $Y$. $R$ represents all other factors that are necessary for $Y$. $X_1$ and $R$ are jointly sufficient for $Y$."} -->
+<!-- knitr::include_graphics('fig-model1-dag.png') -->
+<!-- ``` -->
+<!-- $X_1$ ───► $Y$ ◄─── $R$ -->
+<!-- The structural equation is: -->
+<!-- \[ -->
+<!-- Y := X_1 \land R -->
+<!-- \] -->
+<!-- where $\land$ means logical AND, and $:=$ “is defined as” or “is determined by.” It means that $Y$ is not just equal to $X_1 \land R$, but is causally set by it. -->
+<!-- In NCA's interpretation $X_1$ and $R$ are individually necessary. The DAG encodes the structural sufficiency relation ($Y := X_1 \land R$), while NCA focuses on the ceiling inequalities ($Y \le X_1$, $Y \le R$). The sufficiency part is implied by the structural equation but not visible in the ceiling lines: -->
+<!-- \[ -->
+<!-- Y \le X_1,\qquad Y \le R. -->
+<!-- \] -->
+<!-- Intervention: -->
+<!-- \[ -->
+<!-- \begin{aligned} -->
+<!-- \operatorname{do}(X_1=0) &\;\Rightarrow\; Y=0 \quad\text{(confirms $X_1$ is necessary)} \\ -->
+<!-- \operatorname{do}(R=0)   &\;\Rightarrow\; Y=0 \quad\text{(confirms $R$ is necessary)} \\ -->
+<!-- \operatorname{do}(X_1=1) &\;\Rightarrow\; Y=R \quad\text{($X_1$ alone is not sufficient)} \\ -->
+<!-- \operatorname{do}(R=1)   &\;\Rightarrow\; Y=X_1 \quad\text{($R$ alone is not sufficient)} \\ -->
+<!-- \end{aligned} -->
+<!-- \] -->
+<!-- Thus, both $X_1$ and $R$ are true necessary conditions. -->
+<!-- ## Model 2. Necessity of $X_1$ and $X_2$ -->
+<!-- In Model 2 $X_1$ is necessary for $Y$ and there is a second condition $X_2$ that is also necessary for $Y$. -->
+<!-- ```{r dag2, echo=FALSE, message=FALSE, out.width = "50%", fig.align='center', fig.cap= "$X_1$ and $X_2$ are necessary for $Y$."} -->
+<!-- knitr::include_graphics('fig-model2-dag.png') -->
+<!-- ``` -->
+<!-- $X_1$ ───► $Y$ ◄─── $R$ -->
+<!-- $X_2$ ───► $Y$ -->
+<!-- The structural equations are: -->
+<!-- \[ -->
+<!-- Y := X_1 \land R \land X_2. -->
+<!-- \] -->
+<!-- In NCA's interpretation $X_2$ is isolated from $R$ and $X_1$; $X_1$, $X_2$ and $R$ are individually necessary and jointly sufficient. The necessity is represented by ceiling lines: -->
+<!-- \[ -->
+<!-- Y \le X_1,\qquad Y \le R,\qquad Y \le X_2. -->
+<!-- \] -->
+<!-- Intervention: -->
+<!-- \[ -->
+<!-- \begin{aligned} -->
+<!-- \operatorname{do}(X_1=0) &\;\Rightarrow\; Y=0 \\ -->
+<!-- \operatorname{do}(X_2=0) &\;\Rightarrow\; Y=0 \\ -->
+<!-- \operatorname{do}(R=0)   &\;\Rightarrow\; Y=0 \\ -->
+<!-- \end{aligned} -->
+<!-- \] -->
+<!-- Thus, each of $X_1$, $X_2$, and $R$ is a true necessary condition. -->
+<!-- Sufficiency is conjunctive: -->
+<!-- \[ -->
+<!-- \operatorname{do}(X_1=1) \Rightarrow Y = R \land X_2,\qquad -->
+<!-- \operatorname{do}(X_2=1) \Rightarrow Y = X_1 \land R, -->
+<!-- \] -->
+<!-- so no single condition is sufficient alone. -->
+<!-- --- -->
+<!-- ## Model 3. Necessity of $X_1$ and apparent necessity of $X_2$ -->
+<!-- In Model 3, $X_2$ only $X_1$ is necessary for $Y$. $X_2$ appears necessary because $X_1$ is sufficient for $X_2$. $X_2$ is fully determined by $X_1$, but it has no causal influence on $Y$. -->
+<!-- ```{r dag3, echo=FALSE, message=FALSE, out.width = "50%", fig.align='center', fig.cap= "$X_1$ is necessary for $Y$ and sufficient for $X_2$."} -->
+<!-- knitr::include_graphics('fig-model3-dag.png') -->
+<!-- ``` -->
+<!-- $X_1$ ───► $Y$ ◄─── $R$ -->
+<!-- $X_1$ ─► $X_2$ -->
+<!-- The structural equations are: -->
+<!-- \[ -->
+<!-- Y := X_1 \land R,\qquad X_2 := X_1. -->
+<!-- \] -->
+<!-- In NCA's interpretation, $X_1$ is true necessary. $X_2$ *looks* necessary but is a proxy. The necessity is represented by ceiling lines: -->
+<!-- \[ -->
+<!-- Y \le X_1,\qquad Y \le R,\qquad Y \le X_2 \quad (\text{apparent}). -->
+<!-- \] -->
+<!-- But only $Y \le X_1$ and $Y \le R$ are true causal necessities. -->
+<!-- Intervention: -->
+<!-- \[ -->
+<!-- \operatorname{do}(X_2=0),\; X_1=1,\; R=1 \;\Rightarrow\; Y=1. -->
+<!-- \] -->
+<!-- Thus, $X_2$ fails the do-test: the ceiling $Y \le X_2$ is a proxy and does not represent true necessity. -->
+<!-- The proxy necessity $X_2$ indicates: -->
+<!-- - Enabler: $X_2$ may appear to enable $Y$ but it is not necessary. -->
+<!-- - Constraint: Absence of $X_2$ does not truly prevent $Y$. -->
+<!-- - Substitute: $X_2$ is replaceable; $X_1$ (and $R$) are the true constraints. -->
+<!-- ``` {r, echo = FALSE, eval = FALSE} -->
+<!-- library(dagitty) -->
+<!-- library(ggplot2) -->
+<!-- library(grid)  # for arrow(), unit() -->
+<!-- # --- Helpers (with edge trimming + linewidth) --- -->
+<!-- set_coords <- function(d, coords_df){ -->
+<!--   stopifnot(all(c("name","x","y") %in% names(coords_df))) -->
+<!--   dagitty::coordinates(d) <- list( -->
+<!--     x = setNames(coords_df$x, coords_df$name), -->
+<!--     y = setNames(coords_df$y, coords_df$name) -->
+<!--   ) -->
+<!--   d -->
+<!-- } -->
+<!-- edges_df <- function(d){ -->
+<!--   e  <- as.data.frame(dagitty::edges(d))   # columns: v (from), w (to) -->
+<!--   cr <- dagitty::coordinates(d) -->
+<!--   vnames <- as.character(e$v) -->
+<!--   wnames <- as.character(e$w) -->
+<!--   data.frame( -->
+<!--     v = vnames, -->
+<!--     w = wnames, -->
+<!--     x_from = as.numeric(cr$x[vnames]), -->
+<!--     y_from = as.numeric(cr$y[vnames]), -->
+<!--     x_to   = as.numeric(cr$x[wnames]), -->
+<!--     y_to   = as.numeric(cr$y[wnames]), -->
+<!--     stringsAsFactors = FALSE -->
+<!--   ) -->
+<!-- } -->
+<!-- # Trim edge so it starts/ends at node border (not center) -->
+<!-- trim_edges <- function(ed, r = 0.18){  # r is node radius in DATA units; tweak to fit your layout -->
+<!--   dx <- ed$x_to - ed$x_from -->
+<!--   dy <- ed$y_to - ed$y_from -->
+<!--   L  <- sqrt(dx*dx + dy*dy) -->
+<!--   # Avoid division by zero, and don't invert edges shorter than 2r -->
+<!--   ux <- ifelse(L > 0, dx / L, 0) -->
+<!--   uy <- ifelse(L > 0, dy / L, 0) -->
+<!--   shrink <- pmin(r, L/2 - 1e-6)  # keep positive -->
+<!--   ed$x_from <- ed$x_from + ux * shrink -->
+<!--   ed$y_from <- ed$y_from + uy * shrink -->
+<!--   ed$x_to   <- ed$x_to   - ux * shrink -->
+<!--   ed$y_to   <- ed$y_to   - uy * shrink -->
+<!--   ed -->
+<!-- } -->
+<!-- plot_dag_base <- function(d, labels_df = NULL, title = NULL, -->
+<!--                           node_radius = 0.18,  # in DATA units; increase if your nodes are larger -->
+<!--                           node_size   = 10,     # visual size of node points 8 -->
+<!--                           arrow_len_pt= 10,    # arrowhead length in points -->
+<!--                           edge_width  = 0.9){ -->
+<!--   cr <- dagitty::coordinates(d) -->
+<!--   nodes <- data.frame( -->
+<!--     name = names(cr$x), -->
+<!--     x    = as.numeric(cr$x), -->
+<!--     y    = as.numeric(cr$y), -->
+<!--     stringsAsFactors = FALSE -->
+<!--   ) -->
+<!--   if (!is.null(labels_df) && all(c("name","label") %in% names(labels_df))){ -->
+<!--     nodes <- merge(nodes, labels_df, by = "name", all.x = TRUE, sort = FALSE) -->
+<!--   } else { -->
+<!--     nodes$label <- nodes$name -->
+<!--   } -->
+<!--   ed <- trim_edges(edges_df(d), r = node_radius) -->
+<!--   ggplot() + -->
+<!--     # nodes (draw first) -->
+<!--     geom_point( -->
+<!--       data = nodes, -->
+<!--       aes(x = x, y = y), -->
+<!--       shape = 21, size = node_size, stroke = 0.6, -->
+<!--       #colour = "grey10", fill = "#4C78A8" -->
+<!--       colour = "grey10", fill = "black" -->
+<!--     ) + -->
+<!--     # edges on top so arrowheads are visible; NOTE: linewidth instead of size -->
+<!--     geom_segment( -->
+<!--       data = ed, -->
+<!--       aes(x = x_from, y = y_from, xend = x_to, yend = y_to), -->
+<!--       colour = "grey15", linewidth = edge_width, -->
+<!--       lineend = "round", -->
+<!--       arrow = arrow(length = unit(arrow_len_pt, "pt"), type = "closed") -->
+<!--     ) + -->
+<!--     # labels on top (math-ready) -->
+<!--     geom_text( -->
+<!--       data = nodes, -->
+<!--       aes(x = x, y = y, label = label), -->
+<!--       colour = "white", fontface = "bold", size = 4.2, parse = TRUE -->
+<!--     ) + -->
+<!--     coord_equal() + -->
+<!--     theme_minimal(base_size = 12) + -->
+<!--     theme( -->
+<!--       panel.grid = element_blank(), -->
+<!--       axis.title = element_blank(), -->
+<!--       axis.text  = element_blank(), -->
+<!--       axis.ticks = element_blank(), -->
+<!--       plot.title = element_text(face = "bold", hjust = 0.5) -->
+<!--     ) + -->
+<!--     labs(title = title) -->
+<!-- } -->
+<!-- dag1 <- dagitty("dag { X1 -> Y; R -> Y }") -->
+<!-- coords1 <- data.frame( -->
+<!--   name  = c("X1","R","Y"), -->
+<!--   x     = c(0.0, 0.0, 2.2), -->
+<!--   y     = c(0.8,-0.8, 0.0) -->
+<!-- ) -->
+<!-- labels1 <- data.frame( -->
+<!--   name  = c("X1","R","Y"), -->
+<!--   label = c("X[1]","R","Y") -->
+<!-- ) -->
+<!-- dag1 <- set_coords(dag1, coords1) -->
+<!-- # Tune node_radius so arrowheads touch the circle edge nicely with your coordinate scale. -->
+<!-- p1 <- plot_dag_base(dag1, labels1, -->
+<!--                     node_radius = 0.18,  # try 0.15–0.25 if needed -->
+<!--                     node_size   = 10, -->
+<!--                     arrow_len_pt= 12, -->
+<!--                     edge_width  = 1.0) -->
+<!-- p1 -->
+<!-- dag2 <- dagitty("dag { X1 -> Y; X2 -> Y; R -> Y }") -->
+<!-- coords2 <- data.frame( -->
+<!--   name  = c("X1","X2","R","Y"), -->
+<!--   x     = c(0.0, 0.0, 0.0, 2.6), -->
+<!--   y     = c(1.0, 0.0,-1.0, 0.0) -->
+<!-- ) -->
+<!-- labels2 <- data.frame( -->
+<!--   name  = c("X1","X2","R","Y"), -->
+<!--   label = c("X[1]","X[2]","R","Y") -->
+<!-- ) -->
+<!-- dag2 <- set_coords(dag2, coords2) -->
+<!-- p2 <- plot_dag_base(dag2, labels2) -->
+<!-- p2 -->
+<!-- dag3 <- dagitty("dag { X1 -> Y; R -> Y; X1 -> X2 }") -->
+<!-- coords3 <- data.frame( -->
+<!--   name  = c("X1","R","X2","Y"), -->
+<!--   x     = c(0.0, 0.0, 1.6, 2.6), -->
+<!--   y     = c(0.8,-0.8, 1.0, 0.0) -->
+<!-- ) -->
+<!-- labels3 <- data.frame( -->
+<!--   name  = c("X1","R","X2","Y"), -->
+<!--   label = c("X[1]","R","X[2]","Y") -->
+<!-- ) -->
+<!-- dag3 <- set_coords(dag3, coords3) -->
+<!-- p3 <- plot_dag_base(dag3, labels3) -->
+<!-- p3 -->
+<!-- ggsave("fig-model1-dag.png", p1, width = 5.5, height = 3.8, dpi = 300) -->
+<!-- ggsave("fig-model2-dag.png", p2, width = 6.2, height = 4.2, dpi = 300) -->
+<!-- ggsave("fig-model3-dag.png", p3, width = 6.2, height = 4.2, dpi = 300) -->
+<!-- ``` -->
+<!-- # Analytical proof why NCA is immune for confounding {#appendixconfounding} -->
+<!-- ## Setup -->
+<!-- Let $X \in \mathcal{X}$ be observed conditions and other predicors, $Y \in \mathbb{R}$ an outcome, and $Z \in \mathcal{Z}$ potential confounders that may be statistically dependent on $X$ (i.e., $p(z \mid x)$ may vary with $x$). -->
+<!-- Let the conditional support of $Y \mid X = x, Z = z$ be $S_{Y \mid x,z} \subseteq \mathbb{R}$ with upper endpoint -->
+<!-- $$ -->
+<!-- U(x,z) = \sup S_{Y\mid x,z}. -->
+<!-- $$ -->
+<!-- Let the **population ceiling** at $x$ be the essential supremum. The supremum is least upper bound: the smallest number that is greater than or equal to every element in the set. -->
+<!-- $$ -->
+<!-- C(x) = \operatorname{ess\,sup}\{Y \mid X = x\} = \sup S_{Y \mid x}, -->
+<!-- $$ -->
+<!-- where the conditional support aggregates over feasible confounder values: -->
+<!-- $$ -->
+<!-- S_{Y\mid x} = \overline{\bigcup_{z \in S_{Z\mid x}} S_{Y\mid x,z}},  -->
+<!-- \qquad -->
+<!-- S_{Z\mid x} = \{z : p(z \mid x) > 0\}. -->
+<!-- $$ -->
+<!-- Define the **impossibility (forbidden) region at $x$** (the empty space) as -->
+<!-- $$ -->
+<!-- \mathcal{E}(x) := \{y \in \mathbb{R} : y > C(x)\}. -->
+<!-- $$ -->
+<!-- By construction, $S_{Y\mid x} \cap \mathcal{E}(x) = \varnothing.$ -->
+<!-- ## Proposition -->
+<!-- > **Proposition (Empty-above-ceiling is invariant to confounding).**   -->
+<!-- > Suppose the representative sample reflects the population mix of confounders so that $S_{Z\mid x}$ is correctly represented for each $x$.   -->
+<!-- > Then for every $x \in \mathcal{X}$, -->
+<!-- > $$ -->
+<!-- > \mathbb{P}\big(Y \in \mathcal{E}(x)\mid X = x\big) = 0, -->
+<!-- > $$ -->
+<!-- > and this remains true under any change in the **weights** $p(z\mid x)$ (i.e., under confounding), provided the **support** $S_{Z\mid x}$ and the conditional supports $S_{Y\mid x,z}$ are unchanged. -->
+<!-- **Intuition:**   -->
+<!-- Confounding reweights which $z$ occur at a given $x$; it does not create outcomes that were previously impossible. The area above $C(x)$ stays empty. -->
+<!-- ## Proof  -->
+<!-- Fix $x$.   -->
+<!-- By support decomposition, -->
+<!-- $$ -->
+<!-- S_{Y\mid x} = \overline{\bigcup_{z\in S_{Z\mid x}} S_{Y\mid x,z}} -->
+<!-- \quad \Longrightarrow \quad -->
+<!-- C(x) = \sup S_{Y\mid x} = \sup_{z \in S_{Z\mid x}} U(x,z). -->
+<!-- $$ -->
+<!-- Let $y > C(x)$. Then for all $z \in S_{Z\mid x}$, $y > U(x,z)$, hence $y \notin S_{Y\mid x,z}$.   -->
+<!-- Therefore $y \notin S_{Y\mid x}$. -->
+<!-- Equivalently, -->
+<!-- $$ -->
+<!-- \mathbb{P}(Y = y \mid X = x, Z = z) = 0 -->
+<!-- \quad \text{for all } z \in S_{Z\mid x},\; y \in \mathcal{E}(x). -->
+<!-- $$ -->
+<!-- Integrating over $Z \mid X = x$ with any conditional distribution $p(z\mid x)$ supported on $S_{Z\mid x}$, -->
+<!-- $$ -->
+<!-- \mathbb{P}\big(Y \in \mathcal{E}(x)\mid X = x\big) -->
+<!-- = \int \mathbb{P}\big(Y \in \mathcal{E}(x)\mid X = x, Z = z\big)\,p(z\mid x)\,dz -->
+<!-- = \int 0\cdot p(z\mid x)\,dz -->
+<!-- = 0. -->
+<!-- $$ -->
+<!-- Thus the region $\mathcal{E}(x) = \{y > C(x)\}$ remains empty **regardless of the reweighting** $p(z\mid x)$.   -->
+
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="acknowledgments.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="appendixa.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="appendixtprtnr.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Introduction | Necessary Condition Analysis (NCA)</title>
+  <meta name="description" content="1 Introduction | Necessary Condition Analysis (NCA): Principles and Application" />
+  <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Introduction | Necessary Condition Analysis (NCA)" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="1 Introduction | Necessary Condition Analysis (NCA): Principles and Application" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Introduction | Necessary Condition Analysis (NCA)" />
+  
+  <meta name="twitter:description" content="1 Introduction | Necessary Condition Analysis (NCA): Principles and Application" />
+  
+
+<meta name="author" content="Jan Dul" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="acknowledgments.html"/>
+<link rel="next" href="part-i.-principles.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+|<img src="logoNCA.png" width="270" height="270">
+<li><a href="./">Necessary Condition Analysis - NCA. Principles and Application</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="" data-path="part-i.-principles.html"><a href="part-i.-principles.html"><i class="fa fa-check"></i>Part I. Principles</a></li>
+<li class="chapter" data-level="2" data-path="causality.html"><a href="causality.html"><i class="fa fa-check"></i><b>2</b> Causality</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="causality.html"><a href="causality.html#summarycausality"><i class="fa fa-check"></i><b>2.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="2.2" data-path="causality.html"><a href="causality.html#whatisacause"><i class="fa fa-check"></i><b>2.2</b> What is a cause?</a></li>
+<li class="chapter" data-level="2.3" data-path="causality.html"><a href="causality.html#sufficiencycausality"><i class="fa fa-check"></i><b>2.3</b> Sufficiency causality</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="causality.html"><a href="causality.html#deterministicsufficiency"><i class="fa fa-check"></i><b>2.3.1</b> Deterministic sufficiency</a></li>
+<li class="chapter" data-level="2.3.2" data-path="causality.html"><a href="causality.html#probabilisticsufficiency"><i class="fa fa-check"></i><b>2.3.2</b> Probabilistic sufficiency</a></li>
+<li class="chapter" data-level="2.3.3" data-path="causality.html"><a href="causality.html#typicalitysufficiency"><i class="fa fa-check"></i><b>2.3.3</b> Typicality sufficiency</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="causality.html"><a href="causality.html#necessitycausality"><i class="fa fa-check"></i><b>2.4</b> Necessity causality</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="causality.html"><a href="causality.html#deterministicnecessity"><i class="fa fa-check"></i><b>2.4.1</b> Deterministic necessity</a></li>
+<li class="chapter" data-level="2.4.2" data-path="causality.html"><a href="causality.html#probabilisticnecessity"><i class="fa fa-check"></i><b>2.4.2</b> Probabilistic necessity</a></li>
+<li class="chapter" data-level="2.4.3" data-path="causality.html"><a href="causality.html#typicalitynecessity"><i class="fa fa-check"></i><b>2.4.3</b> Typicality necessity</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="causality.html"><a href="causality.html#causalversusconditionallogic"><i class="fa fa-check"></i><b>2.5</b> Causal versus conditional logic</a></li>
+<li class="chapter" data-level="2.6" data-path="causality.html"><a href="causality.html#binarytocontinuous"><i class="fa fa-check"></i><b>2.6</b> From binary necessity to continuous necessity</a></li>
+<li class="chapter" data-level="2.7" data-path="causality.html"><a href="causality.html#underdetermination"><i class="fa fa-check"></i><b>2.7</b> Causal underdetermination</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="theory.html"><a href="theory.html"><i class="fa fa-check"></i><b>3</b> Theory</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="theory.html"><a href="theory.html#summarytheory"><i class="fa fa-check"></i><b>3.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="3.2" data-path="theory.html"><a href="theory.html#definitionnecessitytheory"><i class="fa fa-check"></i><b>3.2</b> Main elements of a theory</a></li>
+<li class="chapter" data-level="3.3" data-path="theory.html"><a href="theory.html#parsimonious"><i class="fa fa-check"></i><b>3.3</b> Parsimonious necessity theories</a></li>
+<li class="chapter" data-level="3.4" data-path="theory.html"><a href="theory.html#theorytypes"><i class="fa fa-check"></i><b>3.4</b> Types of necessity theories</a></li>
+<li class="chapter" data-level="3.5" data-path="theory.html"><a href="theory.html#direction"><i class="fa fa-check"></i><b>3.5</b> Direction of a necessity relationship</a></li>
+<li class="chapter" data-level="3.6" data-path="theory.html"><a href="theory.html#expectedemptycorner"><i class="fa fa-check"></i><b>3.6</b> Expected empty corner</a></li>
+<li class="chapter" data-level="3.7" data-path="theory.html"><a href="theory.html#morecorners"><i class="fa fa-check"></i><b>3.7</b> Double necessity</a></li>
+<li class="chapter" data-level="3.8" data-path="theory.html"><a href="theory.html#necessarybutnotsufficient"><i class="fa fa-check"></i><b>3.8</b> The meaning of ‘necessary but not sufficient’</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>4</b> Mathematics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="mathematics.html"><a href="mathematics.html#summarymathematics"><i class="fa fa-check"></i><b>4.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematics.html"><a href="mathematics.html#branchesofmathematics"><i class="fa fa-check"></i><b>4.2</b> Branches of mathematics</a></li>
+<li class="chapter" data-level="4.3" data-path="mathematics.html"><a href="mathematics.html#formalexpression"><i class="fa fa-check"></i><b>4.3</b> Model specification</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="mathematics.html"><a href="mathematics.html#formalboundingbox"><i class="fa fa-check"></i><b>4.3.1</b> Bounding box</a></li>
+<li class="chapter" data-level="4.3.2" data-path="mathematics.html"><a href="mathematics.html#mathceiling"><i class="fa fa-check"></i><b>4.3.2</b> Ceiling line</a></li>
+<li class="chapter" data-level="4.3.3" data-path="mathematics.html"><a href="mathematics.html#modeldf"><i class="fa fa-check"></i><b>4.3.3</b> Model degrees of freedom</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="mathematics.html"><a href="mathematics.html#mathematicalestimation"><i class="fa fa-check"></i><b>4.4</b> Mathematical estimation</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="mathematics.html"><a href="mathematics.html#effectsize"><i class="fa fa-check"></i><b>4.4.1</b> Effect size</a></li>
+<li class="chapter" data-level="4.4.2" data-path="mathematics.html"><a href="mathematics.html#inefficiency"><i class="fa fa-check"></i><b>4.4.2</b> Necessity inefficiency</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="mathematics.html"><a href="mathematics.html#modelfit"><i class="fa fa-check"></i><b>4.5</b> Model fit</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="mathematics.html"><a href="mathematics.html#complexity"><i class="fa fa-check"></i><b>4.5.1</b> Complexity</a></li>
+<li class="chapter" data-level="4.5.2" data-path="mathematics.html"><a href="mathematics.html#fit"><i class="fa fa-check"></i><b>4.5.2</b> Fit</a></li>
+<li class="chapter" data-level="4.5.3" data-path="mathematics.html"><a href="mathematics.html#ceilingaccuracy"><i class="fa fa-check"></i><b>4.5.3</b> Ceiling accuracy</a></li>
+<li class="chapter" data-level="4.5.4" data-path="mathematics.html"><a href="mathematics.html#purity"><i class="fa fa-check"></i><b>4.5.4</b> Purity - noise and exceptions</a></li>
+<li class="chapter" data-level="4.5.5" data-path="mathematics.html"><a href="mathematics.html#solidity"><i class="fa fa-check"></i><b>4.5.5</b> Solidity - support and spread</a></li>
+<li class="chapter" data-level="4.5.6" data-path="mathematics.html"><a href="mathematics.html#sharpness"><i class="fa fa-check"></i><b>4.5.6</b> Sharpness</a></li>
+<li class="chapter" data-level="4.5.7" data-path="mathematics.html"><a href="mathematics.html#nca-ribbon"><i class="fa fa-check"></i><b>4.5.7</b> NCA ribbon</a></li>
+<li class="chapter" data-level="4.5.8" data-path="mathematics.html"><a href="mathematics.html#summary-model-fit-metrics"><i class="fa fa-check"></i><b>4.5.8</b> Summary model fit metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="mathematics.html"><a href="mathematics.html#multipleconditions"><i class="fa fa-check"></i><b>4.6</b> Multiple necessary conditions</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="mathematics.html"><a href="mathematics.html#formalization-of-single-condition-approach"><i class="fa fa-check"></i><b>4.6.1</b> Formalization of single condition approach</a></li>
+<li class="chapter" data-level="4.6.2" data-path="mathematics.html"><a href="mathematics.html#illustration"><i class="fa fa-check"></i><b>4.6.2</b> Illustration</a></li>
+<li class="chapter" data-level="4.6.3" data-path="mathematics.html"><a href="mathematics.html#arguments-for-single-condition-analyses"><i class="fa fa-check"></i><b>4.6.3</b> Arguments for single condition analyses</a></li>
+<li class="chapter" data-level="4.6.4" data-path="mathematics.html"><a href="mathematics.html#chain"><i class="fa fa-check"></i><b>4.6.4</b> Chain of necessity</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>5</b> Statistics</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="statistics.html"><a href="statistics.html#summarystatistics"><i class="fa fa-check"></i><b>5.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="5.2" data-path="statistics.html"><a href="statistics.html#samplinglogic"><i class="fa fa-check"></i><b>5.2</b> Sampling logic</a></li>
+<li class="chapter" data-level="5.3" data-path="statistics.html"><a href="statistics.html#permutationtest"><i class="fa fa-check"></i><b>5.3</b> Permutation tests</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="statistics.html"><a href="statistics.html#general"><i class="fa fa-check"></i><b>5.3.1</b> General</a></li>
+<li class="chapter" data-level="5.3.2" data-path="statistics.html"><a href="statistics.html#assumptions-for-ncas-permutation-tests"><i class="fa fa-check"></i><b>5.3.2</b> Assumptions for NCA’s permutation tests</a></li>
+<li class="chapter" data-level="5.3.3" data-path="statistics.html"><a href="statistics.html#null"><i class="fa fa-check"></i><b>5.3.3</b> Null test: effect size difference from 0</a></li>
+<li class="chapter" data-level="5.3.4" data-path="statistics.html"><a href="statistics.html#contrast"><i class="fa fa-check"></i><b>5.3.4</b> Contrast test: effect size difference between two conditions</a></li>
+<li class="chapter" data-level="5.3.5" data-path="statistics.html"><a href="statistics.html#independent"><i class="fa fa-check"></i><b>5.3.5</b> Independent test: effect size difference between two groups</a></li>
+<li class="chapter" data-level="5.3.6" data-path="statistics.html"><a href="statistics.html#paired"><i class="fa fa-check"></i><b>5.3.6</b> Paired test: effect size difference between two time points</a></li>
+<li class="chapter" data-level="5.3.7" data-path="statistics.html"><a href="statistics.html#commonscope"><i class="fa fa-check"></i><b>5.3.7</b> Common scope</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="statistics.html"><a href="statistics.html#statisticalmodeling"><i class="fa fa-check"></i><b>5.4</b> Statistical modeling</a></li>
+<li class="chapter" data-level="5.5" data-path="statistics.html"><a href="statistics.html#ceilingquality"><i class="fa fa-check"></i><b>5.5</b> Quality of ceiling lines</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="statistics.html"><a href="statistics.html#statistical-quality-criteria"><i class="fa fa-check"></i><b>5.5.1</b> Statistical quality criteria</a></li>
+<li class="chapter" data-level="5.5.2" data-path="statistics.html"><a href="statistics.html#simulationeffect"><i class="fa fa-check"></i><b>5.5.2</b> Simulation results for NCA’s effect size</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="statistics.html"><a href="statistics.html#statisticspower"><i class="fa fa-check"></i><b>5.6</b> Power analysis</a></li>
+<li class="chapter" data-level="5.7" data-path="statistics.html"><a href="statistics.html#reversecausality"><i class="fa fa-check"></i><b>5.7</b> Reverse causality</a></li>
+<li class="chapter" data-level="5.8" data-path="statistics.html"><a href="statistics.html#measurementerror"><i class="fa fa-check"></i><b>5.8</b> Measurement error</a></li>
+<li class="chapter" data-level="5.9" data-path="statistics.html"><a href="statistics.html#spurious"><i class="fa fa-check"></i><b>5.9</b> Spuriousness</a>
+<ul>
+<li class="chapter" data-level="5.9.1" data-path="statistics.html"><a href="statistics.html#lack-of-theoretical-support"><i class="fa fa-check"></i><b>5.9.1</b> Lack of theoretical support</a></li>
+<li class="chapter" data-level="5.9.2" data-path="statistics.html"><a href="statistics.html#low-quality-data"><i class="fa fa-check"></i><b>5.9.2</b> Low-quality data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html"><i class="fa fa-check"></i><b>6</b> Credibility</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#summarysensitivityspecificity"><i class="fa fa-check"></i><b>6.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="6.2" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#corecriteria"><i class="fa fa-check"></i><b>6.2</b> Core criteria for necessity</a></li>
+<li class="chapter" data-level="6.3" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#statisticalcredibility"><i class="fa fa-check"></i><b>6.3</b> Statistical credibility</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#sensitivity"><i class="fa fa-check"></i><b>6.3.1</b> True Positive Rate (TPR, sensitivity)</a></li>
+<li class="chapter" data-level="6.3.2" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#specificity"><i class="fa fa-check"></i><b>6.3.2</b> True Negative Rate (TNR, specificity)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#empiricalcredibility"><i class="fa fa-check"></i><b>6.4</b> Empirical credibility</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#robustness"><i class="fa fa-check"></i><b>6.4.1</b> Robustness</a></li>
+<li class="chapter" data-level="6.4.2" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#modelfit1"><i class="fa fa-check"></i><b>6.4.2</b> Model fit</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#credibilitysummary"><i class="fa fa-check"></i><b>6.5</b> Recommendations for evaluating credibility</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-ii.-application.html"><a href="part-ii.-application.html"><i class="fa fa-check"></i>Part II. Application</a></li>
+<li class="chapter" data-level="7" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html"><i class="fa fa-check"></i><b>7</b> Hypothesis</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#summaryhypothesisformulation"><i class="fa fa-check"></i><b>7.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="7.2" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#hypothesistesting"><i class="fa fa-check"></i><b>7.2</b> Hypothesis formulation and testing</a></li>
+<li class="chapter" data-level="7.3" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#whynecessityhypothesis"><i class="fa fa-check"></i><b>7.3</b> Why developing necessity hypotheses is different</a></li>
+<li class="chapter" data-level="7.4" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#sources"><i class="fa fa-check"></i><b>7.4</b> Knowledge sources for developing necessity hypotheses</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#explicit"><i class="fa fa-check"></i><b>7.4.1</b> Explicit knowledge</a></li>
+<li class="chapter" data-level="7.4.2" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#tacit"><i class="fa fa-check"></i><b>7.4.2</b> Tacit knowledge</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#developingformaltheory"><i class="fa fa-check"></i><b>7.5</b> Developing a formal necessity hypothesis</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#preliminarytheory"><i class="fa fa-check"></i><b>7.5.1</b> Step 1: Define a preliminary necessity theory</a></li>
+<li class="chapter" data-level="7.5.2" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#thoughtexperiments"><i class="fa fa-check"></i><b>7.5.2</b> Step 2: Conduct thought experiments</a></li>
+<li class="chapter" data-level="7.5.3" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#causalexplanation"><i class="fa fa-check"></i><b>7.5.3</b> Step 3: Provide causal explanation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="datacollection.html"><a href="datacollection.html"><i class="fa fa-check"></i><b>8</b> Data</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="datacollection.html"><a href="datacollection.html#summary-of-this-chapter"><i class="fa fa-check"></i><b>8.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="8.2" data-path="datacollection.html"><a href="datacollection.html#researchdesign"><i class="fa fa-check"></i><b>8.2</b> Study design</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="datacollection.html"><a href="datacollection.html#observationalstudy"><i class="fa fa-check"></i><b>8.2.1</b> Observational study</a></li>
+<li class="chapter" data-level="8.2.2" data-path="datacollection.html"><a href="datacollection.html#longitudinal"><i class="fa fa-check"></i><b>8.2.2</b> Longitudinal study</a></li>
+<li class="chapter" data-level="8.2.3" data-path="datacollection.html"><a href="datacollection.html#casestudy"><i class="fa fa-check"></i><b>8.2.3</b> Case study</a></li>
+<li class="chapter" data-level="8.2.4" data-path="datacollection.html"><a href="datacollection.html#experiment"><i class="fa fa-check"></i><b>8.2.4</b> Experimental study</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="datacollection.html"><a href="datacollection.html#samplingandselection"><i class="fa fa-check"></i><b>8.3</b> Sampling and selection of cases</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="datacollection.html"><a href="datacollection.html#largensampling"><i class="fa fa-check"></i><b>8.3.1</b> Large-n sampling</a></li>
+<li class="chapter" data-level="8.3.2" data-path="datacollection.html"><a href="datacollection.html#smallncaseselection"><i class="fa fa-check"></i><b>8.3.2</b> Small-n case selection</a></li>
+<li class="chapter" data-level="8.3.3" data-path="datacollection.html"><a href="datacollection.html#replication"><i class="fa fa-check"></i><b>8.3.3</b> Replication</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="datacollection.html"><a href="datacollection.html#measurement"><i class="fa fa-check"></i><b>8.4</b> Measurement</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="datacollection.html"><a href="datacollection.html#quantitativedata"><i class="fa fa-check"></i><b>8.4.1</b> Quantitative data</a></li>
+<li class="chapter" data-level="8.4.2" data-path="datacollection.html"><a href="datacollection.html#qualitativedata"><i class="fa fa-check"></i><b>8.4.2</b> Qualitative data</a></li>
+<li class="chapter" data-level="8.4.3" data-path="datacollection.html"><a href="datacollection.html#setmembership"><i class="fa fa-check"></i><b>8.4.3</b> Set membership data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="datacollection.html"><a href="datacollection.html#dataset"><i class="fa fa-check"></i><b>8.5</b> Dataset</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="datacollection.html"><a href="datacollection.html#archivaldata"><i class="fa fa-check"></i><b>8.5.1</b> Archival data</a></li>
+<li class="chapter" data-level="8.5.2" data-path="datacollection.html"><a href="datacollection.html#transformation"><i class="fa fa-check"></i><b>8.5.2</b> Data transformation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="dataanalysis.html"><a href="dataanalysis.html"><i class="fa fa-check"></i><b>9</b> Data analysis</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="dataanalysis.html"><a href="dataanalysis.html#summary-of-this-chapter-1"><i class="fa fa-check"></i><b>9.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="9.2" data-path="dataanalysis.html"><a href="dataanalysis.html#illustrativeexample"><i class="fa fa-check"></i><b>9.2</b> Illustrative example</a></li>
+<li class="chapter" data-level="9.3" data-path="dataanalysis.html"><a href="dataanalysis.html#modelspecification"><i class="fa fa-check"></i><b>9.3</b> Model specification</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="dataanalysis.html"><a href="dataanalysis.html#scopespecification"><i class="fa fa-check"></i><b>9.3.1</b> Bounding box specification</a></li>
+<li class="chapter" data-level="9.3.2" data-path="dataanalysis.html"><a href="dataanalysis.html#ceilinglinespecification"><i class="fa fa-check"></i><b>9.3.2</b> Ceiling line specification</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="dataanalysis.html"><a href="dataanalysis.html#selectionevaluationcriteria"><i class="fa fa-check"></i><b>9.4</b> Selection of evaluation criteria</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="dataanalysis.html"><a href="dataanalysis.html#effectsizethreshold"><i class="fa fa-check"></i><b>9.4.1</b> Effect size threshold</a></li>
+<li class="chapter" data-level="9.4.2" data-path="dataanalysis.html"><a href="dataanalysis.html#pvaluethreshold"><i class="fa fa-check"></i><b>9.4.2</b> <strong><span class="math inline">\(p\)</span></strong>-value threshold</a></li>
+<li class="chapter" data-level="9.4.3" data-path="dataanalysis.html"><a href="dataanalysis.html#targetoutcome"><i class="fa fa-check"></i><b>9.4.3</b> Selection of target outcome</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="dataanalysis.html"><a href="dataanalysis.html#visualinspection"><i class="fa fa-check"></i><b>9.5</b> Visual inspection of the <span class="math inline">\(XY\)</span>-plot</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="dataanalysis.html"><a href="dataanalysis.html#is-the-expected-corner-empty"><i class="fa fa-check"></i><b>9.5.1</b> Is the expected corner empty?</a></li>
+<li class="chapter" data-level="9.5.2" data-path="dataanalysis.html"><a href="dataanalysis.html#is-the-selected-ceiling-line-appropriate"><i class="fa fa-check"></i><b>9.5.2</b> Is the selected ceiling line appropriate?</a></li>
+<li class="chapter" data-level="9.5.3" data-path="dataanalysis.html"><a href="dataanalysis.html#exampleoutliers"><i class="fa fa-check"></i><b>9.5.3</b> Which cases are possible outliers?</a></li>
+<li class="chapter" data-level="9.5.4" data-path="dataanalysis.html"><a href="dataanalysis.html#what-is-the-data-pattern-in-the-rest-of-plot"><i class="fa fa-check"></i><b>9.5.4</b> What is the data pattern in the rest of plot?</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="dataanalysis.html"><a href="dataanalysis.html#ceilinglineestimation"><i class="fa fa-check"></i><b>9.6</b> Ceiling line estimation</a></li>
+<li class="chapter" data-level="9.7" data-path="dataanalysis.html"><a href="dataanalysis.html#effectsizeestimation"><i class="fa fa-check"></i><b>9.7</b> Effect size and <span class="math inline">\(p\)</span>-value estimation</a></li>
+<li class="chapter" data-level="9.8" data-path="dataanalysis.html"><a href="dataanalysis.html#outliers"><i class="fa fa-check"></i><b>9.8</b> Outlier analysis</a>
+<ul>
+<li class="chapter" data-level="9.8.1" data-path="dataanalysis.html"><a href="dataanalysis.html#outliertypes"><i class="fa fa-check"></i><b>9.8.1</b> Outlier types</a></li>
+<li class="chapter" data-level="9.8.2" data-path="dataanalysis.html"><a href="dataanalysis.html#outlieridentification"><i class="fa fa-check"></i><b>9.8.2</b> Outlier identification</a></li>
+<li class="chapter" data-level="9.8.3" data-path="dataanalysis.html"><a href="dataanalysis.html#outlierdecisionmaking"><i class="fa fa-check"></i><b>9.8.3</b> Outlier decision approach</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="dataanalysis.html"><a href="dataanalysis.html#modelfit2"><i class="fa fa-check"></i><b>9.9</b> Model fit</a>
+<ul>
+<li class="chapter" data-level="9.9.1" data-path="dataanalysis.html"><a href="dataanalysis.html#complexity2"><i class="fa fa-check"></i><b>9.9.1</b> Complexity</a></li>
+<li class="chapter" data-level="9.9.2" data-path="dataanalysis.html"><a href="dataanalysis.html#fit2"><i class="fa fa-check"></i><b>9.9.2</b> Fit</a></li>
+<li class="chapter" data-level="9.9.3" data-path="dataanalysis.html"><a href="dataanalysis.html#ceilingaccuracy2"><i class="fa fa-check"></i><b>9.9.3</b> Ceiling accuracy</a></li>
+<li class="chapter" data-level="9.9.4" data-path="dataanalysis.html"><a href="dataanalysis.html#purity2"><i class="fa fa-check"></i><b>9.9.4</b> Noise</a></li>
+<li class="chapter" data-level="9.9.5" data-path="dataanalysis.html"><a href="dataanalysis.html#purity3"><i class="fa fa-check"></i><b>9.9.5</b> Exceptions</a></li>
+<li class="chapter" data-level="9.9.6" data-path="dataanalysis.html"><a href="dataanalysis.html#solidity2"><i class="fa fa-check"></i><b>9.9.6</b> Support</a></li>
+<li class="chapter" data-level="9.9.7" data-path="dataanalysis.html"><a href="dataanalysis.html#spread2"><i class="fa fa-check"></i><b>9.9.7</b> Spread</a></li>
+<li class="chapter" data-level="9.9.8" data-path="dataanalysis.html"><a href="dataanalysis.html#sharpness2"><i class="fa fa-check"></i><b>9.9.8</b> Sharpness</a></li>
+<li class="chapter" data-level="9.9.9" data-path="dataanalysis.html"><a href="dataanalysis.html#modelfitevaluation"><i class="fa fa-check"></i><b>9.9.9</b> Evaluation of model fit</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="dataanalysis.html"><a href="dataanalysis.html#necessityinkind"><i class="fa fa-check"></i><b>9.10</b> Conclusion about necessity-in-kind</a></li>
+<li class="chapter" data-level="9.11" data-path="dataanalysis.html"><a href="dataanalysis.html#bottleneck"><i class="fa fa-check"></i><b>9.11</b> Bottleneck analysis: necessity-in-degree</a>
+<ul>
+<li class="chapter" data-level="9.11.1" data-path="dataanalysis.html"><a href="dataanalysis.html#actual"><i class="fa fa-check"></i><b>9.11.1</b> Levels expressed as actual values</a></li>
+<li class="chapter" data-level="9.11.2" data-path="dataanalysis.html"><a href="dataanalysis.html#percentile"><i class="fa fa-check"></i><b>9.11.2</b> Levels expressed as percentiles</a></li>
+<li class="chapter" data-level="9.11.3" data-path="dataanalysis.html"><a href="dataanalysis.html#multiple-necessary-conditions"><i class="fa fa-check"></i><b>9.11.3</b> Multiple necessary conditions</a></li>
+<li class="chapter" data-level="9.11.4" data-path="dataanalysis.html"><a href="dataanalysis.html#bottleneckothercorners"><i class="fa fa-check"></i><b>9.11.4</b> Interpretation of the bottleneck table for other corners</a></li>
+<li class="chapter" data-level="9.11.5" data-path="dataanalysis.html"><a href="dataanalysis.html#na"><i class="fa fa-check"></i><b>9.11.5</b> NN and NA in the bottleneck table</a></li>
+</ul></li>
+<li class="chapter" data-level="9.12" data-path="dataanalysis.html"><a href="dataanalysis.html#robustnesschecks"><i class="fa fa-check"></i><b>9.12</b> Robustness checks</a>
+<ul>
+<li class="chapter" data-level="9.12.1" data-path="dataanalysis.html"><a href="dataanalysis.html#different-ceiling-line-choice"><i class="fa fa-check"></i><b>9.12.1</b> Different ceiling line choice</a></li>
+<li class="chapter" data-level="9.12.2" data-path="dataanalysis.html"><a href="dataanalysis.html#different-choice-of-the-scope"><i class="fa fa-check"></i><b>9.12.2</b> Different choice of the scope</a></li>
+<li class="chapter" data-level="9.12.3" data-path="dataanalysis.html"><a href="dataanalysis.html#different-choice-of-the-threshold-level-of-the-effect-size"><i class="fa fa-check"></i><b>9.12.3</b> Different choice of the threshold level of the effect size</a></li>
+<li class="chapter" data-level="9.12.4" data-path="dataanalysis.html"><a href="dataanalysis.html#different-choice-of-the-threshold-level-of-the-p-value"><i class="fa fa-check"></i><b>9.12.4</b> Different choice of the threshold level of the <span class="math inline">\(p\)</span>-value</a></li>
+<li class="chapter" data-level="9.12.5" data-path="dataanalysis.html"><a href="dataanalysis.html#different-outlier-choice"><i class="fa fa-check"></i><b>9.12.5</b> Different outlier choice</a></li>
+<li class="chapter" data-level="9.12.6" data-path="dataanalysis.html"><a href="dataanalysis.html#different-choice-of-the-target-outcome"><i class="fa fa-check"></i><b>9.12.6</b> Different choice of the target outcome</a></li>
+<li class="chapter" data-level="9.12.7" data-path="dataanalysis.html"><a href="dataanalysis.html#robustnesstable"><i class="fa fa-check"></i><b>9.12.7</b> Robustness table</a></li>
+</ul></li>
+<li class="chapter" data-level="9.13" data-path="dataanalysis.html"><a href="dataanalysis.html#metaanalysis"><i class="fa fa-check"></i><b>9.13</b> Meta-analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="reporting.html"><a href="reporting.html"><i class="fa fa-check"></i><b>10</b> Reporting</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="reporting.html"><a href="reporting.html#summary-of-this-chapter-2"><i class="fa fa-check"></i><b>10.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="10.2" data-path="reporting.html"><a href="reporting.html#typesofncapublications"><i class="fa fa-check"></i><b>10.2</b> Types of NCA publications</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="reporting.html"><a href="reporting.html#empiricalpublication"><i class="fa fa-check"></i><b>10.2.1</b> Empirical publication</a></li>
+<li class="chapter" data-level="10.2.2" data-path="reporting.html"><a href="reporting.html#theoreticalpublication"><i class="fa fa-check"></i><b>10.2.2</b> Theoretical publication</a></li>
+<li class="chapter" data-level="10.2.3" data-path="reporting.html"><a href="reporting.html#methodologicalcontribution"><i class="fa fa-check"></i><b>10.2.3</b> Methodological introduction publication</a></li>
+<li class="chapter" data-level="10.2.4" data-path="reporting.html"><a href="reporting.html#practicalpublication"><i class="fa fa-check"></i><b>10.2.4</b> Practical publication</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="reporting.html"><a href="reporting.html#review"><i class="fa fa-check"></i><b>10.3</b> SCoRe checklist and recommendations</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="reporting.html"><a href="reporting.html#introductiongeneral"><i class="fa fa-check"></i><b>10.3.1</b> Introduction/General</a></li>
+<li class="chapter" data-level="10.3.2" data-path="reporting.html"><a href="reporting.html#theoryhypotheses"><i class="fa fa-check"></i><b>10.3.2</b> Theory/Hypotheses</a></li>
+<li class="chapter" data-level="10.3.3" data-path="reporting.html"><a href="reporting.html#methods-data"><i class="fa fa-check"></i><b>10.3.3</b> Methods – data</a></li>
+<li class="chapter" data-level="10.3.4" data-path="reporting.html"><a href="reporting.html#methods-data-analysis"><i class="fa fa-check"></i><b>10.3.4</b> Methods – data analysis</a></li>
+<li class="chapter" data-level="10.3.5" data-path="reporting.html"><a href="reporting.html#results"><i class="fa fa-check"></i><b>10.3.5</b> Results</a></li>
+<li class="chapter" data-level="10.3.6" data-path="reporting.html"><a href="reporting.html#discussion"><i class="fa fa-check"></i><b>10.3.6</b> Discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="multimethodstudies.html"><a href="multimethodstudies.html"><i class="fa fa-check"></i><b>11</b> Multimethod studies</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#summary-of-this-chapter-3"><i class="fa fa-check"></i><b>11.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="11.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#methodtriangulationversuscausalpluralism"><i class="fa fa-check"></i><b>11.2</b> Method-triangulation versus causal-pluralism</a></li>
+<li class="chapter" data-level="11.3" data-path="multimethodstudies.html"><a href="multimethodstudies.html#ncawithregressionbasedmethods"><i class="fa fa-check"></i><b>11.3</b> NCA with regression-based methods</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#principlesofregression"><i class="fa fa-check"></i><b>11.3.1</b> Principles of regression analysis</a></li>
+<li class="chapter" data-level="11.3.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#comparison-nca-and-regression-based-methods"><i class="fa fa-check"></i><b>11.3.2</b> Comparison NCA and regression-based methods</a></li>
+<li class="chapter" data-level="11.3.3" data-path="multimethodstudies.html"><a href="multimethodstudies.html#confounding"><i class="fa fa-check"></i><b>11.3.3</b> Regression-based statistical concepts do not (always) apply to NCA</a></li>
+<li class="chapter" data-level="11.3.4" data-path="multimethodstudies.html"><a href="multimethodstudies.html#combining-nca-and-regression-based-methods"><i class="fa fa-check"></i><b>11.3.4</b> Combining NCA and regression-based methods</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="multimethodstudies.html"><a href="multimethodstudies.html#ncasem"><i class="fa fa-check"></i><b>11.4</b> Combining NCA and SEM in a multimethod study</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#stepsncasem"><i class="fa fa-check"></i><b>11.4.1</b> Steps for conducting NCA with SEM</a></li>
+<li class="chapter" data-level="11.4.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#recommendationplssem"><i class="fa fa-check"></i><b>11.4.2</b> Recommendations for combining NCA and SEM</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="multimethodstudies.html"><a href="multimethodstudies.html#ncaqca"><i class="fa fa-check"></i><b>11.5</b> NCA with QCA</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#principles-of-qca"><i class="fa fa-check"></i><b>11.5.1</b> Principles of QCA</a></li>
+<li class="chapter" data-level="11.5.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#comparisonncaqca"><i class="fa fa-check"></i><b>11.5.2</b> Comparison NCA and QCA</a></li>
+<li class="chapter" data-level="11.5.3" data-path="multimethodstudies.html"><a href="multimethodstudies.html#combining-nca-and-qca"><i class="fa fa-check"></i><b>11.5.3</b> Combining NCA and QCA</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="multimethodstudies.html"><a href="multimethodstudies.html#combiningncaandqcainamultimethodstudy"><i class="fa fa-check"></i><b>11.6</b> Combining NCA and QCA in a multimethod study</a>
+<ul>
+<li class="chapter" data-level="11.6.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#necessityanalysisncaqca"><i class="fa fa-check"></i><b>11.6.1</b> Steps for conducting NCA with QCA’s necessity analysis</a></li>
+<li class="chapter" data-level="11.6.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#examplencaqcamethodtriangulationmultimethodstudy"><i class="fa fa-check"></i><b>11.6.2</b> Example NCA-QCA method-triangulation multimethod study</a></li>
+<li class="chapter" data-level="11.6.3" data-path="multimethodstudies.html"><a href="multimethodstudies.html#necessitysufficiencyanalysisncaqca"><i class="fa fa-check"></i><b>11.6.3</b> Steps for conducting NCA with QCA’s sufficiency analysis</a></li>
+<li class="chapter" data-level="11.6.4" data-path="multimethodstudies.html"><a href="multimethodstudies.html#exampleQCA"><i class="fa fa-check"></i><b>11.6.4</b> Example NCA-QCA causal-pluralism multimethod study</a></li>
+<li class="chapter" data-level="11.6.5" data-path="multimethodstudies.html"><a href="multimethodstudies.html#recommendationplsqca"><i class="fa fa-check"></i><b>11.6.5</b> Recommendations for combining NCA and QCA</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="practice.html"><a href="practice.html"><i class="fa fa-check"></i><b>12</b> NCA in practice</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="practice.html"><a href="practice.html#summary-of-this-chapter-4"><i class="fa fa-check"></i><b>12.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="12.2" data-path="practice.html"><a href="practice.html#practicalvalue"><i class="fa fa-check"></i><b>12.2</b> The practical value of necessity logic</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="practice.html"><a href="practice.html#must"><i class="fa fa-check"></i><b>12.2.1</b> Must-have factors for desired outcomes</a></li>
+<li class="chapter" data-level="12.2.2" data-path="practice.html"><a href="practice.html#stop"><i class="fa fa-check"></i><b>12.2.2</b> Stop factors for undesired outcomes</a></li>
+<li class="chapter" data-level="12.2.3" data-path="practice.html"><a href="practice.html#shifting-attention-from-average-to-individual-interventions"><i class="fa fa-check"></i><b>12.2.3</b> Shifting attention from average to individual interventions</a></li>
+<li class="chapter" data-level="12.2.4" data-path="practice.html"><a href="practice.html#applicationareas"><i class="fa fa-check"></i><b>12.2.4</b> Examples of application areas</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="practice.html"><a href="practice.html#ncacontributions"><i class="fa fa-check"></i><b>12.3</b> NCA’s contribution to change and innovation</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="practice.html"><a href="practice.html#interventionstrategy"><i class="fa fa-check"></i><b>12.3.1</b> Part 1: Intervention strategy</a></li>
+<li class="chapter" data-level="12.3.2" data-path="practice.html"><a href="practice.html#interventiondesign"><i class="fa fa-check"></i><b>12.3.2</b> Part 2: Intervention design</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="practice.html"><a href="practice.html#desiredintervention"><i class="fa fa-check"></i><b>12.4</b> Interventions for making desired outcomes possible</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="practice.html"><a href="practice.html#intervention-effort"><i class="fa fa-check"></i><b>12.4.1</b> Intervention effort</a></li>
+<li class="chapter" data-level="12.4.2" data-path="practice.html"><a href="practice.html#intervention-effectiveness-waste-and-efficiency"><i class="fa fa-check"></i><b>12.4.2</b> Intervention effectiveness, waste, and efficiency</a></li>
+<li class="chapter" data-level="12.4.3" data-path="practice.html"><a href="practice.html#ideal-intervention"><i class="fa fa-check"></i><b>12.4.3</b> Ideal intervention</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="practice.html"><a href="practice.html#undesiredintervention"><i class="fa fa-check"></i><b>12.5</b> Interventions for preventing undesired outcomes</a></li>
+<li class="chapter" data-level="12.6" data-path="practice.html"><a href="practice.html#multipleintervention"><i class="fa fa-check"></i><b>12.6</b> Interventions with multiple necessary conditions</a></li>
+<li class="chapter" data-level="12.7" data-path="practice.html"><a href="practice.html#illustrativeexample1"><i class="fa fa-check"></i><b>12.7</b> Illustrative example</a>
+<ul>
+<li class="chapter" data-level="12.7.1" data-path="practice.html"><a href="practice.html#example-part-1-intervention-strategy"><i class="fa fa-check"></i><b>12.7.1</b> Example Part 1: Intervention strategy</a></li>
+<li class="chapter" data-level="12.7.2" data-path="practice.html"><a href="practice.html#exampleinterventiondesign"><i class="fa fa-check"></i><b>12.7.2</b> Example Part 2: Intervention design</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary-and-personal-reflection.html"><a href="summary-and-personal-reflection.html"><i class="fa fa-check"></i>Summary and personal reflection</a>
+<ul>
+<li class="chapter" data-level="" data-path="summary-and-personal-reflection.html"><a href="summary-and-personal-reflection.html#summary-of-the-book"><i class="fa fa-check"></i>Summary of the book</a></li>
+<li class="chapter" data-level="" data-path="summary-and-personal-reflection.html"><a href="summary-and-personal-reflection.html#reflections-on-a-decade-of-nca"><i class="fa fa-check"></i>Reflections on a decade of NCA</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-iii.-additional-materials.html"><a href="part-iii.-additional-materials.html"><i class="fa fa-check"></i>Part III. Additional materials</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>A</b> Nomenclature and glossary</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="glossary.html"><a href="glossary.html#nomenclature"><i class="fa fa-check"></i><b>A.1</b> Nomenclature</a></li>
+<li class="chapter" data-level="A.2" data-path="glossary.html"><a href="glossary.html#glossary-1"><i class="fa fa-check"></i><b>A.2</b> Glossary</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="appendixb.html"><a href="appendixb.html"><i class="fa fa-check"></i><b>B</b> Software</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="appendixb.html"><a href="appendixb.html#mainncasoftware"><i class="fa fa-check"></i><b>B.1</b> <code>NCA</code> with <code>R</code></a></li>
+<li class="chapter" data-level="B.2" data-path="appendixb.html"><a href="appendixb.html#additionalcode"><i class="fa fa-check"></i><b>B.2</b> Additional R-code</a></li>
+<li class="chapter" data-level="B.3" data-path="appendixb.html"><a href="appendixb.html#ncademonstration"><i class="fa fa-check"></i><b>B.3</b> Demonstration of <code>NCA</code> with <code>R</code></a>
+<ul>
+<li class="chapter" data-level="" data-path="appendixb.html"><a href="appendixb.html#exampledataappendixb"><i class="fa fa-check"></i>Example</a></li>
+<li class="chapter" data-level="B.3.1" data-path="appendixb.html"><a href="appendixb.html#stage-1-formulate-the-formal-necessity-hypothesis"><i class="fa fa-check"></i><b>B.3.1</b> Stage 1: Formulate the formal necessity hypothesis</a></li>
+<li class="chapter" data-level="B.3.2" data-path="appendixb.html"><a href="appendixb.html#stage-2.-collect-data"><i class="fa fa-check"></i><b>B.3.2</b> Stage 2. Collect data</a></li>
+<li class="chapter" data-level="" data-path="appendixb.html"><a href="appendixb.html#install-and-load-the-nca-package-and-data"><i class="fa fa-check"></i>Install and load the NCA package and data</a></li>
+<li class="chapter" data-level="B.3.3" data-path="appendixb.html"><a href="appendixb.html#stage-3.-analyze-data"><i class="fa fa-check"></i><b>B.3.3</b> Stage 3. Analyze data</a></li>
+<li class="chapter" data-level="" data-path="appendixb.html"><a href="appendixb.html#advanced-functions"><i class="fa fa-check"></i>Advanced functions</a></li>
+<li class="chapter" data-level="B.3.4" data-path="appendixb.html"><a href="appendixb.html#stage-4.-report-results"><i class="fa fa-check"></i><b>B.3.4</b> Stage 4. Report results</a></li>
+</ul></li>
+<li class="chapter" data-level="B.4" data-path="appendixb.html"><a href="appendixb.html#otherncasoftwarepackages"><i class="fa fa-check"></i><b>B.4</b> Other software packages with NCA</a>
+<ul>
+<li class="chapter" data-level="B.4.1" data-path="appendixb.html"><a href="appendixb.html#demonstration-of-nca-with-stata"><i class="fa fa-check"></i><b>B.4.1</b> Demonstration of <strong>nca</strong> with <code>Stata</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>C</b> Publications</a></li>
+<li class="chapter" data-level="D" data-path="appendixd.html"><a href="appendixd.html"><i class="fa fa-check"></i><b>D</b> Affine transformations</a></li>
+<li class="chapter" data-level="E" data-path="appendixtprtnr.html"><a href="appendixtprtnr.html"><i class="fa fa-check"></i><b>E</b> Simulations for TPR and TNR</a>
+<ul>
+<li class="chapter" data-level="E.1" data-path="appendixtprtnr.html"><a href="appendixtprtnr.html#true-positive-rate-tpr"><i class="fa fa-check"></i><b>E.1</b> True Positive Rate (TPR)</a></li>
+<li class="chapter" data-level="E.2" data-path="appendixtprtnr.html"><a href="appendixtprtnr.html#true-negative-rate-tnr"><i class="fa fa-check"></i><b>E.2</b> True Negative Rate (TNR)</a></li>
+</ul></li>
+<li class="chapter" data-level="F" data-path="appendixaa.html"><a href="appendixaa.html"><i class="fa fa-check"></i><b>F</b> Necessity and the traditional experiment</a>
+<ul>
+<li class="chapter" data-level="F.1" data-path="appendixaa.html"><a href="appendixaa.html#traditionalexperiment"><i class="fa fa-check"></i><b>F.1</b> Traditional experiment</a></li>
+<li class="chapter" data-level="F.2" data-path="appendixaa.html"><a href="appendixaa.html#nonnecessitytest"><i class="fa fa-check"></i><b>F.2</b> Necessity lessons from the traditional experiment</a></li>
+</ul></li>
+<li class="chapter" data-level="G" data-path="appendixc.html"><a href="appendixc.html"><i class="fa fa-check"></i><b>G</b> Correlation by necessity</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendixc.html"><a href="appendixc.html#situation"><i class="fa fa-check"></i>Situation</a></li>
+<li class="chapter" data-level="" data-path="appendixc.html"><a href="appendixc.html#symmetry-transformation"><i class="fa fa-check"></i>Symmetry transformation</a></li>
+<li class="chapter" data-level="" data-path="appendixc.html"><a href="appendixc.html#correlation"><i class="fa fa-check"></i>Correlation</a></li>
+</ul></li>
+<li class="chapter" data-level="H" data-path="appendixe.html"><a href="appendixe.html"><i class="fa fa-check"></i><b>H</b> Demonstration NCA with PLS-SEM</a>
+<ul>
+<li class="chapter" data-level="H.1" data-path="appendixe.html"><a href="appendixe.html#step-1-theorize-necessity-and-probabilistic-relationships"><i class="fa fa-check"></i><b>H.1</b> Step 1: Theorize necessity and probabilistic relationships</a></li>
+<li class="chapter" data-level="H.2" data-path="appendixe.html"><a href="appendixe.html#step-2-collect-data"><i class="fa fa-check"></i><b>H.2</b> Step 2: Collect data</a></li>
+<li class="chapter" data-level="H.3" data-path="appendixe.html"><a href="appendixe.html#step-3-conduct-sem-1"><i class="fa fa-check"></i><b>H.3</b> Step 3: Conduct SEM</a></li>
+<li class="chapter" data-level="H.4" data-path="appendixe.html"><a href="appendixe.html#step-4-extract-latent-variable-scores-1"><i class="fa fa-check"></i><b>H.4</b> Step 4: Extract latent variable scores</a></li>
+<li class="chapter" data-level="H.5" data-path="appendixe.html"><a href="appendixe.html#examplestep4conductnca"><i class="fa fa-check"></i><b>H.5</b> Step 5: Conduct NCA</a></li>
+<li class="chapter" data-level="H.6" data-path="appendixe.html"><a href="appendixe.html#step-6-produce-nert-1"><i class="fa fa-check"></i><b>H.6</b> Step 6: Produce NERT</a></li>
+<li class="chapter" data-level="H.7" data-path="appendixe.html"><a href="appendixe.html#step-7-produce-bipma"><i class="fa fa-check"></i><b>H.7</b> Step 7: Produce BIPMA</a></li>
+<li class="chapter" data-level="H.8" data-path="appendixe.html"><a href="appendixe.html#interpretresults1"><i class="fa fa-check"></i><b>H.8</b> Step 8: Interpret results</a></li>
+</ul></li>
+<li class="chapter" data-level="I" data-path="appendixh.html"><a href="appendixh.html"><i class="fa fa-check"></i><b>I</b> Bottleneck distance table</a></li>
+<li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
+<li class="divider"></li>
+<a href="https://www.erim.eur.nl/necessary-condition-analysis/">
+<img alt="erim" src="NCA website3.jpeg" width="270"></a>
+<a href="https://www.erim.eur.nl/necessary-condition-analysis/" target="blank">NCA website</a></li>
+<li><a href="mailto:jdul@rsm.nl">Send email to the author</a>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Necessary Condition Analysis (NCA)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">1</span> Introduction<a href="introduction.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>NCA is a methodological approach that uses a <em>necessity</em> causal perspective for identifying necessary conditions from data. Necessity causal logic in NCA implies that if a certain level of the condition is not present, a certain level of the outcome will not occur: If not <span class="math inline">\(X\)</span>, then not <span class="math inline">\(Y\)</span>. No other factor can compensate for the absence of the necessary condition (or a required level of it). The necessary condition <em>allows</em> the outcome to exist, but does not produce it.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> A necessary condition operates independently of the rest of the causal structure and serves as a ‘critical success factor’ or ‘must-have’. When absent, it creates a ‘bottleneck’ or ‘constraint’ that prevents the target outcome, which cannot be compensated by other factors. For example, a student must have a high school diploma for admission to a university. Without such a diploma, the student will not be admitted. Other factors like a student’s high motivation cannot compensate for the lack of a diploma.</p>
+<p>Necessity causal logic and NCA differ from <em>sufficiency</em> causal logic and related methods. In sufficiency causal logic the condition <em>produces</em> the outcome: if <span class="math inline">\(X\)</span>, then <span class="math inline">\(Y\)</span>. A single factor may be sufficient for the outcome, for example when students graduate, they receive a diploma. Often, not a single factor but a combination of factors (a ‘configuration’) may be sufficient for the outcome: if [combination of <span class="math inline">\(X\)</span>’s], then <span class="math inline">\(Y\)</span>. A university diploma alone is not sufficient for admission to a PhD program; however, combining it with strong motivation, good grades, and a recommendation letter will secure it. Such a configurational sufficiency logic is used in methodologies and frameworks like Rothman’s Sufficient-Component Cause model in medicine <span class="citation">(SCC, <a href="#ref-rothman1976causes">Rothman, 1976</a>)</span>, Wright’s Necessary Element of a Sufficient Set in law <span class="citation">(NESS, <a href="#ref-wright1985causation">Wright, 1985</a>)</span>, and Ragin’s Qualitative Comparative Analysis in the social sciences <span class="citation">(QCA, <a href="#ref-ragin1987comparative">Ragin, 1987</a>)</span>.</p>
+<p>Necessity causal logic also differs from <em>probabilistic</em> causal sufficiency logic where the single factor is a ‘contributing cause’ that helps to produce the outcome and contributes to the outcome ‘on average’: ‘if <span class="math inline">\(X\)</span>, then probably <span class="math inline">\(Y\)</span>’. Highly motivated people are more likely to be admitted to a PhD program than those with lower motivation, although there are highly motivated people who are not admitted and less motivated people who are admitted. Such a probabilistic causal sufficiency logic is applied in statistical methodologies for causal inference, such as in Pearl’s Directed Acyclic Graphs (DAGs) and do-operator approach <span class="citation">(<a href="#ref-pearl2009causality">Pearl, 2009</a>)</span> and Angrist et al.’s Instrumental Variable approach <span class="citation">(IV, <a href="#ref-angrist1996identification">Angrist et al., 1996</a>)</span>.</p>
+<p>The different causal lenses (single necessity causes, configurational sufficiency causes, and single probabilistic sufficiency causes) offer fundamentally distinct perspectives on causality. These lenses reflect different theoretical expectations (hypotheses) about how outcomes arise. This means that phenomena and data can be approached with different causal lenses (Chapter <a href="causality.html#causality">2</a>). The choice of lens may be guided by the specific nature of the phenomenon, the study question, or the analyst’s theoretical priorities<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. For instance, if the question is whether a certain resource (e.g., access to capital) is required for a firm to enter a market, a necessity lens is appropriate. This lens helps identify bottleneck factors: conditions that must be in place for success. In contrast, if the aim is to identify combinations of national conditions that are sufficient for strong climate policy commitment (e.g., public support + high income, or climate risk + high fossil fuel dependence), a configurational sufficiency perspective, as used in QCA, may be appropriate. This approach assumes that different pathways can each lead to the same outcome. If the goal is to understand whether self-efficacy increases the likelihood of engaging in a behavior, a probabilistic sufficiency lens is fitting. This approach helps estimate how much more likely the outcome is when a cause is present.</p>
+<p>No lens is inherently superior; each has unique strengths and limitations. Thus, there are no better or worse lenses; there are no more or less relevant lenses. These lenses are different and shed a different light on the same issues. What matters is that the chosen lens aligns with the goals of the study, the nature of the causal claim being made, and indeed the preference of the analyst. Once a causal lens is selected, it is essential to apply a methodological approach that matches the logic of that lens, ensuring <em>theory–method fit</em>, which is essential for the credibility and usefulness of the findings (Chapter <a href="multimethodstudies.html#multimethodstudies">11</a>).</p>
+<p>This book’s emphasis on causality has both theoretical and practical reasons. Theoretically, scientific theories aim to explain why outcomes occur, not merely to describe patterns of co-occurrence (Chapters <a href="theory.html#theory">3</a> and <a href="hypothesisformulation.html#hypothesisformulation">7</a>). Practically, changing or influencing an outcome requires intervention on causes of the outcome, not on co-occurring factors (Chapter <a href="practice.html#practice">12</a>). The assumption that <span class="math inline">\(X\)</span> is a necessary cause of <span class="math inline">\(Y\)</span> implies the assumption that <span class="math inline">\(X\)</span> temporally precedes <span class="math inline">\(Y\)</span> (Chapter <a href="causality.html#causality">2</a>).</p>
+<!-- Single necessity causes, single and configurational sufficiency causes, and single probabilistic sufficiency causes are fundamentally different approaches to causality. They represent different theoretical 'lenses' to describe and analyze the phenomena of interest. One lens is not better than another, and it is up to -->
+<!-- <!-- some phenomena may be better understood and described from one specific causal perspective, while others might benefit from using another perspective or multiple perspectives. -->
+<!-- the analyst to choose the lens most suitable to the context. However, once the lens is selected, a proper method should be used to ensure theory-method fit. -->
+<!-- it is assumed that single causes are probabilistic sufficient for the outcome, and contribute to the outcome on average ('average effect logic') and that the absence of such cause can be compensated by  another cause ('additive logic'). For example, regression analysis describes the complexity of different contributing factors to the outcome with an additive model (the regression equation). In such model a low value of one factor can be compensated by a high value of another factor: a less motivated person may be admitted because a higher grade compensates the lack of motivation. NCA is a quantitative method. Whereas conventional quantitative research commonly focuses on probabilistic sufficiency causes, NCA's focus is on necessity causes. NCA ensures theory-method fit when the theory assumes a necessity causal relationship between factors^[In this book we use the general term 'factor' for a variable, independently of its role as cause or effect. When referring to a necessity relationship between variables, NCA uses the term 'condition' for what is commonly called independent variable, explanatory variable, input variable, predictor variable, antecedent variable, or determinant, and the term 'outcome' for what is commonly called dependent variable, response variable, criterion variable, output variable, effect variable, etc.] -->
+<!-- , and this relationship must be evaluated (tested) with empirical data. -->
+<p>NCA is an approach that is specifically designed to analyze necessity. It has two intertwined parts: a ‘soft’ part and a ‘hard’ part. The soft part is NCA’s soul: the causal perspective of necessity (NCA methodology). The hard part is NCA’s data analysis method (NCA method) that fits this perspective. Therefore, the term ‘NCA’ refers to a combination of the NCA methodology with its causal necessity perspective, and the corresponding NCA method for analyzing data.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> NCA’s necessity causal lens extends beyond common binary conditional necessity logic. Specifically, NCA adds causal reasoning to conditional logic, incorporates a continuous view on necessity, and permits exceptions (the ‘typicality’ perspective, see Chapter <a href="causality.html#causality">2</a>).</p>
+<p>The book is organized as follows. Part I discusses the methodological principles of NCA, explaining its causality (e.g., compared to other causal perspectives), theory (e.g., main elements of a necessity theory, different types of necessity theories), mathematics (e.g., mathematical estimation of ceiling line, NCA parameters such as effect size, and measures of fit) and statistics (e.g., NCA’s null hypothesis tests, Monte Carlo simulations with NCA), and NCA’s credibility to identify necessity (e.g., using statistical and empirical criteria).</p>
+<p>Part II of the book outlines how to conduct NCA. Specifically, this part discusses NCA’s hypothesis formulation, data collection, data analysis, reporting, how to apply NCA in a multimethod study, and how NCA can be used in practice. The book concludes with a summary and personal reflection on 10 years of NCA, and Part III provides additional materials.</p>
+<!-- It can provide new theoretical insights: since a necessary condition blocks the outcome if absent, the condition must be part of any theory that aims to predict the outcome. NCA is also relevant for practice: all identified necessary conditions must be established to enable a target outcome. If a necessary condition is not met it is a bottleneck for the outcome. Any change process that fails to address this bottleneck will be ineffective, leading to wasted effort. -->
+<p>With its innovative approach to causality and data analysis, NCA has rapidly entered the social, medical, and technical sciences.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> The publication in 2016 of NCA’s core paper <span class="citation">(<a href="#ref-dul2016orm">Dul, 2016b</a>)</span> marks the start of NCA, although proto-versions of NCA were introduced earlier <span class="citation">(<a href="#ref-dul2010necessary">Dul et al., 2010</a>; <a href="#ref-dul2008case">Dul &amp; Hak, 2008</a>)</span>.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> Subsequently, several extensions were developed, including a statistical significance test <span class="citation">(<a href="#ref-dul2020orm">Dul, Van der Laan, et al., 2020</a>)</span>, and specialized software (Appendix <a href="appendixb.html#appendixb">B</a>). Various publications, such as a textbook <span class="citation">(<a href="#ref-dul2020book">Dul, 2020</a>)</span> and an online book <span class="citation">(<a href="#ref-dul2021online">Dul, 2021</a>)</span> with practical guidelines on applying the method were developed to facilitate the understanding and dissemination of NCA. Furthermore, publications introducing and summarizing NCA have emerged across various fields of business and management, including Human Resource Management <span class="citation">(<a href="#ref-hauff2021hrm">Hauff et al., 2021</a>)</span>, Marketing and Sales <span class="citation">(<a href="#ref-conde2025uncovering">Conde, 2025</a>; <a href="#ref-dul2021marketing">Dul, Hauff, et al., 2021</a>)</span>, Tourism Management <span class="citation">(<a href="#ref-toth2019tourism">Tóth et al., 2019</a>)</span>, Entrepreneurship <span class="citation">(<a href="#ref-linder2022necessary">Linder et al., 2023</a>)</span>, Supply Chain Management <span class="citation">(<a href="#ref-bokrantz2022building">Bokrantz &amp; Dul, 2023</a>)</span>, and International Business <span class="citation">(<a href="#ref-richter2022necessary">Richter &amp; Hauff, 2022</a>)</span>. Also outside the business and management field, the method was introduced in fields such as Public Health <span class="citation">(<a href="#ref-gregoproposing">Greco et al., 2022</a>)</span>, Clinical Psychology <span class="citation">(<a href="#ref-marchetti2025necessity">Marchetti et al., 2026</a>)</span>, Education <span class="citation">(<a href="#ref-tynan2020education">Tynan et al., 2020</a>)</span>, and Creativity <span class="citation">(<a href="#ref-dul2020creativity">Dul, Karwowski, et al., 2020</a>)</span>.
+<!-- \textcolor{red}{Update} --></p>
+<p>Editors of academic journals have recognized the value of NCA by publishing editorial comments on the approach <span class="citation">(e.g., <a href="#ref-dul2024identifying">Dul, 2025</a>; <a href="#ref-fainshmidt2020contributions">Fainshmidt et al., 2020</a>; <a href="#ref-hernaus2022from">Hernaus &amp; Černe, 2022</a>; <a href="#ref-robinson2022"><span class="nocase">S. Robinson et al.</span>, 2022</a>; <a href="#ref-sarstedt2023advanced">Sarstedt &amp; Liu, 2023</a>)</span>. Review articles <span class="citation">(e.g., <a href="#ref-aguinis2020methodological">Aguinis et al., 2020</a>; <a href="#ref-boon2019systematic">Boon et al., 2019</a>; <a href="#ref-dabic202140">Dabić et al., 2021</a>; <a href="#ref-delsordo2025role">Del Sordo &amp; Zattoni, 2025</a>; <a href="#ref-frazier2017psychological">Frazier et al., 2017</a>; <a href="#ref-rozenkowska2023theory">Rozenkowska, 2023</a>)</span> and a plethora of journal articles suggest using NCA in future studies, for example, in the fields of education <span class="citation">(e.g., <a href="#ref-crede2021should">Credé &amp; Tynan, 2021</a>)</span>, human resource management <span class="citation">(e.g., <a href="#ref-hauff2021analytical">Hauff, 2021</a>; <a href="#ref-parker2024smart">Parker &amp; Knight, 2024</a>)</span>, information systems <span class="citation">(e.g., <a href="#ref-sharma2024framework">Sharma et al., 2024</a>)</span>, international business/management <span class="citation">(e.g., <a href="#ref-richter2022use">Richter et al., 2022</a>; <a href="#ref-zahoor2023international">Zahoor et al., 2023</a>)</span>, marketing <span class="citation">(e.g., <a href="#ref-guenther2023improving">Guenther et al., 2023</a>; <a href="#ref-jovanovic2022under">Jovanovic &amp; Morschett, 2022</a>)</span>, operations and supply chain management <span class="citation">(e.g., <a href="#ref-acquah2023invest">Acquah et al., 2023</a>)</span>, strategy <span class="citation">(e.g., <a href="#ref-bouncken2020value">Bouncken et al., 2020</a>; <a href="#ref-deist2023digital">Deist et al., 2023</a>; <a href="#ref-klimas2023attributes">Klimas et al., 2023</a>; <a href="#ref-ogundipe2022interfirm">Ogundipe et al., 2022</a>)</span>, and tourism and hospitality <span class="citation">(e.g., <a href="#ref-becker2023pls">Becker et al., 2023</a>)</span>. At the time of writing this book, hundreds of articles that apply NCA have been published already. The number of publications in ‘Web of Science’ ranked journals<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> that apply NCA has increased steadily. Appendix <a href="appendixa.html#appendixa">C</a> shows these articles that have appeared through the end of 2025.</p>
+<p>Published articles use NCA as the sole or primary method (Appendix <a href="appendixa.html#appendixa">C</a>; Table <a href="#tab:pubstablealone"><strong>??</strong></a>), or combine NCA in a multimethod study (Chapter <a href="multimethodstudies.html#multimethodstudies">11</a>), often with Qualitative Comparative Analysis (QCA, Table <a href="#tab:pubstableqca"><strong>??</strong></a>) or with regression-based methods. Examples of regression-based methods include multiple linear regression (MLR, Table <a href="#tab:pubstablemlr"><strong>??</strong></a>) and structural equation modeling (SEM, Tables <a href="#tab:pubstablesem"><strong>??</strong></a> and <a href="#tab:pubstableplssem"><strong>??</strong></a>). NCA is also combined with a variety of other methods (Tables <a href="#tab:pubstableother"><strong>??</strong></a> and <a href="#tab:pubstablecombiother"><strong>??</strong></a>). Although the number of articles with NCA has grown rapidly, NCA is not always applied according to minimum standards <span class="citation">(Chapter <a href="reporting.html#reporting">10</a>, <a href="#ref-dul2023necessary">Dul et al., 2023</a>)</span>, and several misconceptions have been published.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> Therefore, <strong>the main goal of this book is to promote proper understanding and high-quality application of NCA</strong>.</p>
+<p>Many articles that apply NCA conclude that necessity was identified, although the evidence is not always convincing. Other articles that apply NCA concluded that necessity was not found <span class="citation">(e.g., <a href="#ref-batey2021designing">Batey et al., 2021</a>; <a href="#ref-golini2016exploiting">Golini et al., 2016</a>; <a href="#ref-gu2022configurations">Gu et al., 2022</a>; <a href="#ref-luo2022pathway">Luo et al., 2022</a>; <a href="#ref-peng2022pathway">Peng et al., 2022</a>)</span>. Not finding a necessary condition might be a valuable result, because such a result shows that a supposed essential factor for an outcome does not need to be present and its absence can be compensated <span class="citation">(e.g., <a href="#ref-arenius2017no">Arenius et al., 2017</a>)</span>. On the other hand, finding a large number of potential necessary conditions, for example in an exploration study <span class="citation">(e.g., <a href="#ref-gantert2022moral">Gantert et al., 2022</a>; <a href="#ref-klimas2021strategy">Klimas et al., 2022</a>; <a href="#ref-stek2021train">Stek &amp; Schiele, 2021</a>)</span> does not mean that all are informative because several conditions may not have a theoretical meaning or may be trivial, which could have been easily identified before the analysis was done (Chapter <a href="hypothesisformulation.html#hypothesisformulation">7</a>).<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></p>
+<!-- Whereas most quantitative research (implicitly) adopts the probabilistic sufficiency perspective when causal claims are made, NCA offers an alternative by focusing on necessity causality. NCA can also be used in qualitative research to identify conditions that must be present for an outcome to occur. A component of this approach is a specific method for selecting and analyzing a small number of cases [@dul2024how]. In both quantitative and qualitative research it is important to know whether causes are necessary or not, because if any necessary cause is absent, the effect cannot be achieved. For theory development aimed at predicting an outcome, the necessary condition must be included as part of the theory.  -->
+<!-- For practice, this means that necessary conditions must be met, and addressing other causes while leaving the unsatisfied necessary condition (the bottleneck) unresolved will have no effect, resulting in waste of effort.  -->
+<!-- With conventional regression-based research methods (e.g, multiple linear regression, structural equation modeling), research questions about cause-effect relationships are often formulated like 'what is the effect of $X$ on $Y$?' and related hypotheses are similar to '$X$ has a positive (or negative) effect on $Y$'. The regression equation consisting of terms that are added to produce the average effect including an 'error term', implicitly assumes additive causal sufficiency logic and cause $X$ is assumed  to contribute to producing effect $Y$ *on average*, and the absence of $X$ can be compensated by the presence of other causes. In other words: $X$ is an average contributor to $Y$: a probabilistic cause. -->
+<!-- Such causal relationship that is studies with regression analysis implies an *average effect* of $X$ on $Y$. -->
+<!-- However, the type of causality is usually not specified.  -->
+<!-- ,  which can be graphically shown as an arrow between $X$ and $Y$ indicating a temporal direction: first $X$, then $Y$, with a + or - sign shown above the arrow indicating that $X$ increases or decreases $Y$ on average.  -->
+<!-- In NCA, cause $X$ is assumed to be a *necessary* cause of $Y$. The research question is formulated as 'is $X$ necessary for $Y$?'. The corresponding hypothesis is: '$X$ is necessary for $Y$'. If $X$ is necessary for $Y$, single cause $X$ can stop the outcome when it is absent or has a low value. It can be a *bottleneck*, a *critical success factor* or a *must have* factor.  -->
+<!-- The NCA method consists of three parts:  -->
+<!-- * Using  *necessity logic* for developing theoretical causal statements (theory, hypotheses).  -->
+<!-- * *Data analysis* for calculating necessity parameters. -->
+<!-- * *Statistical testing* for evaluating necessity parameters.  -->
+<!-- NCA can identify necessary conditions from data.  -->
+<p>Conducting NCA consists of four stages:</p>
+<ol style="list-style-type: decimal">
+<li>Formulate the formal necessity hypothesis.</li>
+<li>Collect data.</li>
+<li>Analyze data.</li>
+<li>Report results.</li>
+</ol>
+<p>In the first stage (Chapter <a href="hypothesisformulation.html#hypothesisformulation">7</a>), necessity causal logic is employed to formulate a theoretical expectation about conditions that are necessary for the outcome<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>.<br />
+<!-- has three reasons. First, it usually relatively simple to formulate a necessary condition hypothesis (see Chapter \@ref(hypothesisformulation). Second, it is often more efficient to use empirical data for testing a developed hypothesis than for developing a hypothesis with data. In the latter situation the developed hypothesis should be tested with new data. Third, for identifying a necessary condition, NCA requires theoretical support, which means that also in a theory/testing or exploratory study a hypothesis must be formulated after data analysis. This implies that in this book the focus is on using data to *test* necessity, and not on using data for building or *exploring* necessity, e.g., like in data mining].  -->
+<!-- Backgrounds of necessary condition hypotheses are discussed in chapter  \@ref(theory), and chapter  \@ref(hypothesisformulation) explains how such hypothesis ($X$ is necessary for $Y$) can be developed and formulated.  --></p>
+<p>The second stage (Chapter <a href="datacollection.html#datacollection">8</a>) consists of collecting new or existing data for testing the hypothesis, which includes the consideration of study design, sampling or case selection, and measurement. NCA does not have a ‘measurement model’, as SEM and QCA have (in QCA it is called ‘calibration’). This means that any type of data can be used as input to NCA as long as the scores of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are meaningful, valid, and reliable. NCA poses no new requirements on the data, although some aspects of data collection (case selection in qualitative studies; power analysis in quantitative studies, see, for example, <span class="citation">Dul (<a href="#ref-dul2024how">2024b</a>)</span> may differ. NCA can also be used with archival data to give a new perspective on previous findings <span class="citation">(<a href="#ref-dul2024advancing">Dul et al., 2024</a>)</span>.  <br />
+<!-- . Chapter  \@ref(data) explains this and gives examples of data that can be used in NCA.  --></p>
+<p>In the third stage (Chapters <a href="dataanalysis.html#dataanalysis">9</a>, <a href="multimethodstudies.html#multimethodstudies">11</a>), NCA’s data analysis is conducted, which differs entirely from common types of data analysis.  </p>
+<p>In the fourth stage (Chapter <a href="reporting.html#reporting">10</a>), the results of NCA are reported.</p>
+<!-- The mathematical and statistical backgrounds of the data analysis are shown in chapters  \@ref(mathematical) and  \@ref(statistical). Details of the application of the data analysis are in chapter (\@ref(dataanalysis)), while chapter  \@ref(multimethod) discusses how NCA can be used in multimethod research with regression-based methods and QCA.  -->
+<!-- Chapter \@ref(reporting) gives guidelines for this. -->
+<!-- While the first part of this book introduces the underlying principles of NCA (with chapters on causality, theory, mathematics, statistics, and the credibility of NCA), the second part focuses on its application, detailing the four above stages (with the chapters Hypothesis formulation, Study design, Sampling, Measurement, Data types, Data analysis, Multimethod studies, Reporting, and Practice). -->
+<p>Currently, most applications of NCA are in academic research, where researchers use the NCA approach to develop and test theories. NCA is also entering practical settings where NCA is applied by practitioners such as consultants and data analysts as an innovative approach for addressing challenges and exploring new opportunities. This is discussed in Chapter <a href="practice.html#practice">12</a>.</p>
+<p>After discussing the fundamental backgrounds of the NCA methodology in Part I, the four stages of the NCA method are discussed in Part II.</p>
+<!-- NCA ensures theory-method fit when the theory assumes a necessity causal relationship between factors^[In this book we use the general term 'factor' for a variable, independently of its role as cause or effect. When referring to a necessity relationship between variables, NCA uses the term 'condition' for what is commonly called independent variable, explanatory variable, input variable, predictor variable, antecedent variable, or determinant, and the term 'outcome' for what is commonly called dependent variable, response variable, criterion variable, output variable, effect variable, etc.] -->
+<!-- NCA can be used as a stand-alone method or be used together with  conventional methods such as multiple linear regression, structural equation modeling, or Qualitative Comparative Analysis (QCA). The decision to apply NCA as a stand-alone method or a complementary method depends on the goal of the research.  -->
+<!-- ## NCA as stand-alone method {#standalone} -->
+<!-- A researcher may have two reasons to use *NCA as a stand-alone method* in a particular study. First, the researcher may want to employ just a necessity view on the phenomenon of interest.  He may have formulated a parsimonious 'pure necessity theory' (see Chapter \@ref(theory)) consisting of one or more necessity relations [e.g., @karwowski2016intellligence; @knol2018implementing]. To ensure theory-method fit, NCA is used for testing pure necessity theories. A regression-based method is not appropriate for this purpose. -->
+<!-- [Similarly, when a researcher wants to test a theory consisting only of generic causal relations (most current theories), a conventional probability-based method such as regression analysis should be selected and NCA is not appropriate]. A second reason for using NCA as the stand-alone method is that the researcher may want to add a necessity view to an existing generic causal theory from the literature. Without (re)testing the generic causal relationships, she may want to test whether some concepts of the theory are (also) necessary conditions.  -->
+<!-- The advantage of using NCA as a stand-alone method is that the study and its theoretical reasoning can focus on the single necessary concepts. There is no need to include other concepts (e.g., contributing factors, control variables) into the reasoning and analysis. This allows a clear story line and efficient data collection and analysis. -->
+<!-- ## NCA as a complementary method {#complementary} -->
+<!-- A researcher may also have reasons to use *NCA in combination with other methods* in a single study. The researcher may want to add a necessity view to a generic causal theory and to analyze necessity and generic relationships in combination. This can be done in two ways. First, the *generic causal theory is leading* and some concepts from this theory are tested for necessity. Second  a *combined necessity-generial causal theory* is developed with both necessity and generic causal relationships between concepts.  -->
+<!-- In the first option, an existing or new *generic causal theory* has concepts that are considered being contributing factors that can change the probability of the outcome (including control variables). From these concepts, potential necessary conditions are selected. The necessity and generic causal relationships of these concepts with the outcome are tested with the appropriate methods and the methods are conducted successively. The integration occurs when the results are discussed. Several NCA multimethod studies that start with a generic causal theory have been reported in the literature. For example, when NCA is used in combination with (multiple) *regression* [e.g., @jain2022drives1; @klimas2021strategy; @stek2021train] or *structural equation modeling* [e.g., @della2021relevance; @lee2021distinctive; @renner2022understanding;  @richter2020predictors] "important" factors are identified with a regression-based method, and the necessity of these and other factors is analyzed with NCA for identifying whether the factors are necessary or not (see section \@ref(ncaregression)). When NCA is used in combination with *Qualitative Comparative Analysis- QCA* [e.g., @torres2021levels; @kopplin2021equifinal] the results of NCA are compared to the sufficient configurations that are identified by QCA (see section \@ref(ncaqca)).  -->
+<!-- In the second option, the researcher starts the study with a combined *necessity and generic causal theory*. This is a complex 'embedded necessity theory' (see Chapter \@ref(theory)) that consists of both necessity and generic causal relations from the start. Some concepts may only have a generic causal but not a necessity relationship with the outcome; other concepts may be a necessary cause but not a generic cause, and yet others may be both a necessary cause and a generic cause. Embedded necessity theories that combine necessity and generic causal theorizing for describing relations are still rare. In QCA, most studies theorize from the perspective of sufficiency and test the potential necessity of the single factors, but do not include necessity theorizing from the start. Also, most studies that combine NCA with multiple regression or structural equation modeling do not theorize about necessity and generic causation in combination [for an exception see @dul2019physical]. Testing embedded necessity theories requires a multimethod approach with both regression-based method and a necessity-based method. -->
+<!-- When combining NCA with regression analysis or QCA, the order of conducting NCA and the other method is not relevant. When NCA is used in combination with structural equation modeling (SEM) the order matters. First SEM is applied followed by NCA. The reason is that the outcome of the SEM measurement model is used to define the constructs to be tested for necessity with NCA. -->
+<!-- ## Formulate the necessary condition hypothesis {#formulate} -->
+<!-- NCA starts with a theoretical notion that a necessity relation may exist between $X$ (the potential condition) and $Y$ (the outcome). This is usually done by formulating and justifying a hypothesis that is part of a theory (see Chapter \@ref(theory)). -->
+<!-- NCA is mainly used in theory-testing research, which starts with formulating the theory and proceeds with empirical testing the theory with data. Hence, theory formulation comes before data collection and analysis. This is also the focus in this book. However, NCA can also be used in theory-building and exploratory research. Then formulating the theory is based on the results of the data analysis, and thus comes after it [e.g., @stek2021train]. -->
+<!-- ## Collect the data {#collect} -->
+<!-- Collecting data in NCA is not different from collecting data in general. The goal of data collection is to have scores (values, levels) for the condition $X$ and the outcome $Y$ for each case. The selected research design (e.g., 'experiment', 'survey', 'case study') must meet common quality standards. Also the selection of cases for measurement and data analysis must fit the goal of the research (e.g., random sampling, purposive sampling for specific reasons). The data must be 'good'. This means that the data must be valid (the measurement scores reflect what they are intended to reflect) and reliable (when measurement is repeated, the results are the same).  -->
+<!-- NCA has no new requirements on collecting the data. There are a few exceptions. First, the setup of a 'necessity experiment' is different than the setup of a 'sufficiency experiment' or a common 'average treatment effect experiment' (see section \@ref(experiment)). Second, in certain situations it is possible to sample just a single case to perform NCA (see section \@ref(samplesize)). Third, the way that NCA is conducted may differ depending on the types of data that are used:  quantitative data (section \@ref(quantitative)), qualitative data (section \@ref(qualitative)), longitudinal data (section \@ref(longitudinal)), and set membership scores (section \@ref(setmembership)). Furthermore, the identification of potential outliers is partly different from the common way of identifying outliers (see section \@ref(outliers)).  -->
+<!-- ## \textcolor{gray}{analyze the data}  -->
+<!-- ## <span style="color: #D3D3D3">analyze the data</span> {#analyze} -->
+<!-- under construction -->
+<!-- ## analyze the data {#dataanalysissummary} -->
+<!-- Data analysis is at the core of NCA. NCA's data analysis assumes that it makes theoretically sense to analyze the data with necessity logic (see section \@ref(formulate)) and that the data are meaningful (see section \@ref(collect)). For a quantitative necessary condition analysis the 'scatter plot' approach can be used. The scatter plot maps cases in the XY plane and NCA conducts a bivariate analysis on the scatter plot. -->
+
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
+<div id="ref-acquah2023invest" class="csl-entry">
+Acquah, I. S. K., Quaicoe, J., &amp; Arhin, M. (2023). How to invest in total quality management practices for enhanced operational performance: Findings from <span>PLS-SEM</span> and <span class="nocase">fsQCA</span>. <em>The TQM Journal</em>, <em>35</em>(7), 1830–1859. <a href="https://doi.org/10.1108/TQM-05-2022-0161">https://doi.org/10.1108/TQM-05-2022-0161</a>
+</div>
+<div id="ref-aguinis2020methodological" class="csl-entry">
+Aguinis, H., Ramani, R. S., &amp; Cascio, W. F. (2020). Methodological practices in international business research: An after-action review of challenges and solutions. <em>Journal of International Business Studies</em>, <em>51</em>(9), 1593–1608. <a href="https://doi.org/10.1057/s41267-020-00353-7">https://doi.org/10.1057/s41267-020-00353-7</a>
+</div>
+<div id="ref-angrist1996identification" class="csl-entry">
+Angrist, J. D., Imbens, G. W., &amp; Rubin, D. B. (1996). Identification of causal effects using instrumental variables. <em>Journal of the American Statistical Association</em>, <em>91</em>(434), 444–455. <a href="https://doi.org/10.1080/01621459.1996.10476902">https://doi.org/10.1080/01621459.1996.10476902</a>
+</div>
+<div id="ref-arenius2017no" class="csl-entry">
+Arenius, P., Engel, Y., &amp; Klyver, K. (2017). No particular action needed? A necessary condition analysis of gestation activities and firm emergence. <em>Journal of Business Venturing Insights</em>, <em>8</em>, 87–92. <a href="https://doi.org/10.1016/j.jbvi.2017.07.004">https://doi.org/10.1016/j.jbvi.2017.07.004</a>
+</div>
+<div id="ref-batey2021designing" class="csl-entry">
+Batey, M., Hughes, D. J., Crick, L., &amp; Toader, A. (2021). Designing creative spaces: An experimental examination of the effect of a nature poster on divergent thinking. <em>Ergonomics</em>, <em>64</em>(1), 139–146. <a href="https://doi.org/10.1080/00140139.2020.1811398">https://doi.org/10.1080/00140139.2020.1811398</a>
+</div>
+<div id="ref-becker2023pls" class="csl-entry">
+Becker, J.-M., Cheah, J.-H., Gholamzade, R., Ringle, C. M., &amp; Sarstedt, M. (2023). <span class="nocase">PLS­SEM’s</span> most wanted guidance. <em>International Journal of Contemporary Hospitality Management</em>, <em>35</em>(1), 321–346. <a href="https://doi.org/10.1108/IJCHM-04-2022-0474">https://doi.org/10.1108/IJCHM-04-2022-0474</a>
+</div>
+<div id="ref-bergh2022constitutes" class="csl-entry">
+Bergh, D. D., Boyd, B. K., Byron, K., Gove, S., &amp; Ketchen Jr, D. J. (2022). What constitutes a methodological contribution? <em>Journal of Management</em>, <em>48</em>(7), 1835–1848. <a href="https://doi.org/10.1177/01492063221088235">https://doi.org/10.1177/01492063221088235</a>
+</div>
+<div id="ref-bokrantz2022building" class="csl-entry">
+Bokrantz, J., &amp; Dul, J. (2023). Building and testing necessity theories in supply chain management. <em>Journal of Supply Chain Management</em>, <em>59</em>, 48–65. <a href="https://doi.org/10.1111/jscm.12287">https://doi.org/10.1111/jscm.12287</a>
+</div>
+<div id="ref-boon2019systematic" class="csl-entry">
+Boon, C., Den Hartog, D. N., &amp; Lepak, D. P. (2019). A systematic review of human resource management systems and their measurement. <em>Journal of Management</em>, <em>45</em>(6), 2498–2537. <a href="https://doi.org/10.1177/0149206318818718">https://doi.org/10.1177/0149206318818718</a>
+</div>
+<div id="ref-bouncken2020value" class="csl-entry">
+Bouncken, R. B., Fredrich, V., Ritala, P., &amp; Kraus, S. (2020). Value-creation-capture-equilibrium in new product development alliances: A matter of coopetition, expert power, and alliance importance. <em>Industrial Marketing Management</em>, <em>90</em>, 648–662. <a href="https://doi.org/10.1016/j.indmarman.2020.03.019">https://doi.org/10.1016/j.indmarman.2020.03.019</a>
+</div>
+<div id="ref-conde2025uncovering" class="csl-entry">
+Conde, R. (2025). <span class="nocase">Uncovering sales agents’ recruitment, hiring and training practices as necessary conditions to sales agents’ exceeding quota and turnover intentions</span>. <em>Journal of Business &amp; Industrial Marketing</em>, <em>41</em>, 160–175. <a href="https://doi.org/10.1108/jbim-06-2024-0416">https://doi.org/10.1108/jbim-06-2024-0416</a>
+</div>
+<div id="ref-crede2021should" class="csl-entry">
+Credé, M., &amp; Tynan, M. C. (2021). Should language acquisition researchers study <span>“grit”</span>? A cautionary note and some suggestions. <em>Journal for the Psychology of Language Learning</em>, <em>3</em>(2), 37–44. <a href="https://doi.org/10.52598/jpll/3/2/3">https://doi.org/10.52598/jpll/3/2/3</a>
+</div>
+<div id="ref-dabic202140" class="csl-entry">
+Dabić, M., Marzi, G., Vlačić, B., Daim, T. U., &amp; Vanhaverbeke, W. (2021). 40 years of excellence: An overview of technovation and a roadmap for future research. <em>Technovation</em>, <em>106</em>, 102303. <a href="https://doi.org/10.1016/j.technovation.2021.102303">https://doi.org/10.1016/j.technovation.2021.102303</a>
+</div>
+<div id="ref-deist2023digital" class="csl-entry">
+Deist, M. K., McDowell, W. C., &amp; Bouncken, R. B. (2023). Digital units and digital innovation: Balancing fluidity and stability for the creation, conversion, and dissemination of sticky knowledge. <em>Journal of Business Research</em>, <em>161</em>, 113827. <a href="https://doi.org/10.1016/j.jbusres.2023.113827">https://doi.org/10.1016/j.jbusres.2023.113827</a>
+</div>
+<div id="ref-delsordo2025role" class="csl-entry">
+Del Sordo, E., &amp; Zattoni, A. (2025). The role of employee ownership, financial participation, and decision‐making in corporate governance: A multilevel review and research agenda. <em>Corporate Governance: An International Review</em>, <em>33</em>(3), 529–549. <a href="https://doi.org/10.1111/corg.12614">https://doi.org/10.1111/corg.12614</a>
+</div>
+<div id="ref-dul2016orm" class="csl-entry">
+Dul, J. (2016b). <span>Necessary Condition Analysis</span> (<span>NCA</span>): Logic and methodology of <span>“necessary but not sufficient”</span> causality. <em>Organizational Research Methods</em>, <em>19</em>(1), 10–52. <a href="https://doi.org/10.1177/1094428115584005">https://doi.org/10.1177/1094428115584005</a>
+</div>
+<div id="ref-dul2020book" class="csl-entry">
+Dul, J. (2020). <em><span>Conducting Necessary Condition Analysis</span>.</em> Sage. <a href="https://uk.sagepub.com/en-gb/eur/conducting-necessary-condition-analysis-for-business-and-management-students/book262898">https://uk.sagepub.com/en-gb/eur/conducting-necessary-condition-analysis-for-business-and-management-students/book262898</a>
+</div>
+<div id="ref-dul2021online" class="csl-entry">
+Dul, J. (2021). <em><span class="nocase">Advances in Necessary Condition Analysis.</span></em> online book. <a href="https://bookdown.org/ncabook/advanced_nca2/">https://bookdown.org/ncabook/advanced_nca2/</a>
+</div>
+<div id="ref-dul2022problematic" class="csl-entry">
+Dul, J. (2022). Problematic applications of <span>Necessary Condition Analysis</span> (<span>NCA</span>) in tourism and hospitality research. <em>Tourism Management</em>, <em>93</em>, 104616. <a href="https://doi.org/10.1016/j.tourman.2022.104616">https://doi.org/10.1016/j.tourman.2022.104616</a>
+</div>
+<div id="ref-dul2024how" class="csl-entry">
+Dul, J. (2024b). How to sample in <span>Necessary Condition Analysis (NCA)</span>. <em>European Journal of International Management</em>, <em>23</em>(1), 1–12. <a href="https://doi.org/10.1504/EJIM.2024.138446">https://doi.org/10.1504/EJIM.2024.138446</a>
+</div>
+<div id="ref-dul2024identifying" class="csl-entry">
+Dul, J. (2025). Identifying the perfect predictor of absence of disease: A shift toward necessary condition analysis in evidence-based medicine? In <em>Journal of the American Academy of Child and Adolescent Psychiatry</em> (pp. S0890–8567). <a href="https://doi.org/10.1016/j.jaac.2024.11.020">https://doi.org/10.1016/j.jaac.2024.11.020</a>
+</div>
+<div id="ref-dul2008case" class="csl-entry">
+Dul, J., &amp; Hak, T. (2008). <em>Case <span>S</span>tudy <span>M</span>ethodology in <span>B</span>usiness <span>R</span>esearch</em>. Routledge. <a href="https://www.routledge.com/Case-Study-Methodology-in-Business-Research/Dul-Hak/p/book/9780750681964">https://www.routledge.com/Case-Study-Methodology-in-Business-Research/Dul-Hak/p/book/9780750681964</a>
+</div>
+<div id="ref-dul2010necessary" class="csl-entry">
+Dul, J., Hak, T., Goertz, G., &amp; Voss, C. (2010). Necessary condition hypotheses in operations management. <em>International Journal of Operations &amp; Production Management</em>, <em>30</em>(11), 1170–1190. <a href="https://doi.org/10.1108/01443571011087378">https://doi.org/10.1108/01443571011087378</a>
+</div>
+<div id="ref-dul2023necessary" class="csl-entry">
+Dul, J., Hauff, S., &amp; Bouncken, R. B. (2023). <span class="nocase">Necessary <span>C"</span>ondition <span>A</span>nalysis</span> (<span>NCA</span>): Review of research topics and guidelines for good practice. <em>Review of Managerial Science</em>, <em>17</em>, 683–714. <a href="https://doi.org/10.1007/s11846-023-00628-x">https://doi.org/10.1007/s11846-023-00628-x</a>
+</div>
+<div id="ref-dul2021marketing" class="csl-entry">
+Dul, J., Hauff, S., &amp; Tóth, Z. (2021). <span>Necessary Condition Analysis</span> in marketing research. In R. Nunkoo, V. Teeroovengadum, &amp; C. Ringle (Eds.), <em>Handbook of research methods for marketing management</em> (pp. 51–72). Edward Elgar Publishing. <a href="https://www.e-elgar.com/shop/gbp/handbook-of-research-methods-for-marketing-management-9781788976947.html">https://www.e-elgar.com/shop/gbp/handbook-of-research-methods-for-marketing-management-9781788976947.html</a>
+</div>
+<div id="ref-dul2020creativity" class="csl-entry">
+Dul, J., Karwowski, M., &amp; Kaufman, J. C. (2020). <span>Necessary Condition Analysis</span> in creativity research. In V. Dörfler &amp; M. Stierand (Eds.), <em>Handbook of research methods on creativity</em> (pp. 351–368). Edward Elgar Publishing. <a href="https://www.e-elgar.com/shop/gbp/handbook-of-research-methods-on-creativity-9781786439642.html">https://www.e-elgar.com/shop/gbp/handbook-of-research-methods-on-creativity-9781786439642.html</a>
+</div>
+<div id="ref-dul2019necessary" class="csl-entry">
+Dul, J., Laan, E. van der, Kuik, R., &amp; Karwowski, M. (2019). Necessary condition analysis: Type i error, power, and over-interpretation of test results. A reply to a comment on NCA. Commentary: Predicting the significance of necessity. <em>Frontiers in Psychology</em>, <em>10</em>, 1493. <a href="https://doi.org/10.3389/fpsyg.2019.01493">https://doi.org/10.3389/fpsyg.2019.01493</a>
+</div>
+<div id="ref-dul2024advancing" class="csl-entry">
+Dul, J., Raaij, E. van, &amp; Caputo, A. (2024). Advancing scientific inquiry through data reuse: <span>Necessary Condition Analysis</span> with archival data. <em>Strategic Change</em>, <em>33</em>(1), 35–40. <a href="https://doi.org/10.1002/jsc.2562">https://doi.org/10.1002/jsc.2562</a>
+</div>
+<div id="ref-dul2020orm" class="csl-entry">
+Dul, J., Van der Laan, E., &amp; Kuik, R. (2020). A statistical significance test for <span>Necessary Condition Analysis</span>. <em>Organizational Research Methods</em>, <em>23</em>(2), 385–395. <a href="https://doi.org/10.1177/1094428118795272">https://doi.org/10.1177/1094428118795272</a>
+</div>
+<div id="ref-dul2021necessary" class="csl-entry">
+Dul, J., Vis, B., &amp; Goertz, G. (2021). <span>N</span>ecessary <span>C</span>ondition <span>A</span>nalysis <span>(NCA)</span> does exactly what it should do when applied properly: A reply to a comment on <span>NCA</span>. <em>Sociological Methods &amp; Research</em>, <em>50</em>(2), 926–936. <a href="https://doi.org/10.1177%2F0049124118799383">https://doi.org/10.1177%2F0049124118799383</a>
+</div>
+<div id="ref-fainshmidt2020contributions" class="csl-entry">
+Fainshmidt, S., Witt, M. A., Aguilera, R. V., &amp; Verbeke, A. (2020). The contributions of <span class="nocase">qualitative comparative analysis</span> (<span>QCA</span>) to international business research. <em>Journal of International Business Studies</em>, <em>51</em>(4), 455–466. <a href="https://doi.org/10.1057/s41267-020-00313-1">https://doi.org/10.1057/s41267-020-00313-1</a>
+</div>
+<div id="ref-frazier2017psychological" class="csl-entry">
+Frazier, M. L., Fainshmidt, S., Klinger, R. L., Pezeshkan, A., &amp; Vracheva, V. (2017). Psychological safety: A meta-analytic review and extension. <em>Personnel Psychology</em>, <em>70</em>(1), 113–165. <a href="https://doi.org/10.1111/peps.12183">https://doi.org/10.1111/peps.12183</a>
+</div>
+<div id="ref-gantert2022moral" class="csl-entry">
+Gantert, T. M., Fredrich, V., Bouncken, R. B., &amp; Kraus, S. (2022). The moral foundations of makerspaces as unconventional sources of innovation: A study of narratives and performance. <em>Journal of Business Research</em>, <em>139</em>, 1564–1574. <a href="https://doi.org/10.1016/j.jbusres.2021.10.076">https://doi.org/10.1016/j.jbusres.2021.10.076</a>
+</div>
+<div id="ref-golini2016exploiting" class="csl-entry">
+Golini, R., Deflorin, P., &amp; Scherrer, M. (2016). Exploiting the potential of manufacturing network embeddedness: An OM perspective. <em>International Journal of Operations &amp; Production Management</em>, <em>36</em>(12), 1741–1768. <a href="https://doi.org/10.1108/IJOPM-11-2014-0559">https://doi.org/10.1108/IJOPM-11-2014-0559</a>
+</div>
+<div id="ref-gregoproposing" class="csl-entry">
+Greco, A. M., Guilera, G., Maldonado-Murciano, L., Gómez-Benito, J., &amp; Barrios, M. (2022). Proposing necessary but not sufficient conditions analysis as a complement of traditional effect size measures with an illustrative example. <em>International Journal of Environmental Research and Public Health</em>, <em>19</em>(15), 9402. <a href="https://doi.org/10.3390/ijerph19159402">https://doi.org/10.3390/ijerph19159402</a>
+</div>
+<div id="ref-gu2022configurations" class="csl-entry">
+Gu, J., Wu, C., Wu, X., He, R., Tao, J., Ye, W., Wu, P., Hao, M., &amp; Qiu, W. (2022). Configurations for positive public behaviors in response to the COVID-19 pandemic: A fuzzy set qualitative comparative analysis. <em>BMC Public Health</em>, <em>22</em>, 1692. <a href="https://doi.org/10.1186/s12889-022-14097-6">https://doi.org/10.1186/s12889-022-14097-6</a>
+</div>
+<div id="ref-guenther2023improving" class="csl-entry">
+Guenther, P., Guenther, M., Ringle, C. M., Zaefarian, G., &amp; Cartwright, S. (2023). Improving <span>PLS-SEM</span> use for business marketing research. <em>Industrial Marketing Management</em>, <em>111</em>, 127–142. <a href="https://doi.org/10.1016/j.indmarman.2023.03.010">https://doi.org/10.1016/j.indmarman.2023.03.010</a>
+</div>
+<div id="ref-hauff2021analytical" class="csl-entry">
+Hauff, S. (2021). Analytical strategies in HRM systems research: A comparative analysis and some recommendations. <em>The International Journal of Human Resource Management</em>, <em>32</em>(9), 1923–1952. <a href="https://doi.org/10.1080/09585192.2018.1547779">https://doi.org/10.1080/09585192.2018.1547779</a>
+</div>
+<div id="ref-hauff2021hrm" class="csl-entry">
+Hauff, S., Guerci, M., Dul, J., &amp; Rhee, H. van. (2021). Exploring necessary conditions in HRM research: Fundamental issues and methodological implications. <em>Human Resource Management Journal</em>, <em>31</em>(1), 18–36. <a href="https://doi.org/10.1111/1748-8583.12231">https://doi.org/10.1111/1748-8583.12231</a>
+</div>
+<div id="ref-hernaus2022from" class="csl-entry">
+Hernaus, T., &amp; Černe, M. (2022). From the editors: The importance of data in research - best practices regarding data collection, processing and visualization. <em>Dynamic Relationships Management Journal</em>, <em>11</em>(2). <a href="http://sam-d.si/wp-content/uploads/2022/12/Editorial.pdf">http://sam-d.si/wp-content/uploads/2022/12/Editorial.pdf</a>
+</div>
+<div id="ref-jovanovic2022under" class="csl-entry">
+Jovanovic, J., &amp; Morschett, D. (2022). Under which conditions do manufacturing companies choose FDI for service provision in foreign markets? An investigation using <span class="nocase">fsQCA</span>. <em>Industrial Marketing Management</em>, <em>104</em>, 38–50. <a href="https://doi.org/10.1016/j.indmarman.2022.03.018">https://doi.org/10.1016/j.indmarman.2022.03.018</a>
+</div>
+<div id="ref-klimas2021strategy" class="csl-entry">
+Klimas, P., Czakon, W., &amp; Fredrich, V. (2022). Strategy frames in coopetition: An examination of coopetition entry factors in high-tech firms. <em>European Management Journal</em>, <em>40</em>(2), 258–272. <a href="https://doi.org/10.1016/j.emj.2021.04.005">https://doi.org/10.1016/j.emj.2021.04.005</a>
+</div>
+<div id="ref-klimas2023attributes" class="csl-entry">
+Klimas, P., Sachpazidu, K., &amp; Stańczyk, S. (2023). The attributes of coopetitive relationships: What do we know and not know about them? <em>European Management Journal</em>. <a href="https://doi.org/10.1016/j.emj.2023.02.005">https://doi.org/10.1016/j.emj.2023.02.005</a>
+</div>
+<div id="ref-linder2022necessary" class="csl-entry">
+Linder, C., Moulick, A. G., &amp; Lechner, C. (2023). Necessary conditions and theory-method compatibility in quantitative entrepreneurship research. <em>Entrepreneurship Theory and Practice</em>, <em>47</em>(5), 1971–1994. <a href="https://doi.org/10.1177/10422587221102103">https://doi.org/10.1177/10422587221102103</a>
+</div>
+<div id="ref-luo2022pathway" class="csl-entry">
+Luo, L., Wang, Y., Liu, Y., Zhang, X., &amp; Fang, X. (2022). <span class="nocase">Where is the pathway to sustainable urban development? Coupling coordination evaluation and configuration analysis between low-carbon development and eco-environment: A case study of the Yellow River Basin, <span>C</span>hina</span>. <em>Ecological Indicators</em>, <em>144</em>, 109473. <a href="https://doi.org/10.1016/j.ecolind.2022.109473">https://doi.org/10.1016/j.ecolind.2022.109473</a>
+</div>
+<div id="ref-marchetti2025necessity" class="csl-entry">
+Marchetti, I., Koster, E. H., &amp; Dul, J. (2026). Necessity causality in mental health research: Applying necessary condition analysis in clinical psychology and psychiatry. <em>Clinical Psychology Review</em>, <em>123</em>, 102689. <a href="https://doi.org/10.1016/j.cpr.2025.102689">https://doi.org/10.1016/j.cpr.2025.102689</a>
+</div>
+<div id="ref-ogundipe2022interfirm" class="csl-entry">
+Ogundipe, S. J., Peters, L. D., &amp; Tóth, Z. (2022). Interfirm problem representation: Developing shared understanding within inter-organizational networks. <em>Industrial Marketing Management</em>, <em>100</em>, 76–87. <a href="https://doi.org/10.1016/j.indmarman.2021.11.004">https://doi.org/10.1016/j.indmarman.2021.11.004</a>
+</div>
+<div id="ref-parker2024smart" class="csl-entry">
+Parker, S. K., &amp; Knight, C. (2024). The SMART model of work design: A higher order structure to help see the wood from the trees. <em>Human Resource Management</em>, <em>63</em>(2), 265–291. <a href="https://doi.org/10.1002/hrm.22200">https://doi.org/10.1002/hrm.22200</a>
+</div>
+<div id="ref-pearl2009causality" class="csl-entry">
+Pearl, J. (2009). <em>Causality</em>. Cambridge University Press. <a href="https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B">https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B</a>
+</div>
+<div id="ref-peng2022pathway" class="csl-entry">
+Peng, B., Zhao, Y., Elahi, E., &amp; Wan, A. (2022). Pathway and key factor identification of third-party market cooperation of <span>C</span>hina’s overseas energy investment projects. <em>Technological Forecasting and Social Change</em>, <em>183</em>, 121931. <a href="https://doi.org/10.1016/j.techfore.2022.121931">https://doi.org/10.1016/j.techfore.2022.121931</a>
+</div>
+<div id="ref-ragin1987comparative" class="csl-entry">
+Ragin, C. C. (1987). <em>The comparative method: Moving beyond qualitative and quantitative strategies</em>. JSTOR. <a href="https://www.jstor.org/stable/10.1525/j.ctt1pnx57?turn_away=true">https://www.jstor.org/stable/10.1525/j.ctt1pnx57?turn_away=true</a>
+</div>
+<div id="ref-richter2022necessary" class="csl-entry">
+Richter, N. F., &amp; Hauff, S. (2022). Necessary conditions in international business research–advancing the field with a new perspective on causality and data analysis. <em>Journal of World Business</em>, <em>57</em>(5), 101310. <a href="https://doi.org/10.1016/j.jwb.2022.101310">https://doi.org/10.1016/j.jwb.2022.101310</a>
+</div>
+<div id="ref-richter2022use" class="csl-entry">
+Richter, N. F., Hauff, S., Ringle, C. M., &amp; Gudergan, S. P. (2022). The use of partial least squares structural equation modeling and complementary methods in international management research. <em>Management International Review</em>, <em>62</em>(4), 449–470. <a href="https://doi.org/10.1007/s11575-022-00475-0">https://doi.org/10.1007/s11575-022-00475-0</a>
+</div>
+<div id="ref-robinson2022" class="csl-entry">
+<span class="nocase">Robinson, S., Muratbekova-Touron, M., Linder, C., Bouncken, R. B., Findikoglu, M. N., Garbuio, M., Hartner-Tiefenthaler, M., Thanos, I. C., Aharonson, B. S., Strobl, A., et al.</span> (2022). 40th anniversary editorial: Looking backwards to move forward in management research. <em>European Management Journal</em>, <em>40</em>(4), 459–466. <a href="https://doi.org/10.1016/j.emj.2022.07.002">https://doi.org/10.1016/j.emj.2022.07.002</a>
+</div>
+<div id="ref-rothman1976causes" class="csl-entry">
+Rothman, K. J. (1976). Causes. <em>American Journal of Epidemiology</em>, <em>104</em>(6), 587–592. <a href="https://doi.org/10.1093/oxfordjournals.aje.a112335">https://doi.org/10.1093/oxfordjournals.aje.a112335</a>
+</div>
+<div id="ref-rozenkowska2023theory" class="csl-entry">
+Rozenkowska, K. (2023). Theory of planned behavior in consumer behavior research: A systematic literature review. <em>International Journal of Consumer Studies</em>, <em>47</em>(6), 2670–2700. <a href="https://doi.org/10.1111/ijcs.12970">https://doi.org/10.1111/ijcs.12970</a>
+</div>
+<div id="ref-sarstedt2023advanced" class="csl-entry">
+Sarstedt, M., &amp; Liu, Y. (2023). Advanced marketing analytics using partial least squares structural equation modeling <span>(PLS-SEM)</span>. In <em>Journal of Marketing Analytics</em> (pp. 1–5). Springer. <a href="https://doi.org/10.1057/s41270-023-00279-7">https://doi.org/10.1057/s41270-023-00279-7</a>
+</div>
+<div id="ref-sharma2024framework" class="csl-entry">
+Sharma, P. N., Sarstedt, M., Ringle, C. M., Cheah, J.-H., Herfurth, A., &amp; Hair, J. F. (2024). A framework for enhancing the replicability of behavioral MIS research using prediction oriented techniques. <em>International Journal of Information Management</em>, <em>78</em>, 102805. <a href="https://doi.org/10.1016/j.ijinfomgt.2024.102805">https://doi.org/10.1016/j.ijinfomgt.2024.102805</a>
+</div>
+<div id="ref-stek2021train" class="csl-entry">
+Stek, K., &amp; Schiele, H. (2021). How to train supply managers–necessary and sufficient purchasing skills leading to success. <em>Journal of Purchasing and Supply Management</em>, <em>27</em>(4), 100700. <a href="https://doi.org/10.1016/j.pursup.2021.100700">https://doi.org/10.1016/j.pursup.2021.100700</a>
+</div>
+<div id="ref-toth2019tourism" class="csl-entry">
+Tóth, Z., Dul, J., &amp; Li, C. (2019). Necessary condition analysis in tourism research. <em>Annals of Tourism Research</em>, <em>79</em>, 102821. <a href="https://doi.org/10.1016/j.annals.2019.102821">https://doi.org/10.1016/j.annals.2019.102821</a>
+</div>
+<div id="ref-tynan2020education" class="csl-entry">
+Tynan, M. C., Credé, M., &amp; Harms, P. D. (2020). Are individual characteristics and behaviors necessary-but-not-sufficient conditions for academic success?: A demonstration of <span class="nocase">Dul’s</span> (2016) necessary condition analysis. <em>Learning and Individual Differences</em>, <em>77</em>, 101815. <a href="https://doi.org/10.1016/j.lindif.2019.101815">https://doi.org/10.1016/j.lindif.2019.101815</a>
+</div>
+<div id="ref-wright1985causation" class="csl-entry">
+Wright, R. W. (1985). Causation in tort law. <em>Calif. L. Rev.</em>, <em>73</em>, 1735. <a href="https://scholarship.kentlaw.iit.edu/fac_schol/697">https://scholarship.kentlaw.iit.edu/fac_schol/697</a>
+</div>
+<div id="ref-zahoor2023international" class="csl-entry">
+Zahoor, N., Khan, Z., &amp; Shenkar, O. (2023). International vertical alliances within the international business field: A systematic literature review and future research agenda. <em>Journal of World Business</em>, <em>58</em>(1), 101385. <a href="https://doi.org/10.1016/j.jwb.2022.101385">https://doi.org/10.1016/j.jwb.2022.101385</a>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>This book uses specific terminology, such as condition and outcome, that is explained in the glossary of Appendix <a href="glossary.html#glossary">A</a>.<a href="introduction.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>In this book the general term for a user of NCA or other methodological approaches is <em>analyst</em>. The analyst can be an academic scholar or a practitioner. The general term for an academic research activity or a project in practice is <em>study</em>.<a href="introduction.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>In previous publications I have inconsistently used the terms ‘approach’, ‘methodology’ and ‘method’ in the context of NCA. In this book, I follow the common distinction between <em>methodology</em>, referring to the philosophical and theoretical framework, and <em>method</em> referring to the specific techniques, tools, or procedures used to collect and analyze data. The combination of the two parts is called <em>approach</em> or <em>methodological approach</em>.<a href="introduction.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>The NCA methodology and method can be used in any type of investigation that aims to describe causal relationships. Although usually quantitative data (numbers) are used in NCA, NCA can also be used with qualitative data (words, symbols, see Chapter <a href="datacollection.html#datacollection">8</a>) as long as scores (values, levels) for the condition and the outcome are available.<a href="introduction.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>The dissemination of NCA’s core paper <span class="citation">(<a href="#ref-dul2016orm">Dul, 2016b</a>)</span> has been welcomed by <span class="citation">Bergh et al. (<a href="#ref-bergh2022constitutes">2022</a>)</span>: “The significant expansion of an unknown method along with its usability (including an illustration, user-friendly recommendations, and a software tool) makes the article a gold standard for a contribution via transfer” (p. 1840).<a href="introduction.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Journals ranked in Clarivate’s Journal Citation Reports.<a href="introduction.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>Most misconceptions relate to a lack of awareness about the principles of NCA. Example misconceptions are: “NCA should specify the full data generation process (DGP)” (given its purpose, NCA specifies only a part of the DGP), “NCA is just a statistical method” (NCA is a broad methodological approach that combines theory, mathematics (geometry) and uses statistical tools), “NCA’s statistical test is a test of H1” (NCA’s statistical tests are null hypothesis tests, testing H0), “NCA is the necessity analysis of QCA” (the necessity analysis of NCA and that of fuzzy-set QCA are fundamentally different), “Necessary conditions according to NCA are the same as INUS conditions” (INUS conditions are local necessary parts of a sufficient configuration that produces the outcome; NCA considers overall necessary conditions for the outcome), “NCA cannot test sufficiency” (NCA can test the absence of <span class="math inline">\(X\)</span> being necessary for absence of <span class="math inline">\(Y\)</span>, which is equivalent to <span class="math inline">\(X\)</span> is sufficient for <span class="math inline">\(Y\)</span>), etc. Several misconceptions are addressed in specific publications <span class="citation">(<a href="#ref-dul2019necessary">Dul et al., 2019</a>; <a href="#ref-dul2021necessary">Dul, Vis, et al., 2021</a>; <a href="#ref-dul2022problematic">Dul, 2022</a>)</span>.<a href="introduction.html#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>A positive or negative conclusion about necessity depends on the analyst’s judgement of many elements, summarized in NCA’s SCoRe checklist for conducting and reporting an NCA study (Chapter <a href="reporting.html#reporting">10</a>).<a href="introduction.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p>In this book, it is assumed that hypothesis formulation is done before data collection. The reasons are discussed in Chapter <a href="hypothesisformulation.html#hypothesisformulation">7</a>.<a href="introduction.html#fnref9" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="acknowledgments.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="part-i.-principles.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": null,
+  "fontsettings": {
+    "theme": "white",
+    "family": "serif",
+    "size": 2
+  },
+  "edit": null,
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  },
+  "info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

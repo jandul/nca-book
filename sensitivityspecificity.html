@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Credibility | Necessary Condition Analysis (NCA)</title>
+  <meta name="description" content="6 Credibility | Necessary Condition Analysis (NCA): Principles and Application" />
+  <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Credibility | Necessary Condition Analysis (NCA)" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="6 Credibility | Necessary Condition Analysis (NCA): Principles and Application" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Credibility | Necessary Condition Analysis (NCA)" />
+  
+  <meta name="twitter:description" content="6 Credibility | Necessary Condition Analysis (NCA): Principles and Application" />
+  
+
+<meta name="author" content="Jan Dul" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="statistics.html"/>
+<link rel="next" href="part-ii.-application.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+|<img src="logoNCA.png" width="270" height="270">
+<li><a href="./">Necessary Condition Analysis - NCA. Principles and Application</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="" data-path="part-i.-principles.html"><a href="part-i.-principles.html"><i class="fa fa-check"></i>Part I. Principles</a></li>
+<li class="chapter" data-level="2" data-path="causality.html"><a href="causality.html"><i class="fa fa-check"></i><b>2</b> Causality</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="causality.html"><a href="causality.html#summarycausality"><i class="fa fa-check"></i><b>2.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="2.2" data-path="causality.html"><a href="causality.html#whatisacause"><i class="fa fa-check"></i><b>2.2</b> What is a cause?</a></li>
+<li class="chapter" data-level="2.3" data-path="causality.html"><a href="causality.html#sufficiencycausality"><i class="fa fa-check"></i><b>2.3</b> Sufficiency causality</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="causality.html"><a href="causality.html#deterministicsufficiency"><i class="fa fa-check"></i><b>2.3.1</b> Deterministic sufficiency</a></li>
+<li class="chapter" data-level="2.3.2" data-path="causality.html"><a href="causality.html#probabilisticsufficiency"><i class="fa fa-check"></i><b>2.3.2</b> Probabilistic sufficiency</a></li>
+<li class="chapter" data-level="2.3.3" data-path="causality.html"><a href="causality.html#typicalitysufficiency"><i class="fa fa-check"></i><b>2.3.3</b> Typicality sufficiency</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="causality.html"><a href="causality.html#necessitycausality"><i class="fa fa-check"></i><b>2.4</b> Necessity causality</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="causality.html"><a href="causality.html#deterministicnecessity"><i class="fa fa-check"></i><b>2.4.1</b> Deterministic necessity</a></li>
+<li class="chapter" data-level="2.4.2" data-path="causality.html"><a href="causality.html#probabilisticnecessity"><i class="fa fa-check"></i><b>2.4.2</b> Probabilistic necessity</a></li>
+<li class="chapter" data-level="2.4.3" data-path="causality.html"><a href="causality.html#typicalitynecessity"><i class="fa fa-check"></i><b>2.4.3</b> Typicality necessity</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="causality.html"><a href="causality.html#causalversusconditionallogic"><i class="fa fa-check"></i><b>2.5</b> Causal versus conditional logic</a></li>
+<li class="chapter" data-level="2.6" data-path="causality.html"><a href="causality.html#binarytocontinuous"><i class="fa fa-check"></i><b>2.6</b> From binary necessity to continuous necessity</a></li>
+<li class="chapter" data-level="2.7" data-path="causality.html"><a href="causality.html#underdetermination"><i class="fa fa-check"></i><b>2.7</b> Causal underdetermination</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="theory.html"><a href="theory.html"><i class="fa fa-check"></i><b>3</b> Theory</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="theory.html"><a href="theory.html#summarytheory"><i class="fa fa-check"></i><b>3.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="3.2" data-path="theory.html"><a href="theory.html#definitionnecessitytheory"><i class="fa fa-check"></i><b>3.2</b> Main elements of a theory</a></li>
+<li class="chapter" data-level="3.3" data-path="theory.html"><a href="theory.html#parsimonious"><i class="fa fa-check"></i><b>3.3</b> Parsimonious necessity theories</a></li>
+<li class="chapter" data-level="3.4" data-path="theory.html"><a href="theory.html#theorytypes"><i class="fa fa-check"></i><b>3.4</b> Types of necessity theories</a></li>
+<li class="chapter" data-level="3.5" data-path="theory.html"><a href="theory.html#direction"><i class="fa fa-check"></i><b>3.5</b> Direction of a necessity relationship</a></li>
+<li class="chapter" data-level="3.6" data-path="theory.html"><a href="theory.html#expectedemptycorner"><i class="fa fa-check"></i><b>3.6</b> Expected empty corner</a></li>
+<li class="chapter" data-level="3.7" data-path="theory.html"><a href="theory.html#morecorners"><i class="fa fa-check"></i><b>3.7</b> Double necessity</a></li>
+<li class="chapter" data-level="3.8" data-path="theory.html"><a href="theory.html#necessarybutnotsufficient"><i class="fa fa-check"></i><b>3.8</b> The meaning of ‘necessary but not sufficient’</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>4</b> Mathematics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="mathematics.html"><a href="mathematics.html#summarymathematics"><i class="fa fa-check"></i><b>4.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematics.html"><a href="mathematics.html#branchesofmathematics"><i class="fa fa-check"></i><b>4.2</b> Branches of mathematics</a></li>
+<li class="chapter" data-level="4.3" data-path="mathematics.html"><a href="mathematics.html#formalexpression"><i class="fa fa-check"></i><b>4.3</b> Model specification</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="mathematics.html"><a href="mathematics.html#formalboundingbox"><i class="fa fa-check"></i><b>4.3.1</b> Bounding box</a></li>
+<li class="chapter" data-level="4.3.2" data-path="mathematics.html"><a href="mathematics.html#mathceiling"><i class="fa fa-check"></i><b>4.3.2</b> Ceiling line</a></li>
+<li class="chapter" data-level="4.3.3" data-path="mathematics.html"><a href="mathematics.html#modeldf"><i class="fa fa-check"></i><b>4.3.3</b> Model degrees of freedom</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="mathematics.html"><a href="mathematics.html#mathematicalestimation"><i class="fa fa-check"></i><b>4.4</b> Mathematical estimation</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="mathematics.html"><a href="mathematics.html#effectsize"><i class="fa fa-check"></i><b>4.4.1</b> Effect size</a></li>
+<li class="chapter" data-level="4.4.2" data-path="mathematics.html"><a href="mathematics.html#inefficiency"><i class="fa fa-check"></i><b>4.4.2</b> Necessity inefficiency</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="mathematics.html"><a href="mathematics.html#modelfit"><i class="fa fa-check"></i><b>4.5</b> Model fit</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="mathematics.html"><a href="mathematics.html#complexity"><i class="fa fa-check"></i><b>4.5.1</b> Complexity</a></li>
+<li class="chapter" data-level="4.5.2" data-path="mathematics.html"><a href="mathematics.html#fit"><i class="fa fa-check"></i><b>4.5.2</b> Fit</a></li>
+<li class="chapter" data-level="4.5.3" data-path="mathematics.html"><a href="mathematics.html#ceilingaccuracy"><i class="fa fa-check"></i><b>4.5.3</b> Ceiling accuracy</a></li>
+<li class="chapter" data-level="4.5.4" data-path="mathematics.html"><a href="mathematics.html#purity"><i class="fa fa-check"></i><b>4.5.4</b> Purity - noise and exceptions</a></li>
+<li class="chapter" data-level="4.5.5" data-path="mathematics.html"><a href="mathematics.html#solidity"><i class="fa fa-check"></i><b>4.5.5</b> Solidity - support and spread</a></li>
+<li class="chapter" data-level="4.5.6" data-path="mathematics.html"><a href="mathematics.html#sharpness"><i class="fa fa-check"></i><b>4.5.6</b> Sharpness</a></li>
+<li class="chapter" data-level="4.5.7" data-path="mathematics.html"><a href="mathematics.html#nca-ribbon"><i class="fa fa-check"></i><b>4.5.7</b> NCA ribbon</a></li>
+<li class="chapter" data-level="4.5.8" data-path="mathematics.html"><a href="mathematics.html#summary-model-fit-metrics"><i class="fa fa-check"></i><b>4.5.8</b> Summary model fit metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="mathematics.html"><a href="mathematics.html#multipleconditions"><i class="fa fa-check"></i><b>4.6</b> Multiple necessary conditions</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="mathematics.html"><a href="mathematics.html#formalization-of-single-condition-approach"><i class="fa fa-check"></i><b>4.6.1</b> Formalization of single condition approach</a></li>
+<li class="chapter" data-level="4.6.2" data-path="mathematics.html"><a href="mathematics.html#illustration"><i class="fa fa-check"></i><b>4.6.2</b> Illustration</a></li>
+<li class="chapter" data-level="4.6.3" data-path="mathematics.html"><a href="mathematics.html#arguments-for-single-condition-analyses"><i class="fa fa-check"></i><b>4.6.3</b> Arguments for single condition analyses</a></li>
+<li class="chapter" data-level="4.6.4" data-path="mathematics.html"><a href="mathematics.html#chain"><i class="fa fa-check"></i><b>4.6.4</b> Chain of necessity</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>5</b> Statistics</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="statistics.html"><a href="statistics.html#summarystatistics"><i class="fa fa-check"></i><b>5.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="5.2" data-path="statistics.html"><a href="statistics.html#samplinglogic"><i class="fa fa-check"></i><b>5.2</b> Sampling logic</a></li>
+<li class="chapter" data-level="5.3" data-path="statistics.html"><a href="statistics.html#permutationtest"><i class="fa fa-check"></i><b>5.3</b> Permutation tests</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="statistics.html"><a href="statistics.html#general"><i class="fa fa-check"></i><b>5.3.1</b> General</a></li>
+<li class="chapter" data-level="5.3.2" data-path="statistics.html"><a href="statistics.html#assumptions-for-ncas-permutation-tests"><i class="fa fa-check"></i><b>5.3.2</b> Assumptions for NCA’s permutation tests</a></li>
+<li class="chapter" data-level="5.3.3" data-path="statistics.html"><a href="statistics.html#null"><i class="fa fa-check"></i><b>5.3.3</b> Null test: effect size difference from 0</a></li>
+<li class="chapter" data-level="5.3.4" data-path="statistics.html"><a href="statistics.html#contrast"><i class="fa fa-check"></i><b>5.3.4</b> Contrast test: effect size difference between two conditions</a></li>
+<li class="chapter" data-level="5.3.5" data-path="statistics.html"><a href="statistics.html#independent"><i class="fa fa-check"></i><b>5.3.5</b> Independent test: effect size difference between two groups</a></li>
+<li class="chapter" data-level="5.3.6" data-path="statistics.html"><a href="statistics.html#paired"><i class="fa fa-check"></i><b>5.3.6</b> Paired test: effect size difference between two time points</a></li>
+<li class="chapter" data-level="5.3.7" data-path="statistics.html"><a href="statistics.html#commonscope"><i class="fa fa-check"></i><b>5.3.7</b> Common scope</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="statistics.html"><a href="statistics.html#statisticalmodeling"><i class="fa fa-check"></i><b>5.4</b> Statistical modeling</a></li>
+<li class="chapter" data-level="5.5" data-path="statistics.html"><a href="statistics.html#ceilingquality"><i class="fa fa-check"></i><b>5.5</b> Quality of ceiling lines</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="statistics.html"><a href="statistics.html#statistical-quality-criteria"><i class="fa fa-check"></i><b>5.5.1</b> Statistical quality criteria</a></li>
+<li class="chapter" data-level="5.5.2" data-path="statistics.html"><a href="statistics.html#simulationeffect"><i class="fa fa-check"></i><b>5.5.2</b> Simulation results for NCA’s effect size</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="statistics.html"><a href="statistics.html#statisticspower"><i class="fa fa-check"></i><b>5.6</b> Power analysis</a></li>
+<li class="chapter" data-level="5.7" data-path="statistics.html"><a href="statistics.html#reversecausality"><i class="fa fa-check"></i><b>5.7</b> Reverse causality</a></li>
+<li class="chapter" data-level="5.8" data-path="statistics.html"><a href="statistics.html#measurementerror"><i class="fa fa-check"></i><b>5.8</b> Measurement error</a></li>
+<li class="chapter" data-level="5.9" data-path="statistics.html"><a href="statistics.html#spurious"><i class="fa fa-check"></i><b>5.9</b> Spuriousness</a>
+<ul>
+<li class="chapter" data-level="5.9.1" data-path="statistics.html"><a href="statistics.html#lack-of-theoretical-support"><i class="fa fa-check"></i><b>5.9.1</b> Lack of theoretical support</a></li>
+<li class="chapter" data-level="5.9.2" data-path="statistics.html"><a href="statistics.html#low-quality-data"><i class="fa fa-check"></i><b>5.9.2</b> Low-quality data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html"><i class="fa fa-check"></i><b>6</b> Credibility</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#summarysensitivityspecificity"><i class="fa fa-check"></i><b>6.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="6.2" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#corecriteria"><i class="fa fa-check"></i><b>6.2</b> Core criteria for necessity</a></li>
+<li class="chapter" data-level="6.3" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#statisticalcredibility"><i class="fa fa-check"></i><b>6.3</b> Statistical credibility</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#sensitivity"><i class="fa fa-check"></i><b>6.3.1</b> True Positive Rate (TPR, sensitivity)</a></li>
+<li class="chapter" data-level="6.3.2" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#specificity"><i class="fa fa-check"></i><b>6.3.2</b> True Negative Rate (TNR, specificity)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#empiricalcredibility"><i class="fa fa-check"></i><b>6.4</b> Empirical credibility</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#robustness"><i class="fa fa-check"></i><b>6.4.1</b> Robustness</a></li>
+<li class="chapter" data-level="6.4.2" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#modelfit1"><i class="fa fa-check"></i><b>6.4.2</b> Model fit</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="sensitivityspecificity.html"><a href="sensitivityspecificity.html#credibilitysummary"><i class="fa fa-check"></i><b>6.5</b> Recommendations for evaluating credibility</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-ii.-application.html"><a href="part-ii.-application.html"><i class="fa fa-check"></i>Part II. Application</a></li>
+<li class="chapter" data-level="7" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html"><i class="fa fa-check"></i><b>7</b> Hypothesis</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#summaryhypothesisformulation"><i class="fa fa-check"></i><b>7.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="7.2" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#hypothesistesting"><i class="fa fa-check"></i><b>7.2</b> Hypothesis formulation and testing</a></li>
+<li class="chapter" data-level="7.3" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#whynecessityhypothesis"><i class="fa fa-check"></i><b>7.3</b> Why developing necessity hypotheses is different</a></li>
+<li class="chapter" data-level="7.4" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#sources"><i class="fa fa-check"></i><b>7.4</b> Knowledge sources for developing necessity hypotheses</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#explicit"><i class="fa fa-check"></i><b>7.4.1</b> Explicit knowledge</a></li>
+<li class="chapter" data-level="7.4.2" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#tacit"><i class="fa fa-check"></i><b>7.4.2</b> Tacit knowledge</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#developingformaltheory"><i class="fa fa-check"></i><b>7.5</b> Developing a formal necessity hypothesis</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#preliminarytheory"><i class="fa fa-check"></i><b>7.5.1</b> Step 1: Define a preliminary necessity theory</a></li>
+<li class="chapter" data-level="7.5.2" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#thoughtexperiments"><i class="fa fa-check"></i><b>7.5.2</b> Step 2: Conduct thought experiments</a></li>
+<li class="chapter" data-level="7.5.3" data-path="hypothesisformulation.html"><a href="hypothesisformulation.html#causalexplanation"><i class="fa fa-check"></i><b>7.5.3</b> Step 3: Provide causal explanation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="datacollection.html"><a href="datacollection.html"><i class="fa fa-check"></i><b>8</b> Data</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="datacollection.html"><a href="datacollection.html#summary-of-this-chapter"><i class="fa fa-check"></i><b>8.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="8.2" data-path="datacollection.html"><a href="datacollection.html#researchdesign"><i class="fa fa-check"></i><b>8.2</b> Study design</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="datacollection.html"><a href="datacollection.html#observationalstudy"><i class="fa fa-check"></i><b>8.2.1</b> Observational study</a></li>
+<li class="chapter" data-level="8.2.2" data-path="datacollection.html"><a href="datacollection.html#longitudinal"><i class="fa fa-check"></i><b>8.2.2</b> Longitudinal study</a></li>
+<li class="chapter" data-level="8.2.3" data-path="datacollection.html"><a href="datacollection.html#casestudy"><i class="fa fa-check"></i><b>8.2.3</b> Case study</a></li>
+<li class="chapter" data-level="8.2.4" data-path="datacollection.html"><a href="datacollection.html#experiment"><i class="fa fa-check"></i><b>8.2.4</b> Experimental study</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="datacollection.html"><a href="datacollection.html#samplingandselection"><i class="fa fa-check"></i><b>8.3</b> Sampling and selection of cases</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="datacollection.html"><a href="datacollection.html#largensampling"><i class="fa fa-check"></i><b>8.3.1</b> Large-n sampling</a></li>
+<li class="chapter" data-level="8.3.2" data-path="datacollection.html"><a href="datacollection.html#smallncaseselection"><i class="fa fa-check"></i><b>8.3.2</b> Small-n case selection</a></li>
+<li class="chapter" data-level="8.3.3" data-path="datacollection.html"><a href="datacollection.html#replication"><i class="fa fa-check"></i><b>8.3.3</b> Replication</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="datacollection.html"><a href="datacollection.html#measurement"><i class="fa fa-check"></i><b>8.4</b> Measurement</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="datacollection.html"><a href="datacollection.html#quantitativedata"><i class="fa fa-check"></i><b>8.4.1</b> Quantitative data</a></li>
+<li class="chapter" data-level="8.4.2" data-path="datacollection.html"><a href="datacollection.html#qualitativedata"><i class="fa fa-check"></i><b>8.4.2</b> Qualitative data</a></li>
+<li class="chapter" data-level="8.4.3" data-path="datacollection.html"><a href="datacollection.html#setmembership"><i class="fa fa-check"></i><b>8.4.3</b> Set membership data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="datacollection.html"><a href="datacollection.html#dataset"><i class="fa fa-check"></i><b>8.5</b> Dataset</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="datacollection.html"><a href="datacollection.html#archivaldata"><i class="fa fa-check"></i><b>8.5.1</b> Archival data</a></li>
+<li class="chapter" data-level="8.5.2" data-path="datacollection.html"><a href="datacollection.html#transformation"><i class="fa fa-check"></i><b>8.5.2</b> Data transformation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="dataanalysis.html"><a href="dataanalysis.html"><i class="fa fa-check"></i><b>9</b> Data analysis</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="dataanalysis.html"><a href="dataanalysis.html#summary-of-this-chapter-1"><i class="fa fa-check"></i><b>9.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="9.2" data-path="dataanalysis.html"><a href="dataanalysis.html#illustrativeexample"><i class="fa fa-check"></i><b>9.2</b> Illustrative example</a></li>
+<li class="chapter" data-level="9.3" data-path="dataanalysis.html"><a href="dataanalysis.html#modelspecification"><i class="fa fa-check"></i><b>9.3</b> Model specification</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="dataanalysis.html"><a href="dataanalysis.html#scopespecification"><i class="fa fa-check"></i><b>9.3.1</b> Bounding box specification</a></li>
+<li class="chapter" data-level="9.3.2" data-path="dataanalysis.html"><a href="dataanalysis.html#ceilinglinespecification"><i class="fa fa-check"></i><b>9.3.2</b> Ceiling line specification</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="dataanalysis.html"><a href="dataanalysis.html#selectionevaluationcriteria"><i class="fa fa-check"></i><b>9.4</b> Selection of evaluation criteria</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="dataanalysis.html"><a href="dataanalysis.html#effectsizethreshold"><i class="fa fa-check"></i><b>9.4.1</b> Effect size threshold</a></li>
+<li class="chapter" data-level="9.4.2" data-path="dataanalysis.html"><a href="dataanalysis.html#pvaluethreshold"><i class="fa fa-check"></i><b>9.4.2</b> <strong><span class="math inline">\(p\)</span></strong>-value threshold</a></li>
+<li class="chapter" data-level="9.4.3" data-path="dataanalysis.html"><a href="dataanalysis.html#targetoutcome"><i class="fa fa-check"></i><b>9.4.3</b> Selection of target outcome</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="dataanalysis.html"><a href="dataanalysis.html#visualinspection"><i class="fa fa-check"></i><b>9.5</b> Visual inspection of the <span class="math inline">\(XY\)</span>-plot</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="dataanalysis.html"><a href="dataanalysis.html#is-the-expected-corner-empty"><i class="fa fa-check"></i><b>9.5.1</b> Is the expected corner empty?</a></li>
+<li class="chapter" data-level="9.5.2" data-path="dataanalysis.html"><a href="dataanalysis.html#is-the-selected-ceiling-line-appropriate"><i class="fa fa-check"></i><b>9.5.2</b> Is the selected ceiling line appropriate?</a></li>
+<li class="chapter" data-level="9.5.3" data-path="dataanalysis.html"><a href="dataanalysis.html#exampleoutliers"><i class="fa fa-check"></i><b>9.5.3</b> Which cases are possible outliers?</a></li>
+<li class="chapter" data-level="9.5.4" data-path="dataanalysis.html"><a href="dataanalysis.html#what-is-the-data-pattern-in-the-rest-of-plot"><i class="fa fa-check"></i><b>9.5.4</b> What is the data pattern in the rest of plot?</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="dataanalysis.html"><a href="dataanalysis.html#ceilinglineestimation"><i class="fa fa-check"></i><b>9.6</b> Ceiling line estimation</a></li>
+<li class="chapter" data-level="9.7" data-path="dataanalysis.html"><a href="dataanalysis.html#effectsizeestimation"><i class="fa fa-check"></i><b>9.7</b> Effect size and <span class="math inline">\(p\)</span>-value estimation</a></li>
+<li class="chapter" data-level="9.8" data-path="dataanalysis.html"><a href="dataanalysis.html#outliers"><i class="fa fa-check"></i><b>9.8</b> Outlier analysis</a>
+<ul>
+<li class="chapter" data-level="9.8.1" data-path="dataanalysis.html"><a href="dataanalysis.html#outliertypes"><i class="fa fa-check"></i><b>9.8.1</b> Outlier types</a></li>
+<li class="chapter" data-level="9.8.2" data-path="dataanalysis.html"><a href="dataanalysis.html#outlieridentification"><i class="fa fa-check"></i><b>9.8.2</b> Outlier identification</a></li>
+<li class="chapter" data-level="9.8.3" data-path="dataanalysis.html"><a href="dataanalysis.html#outlierdecisionmaking"><i class="fa fa-check"></i><b>9.8.3</b> Outlier decision approach</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="dataanalysis.html"><a href="dataanalysis.html#modelfit2"><i class="fa fa-check"></i><b>9.9</b> Model fit</a>
+<ul>
+<li class="chapter" data-level="9.9.1" data-path="dataanalysis.html"><a href="dataanalysis.html#complexity2"><i class="fa fa-check"></i><b>9.9.1</b> Complexity</a></li>
+<li class="chapter" data-level="9.9.2" data-path="dataanalysis.html"><a href="dataanalysis.html#fit2"><i class="fa fa-check"></i><b>9.9.2</b> Fit</a></li>
+<li class="chapter" data-level="9.9.3" data-path="dataanalysis.html"><a href="dataanalysis.html#ceilingaccuracy2"><i class="fa fa-check"></i><b>9.9.3</b> Ceiling accuracy</a></li>
+<li class="chapter" data-level="9.9.4" data-path="dataanalysis.html"><a href="dataanalysis.html#purity2"><i class="fa fa-check"></i><b>9.9.4</b> Noise</a></li>
+<li class="chapter" data-level="9.9.5" data-path="dataanalysis.html"><a href="dataanalysis.html#purity3"><i class="fa fa-check"></i><b>9.9.5</b> Exceptions</a></li>
+<li class="chapter" data-level="9.9.6" data-path="dataanalysis.html"><a href="dataanalysis.html#solidity2"><i class="fa fa-check"></i><b>9.9.6</b> Support</a></li>
+<li class="chapter" data-level="9.9.7" data-path="dataanalysis.html"><a href="dataanalysis.html#spread2"><i class="fa fa-check"></i><b>9.9.7</b> Spread</a></li>
+<li class="chapter" data-level="9.9.8" data-path="dataanalysis.html"><a href="dataanalysis.html#sharpness2"><i class="fa fa-check"></i><b>9.9.8</b> Sharpness</a></li>
+<li class="chapter" data-level="9.9.9" data-path="dataanalysis.html"><a href="dataanalysis.html#modelfitevaluation"><i class="fa fa-check"></i><b>9.9.9</b> Evaluation of model fit</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="dataanalysis.html"><a href="dataanalysis.html#necessityinkind"><i class="fa fa-check"></i><b>9.10</b> Conclusion about necessity-in-kind</a></li>
+<li class="chapter" data-level="9.11" data-path="dataanalysis.html"><a href="dataanalysis.html#bottleneck"><i class="fa fa-check"></i><b>9.11</b> Bottleneck analysis: necessity-in-degree</a>
+<ul>
+<li class="chapter" data-level="9.11.1" data-path="dataanalysis.html"><a href="dataanalysis.html#actual"><i class="fa fa-check"></i><b>9.11.1</b> Levels expressed as actual values</a></li>
+<li class="chapter" data-level="9.11.2" data-path="dataanalysis.html"><a href="dataanalysis.html#percentile"><i class="fa fa-check"></i><b>9.11.2</b> Levels expressed as percentiles</a></li>
+<li class="chapter" data-level="9.11.3" data-path="dataanalysis.html"><a href="dataanalysis.html#multiple-necessary-conditions"><i class="fa fa-check"></i><b>9.11.3</b> Multiple necessary conditions</a></li>
+<li class="chapter" data-level="9.11.4" data-path="dataanalysis.html"><a href="dataanalysis.html#bottleneckothercorners"><i class="fa fa-check"></i><b>9.11.4</b> Interpretation of the bottleneck table for other corners</a></li>
+<li class="chapter" data-level="9.11.5" data-path="dataanalysis.html"><a href="dataanalysis.html#na"><i class="fa fa-check"></i><b>9.11.5</b> NN and NA in the bottleneck table</a></li>
+</ul></li>
+<li class="chapter" data-level="9.12" data-path="dataanalysis.html"><a href="dataanalysis.html#robustnesschecks"><i class="fa fa-check"></i><b>9.12</b> Robustness checks</a>
+<ul>
+<li class="chapter" data-level="9.12.1" data-path="dataanalysis.html"><a href="dataanalysis.html#different-ceiling-line-choice"><i class="fa fa-check"></i><b>9.12.1</b> Different ceiling line choice</a></li>
+<li class="chapter" data-level="9.12.2" data-path="dataanalysis.html"><a href="dataanalysis.html#different-choice-of-the-scope"><i class="fa fa-check"></i><b>9.12.2</b> Different choice of the scope</a></li>
+<li class="chapter" data-level="9.12.3" data-path="dataanalysis.html"><a href="dataanalysis.html#different-choice-of-the-threshold-level-of-the-effect-size"><i class="fa fa-check"></i><b>9.12.3</b> Different choice of the threshold level of the effect size</a></li>
+<li class="chapter" data-level="9.12.4" data-path="dataanalysis.html"><a href="dataanalysis.html#different-choice-of-the-threshold-level-of-the-p-value"><i class="fa fa-check"></i><b>9.12.4</b> Different choice of the threshold level of the <span class="math inline">\(p\)</span>-value</a></li>
+<li class="chapter" data-level="9.12.5" data-path="dataanalysis.html"><a href="dataanalysis.html#different-outlier-choice"><i class="fa fa-check"></i><b>9.12.5</b> Different outlier choice</a></li>
+<li class="chapter" data-level="9.12.6" data-path="dataanalysis.html"><a href="dataanalysis.html#different-choice-of-the-target-outcome"><i class="fa fa-check"></i><b>9.12.6</b> Different choice of the target outcome</a></li>
+<li class="chapter" data-level="9.12.7" data-path="dataanalysis.html"><a href="dataanalysis.html#robustnesstable"><i class="fa fa-check"></i><b>9.12.7</b> Robustness table</a></li>
+</ul></li>
+<li class="chapter" data-level="9.13" data-path="dataanalysis.html"><a href="dataanalysis.html#metaanalysis"><i class="fa fa-check"></i><b>9.13</b> Meta-analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="reporting.html"><a href="reporting.html"><i class="fa fa-check"></i><b>10</b> Reporting</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="reporting.html"><a href="reporting.html#summary-of-this-chapter-2"><i class="fa fa-check"></i><b>10.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="10.2" data-path="reporting.html"><a href="reporting.html#typesofncapublications"><i class="fa fa-check"></i><b>10.2</b> Types of NCA publications</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="reporting.html"><a href="reporting.html#empiricalpublication"><i class="fa fa-check"></i><b>10.2.1</b> Empirical publication</a></li>
+<li class="chapter" data-level="10.2.2" data-path="reporting.html"><a href="reporting.html#theoreticalpublication"><i class="fa fa-check"></i><b>10.2.2</b> Theoretical publication</a></li>
+<li class="chapter" data-level="10.2.3" data-path="reporting.html"><a href="reporting.html#methodologicalcontribution"><i class="fa fa-check"></i><b>10.2.3</b> Methodological introduction publication</a></li>
+<li class="chapter" data-level="10.2.4" data-path="reporting.html"><a href="reporting.html#practicalpublication"><i class="fa fa-check"></i><b>10.2.4</b> Practical publication</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="reporting.html"><a href="reporting.html#review"><i class="fa fa-check"></i><b>10.3</b> SCoRe checklist and recommendations</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="reporting.html"><a href="reporting.html#introductiongeneral"><i class="fa fa-check"></i><b>10.3.1</b> Introduction/General</a></li>
+<li class="chapter" data-level="10.3.2" data-path="reporting.html"><a href="reporting.html#theoryhypotheses"><i class="fa fa-check"></i><b>10.3.2</b> Theory/Hypotheses</a></li>
+<li class="chapter" data-level="10.3.3" data-path="reporting.html"><a href="reporting.html#methods-data"><i class="fa fa-check"></i><b>10.3.3</b> Methods – data</a></li>
+<li class="chapter" data-level="10.3.4" data-path="reporting.html"><a href="reporting.html#methods-data-analysis"><i class="fa fa-check"></i><b>10.3.4</b> Methods – data analysis</a></li>
+<li class="chapter" data-level="10.3.5" data-path="reporting.html"><a href="reporting.html#results"><i class="fa fa-check"></i><b>10.3.5</b> Results</a></li>
+<li class="chapter" data-level="10.3.6" data-path="reporting.html"><a href="reporting.html#discussion"><i class="fa fa-check"></i><b>10.3.6</b> Discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="multimethodstudies.html"><a href="multimethodstudies.html"><i class="fa fa-check"></i><b>11</b> Multimethod studies</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#summary-of-this-chapter-3"><i class="fa fa-check"></i><b>11.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="11.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#methodtriangulationversuscausalpluralism"><i class="fa fa-check"></i><b>11.2</b> Method-triangulation versus causal-pluralism</a></li>
+<li class="chapter" data-level="11.3" data-path="multimethodstudies.html"><a href="multimethodstudies.html#ncawithregressionbasedmethods"><i class="fa fa-check"></i><b>11.3</b> NCA with regression-based methods</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#principlesofregression"><i class="fa fa-check"></i><b>11.3.1</b> Principles of regression analysis</a></li>
+<li class="chapter" data-level="11.3.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#comparison-nca-and-regression-based-methods"><i class="fa fa-check"></i><b>11.3.2</b> Comparison NCA and regression-based methods</a></li>
+<li class="chapter" data-level="11.3.3" data-path="multimethodstudies.html"><a href="multimethodstudies.html#confounding"><i class="fa fa-check"></i><b>11.3.3</b> Regression-based statistical concepts do not (always) apply to NCA</a></li>
+<li class="chapter" data-level="11.3.4" data-path="multimethodstudies.html"><a href="multimethodstudies.html#combining-nca-and-regression-based-methods"><i class="fa fa-check"></i><b>11.3.4</b> Combining NCA and regression-based methods</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="multimethodstudies.html"><a href="multimethodstudies.html#ncasem"><i class="fa fa-check"></i><b>11.4</b> Combining NCA and SEM in a multimethod study</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#stepsncasem"><i class="fa fa-check"></i><b>11.4.1</b> Steps for conducting NCA with SEM</a></li>
+<li class="chapter" data-level="11.4.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#recommendationplssem"><i class="fa fa-check"></i><b>11.4.2</b> Recommendations for combining NCA and SEM</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="multimethodstudies.html"><a href="multimethodstudies.html#ncaqca"><i class="fa fa-check"></i><b>11.5</b> NCA with QCA</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#principles-of-qca"><i class="fa fa-check"></i><b>11.5.1</b> Principles of QCA</a></li>
+<li class="chapter" data-level="11.5.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#comparisonncaqca"><i class="fa fa-check"></i><b>11.5.2</b> Comparison NCA and QCA</a></li>
+<li class="chapter" data-level="11.5.3" data-path="multimethodstudies.html"><a href="multimethodstudies.html#combining-nca-and-qca"><i class="fa fa-check"></i><b>11.5.3</b> Combining NCA and QCA</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="multimethodstudies.html"><a href="multimethodstudies.html#combiningncaandqcainamultimethodstudy"><i class="fa fa-check"></i><b>11.6</b> Combining NCA and QCA in a multimethod study</a>
+<ul>
+<li class="chapter" data-level="11.6.1" data-path="multimethodstudies.html"><a href="multimethodstudies.html#necessityanalysisncaqca"><i class="fa fa-check"></i><b>11.6.1</b> Steps for conducting NCA with QCA’s necessity analysis</a></li>
+<li class="chapter" data-level="11.6.2" data-path="multimethodstudies.html"><a href="multimethodstudies.html#examplencaqcamethodtriangulationmultimethodstudy"><i class="fa fa-check"></i><b>11.6.2</b> Example NCA-QCA method-triangulation multimethod study</a></li>
+<li class="chapter" data-level="11.6.3" data-path="multimethodstudies.html"><a href="multimethodstudies.html#necessitysufficiencyanalysisncaqca"><i class="fa fa-check"></i><b>11.6.3</b> Steps for conducting NCA with QCA’s sufficiency analysis</a></li>
+<li class="chapter" data-level="11.6.4" data-path="multimethodstudies.html"><a href="multimethodstudies.html#exampleQCA"><i class="fa fa-check"></i><b>11.6.4</b> Example NCA-QCA causal-pluralism multimethod study</a></li>
+<li class="chapter" data-level="11.6.5" data-path="multimethodstudies.html"><a href="multimethodstudies.html#recommendationplsqca"><i class="fa fa-check"></i><b>11.6.5</b> Recommendations for combining NCA and QCA</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="practice.html"><a href="practice.html"><i class="fa fa-check"></i><b>12</b> NCA in practice</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="practice.html"><a href="practice.html#summary-of-this-chapter-4"><i class="fa fa-check"></i><b>12.1</b> Summary of this chapter</a></li>
+<li class="chapter" data-level="12.2" data-path="practice.html"><a href="practice.html#practicalvalue"><i class="fa fa-check"></i><b>12.2</b> The practical value of necessity logic</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="practice.html"><a href="practice.html#must"><i class="fa fa-check"></i><b>12.2.1</b> Must-have factors for desired outcomes</a></li>
+<li class="chapter" data-level="12.2.2" data-path="practice.html"><a href="practice.html#stop"><i class="fa fa-check"></i><b>12.2.2</b> Stop factors for undesired outcomes</a></li>
+<li class="chapter" data-level="12.2.3" data-path="practice.html"><a href="practice.html#shifting-attention-from-average-to-individual-interventions"><i class="fa fa-check"></i><b>12.2.3</b> Shifting attention from average to individual interventions</a></li>
+<li class="chapter" data-level="12.2.4" data-path="practice.html"><a href="practice.html#applicationareas"><i class="fa fa-check"></i><b>12.2.4</b> Examples of application areas</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="practice.html"><a href="practice.html#ncacontributions"><i class="fa fa-check"></i><b>12.3</b> NCA’s contribution to change and innovation</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="practice.html"><a href="practice.html#interventionstrategy"><i class="fa fa-check"></i><b>12.3.1</b> Part 1: Intervention strategy</a></li>
+<li class="chapter" data-level="12.3.2" data-path="practice.html"><a href="practice.html#interventiondesign"><i class="fa fa-check"></i><b>12.3.2</b> Part 2: Intervention design</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="practice.html"><a href="practice.html#desiredintervention"><i class="fa fa-check"></i><b>12.4</b> Interventions for making desired outcomes possible</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="practice.html"><a href="practice.html#intervention-effort"><i class="fa fa-check"></i><b>12.4.1</b> Intervention effort</a></li>
+<li class="chapter" data-level="12.4.2" data-path="practice.html"><a href="practice.html#intervention-effectiveness-waste-and-efficiency"><i class="fa fa-check"></i><b>12.4.2</b> Intervention effectiveness, waste, and efficiency</a></li>
+<li class="chapter" data-level="12.4.3" data-path="practice.html"><a href="practice.html#ideal-intervention"><i class="fa fa-check"></i><b>12.4.3</b> Ideal intervention</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="practice.html"><a href="practice.html#undesiredintervention"><i class="fa fa-check"></i><b>12.5</b> Interventions for preventing undesired outcomes</a></li>
+<li class="chapter" data-level="12.6" data-path="practice.html"><a href="practice.html#multipleintervention"><i class="fa fa-check"></i><b>12.6</b> Interventions with multiple necessary conditions</a></li>
+<li class="chapter" data-level="12.7" data-path="practice.html"><a href="practice.html#illustrativeexample1"><i class="fa fa-check"></i><b>12.7</b> Illustrative example</a>
+<ul>
+<li class="chapter" data-level="12.7.1" data-path="practice.html"><a href="practice.html#example-part-1-intervention-strategy"><i class="fa fa-check"></i><b>12.7.1</b> Example Part 1: Intervention strategy</a></li>
+<li class="chapter" data-level="12.7.2" data-path="practice.html"><a href="practice.html#exampleinterventiondesign"><i class="fa fa-check"></i><b>12.7.2</b> Example Part 2: Intervention design</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary-and-personal-reflection.html"><a href="summary-and-personal-reflection.html"><i class="fa fa-check"></i>Summary and personal reflection</a>
+<ul>
+<li class="chapter" data-level="" data-path="summary-and-personal-reflection.html"><a href="summary-and-personal-reflection.html#summary-of-the-book"><i class="fa fa-check"></i>Summary of the book</a></li>
+<li class="chapter" data-level="" data-path="summary-and-personal-reflection.html"><a href="summary-and-personal-reflection.html#reflections-on-a-decade-of-nca"><i class="fa fa-check"></i>Reflections on a decade of NCA</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-iii.-additional-materials.html"><a href="part-iii.-additional-materials.html"><i class="fa fa-check"></i>Part III. Additional materials</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>A</b> Nomenclature and glossary</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="glossary.html"><a href="glossary.html#nomenclature"><i class="fa fa-check"></i><b>A.1</b> Nomenclature</a></li>
+<li class="chapter" data-level="A.2" data-path="glossary.html"><a href="glossary.html#glossary-1"><i class="fa fa-check"></i><b>A.2</b> Glossary</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="appendixb.html"><a href="appendixb.html"><i class="fa fa-check"></i><b>B</b> Software</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="appendixb.html"><a href="appendixb.html#mainncasoftware"><i class="fa fa-check"></i><b>B.1</b> <code>NCA</code> with <code>R</code></a></li>
+<li class="chapter" data-level="B.2" data-path="appendixb.html"><a href="appendixb.html#additionalcode"><i class="fa fa-check"></i><b>B.2</b> Additional R-code</a></li>
+<li class="chapter" data-level="B.3" data-path="appendixb.html"><a href="appendixb.html#ncademonstration"><i class="fa fa-check"></i><b>B.3</b> Demonstration of <code>NCA</code> with <code>R</code></a>
+<ul>
+<li class="chapter" data-level="" data-path="appendixb.html"><a href="appendixb.html#exampledataappendixb"><i class="fa fa-check"></i>Example</a></li>
+<li class="chapter" data-level="B.3.1" data-path="appendixb.html"><a href="appendixb.html#stage-1-formulate-the-formal-necessity-hypothesis"><i class="fa fa-check"></i><b>B.3.1</b> Stage 1: Formulate the formal necessity hypothesis</a></li>
+<li class="chapter" data-level="B.3.2" data-path="appendixb.html"><a href="appendixb.html#stage-2.-collect-data"><i class="fa fa-check"></i><b>B.3.2</b> Stage 2. Collect data</a></li>
+<li class="chapter" data-level="" data-path="appendixb.html"><a href="appendixb.html#install-and-load-the-nca-package-and-data"><i class="fa fa-check"></i>Install and load the NCA package and data</a></li>
+<li class="chapter" data-level="B.3.3" data-path="appendixb.html"><a href="appendixb.html#stage-3.-analyze-data"><i class="fa fa-check"></i><b>B.3.3</b> Stage 3. Analyze data</a></li>
+<li class="chapter" data-level="" data-path="appendixb.html"><a href="appendixb.html#advanced-functions"><i class="fa fa-check"></i>Advanced functions</a></li>
+<li class="chapter" data-level="B.3.4" data-path="appendixb.html"><a href="appendixb.html#stage-4.-report-results"><i class="fa fa-check"></i><b>B.3.4</b> Stage 4. Report results</a></li>
+</ul></li>
+<li class="chapter" data-level="B.4" data-path="appendixb.html"><a href="appendixb.html#otherncasoftwarepackages"><i class="fa fa-check"></i><b>B.4</b> Other software packages with NCA</a>
+<ul>
+<li class="chapter" data-level="B.4.1" data-path="appendixb.html"><a href="appendixb.html#demonstration-of-nca-with-stata"><i class="fa fa-check"></i><b>B.4.1</b> Demonstration of <strong>nca</strong> with <code>Stata</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>C</b> Publications</a></li>
+<li class="chapter" data-level="D" data-path="appendixd.html"><a href="appendixd.html"><i class="fa fa-check"></i><b>D</b> Affine transformations</a></li>
+<li class="chapter" data-level="E" data-path="appendixtprtnr.html"><a href="appendixtprtnr.html"><i class="fa fa-check"></i><b>E</b> Simulations for TPR and TNR</a>
+<ul>
+<li class="chapter" data-level="E.1" data-path="appendixtprtnr.html"><a href="appendixtprtnr.html#true-positive-rate-tpr"><i class="fa fa-check"></i><b>E.1</b> True Positive Rate (TPR)</a></li>
+<li class="chapter" data-level="E.2" data-path="appendixtprtnr.html"><a href="appendixtprtnr.html#true-negative-rate-tnr"><i class="fa fa-check"></i><b>E.2</b> True Negative Rate (TNR)</a></li>
+</ul></li>
+<li class="chapter" data-level="F" data-path="appendixaa.html"><a href="appendixaa.html"><i class="fa fa-check"></i><b>F</b> Necessity and the traditional experiment</a>
+<ul>
+<li class="chapter" data-level="F.1" data-path="appendixaa.html"><a href="appendixaa.html#traditionalexperiment"><i class="fa fa-check"></i><b>F.1</b> Traditional experiment</a></li>
+<li class="chapter" data-level="F.2" data-path="appendixaa.html"><a href="appendixaa.html#nonnecessitytest"><i class="fa fa-check"></i><b>F.2</b> Necessity lessons from the traditional experiment</a></li>
+</ul></li>
+<li class="chapter" data-level="G" data-path="appendixc.html"><a href="appendixc.html"><i class="fa fa-check"></i><b>G</b> Correlation by necessity</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendixc.html"><a href="appendixc.html#situation"><i class="fa fa-check"></i>Situation</a></li>
+<li class="chapter" data-level="" data-path="appendixc.html"><a href="appendixc.html#symmetry-transformation"><i class="fa fa-check"></i>Symmetry transformation</a></li>
+<li class="chapter" data-level="" data-path="appendixc.html"><a href="appendixc.html#correlation"><i class="fa fa-check"></i>Correlation</a></li>
+</ul></li>
+<li class="chapter" data-level="H" data-path="appendixe.html"><a href="appendixe.html"><i class="fa fa-check"></i><b>H</b> Demonstration NCA with PLS-SEM</a>
+<ul>
+<li class="chapter" data-level="H.1" data-path="appendixe.html"><a href="appendixe.html#step-1-theorize-necessity-and-probabilistic-relationships"><i class="fa fa-check"></i><b>H.1</b> Step 1: Theorize necessity and probabilistic relationships</a></li>
+<li class="chapter" data-level="H.2" data-path="appendixe.html"><a href="appendixe.html#step-2-collect-data"><i class="fa fa-check"></i><b>H.2</b> Step 2: Collect data</a></li>
+<li class="chapter" data-level="H.3" data-path="appendixe.html"><a href="appendixe.html#step-3-conduct-sem-1"><i class="fa fa-check"></i><b>H.3</b> Step 3: Conduct SEM</a></li>
+<li class="chapter" data-level="H.4" data-path="appendixe.html"><a href="appendixe.html#step-4-extract-latent-variable-scores-1"><i class="fa fa-check"></i><b>H.4</b> Step 4: Extract latent variable scores</a></li>
+<li class="chapter" data-level="H.5" data-path="appendixe.html"><a href="appendixe.html#examplestep4conductnca"><i class="fa fa-check"></i><b>H.5</b> Step 5: Conduct NCA</a></li>
+<li class="chapter" data-level="H.6" data-path="appendixe.html"><a href="appendixe.html#step-6-produce-nert-1"><i class="fa fa-check"></i><b>H.6</b> Step 6: Produce NERT</a></li>
+<li class="chapter" data-level="H.7" data-path="appendixe.html"><a href="appendixe.html#step-7-produce-bipma"><i class="fa fa-check"></i><b>H.7</b> Step 7: Produce BIPMA</a></li>
+<li class="chapter" data-level="H.8" data-path="appendixe.html"><a href="appendixe.html#interpretresults1"><i class="fa fa-check"></i><b>H.8</b> Step 8: Interpret results</a></li>
+</ul></li>
+<li class="chapter" data-level="I" data-path="appendixh.html"><a href="appendixh.html"><i class="fa fa-check"></i><b>I</b> Bottleneck distance table</a></li>
+<li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
+<li class="divider"></li>
+<a href="https://www.erim.eur.nl/necessary-condition-analysis/">
+<img alt="erim" src="NCA website3.jpeg" width="270"></a>
+<a href="https://www.erim.eur.nl/necessary-condition-analysis/" target="blank">NCA website</a></li>
+<li><a href="mailto:jdul@rsm.nl">Send email to the author</a>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Necessary Condition Analysis (NCA)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sensitivityspecificity" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Credibility<a href="sensitivityspecificity.html#sensitivityspecificity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="summarysensitivityspecificity" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Summary of this chapter<a href="sensitivityspecificity.html#summarysensitivityspecificity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This chapter evaluates the credibility of NCA to identify necessity from data. In the context of NCA, credibility refers to the trustworthiness of conclusions about necessity from data<a href="#fn61" class="footnote-ref" id="fnref61"><sup>61</sup></a>. The chapter starts by discussing the core criteria to draw conclusions about necessity: there must be a theoretically justified necessity hypothesis, the effect size must be practically relevant (high <span class="math inline">\(d\)</span>-value), and the observed empty space must be unlikely to be compatible with no relationship (low <span class="math inline">\(p\)</span>-value) (Section <a href="sensitivityspecificity.html#corecriteria">6.2</a>). A positive conclusion that necessity is supported requires that all three of these criteria are met. A negative conclusion that necessity does not exist is drawn if any of the three is not satisfied. Next, the chapter evaluates the statistical credibility of NCA using Monte Carlo simulations to analyze how well NCA detects necessity when it is present in the population (True Positive Rate-TPR, sensitivity) and how well NCA avoids detecting necessity when it is absent in the population (True Negative Rate-TNR, specificity) (Section <a href="sensitivityspecificity.html#statisticalcredibility">6.3</a>). Subsequently, the empirical credibility of an NCA study is evaluated focusing on robustness checks (the extent to which the findings are not dependent on the analyst’s choices) and model fit metrics (the extent to which the necessity model matches the data) (Section <a href="sensitivityspecificity.html#empiricalcredibility">6.4</a>). Finally, recommendations are given on how to evaluate the credibility of a specific study (Section <a href="sensitivityspecificity.html#credibilitysummary">6.5</a>).</p>
+</div>
+<div id="corecriteria" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Core criteria for necessity<a href="sensitivityspecificity.html#corecriteria" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<!-- The goal of NCA is to identify necessity in a dataset. In a quantitative NCA study, a sample is drawn from a population and the goal is to draw a conclusion about necessity in the population by analyzing the sample. Two credibility criteria apply: how well can NCA identify necessity if it exists in the population (True Positive Rate—TPR or sensitivity), and how well will NCA not identify necessity if it does not exist in the population (True Negative Rate—TNR or specificity)? NCA draws a positive conclusion of having identified a necessary condition in the population if three requirements are jointly satisfied: there is theoretical support for necessity, there is a reasonably large effect size (e.g., $d \geq 0.10$), and there is a reasonably small $p$-value (e.g., $p < 0.05$). NCA draws a negative conclusion of having identified a necessary condition in the population if one or more of these three requirements are not met. The requirement for theoretical support directs the analysis to the corner in the  plot where necessity is expected, the requirement for a minimum necessity effect size (relative size of the empty corner of interest) ensures practical significance of necessity, and the requirement for a maximum $p$-value ensures statistical significance of the finding that the empty space in the corner of interest is unlikely the result of randomness. xxxx -->
+<p>NCA draws a positive conclusion about necessity if three requirements are jointly satisfied: there is theoretical support for necessity (a formal necessity hypothesis), there is a reasonably large effect size (e.g., <span class="math inline">\(d \geq 0.10\)</span>), and there is a reasonably small <span class="math inline">\(p\)</span>-value (e.g., <span class="math inline">\(p &lt; 0.05\)</span>). NCA draws a negative conclusion about necessity if one or more of these requirements are not met.</p>
+<p>To meet the requirement of <em>theoretical support</em>, the analyst formulates and theoretically justifies that <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are causally related by necessity as outlined in Chapter <a href="hypothesisformulation.html#hypothesisformulation">7</a>. One implication is that the analyst expects emptiness of a specific corner in the <span class="math inline">\(XY\)</span>-plot. For example, if it is expected that a high level of <span class="math inline">\(X\)</span> is necessary for a high level of <span class="math inline">\(Y\)</span>, no high values of <span class="math inline">\(Y\)</span> are expected when <span class="math inline">\(X\)</span> is low. Therefore, the upper-left corner of the <span class="math inline">\(XY\)</span>-plot is expected to be empty. If no theoretical support for necessity is provided, NCA draws a negative conclusion about necessity, even if effect size and <span class="math inline">\(p\)</span>-value satisfy the criteria.</p>
+<!-- NCA tests the emptiness of this corner. In theory/hypothesis testing studies the theoretical support is formulated before NCA is applied, and in theory/hypothesis building or exploratory studies the support is formulated after NCA is applied. If in either study the requirement for theoretical support (explaining why a specific corner is expected to be empty) is not met, NCA draws a negative conclusion about having identified a necessary condition in the population, independent of the effect size and the $p$-value. In other words, NCA is not intended for data analysis without theorizing before or after the data analysis: a significant empty space is not enough to conclude about necessity.  -->
+<p>To meet the requirement of a <em>minimum effect size</em>, NCA estimates the size of the empty space in the expected empty corner of the sample’s <span class="math inline">\(XY\)</span>-plot (<span class="math inline">\(d\)</span>-value) and judges whether this size is relevant by comparing it with the selected threshold <span class="math inline">\(d\)</span>-value (e.g., <span class="math inline">\(d \geq 0.10\)</span>). If this requirement for a relevant <span class="math inline">\(d\)</span>-value is not met, NCA draws a negative conclusion about necessity even if there is theoretical support and the <span class="math inline">\(p\)</span>-value is below the threshold <span class="math inline">\(p\)</span>-value.</p>
+<p>To meet the requirement of a <em>maximum <span class="math inline">\(p\)</span>-value</em>, NCA’s statistical test is conducted to estimate the <span class="math inline">\(p\)</span>-value of the estimated necessity effect size, and a comparison is made with the selected threshold <span class="math inline">\(p\)</span>-value (e.g., <span class="math inline">\(\alpha = 0.05\)</span>). One unique feature of this test is that it uses the size of the expected empty space as the test statistic, thus testing the randomness of this specific emptiness when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are unrelated, rather than being a <em>general</em> randomness test (Section <a href="statistics.html#permutationtest">5.3</a>). If the requirement for a small <span class="math inline">\(p\)</span>-value (e.g., <span class="math inline">\(p &lt; 0.05\)</span>) is not met, NCA draws a negative conclusion about necessity.<a href="#fn62" class="footnote-ref" id="fnref62"><sup>62</sup></a></p>
+<p>Only if all requirements are met, NCA draws a positive conclusion about necessity in the population (within the common limitations of a study design, and acknowledging the need for replications). If one of them is not met, NCA draws a negative conclusion about necessity in the population. This set of requirements for drawing a conclusion about necessity in the population shows that NCA is more than just a statistical model and that evaluating necessity with just the <span class="math inline">\(p\)</span>-values is not enough. NCA’s statistical test and <span class="math inline">\(p\)</span>-value are only one part of the process of making a conclusion about necessity. This fits the commonly accepted view that conclusions about empirically observed effects should not be solely based on the <span class="math inline">\(p\)</span>-value, but also on effect size and theoretical argumentation <span class="citation">(see for instance, <a href="#ref-cohen1994earth">Cohen, 1994</a>; <a href="#ref-cumming2013understanding">Cumming, 2013</a>; <a href="#ref-greenland1986identifiability">Greenland &amp; Robins, 1986</a>; <a href="#ref-rothman2005causation">Rothman &amp; Greenland, 2005</a>; <a href="#ref-wasserstein2016asa">Wasserstein &amp; Lazar, 2016</a>)</span>. Although isolated statistical null hypothesis tests are usually evaluated with concepts like type I error, type II error and power, these concepts are not enough for evaluating the credibility of the NCA approach as a whole, where other non-statistical criteria are also relevant (theoretical support, effect size).</p>
+</div>
+<div id="statisticalcredibility" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Statistical credibility<a href="sensitivityspecificity.html#statisticalcredibility" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To evaluate the credibility of a binary classification like NCA’s positive or negative conclusion about necessity in the population, the True Positive Rate (TPR or sensitivity) and True Negative Rate (TNR or specificity) can be used. Applied to NCA, TPR is the ability of the approach to correctly identify that necessity exists in a population, and TNR is the ability of the approach to correctly identify that necessity is absent in a population. ‘Rate’ refers to the proportion of randomly drawn samples from that population that were correctly evaluated regarding the presence or absence of necessity.</p>
+<p>For testing the credibility of NCA with these evaluation criteria, a Monte Carlo simulation is performed. The simulation evaluates TPR and TNR based on the analysis of samples from two populations: one with the necessary condition (for evaluating TPR), and one without it (for evaluating TNR), and using the three criteria to identify necessity. The simulation assumes that the requirement of ‘theoretical support’ is satisfied. This implies that it is clear which corner of the sample <span class="math inline">\(XY\)</span>-plot is the expected empty corner and must be analyzed. Here the theoretical expectation is that a high value of <span class="math inline">\(X\)</span> is necessary for a high value of <span class="math inline">\(Y\)</span>, resulting in the upper-left corner as the expected empty corner (corner 1; Section <a href="theory.html#expectedemptycorner">3.6</a>). As a reminder, the numbering of the corners is shown in Figure <a href="sensitivityspecificity.html#fig:cornernumbers">6.1</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:cornernumbers"></span>
+<img src="unitbox_with_corners.png" alt="Numbering of corners in an $XY$-plot." width="90%" />
+<p class="caption">
+Figure 6.1: Numbering of corners in an <span class="math inline">\(XY\)</span>-plot.
+</p>
+</div>
+<p><br></p>
+<p>For testing the TPR, the simulation must ensure that necessity is present in the upper-left corner of the population <span class="math inline">\(XY\)</span>-plot, so that this corner is empty. Since for testing TPR all samples are drawn from a population where necessity is always present (rather than being present with a certain probability), the False Negative Rate (FNR) equals 1 - TPR. Similarly, for testing TNR, the simulation must ensure that necessity is absent in the upper-left corner in the population <span class="math inline">\(XY\)</span>-plot, thus that this corner is not empty. Since for testing TNR all samples are drawn from a population where necessity is not present, the False Positive Rate (FPR) equals 1 - TNR. Together with the True Positive Rate (TPR), these two measures reflect the model’s ability to correctly classify both presence and absence of necessity.</p>
+<p>For both tests (TPR and TNR) four scenarios are simulated. In scenario A, <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are only related by necessity in the expected empty corner (for testing TPR), or are not related by necessity in the expected empty corner (for testing TNR). In this scenario no other relationships exist between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. In the other scenarios (scenarios B, C, and D) it is assumed that other relationships exist as well. Although an infinite number of types of relationships (bivariate distributions) could exist, here the focus is on other necessity relationships than the one in the upper-left corner. The other relationships produce emptiness in other corners than the corner of interest. However, none of the other relationships are hypothesized or tested. The only goal of additional empty corners in the simulation is to challenge NCA’s credibility regarding necessity related to the hypothesized empty corner, when other relationships are also present. The four simulation scenarios about necessity and other relationships in the population are therefore:</p>
+<p>A. Necessity (TPR) or non-necessity (TNR) in corner 1. No other relationships.</p>
+<p>B. Necessity (TPR) or non-necessity (TNR) in corner 1. Other relationship in corner 2.</p>
+<p>C. Necessity (TPR) or non-necessity (TNR) in corner 1. Other relationship in corner 3.</p>
+<p>D. Necessity (TPR) or non-necessity (TNR) in corner 1. Other relationship in corner 4.</p>
+<p>In all scenarios <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are related (TPR) or unrelated (TNR) by necessity in the upper-left corner. In scenario A there is no other relationship. In the other scenarios <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are (also) otherwise related because one of the other corners than the expected empty corner of interest is empty<a href="#fn63" class="footnote-ref" id="fnref63"><sup>63</sup></a>.</p>
+<p>The technical details of the Monte Carlo simulation are as follows. Since NCA requires bounded variables, the bounding box (<a href="mathematics.html#formalboundingbox">4.3.1</a>) in the population where cases could exist is defined by the unit box in which <span class="math inline">\(X\)</span>- and <span class="math inline">\(Y\)</span>-values can range from 0 to 1 (scope = 1). The true feasible area of the population (within the bounding box) is the entire unit box when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are unrelated and is a part of the unit box when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> have the necessity relationship. The empty corner is assumed to be a triangle consisting of the area between a linear ceiling line (corners 1 and 2) or a linear floor line (corners 3 and 4) and the borders of the unit box. The slopes of the ceiling and floor lines are 1 for corners 1 and 4 and -1 for corners 2 and 3. The sizes of the empty corner range from 0 to a maximum of 0.50. The combination of slope and empty area determines the intercepts of the lines as follows:</p>
+<p>corner 1: <span class="math inline">\(a_1 = 1 - \sqrt{2e_1 b_1}\)</span>.</p>
+<p>corner 2: <span class="math inline">\(a_2 = 1 + |b_2| - \sqrt{2e_2 |b_2|}\)</span>.</p>
+<p>corner 3: <span class="math inline">\(a_3 = \sqrt{2e_3 |b_3|}\)</span>.</p>
+<p>corner 4: <span class="math inline">\(a_4 = 0 - (b_4 - \sqrt{2e_4 b_4})\)</span>.</p>
+<p>where <span class="math inline">\(a\)</span> is the intercept and <span class="math inline">\(b\)</span> is the slope of the line, and <span class="math inline">\(e\)</span> is the size of the empty space. The subscripts indicate the corresponding corner. For the expected empty corner, the size of the empty space equals the necessity effect size (<span class="math inline">\(d\)</span>) since the scope equals 1. When two opposite corners are empty, the two lines are parallel and when two adjacent corners are empty, the two lines intersect. In the latter situation it is possible that for larger necessity effect sizes and empty space sizes the two lines intersect within the bounding box (Figure <a href="sensitivityspecificity.html#fig:intersection">6.2</a>). This reduces the intended necessity effect size, empty space size and scope. In the simulation this situation is avoided to keep the results comparable. Consequently, higher sizes of adjacent empty corners are not evaluated.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:intersection"></span>
+<img src="intersection.png" alt="Intersection of two adjacent empty corners. Left: The lines intersect outside the bounding box. Necessity effect size of corner 1 is 0.1. Size of empty corner 2 is 0.1. Scope = 1. Right: The lines intersect inside the bounding box. Intended necessity effect size is 0.1. Reduced necessity effect size is &lt; 0.1. Intended size of empty corner 2 is 0.2. Reduced size of empty corner 2 is &lt; 0.2. Reduced scope &lt; 1." width="99%" />
+<p class="caption">
+Figure 6.2: Intersection of two adjacent empty corners. Left: The lines intersect outside the bounding box. Necessity effect size of corner 1 is 0.1. Size of empty corner 2 is 0.1. Scope = 1. Right: The lines intersect inside the bounding box. Intended necessity effect size is 0.1. Reduced necessity effect size is &lt; 0.1. Intended size of empty corner 2 is 0.2. Reduced size of empty corner 2 is &lt; 0.2. Reduced scope &lt; 1.
+</p>
+</div>
+<p>It is assumed that within the non-empty area of the bounding box the cases have a uniform distribution (Section <a href="statistics.html#statisticalmodeling">5.4</a>). The <code>nca_random</code> function of the NCA software in <code>R</code> is used to create such a distribution in the presence of a ceiling line. From this defined population, 1000 random samples are drawn. Subsequently, for each sample the size of the expected empty corner (necessity effect size) is estimated with the CE-FDH ceiling line (with empirical scope). The <span class="math inline">\(p\)</span>-value for each sample is estimated using 1000 random samples from the permutation distribution. The threshold <span class="math inline">\(p\)</span>-value is set at 0.05. This means that necessity is considered not supported (negative conclusion) if the <span class="math inline">\(p\)</span>-value is 0.05 or larger. If the <span class="math inline">\(p\)</span>-value is below 0.05, necessity is considered supported (positive conclusion) only if the other two criteria (theoretical support and effect size) are also met. The theoretical support is assumed to be met. For the effect size the threshold <span class="math inline">\(d\)</span>-value is 0.10. If applicable and possible, the tested sizes of the other empty corner are 0.05, 0.10, 0.20, 0.30, and 0.50.</p>
+<div id="sensitivity" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> True Positive Rate (TPR, sensitivity)<a href="sensitivityspecificity.html#sensitivity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a> shows the results of the evaluation of TPR for a true necessity effect size of <span class="math inline">\(d\)</span> = 0.10 in corner 1, the expected empty corner (called <em>necessity corner</em> in the figure), and with different sizes of other empty corner 2 (Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a>-top-right), other empty corner 3 (Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a>-bottom-left) and other empty corner 4 (Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a>-bottom-right).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tpr01"></span>
+<img src="tpr01COLOR.png" alt="True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.1. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="99%" />
+<p class="caption">
+Figure 6.3: True Positive Rate (TPR, sensitivity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0.1. Slopes of ceiling/floor lines are 1 (corners 1 and 4) or -1 (corners 2 and 3). Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
+</p>
+</div>
+<p>In all three graphs, the necessity effect size (the size of the expected empty corner 1) is 0.10, and the size of another empty corner ranges from 0 to 0.50, where possible. A TPR value of 0.80 is added as a benchmark, meaning that for 80 percent of the samples a correct decision is made, namely concluding that necessity is present in the population. This selected value is inspired by the commonly used target of 0.80 for statistical power. NCA draws a <em>positive</em> conclusion about necessity if <span class="math inline">\(p &lt; 0.05\)</span> <em>and</em> <span class="math inline">\(d\geq 0.10\)</span> (assuming theoretical support).</p>
+<p>Scenario A applies when the other corners are <em>not</em> empty. The corresponding TPR curve is the same in each TPR graph (empty corner size = 0). This curve is the upper curve in the Top-Right and Bottom-Left graphs, and the lower curve in the Bottom-Right graph. In scenario A, TPR increases with sample size and the benchmark value of 0.80 (80% correct decisions when necessity is present in the population) is reached for a sample size of about 60 (note that the horizontal axis is piecewise-linear: linear between two adjacent ticks but not across ticks).</p>
+<p>Table <a href="sensitivityspecificity.html#tab:tabTPRA-HTML">6.1</a> shows for scenario A the fraction of samples where <span class="math inline">\(p &lt; 0.05\)</span> (<span class="math inline">\(p\)</span>-based TPR) and the fraction of samples where <span class="math inline">\(d \geq 0.10\)</span> (<span class="math inline">\(d\)</span>-based TPR). Considering both criteria, TPR is the <em>minimum</em> of <span class="math inline">\(p\)</span>-based TPR and <span class="math inline">\(d\)</span>-based TPR. It turns out that for scenario A, the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is critical for the TPR conclusion. Consequently, TPR corresponds to the power of NCA’s statistical test in this simulation scenario.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTPRA-HTML">Table 6.1: </span>Scenario A. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. No other corner is empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TPR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.077
+</td>
+<td style="text-align:right;">
+0.801
+</td>
+<td style="text-align:right;">
+0.077
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.130
+</td>
+<td style="text-align:right;">
+0.890
+</td>
+<td style="text-align:right;">
+0.130
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.271
+</td>
+<td style="text-align:right;">
+0.971
+</td>
+<td style="text-align:right;">
+0.271
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.743
+</td>
+<td style="text-align:right;">
+0.995
+</td>
+<td style="text-align:right;">
+0.743
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.991
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+<td style="text-align:right;">
+0.991
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<!-- For all sample sizes the $p$-based TPR is less than or equal to the $d$-based TPR in Scenario A, and therefore the $p$-value determines the overall TPR. -->
+<!-- Table 1. Comparison of the TPR based on the $p$-value (pTPR) and $d$-value (dTPR) for scenario A for different sample sizes (n) with necessity effect size = 0.1 in corner 1, and other corner size = 0  see Figure \@ref(fig:tpr01)) .  -->
+<!-- n  pTPR    dTPR -->
+<!-- 5  0.077   0.801 -->
+<!-- 10 0.130   0.890 -->
+<!-- 20 0.271   0.971 -->
+<!-- 50 0.743   0.995 -->
+<!-- 100    0.991   0.999 -->
+<!-- 200    1.000   1.000 -->
+<!-- 500    1.000   1.000 -->
+<!-- 1000   1.000   1.000 -->
+<p>Scenario B applies when corner 2 (upper-right corner) is also empty (empty corner size = 0.05 or 0.10, see Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a>-top-right). It turns out that the TPR curve shifts to the right with increasing emptiness of corner 2, meaning that for a given sample size the TPR decreases when the emptiness of corner 2 increases. Consequently, higher sample sizes are required to be able to identify necessity in corner 1 if this exists in the population.
+<!-- Table \@ref(tab:tabtpr01A). Comparison of the TPR based on the $p$-value (pTPR) and $d$-value (dTPR) for scenario B for different sample sizes (n) with necessity effect size = 0.1 in corner 1, and other corner size = 0.1 (see Figure \@ref(fig:tpr01)) .  -->
+When the emptiness of corner 2 increases, relatively fewer cases are available to statistically test the emptiness of corner 1. NCA’s statistical test uses a permutation procedure (Section <a href="statistics.html#permutationtest">5.3</a>) that creates new cases by allocating <span class="math inline">\(Y\)</span>-values of observed cases randomly to <span class="math inline">\(X\)</span>-values of other observed cases, and random samples are drawn from the obtained permutation distribution (= null distribution). High <span class="math inline">\(Y\)</span>-values of cases allocated to low <span class="math inline">\(X\)</span>-values of other cases can challenge the emptiness of corner 1. If relatively fewer high <span class="math inline">\(Y\)</span>-values are available, the sample size must be larger to have enough high <span class="math inline">\(Y\)</span>-values for the test. For achieving a TPR of 0.80, the required sample size is about 75 if the size of the empty corner 2 is 0.05 and about 140 if this size is 0.10.</p>
+<p>Table <a href="sensitivityspecificity.html#tab:tabTPRB-HTML">6.2</a> shows that also in scenario B the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) and not the <span class="math inline">\(d\)</span>-value criterion (<span class="math inline">\(d \geq 0.10\)</span>) is critical for the TPR conclusion (with one exception for n = 500 where the <span class="math inline">\(d\)</span>-based TPR is smaller than the <span class="math inline">\(p\)</span>-based TPR).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTPRB-HTML">Table 6.2: </span>Scenario B. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 2 is also empty with size 0.10.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TPR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.030
+</td>
+<td style="text-align:right;">
+0.715
+</td>
+<td style="text-align:right;">
+0.030
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.036
+</td>
+<td style="text-align:right;">
+0.815
+</td>
+<td style="text-align:right;">
+0.036
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.047
+</td>
+<td style="text-align:right;">
+0.895
+</td>
+<td style="text-align:right;">
+0.047
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.228
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+<td style="text-align:right;">
+0.228
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.680
+</td>
+<td style="text-align:right;">
+0.980
+</td>
+<td style="text-align:right;">
+0.680
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.985
+</td>
+<td style="text-align:right;">
+0.993
+</td>
+<td style="text-align:right;">
+0.985
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Scenario C (Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a>-bottom-left) applies when corner 3 (lower-left corner) is also empty (empty corner size = 0.05 or 0.10). The graph is very similar to that of scenario B, with some minor differences at lower values of sample size. Also in this scenario higher sample sizes are required to be able to identify necessity in corner 1 when corner 3 is more empty. For achieving a TPR of 0.80, the required sample size is also about 75 if the size of the empty corner 3 is 0.05 and about 140 if this size is 0.10.</p>
+<p>Table <a href="sensitivityspecificity.html#tab:tabTPRC-HTML">6.3</a> shows that also in scenario C the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is dominant.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTPRC-HTML">Table 6.3: </span>Scenario C. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 3 is also empty with size 0.10.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TPR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.030
+</td>
+<td style="text-align:right;">
+0.725
+</td>
+<td style="text-align:right;">
+0.030
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.048
+</td>
+<td style="text-align:right;">
+0.815
+</td>
+<td style="text-align:right;">
+0.048
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.073
+</td>
+<td style="text-align:right;">
+0.889
+</td>
+<td style="text-align:right;">
+0.073
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.224
+</td>
+<td style="text-align:right;">
+0.946
+</td>
+<td style="text-align:right;">
+0.224
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.709
+</td>
+<td style="text-align:right;">
+0.978
+</td>
+<td style="text-align:right;">
+0.709
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>However, in scenario D the results are very different (Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a>-bottom-right). In this scenario, corner 4 (lower-right corner) is also empty (empty corner size ranges from 0.05 to 0.50). Now the TPR curve shifts to the <em>left</em> with increasing emptiness of corner 4, meaning that for a given sample size the TPR credibility of the NCA approach <em>increases</em>. This means that <em>smaller</em> sample sizes can be used to identify necessity in corner 1. When corner 4 is empty (and corners 2 and 3 are not empty) relatively more cases are available to test the emptiness of corner 1 such that the sample size can be smaller for the permutation test. For achieving a TPR of 0.80 the required sample size can be less than 50 when the corner size is 0.05 and even less than 10 when the corner 4 size is 0.50. However, the possibility of using relatively small sample sizes for identifying necessity has a price in terms of TNR (see below). Also in scenario D the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is dominant (Table <a href="sensitivityspecificity.html#tab:tabTPRD-HTML">6.4</a>).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTPRD-HTML">Table 6.4: </span>Scenario D. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 4 is also empty with size 0.10.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TPR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.109
+</td>
+<td style="text-align:right;">
+0.843
+</td>
+<td style="text-align:right;">
+0.109
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.224
+</td>
+<td style="text-align:right;">
+0.936
+</td>
+<td style="text-align:right;">
+0.224
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.488
+</td>
+<td style="text-align:right;">
+0.979
+</td>
+<td style="text-align:right;">
+0.488
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.921
+</td>
+<td style="text-align:right;">
+0.995
+</td>
+<td style="text-align:right;">
+0.921
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Additional TPR simulations with a different necessity effect size (0.20), and different ceiling slopes (0.6, 1.67) in the expected empty corner can be found in Appendix <a href="appendixtprtnr.html#appendixtprtnr">E</a>. These simulations show similar TPR patterns.</p>
+</div>
+<div id="specificity" class="section level3 hasAnchor" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> True Negative Rate (TNR, specificity)<a href="sensitivityspecificity.html#specificity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a> shows the results of the evaluation of TNR.
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnruniform"></span>
+<img src="tnruniformCOLOR.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying non-necessity in the population. True necessity effect size in corner 1 = 0 for different sizes of other empty corners.  Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4." width="90%" />
+<p class="caption">
+Figure 6.4: True Negative Rate (TNR, specificity) of the NCA approach for identifying non-necessity in the population. True necessity effect size in corner 1 = 0 for different sizes of other empty corners. Top-Right: other empty corner = 2. Bottom-Left: other empty corner = 3. Bottom-Right: other empty corner = 4.
+</p>
+</div>
+<!-- Figure 7. True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population. True necessity effect size in corner 1 = 0 for different other empty corner sizes.  Panel a: other empty corner = 2; Panel b: other empty corner = 3; Panel c: other empty corner = 4.  -->
+<p>In all three graphs (Top-Right, Bottom-Left, Bottom-Right) the expected empty corner is not empty (necessity effect size = 0), while the other corners are empty with sizes ranging from 0 to 0.50. A TNR value of 0.95 is added as a benchmark, meaning that the rate of correct decisions confirming the absence of necessity in the population is 0.95. This selected value is inspired by the commonly selected threshold <span class="math inline">\(p\)</span>-value of 0.05 for the false positive rate of a statistical test. NCA draws a <em>negative</em> conclusion about necessity if <span class="math inline">\(p \ge 0.05\)</span> <em>or</em> <span class="math inline">\(d &lt; 0.10\)</span>.</p>
+<p>In the TNR evaluation, scenario A applies when not only the expected corner is not empty (necessity effect size = 0) but also the other corners are not empty (empty corner size = 0), such that no relationship exists in the population. The corresponding TNR curves in Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a> are the same, which are the lowest curves for the Top-Right and Bottom-Left graphs and the highest curve for the Bottom-Right graph. The curve shows that for all sample sizes the TNR is at least 0.95. Up to a sample size of 50, TNR is constant at 0.95 and when the sample size increases the TNR curve moves upward toward 1. The reason is that as long as the <span class="math inline">\(p\)</span>-value is critical, 1 - TNR = FNR corresponds to the <span class="math inline">\(p\)</span>-value of NCA’s statistical test: 5% of the samples drawn from a population where <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are unrelated (corresponding to scenario A in the TNR test) are false positives, and 95% are true negatives.</p>
+<p>Table <a href="sensitivityspecificity.html#tab:tabTNRA-HTML">6.5</a> shows the fraction of samples where <span class="math inline">\(p \ge 0.05\)</span> (<span class="math inline">\(p\)</span>-based TNR), and Table <a href="sensitivityspecificity.html#tab:tabTNRB-HTML">6.6</a> the fraction of samples where <span class="math inline">\(d &lt; 0.10\)</span> (<span class="math inline">\(d\)</span>-based TNR).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTNRA-HTML">Table 6.5: </span>Scenario A. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). No other corner is empty.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TNR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.962
+</td>
+<td style="text-align:right;">
+0.413
+</td>
+<td style="text-align:right;">
+0.962
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.945
+</td>
+<td style="text-align:right;">
+0.430
+</td>
+<td style="text-align:right;">
+0.945
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+<td style="text-align:right;">
+0.598
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+<td style="text-align:right;">
+0.877
+</td>
+<td style="text-align:right;">
+0.954
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.953
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.942
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+0.952
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+0.950
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTNRB-HTML">Table 6.6: </span>Scenario B. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 2 is empty with size 0.10.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TNR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.980
+</td>
+<td style="text-align:right;">
+0.515
+</td>
+<td style="text-align:right;">
+0.980
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.986
+</td>
+<td style="text-align:right;">
+0.577
+</td>
+<td style="text-align:right;">
+0.986
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.991
+</td>
+<td style="text-align:right;">
+0.705
+</td>
+<td style="text-align:right;">
+0.991
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+<td style="text-align:right;">
+0.944
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:right;">
+0.998
+</td>
+<td style="text-align:right;">
+0.998
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Since for each sample NCA draws a <em>negative</em> conclusion about necessity if <span class="math inline">\(p \geq 0.05\)</span> <em>or</em> <span class="math inline">\(d \leq 0.10\)</span>, TNR is the <em>maximum</em> of <span class="math inline">\(p\)</span>-based TNR and <span class="math inline">\(d\)</span>-based TNR.</p>
+<p>Table <a href="sensitivityspecificity.html#tab:tabTNRA-HTML">6.5</a> for scenario A indicates that up to sample size 50 the <span class="math inline">\(p\)</span>-value TNR dominates and when the sample size increases, the TNR is based on the <span class="math inline">\(d\)</span>-value. In other words, nearly all samples are correctly evaluated when necessity is absent in the population and other corners are not empty.</p>
+<p>Scenario B for TNR (Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a>-top-right) applies when necessity is absent while corner 2 (upper-right corner) is empty (empty corner effect size = 0.05 – 0.50). It turns out that the TNR curves are above the 0.95 benchmark for all sample sizes. Nearly all samples are correctly evaluated when necessity is absent in the population and corner 2 is empty.</p>
+<p>Table <a href="sensitivityspecificity.html#tab:tabTNRB-HTML">6.6</a>-top-right shows that for smaller sample sizes the <span class="math inline">\(p\)</span>-value TNR is dominant, whereas for larger sample sizes the <span class="math inline">\(d\)</span>-value TNR dominates, although the differences are small.</p>
+<p>The situation for scenario C for TNR (Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a>-bottom-left) when necessity is absent while corner 3 is empty (empty corner effect size = 0.05 to 0.50) is very similar to scenario B. In this scenario, nearly all samples are correctly evaluated when necessity is absent in the population and corner 3 is empty, and the <span class="math inline">\(p\)</span>-value is the primary limiting factor for TNR (Table <a href="sensitivityspecificity.html#tab:tabTNRC-HTML">6.7</a>).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTNRC-HTML">Table 6.7: </span>Scenario C. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 3 is empty with size 0.10.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TNR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.983
+</td>
+<td style="text-align:right;">
+0.479
+</td>
+<td style="text-align:right;">
+0.983
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.981
+</td>
+<td style="text-align:right;">
+0.539
+</td>
+<td style="text-align:right;">
+0.981
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.989
+</td>
+<td style="text-align:right;">
+0.718
+</td>
+<td style="text-align:right;">
+0.989
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.992
+</td>
+<td style="text-align:right;">
+0.935
+</td>
+<td style="text-align:right;">
+0.992
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.993
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+<td style="text-align:right;">
+0.994
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.998
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>In scenario D for TNR (Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a>-bottom-right), necessity is absent while corner 4 is empty (empty corner effect size ranges from 0.05 to 0.50). The results are now very different. The TNR curves start below the 0.95 benchmark and with increasing sample size move first downward and then upward and end up above the 0.95 benchmark while moving toward 1. This means that only for a sample size of more than about 50, nearly all samples are correctly evaluated. The pattern of the TNR curve can be explained by the fact that first the <span class="math inline">\(p\)</span>-value is the limiting factor, and subsequently the <span class="math inline">\(d\)</span>-value (Table <a href="sensitivityspecificity.html#tab:tabTNRD-HTML">6.8</a>).</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tabTNRD-HTML">Table 6.8: </span>Scenario D. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 4 is empty with size 0.10.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+<i>p</i>-based
+</th>
+<th style="text-align:right;">
+<i>d</i>-based
+</th>
+<th style="text-align:right;">
+TNR
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0.946
+</td>
+<td style="text-align:right;">
+0.371
+</td>
+<td style="text-align:right;">
+0.946
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.910
+</td>
+<td style="text-align:right;">
+0.408
+</td>
+<td style="text-align:right;">
+0.910
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.913
+</td>
+<td style="text-align:right;">
+0.596
+</td>
+<td style="text-align:right;">
+0.913
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+0.917
+</td>
+<td style="text-align:right;">
+0.890
+</td>
+<td style="text-align:right;">
+0.917
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.905
+</td>
+<td style="text-align:right;">
+0.992
+</td>
+<td style="text-align:right;">
+0.992
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+0.910
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+0.896
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+0.918
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+<td style="text-align:right;">
+1.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Similar patterns of the TNR curves can be observed when the distribution in the feasible space is based on a normal rather than uniform distribution of the cases (Appendix <a href="appendixtprtnr.html#appendixtprtnr">E</a>).</p>
+<p>If the <span class="math inline">\(d\)</span>-value were not included as decision criterion for necessity, TNR would have been considerably lower for scenario D. This is shown in Figure <a href="sensitivityspecificity.html#fig:tnruniformponly">6.5</a> where the TNR decision is only based on the <span class="math inline">\(p\)</span>-value. Figure <a href="sensitivityspecificity.html#fig:tnruniformponly">6.5</a>-bottom-right shows that TNR decreases with increasing sample size and increasing size of empty corner 4.<a href="#fn64" class="footnote-ref" id="fnref64"><sup>64</sup></a></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnruniformponly"></span>
+<img src="tnruniform_ponlyCOLOR.png" alt="True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the $p$-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes. Top-Right: empty corner = 2. Bottom-Left: empty corner = 3. Bottom-Right: empty corner = 4." width="99%" />
+<p class="caption">
+Figure 6.5: True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the <span class="math inline">\(p\)</span>-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes. Top-Right: empty corner = 2. Bottom-Left: empty corner = 3. Bottom-Right: empty corner = 4.
+</p>
+</div>
+<!-- Figure 8. True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with only the $p$-value criterion. True necessity effect size in corner 1 = 0 for different other empty corner sizes.  Panel a: other empty corner = 2; Panel b: other empty corner = 3; Panel c: other empty corner = 4.  -->
+<!-- Figure 9. True Negative Rate (TNR, specificity) of the NCA approach for identifying necessity in the population with the $p$ and $d$-value criterion, with normal distribution of cases in the feasible space. True necessity effect size in corner 1 = 0 for different other empty corner sizes.  Panel a: other empty corner = 2; Panel b: other empty corner = 3; Panel c: other empty corner = 4.  -->
+<p>Because NCA bases its judgement about necessity not only on the <span class="math inline">\(p\)</span>-value but also on the <span class="math inline">\(d\)</span>-value (and on the availability of theoretical support), the methodology has credibility regarding both TPR and TNR, and the analyst is reasonably protected against making both false positive and false negative conclusions.</p>
+</div>
+</div>
+<div id="empiricalcredibility" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Empirical credibility<a href="sensitivityspecificity.html#empiricalcredibility" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The previous results show that it is possible to identify necessary conditions when they exist, and to correctly determine when they do not exist. Nevertheless, even when the criteria for necessity (theoretical support, large <span class="math inline">\(d\)</span>-value, low <span class="math inline">\(p\)</span>-value) are satisfied, the TPR and TNR results also show that there is still a possibility that necessary conditions are not identified when they exist, or that they are identified when they do not exist. This can also happen when limitations exist regarding the quality of model specification (Section <a href="mathematics.html#formalexpression">4.3</a>), study design, sampling, and measurement (Chapter <a href="datacollection.html#datacollection">8</a>), or data analysis (Chapter <a href="dataanalysis.html#dataanalysis">9</a>). To further evaluate the credibility of an NCA finding, several empirical credibility approaches may be considered.</p>
+<div id="robustness" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Robustness<a href="sensitivityspecificity.html#robustness" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When conducting an empirical study, the analyst must make various theoretical and methodological choices to obtain results. Often, other plausible choices could also have been made. In a robustness check, the sensitivity of the results to other plausible choices is evaluated. The check focuses on the sensitivity of the main estimates and the analyst’s main conclusion.</p>
+<p>In NCA, the effect size and the <span class="math inline">\(p\)</span>-value are two main estimates for concluding whether a necessity relationship is credible. These estimates can be sensitive to several choices. Some choices are outside the realm of NCA, for example choices related to the data that are used as input to NCA (see Chapter <a href="datacollection.html#datacollection">8</a> about study design, sampling, and measurement) or the threshold level of statistical significance. Other choices are NCA-specific, such as the choice of the ceiling line (Section <a href="mathematics.html#mathceiling">4.3.2</a>) and the bounding box (Section <a href="mathematics.html#formalexpression">4.3</a>), the threshold level of the necessity effect size (Section <a href="mathematics.html#effectsize">4.4.1</a>), and the handling of NCA-relevant outliers (Section <a href="dataanalysis.html#outliers">9.8</a>). The credibility of support for necessity increases when the results are robust. Section (<a href="dataanalysis.html#robustnesschecks">9.12</a>) provides further details of NCA’s robustness checks.</p>
+</div>
+<div id="modelfit1" class="section level3 hasAnchor" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Model fit<a href="sensitivityspecificity.html#modelfit1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Section <a href="mathematics.html#modelfit">4.5</a> introduced eight model fit metrics: complexity, fit, ceiling accuracy, noise, exceptions, support, spread, and sharpness. The credibility of the evidence for necessity increases when the model better fits the data.</p>
+</div>
+</div>
+<div id="credibilitysummary" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Recommendations for evaluating credibility<a href="sensitivityspecificity.html#credibilitysummary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The three core criteria for establishing necessity (theoretical support, practical relevance in terms of large effect size, and statistical relevance in terms of small <span class="math inline">\(p\)</span>-value), the robustness check requirement, and the eight model-fit metrics are summarized in Table <a href="sensitivityspecificity.html#tab:credibilitytab">6.9</a>. The table provides examples of numerical guidelines, but these should not be interpreted as strict decision rules. Ultimately, credibility is a matter of informed judgment and optimization by the analyst and other stakeholders after considering all credibility aspects. In an empirical study, it is rare for all credibility aspects to be fully satisfied.
+<!-- A *robustness check* (see Section \@ref(robustness)) can help evaluate the sensitivity of the conclusions for choices made by the analyst (e.g., regarding ceiling line, scope, threshold levels for effect size and $p$-value, including/exclusion of outliers). Several aspects of *model fit*, as discussed in Section \@ref(modelfit) could be considered as well. --></p>
+<!-- ## Conclusion -->
+<!-- A correct interpretation, application and simulation of the NCA approach for identifying necessity implies:  -->
+<!-- 1. using three criteria for testing necessity: theoretical support, effect size $d$, $p$-value (and not just the $p$-value);  -->
+<!-- 2. using NCA’s statistical as a test of the randomness of the necessity empty space, not a general randomness test;  -->
+<!-- 3. doing simulations with bounded variables, not with unbounded (for instance  normal distributed) variables. -->
+<!-- The Monte Carlo simulations conducted this way show that the True Positive Rate (TPR) and the True Negative Rate (TNR) are high, and consequently that the False Negative Rate (FNR)  and the False Positive Rate (FPR) are low.  Particularly for larger sample sizes, the TPR results show that NCA has high sensitivity (hit rate, probability of detection), and the TNR results show that NCA has high specificity (selectivity, correct rejection rate). The corresponding FNR shows that NCA has low miss rates, false dismissal,and the corresponding FPR shows that NCA has low false alarm, fall-out. This means that in the investigated scenarios NCA performs well regarding the desired qualities for identifying necessity, and gives confidence in applying the approach, which will be discussed in the next part of this book.  -->
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:credibilitytab">Table 6.9: </span>Credibility aspects of NCA
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Credibility aspect
+</th>
+<th style="text-align:left;">
+Goal
+</th>
+<th style="text-align:left;">
+Description
+</th>
+<th style="text-align:left;">
+Symbol
+</th>
+<th style="text-align:left;">
+Guideline
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Theoretical support
+</td>
+<td style="text-align:left;">
+Identifies expected empty corner. Allows interpretation of findings.
+</td>
+<td style="text-align:left;">
+Necessity hypothesis.
+</td>
+<td style="text-align:left;">
+H1
+</td>
+<td style="text-align:left;">
+Specify formal necessity hypothesis.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Practical relevance
+</td>
+<td style="text-align:left;">
+Ensures relevance of findings.
+</td>
+<td style="text-align:left;">
+Effect size.
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(d\)</span>
+</td>
+<td style="text-align:left;">
+High (e.g., <span class="math inline">\(d\)</span> <span class="math inline">\(\geq\)</span> 0.10).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Statistical significance
+</td>
+<td style="text-align:left;">
+Tests whether the observed effect could arise by chance (permutation test).
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(p\)</span>-value.
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</td>
+<td style="text-align:left;">
+Low (e.g., <span class="math inline">\(p\)</span> &lt; 0.05).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Robustness
+</td>
+<td style="text-align:left;">
+Checks sensitivity of findings.
+</td>
+<td style="text-align:left;">
+Repeated analysis.
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\Delta\)</span><span class="math inline">\(d\)</span>, <span class="math inline">\(\Delta\)</span><span class="math inline">\(p\)</span>
+</td>
+<td style="text-align:left;">
+Report.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model fit - complexity
+</td>
+<td style="text-align:left;">
+Quantifies model complexity used to balance parsimony against accuracy.
+</td>
+<td style="text-align:left;">
+Half of ceiling degrees of freedom.
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(cp\)</span>
+</td>
+<td style="text-align:left;">
+Balance.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model fit - fit
+</td>
+<td style="text-align:left;">
+Quantifies how far the chosen ceiling line deviates from the standard ceiling line (CE-FDH).
+</td>
+<td style="text-align:left;">
+Alignment with boundary pattern (% effect size compared to CE-FDH effect size).
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(ft\)</span>
+</td>
+<td style="text-align:left;">
+High (e.g., <span class="math inline">\(ft\)</span> <span class="math inline">\(\geq\)</span> 80%).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model fit - ceiling accuracy
+</td>
+<td style="text-align:left;">
+Quantifies the degree to which the expected empty corner is indeed empty.
+</td>
+<td style="text-align:left;">
+Percentage of points in the feasible area.
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(ca\)</span>
+</td>
+<td style="text-align:left;">
+High (e.g., <span class="math inline">\(ca\)</span> <span class="math inline">\(\geq\)</span> 95%).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model fit - noise
+</td>
+<td style="text-align:left;">
+Quantifies uncertainty around the ceiling line due to minor deviations.
+</td>
+<td style="text-align:left;">
+Percentage of points in the ceiling zone near the ceiling (medP-zone).
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(ns\)</span>
+</td>
+<td style="text-align:left;">
+Low (e.g., <span class="math inline">\(ns\)</span> <span class="math inline">\(\leq\)</span> 5%; 0.9 iso-purity).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model fit - exceptions
+</td>
+<td style="text-align:left;">
+Quantifies violations in the ceiling zone far from the ceiling line, indicating how strict (or tolerant) the necessity claim is.
+</td>
+<td style="text-align:left;">
+Number of points in the ceiling zone far from the ceiling (lowP-zone).
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(ex\)</span>
+</td>
+<td style="text-align:left;">
+Very low (e.g., <span class="math inline">\(ex\)</span> $$0).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model fit - support
+</td>
+<td style="text-align:left;">
+Quantifies how strongly the data in the feasible area support the ceiling line.
+</td>
+<td style="text-align:left;">
+Percentage of points in the feasible area on or near the ceiling (medS-zone).
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(su\)</span>
+</td>
+<td style="text-align:left;">
+High (e.g., <span class="math inline">\(su\)</span> <span class="math inline">\(\geq\)</span> 5%; 0.8 iso-solidity).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model fit - spread
+</td>
+<td style="text-align:left;">
+Quantifies the extent to which observations in the feasible area near the ceiling are dispersed, rather than clustered along the ceiling line.
+</td>
+<td style="text-align:left;">
+Evenness of <span class="math inline">\(x\)</span>-positions of points on or near the ceiling (medS-zone).
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(sp\)</span>
+</td>
+<td style="text-align:left;">
+High (e.g., <span class="math inline">\(sp\)</span> <span class="math inline">\(\geq\)</span> 0.5).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model fit - sharpness
+</td>
+<td style="text-align:left;">
+Quantifies how abrupt the transition in the data is across the boundary between ceiling zone and feasible area.
+</td>
+<td style="text-align:left;">
+Relative density of points in medium-purity (medP) and medium-solidity (medS) zones.
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(sh\)</span>
+</td>
+<td style="text-align:left;">
+High (e.g., <span class="math inline">\(sh\)</span> &gt; 0.8).
+</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<p>In the following Part II of the book, the principles of NCA as discussed in Part I are applied to empirical studies.</p>
+<!-- ### Informedness: Definition and Explanation -->
+<!-- **Informedness** is a metric used in classification models to evaluate the **discriminative power** of a model. It measures how well the model distinguishes between the **positive** and **negative** classes. -->
+<!-- #### 1. Mathematical Formula for Informedness -->
+<!-- Informedness is based on the **true positive rate (TPR)** and **true negative rate (TNR)**: -->
+<!-- \[ -->
+<!-- \text{Informedness} = \text{TPR} + \text{TNR} - 1 -->
+<!-- \] -->
+<!-- where: -->
+<!-- - **True Positive Rate (TPR) / Sensitivity / Recall**: -->
+<!--   \[ -->
+<!--   \text{TPR} = \frac{\text{TP}}{\text{TP} + \text{FN}} -->
+<!--   \] -->
+<!-- - **True Negative Rate (TNR) / Specificity**: -->
+<!--   \[ -->
+<!--   \text{TNR} = \frac{\text{TN}}{\text{TN} + \text{FP}} -->
+<!--   \] -->
+<!-- Thus, **Informedness** can also be rewritten as: -->
+<!-- \[ -->
+<!-- \text{Informedness} = \left(\frac{\text{TP}}{\text{TP} + \text{FN}}\right) + \left(\frac{\text{TN}}{\text{TN} + \text{FP}}\right) - 1 -->
+<!-- \] -->
+<!-- #### 2. Interpretation -->
+<!-- - **Range:**   -->
+<!--   \[ -->
+<!--   -1 \leq \text{Informedness} \leq 1 -->
+<!--   \] -->
+<!-- - **Perfect Model:** \( \text{Informedness} = 1 \) (perfect classification, no errors). -->
+<!-- - **Random Guessing:** \( \text{Informedness} = 0 \) (model has no discrimination ability). -->
+<!-- - **Worst Model:** \( \text{Informedness} = -1 \) (model is always wrong). -->
+<!-- #### 3. Relationship to Other Metrics -->
+<!-- - **Informedness is also known as "Youden’s J statistic"** in medical testing. -->
+<!-- - Unlike **Accuracy**, Informedness considers both **false positives and false negatives**, making it useful for **imbalanced datasets**. -->
+<!-- - It is closely related to **Balanced Accuracy**, defined as: -->
+<!--   \[ -->
+<!--   \text{Balanced Accuracy} = \frac{1}{2} (\text{TPR} + \text{TNR}) -->
+<!--   \] -->
+<!--   which simplifies to: -->
+<!--   \[ -->
+<!--   \text{Balanced Accuracy} = \frac{\text{Informedness} + 1}{2} -->
+<!--   \] -->
+<!-- #### 4. Why Use Informedness? -->
+<!-- - **Handles class imbalance better than accuracy** (since it considers both sensitivity and specificity). -->
+<!-- - **Good for medical tests and fraud detection** where both false positives and false negatives matter. -->
+<!-- - **Useful when evaluating a binary classifier** across different decision thresholds. -->
+<!-- #### 5. Example Calculation -->
+<!-- | Class | Predicted Positive | Predicted Negative | Total | -->
+<!-- |-------|------------------|------------------|------| -->
+<!-- | **Actual Positive (P)** | TP = 80 | FN = 20 | 100 | -->
+<!-- | **Actual Negative (N)** | FP = 30 | TN = 70 | 100 | -->
+<!-- ##### **Step 1: Compute TPR and TNR** -->
+<!-- \[ -->
+<!-- \text{TPR} = \frac{80}{80 + 20} = 0.8 -->
+<!-- \] -->
+<!-- \[ -->
+<!-- \text{TNR} = \frac{70}{70 + 30} = 0.7 -->
+<!-- \] -->
+<!-- ##### **Step 2: Compute Informedness** -->
+<!-- \[ -->
+<!-- \text{Informedness} = 0.8 + 0.7 - 1 = 0.5 -->
+<!-- \] -->
+<!-- #### **Final Summary** -->
+<!-- - **Informedness measures how well a classifier differentiates between classes.** -->
+<!-- - **It considers both true positives and true negatives**, making it more reliable than accuracy in imbalanced datasets. -->
+<!-- - **Higher values indicate better discrimination**, while **zero** means the classifier is no better than random guessing. -->
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
+<div id="ref-cohen1994earth" class="csl-entry">
+Cohen, J. (1994). The earth is round (p&lt;. 05). <em>American Psychologist</em>, <em>49</em>(12), 997. <a href="https://doi.org/10.1037/0003-066X.49.12.997">https://doi.org/10.1037/0003-066X.49.12.997</a>
+</div>
+<div id="ref-cumming2013understanding" class="csl-entry">
+Cumming, G. (2013). <em>Understanding the new statistics: Effect sizes, confidence intervals, and meta-analysis</em>. Routledge. <a href="https://www.taylorfrancis.com/books/mono/10.4324/9780203807002/understanding-new-statistics-geoff-cumming">https://www.taylorfrancis.com/books/mono/10.4324/9780203807002/understanding-new-statistics-geoff-cumming</a>
+</div>
+<div id="ref-dul2020orm" class="csl-entry">
+Dul, J., Van der Laan, E., &amp; Kuik, R. (2020). A statistical significance test for <span>Necessary Condition Analysis</span>. <em>Organizational Research Methods</em>, <em>23</em>(2), 385–395. <a href="https://doi.org/10.1177/1094428118795272">https://doi.org/10.1177/1094428118795272</a>
+</div>
+<div id="ref-greenland1986identifiability" class="csl-entry">
+Greenland, S., &amp; Robins, J. M. (1986). Identifiability, exchangeability, and epidemiological confounding. <em>International Journal of Epidemiology</em>, <em>15</em>(3), 413–419. <a href="https://doi.org/10.1093/ije/15.3.413">https://doi.org/10.1093/ije/15.3.413</a>
+</div>
+<div id="ref-rothman2005causation" class="csl-entry">
+Rothman, K. J., &amp; Greenland, S. (2005). Causation and causal inference in epidemiology. <em>American Journal of Public Health</em>, <em>95</em>(S1), S144–S150. <a href="https://doi.org/10.2105/AJPH.2004.059204">https://doi.org/10.2105/AJPH.2004.059204</a>
+</div>
+<div id="ref-wasserstein2016asa" class="csl-entry">
+Wasserstein, R. L., &amp; Lazar, N. A. (2016). The ASA statement on p-values: Context, process, and purpose. <em>The American Statistician</em>, <em>70</em>(2), 129–133. <a href="https://doi.org/10.1080/00031305.2016.1154108">https://doi.org/10.1080/00031305.2016.1154108</a>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="61">
+<li id="fn61"><p>Credibility in NCA is conceptually unrelated to the same term as used in Bayesian statistics, where it denotes probabilistic confidence in parameter estimates.<a href="sensitivityspecificity.html#fnref61" class="footnote-back">↩︎</a></p></li>
+<li id="fn62"><p>This requirement does not apply in a small-n study with purposeful rather than random selection of cases.<a href="sensitivityspecificity.html#fnref62" class="footnote-back">↩︎</a></p></li>
+<li id="fn63"><p>The results remain the same if the simulations are done with a different expected empty corner and corresponding other corners.<a href="sensitivityspecificity.html#fnref63" class="footnote-back">↩︎</a></p></li>
+<li id="fn64"><p>All simulations show again that when scenario A applies in Figures <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a> and <a href="appendixtprtnr.html#fig:tnrnormal">E.4</a> with the curves for other corner size = 0 and in Table <a href="#tab:tabtnrB"><strong>??</strong></a>-top-left, and when the <span class="math inline">\(p\)</span>-value is dominant, NCA’s statistical test is valid <span class="citation">(<a href="#ref-dul2020orm">Dul, Van der Laan, et al., 2020</a>)</span>.<a href="sensitivityspecificity.html#fnref64" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="statistics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="part-ii.-application.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": null,
+  "fontsettings": {
+    "theme": "white",
+    "family": "serif",
+    "size": 2
+  },
+  "edit": null,
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  },
+  "info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

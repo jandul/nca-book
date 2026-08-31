@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Necessary Condition Analysis (NCA)</title>
-  <meta name="description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <title>F Necessity and the traditional experiment | Necessary Condition Analysis (NCA)</title>
+  <meta name="description" content="F Necessity and the traditional experiment | Necessary Condition Analysis (NCA): Principles and Application" />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Necessary Condition Analysis (NCA)" />
+  <meta property="og:title" content="F Necessity and the traditional experiment | Necessary Condition Analysis (NCA)" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <meta property="og:description" content="F Necessity and the traditional experiment | Necessary Condition Analysis (NCA): Principles and Application" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Necessary Condition Analysis (NCA)" />
+  <meta name="twitter:title" content="F Necessity and the traditional experiment | Necessary Condition Analysis (NCA)" />
   
-  <meta name="twitter:description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <meta name="twitter:description" content="F Necessity and the traditional experiment | Necessary Condition Analysis (NCA): Principles and Application" />
   
 
 <meta name="author" content="Jan Dul" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="acknowledgments.html"/>
+<link rel="prev" href="appendixtprtnr.html"/>
+<link rel="next" href="appendixc.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -489,52 +489,154 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Necessary Condition Analysis (NCA)</h1>
-<h2 class="subtitle"><em>Principles and Application</em></h2>
-<p class="author"><em>Jan Dul</em></p>
+<div id="appendixaa" class="section level1 hasAnchor" number="18">
+<h1><span class="header-section-number">F</span> Necessity and the traditional experiment<a href="appendixaa.html#appendixaa" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In a regression context, experiments are often considered the gold standard research design
+for making causal inference. The main reason is that confounders can bias the regression
+coefficients (omitted variable bias), which can lead to causal misinterpretations. In
+randomized experiments, the undesired effects of confounders are mitigated.
+<!-- The main reason in NCA for selecting the experimental study design is uncertainty about reverse causality. For a causal interpretation it is required that $X$ existed before $Y$, but this cannot be ensured in an observational study design. If the analyst is unsure about the temporal order of $X$ and $Y$ (e.g., absence of a strong theoretical reason why reverse causality is implausible), an observed empty space in the upper-left corner could not only mean support for the necessity of high $X$ for high $Y$, but also for the necessity of low $Y$ for low $X$ (or high$Y$ is sufficient for high($X$, see Section \@ref(reversecausality)).  --></p>
+<p>The traditional experiment is not suitable for testing a necessity relationship. Therefore, Section <a href="datacollection.html#experiment">8.2.4</a> presented the necessity experiment. Nevertheless, this Appendix shows that it is possible to learn something about necessity from traditional experiments.<br />
+<!-- This section gives further details about the necessity experiment for testing whether a condition $X$ is necessary for outcome $Y$. First, the *traditional probabilistic sufficiency* experiment and the related but uncommon (deterministic) *sufficiency experiment* is described. Afterwards, the *necessity test* as part of a (probabilistic) sufficiency experiment, and the true *necessity experiment* are presented. --></p>
+<div id="traditionalexperiment" class="section level2 hasAnchor" number="18.1">
+<h2><span class="header-section-number">F.1</span> Traditional experiment<a href="appendixaa.html#traditionalexperiment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The traditional experiment estimates the <em>average treatment effect</em>: the average effect of <span class="math inline">\(X\)</span> on <span class="math inline">\(Y\)</span>. The Randomized Controlled Trial (RCT) is considered the gold-standard for such an experiment. In an RCT, cases are randomly divided into a <em>treatment group</em> and a <em>control group</em>. In the treatment group, <span class="math inline">\(X\)</span> (the treatment) is manipulated by the analyst and in the control group nothing is manipulated. After a certain period of time, the difference in outcomes <span class="math inline">\(Y\)</span> between the two groups is observed, which is an indication of the causal effect of <span class="math inline">\(X\)</span> on <span class="math inline">\(Y\)</span>. To claim causality, the existence of a time difference between manipulation and measurement of the outcome is essential as it ensures that the cause came before the outcome. Although this time difference can be short (e.g., when there is an immediate effect of the manipulation) it will always exist in an experiment. During this time period, not only the treatment, but also other factors may change. The control group ensures that the ‘time effect’ of other factors is taken into account, and it is assumed that the time effect in the treatment group and in the control group are the same. Random allocation of cases to the two groups must ensure that there are no average time effect differences between the treatment group and the control group.</p>
+<p>An RCT is used to evaluate the <em>average</em> effect of a treatment (a policy, an intervention, a medical treatment, etc.). The treatment group describes the real world of cases where the intervention has occurred, and the control group mimics the counterfactual world of <em>these</em> cases if the intervention had not occurred. The use of a control group and randomization is an attempt to compare the actual world of cases that got the intervention with the actual world of <em>similar</em> (but not the same) cases that did not get the intervention. “Similar” means that the two groups <em>on average</em> have the same characteristics with respect to factors that can also have an effect on the outcome, other than the treatment. Randomization must ensure a statistical similarity of the two groups: they have the same <em>average</em> level of potential confounders. So, randomization is an effort to control for potential confounders.</p>
+<p>Figure <a href="appendixaa.html#fig:traditionalbefaft">F.1</a> represents the traditional experiment when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are both dichotomous (absent = 0 or present = 1). The sample of 100 cases is divided into a treatment group of 50 cases (shown as ×) and a control group of 50 cases (shown as ). Figure <a href="appendixaa.html#fig:traditionalbefaft">F.1</a>-left shows the situation before the treatment. All cases are in corner 3, and the treatment is absent. The manipulation for the treatment group consists of <em>adding</em> the treatment. This means that <span class="math inline">\(X\)</span> is changed from absent (<span class="math inline">\(X\)</span> = 0, no treatment) to present (<span class="math inline">\(X\)</span> = 1, treatment). After the manipulation (Figure <a href="appendixaa.html#fig:traditionalbefaft">F.1</a>-right), the effect <span class="math inline">\(Y\)</span> of the treatment group is caused by a time effect and a manipulation effect. In the control group <span class="math inline">\(X\)</span> is not changed (no manipulation, <span class="math inline">\(X\)</span> = 0) but there is a time effect (see the control cases in corner 1, where <span class="math inline">\(X = 0, Y = 1\)</span>). Because the time effects in both groups are considered the same (randomization) the difference between the outcome of the treatment group and the control group can be attributed to <span class="math inline">\(X\)</span>, the manipulation. The results of the experiment after manipulation can be statistically evaluated by the <em>odds ratio</em> (OR), which is a population-level measure that summarizes how much more likely (in terms of odds) the outcome is in the treatment group compared to the control group<a href="#fn123" class="footnote-ref" id="fnref123"><sup>123</sup></a>.
+<!-- Pearl's Probability of Sufficiency measure (pearl2009causality), which is an individual-level measure for someone who did not receive the treatment and did not have the outcome, to estimate what is the probability that the outcome would have occurred if they had received the treatment^[ --></p>
+<!-- The mathematical formula for the Probability of Sufficiency is -->
+<!-- $PS = P(Y(1) = 1 \mid X = 0, Y = 0)$,   -->
+<!-- and can be estimated as   -->
+<!-- $$ -->
+<!-- PS = \frac{\frac{C2}{C2 + C4} - \frac{C1}{C1 + C3}}{1 - \frac{C1}{C1 + C3}}. -->
+<!-- $$   -->
+<!-- This represents the probability that $Y$ would have occurred if $X$ had been applied, given that it did not occur without $X$. It reflects the net causal effect of $X$ on $Y$, adjusting for time effects that might have occurred naturally in the absence of $X$.], or other statistical approaches.    -->
+<!-- ```{r codetraditionalbefaft, eval = FALSE, warning=FALSE, echo=FALSE, cache=TRUE } -->
+<!-- #setwd("~") -->
+<!-- set.seed(123) -->
+<!-- par(mar=c(5,5,4,1)) -->
+<!-- par(mfrow=c(1,2)) -->
+<!-- #safe pdf  -->
+<!-- pdf = F -->
+<!-- if (pdf) { -->
+<!-- pdf("Traditional-experiment_before.pdf") -->
+<!-- } -->
+<!-- #2x2 contingency table -->
+<!-- X<- c(0.25, 0.75, 0.75) #2-2 -->
+<!-- Y<- c(0.25, 0.25, 0.75) #2-2 -->
+<!-- plot (X,Y, xlab="X = Condition", ylab="Y = Outcome", xlim = c(0,1), ylim=c(0,1), pch=19, cex=2, axes = F, yaxs="i", xaxs="i", type="n") -->
+<!-- axis(1, at = c(0,0.25,0.75,1.25), pos=0, tck=0, labels=rep(c("","0", "1", ""))) #X2 -->
+<!-- axis(2, at = c(0,0.25,0.75,1.25), pos=0, tck=0, labels=rep(c("","0", "1", ""))) #Y2 -->
+<!-- abline(v=c(0.5,1), h=c(0.5,1)) -->
+<!-- cex <- 0.8 #(or 1.2) -->
+<!-- x1 = 0.1 -->
+<!-- x2 = 0.4 -->
+<!-- x3 = 0.6 -->
+<!-- x4 = 0.9 -->
+<!-- y1 = 0.1 -->
+<!-- y2 = 0.4 -->
+<!-- y3 = 0.6 -->
+<!-- y4 = 0.9 -->
+<!-- n = 100 -->
+<!-- #before manipulation -->
+<!-- n3 = n -->
+<!-- for (i in n3) { -->
+<!--   c3x.control <- runif(n3, x1, x2) -->
+<!--   c3y.control <- runif(n3, y1, y2) -->
+<!--   c3x.treatment <- runif(n3, x1, x2) -->
+<!--   c3y.treatment <- runif(n3, y1, y2) -->
+<!--   points(c3x.control,c3y.control, pch=1, cex=cex, col = "black") -->
+<!--   points(c3x.treatment,c3y.treatment, pch=4, cex=cex, col = "black") -->
+<!--   #text(c3x,c3y,"x", cex=cex, col = "green", pch = 1) -->
+<!-- } -->
+<!-- text(0.25,0.05,paste("n = ", n3), cex=cex) -->
+<!-- #after manipulation -->
+<!-- if (pdf) { -->
+<!-- pdf("Traditional-experiment_after.pdf") -->
+<!-- } -->
+<!-- n1 = 0.1*n -->
+<!-- n3 = 0.5*n - n1 -->
+<!-- n2 = 0.2*n -->
+<!-- n4 = 0.5*n -n2 -->
+<!-- od <- (n2/n4)/(n1/n3) #odds ratio -->
+<!-- plot (X,Y, xlab="X = Condition", ylab="Y = Outcome", xlim = c(0,1), ylim=c(0,1), pch=19, cex=2, axes = F, yaxs="i", xaxs="i", type="n") -->
+<!-- axis(1, at = c(0,0.25,0.75,1.25), pos=0, tck=0, labels=rep(c("","0", "1", ""))) #X2 -->
+<!-- axis(2, at = c(0,0.25,0.75,1.25), pos=0, tck=0, labels=rep(c("","0", "1", ""))) #Y2 -->
+<!-- abline(v=c(0.5,1), h=c(0.5,1)) -->
+<!-- for (i in n1) { -->
+<!--   c1x.control <- runif(n1, x1, x2) -->
+<!--   c1y.control <- runif(n1, y3, y4) -->
+<!--   # c3x.treatment <- runif(n3, 0, 0.5) -->
+<!--   # c3y.treatment <- runif(n3, 0, 0.5) -->
+<!--   points(c1x.control,c1y.control, pch=1, cex=cex, col = "black") -->
+<!--   # points(c3x.treatment,c3y.treatment, pch=1, cex=cex, col = "blue") -->
+<!--   #text(c3x,c3y,"x", cex=cex, col = "green", pch = 1) -->
+<!-- } -->
+<!-- text(0.25,0.55,paste("n = ", n1), cex=cex) -->
+<!-- for (i in n3) { -->
+<!--   c3x.control <- runif(n3, x1, x2) -->
+<!--   c3y.control <- runif(n3, y1, y2) -->
+<!--   points(c3x.control,c3y.control, pch=1, cex=cex, col = "black") -->
+<!--   } -->
+<!-- text(0.25,0.05,paste("n = ", n3), cex=cex) -->
+<!-- for (i in n4) { -->
+<!--   c4x.treatment <- runif(n4, x3, x4) -->
+<!--   c4y.treatment <- runif(n4, y1, y2) -->
+<!--   points(c4x.treatment,c4y.treatment, pch=4, cex=cex, col = "black") -->
+<!-- } -->
+<!-- text(0.75,0.05,paste("n = ", n4), cex=cex) -->
+<!-- for (i in n2) { -->
+<!--   c2x.treatment <- runif(n2, x3, x4) -->
+<!--   c2y.treatment <- runif(n2, y3, y4) -->
+<!--   points(c2x.treatment,c2y.treatment, pch=4, cex=cex, col = "black") -->
+<!-- } -->
+<!-- text(0.75,0.55,paste("n = ", n2), cex=cex) -->
+<!-- #safe pdf  -->
+<!-- if (pdf) { -->
+<!-- dev.off() -->
+<!-- } -->
+<!-- ``` -->
+<!-- ```{r traditionalbefaftfig, echo=FALSE, out.width='49%', fig.show = "hold", fig.align = "center", fig.cap = "XY-plot of the traditional experiment before (Left) and after (Right) manipulation. X  = Condition (0 = no; 1 = yes); Y = Outcome (0 = no; 1 = yes). o = control group; x = treatment group.", cache=TRUE} -->
+<!-- #par(mar=c(5,5,4,1)) -->
+<!-- #par(mfrow=c(1,2)) -->
+<!-- #knitr::include_graphics('Traditional-experiment_before.pdf') -->
+<!-- #knitr::include_graphics('Traditional-experiment_after.pdf') -->
+<!-- knitr::include_graphics(c('Traditional-experiment_before.png', 'Traditional-experiment_after.png')) -->
+<!-- ``` -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:traditionalbefaft"></span>
+<img src="Traditional-experiment%20COLOR.png" alt="$XY$-plot of the traditional experiment before (Left) and after (Right) manipulation. $X$  = Condition (0 = no; 1 = yes); $Y$ = Outcome (0 = no; 1 = yes). \caseabsent{} = control group; × = treatment group." width="99%" />
+<p class="caption">
+Figure F.1: <span class="math inline">\(XY\)</span>-plot of the traditional experiment before (Left) and after (Right) manipulation. <span class="math inline">\(X\)</span> = Condition (0 = no; 1 = yes); <span class="math inline">\(Y\)</span> = Outcome (0 = no; 1 = yes). = control group; × = treatment group.
+</p>
 </div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>“Is coffee a necessary condition for you?” Someone asked me this question after hearing that I had taken time away in Italy to focus on writing my book, and that I like Italy’s coffee culture. “No, it is not; it only helps.” Focus, time, perseverance, and several other things are true necessary conditions. Without any of them, the book would not exist.</p>
-<p>And here it is! In the book I present the principles of Necessary Condition Analysis (NCA) and their application in empirical studies in research and practice. NCA is an approach that uses necessity causal logic to identify necessary conditions from data. The core idea is that a necessary condition must be present to make the outcome possible, and that its absence guarantees the absence of the outcome. Compensation is not possible.</p>
-<p>My intention with this book is to help researchers, data analysts, practitioners, and others develop a deeper understanding of the NCA approach and apply it effectively and with high-quality standards. The book brings together the fundamentals of NCA and integrates the most recent methodological advancements and tools. It synthesizes ideas from my earlier publications that describe NCA at introductory levels <span class="citation">(e.g., <a href="#ref-dul2016orm">Dul, 2016b</a>, <a href="#ref-dul2020book">2020</a>)</span> as well as more advanced treatments <span class="citation">(<a href="#ref-dul2020orm">Dul, Van der Laan, et al., 2020</a>; <a href="#ref-dul2021online">Dul, 2021</a>, <a href="#ref-dul2024different">2024a</a>)</span>, while also introducing more background, new topics, and recent developments. From 2021 to 2026, a regularly updated online predecessor of this book was available <span class="citation">(<a href="#ref-dul2021online">Dul, 2021</a>)</span>, which is now archived and integrated into the present book.</p>
-<p>The first chapter of this book provides a general introduction to the possibilities and current use of NCA. Next, Part I contains five chapters on the <em>principles</em> of NCA, covering NCA’s causality, theory, mathematics, statistics, and its credibility for identifying necessity from data. Part II has six chapters about the <em>application</em> of these principles in empirical studies discussing NCA’s hypothesis formulation, data collection, data analysis, reporting, and how to apply NCA in multimethod research and in practice. I finish the book with a summary and a personal reflection.</p>
-<p>The book’s content expresses my current understanding and interpretation of NCA. NCA develops over time, just like other methodological approaches do. As NCA is applied more widely, new questions, topics, insights, and ideas will emerge. An online version of the book with updates and additional materials is available via the book-page: <a href="https://jandul.github.io/NCA/" class="uri">https://jandul.github.io/NCA/</a>. For the physical version of the book see <span class="citation">Dul (<a href="#ref-dul2025book">2026</a>)</span>.</p>
-<p>I hope this book serves those who wish to gain a comprehensive understanding of the principles of NCA and their application, both in academic research and practical contexts.</p>
-<p>Enjoy discovering and applying NCA!<br />
- 
- <br />
-Leiden, March 2026</p>
+<p>With a traditional RCT experiment, after the treatment usually all four corners have cases. In this example, 10 cases from the control group have moved from corner 3 to corner 2, suggesting a time effect. The cases from the treatment group have all moved to <span class="math inline">\(X\)</span> = 1 (corner 2 or 4). Treatment and time had no effect on the 30 cases in corner 4. Treatment and time did have an effect on the 20 cases in corner 2. The data pattern in the four corners suggests that the treatment had an effect. There are more cases in corner 2 (resulting from a time effect and a treatment effect) than in corner 1. The odds ratio is an estimate of the <em>average treatment effect</em>: <span class="math inline">\((20/30)/(10/40) = 2.67\)</span>. Since the odds ratio is greater than 1, the conclusion is that <span class="math inline">\(X\)</span> has a probabilistic sufficiency effect on <span class="math inline">\(Y\)</span>.<a href="#fn124" class="footnote-ref" id="fnref124"><sup>124</sup></a></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:suffciency1befaft"></span>
+<img src="Sufficiency-experiment%20COLOR.png" alt="$XY$-table of the sufficiency experiment before (Left) and after (Right) manipulation. $X$  = Condition (0 = no; 1 = yes); $Y$ = Outcome (0 = no; 1 = yes). \caseabsent{} = control group; × = treatment group." width="99%" />
+<p class="caption">
+Figure F.2: <span class="math inline">\(XY\)</span>-table of the sufficiency experiment before (Left) and after (Right) manipulation. <span class="math inline">\(X\)</span> = Condition (0 = no; 1 = yes); <span class="math inline">\(Y\)</span> = Outcome (0 = no; 1 = yes). = control group; × = treatment group.
+</p>
 </div>
-<h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
-<div id="ref-dul2016orm" class="csl-entry">
-Dul, J. (2016b). <span>Necessary Condition Analysis</span> (<span>NCA</span>): Logic and methodology of <span>“necessary but not sufficient”</span> causality. <em>Organizational Research Methods</em>, <em>19</em>(1), 10–52. <a href="https://doi.org/10.1177/1094428115584005">https://doi.org/10.1177/1094428115584005</a>
 </div>
-<div id="ref-dul2020book" class="csl-entry">
-Dul, J. (2020). <em><span>Conducting Necessary Condition Analysis</span>.</em> Sage. <a href="https://uk.sagepub.com/en-gb/eur/conducting-necessary-condition-analysis-for-business-and-management-students/book262898">https://uk.sagepub.com/en-gb/eur/conducting-necessary-condition-analysis-for-business-and-management-students/book262898</a>
+<div id="nonnecessitytest" class="section level2 hasAnchor" number="18.2">
+<h2><span class="header-section-number">F.2</span> Necessity lessons from the traditional experiment<a href="appendixaa.html#nonnecessitytest" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Referring to Figures <a href="appendixaa.html#fig:traditionalbefaft">F.1</a>-right and <a href="#fig:sufficiency1befaft"><strong>??</strong></a>-right, the (probabilistic) sufficiency experiments shows non-emptiness in corner 1 due to time effects. The non-emptiness reflects non-necessity. If <span class="math inline">\(X\)</span> were necessary for <span class="math inline">\(Y\)</span>, this corner would remain empty after the manipulation. If this corner has cases, it can be concluded that the condition <span class="math inline">\(X = 1\)</span> is not necessary for the effect <span class="math inline">\(Y = 1\)</span>, because the effect is possible without the condition. If this corner remains empty, necessity is not rejected. This ‘non-necessity test’, as part of a (probabilistic) sufficiency experiment, can only be done with the control group. The treatment group cannot be used for testing necessity because it cannot test the emptiness of corner 1. The non-necessity test with the control group is not a necessity experiment since no manipulation is involved in necessity testing. It can be understood as an observational study embedded in an experiment (or even as a longitudinal study because <span class="math inline">\(x\)</span>- and <span class="math inline">\(y\)</span>-scores are observed for two time points: before and after the manipulation).</p>
+
 </div>
-<div id="ref-dul2021online" class="csl-entry">
-Dul, J. (2021). <em><span class="nocase">Advances in Necessary Condition Analysis.</span></em> online book. <a href="https://bookdown.org/ncabook/advanced_nca2/">https://bookdown.org/ncabook/advanced_nca2/</a>
 </div>
-<div id="ref-dul2024different" class="csl-entry">
-Dul, J. (2024a). A different causal perspective with <span>Necessary Condition Analysis</span>. <em>Journal of Business Research</em>, <em>177</em>, 114618. <a href="https://doi.org/10.1016/j.jbusres.2024.114618">https://doi.org/10.1016/j.jbusres.2024.114618</a>
-</div>
-<div id="ref-dul2025book" class="csl-entry">
-Dul, J. (2026). <em><span class="nocase">Necessary Condition Analysis (NCA): Principles and Application</span></em>. CRC press/Chapman Hall. <a href="https://www.routledge.com">www.routledge.com</a>
-</div>
-<div id="ref-dul2020orm" class="csl-entry">
-Dul, J., Van der Laan, E., &amp; Kuik, R. (2020). A statistical significance test for <span>Necessary Condition Analysis</span>. <em>Organizational Research Methods</em>, <em>23</em>(2), 385–395. <a href="https://doi.org/10.1177/1094428118795272">https://doi.org/10.1177/1094428118795272</a>
-</div>
+<div class="footnotes">
+<hr />
+<ol start="123">
+<li id="fn123"><p>The mathematical formula for the odds ratio is <span class="math inline">\(OR = \frac{c2 / c4}{c1 / c3} = \frac{c2 \cdot c3}{c1 \cdot c4}\)</span> where <span class="math inline">\(c1\)</span>, <span class="math inline">\(c2\)</span>, <span class="math inline">\(c3\)</span>, and <span class="math inline">\(c4\)</span> refer to the number of cases in corner 1, corner 2, corner 3, and corner 4, respectively. <span class="math inline">\(c2\)</span> is the number of cases in the treatment group with outcome success, <span class="math inline">\(c4\)</span> is the number of cases in the treatment group with outcome failure, <span class="math inline">\(c1\)</span> is the number of cases in the control group with outcome success (spontaneous success), and <span class="math inline">\(c3\)</span> is the number of cases in the control group with outcome failure. A value of <span class="math inline">\(OR &gt; 1\)</span> indicates that the condition <span class="math inline">\(X\)</span> is associated with a higher likelihood of <span class="math inline">\(Y\)</span>, suggesting that <span class="math inline">\(X\)</span> may be <em>probabilistically sufficient</em> to produce <span class="math inline">\(Y\)</span>.<a href="appendixaa.html#fnref123" class="footnote-back">↩︎</a></p></li>
+<li id="fn124"><p>The sufficiency experiment can be considered the deterministic version of the traditional experiment, namely when after the manipulation (Figure <a href="#fig:sufficiency1befaft"><strong>??</strong></a>), all cases of the treatment group are in corner 2. Then the odds ratio for estimating the average effect is infinite, regardless of the distribution of the cases in the control group: <span class="math inline">\((50/0)/(10/40) = \infty\)</span>. Note that this situation is named ‘perfect separation’ and is considered a problem for average effect statistical analysis. In this situation <span class="math inline">\(X\)</span> is called a ‘perfect predictor’, which is considered a statistical problem.<a href="appendixaa.html#fnref124" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="acknowledgments.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="appendixtprtnr.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="appendixc.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Necessary Condition Analysis (NCA)</title>
-  <meta name="description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <title>G Correlation by necessity | Necessary Condition Analysis (NCA)</title>
+  <meta name="description" content="G Correlation by necessity | Necessary Condition Analysis (NCA): Principles and Application" />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Necessary Condition Analysis (NCA)" />
+  <meta property="og:title" content="G Correlation by necessity | Necessary Condition Analysis (NCA)" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <meta property="og:description" content="G Correlation by necessity | Necessary Condition Analysis (NCA): Principles and Application" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Necessary Condition Analysis (NCA)" />
+  <meta name="twitter:title" content="G Correlation by necessity | Necessary Condition Analysis (NCA)" />
   
-  <meta name="twitter:description" content="Necessary Condition Analysis (NCA): Principles and Application" />
+  <meta name="twitter:description" content="G Correlation by necessity | Necessary Condition Analysis (NCA): Principles and Application" />
   
 
 <meta name="author" content="Jan Dul" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="acknowledgments.html"/>
+<link rel="prev" href="appendixaa.html"/>
+<link rel="next" href="appendixe.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -489,52 +489,398 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Necessary Condition Analysis (NCA)</h1>
-<h2 class="subtitle"><em>Principles and Application</em></h2>
-<p class="author"><em>Jan Dul</em></p>
+<div id="appendixc" class="section level1 hasAnchor" number="19">
+<h1><span class="header-section-number">G</span> Correlation by necessity<a href="appendixc.html#appendixc" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- A correlation is a common way to express a relationship between two continuous variables. It provides a simple, standardised and intuitve measure of how two variables move together. The direction and strengths are expressed in one number: the correlation coefficient ($r$) which is unit free and ranges between -1 and + 1. Part of its popularity is that it is computationally simple and widely taught as a first step in exploring data relationships. The regression coefficient $\beta_1$ of the regression equation $Y = \beta_0 + \beta_1 X + \varepsilon$ is closely related to the correlation coefficient: $\beta_1 = r \cdot \frac{s_Y}{s_X}$, where $s$ is the standard deviation. -->
+<!-- Just like the regression coefficient, also an observed correlation coefficient is often interpreted as a signal of a probabilistic sufficiency relationship, e.g., when testing a probabilistic sufficiency hypothesis.     -->
+<!-- This section shows, however, that also a necessity relationship can result in a correlation coefficient. This means that, without know the true relationship in a population, an observed correlation coefficient could be interpretated as both types of relationships. -->
+<p>A correlation is a commonly used measure to express the linear relationship between two continuous variables. It offers a simple, standardized, and intuitive indication of how variables move together in the data. The <em>correlation coefficient</em> <span class="math inline">\(r\)</span> captures both the direction and strength of a linear relationship in a single, unit-free number ranging from −1 to +1. Its popularity stems in part from its computational simplicity and its status as a widely taught first step in data analysis.</p>
+<p>The Pearson correlation coefficient is closely related to the regression coefficient <span class="math inline">\(b\)</span> from a simple linear regression equation: <span class="math inline">\(y = a + bx + \epsilon\)</span>:</p>
+<p><span class="math display" id="eq:correg">\[\begin{equation}
+\tag{G.1}
+r = b \cdot \frac{sd_x}{sd_y}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(sd_x\)</span> and <span class="math inline">\(sd_y\)</span> are the standard deviations of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, respectively.</p>
+<p>Like the regression coefficient, the observed correlation coefficient is often <em>interpreted</em> as evidence of a probabilistic sufficiency relationship, especially when testing hypotheses of that nature. However, this section shows that an observed non-zero correlation can also be produced by any relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, including a necessity relationship.</p>
+<p>This implies that, without knowing the true underlying relationship in the population, an observed correlation coefficient could be interpreted both as an indication for a probabilistic sufficiency, or as a necessity relationship, or as something else. In other words, causality cannot be found from data, but data can be analyzed with different causal perspectives in mind (Section <a href="causality.html#underdetermination">2.7</a>).</p>
+<!-- The  linear relationship between two variables can be expressed by a single numerical value: the correlation coefficient. For example, the Pearson correlation coefficient ($r$) measures the linear association between two continuous variables $X$ and $Y$. The observed correlation may be the result of a linear causal relationship between $X$ and $Y$. This is not only possible when $X$ and $Y$ have a probabilistic sufficiency relationship (if $X$, then probably $Y$) but also when $X$ and $Y$ have a necessity relationship (if not $X$, then not $Y$). When the correlation results from a probabilistic sufficiency relationship the true relationship in the population can be described by a combination of factors that together have an _average_ effect on the outcome. A simple linear version of such a probabilistic sufficiency model is $a + bX = Y$, where $X$ is the cause, and $Y$ is the (average) effect. If $X$ increases, then the probability of $Y$ increases. Statistically, this relationship can be statistically modeled using the linear regression equation  $Y = a + bX + \epsilon$, where $\epsilon$ is an error term capturing the variation of individual observations around the average effect. -->
+<p>Figure <a href="appendixc.html#fig:corregnecfig">G.1</a> Left shows an <span class="math inline">\(XY\)</span>-plot in which the solid line represents a true linear probabilistic sufficiency relationship in the population. The population data were generated with a fixed <span class="math inline">\(X\)</span> with values between 0 and 1, and normally distributed random variables <span class="math inline">\(Y\)</span> and <span class="math inline">\(\epsilon\)</span> with zero averages and standard deviations of 1. A random sample of 100 cases was drawn from this population, and the relationship was estimated using ordinary least squares (OLS) regression (dashed line in the center). This shows that the estimated and the true average relationship are very close, as expected. The sample correlation coefficient is 0.25. The estimated ceiling line (dashed line at the top) illustrates that NCA does not capture the underlying probabilistic sufficiency relationship in the population. The empty space is only an artifact of finite sampling: the points could be there according to the normal distributions of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, but were not observed.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:corregnecfig"></span>
+<img src="correlation_regr1.png" alt="Correlation by probabilistic sufficiency (Left) and by necessity (Right). Random samples (n = 100) from a population with probabilistic sufficiency (solid line, Left) and necessity (solid line, Right). The dashed lines are estimated lines by OLS regression (center lines) and by NCA (ceiling lines)." width="45%" /><img src="correlation_nec1.png" alt="Correlation by probabilistic sufficiency (Left) and by necessity (Right). Random samples (n = 100) from a population with probabilistic sufficiency (solid line, Left) and necessity (solid line, Right). The dashed lines are estimated lines by OLS regression (center lines) and by NCA (ceiling lines)." width="45%" />
+<p class="caption">
+Figure G.1: Correlation by probabilistic sufficiency (Left) and by necessity (Right). Random samples (n = 100) from a population with probabilistic sufficiency (solid line, Left) and necessity (solid line, Right). The dashed lines are estimated lines by OLS regression (center lines) and by NCA (ceiling lines).
+</p>
 </div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>“Is coffee a necessary condition for you?” Someone asked me this question after hearing that I had taken time away in Italy to focus on writing my book, and that I like Italy’s coffee culture. “No, it is not; it only helps.” Focus, time, perseverance, and several other things are true necessary conditions. Without any of them, the book would not exist.</p>
-<p>And here it is! In the book I present the principles of Necessary Condition Analysis (NCA) and their application in empirical studies in research and practice. NCA is an approach that uses necessity causal logic to identify necessary conditions from data. The core idea is that a necessary condition must be present to make the outcome possible, and that its absence guarantees the absence of the outcome. Compensation is not possible.</p>
-<p>My intention with this book is to help researchers, data analysts, practitioners, and others develop a deeper understanding of the NCA approach and apply it effectively and with high-quality standards. The book brings together the fundamentals of NCA and integrates the most recent methodological advancements and tools. It synthesizes ideas from my earlier publications that describe NCA at introductory levels <span class="citation">(e.g., <a href="#ref-dul2016orm">Dul, 2016b</a>, <a href="#ref-dul2020book">2020</a>)</span> as well as more advanced treatments <span class="citation">(<a href="#ref-dul2020orm">Dul, Van der Laan, et al., 2020</a>; <a href="#ref-dul2021online">Dul, 2021</a>, <a href="#ref-dul2024different">2024a</a>)</span>, while also introducing more background, new topics, and recent developments. From 2021 to 2026, a regularly updated online predecessor of this book was available <span class="citation">(<a href="#ref-dul2021online">Dul, 2021</a>)</span>, which is now archived and integrated into the present book.</p>
-<p>The first chapter of this book provides a general introduction to the possibilities and current use of NCA. Next, Part I contains five chapters on the <em>principles</em> of NCA, covering NCA’s causality, theory, mathematics, statistics, and its credibility for identifying necessity from data. Part II has six chapters about the <em>application</em> of these principles in empirical studies discussing NCA’s hypothesis formulation, data collection, data analysis, reporting, and how to apply NCA in multimethod research and in practice. I finish the book with a summary and a personal reflection.</p>
-<p>The book’s content expresses my current understanding and interpretation of NCA. NCA develops over time, just like other methodological approaches do. As NCA is applied more widely, new questions, topics, insights, and ideas will emerge. An online version of the book with updates and additional materials is available via the book-page: <a href="https://jandul.github.io/NCA/" class="uri">https://jandul.github.io/NCA/</a>. For the physical version of the book see <span class="citation">Dul (<a href="#ref-dul2025book">2026</a>)</span>.</p>
-<p>I hope this book serves those who wish to gain a comprehensive understanding of the principles of NCA and their application, both in academic research and practical contexts.</p>
-<p>Enjoy discovering and applying NCA!<br />
- 
- <br />
-Leiden, March 2026</p>
+<p><br />
+</p>
+<p>Figure <a href="appendixc.html#fig:corregnecfig">G.1</a> Right shows a similar <span class="math inline">\(XY\)</span>-plot in which the solid line now represents a true linear <em>necessity</em> relationship in the population. The population data were generated with bounded variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> with values between 0 and 1 and a uniform distribution below the ceiling (see Section <a href="statistics.html#statisticalmodeling">5.4</a>). A sample of 100 cases was randomly drawn from this population and the relationship was estimated with the NCA’s C-LP ceiling line (solid line at the top). This shows that the estimated and the true necessity relationship are very close. The sample correlation coefficient is 0.19. The estimated OLS regression line in the center of the data (dotted line) illustrates that regression analysis does not capture the underlying necessity relationship in the population. The correlation is only an artifact of the necessity relationship due to the selected distribution of data below the ceiling.</p>
+<p>The examples show that both types of relationships can produce a correlation coefficient. Since in these examples the data generation process is known, namely induced probabilistic sufficiency and necessity, respectively, it is easy to conclude in which situation the regression line and in which situation the ceiling line best represents the causal relationship in the population whereas the observed correlation is not informative for this. Unfortunately, in empirical studies the true causal relationship in the population is unknown, and an observed correlation does not tell what the underlying relationship was: probabilistic sufficiency, necessity or something else. Usually the analyst decides (e.g., based on theory) whether the underlying causality is probabilistic sufficiency, necessity (or both), and selects the appropriate estimation technique(s) accordingly. It is incorrect to assume a probabilistic relationship and apply NCA, just as it is inappropriate to assume a necessity relationship and apply regression analysis. Both represent a mismatch between theory and method, leading to a theory-method misfit (see Section <a href="multimethodstudies.html#methodtriangulationversuscausalpluralism">11.2</a>). The often implicit assumption that the correlation coefficient indicates the presence of a probabilistic sufficiency relationship is incorrect if the underlying causality is necessity, but there is no way to evaluate this. The use of an (implicit) automatism to select probabilistic sufficiency as the underlying causality may have two reasons. First, this causal perspective is currently the main paradigm of causality. Second, the correlation coefficient <span class="math inline">\(r\)</span> and the regression coefficient <span class="math inline">\(b\)</span> are closely related and can be expressed by a simple mathematical equation (see Equation <a href="appendixc.html#eq:correg">(G.1)</a>).</p>
+<!-- For empirical testing of a necessity relationship (e.g., as expressed in a hypothesis) the relationship is modeled as a  single factor that enables the outcome (_necessity logic_). Such model captures the single necessary factor independently of all other causal factors. This necessity model corresponds to the NCA ceiling line.  -->
+<!-- A simple linear necessity model (ceiling line) is $a_c + b_cx = y$, in which $a_c$ is the intercept of the ceiling line and $b_c$ is the slope of the ceiling line that take values of 0.4 and 1 respectively. This can be represented by the ceiling equation  $y \leq  a_c + b_cx$. -->
+<!-- Figure \@ref(fig:nccor) shows a $XY$-scatter plot of 100 cases randomly selected from a population in which this linear ceiling relationship holds. $X$ is a random variable between 0 and 1, and $Y$ is a uniform distributed random variable bounded by the ceiling line. The simulation shows that the necessity relationship results in a correlation of 0.38.  -->
+<!-- The true (because induced) _necessity_ relationship in the population (in this case linear ceiling with parameters $a$ = 0.4 and $b$ = 1) can be described with a ceiling line on top  of the data (solid line). It would not be correct to draw a regression line through the middle of the data and interpret it as representing a sufficiency relationship between $X$ and $Y$ (dashed line).   -->
+<!-- ### Interpretation of correlation when causality is unknown   -->
+<!-- $$\begin{aligned} -->
+<!-- r = b * sd(x)/sd(y)\\\end{aligned}$$ -->
+<!-- where $r$ is the sample's  correlation coefficient, $b$ the regression coefficient, and $sd$ the standard deviation. -->
+<p>A similar simple mathematical equation for the relationship between the regression coefficient and the correlation coefficient as in Equation <a href="appendixc.html#eq:correg">(G.1)</a> is not available for the relationship between necessity effect size and correlation coefficient. However, with certain assumptions, such a relationship can be derived. The general equation for the correlation coefficient can be written as:</p>
+<p><span class="math display">\[\begin{aligned}
+\rho_{XY} &amp; = \frac{{{E}}(XY) - {{E}}(X) {{E}}(Y)}{\sqrt{{{E}}(X^2) - {{E}}(X)^2} \sqrt{{{E}}(Y^2) - {{E}}(Y)^2}} \\\end{aligned}\]</span></p>
+<p>where <span class="math inline">\(\rho_{XY}\)</span> is the Pearson correlation coefficient, and <span class="math inline">\(E\)</span> is the expected value.</p>
+<p>For a linear ceiling line <span class="math inline">\(f(x) = a + bx\)</span> and a uniform distribution under the ceiling and within the bounding box (unit box), the correlation coefficient can be derived analytically, as shown below.<a href="#fn125" class="footnote-ref" id="fnref125"><sup>125</sup></a></p>
+<div id="situation" class="section level2 unnumbered hasAnchor">
+<h2>Situation<a href="appendixc.html#situation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Consider a linear case with a tight bounding box (unit box): <span class="math inline">\(0 &lt; a &lt;1 &lt; a+b\)</span> (Figure <a href="appendixc.html#fig:boundinglinefig">G.2</a>).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:boundinglinefig"></span>
+<img src="boundingline.png" alt="Parameters: $0 &lt; a &lt; 1 &lt; a+b$." width="45%" />
+<p class="caption">
+Figure G.2: Parameters: <span class="math inline">\(0 &lt; a &lt; 1 &lt; a+b\)</span>.
+</p>
 </div>
-<h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
-<div id="ref-dul2016orm" class="csl-entry">
-Dul, J. (2016b). <span>Necessary Condition Analysis</span> (<span>NCA</span>): Logic and methodology of <span>“necessary but not sufficient”</span> causality. <em>Organizational Research Methods</em>, <em>19</em>(1), 10–52. <a href="https://doi.org/10.1177/1094428115584005">https://doi.org/10.1177/1094428115584005</a>
+<!-- ```{=latex} -->
+<!-- \begin{figure}[ht] -->
+<!-- \centering -->
+<!-- \begin{tikzpicture}[scale=.6] -->
+<!-- \draw[->] (0,0) -- (8.5,0); -->
+<!-- \draw[->] (0,0) -- (0,8.5); -->
+<!-- \node at (8.9,0) {$x$}; -->
+<!-- \node at (0,8.9) {$y$}; -->
+<!-- \draw[-] (0,8) -- (8,8); -->
+<!-- \draw[->] (8,0) -- (8,8); -->
+<!-- \coordinate (x0) at (6,8); -->
+<!-- \coordinate (x00) at (6,0); -->
+<!-- \coordinate (a) at (0,3); -->
+<!-- \draw[color = black, line width=1.2pt] (0,0) -- (a); -->
+<!-- \draw[color = black, line width=1.2pt] (x0) -- (a); -->
+<!-- \draw[color = black, line width=1.2pt] (x0) -- (8,8); -->
+<!-- \draw[dashed] (x0) -- (x00); -->
+<!-- \node[shift={(0,-0.3)}] at (x00) {$x_0 = \frac{1-a}{b}$}; -->
+<!-- \node[shift={(-0.3,0)}] at (a) {$a$}; -->
+<!-- \node[shift={(-0.3,0)}] at (0,8) {$1$}; -->
+<!-- \node[shift={(0,-0.3)}] at (8,0) {$1$}; -->
+<!-- \end{tikzpicture} -->
+<!-- \caption{Parameters: $0 < a < 1 < a + b$.} -->
+<!-- \label{fig:boundingline} -->
+<!-- \end{figure} -->
+<!-- ``` -->
+<p>Define <span class="math inline">\(L(x) = \min\{1,a+bx\}\)</span>.
+<span class="math display">\[\begin{align} F_{a,b} &amp; \equiv \int_0^1 L(x) \,dx = \text{surface area below thick line} \\
+   &amp; = 1 - \text{surface area above thick line} \\
+   &amp; = 1 - \tfrac{1}{2} (1-a) x_0 = 1 - \frac{(1-a)^2}{2b} \end{align}\]</span>
+Uniform distribution <span class="math inline">\((X,Y)\)</span> below the ceiling line:
+<span class="math display">\[\begin{align}
+X &amp; \propto \frac{1}{F_{a,b}} L(x) \,dx \\
+Y|X &amp; \propto \frac{I_{[0,L(x)]}(y)}{L(x)}  \,dy
+\end{align}\]</span>
+where <span class="math inline">\(X\)</span> is a random variable, <span class="math inline">\(Y|X\)</span> is a random variable <span class="math inline">\(Y\)</span> conditioned on <span class="math inline">\(X\)</span> and <span class="math inline">\(\propto\)</span> means `distributed with a density function given as’. Further, <span class="math inline">\(I_{[0,L(x)]}\)</span> is the indicator function for the interval <span class="math inline">\([0,L(x)]\)</span>.
+Note that
+<span class="math display">\[ (X,Y) \propto \frac{1}{F_{a,b}} I_{[0,L(x)]}(y) \,dx \, \,dy = \frac{1}{F_{a,b}} I_{ y \leq a + bx}(x,y) \,dx \, \,dy \]</span>
+is indeed the (normalized) uniform distribution below the line .</p>
+<p>The text below uses four values, <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(x_0\)</span>, and <span class="math inline">\(F_{a,b}\)</span> to formulate expressions. Two are all that are needed. Indeed, for example,
+<span class="math display">\[\begin{align*}
+\frac{1-F_{a,b}}{x_0} &amp; = \frac{\frac{(1-a)^2}{2b}}{(1-a)/b} = \tfrac{1}{2} (1-a)
+\end{align*}\]</span>
+and so
+<span class="math display">\[ a =  1- 2 \frac{1-F_{a,b}}{x_0} \quad \text{or} \quad x_0 = 2 \frac{1-F_{a,b}}{1-a} \quad \text{or} \quad F_{a,b} = 1 - x_0 (1-a)/2 . \]</span>
+Likewise
+<span class="math display">\[ b = (1-a)/x_0 = \left( \frac{1- 2 \frac{1-F_{a,b}}{x_0}}{x_0}  \right) .\]</span></p>
 </div>
-<div id="ref-dul2020book" class="csl-entry">
-Dul, J. (2020). <em><span>Conducting Necessary Condition Analysis</span>.</em> Sage. <a href="https://uk.sagepub.com/en-gb/eur/conducting-necessary-condition-analysis-for-business-and-management-students/book262898">https://uk.sagepub.com/en-gb/eur/conducting-necessary-condition-analysis-for-business-and-management-students/book262898</a>
+<div id="symmetry-transformation" class="section level2 unnumbered hasAnchor">
+<h2>Symmetry transformation<a href="appendixc.html#symmetry-transformation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Consider the `double flip + transposition’ transformation:
+<span class="math display">\[ (x,y) \mapsto (\alpha,\beta) \equiv (1-y,1-x) . \]</span>
+In <span class="math inline">\(\alpha\beta\)</span> coordinates, Figure <a href="appendixc.html#fig:boundinglinefig">G.2</a> presents itself as Figure <a href="appendixc.html#fig:flipboundinglinefig">G.3</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:flipboundinglinefig"></span>
+<img src="flipboundingline.png" alt="Parameters: $\hat{a}=1-a$ with $0 &lt; \hat{a} &lt; 1$ and $0 &lt; x_0 &lt; 1$." width="45%" />
+<p class="caption">
+Figure G.3: Parameters: <span class="math inline">\(\hat{a}=1-a\)</span> with <span class="math inline">\(0 &lt; \hat{a} &lt; 1\)</span> and <span class="math inline">\(0 &lt; x_0 &lt; 1\)</span>.
+</p>
 </div>
-<div id="ref-dul2021online" class="csl-entry">
-Dul, J. (2021). <em><span class="nocase">Advances in Necessary Condition Analysis.</span></em> online book. <a href="https://bookdown.org/ncabook/advanced_nca2/">https://bookdown.org/ncabook/advanced_nca2/</a>
+<!-- ```{=latex} -->
+<!-- \begin{figure}[ht] -->
+<!-- \centering -->
+<!-- \begin{tikzpicture}[scale=.6] -->
+<!-- \draw[->] (0,0) -- (8.5,0); -->
+<!-- \draw[->] (0,0) -- (0,8.5); -->
+<!-- \node at (8.9,0) {$\alpha$}; -->
+<!-- \node at (0,8.9) {$\beta$}; -->
+<!-- \draw[-] (0,8) -- (8,8); -->
+<!-- \draw[->] (8,0) -- (8,8); -->
+<!-- \coordinate (x0) at (5,8); -->
+<!-- \coordinate (x00) at (5,0); -->
+<!-- \coordinate (a) at (0,2); -->
+<!-- \draw[color = black, line width=1.2pt] (0,0) -- (a); -->
+<!-- \draw[color = black, line width=1.2pt] (x0) -- (a); -->
+<!-- \draw[color = black, line width=1.2pt] (x0) -- (8,8); -->
+<!-- \draw[dashed] (x0) -- (x00); -->
+<!-- \node[shift={(0,-0.3)}] at (x00) {$\hat{a}$}; -->
+<!-- \node[shift={(-0.6,0)}] at (a) {$1-x_0$}; -->
+<!-- \node[shift={(-0.3,0)}] at (0,8) {$1$}; -->
+<!-- \node[shift={(0,-0.3)}] at (8,0) {$1$}; -->
+<!-- \end{tikzpicture} -->
+<!-- \caption{Parameters: $\hat{a}=1-a$ with $0 < \hat{a} < 1$ and $ 0 < x_0 < 1$.} -->
+<!-- \label{fig:flipboundingline} -->
+<!-- \end{figure} -->
+<!-- ``` -->
+<p>The ceiling function in <span class="math inline">\(\alpha \beta\)</span> coordinates is <span class="math inline">\(\hat{L}(\alpha) = \min(1, (1-x_0) + (1/b) \beta\)</span>.
+Now
+<span class="math display">\[ E{Y} = E(1-\alpha) = 1 - E(\alpha) \]</span>
+where, by symmetry,
+<span class="math display">\[ E(\alpha) = E(X) \quad [\text{where $x_0 \leftrightarrow \hat{a}$}] . \]</span>
+Note that under the symmetry <span class="math inline">\(x_0 \leftrightarrow \hat{a}\)</span> the value of <span class="math inline">\(F_{a,b} = 1 - \tfrac{1}{2} x_0 \hat{a}\)</span> is evidently invariant.</p>
 </div>
-<div id="ref-dul2024different" class="csl-entry">
-Dul, J. (2024a). A different causal perspective with <span>Necessary Condition Analysis</span>. <em>Journal of Business Research</em>, <em>177</em>, 114618. <a href="https://doi.org/10.1016/j.jbusres.2024.114618">https://doi.org/10.1016/j.jbusres.2024.114618</a>
+<div id="correlation" class="section level2 unnumbered hasAnchor">
+<h2>Correlation<a href="appendixc.html#correlation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[ \rho_{XY} = \frac{E(XY) - E(X) E(Y)}{\sigma_X \sigma_Y} . \]</span>
+Five integrals:</p>
+<ol style="list-style-type: decimal">
+<li>Expectation of <span class="math inline">\(X\)</span>.</li>
+</ol>
+<p><span class="math display">\[\begin{align*}
+E(X) &amp;= \frac{1}{F_{a,b}} \int_0^1 x L(x)\,dx \\
+     &amp;= \frac{1}{F_{a,b}} \int_0^1 x \min\{1,a+bx\}\,dx\\
+     &amp;= \frac{1}{F_{a,b}} \left( \int_0^{(1-a)/b} (ax + bx^2)\,dx + \int_{(1-a)/b}^1 x\,dx \right) \\
+     &amp;= \frac{1}{F_{a,b}} \left( \left.(\tfrac{1}{2}ax^2 + \tfrac{1}{3}bx^3)\right|_{0}^{(1-a)/b} + \left.\tfrac{1}{2}x^2\right|_{(1-a)/b}^{1} \right) \\
+     &amp;= \frac{1}{F_{a,b}} \left( \tfrac{1}{2}a \left(\frac{1-a}{b}\right)^2 + \tfrac{1}{3}b\left(\frac{1-a}{b}\right)^3 + \tfrac{1}{2} - \tfrac{1}{2} \left(\frac{1-a}{b}\right)^2 \right)\\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 + (a + \tfrac{2}{3}(1-a) + 1)\left(\frac{1-a}{b}\right)^2 \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{1}{3}(1-a)\left(\frac{1-a}{b}\right)^2 \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \tfrac{2}{3}\frac{(1-a)}{b} - \tfrac{2}{3}\frac{(1-a)}{b}\frac{(1-a)^2}{2b} + 1 - \tfrac{2}{3}\frac{(1-a)}{b} \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \tfrac{2}{3}\frac{(1-a)}{b}F_{a,b} + 1 - \tfrac{2}{3}\frac{(1-a)}{b} \right) \\
+     &amp;= \tfrac{1}{2} \left( \tfrac{2}{3}\frac{(1-a)}{b} + \left(1 - \tfrac{2}{3}\frac{(1-a)}{b}\right)\frac{1}{F_{a,b}} \right) \\
+     &amp;= \tfrac{1}{2} \left( \tfrac{2}{3}x_0 + \left(1 - \tfrac{2}{3}x_0\right)\frac{1}{F_{a,b}} \right)\\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}x_0 + \tfrac{2}{3}x_0 F_{a,b} \right).
+\end{align*}\]</span></p>
+<p>Note. As <span class="math inline">\(\frac{1}{F_{a,b}} \geq 1\)</span> we have</p>
+<p><span class="math display">\[
+E(X) = \tfrac{1}{2} \left( \tfrac{2}{3} x_0 + \left( 1 - \tfrac{2}{3} x_0 \right) \frac{1}{F_{a,b}} \right) \geq \tfrac{1}{2} \left( \tfrac{2}{3} x_0 + 1 - \tfrac{2}{3} x_0 \right) = \tfrac{1}{2}
+\]</span></p>
+<p>as is evident from Figure <a href="appendixc.html#fig:boundinglinefig">G.2</a>. Reworking <span class="math inline">\(E(X)\)</span> (into <span class="math inline">\(\hat{a}\)</span> and <span class="math inline">\(x_0\)</span>) we obtain</p>
+<p><span class="math display">\[\begin{align*}
+E(X) &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3} x_0 + \tfrac{2}{3} x_0 F_{a,b} \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3} x_0 + \tfrac{2}{3} x_0 (1-\tfrac{1}{2} \hat{a} x_0) \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{1}{3} \hat{a}\,x_0^2 \right).
+\end{align*}\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Expectation of <span class="math inline">\(Y\)</span>. Note that <span class="math inline">\(E(Y) = E(E(Y \mid X))\)</span>.</li>
+</ol>
+<p>Step 1.</p>
+<p><span class="math display">\[
+E(Y \mid X=x) = \int_0^{L(x)} y \frac{I_{[0,L(x)]}(y)}{L(x)}\,dy = \left.\tfrac{1}{2}\frac{y^2}{L(x)}\right|_{0}^{L(x)} = \tfrac{1}{2}L(x).
+\]</span></p>
+<p>Step 2.</p>
+<p><span class="math display">\[\begin{align*}
+E(Y) &amp;= \int_0^{1} \tfrac{1}{2} L(x)\frac{L(x)}{F_{a,b}}\,dx \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \int_0^{(1-a)/b} (a+bx)^2\,dx + \int_{(1-a)/b}^1\,dx \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \int_0^{(1-a)/b} (a^2 + 2abx + b^2x^2)\,dx + \int_{(1-a)/b}^1\,dx \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \left.(a^2x + abx^2 + \tfrac{1}{3}b^2x^3)\right|_{0}^{(1-a)/b} + \left.x\right|_{(1-a)/b}^{1} \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( a^2 \frac{1-a}{b} + ab\left(\frac{1-a}{b}\right)^2 + \tfrac{1}{3} b^2\left(\frac{1-a}{b}\right)^3 + 1 - \frac{1-a}{b} \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( a^2 x_0 + 2a \frac{(1-a)^2}{2b} + \tfrac{2}{3}(1-a)\frac{(1-a)^2}{2b} + 1 - x_0 \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( a^2 x_0 + (2a + \tfrac{2}{3}(1-a))(1 - F_{a,b}) + 1 - x_0 \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - x_0 + a^2 x_0 + \tfrac{2}{3}(2a + 1)(1 - F_{a,b}) \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 + (a-1)(a+1)x_0 + \tfrac{2}{3}(2a + 1)(1 - F_{a,b}) \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - 2(a+1)(1-F_{a,b}) + \tfrac{2}{3}(2a + 1)(1 - F_{a,b}) \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}(a+2)(1-F_{a,b}) \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}(a+2) + \tfrac{2}{3}(a+2)F_{a,b} \right).
+\end{align*}\]</span></p>
+<p>Set <span class="math inline">\(\theta(a) = \tfrac{1}{3}(a+2) \leq \tfrac{1}{3}(1+2) = 1\)</span>. Also, evidently <span class="math inline">\(\theta(a) \geq \tfrac{2}{3}\)</span>. Now</p>
+<p><span class="math display">\[\begin{align*}
+E(Y) &amp;= \frac{1}{2F_{a,b}} ( 1 - 2\theta(a) + 2\theta(a) F_{a,b} ) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - 2\theta(a)(1 - F_{a,b}) \right) \\
+     &amp;\leq \frac{1}{2F_{a,b}} \left( 1 - \tfrac{4}{3}(1 - F_{a,b}) \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( - \tfrac{1}{3} + \tfrac{4}{3} F_{a,b} \right) \\
+     &amp;= \frac{1}{2} \left( - \tfrac{1}{3}\frac{1}{F_{a,b}} + \tfrac{1}{3} + 1 \right) \leq \frac{1}{2}.
+\end{align*}\]</span></p>
+<p>Note that the final inequality is strict for <span class="math inline">\(F_{a,b} &lt; 1\)</span>. The inequality <span class="math inline">\(E(Y) \leq \tfrac{1}{2}\)</span> is evident from Figure <a href="appendixc.html#fig:boundinglinefig">G.2</a>.</p>
+<p><em>Alternative calculation</em>.</p>
+<p><span class="math display">\[\begin{align*}
+E(Y) &amp;= \int_0^{1} \tfrac{1}{2} L(x)\frac{L(x)}{F_{a,b}}\,dx \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \int_0^{(1-a)/b} (a+bx)^2\,dx + \int_{(1-a)/b}^1\,dx \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \frac{1}{b} \int_a^{1} z^2\,dz + \left.x\right|_{(1-a)/b}^{1} \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \frac{1}{3b} \left.z^3\right|_{a}^{1} + \left.x\right|_{(1-a)/b}^{1} \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( \frac{1}{3b}(1-a^3) + 1 - \frac{1-a}{b} \right).
+\end{align*}\]</span></p>
+<p>Note that</p>
+<p><span class="math display">\[\begin{align*}
+a^2 (1-a) + a(1-a)^2 + \tfrac{1}{3} (1-a)^3 &amp;= a^2-a^3 + a(1-2a+a^2) + \tfrac{1}{3} (1-a)(1-2a+a^2) \\
+&amp;= a - a^2 + \tfrac{1}{3} (1-2a+a^2-a+2a^2-a^3) \\
+&amp;= a - a^2 + \tfrac{1}{3}(1-a^3) - a + a^2 = \tfrac{1}{3}(1-a^3).
+\end{align*}\]</span></p>
+<p>Also note</p>
+<p><span class="math display">\[
+(1-a^3) = (1-a) (3a + (1-a)^2) = (1-a) (3a + 1-2a + a^2) = (1-a) (1 + a + a^2).
+\]</span></p>
+<p>Reworking <span class="math inline">\(E(Y)\)</span> (into <span class="math inline">\(\hat{a}\)</span> and <span class="math inline">\(x_0\)</span>) using the symmetry</p>
+<p><span class="math display">\[\begin{align*}
+E(Y) &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}(a+2) + \tfrac{2}{3}(a+2) F_{a,b} \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}(1-\hat{a}+2) + \tfrac{2}{3}(1-\hat{a}+2)(1-\tfrac{1}{2} x_0 \hat{a}) \right) \\
+     &amp;= \frac{1}{2F_{a,b}} \left( 1 - \tfrac{1}{3}(3-\hat{a}) x_0 \hat{a} \right) \\
+     &amp;= 1 - \frac{1}{2F_{a,b}} \left( -1 + 2 F_{a,b} + \tfrac{1}{3}(3-\hat{a}) x_0 \hat{a} \right) \\
+     &amp;= 1 - \frac{1}{2F_{a,b}} \left( -1 + 2 - x_0 \hat{a} + \tfrac{1}{3}(3-\hat{a}) x_0 \hat{a} \right) \\
+     &amp;= 1 - \frac{1}{2F_{a,b}} \left( 1 - \tfrac{1}{3} x_0 \hat{a}^2 \right) = 1 - E(X)\,[\text{where $x_0 \leftrightarrow \hat{a}$}].
+\end{align*}\]</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Second moment of <span class="math inline">\(X\)</span>.</li>
+</ol>
+<p><span class="math display">\[\begin{align*}
+E(X^2) &amp;= \frac{1}{F_{a,b}} \int_0^1 x^2 L(x)\,dx \\
+       &amp;= \frac{1}{F_{a,b}} \int_0^1 x^2 \min\{1,a+bx\}\,dx\\
+       &amp;= \frac{1}{F_{a,b}} \left( \int_0^{(1-a)/b} (ax^2 + bx^3)\,dx + \int_{(1-a)/b}^1 x^2\,dx \right) \\
+       &amp;= \frac{1}{F_{a,b}} \left( \left.(\tfrac{1}{3}ax^3 + \tfrac{1}{4}bx^4)\right|_{0}^{(1-a)/b} + \left.\tfrac{1}{3}x^3\right|_{(1-a)/b}^{1} \right) \\
+       &amp;= \frac{1}{F_{a,b}} \left( \tfrac{1}{3}a \left(\frac{1-a}{b}\right)^3 + \tfrac{1}{4}b\left(\frac{1-a}{b}\right)^4 + \tfrac{1}{3} - \tfrac{1}{3} \left(\frac{1-a}{b}\right)^3 \right)\\
+       &amp;= \frac{1}{F_{a,b}} \left( \tfrac{1}{3} - \tfrac{8}{3}(1-a)\left(\frac{1-a}{2b}\right)^3 + 2(1-a)\left(\frac{1-a}{2b}\right)^3 \right)\\
+       &amp;= \frac{1}{F_{a,b}} \left( \tfrac{1}{3} - \tfrac{8}{3}\left(\frac{(1-a)}{2b}\right)^2 \left(\frac{(1-a)^2}{2b}\right) + 2\left(\frac{(1-a)}{2b}\right)^2 \left(\frac{(1-a)^2}{2b}\right) \right)\\
+       &amp;= \frac{1}{F_{a,b}} \left( \tfrac{1}{3} - \tfrac{2}{3} x_0^2 (1-F_{a,b}) + \tfrac{1}{2} x_0^2 (1-F_{a,b}) \right) \\
+       &amp;= \frac{1}{F_{a,b}} \left( \tfrac{1}{3} - \tfrac{1}{6} x_0^2 (1-F_{a,b}) \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( (1 - \tfrac{1}{2} x_0^2) + \tfrac{1}{2} x_0^2 F_{a,b} \right).
+\end{align*}\]</span></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Second moment of <span class="math inline">\(Y\)</span>. Note <span class="math inline">\(E(Y^2) = E(E(Y^2 \mid X))\)</span>.</li>
+</ol>
+<p>Step 1.</p>
+<p><span class="math display">\[
+E(Y^2 \mid X=x) = \int_0^{L(x)} y^2 \frac{I_{[0,L(x)]}(y)}{L(x)}\,dy = \left.\tfrac{1}{3}\frac{y^3}{L(x)}\right|_{0}^{L(x)} = \tfrac{1}{3}(L(x))^2.
+\]</span></p>
+<p>Step 2.</p>
+<p><span class="math display">\[\begin{align*}
+E(Y^2) &amp;= \int_0^{1} \tfrac{1}{3}(L(x))^2 \frac{L(x)}{F_{a,b}}\,dx \\
+       &amp;= \frac{1}{3F_{a,b}} \left( \int_0^{(1-a)/b} (a+bx)^3\,dx + \int_{(1-a)/b}^1\,dx \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( \int_a^{1} z^3 \frac{1}{b}\,dz + \left.x\right|_{(1-a)/b}^{1} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( \frac{1}{b} \left.\tfrac{1}{4}z^4\right|_{a}^{1} + 1 - \frac{1-a}{b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( \frac{1}{4b} (1-a^4) + 1 - \frac{1-a}{b} \right).
+\end{align*}\]</span></p>
+<p>Note that <span class="math inline">\(1-a^4 = (1-a)(1+a+a^2+a^3) = (1-a^3) + (1-a)a^3\)</span>. Also, <span class="math inline">\(1-a^4 = (1-a^2)(1+a^2) = (1-a)(1+a)(1+a^2)\)</span>. We continue:</p>
+<p><span class="math display">\[\begin{align*}
+E(Y^2) &amp;= \frac{1}{3F_{a,b}} \left( \frac{1}{4b} (1-a)(1+a)(1+a^2) + 1 - \frac{1-a}{b} \right).
+\end{align*}\]</span></p>
+<p>Alternative:</p>
+<p><span class="math display">\[\begin{align*}
+E(Y^2) &amp;= \int_0^{1} \tfrac{1}{3}(L(x))^2 \frac{L(x)}{F_{a,b}}\,dx \\
+       &amp;= \frac{1}{3F_{a,b}} \left( \int_0^{(1-a)/b} (a+bx)^3\,dx + \int_{(1-a)/b}^1\,dx \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( \int_0^{(1-a)/b} (a^3 + 3a^2bx + 3ab^2x^2 + b^3x^3)\,dx + \left.x\right|_{(1-a)/b}^{1} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( \left.a^3x + \tfrac{1}{2} 3a^2bx^2 + ab^2x^3 + \tfrac{1}{4}b^3x^4\right|_{0}^{(1-a)/b} + 1 - \frac{1-a}{b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( a^3\frac{1-a}{b} + \tfrac{3}{2} a^2b\left(\frac{1-a}{b}\right)^2 + ab^2\left(\frac{1-a}{b}\right)^3 + \tfrac{1}{4}b^3\left(\frac{1-a}{b}\right)^4 + 1 - \frac{1-a}{b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( a^3 x_0 + 3 a^2 (1-F_{a,b}) + 2a(1-a) (1-F_{a,b}) + \tfrac{1}{2} (1-a)^2 (1-F_{a,b}) + 1 - x_0 \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left(1 - (1 - a^3) x_0 + \left(3 a^2 + 2a(1-a) + \tfrac{1}{2} (1-a)^2 \right) (1-F_{a,b}) \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left(1 - (1 - a^3) x_0 + \left(3a^2 + 2a - 2a^2 + \tfrac{1}{2} - a + \tfrac{1}{2} a^2 \right) (1-F_{a,b}) \right).
+\end{align*}\]</span></p>
+<p>Continuing:</p>
+<p><span class="math display">\[\begin{align*}
+E(Y^2) &amp;= \frac{1}{3F_{a,b}} \left(1 - (1 - a^3) x_0 + \left(\tfrac{1}{2} + a + \tfrac{3}{2} a^2 \right) (1-F_{a,b}) \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left(1 - (1 - a)(1+a+a^2) \frac{1-a}{b} + \left(\tfrac{1}{2} + a + \tfrac{3}{2} a^2 \right) (1-F_{a,b}) \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left(1 - 2(1+a+a^2) (1-F_{a,b}) + \left(\tfrac{1}{2} + a + \tfrac{3}{2} a^2 \right) (1-F_{a,b}) \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left(1 - \tfrac{1}{2} (3 + 2a + a^2) (1-F_{a,b}) \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left(- \tfrac{1}{2} - a - \tfrac{1}{2}a^2 + \tfrac{1}{2} (3 + 2a + a^2) F_{a,b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( -\tfrac{1}{2} (1+a)^2 + (1 + \tfrac{1}{2} (1+a)^2) F_{a,b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( -\tfrac{1}{2} (2-\hat{a})^2 + (1 + \tfrac{1}{2} (2-\hat{a})^2) F_{a,b} \right).
+\end{align*}\]</span></p>
+<p>Verification via symmetry:</p>
+<p><span class="math display">\[\begin{align*}
+E(Y^2) &amp;= E((1-\alpha)^2) = 1 - 2E(\alpha) + E(\alpha^2) \\
+       &amp;= 1 - 2E(X)[\text{where $x_0 \leftrightarrow \hat{a}$}] + E(X^2)[\text{where $x_0 \leftrightarrow \hat{a}$}] \\
+       &amp;= 1 - \frac{1}{F_{a,b}} (1 - \tfrac{1}{3} x_0 \hat{a}^2) + \frac{1}{3F_{a,b}} (1 - \tfrac{1}{2}\hat{a}^2 + \frac{1}{2}\hat{a}^2 F_{a,b}) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( 3F - 3(1 - \tfrac{1}{3} x_0 \hat{a}^2) + 1 - \tfrac{1}{2}\hat{a}^2 + \frac{1}{2}\hat{a}^2 F_{a,b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( -2 - \tfrac{1}{2}\hat{a}^2 + x_0 \hat{a}^2 + (3 + \tfrac{1}{2}\hat{a}^2) F_{a,b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( -2 - \tfrac{1}{2}\hat{a}^2 + 2\hat{a} (1-F_{a,b}) + (3 + \tfrac{1}{2}\hat{a}^2) F_{a,b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( -2 + 2\hat{a} - \tfrac{1}{2}\hat{a}^2 + (1 + 2 - 2\hat{a} + \tfrac{1}{2}\hat{a}^2) F_{a,b} \right) \\
+       &amp;= \frac{1}{3F_{a,b}} \left( - \tfrac{1}{2} (2-\hat{a})^2 + (1 + \tfrac{1}{2} (2-\hat{a})^2) F_{a,b} \right).
+\end{align*}\]</span></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Inner product <span class="math inline">\(E(XY)\)</span>. We have <span class="math inline">\(E(XY) = E(E(XY \mid X=x))\)</span>.</li>
+</ol>
+<p>Step 1.</p>
+<p><span class="math display">\[\begin{align*}
+E(XY \mid X=x) &amp;= x \int_0^{L(x)} y \frac{I_{[0,L(x)]}}{L(x)}(y)\,dy \\
+               &amp;= \frac{x}{L(x)} \left.\tfrac{1}{2} y^2\right|_{0}^{L(x)} \\
+               &amp;= \tfrac{1}{2} x L(x).
+\end{align*}\]</span></p>
+<p>Step 2.</p>
+<p><span class="math display">\[\begin{align*}
+E(XY) &amp;= \frac{1}{F_{a,b}} \int_0^1 \tfrac{1}{2} x (L(x))^2\,dx \\
+      &amp;= \frac{1}{2F_{a,b}} \left( \int_0^{(1-a)/b} x(a+bx)^2\,dx + \int_{(1-a)/b}^1 x\,dx \right) \\
+      &amp;= \frac{1}{2F_{a,b}} \left( \int_0^{(1-a)/b} (a^2x + 2abx^2 + b^2x^3)\,dx + \tfrac{1}{2} \left.x^2\right|_{(1-a)/b}^{1} \right) \\
+      &amp;= \frac{1}{2F_{a,b}} \left( \left.(\tfrac{1}{2}a^2x^2 + \tfrac{2}{3}abx^3 + \tfrac{1}{4}b^2x^4)\right|_{0}^{(1-a)/b} + \tfrac{1}{2} \left( 1 - \left(\frac{1-a}{b}\right)^2 \right) \right) \\
+      &amp;= \frac{1}{4F_{a,b}} \left( 1 - \left(\frac{1-a}{b}\right)^2 + a^2\left(\frac{1-a}{b}\right)^2 + \tfrac{4}{3}ab\left(\frac{1-a}{b}\right)^3 + \tfrac{1}{2}b^2\left(\frac{1-a}{b}\right)^4 \right)\\
+      &amp;= \frac{1}{4F_{a,b}} \left( 1 - (1+a) \frac{(1-a)^3}{b^2} + \tfrac{4}{3}a(1-a)/b \frac{(1-a)^2}{b} + \tfrac{1}{2}(1-a)^2/b \frac{(1-a)^2}{b} \right)\\
+      &amp;= \frac{1}{4F_{a,b}} \left( 1 + \left(-2(1+a)x_0 + \tfrac{8}{3}ax_0 + (1-a)x_0 \right) (1-F_{a,b}) \right)\\
+      &amp;= \frac{1}{4F_{a,b}} \left( 1 + \left( -x_0 - \tfrac{1}{3}ax_0 \right) (1-F_{a,b}) \right) \\
+      &amp;= \frac{1}{4F_{a,b}} \left( 1 - x_0 - \tfrac{1}{3}ax_0 + (x_0 + \tfrac{1}{3}ax_0) F_{a,b} \right).
+\end{align*}\]</span></p>
+<p>Note that</p>
+<p><span class="math display">\[
+x_0 + \tfrac{1}{3}ax_0 = x_0 + \tfrac{1}{3}(1-\hat{a})x_0 = \tfrac{2}{3}(2x_0 - 1 + F_{a,b}).
+\]</span></p>
+<p>and so</p>
+<p><span class="math display">\[\begin{align*}
+E(XY) &amp;= \frac{1}{4F_{a,b}} \left( 1 + \tfrac{2}{3} (1 - 2x_0 - F_{a,b}) - \tfrac{2}{3} (1 - 2x_0 - F_{a,b}) F_{a,b} \right) \\
+      &amp;= \frac{1}{4F_{a,b}} \left( 1 - \tfrac{2}{3} (2x_0 + F_{a,b}) + \tfrac{2}{3} (2x_0 + F_{a,b}) F_{a,b} \right) \\
+      &amp;= \frac{1}{4F_{a,b}} \left( 1 - \tfrac{2}{3} (2x_0 + F_{a,b}) (1 - F_{a,b}) \right).
+\end{align*}\]</span></p>
+<p>Therefore the correlation is:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\rho_{XY} &amp; =
+\frac{{{E}}(XY) - {{E}}(X) {{E}}(Y)}
+{\sqrt{{{E}}(X^2) - {{E}}(X)^2} \sqrt{{{E}
+}(Y^2) - {{E}}(Y)^2}}
+=
+\\\end{aligned}
+\]</span></p>
+<span class="math display">\[\begin{aligned}
+\frac{
+\frac{1}{4F_{a,b}} \left( 1 - x_0 - \tfrac{1}{3}ax_0 + (x_0 + \tfrac{1}{3}ax_0)F_{a,b} \right)
+-
+\frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}x_0 + \tfrac{2}{3}x_0F_{a,b} \right)
+\frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}(a+2) + \tfrac{2}{3}(a+2)F_{a,b} \right)
+}{
+\sqrt{
+\frac{1}{3F_{a,b}} \left( 1 - \tfrac{1}{2}x_0^2 + \tfrac{1}{2}x_0^2F_{a,b} \right)
+-
+\left(
+\frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}x_0 + \tfrac{2}{3}x_0F_{a,b} \right)
+\right)^2
+}
+\sqrt{
+\frac{1}{3F_{a,b}} \left( -\tfrac{1}{2}(1+a)^2 + \left( 1 + \tfrac{1}{2}(1+a)^2 \right)F_{a,b} \right)
+-
+\left(
+\frac{1}{2F_{a,b}} \left( 1 - \tfrac{2}{3}(a+2) + \tfrac{2}{3}(a+2)F_{a,b} \right)
+\right)^2
+}
+}.
+\end{aligned}\]</span>
+<!-- \fontsize{6}{6} \selectfont -->
+<!-- \begin{sideways}\begin{minipage}{0.95\textheight} Correlation.  -->
+<!-- \vspace*{1cm} \begin{align*} -->
+<!-- \fontsize{6}{6} \selectfont -->
+<!-- \vspace*{1cm} \rho_{XY} & = \frac{\Ave(XY) - \Ave(X) \Ave(Y)}{\sqrt{\Ave(X^2) - \Ave(X)^2} \sqrt{\Ave(Y^2) - \Ave(Y)^2}} \\ -->
+<!-- & = \frac{\ExpXY - \ExpX \ExpY}{\sqrt{\ExpXtwo - \left( \ExpX \right)^2} \sqrt{\ExpYtwo - \left( \ExpY \right)^2}} -->
+<!-- \end{align*} \end{minipage}\end{sideways} -->
+<!-- {\leftskip=-1cm \rightskip=-1cm -->
+<!-- \[ -->
+<!-- \begin{aligned} -->
+<!-- \small\frac{\frac{1}{4C_{a,b}} \left( 1 -x_0 - \tfrac{1}{3}ax_0 + (x_0 + \tfrac{1}{3}ax_0) C_{a,b} \right)- \frac{1}{2C_{a,b}} \left(  1- \tfrac{2}{3} x_0  + \tfrac{2}{3} x_0 C_{a,b} \right)\frac{1}{2C_{a,b}} \left( 1 - \tfrac{2}{3}(a+2)  +   \tfrac{2}{3}(a+2)  C_{a,b} \right)}{\sqrt{\frac{1}{3C_{a,b}} \left( (1 - \tfrac{1}{2} x_0^2) +  \tfrac{1}{2} x_0^2 C_{a,b}  \right)- \left( \frac{1}{2C_{a,b}} \left(  1- \tfrac{2}{3} x_0  + \tfrac{2}{3} x_0 C_{a,b} \right)\right)^2} \sqrt{\frac{1}{3C_{a,b}} \left( -\tfrac{1}{2} (1+a)^2  +  (1 + \tfrac{1}{2} (1+a)^2) C_{a,b})  \right)- \left( \frac{1}{2C_{a,b}} \left( 1 - \tfrac{2}{3}(a+2)  +   \tfrac{2}{3}(a+2)  C_{a,b} \right)\right)^2}} -->
+<!-- \end{aligned}. -->
+<!-- \] -->
+<!-- \par} -->
+<!-- $$\begin{aligned} -->
+<!-- \small\frac{\frac{1}{4C_{a,b}} \left( 1 -x_0 - \tfrac{1}{3}ax_0 + (x_0 + \tfrac{1}{3}ax_0) C_{a,b} \right)- \frac{1}{2C_{a,b}} \left(  1- \tfrac{2}{3} x_0  + \tfrac{2}{3} x_0 C_{a,b} \right)\frac{1}{2C_{a,b}} \left( 1 - \tfrac{2}{3}(a+2)  +   \tfrac{2}{3}(a+2)  C_{a,b} \right)}{\sqrt{\frac{1}{3C_{a,b}} \left( (1 - \tfrac{1}{2} x_0^2) +  \tfrac{1}{2} x_0^2 C_{a,b}  \right)- \left( \frac{1}{2C_{a,b}} \left(  1- \tfrac{2}{3} x_0  + \tfrac{2}{3} x_0 C_{a,b} \right)\right)^2} \sqrt{\frac{1}{3C_{a,b}} \left( -\tfrac{1}{2} (1+a)^2  +  (1 + \tfrac{1}{2} (1+a)^2) C_{a,b})  \right)- \left( \frac{1}{2C_{a,b}} \left( 1 - \tfrac{2}{3}(a+2)  +   \tfrac{2}{3}(a+2)  C_{a,b} \right)\right)^2}} -->
+<!-- \end{aligned}$$ -->
+
 </div>
-<div id="ref-dul2025book" class="csl-entry">
-Dul, J. (2026). <em><span class="nocase">Necessary Condition Analysis (NCA): Principles and Application</span></em>. CRC press/Chapman Hall. <a href="https://www.routledge.com">www.routledge.com</a>
 </div>
-<div id="ref-dul2020orm" class="csl-entry">
-Dul, J., Van der Laan, E., &amp; Kuik, R. (2020). A statistical significance test for <span>Necessary Condition Analysis</span>. <em>Organizational Research Methods</em>, <em>23</em>(2), 385–395. <a href="https://doi.org/10.1177/1094428118795272">https://doi.org/10.1177/1094428118795272</a>
-</div>
+<div class="footnotes">
+<hr />
+<ol start="125">
+<li id="fn125"><p>The derivation was done by Roelof Kuik.<a href="appendixc.html#fnref125" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="acknowledgments.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="appendixaa.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="appendixe.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
