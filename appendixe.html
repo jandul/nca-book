@@ -101,7 +101,8 @@ div.csl-indent {
 <li><a href="./">Necessary Condition Analysis - NCA. Principles and Application</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover</a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="" data-path="part-i.-principles.html"><a href="part-i.-principles.html"><i class="fa fa-check"></i>Part I. Principles</a></li>
@@ -435,7 +436,16 @@ div.csl-indent {
 <li class="chapter" data-level="B.4.1" data-path="appendixb.html"><a href="appendixb.html#demonstration-of-nca-with-stata"><i class="fa fa-check"></i><b>B.4.1</b> Demonstration of <strong>nca</strong> with <code>Stata</code></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="C" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>C</b> Publications</a></li>
+<li class="chapter" data-level="C" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>C</b> Publications</a>
+<ul>
+<li class="chapter" data-level="C.1" data-path="appendixa.html"><a href="appendixa.html#appendixncaalone"><i class="fa fa-check"></i><b>C.1</b> Journal articles: NCA alone</a></li>
+<li class="chapter" data-level="C.2" data-path="appendixa.html"><a href="appendixa.html#appendixncamlr"><i class="fa fa-check"></i><b>C.2</b> Journal articles: NCA and MLR</a></li>
+<li class="chapter" data-level="C.3" data-path="appendixa.html"><a href="appendixa.html#appendixncasem"><i class="fa fa-check"></i><b>C.3</b> Journal articles: NCA and CB-SEM</a></li>
+<li class="chapter" data-level="C.4" data-path="appendixa.html"><a href="appendixa.html#appendixncaplssem"><i class="fa fa-check"></i><b>C.4</b> Journal articles: NCA and PLS-SEM</a></li>
+<li class="chapter" data-level="C.5" data-path="appendixa.html"><a href="appendixa.html#appendixncaqca"><i class="fa fa-check"></i><b>C.5</b> Journal articles: NCA and QCA</a></li>
+<li class="chapter" data-level="C.6" data-path="appendixa.html"><a href="appendixa.html#appendixncaother"><i class="fa fa-check"></i><b>C.6</b> Journal articles: NCA and other methods</a></li>
+<li class="chapter" data-level="C.7" data-path="appendixa.html"><a href="appendixa.html#appendixncacombiother"><i class="fa fa-check"></i><b>C.7</b> Journal articles: NCA and a combination of other methods</a></li>
+</ul></li>
 <li class="chapter" data-level="D" data-path="appendixd.html"><a href="appendixd.html"><i class="fa fa-check"></i><b>D</b> Affine transformations</a></li>
 <li class="chapter" data-level="E" data-path="appendixtprtnr.html"><a href="appendixtprtnr.html"><i class="fa fa-check"></i><b>E</b> Simulations for TPR and TNR</a>
 <ul>
@@ -493,7 +503,7 @@ div.csl-indent {
 <h1><span class="header-section-number">H</span> Demonstration NCA with PLS-SEM<a href="appendixe.html#appendixe" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <!-- \textcolor{red}{set nboot 5000 ipv 14} -->
 <!-- \textcolor{red}{set test.rep 10000 ipv 13} -->
-<p>This section demonstrates the steps for combining NCA with SEM (Section <a href="multimethodstudies.html#ncasem">11.4</a>) using an example. This example has been used in four published studies where NCA is combined with PLS-SEM <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-richter2020predictors">Richter et al., 2020</a>; <a href="#ref-richter2023apply">Richter, Hauff, Ringle, et al., 2023</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span>. The goal of the demonstration is threefold:</p>
+<p>This section demonstrates the steps for combining NCA with SEM (Section <a href="multimethodstudies.html#ncasem">11.4</a>) using an example. This example has been used in four published studies where NCA is combined with PLS-SEM <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-richter2020predictors">Richter, Schubring, et al., 2020</a>; <a href="#ref-richter2023apply">Richter, Hauff, Ringle, et al., 2023</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span>. The goal of the demonstration is fourfold:</p>
 <ul>
 <li><p>Show how the combined analysis can be done following the flowchart presented in this book.</p></li>
 <li><p>Show how the proposed BIPMA plot for prioritizing evidence-based action in practice can be produced and how it differs from IPMA and cIPMA.</p></li>
@@ -502,18 +512,18 @@ div.csl-indent {
 </ul>
 <p>This demonstration is a replication of the four above studies by using a different software package than the SmartPLS package. The NCA package for <code>R</code> includes all NCA functions and is free. The SmartPLS software may be more user-friendly for users who are not familiar with <code>R</code>, but it is not free and does not include all NCA functions.
 <!-- A quick start guideline for using NCA with ```R``` can be found [here]( https://www.erim.eur.nl/fileadmin/user_upload/_generated_/download/Quick_Start_Guide_NCA_4.0.0_February_2024.pdf). --></p>
-<p>The selected example evaluates an extended version of the Technology Acceptance Model (TAM) <span class="citation">(<a href="#ref-richter2020predictors">Richter et al., 2020</a>)</span>. Figure <a href="appendixe.html#fig:tamfig">H.1</a> shows the model consisting of six variables (rectangles) and 9 relationships (arrows).</p>
+<p>The selected example evaluates an extended version of the Technology Acceptance Model (TAM) <span class="citation">(<a href="#ref-richter2020predictors">Richter, Schubring, et al., 2020</a>)</span>. Figure <a href="appendixe.html#fig:tamfig">H.1</a> shows the model consisting of six variables (rectangles) and 9 relationships (arrows).</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tamfig"></span>
-<img src="FigTAM.png" alt="The extended Technology Acceptance Model (TAM) according to Richter et al. (2020)." width="100%" />
+<img src="FigTAM.png" alt="The extended Technology Acceptance Model (TAM) according to Richter, Schubring, et al. (2020)." width="100%" />
 <p class="caption">
-Figure H.1: The extended Technology Acceptance Model (TAM) according to <span class="citation">Richter et al. (<a href="#ref-richter2020predictors">2020</a>)</span>.
+Figure H.1: The extended Technology Acceptance Model (TAM) according to <span class="citation">Richter, Schubring, et al. (<a href="#ref-richter2020predictors">2020</a>)</span>.
 </p>
 </div>
 <p>For the demonstration, the flowchart of Figure <a href="multimethodstudies.html#fig:semflowchart">11.4</a> is followed. The <code>R</code> packages <code>SEMinR</code> for conducting PLS-SEM, <code>NCA</code> for conducting NCA, and the general purpose <code>R</code> packages <code>ggplot2</code> and <code>ggrepel</code> for graphics need to be installed. Additional <code>R</code> code for conducting the analysis can be found in Section <a href="appendixb.html#additionalcode">B.2</a>.</p>
 <div id="step-1-theorize-necessity-and-probabilistic-relationships" class="section level2 hasAnchor" number="20.1">
 <h2><span class="header-section-number">H.1</span> Step 1: Theorize necessity and probabilistic relationships<a href="appendixe.html#step-1-theorize-necessity-and-probabilistic-relationships" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>It is assumed that the relationships shown in Figure <a href="appendixe.html#fig:tamfig">H.1</a> are theoretically justified from both the perspective of probabilistic sufficiency as well as from the perspective of necessity <span class="citation">(<a href="#ref-richter2020predictors">Richter et al., 2020</a>)</span>. For enhancing the necessity theorizing see Section <a href="hypothesisformulation.html#causalexplanation">7.5.3</a>.</p>
+<p>It is assumed that the relationships shown in Figure <a href="appendixe.html#fig:tamfig">H.1</a> are theoretically justified from both the perspective of probabilistic sufficiency as well as from the perspective of necessity <span class="citation">(<a href="#ref-richter2020predictors">Richter, Schubring, et al., 2020</a>)</span>. For enhancing the necessity theorizing see Section <a href="hypothesisformulation.html#causalexplanation">7.5.3</a>.</p>
 </div>
 <div id="step-2-collect-data" class="section level2 hasAnchor" number="20.2">
 <h2><span class="header-section-number">H.2</span> Step 2: Collect data<a href="appendixe.html#step-2-collect-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -697,7 +707,7 @@ print(TAM_sig)</code></pre>
 <ul>
 <li>Emotional value <span class="math inline">\(\rightarrow\)</span> Adoption intention <span class="math inline">\(\rightarrow\)</span> Technology use (indirect effect: 0.225)</li>
 </ul>
-<p>From the four combined direct and indirect paths (<em>total effect</em>) only one is significant: Emotional value <span class="math inline">\(\rightarrow\)</span> Adoption intentions <span class="math inline">\(\rightarrow\)</span> Technology (total effect = 0.362).</p>
+<p>From the four combined direct and indirect paths (<em>total effect</em>) only one is significant: Emotional value <span class="math inline">\(\rightarrow\)</span> Adoption intention <span class="math inline">\(\rightarrow\)</span> Technology (total effect = 0.362).</p>
 <p>These results suggest that for increasing Technology use on average, only Emotional value and Adoption intention are effective. Perceived usefulness, Compatibility and Perceived ease of use are not candidates for intervention based on the SEM results as they do not have a significant total effect on Technology use.</p>
 </div>
 <div id="step-4-extract-latent-variable-scores-1" class="section level2 hasAnchor" number="20.4">
@@ -811,7 +821,7 @@ head(dataset1, 3)</code></pre>
 <li><p>Target outcome = 85% <span class="citation">(only in <a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span>.</p></li>
 </ul>
 <p>For this demonstration, the same choices for the primary NCA analysis are made (and different choices for the robustness checks).</p>
-<p>The original studies use standardized scores <span class="citation">(<a href="#ref-richter2020predictors">Richter et al., 2020</a>)</span>, non-normalized unstandardized scores <span class="citation">(<a href="#ref-richter2023apply">Richter, Hauff, Ringle, et al., 2023</a>)</span>, or 0-100 normalized unstandardized scores <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span> as input for NCA. For this demonstration, the preferred scores from an NCA perspective are used as input data: unstandardized latent variable scores without normalization (because all indicator scales of the conditions use the same Likert scales). NCA can be conducted as follows with the <code>NCA</code> software in <code>R</code>.</p>
+<p>The original studies use standardized scores <span class="citation">(<a href="#ref-richter2020predictors">Richter, Schubring, et al., 2020</a>)</span>, non-normalized unstandardized scores <span class="citation">(<a href="#ref-richter2023apply">Richter, Hauff, Ringle, et al., 2023</a>)</span>, or 0-100 normalized unstandardized scores <span class="citation">(<a href="#ref-hauff2024importance">Hauff et al., 2024</a>; <a href="#ref-sarstedt2024combined">Sarstedt et al., 2024</a>)</span> as input for NCA. For this demonstration, the preferred scores from an NCA perspective are used as input data: unstandardized latent variable scores without normalization (because all indicator scales of the conditions use the same Likert scales). NCA can be conducted as follows with the <code>NCA</code> software in <code>R</code>.</p>
 <pre class="text"><code>library(NCA)
 # Limit computation time
 test.rep &lt;- 10000 # set lower for less computation time; 
@@ -828,7 +838,7 @@ print(model1.technology)</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.24   0.001
 ## Compatibility         0.21   0.000
-## Perceived ease of use 0.24   0.017
+## Perceived ease of use 0.24   0.016
 ## Emotional value       0.33   0.000
 ## Adoption intention    0.29   0.000
 ## ---------------------------------------------------------------------------</code></pre>
@@ -842,8 +852,8 @@ print(model1.adoption)</code></pre>
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.12   0.003
-## Compatibility         0.08   0.010
-## Perceived ease of use 0.15   0.008
+## Compatibility         0.08   0.012
+## Perceived ease of use 0.15   0.006
 ## Emotional value       0.21   0.000
 ## ---------------------------------------------------------------------------</code></pre>
 <p>The results show NCA’s effect size and <span class="math inline">\(p\)</span>-value of the five conditions for Technology use. The results correspond to those reported in the four original studies using the SmartPLS software. It can be concluded that the five conditions are necessary conditions for Technology use because the three criteria for identifying necessity-in-kind are met:</p>
@@ -1073,7 +1083,7 @@ r2_adj &lt;- 0.528   # NULL if not available
 
 # necessity effect sizes and p-values
 nec   &lt;- c(&quot;0.12&quot;, &quot;0.08&quot;, &quot;0.15&quot;,&quot;0.21&quot;)
-nec_p &lt;- c(&quot;0.002&quot;, &quot;0.010&quot;, &quot;0.007&quot;, &quot;&lt; 0.001&quot;)
+nec_p &lt;- c(&quot;0.003&quot;, &quot;0.010&quot;, &quot;0.006&quot;, &quot;&lt; 0.001&quot;)
 
 # Caption and footnote
 caption = &quot;Summary of the SEM and NCA results for outcome Adoption intention.&quot;
@@ -1167,7 +1177,7 @@ Perceived usefulness
 0.12
 </td>
 <td style="text-align:center;width: 8em; ">
-0.002
+0.003
 </td>
 </tr>
 <tr>
@@ -1201,7 +1211,7 @@ Perceived ease of use
 0.15
 </td>
 <td style="text-align:center;width: 8em; ">
-0.007
+0.006
 </td>
 </tr>
 <tr>
@@ -1285,7 +1295,7 @@ direct_p    &lt;- c(&quot;0.602&quot;, &quot;0.383&quot;, &quot;0.886&quot;, &qu
 total_coef  &lt;- c(&quot;0.149&quot;, &quot;0.127&quot;, &quot;0.049&quot;, &quot;0.362&quot;, &quot;0.437&quot;)
 total_p     &lt;- c(&quot;0.180&quot;, &quot;0.294&quot;, &quot;0.501&quot;, &quot;&lt;0.001&quot;, &quot;&lt; 0.001&quot;)
 nec_es &lt;- c(&quot;0.24&quot;, &quot;0.21&quot;, &quot;0.24&quot;, &quot;0.33&quot;, &quot;0.29&quot;)
-nec_p  &lt;- c(&quot;0.001&quot;, &quot;&lt; 0.001&quot;, &quot;0.015&quot;, &quot;&lt; 0.001&quot;, &quot;&lt; 0.001&quot;)
+nec_p  &lt;- c(&quot;0.001&quot;, &quot;&lt; 0.001&quot;, &quot;0.014&quot;, &quot;&lt; 0.001&quot;, &quot;&lt; 0.001&quot;)
 r2     &lt;- 0.539
 r2_adj &lt;- 0.528
 # Caption and footnote
@@ -1455,7 +1465,7 @@ Perceived ease of use
 0.24
 </td>
 <td style="text-align:center;width: 4em; white-space: nowrap;">
-0.015
+0.014
 </td>
 </tr>
 <tr>

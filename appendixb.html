@@ -101,7 +101,8 @@ div.csl-indent {
 <li><a href="./">Necessary Condition Analysis - NCA. Principles and Application</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover</a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="" data-path="part-i.-principles.html"><a href="part-i.-principles.html"><i class="fa fa-check"></i>Part I. Principles</a></li>
@@ -435,7 +436,16 @@ div.csl-indent {
 <li class="chapter" data-level="B.4.1" data-path="appendixb.html"><a href="appendixb.html#demonstration-of-nca-with-stata"><i class="fa fa-check"></i><b>B.4.1</b> Demonstration of <strong>nca</strong> with <code>Stata</code></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="C" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>C</b> Publications</a></li>
+<li class="chapter" data-level="C" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>C</b> Publications</a>
+<ul>
+<li class="chapter" data-level="C.1" data-path="appendixa.html"><a href="appendixa.html#appendixncaalone"><i class="fa fa-check"></i><b>C.1</b> Journal articles: NCA alone</a></li>
+<li class="chapter" data-level="C.2" data-path="appendixa.html"><a href="appendixa.html#appendixncamlr"><i class="fa fa-check"></i><b>C.2</b> Journal articles: NCA and MLR</a></li>
+<li class="chapter" data-level="C.3" data-path="appendixa.html"><a href="appendixa.html#appendixncasem"><i class="fa fa-check"></i><b>C.3</b> Journal articles: NCA and CB-SEM</a></li>
+<li class="chapter" data-level="C.4" data-path="appendixa.html"><a href="appendixa.html#appendixncaplssem"><i class="fa fa-check"></i><b>C.4</b> Journal articles: NCA and PLS-SEM</a></li>
+<li class="chapter" data-level="C.5" data-path="appendixa.html"><a href="appendixa.html#appendixncaqca"><i class="fa fa-check"></i><b>C.5</b> Journal articles: NCA and QCA</a></li>
+<li class="chapter" data-level="C.6" data-path="appendixa.html"><a href="appendixa.html#appendixncaother"><i class="fa fa-check"></i><b>C.6</b> Journal articles: NCA and other methods</a></li>
+<li class="chapter" data-level="C.7" data-path="appendixa.html"><a href="appendixa.html#appendixncacombiother"><i class="fa fa-check"></i><b>C.7</b> Journal articles: NCA and a combination of other methods</a></li>
+</ul></li>
 <li class="chapter" data-level="D" data-path="appendixd.html"><a href="appendixd.html"><i class="fa fa-check"></i><b>D</b> Affine transformations</a></li>
 <li class="chapter" data-level="E" data-path="appendixtprtnr.html"><a href="appendixtprtnr.html"><i class="fa fa-check"></i><b>E</b> Simulations for TPR and TNR</a>
 <ul>
@@ -512,7 +522,7 @@ div.csl-indent {
 <p><code>truncnorm</code> <span class="citation">(<a href="#ref-R-truncnorm">Mersmann et al., 2023</a>)</span>,</p>
 <p><code>RSQLite</code> <span class="citation">(<a href="#ref-R-RSQLite">Müller et al., 2026</a>)</span>.</p>
 <p>The first version of this software was released just before the online publication of NCA’s core paper <span class="citation">(<a href="#ref-dul2016orm">Dul, 2016b</a>)</span> on July 15, 2015. Since then, the software has been updated several times to correct bugs, integrate new NCA developments, and make improvements based on feedback from users.
-The following versions have been released through 31 December 2025:</p>
+The following versions have been released through 17 June 2026:</p>
 <p>NCA_1.0 (2015-07-02)</p>
 <p>NCA_1.1 (2015-10-10)</p>
 <p>NCA_2.0 (2016-05-18)</p>
@@ -676,8 +686,8 @@ print(model1)</code></pre>
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.24   0.008
-## Goodwill trust     0.31   0.002
-## Competence trust   0.32   0.003
+## Goodwill trust     0.31   0.001
+## Competence trust   0.32   0.002
 ## ---------------------------------------------------------------------------</code></pre>
 <p>The results show support for the three hypotheses because the effect sizes and the <span class="math inline">\(p\)</span>-values satisfy the threshold values that were selected.</p>
 <p>By using the <code>nca_output</code> function, more output can be displayed. The <span class="math inline">\(XY\)</span>-plots with the ceiling lines can be shown as follows.</p>
@@ -748,7 +758,7 @@ nca_output(model1, plots = FALSE, summaries = TRUE)</code></pre>
 ## # above            0         
 ## Slope                        
 ## Intercept                    
-## p-value            0.002     
+## p-value            0.001     
 ## p-accuracy         0.000     
 ##                              
 ## Complexity         5         
@@ -783,7 +793,7 @@ nca_output(model1, plots = FALSE, summaries = TRUE)</code></pre>
 ## # above            0         
 ## Slope                        
 ## Intercept                    
-## p-value            0.003     
+## p-value            0.002     
 ## p-accuracy         0.000     
 ##                              
 ## Complexity         3         
@@ -867,7 +877,7 @@ tab2_df</code></pre>
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    cr_fdh p    
 ## Contractual detail 0.19   0.008
-## Goodwill trust     0.26   0.004
+## Goodwill trust     0.26   0.003
 ## Competence trust   0.21   0.010
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##             Metric Contractual detail Goodwill trust Competence trust
@@ -886,7 +896,7 @@ Figure B.3: <span class="math inline">\(XY\)</span>-plots with CR-FDH ceiling li
 </p>
 </div>
 <p>The results show that the effect sizes are reduced, but that they are still above the selected threshold level. Also the <span class="math inline">\(p\)</span>-value remains below the selected threshold level, such that the conclusion about the hypothesis does not change with changing ceiling line from CE-FDH to CR-FDH.</p>
-<p>The model fit measures confirm that the CR-FDH line is attractive regarding complexity Since the CR-FDH line is a trend line through the peers (upper-left edges of CE-FDH line), cases exist above this line (ceiling accuracy &lt; 100%). Although most of these cases remain close to the ceiling according to the Noise metric, for Goodwill trust two cases are relatively far from the ceiling (see Exceptions metric). These cases are potential outliers and were also identified by visual inspection. The Support and Spread metrics are comparable to those for CE-FDH.</p>
+<p>The model fit measures confirm that the CR-FDH line is attractive regarding complexity. Since the CR-FDH line is a trend line through the peers (upper-left edges of CE-FDH line), cases exist above this line (ceiling accuracy &lt; 100%). Although most of these cases remain close to the ceiling according to the Noise metric, for Goodwill trust two cases are relatively far from the ceiling (see Exceptions metric). These cases are potential outliers and were also identified by visual inspection. The Support and Spread metrics are comparable to those for CE-FDH.</p>
 <p>The second robustness check tests the sensitivity of the results for selecting another scope. The analysis is repeated with a theoretical scope according to the minimum and maximum values of the Likert scales, rather than with the empirical scope based on observed minima and maxima.</p>
 <pre class="text"><code># Robustness check with different scopes corresponding to Likert scales
 set.seed(123) 
@@ -1078,8 +1088,8 @@ model4 &lt;- nca_analysis(data1,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.09   0.111
-## Goodwill trust     0.12   0.150
-## Competence trust   0.14   0.053
+## Goodwill trust     0.12   0.145
+## Competence trust   0.14   0.052
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>nca_output(model4, summaries = FALSE)</code></pre>
 <p>The results show that after removal of the two outliers, the effect sizes decrease considerably. The effect size for Contractual detail is below the threshold level. Also all <span class="math inline">\(p\)</span>-value are above the threshold level of 0.05. Consequently, without the outliers, none of the hypotheses is supported. This implies that the original results can be considered fragile and do not justify making strong conclusions.</p>
@@ -1186,7 +1196,7 @@ nca_output(model6, bottlenecks = TRUE, summaries = FALSE, plots = FALSE)</code><
 <!-- The output shows four potential outliers. Case 6 produces the largest relative effect size difference when removed. -->
 <div id="statistical-difference-tests" class="section level4 unnumbered hasAnchor">
 <h4>Statistical difference tests<a href="appendixb.html#statistical-difference-tests" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>For certain studies it may be desirable to compare two effect sizes, for example, the difference in effect size between two time points, between two groups, or between two conditions. Assuming that the null hypothesis of no difference is not an unrealistic assumption, namely that both samples are drawn from the same population, NCA’s statistical difference test could be helpful in evaluating if the observed difference is compatible with the null of no difference (Section <a href="statistics.html#permutationtest">5.3</a>). For comparability of effect sizes, a common scope for the should be selected. This can be the pooled empirical scope (based on observed minimum and maximum scale values), a theoretical scope (e.g., based on theoretical minimum and maximum scales values schale values), or a min-max normalized scope (e.g., <span class="math inline">\([0,1] \times [0,1]\)</span>) to make the scales dimensionless.</p>
+<p>For certain studies it may be desirable to compare two effect sizes, for example, the difference in effect size between two time points, between two groups, or between two conditions. Assuming that the null hypothesis of no difference is not an unrealistic assumption, namely that both samples are drawn from the same population, NCA’s statistical difference test could be helpful in evaluating if the observed difference is compatible with the null of no difference (Section <a href="statistics.html#permutationtest">5.3</a>). For comparability of effect sizes, a common scope for the should be selected. This can be the pooled empirical scope (based on observed minimum and maximum scale values), a theoretical scope (e.g., based on theoretical minimum and maximum scale values), or a min-max normalized scope (e.g., <span class="math inline">\([0,1] \times [0,1]\)</span>) to make the scales dimensionless.</p>
 <p>NCA’s contrast test compares effect sizes of two conditions (in one sample).</p>
 <pre class="text"><code># Contrast test: effect size difference between two conditions
 # Common scope: normalized (for making the scales dimensionless)
@@ -1304,7 +1314,7 @@ difference_paired &lt;- nca_difference(data1=data1,
 </div>
 <div id="power-analysis" class="section level4 unnumbered hasAnchor">
 <h4>Power analysis<a href="appendixb.html#power-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>For a planned study, a power analysis may be useful to estimate the probability that NCA’s statistical test rejects the null when necessity is true. Assumptions must be made for the (planned) sample size, the expected effect size, the slope of the true linear ceiling line, and the true distribution of data under the ceiling. Power also depends on the selected threshold <span class="math inline">\(p\)</span>-value and ceiling-line estimation technique. For example, consider a planned study with sample size of 50, and an expected effect size of 0.2, with the default values of slope (1), distribution (uniform), threshold <span class="math inline">\(p\)</span>-value (0.05) and ceiling technique (CR-FDH):</p>
+<p>For a planned study, a power analysis may be useful to estimate the probability that NCA’s statistical test rejects the null when necessity is true. Assumptions must be made for the (planned) sample size, the expected effect size, the slope of the true linear ceiling line, and the true distribution of data under the ceiling. Power also depends on the selected threshold <span class="math inline">\(p\)</span>-value and ceiling-line estimation technique. For example, consider a planned study with sample size of 50, and an expected effect size of 0.2, with the default values of slope (1), distribution (uniform), threshold <span class="math inline">\(p\)</span>-value (0.05) and ceiling technique (CE-FDH):</p>
 <pre class="text"><code># Power analysis
 set.seed(123)
 power &lt;- nca_power(n = 50, effect = 0.2) # This may take some time
