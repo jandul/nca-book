@@ -97,8 +97,8 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-|<img src="logoNCA.png" width="270" height="270">
-<li><a href="./">Necessary Condition Analysis - NCA. Principles and Application</a></li>
+<li><a href="https://www.routledge.com/Necessary-Condition-Analysis-NCA-Principles-and-Application/Dul/p/book/9781032554471" target="_blank"><img src="book_cover.png" width="200" height="301" style="display:block; margin:0 auto; max-width:100%;" alt="Necessary Condition Analysis (NCA): Principles and Application"></a></li>
+<li><a href="https://www.routledge.com/Necessary-Condition-Analysis-NCA-Principles-and-Application/Dul/p/book/9781032554471" target="_blank">Order the printed book (Routledge)</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover</a></li>
@@ -477,10 +477,10 @@ div.csl-indent {
 <li class="chapter" data-level="I" data-path="appendixh.html"><a href="appendixh.html"><i class="fa fa-check"></i><b>I</b> Bottleneck distance table</a></li>
 <li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
 <li class="divider"></li>
-<a href="https://www.erim.eur.nl/necessary-condition-analysis/">
-<img alt="erim" src="NCA website3.jpeg" width="270"></a>
-<a href="https://www.erim.eur.nl/necessary-condition-analysis/" target="blank">NCA website</a></li>
-<li><a href="mailto:jdul@rsm.nl">Send email to the author</a>
+<li><a href="https://jandul.github.io/NCA/">Book extras</a></li>
+<li><a href="https://www.eur.nl/en/erim/erim/research-initiatives/necessary-condition-analysis/" target="_blank"><img alt="NCA website" src="NCA website3.jpeg" width="270"></a></li>
+<li><a href="https://www.eur.nl/en/erim/erim/research-initiatives/necessary-condition-analysis/" target="_blank">NCA website</a></li>
+<li><a href="mailto:jdul@rsm.nl">Send email to the author</a></li>
 
 </ul>
 
@@ -1589,7 +1589,7 @@ modelFINAL &lt;- nca_analysis(nca.exampleN,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##               c_lp p    
 ## Individualism 0.33 0.034
-## Risk taking   0.33 0.002
+## Risk taking   0.33 0.003
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>nca_output (modelFINAL, summaries = FALSE, 
             bottlenecks = TRUE)</code></pre>
@@ -1954,7 +1954,7 @@ Figure 9.14: Target outcome robustness check. The effect of changing the target 
 </div>
 <div id="robustnesstable" class="section level3 hasAnchor" number="9.12.7">
 <h3><span class="header-section-number">9.12.7</span> Robustness table<a href="dataanalysis.html#robustnesstable" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The results of the robustness checks can be summarized in an NCA robustness table (Table <a href="#tab:robustnesstable"><strong>??</strong></a>) where the original NCA results are compared with the results when alternative feasible choices are made. The first row shows the original results, and the next rows display the results under alternative choices. To check robustness of <em>necessity-in-kind</em>, the effect size, the <span class="math inline">\(p\)</span>-value, and the conclusion about necessity (assuming theoretical support) are presented. To check the robustness of <em>necessity-in-degree</em>, the percentage (%) and number (n) of bottleneck cases that are unable to achieve the required level of the condition for a selected target level of the outcome are presented.</p>
+<p>The results of the robustness checks can be summarized in an NCA robustness table (Table <a href="dataanalysis.html#tab:robustnesstable">9.1</a>) where the original NCA results are compared with the results when alternative feasible choices are made. The first row shows the original results, and the next rows display the results under alternative choices. To check robustness of <em>necessity-in-kind</em>, the effect size, the <span class="math inline">\(p\)</span>-value, and the conclusion about necessity (assuming theoretical support) are presented. To check the robustness of <em>necessity-in-degree</em>, the percentage (%) and number (n) of bottleneck cases that are unable to achieve the required level of the condition for a selected target level of the outcome are presented.</p>
 <!-- ```{r robustnesstablefig, echo=FALSE, out.width='99%', fig.align ='center', fig.cap="Robustness table with summary of robustness checks."} -->
 <!-- knitr::include_graphics('robustness_table.png') -->
 <!-- ``` -->
@@ -2033,6 +2033,217 @@ Figure 9.14: Target outcome robustness check. The effect of changing the target 
 <!--   library(tidyverse) -->
 <!--   library(openxlsx) -->
 <!-- ``` -->
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:robustnesstable">Table 9.1: </span>NCA robustness table for the illustrative example.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Robustness check
+</th>
+<th style="text-align:left;">
+Effect size
+</th>
+<th style="text-align:right;">
+<i>p</i>-value
+</th>
+<th style="text-align:right;">
+Necessity
+</th>
+<th style="text-align:right;">
+Bottlenecks (%)
+</th>
+<th style="text-align:right;">
+Bottlenecks (n)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Original
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.032
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+33.3
+</td>
+<td style="text-align:right;">
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ceiling change
+</td>
+<td style="text-align:left;">
+0.55
+</td>
+<td style="text-align:right;">
+0.005
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+37.0
+</td>
+<td style="text-align:right;">
+10
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scope change
+</td>
+<td style="text-align:left;">
+0.49
+</td>
+<td style="text-align:right;">
+0.031
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+33.3
+</td>
+<td style="text-align:right;">
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+d threshold change
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.032
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+33.3
+</td>
+<td style="text-align:right;">
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+p threshold change
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.032
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+33.3
+</td>
+<td style="text-align:right;">
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Outlier change 1
+</td>
+<td style="text-align:left;">
+0.16
+</td>
+<td style="text-align:right;">
+0.315
+</td>
+<td style="text-align:right;">
+no
+</td>
+<td style="text-align:right;">
+21.4
+</td>
+<td style="text-align:right;">
+6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Outlier change 2
+</td>
+<td style="text-align:left;">
+0.35
+</td>
+<td style="text-align:right;">
+0.028
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+23.1
+</td>
+<td style="text-align:right;">
+6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Target lower
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.032
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+18.5
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Target higher
+</td>
+<td style="text-align:left;">
+0.33
+</td>
+<td style="text-align:right;">
+0.032
+</td>
+<td style="text-align:right;">
+yes
+</td>
+<td style="text-align:right;">
+40.7
+</td>
+<td style="text-align:right;">
+11
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <!-- ```{r theorymethodfit, echo = FALSE, warning=FALSE, message=FALSE, out.width='99%', cache=FALSE} -->
 <!-- library("kableExtra") -->
 <!-- library(openxlsx) -->

@@ -97,8 +97,8 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-|<img src="logoNCA.png" width="270" height="270">
-<li><a href="./">Necessary Condition Analysis - NCA. Principles and Application</a></li>
+<li><a href="https://www.routledge.com/Necessary-Condition-Analysis-NCA-Principles-and-Application/Dul/p/book/9781032554471" target="_blank"><img src="book_cover.png" width="200" height="301" style="display:block; margin:0 auto; max-width:100%;" alt="Necessary Condition Analysis (NCA): Principles and Application"></a></li>
+<li><a href="https://www.routledge.com/Necessary-Condition-Analysis-NCA-Principles-and-Application/Dul/p/book/9781032554471" target="_blank">Order the printed book (Routledge)</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover</a></li>
@@ -477,10 +477,10 @@ div.csl-indent {
 <li class="chapter" data-level="I" data-path="appendixh.html"><a href="appendixh.html"><i class="fa fa-check"></i><b>I</b> Bottleneck distance table</a></li>
 <li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
 <li class="divider"></li>
-<a href="https://www.erim.eur.nl/necessary-condition-analysis/">
-<img alt="erim" src="NCA website3.jpeg" width="270"></a>
-<a href="https://www.erim.eur.nl/necessary-condition-analysis/" target="blank">NCA website</a></li>
-<li><a href="mailto:jdul@rsm.nl">Send email to the author</a>
+<li><a href="https://jandul.github.io/NCA/">Book extras</a></li>
+<li><a href="https://www.eur.nl/en/erim/erim/research-initiatives/necessary-condition-analysis/" target="_blank"><img alt="NCA website" src="NCA website3.jpeg" width="270"></a></li>
+<li><a href="https://www.eur.nl/en/erim/erim/research-initiatives/necessary-condition-analysis/" target="_blank">NCA website</a></li>
+<li><a href="mailto:jdul@rsm.nl">Send email to the author</a></li>
 
 </ul>
 
@@ -558,6 +558,7 @@ Figure 6.3: True Positive Rate (TPR, sensitivity) of the NCA approach for identi
 <p>In all three graphs, the necessity effect size (the size of the expected empty corner 1) is 0.10, and the size of another empty corner ranges from 0 to 0.50, where possible. A TPR value of 0.80 is added as a benchmark, meaning that for 80 percent of the samples a correct decision is made, namely concluding that necessity is present in the population. This selected value is inspired by the commonly used target of 0.80 for statistical power. NCA draws a <em>positive</em> conclusion about necessity if <span class="math inline">\(p &lt; 0.05\)</span> <em>and</em> <span class="math inline">\(d\geq 0.10\)</span> (assuming theoretical support).</p>
 <p>Scenario A applies when the other corners are <em>not</em> empty. The corresponding TPR curve is the same in each TPR graph (empty corner size = 0). This curve is the upper curve in the Top-Right and Bottom-Left graphs, and the lower curve in the Bottom-Right graph. In scenario A, TPR increases with sample size and the benchmark value of 0.80 (80% correct decisions when necessity is present in the population) is reached for a sample size of about 60 (note that the horizontal axis is piecewise-linear: linear between two adjacent ticks but not across ticks).</p>
 <p>Table <a href="sensitivityspecificity.html#tab:tabTPRA-HTML">6.1</a> shows for scenario A the fraction of samples where <span class="math inline">\(p &lt; 0.05\)</span> (<span class="math inline">\(p\)</span>-based TPR) and the fraction of samples where <span class="math inline">\(d \geq 0.10\)</span> (<span class="math inline">\(d\)</span>-based TPR). Considering both criteria, TPR is the <em>minimum</em> of <span class="math inline">\(p\)</span>-based TPR and <span class="math inline">\(d\)</span>-based TPR. It turns out that for scenario A, the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is critical for the TPR conclusion. Consequently, TPR corresponds to the power of NCA’s statistical test in this simulation scenario.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:tabTPRA-HTML">Table 6.1: </span>Scenario A. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. No other corner is empty.
@@ -693,6 +694,7 @@ TPR
 </tr>
 </tbody>
 </table>
+</div>
 <!-- For all sample sizes the $p$-based TPR is less than or equal to the $d$-based TPR in Scenario A, and therefore the $p$-value determines the overall TPR. -->
 <!-- Table 1. Comparison of the TPR based on the $p$-value (pTPR) and $d$-value (dTPR) for scenario A for different sample sizes (n) with necessity effect size = 0.1 in corner 1, and other corner size = 0  see Figure \@ref(fig:tpr01)) .  -->
 <!-- n  pTPR    dTPR -->
@@ -708,6 +710,7 @@ TPR
 <!-- Table \@ref(tab:tabtpr01A). Comparison of the TPR based on the $p$-value (pTPR) and $d$-value (dTPR) for scenario B for different sample sizes (n) with necessity effect size = 0.1 in corner 1, and other corner size = 0.1 (see Figure \@ref(fig:tpr01)) .  -->
 When the emptiness of corner 2 increases, relatively fewer cases are available to statistically test the emptiness of corner 1. NCA’s statistical test uses a permutation procedure (Section <a href="statistics.html#permutationtest">5.3</a>) that creates new cases by allocating <span class="math inline">\(Y\)</span>-values of observed cases randomly to <span class="math inline">\(X\)</span>-values of other observed cases, and random samples are drawn from the obtained permutation distribution (= null distribution). High <span class="math inline">\(Y\)</span>-values of cases allocated to low <span class="math inline">\(X\)</span>-values of other cases can challenge the emptiness of corner 1. If relatively fewer high <span class="math inline">\(Y\)</span>-values are available, the sample size must be larger to have enough high <span class="math inline">\(Y\)</span>-values for the test. For achieving a TPR of 0.80, the required sample size is about 75 if the size of the empty corner 2 is 0.05 and about 140 if this size is 0.10.</p>
 <p>Table <a href="sensitivityspecificity.html#tab:tabTPRB-HTML">6.2</a> shows that also in scenario B the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) and not the <span class="math inline">\(d\)</span>-value criterion (<span class="math inline">\(d \geq 0.10\)</span>) is critical for the TPR conclusion (with one exception for n = 500 where the <span class="math inline">\(d\)</span>-based TPR is smaller than the <span class="math inline">\(p\)</span>-based TPR).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:tabTPRB-HTML">Table 6.2: </span>Scenario B. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 2 is also empty with size 0.10.
@@ -843,8 +846,10 @@ TPR
 </tr>
 </tbody>
 </table>
+</div>
 <p>Scenario C (Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a>-bottom-left) applies when corner 3 (lower-left corner) is also empty (empty corner size = 0.05 or 0.10). The graph is very similar to that of scenario B, with some minor differences at lower values of sample size. Also in this scenario higher sample sizes are required to be able to identify necessity in corner 1 when corner 3 is more empty. For achieving a TPR of 0.80, the required sample size is also about 75 if the size of the empty corner 3 is 0.05 and about 140 if this size is 0.10.</p>
 <p>Table <a href="sensitivityspecificity.html#tab:tabTPRC-HTML">6.3</a> shows that also in scenario C the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is dominant.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:tabTPRC-HTML">Table 6.3: </span>Scenario C. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 3 is also empty with size 0.10.
@@ -980,7 +985,9 @@ TPR
 </tr>
 </tbody>
 </table>
+</div>
 <p>However, in scenario D the results are very different (Figure <a href="sensitivityspecificity.html#fig:tpr01">6.3</a>-bottom-right). In this scenario, corner 4 (lower-right corner) is also empty (empty corner size ranges from 0.05 to 0.50). Now the TPR curve shifts to the <em>left</em> with increasing emptiness of corner 4, meaning that for a given sample size the TPR credibility of the NCA approach <em>increases</em>. This means that <em>smaller</em> sample sizes can be used to identify necessity in corner 1. When corner 4 is empty (and corners 2 and 3 are not empty) relatively more cases are available to test the emptiness of corner 1 such that the sample size can be smaller for the permutation test. For achieving a TPR of 0.80 the required sample size can be less than 50 when the corner size is 0.05 and even less than 10 when the corner 4 size is 0.50. However, the possibility of using relatively small sample sizes for identifying necessity has a price in terms of TNR (see below). Also in scenario D the <span class="math inline">\(p\)</span>-value criterion (<span class="math inline">\(p &lt; 0.05\)</span>) is dominant (Table <a href="sensitivityspecificity.html#tab:tabTPRD-HTML">6.4</a>).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:tabTPRD-HTML">Table 6.4: </span>Scenario D. Fraction of samples that correctly identify necessity: <i>p</i>-based, <i>d</i>-based, and TPR (True Positive Rate). Necessity effect size = 0.10 (corner 1 empty) with ceiling slope = 1. Corner 4 is also empty with size 0.10.
@@ -1116,6 +1123,7 @@ TPR
 </tr>
 </tbody>
 </table>
+</div>
 <p>Additional TPR simulations with a different necessity effect size (0.20), and different ceiling slopes (0.6, 1.67) in the expected empty corner can be found in Appendix <a href="appendixtprtnr.html#appendixtprtnr">E</a>. These simulations show similar TPR patterns.</p>
 </div>
 <div id="specificity" class="section level3 hasAnchor" number="6.3.2">
@@ -1131,6 +1139,7 @@ Figure 6.4: True Negative Rate (TNR, specificity) of the NCA approach for identi
 <p>In all three graphs (Top-Right, Bottom-Left, Bottom-Right) the expected empty corner is not empty (necessity effect size = 0), while the other corners are empty with sizes ranging from 0 to 0.50. A TNR value of 0.95 is added as a benchmark, meaning that the rate of correct decisions confirming the absence of necessity in the population is 0.95. This selected value is inspired by the commonly selected threshold <span class="math inline">\(p\)</span>-value of 0.05 for the false positive rate of a statistical test. NCA draws a <em>negative</em> conclusion about necessity if <span class="math inline">\(p \ge 0.05\)</span> <em>or</em> <span class="math inline">\(d &lt; 0.10\)</span>.</p>
 <p>In the TNR evaluation, scenario A applies when not only the expected corner is not empty (necessity effect size = 0) but also the other corners are not empty (empty corner size = 0), such that no relationship exists in the population. The corresponding TNR curves in Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a> are the same, which are the lowest curves for the Top-Right and Bottom-Left graphs and the highest curve for the Bottom-Right graph. The curve shows that for all sample sizes the TNR is at least 0.95. Up to a sample size of 50, TNR is constant at 0.95 and when the sample size increases the TNR curve moves upward toward 1. The reason is that as long as the <span class="math inline">\(p\)</span>-value is critical, 1 - TNR = FNR corresponds to the <span class="math inline">\(p\)</span>-value of NCA’s statistical test: 5% of the samples drawn from a population where <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are unrelated (corresponding to scenario A in the TNR test) are false positives, and 95% are true negatives.</p>
 <p>Table <a href="sensitivityspecificity.html#tab:tabTNRA-HTML">6.5</a> shows the fraction of samples where <span class="math inline">\(p \ge 0.05\)</span> (<span class="math inline">\(p\)</span>-based TNR), and Table <a href="sensitivityspecificity.html#tab:tabTNRB-HTML">6.6</a> the fraction of samples where <span class="math inline">\(d &lt; 0.10\)</span> (<span class="math inline">\(d\)</span>-based TNR).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:tabTNRA-HTML">Table 6.5: </span>Scenario A. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). No other corner is empty.
@@ -1266,7 +1275,9 @@ TNR
 </tr>
 </tbody>
 </table>
+</div>
 <p><br></p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:tabTNRB-HTML">Table 6.6: </span>Scenario B. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 2 is empty with size 0.10.
@@ -1402,11 +1413,13 @@ TNR
 </tr>
 </tbody>
 </table>
+</div>
 <p>Since for each sample NCA draws a <em>negative</em> conclusion about necessity if <span class="math inline">\(p \geq 0.05\)</span> <em>or</em> <span class="math inline">\(d \leq 0.10\)</span>, TNR is the <em>maximum</em> of <span class="math inline">\(p\)</span>-based TNR and <span class="math inline">\(d\)</span>-based TNR.</p>
 <p>Table <a href="sensitivityspecificity.html#tab:tabTNRA-HTML">6.5</a> for scenario A indicates that up to sample size 50 the <span class="math inline">\(p\)</span>-value TNR dominates and when the sample size increases, the TNR is based on the <span class="math inline">\(d\)</span>-value. In other words, nearly all samples are correctly evaluated when necessity is absent in the population and other corners are not empty.</p>
 <p>Scenario B for TNR (Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a>-top-right) applies when necessity is absent while corner 2 (upper-right corner) is empty (empty corner effect size = 0.05 – 0.50). It turns out that the TNR curves are above the 0.95 benchmark for all sample sizes. Nearly all samples are correctly evaluated when necessity is absent in the population and corner 2 is empty.</p>
 <p>Table <a href="sensitivityspecificity.html#tab:tabTNRB-HTML">6.6</a>-top-right shows that for smaller sample sizes the <span class="math inline">\(p\)</span>-value TNR is dominant, whereas for larger sample sizes the <span class="math inline">\(d\)</span>-value TNR dominates, although the differences are small.</p>
 <p>The situation for scenario C for TNR (Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a>-bottom-left) when necessity is absent while corner 3 is empty (empty corner effect size = 0.05 to 0.50) is very similar to scenario B. In this scenario, nearly all samples are correctly evaluated when necessity is absent in the population and corner 3 is empty, and the <span class="math inline">\(p\)</span>-value is the primary limiting factor for TNR (Table <a href="sensitivityspecificity.html#tab:tabTNRC-HTML">6.7</a>).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:tabTNRC-HTML">Table 6.7: </span>Scenario C. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 3 is empty with size 0.10.
@@ -1542,7 +1555,9 @@ TNR
 </tr>
 </tbody>
 </table>
+</div>
 <p>In scenario D for TNR (Figure <a href="sensitivityspecificity.html#fig:tnruniform">6.4</a>-bottom-right), necessity is absent while corner 4 is empty (empty corner effect size ranges from 0.05 to 0.50). The results are now very different. The TNR curves start below the 0.95 benchmark and with increasing sample size move first downward and then upward and end up above the 0.95 benchmark while moving toward 1. This means that only for a sample size of more than about 50, nearly all samples are correctly evaluated. The pattern of the TNR curve can be explained by the fact that first the <span class="math inline">\(p\)</span>-value is the limiting factor, and subsequently the <span class="math inline">\(d\)</span>-value (Table <a href="sensitivityspecificity.html#tab:tabTNRD-HTML">6.8</a>).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:tabTNRD-HTML">Table 6.8: </span>Scenario D. Fraction of samples that correctly identify the absence of necessity: <i>p</i>-based, <i>d</i>-based, and TNR (True Negative Rate). Corner 1 is tested for necessity (corner 1 not empty). Corner 4 is empty with size 0.10.
@@ -1678,6 +1693,7 @@ TNR
 </tr>
 </tbody>
 </table>
+</div>
 <p>Similar patterns of the TNR curves can be observed when the distribution in the feasible space is based on a normal rather than uniform distribution of the cases (Appendix <a href="appendixtprtnr.html#appendixtprtnr">E</a>).</p>
 <p>If the <span class="math inline">\(d\)</span>-value were not included as decision criterion for necessity, TNR would have been considerably lower for scenario D. This is shown in Figure <a href="sensitivityspecificity.html#fig:tnruniformponly">6.5</a> where the TNR decision is only based on the <span class="math inline">\(p\)</span>-value. Figure <a href="sensitivityspecificity.html#fig:tnruniformponly">6.5</a>-bottom-right shows that TNR decreases with increasing sample size and increasing size of empty corner 4.<a href="#fn64" class="footnote-ref" id="fnref64"><sup>64</sup></a></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:tnruniformponly"></span>
@@ -1714,7 +1730,8 @@ Figure 6.5: True Negative Rate (TNR, specificity) of the NCA approach for identi
 <!-- 2. using NCA’s statistical as a test of the randomness of the necessity empty space, not a general randomness test;  -->
 <!-- 3. doing simulations with bounded variables, not with unbounded (for instance  normal distributed) variables. -->
 <!-- The Monte Carlo simulations conducted this way show that the True Positive Rate (TPR) and the True Negative Rate (TNR) are high, and consequently that the False Negative Rate (FNR)  and the False Positive Rate (FPR) are low.  Particularly for larger sample sizes, the TPR results show that NCA has high sensitivity (hit rate, probability of detection), and the TNR results show that NCA has high specificity (selectivity, correct rejection rate). The corresponding FNR shows that NCA has low miss rates, false dismissal,and the corresponding FPR shows that NCA has low false alarm, fall-out. This means that in the investigated scenarios NCA performs well regarding the desired qualities for identifying necessity, and gives confidence in applying the approach, which will be discussed in the next part of this book.  -->
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:credibilitytab">Table 6.9: </span>Credibility aspects of NCA
 </caption>
@@ -1944,6 +1961,7 @@ High (e.g., <span class="math inline">\(sh\)</span> &gt; 0.8).
 </tr>
 </tbody>
 </table>
+</div>
 <p><br/></p>
 <p>In the following Part II of the book, the principles of NCA as discussed in Part I are applied to empirical studies.</p>
 <!-- ### Informedness: Definition and Explanation -->
