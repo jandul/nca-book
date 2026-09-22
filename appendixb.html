@@ -687,7 +687,7 @@ print(model1)</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.24   0.008
 ## Goodwill trust     0.31   0.002
-## Competence trust   0.32   0.002
+## Competence trust   0.32   0.003
 ## ---------------------------------------------------------------------------</code></pre>
 <p>The results show support for the three hypotheses because the effect sizes and the <span class="math inline">\(p\)</span>-values satisfy the threshold values that were selected.</p>
 <p>By using the <code>nca_output</code> function, more output can be displayed. The <span class="math inline">\(XY\)</span>-plots with the ceiling lines can be shown as follows.</p>
@@ -793,8 +793,8 @@ nca_output(model1, plots = FALSE, summaries = TRUE)</code></pre>
 ## # above            0         
 ## Slope                        
 ## Intercept                    
-## p-value            0.002     
-## p-accuracy         0.000     
+## p-value            0.003     
+## p-accuracy         0.001     
 ##                              
 ## Complexity         3         
 ## Fit              100  %      
@@ -877,7 +877,7 @@ tab2_df</code></pre>
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    cr_fdh p    
 ## Contractual detail 0.19   0.008
-## Goodwill trust     0.26   0.004
+## Goodwill trust     0.26   0.005
 ## Competence trust   0.21   0.010
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##             Metric Contractual detail Goodwill trust Competence trust
@@ -1088,8 +1088,8 @@ model4 &lt;- nca_analysis(data1,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.09   0.111
-## Goodwill trust     0.12   0.146
-## Competence trust   0.14   0.050
+## Goodwill trust     0.12   0.151
+## Competence trust   0.14   0.048
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>nca_output(model4, summaries = FALSE)</code></pre>
 <p>The results show that after removal of the two outliers, the effect sizes decrease considerably. The effect size for Contractual detail is below the threshold level. Also all <span class="math inline">\(p\)</span>-value are above the threshold level of 0.05. Consequently, without the outliers, none of the hypotheses is supported. This implies that the original results can be considered fragile and do not justify making strong conclusions.</p>
