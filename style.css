@@ -1,0 +1,64 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+.part-intro {
+  margin-bottom: 2em;
+  font-style: italic;
+}
+
+
+
+
+/* NEW: Scrollable equations */
+span.math.display {
+  display: block;
+}
+
+span.math.display,
+.MathJax_Display,                      /* MathJax 2 (rmarkdown default) */
+mjx-container[display="true"] {        /* MathJax 3, if you ever switch */
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding-bottom: 0.5em;
+  -webkit-overflow-scrolling: touch;
+}
+
+mjx-container[display="true"] mjx-math {
+  min-width: max-content;
+}
+
+/* NEW: Scrollable tables */
+table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page-inner table th,
+.page-inner table td {
+  white-space: nowrap;
+}
+
+
+
+
+
+
+.scroll-box {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  display: block;
+}
