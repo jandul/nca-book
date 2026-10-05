@@ -130,7 +130,6 @@ fig:mechanismfig
 fig:theorydecisiontreeSTEP3fig
 fig:pooled
 tab:years
-fig:animation2FIG
 fig:trend
 fig:compar
 fig:compar-timelagged

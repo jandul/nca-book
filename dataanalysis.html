@@ -1228,7 +1228,7 @@ Figure <a href="dataanalysis.html#fig:puritysoliditycrfdhn27">9.6</a> shows that
 <h3><span class="header-section-number">9.9.6</span> Support<a href="dataanalysis.html#solidity2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><em>Support</em> quantifies how strongly the data in the feasible area support the ceiling
 line (Section <a href="mathematics.html#solidity">4.5.5</a>). The points on the ceiling line and in the medium-solidity zone serve this purpose. For good support, at least for example 5% of cases in the feasible area should be located on or near the ceiling line in the medium-solidity zone.</p>
-<p>In the illustrative example, one point is on the ceiling line and three points are below it in the medium-solidity zone. This implies that 4 (14.8%) cases are on the ceiling line or in the medium-solidity zone (<em>support</em> = 14.8%).</p>
+<p>In the illustrative example, one point is on the ceiling line and three points are below it in the medium-solidity zone. This implies that 4 cases (14.8%) are on the ceiling line or in the medium-solidity zone (<em>support</em> = 14.8%).</p>
 </div>
 <div id="spread2" class="section level3 hasAnchor" number="9.9.7">
 <h3><span class="header-section-number">9.9.7</span> Spread<a href="dataanalysis.html#spread2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1623,7 +1623,7 @@ modelFINAL &lt;- nca_analysis(nca.exampleN,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##               c_lp p    
 ## Individualism 0.33 0.034
-## Risk taking   0.33 0.003
+## Risk taking   0.33 0.002
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>nca_output (modelFINAL, summaries = FALSE, 
             bottlenecks = TRUE)</code></pre>
@@ -1932,9 +1932,9 @@ nca_output(modelN5b, summaries = FALSE, bottlenecks = T)</code></pre>
 ## 90     23.1 (6) 
 ## 95     42.3 (11)</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:otheroutlier"></span>
-<img src="other_outlier11.png" alt="Outlier robustness check for the illustrative example: Results with including the outlier (Left) and excluding an additional outlier (Right)." width="49%" /><img src="other_outlier21.png" alt="Outlier robustness check for the illustrative example: Results with including the outlier (Left) and excluding an additional outlier (Right)." width="49%" />
+<img src="other_outlier11.png" alt="Outlier robustness check for the illustrative example: Results with including the outlier (Left), and excluding an additional outlier (Right)." width="49%" /><img src="other_outlier21.png" alt="Outlier robustness check for the illustrative example: Results with including the outlier (Left), and excluding an additional outlier (Right)." width="49%" />
 <p class="caption">
-Figure 9.13: Outlier robustness check for the illustrative example: Results with including the outlier (Left) and excluding an additional outlier (Right).
+Figure 9.13: Outlier robustness check for the illustrative example: Results with including the outlier (Left), and excluding an additional outlier (Right).
 </p>
 </div>
 <p>The results of these outlier changes are shown in Figure <a href="dataanalysis.html#fig:otheroutlier">9.13</a>. The first outlier change (re-introducing the outlier, Figure <a href="dataanalysis.html#fig:otheroutlier">9.13</a>-left) reduces the effect size from 0.33 to 0.16 and produces a statistically non-significant result (<span class="math inline">\(p\)</span> = 0.319). The second outlier change (removing a second outlier, Figure <a href="dataanalysis.html#fig:otheroutlier">9.13</a>-right) increases the effect size slightly to 0.35 while keeping the results significant (<span class="math inline">\(p\)</span> = 0.026).</p>
