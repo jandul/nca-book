@@ -1,6 +1,6 @@
 # Necessary Condition Analysis (NCA): A Guide to Data Analysis and Causal Research
 
-Necessary Condition Analysis (NCA) is a data analysis method used to identify critical “must-have” factors in datasets. Unlike traditional statistical approaches that focus on average effects, NCA detects conditions that are necessary for an outcome to occur. If a necessary condition is not met, the outcome cannot happen.
+Necessary Condition Analysis (NCA) is a methodological approach and data analysis method used to identify critical “must-have” factors. Unlike traditional statistical approaches that focus on average effects, NCA detects conditions that are necessary for an outcome to occur. If a necessary condition is not met, the outcome cannot happen.
 
 This book provides a comprehensive and advanced introduction to NCA, covering its theoretical foundations, mathematical principles, statistical tools, and practical applications across social sciences, business, healthcare, public policy, and other fields. 
 
@@ -13,7 +13,7 @@ This book provides a comprehensive and advanced introduction to NCA, covering it
 
 ## Key Features
 
-- Introduces Necessary Condition Analysis (NCA) as a new data analysis method  
+- Introduces Necessary Condition Analysis (NCA) as a new methodologival approach and data analysis method  
 - Explains the logic of “necessary but not sufficient” causality  
 - Provides theoretical, mathematical, and statistical foundations  
 - Includes practical guidance for applying NCA in research and practice  
@@ -117,7 +117,6 @@ Necessary Condition Analysis, NCA, data analysis, causal analysis, research meth
 ## Contributing
 
 Contributions, feedback, and suggestions are welcome.  
-Feel free to open an issue or submit a pull request.
 
 ---
 
