@@ -661,7 +661,7 @@ Figure B.1: <span class="math inline">\(XY\)</span>-plots for visual inspection 
 </div>
 <p>Since the directions of the three hypotheses are high-high (presence/high <span class="math inline">\(X\)</span> is necessary for presence/high <span class="math inline">\(Y\)</span>), it is expected that in each <span class="math inline">\(XY\)</span>-plot the upper-left corner is empty. The visual inspection confirms this.<br />
 Furthermore, it is observed that for each plot the borderlines in the upper-left corner between the area with cases and the area without cases are somewhat irregular. This suggests the use of the CE-FDH stepwise linear ceiling line that can follow the border more precisely than a linear ceiling line, although the other default ceiling line (CR-FDH) could have been selected as well.<br />
-Another observation is that no clear outliers are present, although the two points the upper-right corner may be candidates as both ceiling and scope outliers. Note that in the plot of Competence trust only one point is visible in the upper-right corner, although here two points have the same <span class="math inline">\(XY\)</span>-combination (duplicates). The default advice to not remove potential outliers unless these are errors is followed. However, uncertainty about outliers warrants an outlier check.<br />
+Another observation is that no clear outliers are present, although the two points in the upper-right corner may be candidates as both ceiling and scope outliers. Note that in the plot of Competence trust only one point is visible in the upper-right corner, although here two points have the same <span class="math inline">\(XY\)</span>-combination (duplicates). The default advice to not remove potential outliers unless these are errors is followed. However, uncertainty about outliers warrants an outlier check.<br />
 The plots also show that all possible values of the outcome (1–5) are represented in the dataset. This does not apply for the conditions where in particular low values of the conditions are missing. If these values are theoretically possible, this suggests that also a theoretical scope corresponding to the Likert scale could be selected, which warrants a robustness check of it (Sections <a href="mathematics.html#formalexpression">4.3</a> and <a href="dataanalysis.html#scopespecification">9.3.1</a>).</p>
 <p>Based on the visual inspection of the <span class="math inline">\(XY\)</span>-plots, it is decided to first conduct the primary analysis with the selected CE-FDH ceiling line, to keep all cases, and to use the empirical scope. Afterwards robustness checks are conducted to evaluate the sensitivity of the choices for the main conclusion. Particularly, the effects of the use of CR-FDH ceiling line, and of a theoretical scope corresponding to the Likert scale values is evaluated. Also, a detailed outlier analysis is done. This possibly results in a different way of handling the outliers than is done in the original primary analysis (removing outliers), which may result in a different conclusion about the hypotheses.</p>
 </div>
@@ -693,7 +693,7 @@ print(model1)</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.24   0.008
 ## Goodwill trust     0.31   0.002
-## Competence trust   0.32   0.003
+## Competence trust   0.32   0.002
 ## ---------------------------------------------------------------------------</code></pre>
 <p>The results show support for the three hypotheses because the effect sizes and the <span class="math inline">\(p\)</span>-values satisfy the threshold values that were selected.</p>
 <p>By using the <code>nca_output</code> function, more output can be displayed. The <span class="math inline">\(XY\)</span>-plots with the ceiling lines can be shown as follows.</p>
@@ -799,8 +799,8 @@ nca_output(model1, plots = FALSE, summaries = TRUE)</code></pre>
 ## # above            0         
 ## Slope                        
 ## Intercept                    
-## p-value            0.003     
-## p-accuracy         0.001     
+## p-value            0.002     
+## p-accuracy         0.000     
 ##                              
 ## Complexity         3         
 ## Fit              100  %      
@@ -883,8 +883,8 @@ tab2_df</code></pre>
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    cr_fdh p    
 ## Contractual detail 0.19   0.008
-## Goodwill trust     0.26   0.004
-## Competence trust   0.21   0.011
+## Goodwill trust     0.26   0.003
+## Competence trust   0.21   0.010
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##             Metric Contractual detail Goodwill trust Competence trust
 ## 1       Complexity            1.00000        1.00000          1.00000
@@ -941,7 +941,7 @@ tab3_df</code></pre>
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.30   0.008
-## Goodwill trust     0.55   0.001
+## Goodwill trust     0.55   0.002
 ## Competence trust   0.66   0.002
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##             Metric Contractual detail Goodwill trust Competence trust
@@ -1094,8 +1094,8 @@ model4 &lt;- nca_analysis(data1,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.09   0.111
-## Goodwill trust     0.12   0.144
-## Competence trust   0.14   0.052
+## Goodwill trust     0.12   0.142
+## Competence trust   0.14   0.050
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>nca_output(model4, summaries = FALSE)</code></pre>
 <p>The results show that after removal of the two outliers, the effect sizes decrease considerably. The effect size for Contractual detail is below the threshold level. Also all <span class="math inline">\(p\)</span>-value are above the threshold level of 0.05. Consequently, without the outliers, none of the hypotheses is supported. This implies that the original results can be considered fragile and do not justify making strong conclusions.</p>

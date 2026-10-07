@@ -687,7 +687,7 @@ x_1+\dfrac{x_2-x_1}{y_2-y_1}(y-y_1)=\dfrac{y-a}{b} &amp; \text{if } y_1&lt;y\le 
 <p>Since a sequence of peers in the two classes of segmented ceiling lines (CE-FDH and CE-VRS) is defined in terms of strict inequalities, each peer can change position slightly without violating the conditions. Hence, the degrees of freedom of each of the CE-FDH and CE-VRS classes is <span class="math inline">\(2P\)</span>.</p>
 <p>Since the class of linear ceiling lines only imposes restrictions on <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> through strict inequalities, the degrees of freedom equals <span class="math inline">\(2\)</span>.</p>
 <p>Therefore the general expression for the degrees of freedom of a necessity model is:</p>
-<p><span class="math display" id="eq:df-nontight">\[\begin{equation}
+<p><span class="math display" id="eq:effectsizegeneral" id="eq:aceil" id="eq:aceilcomplement" id="eq:afeas" id="eq:scope" id="eq:indicator-inverse-step" id="eq:step-inverse" id="eq:indicator-step" id="eq:step-direct" id="eq:df-nontight">\[\begin{equation}
 \tag{4.17}
 df_{\text{model}} =
 \begin{cases}
@@ -708,12 +708,12 @@ df_{\text{model}} =
 <!-- When the inner ceiling line is piecewise linear with horizontal and vertical segments, it is represented as a step function defined only by its *inner* segments. When the inner ceiling line consists of $M$ steps defined by points $\{(x_i, y_i)\}_{i=0}^{M}$ such that $x_0 = x_{\min}$, $x_M = x_{\max}$, $y_0 = y_{\min}$, and $y_M = y_{\max}$, with $x_i$ non-decreasing and $y_i$ non-decreasing. -->
 <!-- The inner step ceiling function is defined as: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:step-direct) -->
+<!-- \tag{4.18} -->
 <!-- f_j(X) = \sum_{i=1}^{M} y_i \, I_i(X) -->
 <!-- \end{equation} -->
 <!-- with indicator function: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:indicator-step) -->
+<!-- \tag{4.19} -->
 <!-- I_i(X) = -->
 <!-- \begin{cases} -->
 <!-- 1 & \text{if } x_{i-1} \le X < x_i \\ -->
@@ -729,12 +729,12 @@ df_{\text{model}} =
 <!-- $f_j(X) \ge Y$. -->
 <!-- For the stepwise inner ceiling line, this inverse can be written explicitly as: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:step-inverse) -->
+<!-- \tag{4.20} -->
 <!-- f_j^{-1}(Y) = \sum_{i=1}^{M} x_{i-1} \, J_i(Y) -->
 <!-- \end{equation} -->
 <!-- with indicator function: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:indicator-inverse-step) -->
+<!-- \tag{4.21} -->
 <!-- J_i(Y) = -->
 <!-- \begin{cases} -->
 <!-- 1 & \text{if } y_{i-1} < Y \le y_i \\ -->
@@ -801,27 +801,27 @@ Figure 4.3: Comparison of an estimation techniques based on the distribution of 
 <!-- Let the bounding box be $B=[x_{\min},x_{\max}]\times[y_{\min},y_{\max}]$ with $x_{\max}>x_{\min}$ and $y_{\max}>y_{\min}$ and let $c(x)$ be the ceiling value defined on $[x_s,x_{\max}]$ (with $x_s$ the leftmost $x$ where the ceiling is defined). -->
 <!-- The **scope** $S$ is the area of the full bounding box: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:scope) -->
+<!-- \tag{4.22} -->
 <!-- S=(x_{\max}-x_{\min})(y_{\max}-y_{\min}) -->
 <!-- \end{equation} -->
 <!-- The feasible area is the area under the ceiling line (only for $x\in[x_s,x_{\max}]$): -->
 <!-- \begin{equation} -->
-<!-- (\#eq:afeas) -->
+<!-- \tag{4.23} -->
 <!-- A_{\mathrm{feas}}=\int_{x_s}^{x_{\max}}\big(c(x)-y_{\min}\big)\,dx -->
 <!-- \end{equation} -->
 <!-- The ceiling zone $C$ is the complement of the feasible area within the full scope: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:aceilcomplement) -->
+<!-- \tag{4.24} -->
 <!-- C=S-A_{\mathrm{feas}} -->
 <!-- \end{equation} -->
 <!-- Equivalently, $C$ can be written as the sum of the left strip (where the ceiling is undefined) and the area above the ceiling for $x\in[x_s,x_{\max}]$: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:aceil) -->
+<!-- \tag{4.25} -->
 <!-- C=(x_s-x_{\min})(y_{\max}-y_{\min})+\int_{x_s}^{x_{\max}}\big(y_{\max}-c(x)\big)\,dx -->
 <!-- \end{equation} -->
 <!-- Consequently the effect size $d$ is: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizegeneral) -->
+<!-- \tag{4.26} -->
 <!-- d=\frac{C}{S}=1-\frac{A_{\mathrm{feas}}}{S} -->
 <!-- \end{equation} -->
 <!-- --- -->
@@ -831,27 +831,27 @@ Figure 4.3: Comparison of an estimation techniques based on the distribution of 
 <p>Referring to Figure <a href="mathematics.html#fig:classfig">4.1</a>, the general expression for the necessity effect size is as follows. Let the bounding box be <span class="math inline">\(B=[x_{\min},x_{\max}]\times[y_{\min},y_{\max}]\)</span> with <span class="math inline">\(x_{\max}&gt;x_{\min}\)</span> and <span class="math inline">\(y_{\max}&gt;y_{\min}\)</span> and let <span class="math inline">\(c(x)\)</span> be the ceiling value of defined on <span class="math inline">\([x_1,x_{\max}]\)</span> (with <span class="math inline">\(x_1\)</span> the leftmost <span class="math inline">\(x\)</span> where the ceiling is defined).</p>
 <p>The <em>scope</em> <span class="math inline">\(S\)</span> is the area of the bounding box:</p>
 <p><span class="math display" id="eq:scope">\[\begin{equation}
-\tag{4.18}
+\tag{4.22}
 S=(x_{\max}-x_{\min})(y_{\max}-y_{\min})
 \end{equation}\]</span></p>
 <p>The feasible area is the area under the ceiling line <span class="math inline">\(f(x)\)</span> (only for <span class="math inline">\(x\in[x_1,x_{\max}]\)</span>):</p>
 <p><span class="math display" id="eq:afeas">\[\begin{equation}
-\tag{4.19}
+\tag{4.23}
 F=\int_{x_1}^{x_{\max}}\big(f(x)-y_{\min}\big)\,dx
 \end{equation}\]</span></p>
 <p>The ceiling zone <span class="math inline">\(C\)</span> is the complement of the feasible area within the bounding box:</p>
 <p><span class="math display" id="eq:aceil-complement">\[\begin{equation}
-\tag{4.20}
+\tag{4.27}
 C=S-F
 \end{equation}\]</span></p>
 <p>Equivalently, <span class="math inline">\(C\)</span> can be written as the sum of the left strip (where the ceiling is undefined) and the area above the ceiling for <span class="math inline">\(x\in[x_1,x_{\max}]\)</span>:</p>
 <p><span class="math display" id="eq:aceil">\[\begin{equation}
-\tag{4.21}
+\tag{4.25}
 C=(x_1-x_{\min})(y_{\max}-y_{\min})+\int_{x_1}^{x_{\max}}\big(y_{\max}-f(x)\big)\,dx
 \end{equation}\]</span></p>
 <p>Consequently the effect size <span class="math inline">\(d\)</span> is:</p>
-<p><span class="math display" id="eq:effectsizegeneral">\[\begin{equation}
-\tag{4.22}
+<p><span class="math display" id="eq:fdhceiling" id="eq:effectsizegeneral">\[\begin{equation}
+\tag{4.26}
 \begin{aligned}
 d &amp;= \frac{C}{S}\\
 &amp;= 1-\frac{F}{S}
@@ -863,21 +863,21 @@ d &amp;= \frac{C}{S}\\
 <!-- , let the CE-FDH peers be $\{(x_i,y_i)\}_{i=1}^P$ with $x_1<x_2<\cdots<x_P$ -->
 <!-- The CE-FDH ceiling is": -->
 <!-- \begin{equation} -->
-<!-- (\#eq:fdhceiling) -->
+<!-- \tag{4.28} -->
 <!-- f(x)=y_i \ \text{for } x_i\le x < x_{i+1}\ (i=1,\dots,P-1), -->
 <!-- \qquad -->
 <!-- f(x)=y_P \ \text{for } x_P\le x\le x_{\max} -->
 <!-- \end{equation} -->
 <p>For the CE-FDH class of ceiling line, see Equation <a href="mathematics.html#eq:fdh-ceiling">(4.5)</a>, the feasible area is:</p>
 <p><span class="math display" id="eq:afeasfdh">\[\begin{equation}
-\tag{4.23}
+\tag{4.29}
 F_{\mathrm{CE-FDH}}
 =\sum_{i=1}^{P-1}(x_{i+1}-x_i)(y_i-y_{\min})
 +(x_{\max}-x_P)(y_P-y_{\min})
 \end{equation}\]</span></p>
 <p>Therefore, the effect size is:</p>
-<p><span class="math display" id="eq:effectsizefdh">\[\begin{equation}
-\tag{4.24}
+<p><span class="math display" id="eq:effectsizefdh" id="eq:afeasfdh" id="eq:effectsizefdh">\[\begin{equation}
+\tag{4.30}
 \begin{aligned}
 d_{\mathrm{CE-FDH}}
 &amp;= 1-\frac{F_{\mathrm{CE-FDH}}}{S}\\
@@ -886,14 +886,14 @@ d_{\mathrm{CE-FDH}}
 \end{equation}\]</span></p>
 <!-- Using \@ref(eq:afeas) with $c(x)=f(x)$ and $x_s=x_1$, the feasible area is -->
 <!-- \begin{equation} -->
-<!-- (\#eq:afeasfdh) -->
+<!-- \tag{4.29} -->
 <!-- A_{\mathrm{feas}}^{\mathrm{FDH}} -->
 <!-- =\sum_{i=1}^{P-1}(x_{i+1}-x_i)(y_i-y_{\min}) -->
 <!-- +(x_{\max}-x_P)(y_P-y_{\min}) -->
 <!-- \end{equation} -->
 <!-- With full-box scope \@ref(eq:scope), the FDH effect size is -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizefdh) -->
+<!-- \tag{4.30} -->
 <!-- d_{\mathrm{FDH}} -->
 <!-- =1-\frac{A_{\mathrm{feas}}^{\mathrm{FDH}}}{S} -->
 <!-- =1-\frac{ -->
@@ -909,14 +909,14 @@ d_{\mathrm{CE-FDH}}
 <!-- For the CE-VRS class of ceiling line, let the CE-VRS peers be $\{(x_i,y_i)\}_{i=1}^P$ with $x_1<x_2<\cdots<x_P$.  The feasible area is: -->
 <p>For the CE-VRS class of ceiling line, see Equation <a href="mathematics.html#eq:vrs-ceiling">(4.8)</a>, the feasible area is:</p>
 <p><span class="math display" id="eq:afeasvrs">\[\begin{equation}
-\tag{4.25}
+\tag{4.31}
 F_{\mathrm{CE-VRS}}
 =\sum_{i=1}^{P-1}(x_{i+1}-x_i)\left(\frac{y_i+y_{i+1}}{2}-y_{\min}\right)
 +(x_{\max}-x_P)(y_P-y_{\min})
 \end{equation}\]</span></p>
 <p>Therefore, the effect size is:</p>
-<p><span class="math display" id="eq:effectsizevrs">\[\begin{equation}
-\tag{4.26}
+<p><span class="math display" id="eq:effectsizevrs" id="eq:afeasvrs" id="eq:effectsizevrs">\[\begin{equation}
+\tag{4.32}
 \begin{aligned}
 d_{\mathrm{CE-VRS}}
 &amp;= 1-\frac{F_{\mathrm{CE-VRS}}}{S}\\
@@ -925,14 +925,14 @@ d_{\mathrm{CE-VRS}}
 \end{equation}\]</span></p>
 <!-- Using \@ref(eq:afeas) with $c(x)=g(x)$ and $x_s=x_1$, the feasible area is -->
 <!-- \begin{equation} -->
-<!-- (\#eq:afeasvrs) -->
+<!-- \tag{4.31} -->
 <!-- A_{\mathrm{feas}}^{\mathrm{VRS}} -->
 <!-- =\sum_{i=1}^{P-1}(x_{i+1}-x_i)\left(\frac{y_i+y_{i+1}}{2}-y_{\min}\right) -->
 <!-- +(x_{\max}-x_P)(y_P-y_{\min}) -->
 <!-- \end{equation} -->
 <!-- With full-box scope \@ref(eq:scope), the VRS effect size is -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizevrs) -->
+<!-- \tag{4.32} -->
 <!-- d_{\mathrm{VRS}} -->
 <!-- =1-\frac{A_{\mathrm{feas}}^{\mathrm{VRS}}}{S} -->
 <!-- =1-\frac{ -->
@@ -947,7 +947,7 @@ d_{\mathrm{CE-VRS}}
 <h4><span class="header-section-number">4.4.1.3</span> Class of linear ceiling lines<a href="mathematics.html#effectlinear" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>For the class of linear ceiling line, see Equation <a href="mathematics.html#eq:lin-ceiling-peers">(4.15)</a>, let the ceiling line intersect the bounding box at two points <span class="math inline">\((x_1,y_1)\)</span> and <span class="math inline">\((x_2,y_2)\)</span> with <span class="math inline">\(x_{\min}\le x_1 &lt; x_2 \le x_{\max}\)</span>. The feasible area under the ceiling within the bounding box is:</p>
 <p><span class="math display" id="eq:afeaslinear">\[\begin{equation}
-\tag{4.27}
+\tag{4.33}
 \begin{aligned}
 F_{\mathrm{LIN}}
 &amp;= (x_2-x_1)\left(\frac{y_1+y_2}{2}-y_{\min}\right)\\
@@ -955,8 +955,8 @@ F_{\mathrm{LIN}}
 \end{aligned}
 \end{equation}\]</span></p>
 <p>Therefore, the effect size is:
-<span class="math display" id="eq:effectsizelinear" id="eq:checklinear" id="eq:ceilingzonelinear" id="eq:afeaslinear" id="eq:effectsizelinear">\[\begin{equation}
-\tag{4.28}
+<span class="math display" id="eq:effectsizestep3" id="eq:effectsizestep2a" id="eq:effectsizestep2" id="eq:effectsizestep3b" id="eq:effectsizestep3a" id="eq:effectsizestep" id="eq:transformed" id="eq:effectsize1" id="eq:effectsizelin" id="eq:afeaslin-closed" id="eq:afeaslin" id="eq:effectsizelin" id="eq:ceillin-triangle" id="eq:ceillin" id="eq:afeaslin-closed" id="eq:afeaslin" id="eq:effectsizelinear" id="eq:checklinear" id="eq:ceilingzonelinear" id="eq:afeaslinear" id="eq:effectsizelinear">\[\begin{equation}
+\tag{4.34}
 \begin{aligned}
 d_{\mathrm{LIN}}
 &amp;= 1-\frac{F_{\mathrm{LIN}}}{S}\\
@@ -965,27 +965,27 @@ d_{\mathrm{LIN}}
 \end{equation}\]</span></p>
 <!-- ####  Class of linear ceiling lines {#effectlinear} -->
 <!-- For the class of linear ceiling line, let the ceiling line intersect the bounding box at two points $(x_1,y_1)$ and $(x_2,y_2)$ with $x_{\min}\le x_1 < x_2 \le x_{\max}$. The feasible area under the ceiling within the bounding box is: -->
-<!-- \tag{4.27} -->
+<!-- \tag{4.33} -->
 <!-- \begin{equation} -->
 <!-- F_{\mathrm{LIN}} -->
 <!-- =(x_2-x_1)\left(\frac{y_1+y_2}{2}-y_{\min}\right) -->
 <!-- +(x_{\max}-x_2)(y_{\max}-y_{\min}) -->
 <!-- \end{equation} -->
 <!-- The ceiling zone area is: -->
-<!-- \tag{4.29} -->
+<!-- \tag{4.35} -->
 <!-- \begin{equation} -->
 <!-- C_{\mathrm{LIN}} -->
 <!-- =(x_1-x_{\min})(y_{\max}-y_{\min}) -->
 <!-- +(x_2-x_1)\left(y_{\max}-\frac{y_1+y_2}{2}\right) -->
 <!-- \end{equation} -->
 <!-- It holds that the feasible area plus the ceiling zone area equals the scope area $S=(x_{\max}-x_{\min})(y_{\max}-y_{\min})$: -->
-<!-- \tag{4.30} -->
+<!-- \tag{4.36} -->
 <!-- \begin{equation} -->
 <!-- F_{\mathrm{LIN}} + C^{\mathrm{LIN}} -->
 <!-- =(x_{\max}-x_{\min})(y_{\max}-y_{\min}) -->
 <!-- \end{equation} -->
 <!-- Therefore, the effect size is: -->
-<!-- \tag{4.28} -->
+<!-- \tag{4.34} -->
 <!-- \begin{equation} -->
 <!-- d_{\mathrm{LIN}} -->
 <!-- =1-\frac{F_{\mathrm{LIN}}}{S} -->
@@ -1000,53 +1000,53 @@ d_{\mathrm{LIN}}
 <!-- For the class of straight ceiling lines, the two peers correspond to the intersection points of the line with the bounding box such that $x_1=x_{\min}$ and $y_2=y_{\max}$). Let the ceiling be the line segment from $(x_{\min},y_1)$ to $(x_2,y_{\max})$, and equals $y_{\max}$ for $x\in[x_2,x_{\max}]$. -->
 <!-- The feasible area decomposes into a trapezoid on $[x_{\min},x_2]$ plus a full-height rectangle on $[x_2,x_{\max}]$: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:afeaslin) -->
+<!-- \tag{4.37} -->
 <!-- A_{\mathrm{feas}}^{\mathrm{LIN}} -->
 <!-- =\int_{x_{\min}}^{x_2}\big(c(x)-y_{\min}\big)\,dx -->
 <!-- +\int_{x_2}^{x_{\max}}(y_{\max}-y_{\min})\,dx. -->
 <!-- \end{equation} -->
 <!-- Evaluating gives -->
 <!-- \begin{equation} -->
-<!-- (\#eq:afeaslin-closed) -->
+<!-- \tag{4.38} -->
 <!-- A_{\mathrm{feas}}^{\mathrm{LIN}} -->
 <!-- =(x_2-x_{\min})\left(\frac{y_1+y_{\max}}{2}-y_{\min}\right) -->
 <!-- +(x_{\max}-x_2)(y_{\max}-y_{\min}). -->
 <!-- \end{equation} -->
 <!-- The ceiling zone is the complement in the bounding box:  -->
 <!-- \begin{equation} -->
-<!-- (\#eq:ceillin) -->
+<!-- \tag{4.39} -->
 <!-- C^{\mathrm{LIN}}=S-A_{\mathrm{feas}}^{\mathrm{LIN}}. -->
 <!-- \end{equation} -->
 <!-- Equivalently, because $c(x)=y_{\max}$ for $x\in[x_2,x_{\max}]$, the ceiling zone has zero area on the right strip and is only the triangle above the line on $[x_{\min},x_2]$: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:ceillin-triangle) -->
+<!-- \tag{4.40} -->
 <!-- C^{\mathrm{STR}} -->
 <!-- =\int_{x_{\min}}^{x_2}\big(y_{\max}-c(x)\big)\,dx -->
 <!-- =\frac{(x_2-x_{\min})(y_{\max}-y_1)}{2}. -->
 <!-- \end{equation} -->
 <!-- Therefore the straight-class effect size is -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizelin) -->
+<!-- \tag{4.41} -->
 <!-- d_{\mathrm{STR}} -->
 <!-- =\frac{C^{\mathrm{STR}}}{S} -->
 <!-- =\frac{(x_2-x_{\min})(y_{\max}-y_1)}{2\,(x_{\max}-x_{\min})(y_{\max}-y_{\min})}. -->
 <!-- \end{equation} -->
 <!-- Using \@ref(eq:afeas) with $c(x)=\ell(x)$ and $x_s=x_1$, the feasible area is -->
 <!-- \begin{equation} -->
-<!-- (\#eq:afeaslin) -->
+<!-- \tag{4.37} -->
 <!-- A_{\mathrm{feas}}^{\mathrm{LIN}} -->
 <!-- =\int_{x_1}^{x_2}\big(\ell(x)-y_{\min}\big)\,dx+\int_{x_2}^{x_{\max}}(y_2-y_{\min})\,dx -->
 <!-- \end{equation} -->
 <!-- and evaluating gives -->
 <!-- \begin{equation} -->
-<!-- (\#eq:afeaslin-closed) -->
+<!-- \tag{4.38} -->
 <!-- A_{\mathrm{feas}}^{\mathrm{LIN}} -->
 <!-- =(x_2-x_1)\left(\frac{y_1+y_2}{2}-y_{\min}\right) -->
 <!-- +(x_{\max}-x_2)(y_2-y_{\min}) -->
 <!-- \end{equation} -->
 <!-- With full-box scope \@ref(eq:scope), the linear-class effect size is -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizelin) -->
+<!-- \tag{4.41} -->
 <!-- d_{\mathrm{LIN}} -->
 <!-- =1-\frac{A_{\mathrm{feas}}^{\mathrm{LIN}}}{S} -->
 <!-- =1-\frac{ -->
@@ -1059,47 +1059,47 @@ d_{\mathrm{LIN}}
 <!-- ################# -->
 <!-- . When the ceiling line is a straight line (within the bounding box and on or above the diagonal^[For a bounding box $[0,1] \times [0,1]$, this requires that $0 \leq a <  1$ and $a +  b = 1$.] with parameters intercept and slope, as per equation \@ref(eq:mathscope1), the expression for the effect size is:  -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:effectsize1) -->
+<!-- \tag{4.42} -->
 <!-- d = \frac{(1 - a')^2}{2b'} -->
 <!-- \end{equation} -->
 <!-- with: -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:transformed) -->
+<!-- \tag{4.43} -->
 <!-- a' = \frac{b x_{\min} + a - y_{\min}}{y_{\max} - y_{\min}} \quad \quad -->
 <!-- b' = \frac{b (x_{\max} - x_{\min})}{y_{\max} - y_{\min}} -->
 <!-- \end{equation} -->
 <!-- where $a$ and $b$ are the original intercept and slope and $x_{\min}$, $x_{\max}$, $y_{\min}$, $y_{\max}$ the original minimum and maximum $X$- and $Y$-values, and $a'$ and $b'$ are the transformed intercept and the slope of the ceiling line in the unit square $[0,1] × [0,1]$. -->
 <!-- <!-- When the ceiling line is a step function with horizontal van vertical line segments   -->
 <!-- <!-- \begin{equation} -->
-<!-- <!-- (\#eq:effectsizestep) -->
+<!-- <!-- \tag{4.44} -->
 <!-- <!-- d = \sum_{i=1}^{M} (x_i - x_{i-1})(1 - I_i(x)) -->
 <!-- <!-- \end{equation} -->
 <!-- When the ceiling line is a step function with vertical and horizontal line segments, the effect size is:  -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizestep3a) -->
+<!-- \tag{4.45} -->
 <!-- d = 1 - \sum_{i=1}^{M} v'_i \cdot h'_i -->
 <!-- \end{equation} -->
 <!-- with: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizestep3b) -->
+<!-- \tag{4.46} -->
 <!-- v'_i = \frac{v_i}{y_{\max} - y_{\min}} \quad \quad -->
 <!-- h'_i = \frac{h_i}{x_{\max} - x_{\min}} -->
 <!-- \end{equation} -->
 <!-- where $M$ is the total number of steps, and $v_i$ and $h_i$ are the original vertical and horizontal segments of the i-th step, and $v'_i$ and $h'_i$ are the transformed vertical and horizontal segments of the $i$-th step in the unit square $[0,1] × [0,1]$. -->
 <!-- When the ceiling line is a step function with horizontal and vertical line segments, the total area ($C$ is 'ceiling zone') above the step function up to \( y_{\max} \) and is given by: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizestep2) -->
+<!-- \tag{4.47} -->
 <!-- C = y_{\max} (x_{\max} - x_{\min}) - \sum_{i=1}^{M} v'_i (h'_i - h'_{i-1}) -->
 <!-- \end{equation} -->
 <!-- where $M$ is the total number of steps, \( v'_i \) is the vertical segment of each step and \( x'_i - x'_{i-1} \) the horizontal segment of each step. \( x_{\min} \) and \( x_{\max} \) define the total width of the step function and \( y_{\max} \) is the last horizontal segment. -->
 <!-- The corresponding effect size is: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizestep2a) -->
+<!-- \tag{4.48} -->
 <!-- d = C / S -->
 <!-- \end{equation} -->
 <!-- where $C$ is the ceilning zone and $S$ is the scope. For a scope corresponding to the unit square the effect size formula is: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizestep3) -->
+<!-- \tag{4.49} -->
 <!-- d = 1 - \sum_{i=1}^{M} v_i (x_i - x_{i-1}) -->
 <!-- \end{equation} -->
 <!-- where $M$ is the total number of steps, the first term \( 1 \) represents the total area of the unit square, and the second term subtracts the feasible area, leaving the empty area above the steps. -->
@@ -1121,12 +1121,12 @@ Figure 4.4: Necessity inefficiency refers to the part of the feasible area where
 <p>When <span class="math inline">\((x_c,y_c)\)</span> is a point on the ceiling line and <span class="math inline">\(x &lt; x_{c}\)</span>, then <span class="math inline">\(x\)</span> is a bottleneck for <span class="math inline">\(y = y_{c}\)</span>. Only an increased value of <span class="math inline">\(x\)</span> such that <span class="math inline">\(x\geq x_{c}\)</span> enables a value <span class="math inline">\(y = y_{c}\)</span>. For reaching the value of <span class="math inline">\(y = y_{\max}\)</span> it is necessary to have a value of <span class="math inline">\(x\geq x_{\operatorname{2}}\)</span>, where <span class="math inline">\(x_{\operatorname{2}}\)</span> is the value of <span class="math inline">\(x\)</span> of the point where the ceiling line crosses the <span class="math inline">\(y = y_{\max}\)</span> line. Thus, for enabling the maximum possible value <span class="math inline">\(y_{\max}\)</span>, <span class="math inline">\(x\)</span> should be at least <span class="math inline">\(x = x_{\operatorname{2}}\)</span>. Increasing <span class="math inline">\(x\)</span> beyond <span class="math inline">\(x = x_{\operatorname{2}}\)</span> for enabling <span class="math inline">\(y = y_{\max}\)</span> is not needed as <span class="math inline">\(y\)</span> is no longer constrained. This is called ‘inefficiency’ regarding enabling the maximum outcome.</p>
 <p><em>Condition inefficiency</em> specifies the extent to which <span class="math inline">\(x\)</span> does not constrain <span class="math inline">\(y\)</span> for levels of <span class="math inline">\(x_{\operatorname{2}}\leq x\leq x_{\max}\)</span>. Only for <span class="math inline">\(x_{\min}\leq x\leq\ x_{\operatorname{2}}\)</span>, <span class="math inline">\(x\)</span> constrains <span class="math inline">\(y\)</span> (ceiling line exists for <span class="math inline">\(x_{\min} \leq x\leq x_{\operatorname{2}}\)</span>). Condition inefficiency is expressed as a percentage:</p>
 <p><span class="math display" id="eq:conditioninefficiency">\[\begin{equation}
-\tag{4.31}
+\tag{4.50}
 \text{condition inefficiency}  = \frac{x_{\max} - x_{\operatorname{2}}}{x_{\max} - x_{\min}} * 100\% \end{equation}\]</span></p>
 <p>where <span class="math inline">\(x_{\max}\)</span> and <span class="math inline">\(x_{\min}\)</span> are the minimum and maximum values of <span class="math inline">\(x\)</span> (bounds) and <span class="math inline">\(x_{\operatorname{2}}\)</span> is the value of <span class="math inline">\(x\)</span> of the point where the ceiling line crosses the <span class="math inline">\(y = y_{\max}\)</span> line.</p>
 <p>Similarly, <em>outcome inefficiency</em> specifies the extent to which <span class="math inline">\(Y\)</span> is not constrained by <span class="math inline">\(X\)</span> for lower levels of <span class="math inline">\(y_{\min}\leq y\leq y_{\operatorname{1}}\)</span>, where <span class="math inline">\(y_{\operatorname{1}}\)</span> is the value of <span class="math inline">\(y\)</span> of the point where the ceiling line crosses the <span class="math inline">\(x = x_{\min}\)</span> line. Only for <span class="math inline">\(y_{\operatorname{1}}\leq y\leq y_{\max}\)</span>, <span class="math inline">\(y\)</span> is constrained by <span class="math inline">\(X\)</span> (ceiling line exists for <span class="math inline">\(y_{\operatorname{1}}\leq y\leq y_{\max}\)</span>). Outcome inefficiency is expressed as a percentage:</p>
 <p><span class="math display" id="eq:outcomeinefficiency">\[\begin{equation}
-\tag{4.32}
+\tag{4.51}
 \text{outcome inefficiency}  = \frac{y_{\operatorname{1}} - y_{\min}}{y_{\max} - y_{\min}} * 100\% \end{equation}\]</span></p>
 <p>where <span class="math inline">\(y_{\min}\)</span> and <span class="math inline">\(y_{\max}\)</span> are the minimum and maximum values of <span class="math inline">\(Y\)</span> (bounds), and <span class="math inline">\(y_{\operatorname{1}}\)</span> is the value of <span class="math inline">\(y\)</span> of the point where the ceiling line crosses the <span class="math inline">\(x = x_{\min}\)</span> line. Outcome inefficiency is 0% if <span class="math inline">\(X\)</span> constrains <span class="math inline">\(Y\)</span> for all values of <span class="math inline">\(Y\)</span>; outcome inefficiency is 100% if <span class="math inline">\(Y\)</span> is not constrained for any value of <span class="math inline">\(X\)</span>.</p>
 </div>
@@ -1140,7 +1140,7 @@ Figure 4.4: Necessity inefficiency refers to the part of the feasible area where
 <p>The <em>complexity</em> metric (<span class="math inline">\(cp\)</span>) can be used to balance parsimony against accuracy. A complex model fits data well (accuracy) but needs more parameters, whereas the model with low complexity is attractive for generalization and practical usefulness, but may lack accuracy.</p>
 <p>The proposed complexity measure relates to the model degrees of freedom (Section <a href="mathematics.html#modeldf">4.3.3</a>). When the degrees of freedom for the bounding box are fixed at four, the model degrees of freedom depend only on the ceiling line. The ceiling line degrees of freedom equal the model degrees of freedom minus 4. That is:</p>
 <p><span class="math display" id="eq:df-nontightceiling">\[\begin{equation}
-\tag{4.33}
+\tag{4.52}
 df_{\text{ceiling}} =
 \begin{cases}
 2,       &amp; \text{linear ceiling line} \\
@@ -1149,8 +1149,8 @@ df_{\text{ceiling}} =
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(P\)</span> is the number of peers on the piecewise linear ceiling as defined in Section <a href="mathematics.html#modeldf">4.3.3</a>.</p>
 <p>The more degrees of freedom, the more complex the ceiling is. The linear ceiling line has the lowest complexity. This base level is set at 1 (degrees of freedom divided by 2) and represents 1 pair of parameters needed for describing a linear ceiling line (intercept, slope). The complexity of a segmented ceiling line can be described by the number of peers. Each peer can be described by 1 pair of parameters (<span class="math inline">\(x\)</span>-coordinate and <span class="math inline">\(y\)</span>-coordinate). Therefore, complexity is defined as:</p>
-<p><span class="math display" id="eq:complexity">\[\begin{equation}
-\tag{4.34}
+<p><span class="math display" id="eq:df-ceiling2" id="eq:complexity">\[\begin{equation}
+\tag{4.53}
 complexity_{\text{}} =
 \begin{cases}
 1,       &amp; \text{linear ceiling line} \\
@@ -1160,7 +1160,7 @@ P,       &amp; \text{segmented ceiling line}
 <p>where <span class="math inline">\(P\)</span> is the number of peers.</p>
 <!-- When the complexity of the considering this level complexity level and can be considered the standard with which other  Assuming that the bounding box is known  the ceiling line (e.g., estimated from the data), the model complexity is directly related to the degrees of freedom of the ceiling line (Equation \@ref(eq:df-ceiling)). More precisely, the complextity metric is half of the degrees of freedom of the ceiling line.    as follows: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:df-ceiling2) -->
+<!-- \tag{4.54} -->
 <!-- complexity = 0.5 df_{\text{ceiling}} = -->
 <!-- \begin{cases} -->
 <!-- S , & \text{horizontal and vertical segments} \\ -->
@@ -1179,7 +1179,7 @@ P,       &amp; \text{segmented ceiling line}
 <p>The model fit metric <em>fit</em> (<span class="math inline">\(ft\)</span>) compares a selected ceiling line with the CE-FDH ceiling line. CE-FDH follows the border closely and gives the maximum possible effect size under strict necessity (no cases above the ceiling). By definition, fit of CE-FDH equals 100%. For other selected ceiling lines, fit is usually lower. The fit metric indicates how closely the selected ceiling line follows the pattern of the boundary like the CE-FDH does.<a href="#fn39" class="footnote-ref" id="fnref39"><sup>39</sup></a></p>
 <p>Fit can be expressed as follows:</p>
 <p><span class="math display" id="eq:fit">\[\begin{equation}
-\tag{4.35}
+\tag{4.55}
 fit =
 \begin{cases}
 \frac{d_{\text{ceiling}}}{d_{\text{CE-FDH}}} \times 100\% &amp; \text{if } d_{\text{ceiling}} \leq d_{\text{CE-FDH}} \\
@@ -1199,7 +1199,7 @@ Figure 4.5: Estimation of the ceiling line. Left: points in the ceiling zone. Ri
 </div>
 <p>For good model fit nearly all points are in the feasible area. Ceiling accuracy is the percentage of points in the feasible area (on or below the ceiling line):</p>
 <p><span class="math display" id="eq:caccuracy">\[\begin{equation}
-\tag{4.36}
+\tag{4.56}
 ceiling\,accuracy = \left( 1 - \frac{n_{\text{ceiling zone}}}{n}\right) \times 100\%
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(n_{ceiling\,zone}\)</span> is the number of points in the ceiling zone, and <span class="math inline">\(n\)</span> is the total number of points.<a href="#fn41" class="footnote-ref" id="fnref41"><sup>41</sup></a></p>
@@ -1215,13 +1215,13 @@ Figure 4.6: Purity: capturing the proximity of a point in the ceiling zone to th
 </div>
 <p>Purity is a measure of closeness of a point P in the ceiling zone to the ceiling. Referring to Figure <a href="mathematics.html#fig:imperfectveracityfig">4.6</a>-left, it is defined as:</p>
 <p><span class="math display" id="eq:veracity0">\[\begin{equation}
-\tag{4.37}
+\tag{4.57}
 purity\,(P) = \frac{\text{size of area of F} \,{\cap}\, \text{LR(P)}} {\text{size of area of LR(P)}}
 \end{equation}\]</span></p>
 <p>where F is the feasible area, and LR(P) is the area at the lower-right side of point P within the bounding box.
-Referring to the linear ceiling line in Figure <a href="mathematics.html#fig:imperfectveracityfig">4.6</a>-left, the numerator of Equation <a href="mathematics.html#eq:veracity0">(4.37)</a> is A and the denominator A + B. Therefore, the purity of a point P for a linear ceiling line is:</p>
+Referring to the linear ceiling line in Figure <a href="mathematics.html#fig:imperfectveracityfig">4.6</a>-left, the numerator of Equation <a href="mathematics.html#eq:veracity0">(4.57)</a> is A and the denominator A + B. Therefore, the purity of a point P for a linear ceiling line is:</p>
 <p><span class="math display" id="eq:veracity">\[\begin{equation}
-\tag{4.38}
+\tag{4.58}
 purity\,(P) = \frac{A}{A+B}
 \end{equation}\]</span></p>
 <!-- v(P) = \frac{A}{A+B} #\quad or \quad 1- \frac{B}{A+B} -->
@@ -1243,19 +1243,19 @@ Figure 4.7: Solidity: capturing the proximity of a point in the feasible area to
 </div>
 <p>Referring to Figure <a href="mathematics.html#fig:imperfectsolidityfig">4.7</a>-left, it is defined as:</p>
 <p><span class="math display" id="eq:solidity0">\[\begin{equation}
-\tag{4.39}
+\tag{4.59}
 solidity(P) = \frac{\text{size of area of C} \,{\cap}\, \text{UL(P)}} {\text{size of area of UL(P)}}
 \end{equation}\]</span></p>
-<p>where C is the ceiling zone, and UL(P) is the area at the upper-left side of point P within the bounding box. Referring to the linear ceiling line in Figure <a href="mathematics.html#fig:imperfectsolidityfig">4.7</a>-left, the numerator of Equation <a href="mathematics.html#eq:solidity0">(4.39)</a> is A and the denominator A + B. Therefore, the solidity equation for a linear ceiling line is:</p>
-<p><span class="math display" id="eq:solidity">\[\begin{equation}
-\tag{4.40}
+<p>where C is the ceiling zone, and UL(P) is the area at the upper-left side of point P within the bounding box. Referring to the linear ceiling line in Figure <a href="mathematics.html#fig:imperfectsolidityfig">4.7</a>-left, the numerator of Equation <a href="mathematics.html#eq:solidity0">(4.59)</a> is A and the denominator A + B. Therefore, the solidity equation for a linear ceiling line is:</p>
+<p><span class="math display" id="eq:solidity" id="eq:solidity">\[\begin{equation}
+\tag{4.60}
 solidity\,(P) = \frac{A}{A+B}
 \end{equation}\]</span></p>
 <!-- v(P) = \frac{A}{A+B} #\quad or \quad 1- \frac{B}{A+B} -->
 <p>where the dark-gray area A is the intersection between the ceiling zone and the UL(P) area, and the dotted area B is the intersection between the feasible area and the UL(P) area. The highest solidity value of 1 refers to a point on or above the ceiling line (B = 0, point is not in the feasible area). A point below the ceiling line has a solidity value &lt; 1. A point in the lower-right corner of the feasible area is furthest from the ceiling line, and has the lowest solidity value.</p>
 <!-- Solidity is defined as: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:solidity) -->
+<!-- \tag{4.60} -->
 <!-- \text{solidity} = 1 - \frac{A}{A+B} -->
 <!-- \end{equation} -->
 <!-- where, referring to Figure \@ref(fig:imperfectsolidityfig) (Left) $A$ is the size of the dark-grey area, and $B$ is the size of the dotted area. A solidity value of 0 refers to a point in the lower-right corner (in the feasible area furthest from the ceiling). A solidity value of 1 refers to a point on or above the ceiling line.  -->
@@ -1264,20 +1264,20 @@ solidity\,(P) = \frac{A}{A+B}
 <p>For good model fit there should be at least a certain percentage of points on the ceiling line or in the medium-solidity zone, which may represent support for necessity. Model fit metric <em>support</em> (<span class="math inline">\(su\)</span>) quantifies how strongly the data in the feasible area support the ceiling.<a href="#fn46" class="footnote-ref" id="fnref46"><sup>46</sup></a></p>
 <p>While the model fit metric support evaluates the percentage of points on and just below the ceiling to support the ceiling, those points may be clustered and only support certain parts of the line. Preferably all parts of the ceiling are supported. The model fit metric <em>spread</em> (<span class="math inline">\(sp\)</span>) indicates how evenly the <span class="math inline">\(x\)</span>-positions of the supporting points cover the range (<span class="math inline">\(x_{\min},x_{\max}\)</span>). To compute spread, the number of points on the ceiling line (<span class="math inline">\(satS\)</span>) and in the medium-solidity zone (<span class="math inline">\(medS\)</span>) are selected, and their <span class="math inline">\(X\)</span>-values (<span class="math inline">\(x_i\)</span> for <span class="math inline">\(i=1,\ldots,n\)</span>) are obtained. For this set of <span class="math inline">\(n\)</span> points the coefficient of variation (<span class="math inline">\(CV\)</span>) is calculated by dividing the standard deviation (<span class="math inline">\(sd\)</span>) by the mean (<span class="math inline">\(\bar{x}\)</span>) as follows:</p>
 <p><span class="math display" id="eq:spread1">\[\begin{equation}
-\tag{4.41}
+\tag{4.61}
 \bar{x} = \frac{1}{n}\sum_{i=1}^n x_i
 \end{equation}\]</span></p>
 <p><span class="math display" id="eq:spread2">\[\begin{equation}
-\tag{4.42}
+\tag{4.62}
 sd = \sqrt{\frac{1}{n-1}\sum_{i=1}^n (x_i - \bar{x})^2}
 \end{equation}\]</span></p>
 <p><span class="math display" id="eq:spread3">\[\begin{equation}
-\tag{4.43}
+\tag{4.63}
 CV = \frac{sd}{\bar{x}}
 \end{equation}\]</span></p>
 <p>To obtain a metric of evenness, the coefficient of variation is transformed as follows:<br />
 <span class="math display" id="eq:spread4">\[\begin{equation}
-\tag{4.44}
+\tag{4.64}
 spread = \frac{1}{1 + \frac{sd}{\bar{x}}}
 \end{equation}\]</span></p>
 <p>The spread metric ranges from 0 to 1. High spread values (e.g., <span class="math inline">\(\ge\)</span> 0.5) are favored over low spread values. Spread is undefined when <span class="math inline">\(\bar{x} = 0\)</span>, which can occur when <span class="math inline">\(x\)</span>-values are negative or zero; min-max normalization can avoid this.</p>
@@ -1293,7 +1293,7 @@ Figure 4.8: Point <span class="math inline">\(P_s\)</span> is in the medium-soli
 </div>
 <p>sharpness is defined as:</p>
 <p><span class="math display" id="eq:sharpness">\[\begin{equation}
-\tag{4.45}
+\tag{4.65}
 sharpness =
 \begin{cases}
 \frac{medS}{medS+medP} &amp; \text{if } medS + medP \neq 0 \\
@@ -1873,23 +1873,27 @@ High (e.g., <span class="math inline">\(sh\)</span> &gt; 0.8).
 <p>NCA intentionally reduces causal complexity by reducing a multidimensional constraint structure to single-condition necessity relations by projection, and assumes that these overall necessity constraints manifest as observable ceilings in the empirical (natural) distribution.</p>
 <p>The formalization is as follows.<a href="#fn48" class="footnote-ref" id="fnref48"><sup>48</sup></a> Let <span class="math inline">\(Y \in \mathbb{R}\)</span> denote an outcome variable and let<br />
 <span class="math inline">\(\mathbf{X} = (X_1, \ldots, X_J)\)</span> denote a vector of <span class="math inline">\(J\)</span> conditions. Assume that the data-generating process implies an upper bound on <span class="math inline">\(Y\)</span> given by a (possibly unknown and complex) function:</p>
-<p><span class="math display">\[\begin{equation}
+<p><span class="math display" id="eq:multivarceiling">\[\begin{equation}
+\tag{4.66}
 Y \le f(\mathbf{X})
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(\mathbf{X}\)</span> is a vector of conditions and <span class="math inline">\(f\)</span> defines a multidimensional ceiling surface.</p>
 <p>NCA does not attempt to model or estimate <span class="math inline">\(f(\mathbf{X})\)</span>. Instead, for each condition <span class="math inline">\(X_j\)</span>, NCA considers the projection of the feasible set onto the <span class="math inline">\((X_jY)\)</span>-plane:</p>
-<p><span class="math display">\[\begin{equation}
+<p><span class="math display" id="eq:projectionxjy">\[\begin{equation}
+\tag{4.67}
 {(x_j, y) : \exists \mathbf{x}_{-j}\ \text{such that}\ y \le f(x_j, \mathbf{x}_{-j})}.
 \end{equation}\]</span></p>
 <p>This projection induces a bivariate model with a ceiling function:</p>
-<p><span class="math display">\[\begin{equation}
+<p><span class="math display" id="eq:bivariateceiling">\[\begin{equation}
+\tag{4.68}
 Y \le f_j(X_j),
 \end{equation}\]</span></p>
 <p>where
-<span class="math display">\[\begin{equation}
+<span class="math display" id="eq:supceiling">\[\begin{equation}
+\tag{4.69}
 f_j(x_j) = sup_{\mathbf{x}_{-j}} f(x_j, \mathbf{x}_{-j}),
-\end{equation}\]</span></p>
-<p>and <span class="math inline">\(\mathbf{x}_{-j}\)</span> denotes all conditions except <span class="math inline">\(X_j\)</span>.</p>
+\end{equation}\]</span>
+and <span class="math inline">\(\mathbf{x}_{-j}\)</span> denotes all conditions except <span class="math inline">\(X_j\)</span>.</p>
 <p>The function <span class="math inline">\(f_j(x_j)\)</span> defines the <em>projected ceiling</em> for condition <span class="math inline">\(X_j\)</span>. The function <span class="math inline">\(f(x_j, \mathbf{x}_{-j})\)</span> represents the <em>multidimensional ceiling</em>, that is, the maximum attainable value of <span class="math inline">\(Y\)</span> for a given combination of all conditions. For a fixed value <span class="math inline">\(x_j\)</span>, the supremum operator <span class="math inline">\(\sup_{\mathbf{x}_{-j}}\)</span> takes the least upper bound of the ceiling <span class="math inline">\(f(x_j, \mathbf{x}_{-j})\)</span> across all admissible values of the remaining conditions. Thus, <span class="math inline">\(f_j(x_j)\)</span> is the highest outcome level that can be achieved at condition level <span class="math inline">\(x_j\)</span> under the most permissive setting of the other conditions. Thus, even if all other conditions take their most lenient possible values, the outcome <span class="math inline">\(Y\)</span> cannot exceed the ceiling value <span class="math inline">\(f_j(x_j)\)</span>.</p>
 <p>In the context of necessity analysis, this construction ensures that the ceiling function <span class="math inline">\(f_j\)</span> captures the <em>overall necessity constraint</em> imposed by <span class="math inline">\(X_j\)</span>: regardless of how the other conditions are configured, the outcome <span class="math inline">\(Y\)</span> cannot exceed <span class="math inline">\(f_j(x_j)\)</span>. The empty space above the ceiling is NCA’s key interest, not the feasible area below the ceiling. Assuming a well-covered sample, meaning that for each <span class="math inline">\(x_j\)</span> the data include sufficiently permissive realizations of the unobserved conditions so that the upper boundary is observed, the estimated ceiling line is not biased by third variables that are omitted from the analysis. Conversely, insufficient boundary coverage (e.g., due to limited sampling or selection that removes near-boundary cases) may lead to underestimation of the ceiling (the true ceiling is higher) and thus overestimation of the effect size (the true effect size is smaller).</p>
 <p>In other words, NCA assumes that the projected ceiling <span class="math inline">\(f_j\)</span> is recoverable from the empirical joint distribution of (<span class="math inline">\(X_j,Y\)</span>), generated under real-world conditions (the <em>natural distribution</em>) and incorporating all interactions, dependencies, and selection mechanisms among the conditions. Under this coverage assumption, the observed data exhibit an empty region above <span class="math inline">\(f_j(X_j)\)</span>, making the estimated ceiling a candidate for causal interpretation with additional theory.</p>
@@ -1917,14 +1921,14 @@ Figure 4.10: A linear multivariate three-dimensional ceiling <span class="math i
 </div>
 <p>In a multidimensional space, NCA considers one projection at a time and therefore one condition at a time. With several conditions, NCA conducts successive analyses by considering the ceilings in the separate <span class="math inline">\(X_jY\)</span>-planes. For example, with two conditions (<span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>), two separate analyses are performed: one in the <span class="math inline">\(X_1Y\)</span>-plane and one in the <span class="math inline">\(X_2Y\)</span>-plane. In geometric terms, NCA places a ceiling surface over the data and takes its orthogonal projections onto the <span class="math inline">\(X_1Y\)</span>- and <span class="math inline">\(X_2Y\)</span>-planes. Each condition thus has its own ceiling line, <span class="math inline">\(f_1(X_1)\)</span> and <span class="math inline">\(f_2(X_2)\)</span>. Consequently, for a given value <span class="math inline">\(Y = y_c\)</span> two conditions must be satisfied: <span class="math inline">\(X_1 \geq x_{1c}\)</span> AND <span class="math inline">\(X_2 \geq x_{2c}\)</span>. Therefore, the maximum possible <span class="math inline">\(Y = y_c\)</span> for given values <span class="math inline">\(X_1 = x_{1c}\)</span>, and <span class="math inline">\(X_2= x_{2c}\)</span> is</p>
 <p><span class="math display" id="eq:math2">\[\begin{equation}
-\tag{4.46}
+\tag{4.70}
 y_c = min \{f_1(x_{1c}), f_2(x_{2c})\}
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(y_c\)</span> is a particular outcome value, <span class="math inline">\(x_{jc}\)</span> is the necessary value of the <span class="math inline">\(j\)</span>-th condition, and <span class="math inline">\(f_j\)</span> is the ceiling line of condition <span class="math inline">\(X_j\)</span>.</p>
 <p>With more than two conditions, there is a multidimensional ceiling with projections <span class="math inline">\(f_j(X_j)\)</span>.</p>
 <p>The mathematical description of a necessity AND-combination of multiple necessary conditions is as follows: for achieving an outcome level <span class="math inline">\(Y = y_c\)</span>, all conditions must satisfy <span class="math inline">\(X_j \geq x_{jc}\)</span>. The maximum possible value of the outcome <span class="math inline">\(Y = y_c\)</span> for given values <span class="math inline">\(X_j = x_{jc}\)</span> is</p>
-<p><span class="math display" id="eq:math3">\[\begin{equation}
-\tag{4.47}
+<p><span class="math display" id="eq:math0" id="eq:math3" id="eq:math3">\[\begin{equation}
+\tag{4.71}
 y_c = min_{j=1,\ldots,J} \{ f_j(x_{jc}) \}
 \end{equation}\]</span></p>
 <p>Here, <span class="math inline">\(y_c\)</span> is a particular outcome value, <span class="math inline">\(x_{jc}\)</span> is the necessary value of the <span class="math inline">\(j\)</span>-th condition, and <span class="math inline">\(f_j\)</span> is the ceiling line associated with condition <span class="math inline">\(X_j\)</span>.</p>
@@ -1943,7 +1947,7 @@ y_c = min_{j=1,\ldots,J} \{ f_j(x_{jc}) \}
 <!-- With more than two conditions there is a multidimensional ceiling with projections $f_j(X_j)$.  -->
 <!-- The mathematical description of a necessity AND-combination of multiple necessary conditions is: $X_j \geq x_{jc}$ for $Y = y_c$ and the maximum possible  $Y = y_c$ for given values of $X_j = x_{jc}$  is   -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:math3) -->
+<!-- \tag{4.71} -->
 <!-- y_c =  min \{f_j(X_j)\} -->
 <!-- \end{equation} -->
 <!-- where $y_c$ is a particular outcome value, $x_{jc}$ is the necessary $X$-value of the j-th condition, $f_j$ is the ceiling line of the j-th condition and $C$ is a point on the ceiling line. -->
@@ -2058,7 +2062,7 @@ y_c = min_{j=1,\ldots,J} \{ f_j(x_{jc}) \}
 <!-- Figure \@ref(fig:formalmodel) shows the two-dimensional plane of condition $X$ and outcome $Y$.  -->
 <!-- The basic mathematical expression of NCA is therefore: -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:math0) -->
+<!-- \tag{4.72} -->
 <!-- Y \leq f_c(x)  -->
 <!-- \end{equation} -->
 <!-- where $f_c(x)$ is the ceiling function.  -->
@@ -2071,19 +2075,19 @@ y_c = min_{j=1,\ldots,J} \{ f_j(x_{jc}) \}
 <h4><span class="header-section-number">4.6.4.1</span> Analysis of chain necessity<a href="mathematics.html#analysis-of-chain-necessity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>A general necessity chain consists of a sequence of necessary conditions: the first condition <span class="math inline">\(X_1\)</span>, intermediate conditions <span class="math inline">\(X_2, X_3, \ldots, X_J\)</span>, and the outcome <span class="math inline">\(Y\)</span>:</p>
 <p><span class="math display" id="eq:ch1">\[\begin{equation}
-\tag{4.48}
+\tag{4.73}
 X_1 \rightarrow X_2 \rightarrow X_3 \rightarrow \cdots \rightarrow X_J \rightarrow Y
 \end{equation}\]</span></p>
 <p>Here, <span class="math inline">\(J\)</span> is the number of necessary conditions (and thus the chain has <span class="math inline">\(J\)</span> links ending in <span class="math inline">\(Y\)</span>). For example, an additional intermediate necessary condition between study hours and quiz score could be active class participation (engagement, asking questions).</p>
 <p>For each link, a ceiling function bounds the subsequent variable:</p>
 <p><span class="math display" id="eq:ch2">\[\begin{equation}
-\tag{4.49}
+\tag{4.74}
 X_{j+1} \le f_j(X_j), \quad j = 1,\ldots,J-1, \qquad
 Y \le f_J(X_J).
 \end{equation}\]</span></p>
 <p>The chain ceiling <span class="math inline">\(f_{\mathrm{chain}}(X_1)\)</span> expresses the implied necessity of <span class="math inline">\(X_1\)</span> for <span class="math inline">\(Y\)</span> through the chain. It is defined as the composition of the link-specific ceiling functions:</p>
 <p><span class="math display" id="eq:ch3">\[\begin{equation}
-\tag{4.50}
+\tag{4.75}
 Y \le f_J\!\big(f_{J-1}(\cdots f_1(X_1)\cdots)\big)
 = f_{\mathrm{chain}}(X_1).
 \end{equation}\]</span></p>
@@ -2092,37 +2096,37 @@ Y \le f_J\!\big(f_{J-1}(\cdots f_1(X_1)\cdots)\big)
 <p>Throughout, all variables are assumed to be min–max normalized, all ceilings are defined within the same bounding box, and all variables are assumed to be able to reach the extremes of that bounding box.</p>
 <p>In the linear case with the unit bounding box <span class="math inline">\([0,1] \times [0,1]\)</span>, each link is described by a truncated linear ceiling:</p>
 <p><span class="math display" id="eq:effectsizechainceilinglinear1">\[\begin{equation}
-\tag{4.51}
+\tag{4.76}
 f_j(X_j) = \min(a_j + b_j X_j,\,1), \qquad j=1,\ldots,J.
 \end{equation}\]</span></p>
 <p>Here, <span class="math inline">\(a_j\)</span> is the intercept and <span class="math inline">\(b_j\)</span> is the slope. Assume that each link represents the standard case of necessity (a ceiling line on or above the diagonal in the unit box), i.e., <span class="math inline">\(0&lt;a_j&lt;1\)</span> and <span class="math inline">\(1&lt;a_j+b_j\)</span>.</p>
 <p>The resulting chained ceiling is again linear:</p>
 <p><span class="math display" id="eq:effectsizechainceilinglinear2">\[\begin{equation}
-\tag{4.52}
+\tag{4.77}
 Y \le f_{\mathrm{chain}}(X_1) = a_{\mathrm{chain}} + b_{\mathrm{chain}}\,X_1.
 \end{equation}\]</span></p>
 <p>The chain intercept and slope are:</p>
 <p><span class="math display" id="eq:effectsizeachain">\[\begin{equation}
-\tag{4.53}
+\tag{4.78}
 a_{\mathrm{chain}} =
 \sum_{j=1}^{J}
 \left( a_j \prod_{k=j+1}^{J} b_k \right),
 \end{equation}\]</span></p>
 <p><span class="math display" id="eq:effectsizebchain">\[\begin{equation}
-\tag{4.54}
+\tag{4.79}
 b_{\mathrm{chain}} = \prod_{j=1}^{J} b_j,
 \end{equation}\]</span></p>
 <p>with the convention that an empty product equals <span class="math inline">\(1\)</span>.</p>
 <p>For ceilings on or above the diagonal, <span class="math inline">\(a_{\mathrm{chain}} \ge 1-b_{\mathrm{chain}}\)</span>, which implies <span class="math inline">\(d_{\mathrm{chain}} \le \tfrac{1}{2}b_{\mathrm{chain}}\)</span>. In the unit square bounding box <span class="math inline">\([0,1]\times[0,1]\)</span>, the effect size of the (linear) chain ceiling <span class="math inline">\(Y \le a_{\mathrm{chain}} + b_{\mathrm{chain}}X_1\)</span> is:</p>
-<p><span class="math display" id="eq:effectsizechaingeneral">\[\begin{equation}
-\tag{4.55}
+<p><span class="math display" id="eq:effectsizebchain" id="eq:effectsizeachain" id="eq:effectsizechainceilinglinear2" id="eq:effectsizechainceilinglinear1" id="eq:ch3" id="eq:ch3x" id="eq:effectsizeachainxx" id="eq:effectsizeachainx" id="eq:effectsizechain" id="eq:effectsizebchain" id="eq:effectsizeachain" id="eq:effectsizechainceilinglinear2" id="eq:effectsizechainceilinglinear1" id="eq:effectsizechainceilinglinear1" id="eq:ch3" id="eq:ch2" id="eq:ch2" id="eq:ch1" id="eq:effectsizechaingeneral">\[\begin{equation}
+\tag{4.80}
 d_{\mathrm{chain}} =
 \begin{cases}
 \dfrac{(1-a_{\mathrm{chain}})^2}{2\,b_{\mathrm{chain}}}, &amp; \text{if } a_{\mathrm{chain}} &lt; 1,\\[6pt]
 0, &amp; \text{otherwise.}
 \end{cases}
 \end{equation}\]</span></p>
-<p>As shown in Equation (<a href="mathematics.html#eq:effectsizeachain">(4.53)</a>), each intercept <span class="math inline">\(a_j\)</span> is weighted by the product of downstream slopes <span class="math inline">\(b_{j+1},\ldots,b_J\)</span>, and the total intercept <span class="math inline">\(a_{\mathrm{chain}}\)</span> accumulates across the chain. As a result, composing multiple necessary conditions can shift the chain ceiling upward relative to a single link with a comparable slope. Consequently, the chain constraint can become less stringent and may even become non-binding. This explains why, even when each link has a positive effect size, the overall chain can yield a null effect of <span class="math inline">\(X_1\)</span> on <span class="math inline">\(Y\)</span> through the chain.</p>
+<p>As shown in Equation (<a href="mathematics.html#eq:effectsizeachain">(4.78)</a>), each intercept <span class="math inline">\(a_j\)</span> is weighted by the product of downstream slopes <span class="math inline">\(b_{j+1},\ldots,b_J\)</span>, and the total intercept <span class="math inline">\(a_{\mathrm{chain}}\)</span> accumulates across the chain. As a result, composing multiple necessary conditions can shift the chain ceiling upward relative to a single link with a comparable slope. Consequently, the chain constraint can become less stringent and may even become non-binding. This explains why, even when each link has a positive effect size, the overall chain can yield a null effect of <span class="math inline">\(X_1\)</span> on <span class="math inline">\(Y\)</span> through the chain.</p>
 <p>In other words, for ceilings on or above the diagonal within the bounding box, the “weakest link” principle extends to effect size: the chain effect size is less than or equal to the smallest link effect size.</p>
 <!-- ######################## -->
 <!-- Normally, a necessary condition is hypothesized (Chapter \@ref(hypothesisformulation)) and analyzed (Chapter \@ref(dataanalysis)) as the necessity relationship between $X$ and $Y$. For multiple necessary conditions, multiple overall necessity relationships between $X_j$ and $Y$ are hypothesized. However, next to parallel necessary conditions, a serial system consisting of  a chain of necessity conditions can also be hypothesized. The overall $X_1 \rightarrow Y$ relationship (if present) always holds, but it may be (partly) explained by a chain of necessity $X_1 \rightarrow \cdots \rightarrow Y$. -->
@@ -2131,24 +2135,24 @@ d_{\mathrm{chain}} =
 <!-- #### Analysis of chain necessity -->
 <!-- The general necessity chain consists of a series of necessary conditions: the first necessary condition $X_1$, then intermediate necessary conditions $X_2, X_3, \ldots, X_J$, and finally the outcome $Y$, with the sequence: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:ch1) -->
+<!-- \tag{4.73} -->
 <!-- X_1 \rightarrow X_2 \rightarrow X_3 \rightarrow \cdots \rightarrow X_J \rightarrow Y -->
 <!-- \end{equation}  -->
 <!-- where $J$ is the number of necessary conditions (and this the chain has $J$ links ending in $Y$). -->
 <!-- For example, an additional intermediate necessary condition between study hours and quiz score could be active class participation (engagement, asking questions).  -->
 <!-- For each link, a ceiling function bounds the subsequent variable: -->
 <!-- <!-- \begin{equation} -->
-<!-- <!-- (\#eq:ch2) -->
+<!-- <!-- \tag{4.74} -->
 <!-- <!-- X_{j+1} \;\le\; f_j(X_j), \qquad j=1,2,\ldots,J-1, -->
 <!-- <!-- \end{equation} -->
-<!-- (\#eq:ch2) -->
+<!-- \tag{4.74} -->
 <!-- \begin{equation} -->
 <!-- X_{j+1} \le f_j(X_j), \quad j = 1,\ldots,J-1, \qquad -->
 <!-- Y \le f_J(X_J). -->
 <!-- \end{equation} -->
 <!-- The chain ceiling $f_{\mathrm{chain}}(X_1)$ is the necessity of $X_1$ for $Y$ via the chain. It is the composition: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:ch3) -->
+<!-- \tag{4.75} -->
 <!-- Y \;\le\; f_J\!\big(f_{J-1}(\cdots f_1(X_1)\cdots)\big) -->
 <!-- \;\;=\;\; f_{\mathrm{chain}}(X_1). -->
 <!-- \end{equation} -->
@@ -2157,12 +2161,12 @@ d_{\mathrm{chain}} =
 <!-- It is assumed that all variables are min–max normalized and all ceilings are in the same bounding box. -->
 <!-- In the linear case with the unit square bounding box ($[0,1] \times [0,1]$): -->
 <!-- <!-- \begin{equation} -->
-<!-- <!-- (\#eq:effectsizechainceilinglinear1) -->
+<!-- <!-- \tag{4.76} -->
 <!-- <!-- f_j(X_j) \;=\; \min(a_j + b_j X_j,1),  -->
 <!-- <!-- \qquad Y\le \min(a_j + b_j X_j,1),  -->
 <!-- <!-- \qquad j=1,\ldots,J, -->
 <!-- <!-- \end{equation} -->
-<!-- (\#eq:effectsizechainceilinglinear1) -->
+<!-- \tag{4.76} -->
 <!-- \begin{equation} -->
 <!-- f_j(X_j) \;=\; \min(a_j + b_j X_j,\,1), \qquad j=1,\ldots,J, -->
 <!-- \end{equation} -->
@@ -2170,25 +2174,25 @@ d_{\mathrm{chain}} =
 <!-- Assuming that  each link is the standard case of necessity (ceiling line above the diagonal in the unit square), i.e., $0<a_j<1$ and $1 <a_j+b_j$ -->
 <!-- The chained ceiling is again linear: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizechainceilinglinear2) -->
+<!-- \tag{4.77} -->
 <!-- Y \;\le\; f_{\mathrm{chain}}(X_1) \;=\; a_{\mathrm{chain}} + b_{\mathrm{chain}}\,X_1, -->
 <!-- \end{equation} -->
 <!-- where -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizeachain) -->
+<!-- \tag{4.78} -->
 <!-- a_{\mathrm{chain}} \;=\;  -->
 <!-- \sum_{j=1}^{J}  -->
 <!-- \Bigg( a_j \prod_{k=j+1}^{J} b_k \Bigg), -->
 <!-- \end{equation} -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizebchain) -->
+<!-- \tag{4.79} -->
 <!-- b_{\mathrm{chain}} \;=\; \prod_{j=1}^{J} b_j, -->
 <!-- \end{equation} -->
 <!-- with the convention that an empty product equals $1$. -->
 <!-- For ceilings on or above the diagonal, $a_{\mathrm{chain}} \ge 1-b_{\mathrm{chain}}$, which implies -->
 <!-- $d_{\mathrm{chain}} \le \tfrac{1}{2}b_{\mathrm{chain}}$ and with a unit square $[0,1]\times[0,1]$, bounding box, the effect size of the (linear) chain ceiling -->
 <!-- $Y \le a_{\mathrm{chain}} + b_{\mathrm{chain}}X_1$ is: -->
-<!-- (\#eq:effectsizechain) -->
+<!-- \tag{4.81} -->
 <!-- \begin{equation} -->
 <!-- d_{\mathrm{chain}} = -->
 <!-- \begin{cases} -->
@@ -2198,12 +2202,12 @@ d_{\mathrm{chain}} =
 <!-- \end{equation} -->
 <!-- In the common situation that each ceiling line is within the bounding box and on or above the diagonal (starting on the left bound and ending on the right bound), with the bounding box min-max normalized to the unit square $[0,1] \times [0,1]$ such that $0 \le b_j \le 1$ and $a_j \ge 1-b_j$, the chain ceiling is also on or above the diagonal: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizeachainx) -->
+<!-- \tag{4.82} -->
 <!-- a_{\mathrm{chain}} \;\ge\; 1 - b_{\mathrm{chain}}. -->
 <!-- \end{equation} -->
 <!-- In this situation the chain effect size is:  -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizeachainxx) -->
+<!-- \tag{4.83} -->
 <!-- d_{\mathrm{chain}} \;\le\; \tfrac{1}{2}\,b_{\mathrm{chain}} \;\le\; \min_j \tfrac{1}{2}\,b_j -->
 <!-- \;\;\Rightarrow\;\; -->
 <!-- d_{\mathrm{chain}} \;\le\; \min(d_1,\ldots,d_J). -->
@@ -2235,7 +2239,7 @@ d_{\mathrm{chain}} =
 <!-- xxxxx -->
 <!-- It is assumed that the ceiling line is within the same bounding box and above the diagonal, which means that the ceiling line crosses the left and upper bounds of the bounding box: -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:ch3x) -->
+<!-- \tag{4.84} -->
 <!-- a_c \;=\; \sum_{i=1}^{m} a_i \prod_{k=i+1}^{m} b_k  -->
 <!-- \;\;\ge\;\; \sum_{i=1}^{m} (1-b_i)\prod_{k=i+1}^{m} b_k -->
 <!-- \;=\; 1 - \prod_{i=1}^{m} b_i  -->
@@ -2243,35 +2247,35 @@ d_{\mathrm{chain}} =
 <!-- \end{equation}  -->
 <!-- To express the *chain necessity* of \( X_1 \) for \( Y \) (the necessity of $X_1$ for $Y$ via the chain), the ceiling functions are composed recursively as follows: -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:ch3) -->
+<!-- \tag{4.75} -->
 <!-- Y \leq f_k(f_{k-1}(\cdots f_1(X_1))) -->
 <!-- \end{equation}  -->
 <!-- where $f_k$ is the ceiling function of the last link. -->
 <!-- Suppose that each ceiling function is linear within the same bounding box: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:effectsizechainceilinglinear1) -->
+<!-- \tag{4.76} -->
 <!-- X_{i+1} \leq f_i(X_i) = a_i + b_i X_i, \quad \text{for } i = 1, 2, \ldots, k -->
 <!-- \end{equation} -->
 <!-- where $a_i$ is the ceiling intercept, $b_i$ is the ceiling slope, and $X_{k+1} = Y$. -->
 <!-- Then the ceiling function of the chain necessity \( X_1 \) for \( Y \) is: -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:effectsizechainceilinglinear2) -->
+<!-- \tag{4.77} -->
 <!-- Y \leq f_{\text{chain}}(X_1) = a_{\text{chain}} + b_{\text{chain}} X_1 -->
 <!-- \end{equation} -->
 <!-- where: -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:effectsizeachain) -->
+<!-- \tag{4.78} -->
 <!-- a_{\text{chain}} = \sum_{i=1}^k \left( a_i \cdot \prod_{j=i+1}^k b_j \right) -->
 <!-- \end{equation} -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:effectsizebchain) -->
+<!-- \tag{4.79} -->
 <!-- b_{\text{chain}} = \prod_{i=1}^k b_i -->
 <!-- \end{equation} -->
 <!-- (with the convention that an empty product like \( \prod_{j=k+1}^k b_j \) equals 1) -->
 <!-- The phrase "the  chain is as strong as the weakest link: applies to the necessity chain as well. If one of the links is not necessary ($a_i \geq  1$) the necessity chain collapses and $X_1$ is not necessary for $Y$ via the chain. This applies for example when one link is sufficient but not necessary, or that the links describes an average effect  without necessity    -->
 <p>Since ‘a chain is as strong as its weakest link’, the effect size <span class="math inline">\(d_{chain}\)</span> is less than or equal to the effect sizes of all links:</p>
 <p><span class="math display" id="eq:ch4">\[\begin{equation}
-\tag{4.56}
+\tag{4.85}
 d_{\text{chain}} \leq \min(d_1, d_2, \ldots, d_J)
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(d_j\)</span> is the effect size of the <span class="math inline">\(j\)</span>-th link in the chain.</p>
@@ -2279,23 +2283,23 @@ d_{\text{chain}} \leq \min(d_1, d_2, \ldots, d_J)
 </div>
 <div id="numericexamples" class="section level4 hasAnchor" number="4.6.4.2">
 <h4><span class="header-section-number">4.6.4.2</span> Numeric examples<a href="mathematics.html#numericexamples" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>When the chain consists of two links and assuming ceiling lines above the diagonal, the intercept and slope of the chain necessity function of Equations <a href="mathematics.html#eq:effectsizeachain">(4.53)</a> and <a href="mathematics.html#eq:effectsizebchain">(4.54)</a>, reduce to:</p>
+<p>When the chain consists of two links and assuming ceiling lines above the diagonal, the intercept and slope of the chain necessity function of Equations <a href="mathematics.html#eq:effectsizeachain">(4.78)</a> and <a href="mathematics.html#eq:effectsizebchain">(4.79)</a>, reduce to:</p>
 <p><span class="math display" id="eq:effectsizeachaintwolinks">\[\begin{equation}
-\tag{4.57}
+\tag{4.86}
 a_{\text{chain}} = a_1b_2 + a_2
 \end{equation}\]</span></p>
 <p><span class="math display" id="eq:effectsizebchaintwolinks">\[\begin{equation}
-\tag{4.58}
+\tag{4.87}
 b_{\text{chain}} = b_1b_2
 \end{equation}\]</span></p>
 <p>If all variables are min-max normalized to <span class="math inline">\([0,1]\)</span>, the effect size of each link is:</p>
 <p><span class="math display" id="eq:effectsizechain">\[\begin{equation}
-\tag{4.59}
+\tag{4.81}
 d_j = \frac{(1 - a_j)^2}{2b_j}
 \end{equation}\]</span></p>
 <p>The equation for effect size <span class="math inline">\(d_{chain}\)</span> of the chain necessity of <span class="math inline">\(X_1\)</span> for <span class="math inline">\(Y\)</span> is:</p>
 <p><span class="math display" id="eq:ch5">\[\begin{equation}
-\tag{4.60}
+\tag{4.88}
 d_{\text{chain}} =
 \begin{cases}
 \displaystyle \frac{(1 - a_{\text{chain}})^2}{2b_{\text{chain}}}, &amp; \text{if } a_{\text{chain}} &lt; 1 \\
@@ -2307,19 +2311,19 @@ d_{\text{chain}} =
 f_1(X_1) = 0.4 + 2.0 \cdot X_1 \\
 f_2(X_2) = 0.2 + 1.0 \cdot X_2
 \end{align*}\]</span></p>
-<p>According to Equations (<a href="mathematics.html#eq:effectsizeachaintwolinks">(4.57)</a>) and (<a href="mathematics.html#eq:effectsizebchaintwolinks">(4.58)</a>) the intercept and slope for the chain ceiling line are:</p>
+<p>According to Equations (<a href="mathematics.html#eq:effectsizeachaintwolinks">(4.86)</a>) and (<a href="mathematics.html#eq:effectsizebchaintwolinks">(4.87)</a>) the intercept and slope for the chain ceiling line are:</p>
 <p><span class="math display">\[\begin{align*}
 a_{chain} = 0.6  \\
 b_{chain} = 2.0
 \end{align*}\]</span></p>
-<p>Following Equation <a href="mathematics.html#eq:effectsizechain">(4.59)</a>, the two effect sizes <span class="math inline">\(d_1\)</span> and <span class="math inline">\(d_2\)</span> are:</p>
+<p>Following Equation <a href="mathematics.html#eq:effectsizechain">(4.81)</a>, the two effect sizes <span class="math inline">\(d_1\)</span> and <span class="math inline">\(d_2\)</span> are:</p>
 <p><span class="math display">\[\begin{align*}
 d_1 = \frac{(1 - 0.4)^2}{2 \cdot 2.0} = \frac{0.36}{4.0} = 0.09  \\
 d_2 = \frac{(1 - 0.2)^2}{2 \cdot 1.0} = \frac{0.64}{2.0} = 0.32
 \end{align*}\]</span></p>
-<p>According to Equation <a href="mathematics.html#eq:ch5">(4.60)</a> the chain effect size is:</p>
+<p>According to Equation <a href="mathematics.html#eq:ch5">(4.88)</a> the chain effect size is:</p>
 <p><span class="math display" id="eq:effectsize1">\[\begin{equation}
-\tag{4.61}
+\tag{4.42}
 d_{chain} = \frac{(1 - 0.6)^2}{2 \cdot 2.0} = \frac{0.16}{4} = 0.04
 \end{equation}\]</span></p>
 <p>The three <span class="math inline">\(XY\)</span>-plots are shown in Figure <a href="mathematics.html#fig:chaineffect1">4.11</a>.</p>
@@ -2334,18 +2338,19 @@ Figure 4.11: Example of a necessity chain. The effect sizes of the links are: <s
 f_1(X_1) = 0.4 + 0.7 \cdot X_1 \\  
 f_2(X_2) = 0.7 + 0.8 \cdot X_2
 \end{align*}\]</span></p>
-<p>According to Equations (<a href="mathematics.html#eq:effectsizeachaintwolinks">(4.57)</a>) and (<a href="mathematics.html#eq:effectsizebchaintwolinks">(4.58)</a>), the intercept and slope for the composite ceiling lines are:
+<p>According to Equations (<a href="mathematics.html#eq:effectsizeachaintwolinks">(4.86)</a>) and (<a href="mathematics.html#eq:effectsizebchaintwolinks">(4.87)</a>), the intercept and slope for the composite ceiling lines are:
 <span class="math display">\[\begin{align*}
 a_{chain} = 1.02  \\
 b_{chain} = 0.56
 \end{align*}\]</span></p>
-<p>According to Equation <a href="mathematics.html#eq:effectsizechain">(4.59)</a>, the two effect sizes <span class="math inline">\(d_1\)</span> and <span class="math inline">\(d_2\)</span> are:
+<p>According to Equation <a href="mathematics.html#eq:effectsizechain">(4.81)</a>, the two effect sizes <span class="math inline">\(d_1\)</span> and <span class="math inline">\(d_2\)</span> are:
 <span class="math display">\[\begin{align*}
 d_1 = \frac{(1 - 0.4)^2}{2 \cdot 0.7} = \frac{0.36}{1.4} \approx 0.26 \\
 d_2 = \frac{(1 - 0.7)^2}{2 \cdot 0.8} = \frac{0.09}{1.6} \approx 0.06
 \end{align*}\]</span></p>
-<p>Referring to Equation <a href="mathematics.html#eq:ch5">(4.60)</a>, the chain effect size is:
-<span class="math display">\[\begin{equation}
+<p>Referring to Equation <a href="mathematics.html#eq:ch5">(4.88)</a>, the chain effect size is:
+<span class="math display" id="eq:inverse-linear" id="eq:math-linear" id="eq:inversegeneral" id="eq:math-general" id="eq:ch10" id="eq:dchainzero">\[\begin{equation}
+\tag{4.89}
 d_{chain} = 0
 \end{equation}\]</span></p>
 <p>The three <span class="math inline">\(XY\)</span>-plots are shown in Figure <a href="mathematics.html#fig:chaineffect2">4.12</a>.</p>
@@ -2365,7 +2370,7 @@ Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <s
 <!-- This is the reason that in the direct link, the necessary condition is most pronounced compared when it is part of a necessity chain.   -->
 <!-- When there are $J+1$ variables (multiple necessary conditions and one outcome) then there are $J - 1$ intermediate conditions. When the first condition and the outcome are fixed while the intermediates have an arbitrary order, there are the following number of permutations of intermediates (and number of chains):  -->
 <!-- \begin{equation}  -->
-<!-- (\#eq:ch10) -->
+<!-- \tag{4.90} -->
 <!-- \text{chains} \;=\; \sum_{Q=0}^{\,J-1} \binom{\,J-1\,}{Q}\; Q!  -->
 <!-- \end{equation}  -->
 <!-- where $Q$ is the number of selected intermediates in the chain. -->
@@ -2571,7 +2576,7 @@ Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <s
 <!-- ############################## -->
 <!-- The general mathematical expression for a  necessity relationship for condition $X_j$: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:math-general) -->
+<!-- \tag{4.91} -->
 <!-- Y \le f_j(X_j), -->
 <!-- \qquad -->
 <!-- X_j \in [x_{j\min}, x_{j\max}], \; -->
@@ -2581,7 +2586,7 @@ Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <s
 <!-- The ceiling line represent the maximum attainable value of $Y$ given $X_j$. Note that this equation is deterministic: no points are possible above the maximum value. ^[If an empirical study nevertheless observed points above the ceiling, this implies in principle a rejection of the hypothesis, unless the points are errors (measurement error, points not from the theoretical domain where the necessity is supposed to hold). If the typicality perspective is adopted *rare* points may be allowed in the ceiling zone as exceptions to the rule: these points do not belong to the phenomenon that is studied for unknown reasons. Allowing too many exceptions above the ceiling indicates model misfit. It questions the credibility of the ceiling line and its necessity claim (Section \@ref(modelfit)). The ceiling line may be too low and overestimate necessity effect size. This happens, for example, when the analyst selects a ceiling line that inherently allows points above the ceiling, such as ceiling methods like QR, as discussed in Section \@ref(mathematicalestimation)).]  -->
 <!-- Since the ceiling line is assumed to be non-decreasing, it admits an inverse that expresses the minimum required value of $X_j$ for a given value of $Y$: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:inversegeneral) -->
+<!-- \tag{4.92} -->
 <!-- X_j \ge f_j^{-1}(Y) -->
 <!-- \end{equation} -->
 <!-- The inverse ceiling function $f_j^{-1}(Y)$ indicates that for achieving a certain level $Y = y_c$, it is necessary to have $X_j \ge x_{jc}$, where $x_{jc} = f_j^{-1}(y_c)$. If $X_j < x_{jc}$, then $Y = y_c$ is not possible, where $c$ refers to a point $C$ on the ceiling line. -->
@@ -2603,7 +2608,7 @@ Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <s
 <!-- ``` -->
 <!-- For a straight linear ceiling line, the ceiling function is: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:math-linear) -->
+<!-- \tag{4.93} -->
 <!-- Y \le a + bX, -->
 <!-- \qquad b > 0 -->
 <!-- \end{equation} -->
@@ -2612,7 +2617,7 @@ Figure 4.12: Example of a necessity chain. The effect sizes of the links are: <s
 <!-- $y_{\min} \le a + bX \le y_{\max}$ within this domain. -->
 <!-- Because the straight ceiling line is strictly increasing, its inverse is uniquely defined: -->
 <!-- \begin{equation} -->
-<!-- (\#eq:inverse-linear) -->
+<!-- \tag{4.94} -->
 <!-- f_j^{-1}(Y) = \frac{Y - a}{b} -->
 <!-- \end{equation} -->
 <!-- Thus, for having $Y = y_c$, it is necessary that: -->
