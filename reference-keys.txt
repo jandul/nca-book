@@ -56,8 +56,6 @@ eq:afeasvrs
 eq:effectsizevrs
 eq:afeaslinear
 eq:effectsizelinear
-eq:ceilingzonelinear
-eq:checklinear
 fig:inefficiencyfig
 eq:conditioninefficiency
 eq:outcomeinefficiency
@@ -80,6 +78,10 @@ fig:isofig
 eq:sharpness
 tab:sharpnessvalues
 tab:modelfittab
+eq:multivarceiling
+eq:projectionxjy
+eq:bivariateceiling
+eq:supceiling
 fig:multivariatenonlinearfig
 fig:multivariatelinearfig
 eq:math2
@@ -99,6 +101,7 @@ eq:effectsizechain
 eq:ch5
 eq:effectsize1
 fig:chaineffect1
+eq:dchainzero
 fig:chaineffect2
 tab:permutationtests
 eq:math00
@@ -218,10 +221,15 @@ fig:tpr06
 fig:tpr16
 fig:tnrnormal
 fig:traditionalbefaft
-fig:suffciency1befaft
+fig:sufficiency1befaft
 eq:correg
 fig:corregnecfig
 fig:boundinglinefig
+eq:corFab1
+eq:corFab2
+eq:corFab3
+eq:corX
+eq:corYX
 fig:flipboundinglinefig
 fig:tamfig
 tab:nertsem1-tab

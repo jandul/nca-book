@@ -580,13 +580,15 @@ Figure G.2: Parameters: <span class="math inline">\(0 &lt; a &lt; 1 &lt; a+b\)</
 <!-- \end{figure} -->
 <!-- ``` -->
 <p>Define <span class="math inline">\(L(x) = \min\{1,a+bx\}\)</span>.
-<span class="math display">\[\begin{align} F_{a,b} &amp; \equiv \int_0^1 L(x) \,dx = \text{surface area below thick line} \\
-   &amp; = 1 - \text{surface area above thick line} \\
-   &amp; = 1 - \tfrac{1}{2} (1-a) x_0 = 1 - \frac{(1-a)^2}{2b} \end{align}\]</span>
+<span class="math display" id="eq:corFab3" id="eq:corFab2" id="eq:corFab1">\[\begin{align}
+F_{a,b} &amp; \equiv \int_0^1 L(x) \,dx = \text{surface area below thick line} \tag{G.2} \\
+&amp; = 1 - \text{surface area above thick line} \tag{G.3} \\
+&amp; = 1 - \tfrac{1}{2} (1-a) x_0 = 1 - \frac{(1-a)^2}{2b} \tag{G.4}
+\end{align}\]</span>
 Uniform distribution <span class="math inline">\((X,Y)\)</span> below the ceiling line:
-<span class="math display">\[\begin{align}
-X &amp; \propto \frac{1}{F_{a,b}} L(x) \,dx \\
-Y|X &amp; \propto \frac{I_{[0,L(x)]}(y)}{L(x)}  \,dy
+<span class="math display" id="eq:corYX" id="eq:corX">\[\begin{align}
+X &amp; \propto \frac{1}{F_{a,b}} L(x) \,dx \tag{G.5} \\
+Y|X &amp; \propto \frac{I_{[0,L(x)]}(y)}{L(x)}  \,dy \tag{G.6}
 \end{align}\]</span>
 where <span class="math inline">\(X\)</span> is a random variable, <span class="math inline">\(Y|X\)</span> is a random variable <span class="math inline">\(Y\)</span> conditioned on <span class="math inline">\(X\)</span> and <span class="math inline">\(\propto\)</span> means `distributed with a density function given as’. Further, <span class="math inline">\(I_{[0,L(x)]}\)</span> is the indicator function for the interval <span class="math inline">\([0,L(x)]\)</span>.
 Note that
