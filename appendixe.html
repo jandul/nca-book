@@ -718,7 +718,7 @@ print(TAM_sig)</code></pre>
 </div>
 <div id="step-4-extract-latent-variable-scores-1" class="section level2 hasAnchor" number="20.4">
 <h2><span class="header-section-number">H.4</span> Step 4: Extract latent variable scores<a href="appendixe.html#step-4-extract-latent-variable-scores-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>By default, PLS-SEM model estimation produces standardized latent variable scores, and this is the only option in <code>SEMinR</code> version 2.4.2 that was used for the analysis. However, unstandardized scores are preferred as input for NCA, and normalized unstandardized scores are needed for IPMA, cIPMA and BIPMA. The helper function <code>unstandardize</code> calculates the unstandardized latent variable scores from the standardized latent variable scores using procedures described in <span class="citation">(<a href="#ref-ringle2016gain">Ringle &amp; Sarstedt, 2016</a>)</span>, such that the scale of the latent variable scores matches the scale of the original indicator scores. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
+<p>By default, PLS-SEM model estimation produces standardized latent variable scores, and this is the only option in <code>SEMinR</code> version 2.5.0 that was used for the analysis. However, unstandardized scores are preferred as input for NCA, and normalized unstandardized scores are needed for IPMA, cIPMA and BIPMA. The helper function <code>unstandardize</code> calculates the unstandardized latent variable scores from the standardized latent variable scores using procedures described in <span class="citation">(<a href="#ref-ringle2016gain">Ringle &amp; Sarstedt, 2016</a>)</span>, such that the scale of the latent variable scores matches the scale of the original indicator scores. This <code>R</code> function can be downloaded from the book-page: <a href="https://jandul.github.io/NCA" class="uri">https://jandul.github.io/NCA</a>.
 <!-- (Section \@ref(unstandardize)). -->
 <!--  \ -->
 <!-- ``` {r unstandardizefunction, echo = TRUE, eval = TRUE} -->
@@ -843,8 +843,8 @@ print(model1.technology)</code></pre>
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.24   0.001
-## Compatibility         0.21   0.000
-## Perceived ease of use 0.24   0.015
+## Compatibility         0.21   0.001
+## Perceived ease of use 0.24   0.016
 ## Emotional value       0.33   0.000
 ## Adoption intention    0.29   0.000
 ## ---------------------------------------------------------------------------</code></pre>
@@ -858,8 +858,8 @@ print(model1.adoption)</code></pre>
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##                       ce_fdh p    
 ## Perceived usefulness  0.12   0.003
-## Compatibility         0.08   0.011
-## Perceived ease of use 0.15   0.007
+## Compatibility         0.08   0.009
+## Perceived ease of use 0.15   0.008
 ## Emotional value       0.21   0.000
 ## ---------------------------------------------------------------------------</code></pre>
 <p>The results show NCA’s effect size and <span class="math inline">\(p\)</span>-value of the five conditions for Technology use. The results correspond to those reported in the four original studies using the SmartPLS software. It can be concluded that the five conditions are necessary conditions for Technology use because the three criteria for identifying necessity-in-kind are met:</p>
@@ -1089,7 +1089,7 @@ r2_adj &lt;- 0.528   # NULL if not available
 
 # necessity effect sizes and p-values
 nec   &lt;- c(&quot;0.12&quot;, &quot;0.08&quot;, &quot;0.15&quot;,&quot;0.21&quot;)
-nec_p &lt;- c(&quot;0.003&quot;, &quot;0.010&quot;, &quot;0.006&quot;, &quot;&lt; 0.001&quot;)
+nec_p &lt;- c(&quot;0.003&quot;, &quot;0.009&quot;, &quot;0.008&quot;, &quot;&lt; 0.001&quot;)
 
 # Caption and footnote
 caption = &quot;Summary of the SEM and NCA results for outcome Adoption intention.&quot;
@@ -1200,7 +1200,7 @@ Compatibility
 0.08
 </td>
 <td style="text-align:center;width: 8em; ">
-0.010
+0.009
 </td>
 </tr>
 <tr>
@@ -1217,7 +1217,7 @@ Perceived ease of use
 0.15
 </td>
 <td style="text-align:center;width: 8em; ">
-0.006
+0.008
 </td>
 </tr>
 <tr>
@@ -1301,7 +1301,7 @@ direct_p    &lt;- c(&quot;0.602&quot;, &quot;0.383&quot;, &quot;0.886&quot;, &qu
 total_coef  &lt;- c(&quot;0.149&quot;, &quot;0.127&quot;, &quot;0.049&quot;, &quot;0.362&quot;, &quot;0.437&quot;)
 total_p     &lt;- c(&quot;0.180&quot;, &quot;0.294&quot;, &quot;0.501&quot;, &quot;&lt;0.001&quot;, &quot;&lt; 0.001&quot;)
 nec_es &lt;- c(&quot;0.24&quot;, &quot;0.21&quot;, &quot;0.24&quot;, &quot;0.33&quot;, &quot;0.29&quot;)
-nec_p  &lt;- c(&quot;0.001&quot;, &quot;&lt; 0.001&quot;, &quot;0.014&quot;, &quot;&lt; 0.001&quot;, &quot;&lt; 0.001&quot;)
+nec_p  &lt;- c(&quot;0.001&quot;, &quot;&lt; 0.001&quot;, &quot;0.016&quot;, &quot;&lt; 0.001&quot;, &quot;&lt; 0.001&quot;)
 r2     &lt;- 0.539
 r2_adj &lt;- 0.528
 # Caption and footnote
@@ -1471,7 +1471,7 @@ Perceived ease of use
 0.24
 </td>
 <td style="text-align:center;width: 4em; white-space: nowrap;">
-0.014
+0.016
 </td>
 </tr>
 <tr>
@@ -2460,7 +2460,7 @@ Original
 0.24
 </td>
 <td style="text-align:right;">
-&lt; 0.001
+0.001
 </td>
 <td style="text-align:center;">
 yes
@@ -2483,7 +2483,7 @@ Ceiling line change
 0.19
 </td>
 <td style="text-align:right;">
-0.001
+0.002
 </td>
 <td style="text-align:center;">
 yes
@@ -2506,7 +2506,7 @@ Effect size thresh. change
 0.24
 </td>
 <td style="text-align:right;">
-&lt; 0.001
+0.001
 </td>
 <td style="text-align:center;">
 yes
@@ -2529,7 +2529,7 @@ Significance level change
 0.24
 </td>
 <td style="text-align:right;">
-&lt; 0.001
+0.001
 </td>
 <td style="text-align:center;">
 yes
@@ -2552,7 +2552,7 @@ Scope change
 0.24
 </td>
 <td style="text-align:right;">
-&lt; 0.001
+0.001
 </td>
 <td style="text-align:center;">
 yes
@@ -2621,7 +2621,7 @@ Target outcome lower
 0.24
 </td>
 <td style="text-align:right;">
-&lt; 0.001
+0.001
 </td>
 <td style="text-align:center;">
 yes
@@ -2644,7 +2644,7 @@ Target outcome higher
 0.24
 </td>
 <td style="text-align:right;">
-&lt; 0.001
+0.001
 </td>
 <td style="text-align:center;">
 yes
@@ -2934,7 +2934,7 @@ Original
 0.24
 </td>
 <td style="text-align:right;">
-0.015
+0.016
 </td>
 <td style="text-align:center;">
 yes
@@ -2980,7 +2980,7 @@ Effect size thresh. change
 0.24
 </td>
 <td style="text-align:right;">
-0.015
+0.016
 </td>
 <td style="text-align:center;">
 yes
@@ -3003,7 +3003,7 @@ Significance level change
 0.24
 </td>
 <td style="text-align:right;">
-0.015
+0.016
 </td>
 <td style="text-align:center;">
 no
@@ -3026,7 +3026,7 @@ Scope change
 0.36
 </td>
 <td style="text-align:right;">
-0.015
+0.016
 </td>
 <td style="text-align:center;">
 yes
@@ -3095,7 +3095,7 @@ Target outcome lower
 0.24
 </td>
 <td style="text-align:right;">
-0.015
+0.016
 </td>
 <td style="text-align:center;">
 yes
@@ -3118,7 +3118,7 @@ Target outcome higher
 0.24
 </td>
 <td style="text-align:right;">
-0.015
+0.016
 </td>
 <td style="text-align:center;">
 yes
@@ -3431,7 +3431,7 @@ Ceiling line change
 0.20
 </td>
 <td style="text-align:right;">
-0.001
+0.002
 </td>
 <td style="text-align:center;">
 yes

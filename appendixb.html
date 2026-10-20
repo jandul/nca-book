@@ -693,7 +693,7 @@ print(model1)</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.24   0.008
 ## Goodwill trust     0.31   0.002
-## Competence trust   0.32   0.001
+## Competence trust   0.32   0.002
 ## ---------------------------------------------------------------------------</code></pre>
 <p>The results show support for the three hypotheses because the effect sizes and the <span class="math inline">\(p\)</span>-values satisfy the threshold values that were selected.</p>
 <p>By using the <code>nca_output</code> function, more output can be displayed. The <span class="math inline">\(XY\)</span>-plots with the ceiling lines can be shown as follows.</p>
@@ -799,7 +799,7 @@ nca_output(model1, plots = FALSE, summaries = TRUE)</code></pre>
 ## # above            0         
 ## Slope                        
 ## Intercept                    
-## p-value            0.001     
+## p-value            0.002     
 ## p-accuracy         0.000     
 ##                              
 ## Complexity         3         
@@ -883,7 +883,7 @@ tab2_df</code></pre>
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    cr_fdh p    
 ## Contractual detail 0.19   0.008
-## Goodwill trust     0.26   0.003
+## Goodwill trust     0.26   0.004
 ## Competence trust   0.21   0.010
 ## ---------------------------------------------------------------------------</code></pre>
 <pre><code>##             Metric Contractual detail Goodwill trust Competence trust
@@ -1094,8 +1094,8 @@ model4 &lt;- nca_analysis(data1,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##                    ce_fdh p    
 ## Contractual detail 0.09   0.111
-## Goodwill trust     0.12   0.144
-## Competence trust   0.14   0.055
+## Goodwill trust     0.12   0.145
+## Competence trust   0.14   0.050
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code>nca_output(model4, summaries = FALSE)</code></pre>
 <p>The results show that after removal of the two outliers, the effect sizes decrease considerably. The effect size for Contractual detail is below the threshold level. Also all <span class="math inline">\(p\)</span>-value are above the threshold level of 0.05. Consequently, without the outliers, none of the hypotheses is supported. This implies that the original results can be considered fragile and do not justify making strong conclusions.</p>
@@ -1323,11 +1323,11 @@ difference_paired &lt;- nca_difference(data1=data1,
 <p>For a planned study, a power analysis may be useful to estimate the probability that NCA’s statistical test rejects the null when necessity is true. Assumptions must be made for the (planned) sample size, the expected effect size, the slope of the true linear ceiling line, and the true distribution of data under the ceiling. Power also depends on the selected threshold <span class="math inline">\(p\)</span>-value and ceiling-line estimation technique. For example, consider a planned study with sample size of 50, and an expected effect size of 0.2, with the default values of slope (1), distribution (uniform), threshold <span class="math inline">\(p\)</span>-value (0.05) and ceiling technique (CE-FDH).</p>
 <pre class="text"><code># Power analysis
 set.seed(123)
-power &lt;- nca_power(n = 50, effect = 0.2) # This may take some time
-print(power)</code></pre>
-<pre><code>## [1] &quot;\r                                                                                                      \rDoing batch 1 of 1 ..................................\r                                                                                                                          \r&quot;
-## [2] &quot;   n  ES slope ceiling distribution.x distribution.y power&quot;                                                                                                                                                                                                                                   
-## [3] &quot;1 50 0.2     1  ce_fdh        uniform        uniform  0.98&quot;</code></pre>
+power &lt;- nca_power(n = 50, effect = 0.2) # This may take some time</code></pre>
+<pre><code>##                                                                                                       Doing batch 1 of 1 ..................................                                                                                                                          </code></pre>
+<pre class="text"><code>print(power)</code></pre>
+<pre><code>##    n  ES slope ceiling distribution.x distribution.y power
+## 1 50 0.2     1  ce_fdh        uniform        uniform  0.98</code></pre>
 <p>The results show that power is 0.98 in the defined situation. This means that with high probability (though not guaranteed) the defined necessity effect will be detected in a random sample of n = 50 that is drawn from the population.</p>
 </div>
 <div id="random-sample" class="section level4 unnumbered hasAnchor">

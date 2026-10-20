@@ -749,7 +749,7 @@ Y = f(X) + \varepsilon
 <p>where the function <span class="math inline">\(f(X)\)</span> represents an additive combination of predictor variables (including, if specified, products of <span class="math inline">\(X\)</span>’s or other transformations), with associated coefficients <span class="math inline">\(\beta_i\)</span> for <span class="math inline">\(i = 1, \dots, k\)</span>, where <span class="math inline">\(k\)</span> is the number of terms. The error term <span class="math inline">\(\varepsilon\)</span> represents all remaining influences on <span class="math inline">\(Y\)</span> that are not captured by the model. In OLS, the coefficients are chosen so that
 <span class="math inline">\(f(X)\)</span> is the linear function that best predicts <span class="math inline">\(Y\)</span> in the least-squares sense (minimizing the average squared residual), under the assumption that the predictors are exogenous, meaning that they are uncorrelated with the error term. Measurement error in <span class="math inline">\(X\)</span> is one way this assumption can fail.</p>
 <p>Several assumptions are made about the error term. Specifically, it is assumed that <span class="math inline">\(\varepsilon\)</span> has an expected value of zero, that it is uncorrelated with (or independent of) the predictors <span class="math inline">\(X\)</span>, and that its variance is constant across all values of <span class="math inline">\(X\)</span> (homoskedasticity). In many applications, it is further assumed that the errors are normally distributed, mainly to justify standard hypothesis tests and confidence intervals. Under this assumption, the conditional distribution of <span class="math inline">\(Y\)</span> given <span class="math inline">\(X\)</span> is normal. Consequently, the model implies an <em>unbounded</em> distribution of <span class="math inline">\(Y\)</span>, which can, in principle, take any value between minus and plus infinity.</p>
-<p>For the parent–child sample, the regression equation is <span class="math inline">\(y = 57.5 + 0.64x + \varepsilon_x\)</span> (Figure <a href="multimethodstudies.html#fig:ncaols1">11.1</a>-right). Since OLS regression assumes that on average <span class="math inline">\(\varepsilon_x = 0\)</span>, this equation expresses the average effect. Thus, when <span class="math inline">\(x\)</span> (Parent height) is 175 cm, the estimated average Child height is about 170 cm, but heights between about 140 cm and 200 cm appear to be possible. Given the normality assumption of the error term, very large child heights (e.g., 300 cm) are not observed but are theoretically possible in the population, though unlikely. Because all heights are theoretically possible in such a regression context, an empty space in the upper-left corner (and thus necessity) is theoretically excluded. If an empty space is observed in a sample, the normality assumption implies that this is due to finite sampling, not an indication of necessity.</p>
+<p>For the parent-child sample, the regression equation is <span class="math inline">\(y = 57.5 + 0.64x + \varepsilon_x\)</span> (Figure <a href="multimethodstudies.html#fig:ncaols1">11.1</a>-right). Since OLS regression assumes that on average <span class="math inline">\(\varepsilon_x = 0\)</span>, this equation expresses the average effect. Thus, when <span class="math inline">\(x\)</span> (Parent height) is 175 cm, the estimated average Child height is about 170 cm, but heights between about 140 cm and 200 cm appear to be possible. Given the normality assumption of the error term, very large child heights (e.g., 300 cm) are not observed but are theoretically possible in the population, though unlikely. Because all heights are theoretically possible in such a regression context, an empty space in the upper-left corner (and thus necessity) is theoretically excluded. If an empty space is observed in a sample, the normality assumption implies that this is due to finite sampling, not an indication of necessity.</p>
 <p>Most regression models include more than one <span class="math inline">\(X\)</span>. The black box of the error term is opened and additional predictors are added to the regression equation (multiple linear regression, MLR). By including more factors that contribute to <span class="math inline">\(Y\)</span> in the regression equation, <span class="math inline">\(Y\)</span> may be better predicted for given combinations of <span class="math inline">\(X\)</span>’s. Adding factors to the equation is not limited to simply adding new predictors. Some variables may be transformed, such as squaring a factor (<span class="math inline">\(X_j^2\)</span>) to represent a non-linear effect of <span class="math inline">\(X_j\)</span> on <span class="math inline">\(Y\)</span>, or taking the product of two factors (<span class="math inline">\(X_1 \cdot X_2\)</span>) to represent their interaction. Such transformed or combined factors are added as separate terms in the regression equation. Other regression-based approaches, such as structural equation modeling, also incorporate multiple factors.</p>
 <p>The goal of adding more terms to the regression equation is to explain a larger part of the variance (scatter). <span class="math inline">\(R^2\)</span> represents the proportion of variance explained by the regression model and ranges between 0 and 1. By adding more terms, usually more variance is explained, resulting in higher <span class="math inline">\(R^2\)</span>-values (but also in risks of overfitting).</p>
 <p>Another reason to add more factors is to avoid omitted variable bias, for example, due to confounding. A confounder is a relevant variable that correlates with both <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, and if excluded from the model may bias the regression coefficient. In regression, it is standard practice to include control variables to reduce omitted variable bias.<a href="#fn99" class="footnote-ref" id="fnref99"><sup>99</sup></a> By adding more <em>relevant</em> factors, the prediction of <span class="math inline">\(Y\)</span> becomes more accurate, and the risk of omitted variable bias is reduced.<a href="#fn100" class="footnote-ref" id="fnref100"><sup>100</sup></a></p>
@@ -1654,7 +1654,7 @@ In PLS, the estimated coefficient that multiplies an indicator to construct the 
 Factor loading
 </td>
 <td style="text-align:left;width: 30em; ">
-The strength of an indicator–latent variable relationship.
+The strength of an indicator-latent variable relationship.
 </td>
 </tr>
 <tr grouplength="5">
@@ -2120,9 +2120,9 @@ model_calibrated&lt;- nca_analysis(LF,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.37   0.000
-## URB 0.01   0.371
+## URB 0.01   0.366
 ## LIT 0.82   0.002
-## IND 0.02   0.375
+## IND 0.02   0.361
 ## STB 0.46   0.004
 ## ---------------------------------------------------------------------------</code></pre>
 <pre class="text"><code># NCA-raw data
@@ -2143,10 +2143,10 @@ model_raw &lt;- nca_analysis(LR,
 <pre><code>## Effect size(s):</code></pre>
 <pre><code>##     ce_fdh p    
 ## DEV 0.27   0.000
-## URB 0.09   0.339
+## URB 0.09   0.333
 ## LIT 0.74   0.001
-## IND 0.11   0.091
-## STB 0.53   0.008
+## IND 0.11   0.097
+## STB 0.53   0.009
 ## ---------------------------------------------------------------------------</code></pre>
 <!-- ``` {r Lipset-hide , echo = TRUE, eval = TRUE, warning=FALSE, message= FALSE, result = FALSE} -->
 <!-- library(QCA) -->
@@ -2240,13 +2240,13 @@ Necessity effect size (raw)
 0.01
 </td>
 <td style="text-align:center;width: 8em; ">
-0.361
+0.366
 </td>
 <td style="text-align:center;width: 8em; ">
 0.09
 </td>
 <td style="text-align:center;width: 8em; ">
-0.336
+0.333
 </td>
 </tr>
 <tr>
@@ -2280,7 +2280,7 @@ Necessity effect size (raw)
 0.02
 </td>
 <td style="text-align:center;width: 8em; ">
-0.366
+0.361
 </td>
 <td style="text-align:center;width: 8em; ">
 0.11
@@ -2306,7 +2306,7 @@ Necessity effect size (raw)
 0.53
 </td>
 <td style="text-align:center;width: 8em; ">
-0.008
+0.009
 </td>
 </tr>
 </tbody>
@@ -2460,7 +2460,7 @@ print(model)</code></pre>
 ## L 0.29   0.003
 ## R 0.31   0.001
 ## P 0.17   0.009
-## V 0.05   0.538
+## V 0.05   0.525
 ## ---------------------------------------------------------------------------</code></pre>
 <p><br />
 <!-- ```{r, table2ncaqca, echo=FALSE, eval = FALSE out.width='100%', fig.align = "center", fig.cap="NCA necessity analysis. $d$ = effect size; $p$ = $p$-value."} -->
@@ -3124,7 +3124,7 @@ Mackie, J. L. (1965). Causes and conditions. <em>American Philosophical Quarterl
 Mello, P. A. (2021). <em>Qualitative comparative analysis: An introduction to research design and application</em>. Georgetown University Press. <a href="http://press.georgetown.edu/book/georgetown/qualitative-comparative-analysis">http://press.georgetown.edu/book/georgetown/qualitative-comparative-analysis</a>
 </div>
 <div id="ref-MendelKorjani2010" class="csl-entry">
-Mendel, J. M., &amp; Korjani, M. M. (2010). <em>Charles <span>Ragin</span>’s fuzzy set qualitative comparative analysis (<span class="nocase">fsQCA</span>) applied to linguistic summarization</em> (Technical Report USC-SIPI No. 408). Signal; Image Processing Institute, Viterbi School of Engineering, University of Southern California. <a href="https://sipi.usc.edu/reports/pdfs/Originals/USC-SIPI-408.pdf">https://sipi.usc.edu/reports/pdfs/Originals/USC-SIPI-408.pdf</a>
+Mendel, J. M., &amp; Korjani, M. M. (2010). <em>Charles <span>Ragin</span>’s fuzzy set qualitative comparative analysis (<span class="nocase">fsQCA</span>) applied to linguistic summarization</em> (Technical Report USC-SIPI No. 408). Signal <span>and</span> Image Processing Institute, Viterbi School of Engineering, University of Southern California. <a href="https://sipi.usc.edu/reports/pdfs/Originals/USC-SIPI-408.pdf">https://sipi.usc.edu/reports/pdfs/Originals/USC-SIPI-408.pdf</a>
 </div>
 <div id="ref-mwesiumo2025identifying" class="csl-entry">
 Mwesiumo, D. (in press). Identifying critical factors in higher education studies: Combining necessary condition and importance-performance map analyses. <em>Studies in Higher Education</em>. <a href="https://doi.org/10.1080/03075079.2025.2478948">https://doi.org/10.1080/03075079.2025.2478948</a>
