@@ -478,6 +478,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html"><i class="fa fa-check"></i>Version history</a>
 <ul>
+<li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.1.0-november-18-2026"><i class="fa fa-check"></i>Version 2.1.0 (November 18, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.0.1-october-5-2026"><i class="fa fa-check"></i>Version 2.0.1 (October 5, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.0.0-september-24-2026"><i class="fa fa-check"></i>Version 2.0.0 (September 24, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-1.0.0-march-10-2026"><i class="fa fa-check"></i>Version 1.0.0 (March 10, 2026)</a></li>
@@ -520,6 +521,21 @@ div.csl-indent {
 </ul>
 <p>Only the highest applicable number increases, and the numbers after it return to 0. For example, an update with both substantive corrections and editorial changes goes from version 2.0.1 to version 2.1.0.</p>
 <p>Version 1.0.0 was a draft (preview) version of the physical book. It replaced the online book at bookdown.org: Dul, J. (2021–2026). <em>Advances in Necessary Condition Analysis</em>. Version 2.0.0 corresponds to the first print of the printed book, published by Chapman &amp; Hall/CRC Press: Dul, J. (2027). <em>Necessary Condition Analysis (NCA): Principles and Application</em>. Below, the most recent version is listed first. Section, figure, and table numbers refer to the version concerned.</p>
+<div id="version-2.1.0-november-18-2026" class="section level2 unnumbered hasAnchor">
+<h2>Version 2.1.0 (November 18, 2026)<a href="versionhistory.html#version-2.1.0-november-18-2026" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Corresponds to the second print of the printed book, published by Chapman &amp; Hall/CRC Press. Includes corrections from version 2.0.1 and substantive corrections of the model fit metrics spread and sharpness. The <em>NCA</em> software for <em>R</em> version 5.1.0 implements the corrected metrics and is used in this version.</p>
+<ul>
+<li>Section 4.5.5: the model fit metric <em>spread</em> is redefined. Spread now is based on the area between the empirical cumulative distribution of the rescaled <span class="math inline">\(x\)</span>-values and the uniform distribution (the Wasserstein-1 distance), and replaces the earlier metric based on the coefficient of variation (Equations (4.39) to (4.42)). Spread is now 0 when all points share the same <span class="math inline">\(x\)</span>-position at one end of the line, and it does not change under affine transformations of the condition.</li>
+<li>Section 4.5.5: the medium-solidity zone is defined as 0.8 &lt; solidity &lt; 1 (was 0.8 <span class="math inline">\(\leq\)</span> solidity &lt; 1). Points on the iso-purity line are now excluded.</li>
+<li>Section 4.5.6, Equation (4.43), Table 4.1: the model fit metric <em>sharpness</em> now includes the points on the ceiling line (<em>onC</em>).</li>
+<li>Section 4.5.7, Table 4.2, Table 6.3: the NCA ribbon and the description of sharpness include the ceiling line.</li>
+<li>Section 9.9: the values of spread and sharpness in the illustrative example are updated.</li>
+<li>Appendix A: <span class="math inline">\(onC\)</span> is added to the nomenclature; the glossary entries <em>NCA ribbon</em> and <em>Sharpness</em> include the ceiling line.</li>
+<li>Appendix B: the R output is produced with version 5.0.3 of the <em>NCA</em> software. The spread and sharpness values and their interpretation in Section B.3.3 are updated.</li>
+<li>Appendix I, Table I.1: all bottleneck distances are shown with two decimals.</li>
+</ul>
+<p>Last update: November 18, 2026<br></p>
+</div>
 <div id="version-2.0.1-october-5-2026" class="section level2 unnumbered hasAnchor">
 <h2>Version 2.0.1 (October 5, 2026)<a href="versionhistory.html#version-2.0.1-october-5-2026" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Corrections of errors in the first print of the printed book. The most important editorial changes are:</p>
@@ -536,7 +552,6 @@ div.csl-indent {
 <li>Appendix I: ‘discussed in 12.7.2’ should be ‘discussed in Section 12.7.2’.</li>
 <li>Appendix I: Small bottleneck distances that round to zero are shown as −0.00.</li>
 </ul>
-<p>Last update: October 21, 2026<br></p>
 </div>
 <div id="version-2.0.0-september-24-2026" class="section level2 unnumbered hasAnchor">
 <h2>Version 2.0.0 (September 24, 2026)<a href="versionhistory.html#version-2.0.0-september-24-2026" class="anchor-section" aria-label="Anchor link to header"></a></h2>

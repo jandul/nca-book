@@ -478,6 +478,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html"><i class="fa fa-check"></i>Version history</a>
 <ul>
+<li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.1.0-november-18-2026"><i class="fa fa-check"></i>Version 2.1.0 (November 18, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.0.1-october-5-2026"><i class="fa fa-check"></i>Version 2.0.1 (October 5, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.0.0-september-24-2026"><i class="fa fa-check"></i>Version 2.0.0 (September 24, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-1.0.0-march-10-2026"><i class="fa fa-check"></i>Version 1.0.0 (March 10, 2026)</a></li>
@@ -553,8 +554,9 @@ The following versions have been released through 17 June 2026:</p>
 <p>NCA_5.0.0 (2026-03-20)</p>
 <p>NCA_5.0.1 (2026-04-28)</p>
 <p>NCA_5.0.2 (2026-06-17)</p>
+<p>NCA_5.1.0 (2026-11-18)</p>
 <p>When the first digit of the version number increases, major changes are implemented. Version 1 was the first limited version, version 2 was the first comprehensive version, version 3 introduced the statistical test for NCA, and version 4 introduced new functions. The second digit refers to larger changes and the third digit minor changes. Until 31 December 2025, the software was downloaded 69,983 times from the CRAN website (the Comprehensive R Archive Network).</p>
-<p>During the publication of this book, version 5.0.0 of the software is released. This version is an extensive update with new main functions and NCA-specific helper functions (name starts with <code>nca_ ...</code>) and helper functions that are general helper functions (name starts with <code>nca_util_ ...</code>). Version 5.0.2 is used in this book.</p>
+<p>During the publication of this book, version 5.0.0 of the software is released. This version is an extensive update with new main functions and NCA-specific helper functions (name starts with <code>nca_ ...</code>) and helper functions that are general helper functions (name starts with <code>nca_util_ ...</code>). Version 5.0.3 is used in this book.</p>
 <p>To facilitate the analysis, some main functions of the NCA software are:</p>
 <p><code>nca_analysis</code>: conducts the core analysis (estimating ceiling line, effect size, <span class="math inline">\(p\)</span>-value, etc.).</p>
 <p><code>nca_output</code>: displays the results.</p>
@@ -738,7 +740,7 @@ nca_output(model1, plots = FALSE, summaries = TRUE)</code></pre>
 ## Noise              0  %   (0)
 ## Exceptions         0  %   (0)
 ## Support           33.3%  (16)
-## Spread             0.49      
+## Spread             0.80      
 ## Sharpness          1.00      
 ##                              
 ## Abs. ineff.       10.690     
@@ -773,7 +775,7 @@ nca_output(model1, plots = FALSE, summaries = TRUE)</code></pre>
 ## Noise              0  %   (0)
 ## Exceptions         0  %   (0)
 ## Support           33.3%  (16)
-## Spread             0.53      
+## Spread             0.81      
 ## Sharpness          1.00      
 ##                              
 ## Abs. ineff.        6.676     
@@ -808,7 +810,7 @@ nca_output(model1, plots = FALSE, summaries = TRUE)</code></pre>
 ## Noise              0  %   (0)
 ## Exceptions         0  %   (0)
 ## Support           37.5%  (18)
-## Spread             0.28      
+## Spread             0.73      
 ## Sharpness          1.00      
 ##                              
 ## Abs. ineff.        5.140     
@@ -832,15 +834,15 @@ tab1_df &lt;- data.frame(Metric = rownames(tab1), tab1,
                       row.names = NULL, check.names = FALSE)
 tab1_df</code></pre>
 <pre><code>##             Metric Contractual detail Goodwill trust Competence trust
-## 1       Complexity               5.00           5.00             3.00
-## 2              Fit             100.00         100.00           100.00
-## 3 Ceiling accuracy             100.00         100.00           100.00
-## 4            Noise               0.00           0.00             0.00
-## 5       Exceptions               0.00           0.00             0.00
-## 6          Support              33.30          33.30            37.50
-## 7           Spread               0.49           0.53             0.28
-## 8        Sharpness               1.00           1.00             1.00</code></pre>
-<p>By definition, CE-FDH does not allow observations above the ceiling such that model fit in terms of Fit, Ceiling accuracy, Noise, Exceptions, and sharpness is ‘best’. However, this comes at the cost of model Complexity (and thus a greater risk of overfitting). The points on or just below the ceiling line show acceptable level of Support (&gt; 5%, see Table <a href="sensitivityspecificity.html#tab:credibilitytab">6.3</a>), while the Spread metric indicates that these points are weakly dispersed along the ceiling line (compared to a suggested minimum value of 0.5).</p>
+## 1       Complexity                5.0           5.00             3.00
+## 2              Fit              100.0         100.00           100.00
+## 3 Ceiling accuracy              100.0         100.00           100.00
+## 4            Noise                0.0           0.00             0.00
+## 5       Exceptions                0.0           0.00             0.00
+## 6          Support               33.3          33.30            37.50
+## 7           Spread                0.8           0.81             0.73
+## 8        Sharpness                1.0           1.00             1.00</code></pre>
+<p>By definition, CE-FDH does not allow observations above the ceiling such that model fit in terms of Fit, Ceiling accuracy, Noise, Exceptions, and sharpness is ‘best’. However, this comes at the cost of model Complexity (and thus a greater risk of overfitting). The points on or just below the ceiling line show acceptable level of Support (&gt; 5%, see Table <a href="sensitivityspecificity.html#tab:credibilitytab">6.3</a>), while the Spread metric indicates that these points are mostly well dispersed along the ceiling line (compared to a suggested minimum value of 0.5).</p>
 </div>
 <div id="robustness-checks" class="section level4 unnumbered hasAnchor">
 <h4>Robustness checks<a href="appendixb.html#robustness-checks" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -893,8 +895,8 @@ tab2_df</code></pre>
 ## 4            Noise            4.20000        4.20000          6.20000
 ## 5       Exceptions            0.00000        4.20000          0.00000
 ## 6          Support           22.90000       16.70000         16.70000
-## 7           Spread            0.49000        0.56000          0.38000
-## 8        Sharpness            0.82000        0.78000          0.57000</code></pre>
+## 7           Spread            0.78000        0.88000          0.44000
+## 8        Sharpness            0.85000        0.80000          0.73000</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:demo7fig"></span>
 <img src="plot1CR.png" alt="$XY$-plots with CR-FDH ceiling line." width="49%" /><img src="plot2CR.png" alt="$XY$-plots with CR-FDH ceiling line." width="49%" /><img src="plot3CR.png" alt="$XY$-plots with CR-FDH ceiling line." width="49%" />
 <p class="caption">
@@ -902,7 +904,7 @@ Figure B.3: <span class="math inline">\(XY\)</span>-plots with CR-FDH ceiling li
 </p>
 </div>
 <p>The results show that the effect sizes are reduced, but that they are still above the selected threshold level. Also the <span class="math inline">\(p\)</span>-value remains below the selected threshold level, such that the conclusion about the hypothesis does not change with changing ceiling line from CE-FDH to CR-FDH.</p>
-<p>The model fit measures confirm that the CR-FDH line is attractive regarding complexity. Since the CR-FDH line is a trend line through the peers (upper-left edges of CE-FDH line), cases exist above this line (ceiling accuracy &lt; 100%). Although most of these cases remain close to the ceiling according to the Noise metric, for Goodwill trust two cases are relatively far from the ceiling (see Exceptions metric). These cases are potential outliers and were also identified by visual inspection. The Support and Spread metrics are comparable to those for CE-FDH.</p>
+<p>The model fit measures confirm that the CR-FDH line is attractive regarding complexity. Since the CR-FDH line is a trend line through the peers (upper-left edges of CE-FDH line), cases exist above this line (ceiling accuracy &lt; 100%). Although most of these cases remain close to the ceiling according to the Noise metric, for Goodwill trust two cases are relatively far from the ceiling (see Exceptions metric). These cases are potential outliers and were also identified by visual inspection. The Support and Spread metrics are generally comparable to those for CE-FDH.</p>
 <p>The second robustness check tests the sensitivity of the results for selecting another scope. The analysis is repeated with a theoretical scope according to the minimum and maximum values of the Likert scales, rather than with the empirical scope based on observed minima and maxima.</p>
 <pre class="text"><code># Robustness check with different scopes corresponding to Likert scales
 set.seed(123) 
@@ -951,7 +953,7 @@ tab3_df</code></pre>
 ## 4            Noise               0.00           0.00             0.00
 ## 5       Exceptions               0.00           0.00             0.00
 ## 6          Support              33.30          33.30            37.50
-## 7           Spread               0.49           0.53             0.28
+## 7           Spread               0.64           0.81             0.73
 ## 8        Sharpness               1.00           1.00             1.00</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:demo8fig"></span>
 <img src="plot1Scope.png" alt="$XY$-plots with CE-FDH ceiling line and theoretical scope." width="49%" /><img src="plot2Scope.png" alt="$XY$-plots with CE-FDH ceiling line and theoretical scope." width="49%" /><img src="plot3Scope.png" alt="$XY$-plots with CE-FDH ceiling line and theoretical scope." width="49%" />
@@ -1224,7 +1226,7 @@ difference_contrast &lt;- nca_difference(data1 = data_n,
                                       common_scope = c(0,1,0,1),
                                       test.rep = 1000,  
                                       test.type = &quot;contrast&quot;)</code></pre>
-<pre><code>## Doing ce_fdh ..................................................</code></pre>
+<pre><code>## Setting up parallelization, this might take a few seconds...                                                               Doing ce_fdh ..................................................</code></pre>
 <pre class="text"><code>print(difference_contrast)</code></pre>
 <pre><code>## 
 ## ---------------------------------------------------------------------------</code></pre>
@@ -1232,7 +1234,7 @@ difference_contrast &lt;- nca_difference(data1 = data_n,
 <pre><code>##                  ce_fdh     p
 ## Goodwill trust     0.31      
 ## Competence trust   0.32      
-## Difference         0.01 0.128
+## Difference         0.01 0.133
 ## ---------------------------------------------------------------------------</code></pre>
 <p>During computation, a message (Doing …) is shown.
 The output shows a minor and nonsignificant difference between the two effect sizes.</p>
@@ -1261,7 +1263,7 @@ difference_independent &lt;- nca_difference(data1 = data1,
                                          common_scope = common_scope,
                                          test.rep = 1000, 
                                          test.type = &quot;independent&quot;)</code></pre>
-<pre><code>## Doing ce_fdh ..................................................</code></pre>
+<pre><code>## Setting up parallelization, this might take a few seconds...                                                               Doing ce_fdh ..................................................</code></pre>
 <pre class="text"><code>print(difference_independent)</code></pre>
 <pre><code>## 
 ## ---------------------------------------------------------------------------</code></pre>
@@ -1269,7 +1271,7 @@ difference_independent &lt;- nca_difference(data1 = data1,
 <pre><code>##                      ce_fdh     p
 ## Contractual detail.1   0.27      
 ## Contractual detail.2   0.37      
-## Difference             0.10 0.331
+## Difference             0.10 0.314
 ## ---------------------------------------------------------------------------</code></pre>
 <p>The results show no statistically significant difference between the groups.</p>
 <p>NCA’s paired test compares effect sizes of two measurements (e.g., two time points, same group). This situation is simulated assuming that the data were obtained a T1 and by constructing a new sample (same sample size) where these cases get new scores for <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> for T2.</p>
@@ -1306,7 +1308,7 @@ difference_paired &lt;- nca_difference(data1=data1,
                                     common_scope = common_scope,
                                     test.rep = 1000, 
                                     test.type = &quot;paired&quot;)</code></pre>
-<pre><code>## Doing ce_fdh ..................................................</code></pre>
+<pre><code>## Setting up parallelization, this might take a few seconds...                                                               Doing ce_fdh ..................................................</code></pre>
 <pre class="text"><code>print(difference_paired)</code></pre>
 <pre><code>## 
 ## ---------------------------------------------------------------------------</code></pre>
@@ -1314,7 +1316,7 @@ difference_paired &lt;- nca_difference(data1=data1,
 <pre><code>##                      ce_fdh     p
 ## Contractual detail.1   0.34      
 ## Contractual detail.2   0.33      
-## Difference            -0.01 0.887
+## Difference            -0.01 0.896
 ## ---------------------------------------------------------------------------</code></pre>
 <p>The output shows that the effect size is slightly different, and that the difference is not statistically significant.</p>
 </div>
@@ -1324,6 +1326,9 @@ difference_paired &lt;- nca_difference(data1=data1,
 <pre class="text"><code># Power analysis
 set.seed(123)
 power &lt;- nca_power(n = 50, effect = 0.2) # This may take some time</code></pre>
+<pre><code>## </code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre><code>## </code></pre>
 <pre><code>##                                                                                                       Doing batch 1 of 1 ..................................                                                                                                                          </code></pre>
 <pre class="text"><code>print(power)</code></pre>
 <pre><code>##    n  ES slope ceiling distribution.x distribution.y power

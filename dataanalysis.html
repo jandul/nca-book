@@ -478,6 +478,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html"><i class="fa fa-check"></i>Version history</a>
 <ul>
+<li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.1.0-november-18-2026"><i class="fa fa-check"></i>Version 2.1.0 (November 18, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.0.1-october-5-2026"><i class="fa fa-check"></i>Version 2.0.1 (October 5, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-2.0.0-september-24-2026"><i class="fa fa-check"></i>Version 2.0.0 (September 24, 2026)</a></li>
 <li class="chapter" data-level="" data-path="versionhistory.html"><a href="versionhistory.html#version-1.0.0-march-10-2026"><i class="fa fa-check"></i>Version 1.0.0 (March 10, 2026)</a></li>
@@ -985,8 +986,8 @@ modelN &lt;- nca_analysis(nca.exampleN, 1,3,
 ## Noise              11.1%   (3)
 ## Exceptions          0  %   (0)
 ## Support            14.8%   (4)
-## Spread              0.42      
-## Sharpness           0.50      
+## Spread              0.44      
+## Sharpness           0.57      
 ##                               
 ## Abs. ineff.      1819.580     
 ## Rel. ineff.        11.691     
@@ -1179,8 +1180,8 @@ modelN &lt;- nca_analysis(nca.exampleN, 1,3,
 ## Noise              11.1%   (3)
 ## Exceptions          0  %   (0)
 ## Support            14.8%   (4)
-## Spread              0.42      
-## Sharpness           0.50      
+## Spread              0.44      
+## Sharpness           0.57      
 ##                               
 ## Abs. ineff.      1819.580     
 ## Rel. ineff.        11.691     
@@ -1232,13 +1233,13 @@ line (Section <a href="mathematics.html#solidity">4.5.5</a>). The points on the 
 </div>
 <div id="spread2" class="section level3 hasAnchor" number="9.9.7">
 <h3><span class="header-section-number">9.9.7</span> Spread<a href="dataanalysis.html#spread2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>As discussed in Section <a href="mathematics.html#solidity">4.5.5</a>, <em>spread</em> quantifies the extent to which observations in the feasible area near the ceiling are dispersed, rather than clustered along the ceiling line. Spread is 1 if all points are spaced uniformly, and is close to 0 if the points are clustered. A spread value of for example &gt; 0.5 may be adequate.</p>
-<p>In the illustrative example, the spread is 0.42.</p>
+<p>As discussed in Section <a href="mathematics.html#solidity">4.5.5</a>, <em>spread</em> quantifies the extent to which observations in the feasible area near the ceiling are dispersed, rather than clustered along the ceiling line. Spread approaches 1 if the points are evenly distributed along the ceiling line, and is 0 if all points are at one end of the line. A spread value of for example &gt; 0.5 may be adequate.</p>
+<p>In the illustrative example, the spread is 0.44.</p>
 </div>
 <div id="sharpness2" class="section level3 hasAnchor" number="9.9.8">
 <h3><span class="header-section-number">9.9.8</span> Sharpness<a href="dataanalysis.html#sharpness2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><em>Sharpness</em> quantifies how abrupt the transition in the data is across the boundary between ceiling zone and feasible area (Section <a href="mathematics.html#sharpness">4.5.6</a>). If there are substantially more points in the medium-solidity zone than in the medium-purity zone, the ceiling is sharp (for example, if <em>sharpness</em> &gt; 0.8).</p>
-<p>In the illustrative example, in both the medium-purity zone and in the medium-solidity zone the number of points is 3. Consequently, <em>sharpness</em> = 0.5, meaning that the ceiling line does not sharply separate the feasible area from the ceiling zone.</p>
+<p><em>Sharpness</em> quantifies how abrupt the transition in the data is across the boundary between ceiling zone and feasible area (Section <a href="mathematics.html#sharpness">4.5.6</a>). If there are substantially more points in the medium-solidity zone or on the ceiling line than in the medium-purity zone, the ceiling is sharp (for example, if <em>sharpness</em> &gt; 0.8).</p>
+<p>In the illustrative example, the number of points is 3 in the medium-purity zone and 4 on the ceiling line or in the medium-solidity zone. Consequently, <em>sharpness</em> = 4/7 = 0.57, meaning that the ceiling line does not sharply separate the feasible area from the ceiling zone.</p>
 </div>
 <div id="modelfitevaluation" class="section level3 hasAnchor" number="9.9.9">
 <h3><span class="header-section-number">9.9.9</span> Evaluation of model fit<a href="dataanalysis.html#modelfitevaluation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1259,8 +1260,8 @@ line (Section <a href="mathematics.html#solidity">4.5.5</a>). The points on the 
 \textit{Noise}            &amp; = 11.1\% \\
 \textit{Exceptions}       &amp; = 0 \\
 \textit{Support}          &amp; = 14.8\% \\
-\textit{Spread}           &amp; = 0.42 \\
-\textit{Sharpness}        &amp; = 0.50
+\textit{Spread}           &amp; = 0.44 \\
+\textit{Sharpness}        &amp; = 0.57
 \end{aligned}
 \]</span></p>
 <p>In all, the model fit of the illustrative example suggests that, although necessity is not rejected based on the effect size and the <span class="math inline">\(p\)</span>-value (and the availability of theoretical support), its support from the perspective of model fit is not strong. Although after removing Japan, no further outliers exist in the low-purity zone of the ceiling zone, relatively many points are just above the ceiling in the medium-purity zone, as indicated by the metrics <em>ceiling accuracy</em> (too low) and <em>noise</em> (too high). Also, the ceiling line does not provide a clear separation between feasible area and ceiling zone, as indicated by the <em>sharpness</em> metric (too low). This suggests that an alternative linear ceiling line that is placed somewhat higher would give a better model fit. The C-LP ceiling line could be a candidate (Section <a href="mathematics.html#mathematicalestimation">4.4</a>). Therefore, the provisional model specification using the default CR-FDH ceiling line may be replaced by a model with a C-LP ceiling line to improve model fit:</p>
@@ -1300,7 +1301,7 @@ modelFINAL &lt;- nca_analysis(nca.exampleN, 1,3,
 ## Noise               0  %  (0)
 ## Exceptions          0  %  (0)
 ## Support            18.5%  (5)
-## Spread              0.41     
+## Spread              0.70     
 ## Sharpness           1.00     
 ##                              
 ## Abs. ineff.      5373.780    
@@ -1339,8 +1340,8 @@ Figure 9.8: The NCA ribbon in the <span class="math inline">\(XY\)</span>-plot o
 \textit{Noise}             &amp; =    0\% (11.1\%) \\
 \textit{Exceptions}        &amp; =    0  (0) \\
 \textit{Support}           &amp; = 18.5\% (14.8\%) \\
-\textit{Spread}            &amp; = 0.41  (0.42) \\
-\textit{Sharpness}         &amp; = 1.00  (0.50)
+\textit{Spread}            &amp; = 0.70  (0.44) \\
+\textit{Sharpness}         &amp; = 1.00  (0.57)
 \end{aligned}
 \]</span></p>
 <p>All but one model fit metrics are the same or have improved. The <em>fit</em> metric has decreased to 59.4%. This indicates that the C-LP line poorly fits the irregular form of the border between the feasible area and the empty space.</p>
